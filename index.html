@@ -51,7 +51,7 @@
   "@type": "ItemList",
   "name": "Technical Marketing — Volume 01, Spring 2026",
   "url": "https://technicalmarketing.org/",
-  "numberOfItems": 10,
+  "numberOfItems": 12,
   "itemListOrder": "ItemListOrderAscending"
 }
 </script>
@@ -459,6 +459,17 @@ input:focus-visible {
   gap: 0.75rem;
 }
 
+.site-footer__links {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.site-footer__separator {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
 .site-footer__link {
   font-size: 0.75rem;
   color: var(--color-text-secondary);
@@ -530,7 +541,7 @@ input:focus-visible {
 <section class="stats" aria-label="Index overview">
   <div class="container stats__inner">
     <div class="stat">
-      <div class="stat__value">10</div>
+      <div class="stat__value">12</div>
       <div class="stat__label">Pieces indexed</div>
     </div>
     <div class="stat">
@@ -562,6 +573,8 @@ input:focus-visible {
     <blockquote class="pullquote">"The work clearly exists, but the industry still lacks a shared language and framework for defining it."</blockquote>
 
     <p>That's the reason this index exists.</p>
+
+    <p>The phrase "technical marketing" is used in two distinct ways. Some practitioners use it to describe the technical implementation side of digital marketing — tag management, analytics architecture, and the work sometimes called marketing engineering. The Technical Marketing Handbook by Simmer is the strongest free resource in that space. This index covers a different discipline: the technical marketing function inside enterprise software companies, where the work sits between engineering, product, and the people buying complex technical products.</p>
 
     <p>Right now, the thinking around technical marketing is scattered across vendor blogs, career guides, analyst commentary, conference talks, and a relatively small number of practitioner essays. Some of it is excellent. Some of it captures only part of the role. Very little of it reflects the full shape of the work or why it has become increasingly important in modern enterprise software.</p>
 
@@ -613,6 +626,13 @@ input:focus-visible {
     <a href="https://www.digitalsuccess.us/blog/what-is-technical-marketing" class="entry__title" rel="external noopener">What is Technical Marketing, and How Should You Use It?</a>
     <div class="entry__author">Digital Success</div>
     <p class="entry__note">Useful as a buyer-facing primer. Skews toward agencies selling technical content, which colors the definition more than the authors acknowledge.</p>
+  </article>
+
+  <article class="entry">
+    <div class="entry__meta">Article · 2024</div>
+    <a href="https://www.productmarketingalliance.com/aligning-technical-marketing-and-go-to-market/" class="entry__title" rel="external noopener">Aligning Technical Marketing and Go-to-Market</a>
+    <div class="entry__author">Product Marketing Alliance</div>
+    <p class="entry__note">The largest PMM professional org weighs in on the technical marketing function and its relationship to go-to-market motion. Strong on cross-functional positioning. Less specific than the practitioner accounts on what the day-to-day work looks like, but useful for understanding how the field's largest professional org defines it.</p>
   </article>
 </article>
 
@@ -686,10 +706,17 @@ input:focus-visible {
     </div>
   </header>
 
+  <article class="entry">
+    <div class="entry__meta">Practitioner · Nov 2025</div>
+    <a href="https://www.redhat.com/en/blog/technical-marketing-manager-skills" class="entry__title" rel="external noopener">What is a Technical Marketing Manager?</a>
+    <div class="entry__author">Red Hat</div>
+    <p class="entry__note">A practicing technical marketing manager describes the role from inside Red Hat. Strong on the day-to-day texture of the work and on the position's location between product management, product marketing, and engineering. Light on the strategic-influence dimension that senior TMMs at larger vendors operate at, but the most credible named-practitioner account of the work currently in public circulation.</p>
+  </article>
+
   <article class="entry entry--open">
     <div class="entry__meta">Open · Commissioning</div>
-    <div class="entry__title">Three slots open for inclusion</div>
-    <p class="entry__note">Reaching out to practitioners at AWS, Snowflake, Salesforce, and Databricks for original pieces on how the function is structured at their organizations. This section sits empty deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps.</p>
+    <div class="entry__title">Two slots open for inclusion</div>
+    <p class="entry__note">Reaching out to practitioners at AWS, Snowflake, Salesforce, and Databricks for original pieces on how the function is structured at their organizations. This section sits underweight deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps.</p>
   </article>
 </article>
 
@@ -742,8 +769,12 @@ input:focus-visible {
 
 <footer class="site-footer">
   <div class="container site-footer__inner">
-    <a href="/suggest" class="site-footer__link">Suggest a piece</a>
-    <div class="site-footer__meta">technicalmarketing.org · Edited independently</div>
+    <div class="site-footer__links">
+      <a href="/about" class="site-footer__link">About</a>
+      <span class="site-footer__separator" aria-hidden="true">·</span>
+      <a href="/suggest" class="site-footer__link">Suggest a piece</a>
+    </div>
+    <div class="site-footer__meta">© 2026 The ThinkRoot LLC · technicalmarketing.org</div>
   </div>
 </footer>
 

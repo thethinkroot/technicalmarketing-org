@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About · Technical Marketing</title>
+<meta name="description" content="About Technical Marketing — an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://technicalmarketing.org/about">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="About · Technical Marketing">
+<meta property="og:description" content="About Technical Marketing — an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies.">
+<meta property="og:url" content="https://technicalmarketing.org/about">
+<meta property="og:image" content="https://technicalmarketing.org/og-image.png">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing — Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --color-bg: #fafaf7;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3f1ea;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #5a5a5a;
+  --color-text-tertiary: #8a8a85;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-strong: rgba(0, 0, 0, 0.18);
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-width: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  z-index: 100;
+}
+
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.site-header {
+  border-top: 3px solid var(--color-text);
+  border-bottom: 0.5px solid var(--color-border);
+  padding: 1.5rem 0 1.25rem;
+  background: var(--color-bg);
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header__title {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.site-header__meta {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.page-header {
+  padding: 4.5rem 0 2.5rem;
+  text-align: center;
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.page-header__kicker {
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.page-header__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 3.5rem 0 4rem;
+}
+
+.content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 2.5rem 0 1rem;
+}
+
+.content h2:first-of-type { margin-top: 0; }
+
+.content p {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  margin-bottom: 1.125rem;
+}
+
+.content p:last-child { margin-bottom: 0; }
+
+.content a {
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease;
+}
+
+.content a:hover { color: var(--color-text-secondary); }
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem auto;
+  max-width: 360px;
+  padding: 0 1.5rem;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: var(--color-border-strong);
+}
+
+.divider__mark {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  padding: 0 1.25rem;
+  letter-spacing: 0.5em;
+  padding-left: 1.75rem;
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  margin-top: 2rem;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover { color: var(--color-text); }
+
+.site-footer {
+  padding: 1.5rem 0;
+  border-top: 0.5px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-footer__links {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.site-footer__separator {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.site-footer__link {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease;
+}
+
+.site-footer__link:hover { color: var(--color-text); }
+
+.site-footer__meta {
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 600px) {
+  .page-header { padding: 3rem 0 2rem; }
+  .content { padding: 2.5rem 0 3rem; }
+  .content p { font-size: 1.0625rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__title">Technical Marketing</a>
+    <div class="site-header__meta">An independent quarterly</div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-header">
+  <div class="container">
+    <div class="page-header__kicker">Colophon</div>
+    <h1 class="page-header__title">About this index</h1>
+  </div>
+</section>
+
+<section class="content container">
+  <p>Technical Marketing is an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies. The work this publication maps sits between engineering, product, and the people buying complex technical products.</p>
+
+  <h2>Editorial connection</h2>
+
+  <p>The index is edited by Chad Corriveau, founder of <a href="https://thinkroot.io" rel="external noopener">ThinkRoot</a>, an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration.</p>
+
+  <p>This connection is disclosed deliberately. Anyone can verify it by clicking through any of the editor's entries. Better to name it clearly and let the editorial decisions speak for themselves.</p>
+
+  <h2>Editorial principles</h2>
+
+  <p>The index is curated, not comprehensive. Pieces are included based on the strength of their argument and the specificity of their perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry to identify what each piece gets right, where it falls short, and how it fits in the broader conversation. Empty spaces are intentional and reflect genuine gaps in the field's published thinking.</p>
+
+  <h2>Submissions and recommendations</h2>
+
+  <p>Submissions, recommendations, and respectful disagreement are welcome. The publication is actively commissioning original pieces from named senior practitioners for future volumes. Particularly seeking work from technical marketing leaders inside AWS, Snowflake, Salesforce, and Databricks.</p>
+
+  <h2>Publication schedule</h2>
+
+  <p>New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026.</p>
+
+  <a href="/" class="back-link">← Return to the index</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__links">
+      <a href="/about" class="site-footer__link">About</a>
+      <span class="site-footer__separator" aria-hidden="true">·</span>
+      <a href="/suggest" class="site-footer__link">Suggest a piece</a>
+    </div>
+    <div class="site-footer__meta">© 2026 The ThinkRoot LLC · technicalmarketing.org</div>
+  </div>
+</footer>
+
+</body>
+</html>
