@@ -1,0 +1,6 @@
+# www to apex redirect (handled at Cloudflare level, but defensive)
+# Suggest page placeholder until built
+/suggest  /  302
+
+# Volume archive URLs for future use
+/volume-01  /  301

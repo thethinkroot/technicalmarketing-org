@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+  <title>Technical Marketing</title>
+  <link>https://technicalmarketing.org/</link>
+  <atom:link href="https://technicalmarketing.org/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>A quarterly index of current thinking on technical marketing.</description>
+  <language>en-us</language>
+  <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+  <lastBuildDate>Wed, 20 May 2026 00:00:00 GMT</lastBuildDate>
+  <generator>technicalmarketing.org</generator>
+
+  <item>
+    <title>Volume 01 — Spring 2026</title>
+    <link>https://technicalmarketing.org/</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/volume-01</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+    <description>The state of a discipline still being named. The inaugural index of current thinking on technical marketing — definitions, frameworks, career perspectives, and emerging tensions.</description>
+  </item>
+</channel>
+</rss>
