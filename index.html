@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Technical Marketing — A quarterly index of the field's current thinking</title>
-<meta name="description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built. Updated quarterly.">
+<title>Technical Marketing · A quarterly index of the field's current thinking</title>
+<meta name="description" content="An index of current thinking on technical marketing, the work between engineering, product, and the people who buy and operate the technology being built. Updated quarterly.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://technicalmarketing.org/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Technical Marketing">
-<meta property="og:title" content="Technical Marketing — A quarterly index">
-<meta property="og:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built.">
+<meta property="og:title" content="Technical Marketing · A quarterly index">
+<meta property="og:description" content="An index of current thinking on technical marketing, the work between engineering, product, and the people who buy and operate the technology being built.">
 <meta property="og:url" content="https://technicalmarketing.org/">
 <meta property="og:image" content="https://technicalmarketing.org/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -21,12 +21,12 @@
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Technical Marketing — A quarterly index">
-<meta name="twitter:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built.">
+<meta name="twitter:title" content="Technical Marketing · A quarterly index">
+<meta name="twitter:description" content="An index of current thinking on technical marketing, the work between engineering, product, and the people who buy and operate the technology being built.">
 <meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="alternate" type="application/rss+xml" title="Technical Marketing — Quarterly Updates" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing · Quarterly Updates" href="/feed.xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,7 +49,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "name": "Technical Marketing — Volume 01, Spring 2026",
+  "name": "Technical Marketing · Volume 01, Spring 2026",
   "url": "https://technicalmarketing.org/",
   "numberOfItems": 12,
   "itemListOrder": "ItemListOrderAscending"
@@ -369,13 +369,33 @@ input:focus-visible {
   color: var(--color-text-secondary);
 }
 
-.entry--open { opacity: 0.55; }
+.entry--open .entry__meta {
+  color: var(--color-text-tertiary);
+}
 
 .entry--open .entry__title {
   font-style: italic;
-  color: var(--color-text-secondary);
+  color: var(--color-text-tertiary);
   pointer-events: none;
 }
+
+.entry--open .entry__note {
+  color: var(--color-text-tertiary);
+}
+
+.entry__cta {
+  display: inline-block;
+  margin-top: 0.25rem;
+  color: var(--color-text);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
+  transition: color 0.15s ease;
+}
+
+.entry__cta:hover { color: var(--color-text-secondary); }
 
 .subscribe {
   background: var(--color-surface-alt);
@@ -532,9 +552,9 @@ input:focus-visible {
 
 <section class="hero" aria-labelledby="hero-title">
   <div class="container">
-    <div class="hero__kicker">Vol. 01 — Spring 2026</div>
+    <div class="hero__kicker">Vol. 01 · Spring 2026</div>
     <h1 id="hero-title" class="hero__title">The state of a discipline still being named.</h1>
-    <p class="hero__lede">An index of current thinking on technical marketing — the work that sits between engineering, product, and the people who buy and operate the technology being built.</p>
+    <p class="hero__lede">An index of current thinking on technical marketing, the work that sits between engineering, product, and the people who buy and operate the technology being built.</p>
   </div>
 </section>
 
@@ -574,7 +594,7 @@ input:focus-visible {
 
     <p>That's the reason this index exists.</p>
 
-    <p>The phrase "technical marketing" is used in two distinct ways. Some practitioners use it to describe the technical implementation side of digital marketing — tag management, analytics architecture, and the work sometimes called marketing engineering. The Technical Marketing Handbook by Simmer is the strongest free resource in that space. This index covers a different discipline: the technical marketing function inside enterprise software companies, where the work sits between engineering, product, and the people buying complex technical products.</p>
+    <p>The phrase "technical marketing" is used in two distinct ways. Some practitioners use it to describe the technical implementation side of digital marketing, including tag management, analytics architecture, and the work sometimes called marketing engineering. The Technical Marketing Handbook by Simmer is the strongest free resource in that space. This index covers a different discipline: the technical marketing function inside enterprise software companies, where the work sits between engineering, product, and the people buying complex technical products.</p>
 
     <p>Right now, the thinking around technical marketing is scattered across vendor blogs, career guides, analyst commentary, conference talks, and a relatively small number of practitioner essays. Some of it is excellent. Some of it captures only part of the role. Very little of it reflects the full shape of the work or why it has become increasingly important in modern enterprise software.</p>
 
@@ -618,7 +638,7 @@ input:focus-visible {
     <div class="entry__meta">Essay · Nov 2025</div>
     <a href="https://www.bryanfriedman.com/blog/what-is-technical-marketing" class="entry__title" rel="external noopener">So… What Exactly Is Technical Marketing?</a>
     <div class="entry__author">Bryan Friedman</div>
-    <p class="entry__note">Makes the enablement-and-adoption case — the strongest version of the post-PMM framing in current circulation.</p>
+    <p class="entry__note">Makes the enablement-and-adoption case, the strongest version of the post-PMM framing in current circulation.</p>
   </article>
 
   <article class="entry">
@@ -656,13 +676,13 @@ input:focus-visible {
     <div class="entry__meta">Curriculum · Ongoing</div>
     <a href="https://www.reforge.com/programs" class="entry__title" rel="external noopener">Product Marketing Program</a>
     <div class="entry__author">Reforge</div>
-    <p class="entry__note">The course materials are a working snapshot of what venture-backed software companies are screening for in product marketing hires — including the technical-adjacent dimensions of the role. Worth reading as a barometer of where the discipline's hiring expectations are pointed.</p>
+    <p class="entry__note">The course materials are a working snapshot of what venture-backed software companies are screening for in product marketing hires, including the technical-adjacent dimensions of the role. Worth reading as a barometer of where the discipline's hiring expectations are pointed.</p>
   </article>
 
   <article class="entry entry--open">
     <div class="entry__meta">Open · Reaching out</div>
     <div class="entry__title">One slot open for inclusion</div>
-    <p class="entry__note">Looking for the strongest practitioner-written take on career paths and how senior technical marketers describe what they actually screen for in candidates.</p>
+    <p class="entry__note">Looking for the strongest practitioner-written take on career paths and how senior technical marketing leaders describe what they actually screen for in candidates. <a href="/suggest" class="entry__cta">Submissions welcome →</a></p>
   </article>
 </article>
 
@@ -716,7 +736,7 @@ input:focus-visible {
   <article class="entry entry--open">
     <div class="entry__meta">Open · Commissioning</div>
     <div class="entry__title">Two slots open for inclusion</div>
-    <p class="entry__note">Reaching out to practitioners at AWS, Snowflake, Salesforce, and Databricks for original pieces on how the function is structured at their organizations. This section sits underweight deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps.</p>
+    <p class="entry__note">Commissioning original pieces from senior technical marketers and technical product marketing leaders across the major enterprise software categories: hyperscaler, data and analytics, cybersecurity, DevOps and developer tools, AI platforms, and observability. This section sits underweight deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps. <a href="/suggest" class="entry__cta">Submissions welcome →</a></p>
   </article>
 </article>
 

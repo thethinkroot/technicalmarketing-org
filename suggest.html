@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Suggest a piece · Technical Marketing</title>
+<meta name="description" content="Submit a piece for consideration in the next volume of Technical Marketing, an independent quarterly index of current thinking on the technical marketing discipline.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://technicalmarketing.org/suggest">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="Suggest a piece · Technical Marketing">
+<meta property="og:description" content="Submit a piece for consideration in the next volume of Technical Marketing.">
+<meta property="og:url" content="https://technicalmarketing.org/suggest">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing · Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --color-bg: #fafaf7;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f3f1ea;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #5a5a5a;
+  --color-text-tertiary: #8a8a85;
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-strong: rgba(0, 0, 0, 0.18);
+  --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --max-width: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--color-text);
+  color: var(--color-bg);
+  z-index: 100;
+}
+
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.site-header {
+  border-top: 3px solid var(--color-text);
+  border-bottom: 0.5px solid var(--color-border);
+  padding: 1.5rem 0 1.25rem;
+  background: var(--color-bg);
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header__title {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.site-header__meta {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.page-header {
+  padding: 4.5rem 0 2.5rem;
+  text-align: center;
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.page-header__kicker {
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.page-header__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 3.5rem 0 4rem;
+}
+
+.content h2 {
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 2.5rem 0 1rem;
+}
+
+.content h2:first-of-type { margin-top: 0; }
+
+.content p {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  margin-bottom: 1.125rem;
+}
+
+.content p:last-of-type { margin-bottom: 1.75rem; }
+
+.content ul {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+.content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.form {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 0.5px solid var(--color-border-strong);
+}
+
+.form__field {
+  margin-bottom: 1.5rem;
+}
+
+.form__label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 0.75rem 0.875rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  border: 0.5px solid var(--color-border-strong);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-radius: 6px;
+  line-height: 1.5;
+}
+
+.form__textarea {
+  min-height: 140px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.form__help {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+  margin-top: 0.375rem;
+  font-style: italic;
+}
+
+.form__actions {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form__submit {
+  padding: 0.875rem 1.5rem;
+  font-size: 0.9375rem;
+  font-family: inherit;
+  font-weight: 500;
+  background: var(--color-text);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.form__submit:hover { opacity: 0.85; }
+
+.form__disclaimer {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.back-link {
+  display: inline-block;
+  font-size: 0.8125rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-secondary);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  margin-top: 2.5rem;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover { color: var(--color-text); }
+
+.site-footer {
+  padding: 1.5rem 0;
+  border-top: 0.5px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.site-footer__links {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.site-footer__separator {
+  font-size: 0.75rem;
+  color: var(--color-text-tertiary);
+}
+
+.site-footer__link {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease;
+}
+
+.site-footer__link:hover { color: var(--color-text); }
+
+.site-footer__meta {
+  font-size: 0.6875rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+}
+
+@media (max-width: 600px) {
+  .page-header { padding: 3rem 0 2rem; }
+  .content { padding: 2.5rem 0 3rem; }
+  .content p { font-size: 1.0625rem; }
+  .content ul { font-size: 1rem; }
+  .form__actions { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a href="/" class="site-header__title">Technical Marketing</a>
+    <div class="site-header__meta">An independent quarterly</div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-header">
+  <div class="container">
+    <div class="page-header__kicker">Submissions</div>
+    <h1 class="page-header__title">Suggest a piece for the next volume.</h1>
+  </div>
+</section>
+
+<section class="content container">
+  <p>Volume 02 publishes in Q3 2026. Submissions, recommendations, and respectful disagreement are welcome from practitioners, editors, and readers who have found something worth including in the next index.</p>
+
+  <p>Pieces are evaluated on the strength of the argument and the specificity of the perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry, including notes that disagree with what the piece argues.</p>
+
+  <h2>Particularly seeking</h2>
+
+  <ul>
+    <li>Practitioner essays from senior technical marketers, technical product marketers, and solutions marketing leaders inside the major enterprise software categories: hyperscaler and cloud infrastructure, data and analytics platforms, cybersecurity, DevOps and developer tools, AI and ML platforms, workflow and platform software, and observability</li>
+    <li>Sharp framework or methodology pieces that go beyond surface-level definitions of the discipline</li>
+    <li>Named-author analysis of where the field is shifting under AI pressure</li>
+    <li>Historical perspective on how the technical marketing function has evolved across the major enterprise software eras</li>
+    <li>Counter-arguments to currently popular framings of the discipline</li>
+  </ul>
+
+  <p>Especially interested in submissions from practitioners at AWS, Snowflake, ServiceNow, Salesforce, Palo Alto Networks, GitHub, Anthropic, Cloudflare, Datadog, Confluent, MongoDB, HashiCorp, Atlassian, and their peers across these categories.</p>
+
+  <h2>What gets declined</h2>
+
+  <p>Vendor content marketing pieces, generic listicles, AI-generated explainers, and pieces that primarily exist to drive traffic to a commercial offer. The index is curated, not comprehensive. Every entry needs to earn its place by saying something true that isn't being said elsewhere.</p>
+
+  <form class="form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate>
+    <h2 style="margin-top: 0;">Submit a piece</h2>
+
+    <div class="form__field">
+      <label for="name" class="form__label">Your name</label>
+      <input id="name" name="name" type="text" class="form__input" required autocomplete="name">
+    </div>
+
+    <div class="form__field">
+      <label for="email" class="form__label">Your email</label>
+      <input id="email" name="email" type="email" class="form__input" required autocomplete="email">
+    </div>
+
+    <div class="form__field">
+      <label for="affiliation" class="form__label">Your role or affiliation <span style="text-transform: none; letter-spacing: 0; color: var(--color-text-tertiary); font-weight: 400;">(optional)</span></label>
+      <input id="affiliation" name="affiliation" type="text" class="form__input" placeholder="Director of Technical Marketing at &hellip;" autocomplete="organization-title">
+    </div>
+
+    <div class="form__field">
+      <label for="link" class="form__label">Link to the piece</label>
+      <input id="link" name="link" type="url" class="form__input" placeholder="https://" required>
+      <p class="form__help">A URL to the published piece, the author's site, or a draft for proposed original work.</p>
+    </div>
+
+    <div class="form__field">
+      <label for="rationale" class="form__label">Why it should be included</label>
+      <textarea id="rationale" name="rationale" class="form__textarea" required placeholder="What does this piece say that isn't being said elsewhere? Which section would it fit in? Who would benefit from reading it?"></textarea>
+    </div>
+
+    <input type="hidden" name="_subject" value="Technical Marketing Submission">
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+
+    <div class="form__actions">
+      <button type="submit" class="form__submit">Submit for consideration</button>
+      <p class="form__disclaimer">Responses within two weeks.</p>
+    </div>
+  </form>
+
+  <a href="/" class="back-link">← Return to the index</a>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__inner">
+    <div class="site-footer__links">
+      <a href="/about" class="site-footer__link">About</a>
+      <span class="site-footer__separator" aria-hidden="true">·</span>
+      <a href="/suggest" class="site-footer__link">Suggest a piece</a>
+    </div>
+    <div class="site-footer__meta">© 2026 The ThinkRoot LLC · technicalmarketing.org</div>
+  </div>
+</footer>
+
+</body>
+</html>
