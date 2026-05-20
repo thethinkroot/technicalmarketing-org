@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Technical Marketing — A quarterly index of the field's current thinking</title>
-<meta name="description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy it. Updated quarterly.">
+<meta name="description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built. Updated quarterly.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://technicalmarketing.org/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Technical Marketing">
 <meta property="og:title" content="Technical Marketing — A quarterly index">
-<meta property="og:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy it. Updated quarterly.">
+<meta property="og:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built.">
 <meta property="og:url" content="https://technicalmarketing.org/">
 <meta property="og:image" content="https://technicalmarketing.org/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -22,7 +22,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Technical Marketing — A quarterly index">
-<meta name="twitter:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy it.">
+<meta name="twitter:description" content="An index of current thinking on technical marketing — the work between engineering, product, and the people who buy and operate the technology being built.">
 <meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -30,7 +30,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -51,7 +51,7 @@
   "@type": "ItemList",
   "name": "Technical Marketing — Volume 01, Spring 2026",
   "url": "https://technicalmarketing.org/",
-  "numberOfItems": 8,
+  "numberOfItems": 10,
   "itemListOrder": "ItemListOrderAscending"
 }
 </script>
@@ -119,8 +119,9 @@ input:focus-visible {
 .skip-link:focus { left: 1rem; top: 1rem; }
 
 .site-header {
+  border-top: 3px solid var(--color-text);
   border-bottom: 0.5px solid var(--color-border);
-  padding: 1.25rem 0;
+  padding: 1.5rem 0 1.25rem;
   background: var(--color-bg);
 }
 
@@ -133,44 +134,46 @@ input:focus-visible {
 
 .site-header__title {
   font-family: var(--font-serif);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
 
 .site-header__meta {
   font-size: 0.6875rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
+  font-weight: 500;
 }
 
 .hero {
-  padding: 4rem 0 3rem;
+  padding: 4.5rem 0 3rem;
   text-align: center;
   border-bottom: 0.5px solid var(--color-border);
 }
 
 .hero__kicker {
   font-size: 0.625rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
 }
 
 .hero__title {
   font-family: var(--font-serif);
-  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  font-size: clamp(1.875rem, 4.8vw, 2.75rem);
   font-weight: 500;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  max-width: 520px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  max-width: 540px;
   margin: 0 auto 1.5rem;
 }
 
 .hero__lede {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--color-text-secondary);
   max-width: 500px;
@@ -190,45 +193,101 @@ input:focus-visible {
 
 .stat__value {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.625rem;
   font-weight: 500;
   margin-bottom: 0.25rem;
+  letter-spacing: -0.015em;
 }
 
 .stat__label {
   font-size: 0.6875rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3.5rem auto;
+  max-width: 360px;
+  padding: 0 1.5rem;
+}
+
+.divider::before, .divider::after {
+  content: '';
+  flex: 1;
+  height: 0.5px;
+  background: var(--color-border-strong);
+}
+
+.divider__mark {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--color-text-tertiary);
+  padding: 0 1.25rem;
+  letter-spacing: 0.5em;
+  padding-left: 1.75rem;
 }
 
 .editors-note {
-  padding: 3rem 0 2rem;
-  border-bottom: 0.5px solid var(--color-border);
+  padding: 1rem 0 2rem;
 }
 
 .editors-note__label {
   font-size: 0.625rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .editors-note__body p {
   font-family: var(--font-serif);
   font-size: 1.125rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--color-text);
-  margin-bottom: 1rem;
+  margin-bottom: 1.125rem;
 }
 
 .editors-note__body p:last-child {
   margin-bottom: 0;
 }
 
+.editors-note__body p:first-of-type::first-letter {
+  font-family: var(--font-serif);
+  font-size: 3.75em;
+  font-weight: 500;
+  float: left;
+  line-height: 0.85;
+  padding-right: 0.65rem;
+  padding-top: 0.35rem;
+  padding-bottom: 0;
+  color: var(--color-text);
+}
+
+.pullquote {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  text-align: center;
+  margin: 2.5rem auto;
+  padding: 1.75rem 1rem;
+  border-top: 0.5px solid var(--color-border-strong);
+  border-bottom: 0.5px solid var(--color-border-strong);
+  max-width: 560px;
+  font-style: italic;
+}
+
 .index {
-  padding: 3rem 0 1rem;
+  padding: 1rem 0 1rem;
 }
 
 .section {
@@ -238,7 +297,7 @@ input:focus-visible {
 .section__header {
   display: flex;
   align-items: baseline;
-  gap: 1rem;
+  gap: 1.25rem;
   padding-bottom: 1rem;
   margin-bottom: 0.5rem;
   border-bottom: 0.5px solid var(--color-border);
@@ -246,18 +305,19 @@ input:focus-visible {
 
 .section__numeral {
   font-family: var(--font-serif);
-  font-size: 2rem;
+  font-size: 2.125rem;
   font-weight: 500;
   color: var(--color-text-tertiary);
   line-height: 1;
   min-width: 2.5rem;
+  letter-spacing: -0.02em;
 }
 
 .section__title {
   font-family: var(--font-serif);
-  font-size: 1.375rem;
+  font-size: 1.4375rem;
   font-weight: 500;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
   margin-bottom: 0.25rem;
 }
 
@@ -276,10 +336,11 @@ input:focus-visible {
 
 .entry__meta {
   font-size: 0.625rem;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .entry__title {
@@ -308,7 +369,7 @@ input:focus-visible {
   color: var(--color-text-secondary);
 }
 
-.entry--open { opacity: 0.6; }
+.entry--open { opacity: 0.55; }
 
 .entry--open .entry__title {
   font-style: italic;
@@ -318,27 +379,28 @@ input:focus-visible {
 
 .subscribe {
   background: var(--color-surface-alt);
-  padding: 3rem 0;
+  padding: 3.5rem 0;
   text-align: center;
   border-top: 0.5px solid var(--color-border);
 }
 
 .subscribe__kicker {
   font-size: 0.625rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--color-text-tertiary);
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .subscribe__pitch {
   font-family: var(--font-serif);
-  font-size: 1.25rem;
-  line-height: 1.4;
+  font-size: 1.375rem;
+  line-height: 1.35;
   color: var(--color-text);
-  letter-spacing: -0.015em;
-  max-width: 380px;
-  margin: 0 auto 1.5rem;
+  letter-spacing: -0.02em;
+  max-width: 400px;
+  margin: 0 auto 1.75rem;
 }
 
 .subscribe__form {
@@ -380,6 +442,7 @@ input:focus-visible {
   font-size: 0.6875rem;
   color: var(--color-text-tertiary);
   margin-top: 1rem;
+  letter-spacing: 0.02em;
 }
 
 .site-footer {
@@ -415,11 +478,16 @@ input:focus-visible {
 @media (max-width: 600px) {
   .hero { padding: 3rem 0 2.5rem; }
   .stats__inner { gap: 0.75rem; }
-  .stat__value { font-size: 1.25rem; }
-  .editors-note__body p { font-size: 1rem; }
+  .stat__value { font-size: 1.375rem; }
+  .editors-note__body p { font-size: 1.0625rem; }
+  .editors-note__body p:first-of-type::first-letter {
+    font-size: 3.25em;
+  }
+  .pullquote { font-size: 1.25rem; padding: 1.25rem 0.5rem; margin: 2rem auto; }
   .subscribe__form { flex-direction: column; gap: 0.5rem; }
   .section__header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   .section__numeral { font-size: 1.5rem; min-width: auto; }
+  .divider { margin: 2.5rem auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -432,6 +500,9 @@ input:focus-visible {
 @media print {
   .subscribe, .site-footer { display: none; }
   body { background: white; color: black; }
+  .editors-note__body p:first-of-type::first-letter {
+    color: black;
+  }
 }
 </style>
 </head>
@@ -442,7 +513,7 @@ input:focus-visible {
 <header class="site-header">
   <div class="container site-header__inner">
     <div class="site-header__title">Technical Marketing</div>
-    <div class="site-header__meta">A quarterly index</div>
+    <div class="site-header__meta">An independent quarterly</div>
   </div>
 </header>
 
@@ -452,14 +523,14 @@ input:focus-visible {
   <div class="container">
     <div class="hero__kicker">Vol. 01 — Spring 2026</div>
     <h1 id="hero-title" class="hero__title">The state of a discipline still being named.</h1>
-    <p class="hero__lede">An index of current thinking on technical marketing — the work that sits between engineering, product, and the people who buy what they build.</p>
+    <p class="hero__lede">An index of current thinking on technical marketing — the work that sits between engineering, product, and the people who buy and operate the technology being built.</p>
   </div>
 </section>
 
 <section class="stats" aria-label="Index overview">
   <div class="container stats__inner">
     <div class="stat">
-      <div class="stat__value">8</div>
+      <div class="stat__value">10</div>
       <div class="stat__label">Pieces indexed</div>
     </div>
     <div class="stat">
@@ -473,13 +544,44 @@ input:focus-visible {
   </div>
 </section>
 
+<div class="container">
+  <div class="divider" aria-hidden="true">
+    <span class="divider__mark">✦</span>
+  </div>
+</div>
+
 <section class="editors-note container" aria-labelledby="editors-note-title">
-  <div class="editors-note__label" id="editors-note-title">Editor's note</div>
+  <div class="editors-note__label" id="editors-note-title">Editor's Note</div>
   <div class="editors-note__body">
-    <p>Technical marketing is practiced under many names across enterprise software. At AWS it sits inside product marketing. At ServiceNow it operates as technical product marketing. At smaller vendors it blends with developer relations. The variations are real, but they describe one underlying discipline.</p>
-    <p>This index gathers the field's current thinking — definitions, frameworks, career perspectives, and the tensions that will define what the work becomes. New volumes publish quarterly. Suggestions and submissions are welcome.</p>
+    <p>Technical marketing sits between engineering, product, and the people actually buying and operating the technology being built.</p>
+
+    <p>Different companies call it different things. At Amazon Web Services and Snowflake, parts of the function often sit within product marketing. At ServiceNow and Salesforce, it shows up more directly as technical product marketing. At Databricks and smaller infrastructure vendors, it often blends into developer relations, solutions engineering, enablement, and field strategy.</p>
+
+    <p>The titles vary, but the core discipline is recognizable across all of them.</p>
+
+    <blockquote class="pullquote">"The work clearly exists, but the industry still lacks a shared language and framework for defining it."</blockquote>
+
+    <p>That's the reason this index exists.</p>
+
+    <p>Right now, the thinking around technical marketing is scattered across vendor blogs, career guides, analyst commentary, conference talks, and a relatively small number of practitioner essays. Some of it is excellent. Some of it captures only part of the role. Very little of it reflects the full shape of the work or why it has become increasingly important in modern enterprise software.</p>
+
+    <p>Volume 01 is an attempt to start organizing that thinking.</p>
+
+    <p>The entries included here are not meant to be exhaustive. They were selected because each one captures something true about how the discipline is practiced, understood, or evolving today. Editorial notes are included alongside each piece to highlight what it gets right, where it falls short, and how it connects to the broader conversation.</p>
+
+    <p>This index is intentionally curated, not comprehensive. Pieces are included based on the strength of the ideas and specificity of the perspective, not the size of the brand or the popularity of the author.</p>
+
+    <p>The empty spaces are intentional too. There are still major gaps in the published thinking around this field, and part of the goal is to help surface and fill them over time.</p>
+
+    <p>New volumes will publish quarterly. Submissions, recommendations, and thoughtful disagreement are always welcome.</p>
   </div>
 </section>
+
+<div class="container">
+  <div class="divider" aria-hidden="true">
+    <span class="divider__mark">✦</span>
+  </div>
+</div>
 
 <section class="index container" aria-label="The index">
 
@@ -530,10 +632,17 @@ input:focus-visible {
     <p class="entry__note">Worth reading for what hiring managers think the job description should say. Notable for what it omits: demo architecture, analyst relations, competitive intelligence.</p>
   </article>
 
+  <article class="entry">
+    <div class="entry__meta">Curriculum · Ongoing</div>
+    <a href="https://www.reforge.com/programs" class="entry__title" rel="external noopener">Product Marketing Program</a>
+    <div class="entry__author">Reforge</div>
+    <p class="entry__note">The course materials are a working snapshot of what venture-backed software companies are screening for in product marketing hires — including the technical-adjacent dimensions of the role. Worth reading as a barometer of where the discipline's hiring expectations are pointed.</p>
+  </article>
+
   <article class="entry entry--open">
     <div class="entry__meta">Open · Reaching out</div>
-    <div class="entry__title">Two slots open for inclusion</div>
-    <p class="entry__note">Looking for the best practitioner-written take on career paths and the strongest hiring-manager perspective on what to actually screen for.</p>
+    <div class="entry__title">One slot open for inclusion</div>
+    <p class="entry__note">Looking for the strongest practitioner-written take on career paths and how senior technical marketers describe what they actually screen for in candidates.</p>
   </article>
 </article>
 
@@ -551,6 +660,13 @@ input:focus-visible {
     <a href="https://thinkroot.io/scorer" class="entry__title" rel="external noopener">The Demo Coherence Index, v1.1</a>
     <div class="entry__author">Chad Corriveau</div>
     <p class="entry__note">The first published framework for scoring demo coherence across nine validated formats. Required reading whether or not the methodology converges with the rest of the field.</p>
+  </article>
+
+  <article class="entry">
+    <div class="entry__meta">Book · 2019</div>
+    <a href="https://www.aprildunford.com/obviously-awesome" class="entry__title" rel="external noopener">Obviously Awesome</a>
+    <div class="entry__author">April Dunford</div>
+    <p class="entry__note">The canonical positioning text in B2B software. Required reading regardless of whether the function is called product marketing, technical marketing, or technical product marketing. The frameworks here shape how the discipline thinks about category, customer, and the work of differentiation.</p>
   </article>
 
   <article class="entry">
@@ -573,7 +689,7 @@ input:focus-visible {
   <article class="entry entry--open">
     <div class="entry__meta">Open · Commissioning</div>
     <div class="entry__title">Three slots open for inclusion</div>
-    <p class="entry__note">Reaching out to practitioners at AWS, Snowflake, and Databricks for original pieces on how the function is structured at their organizations.</p>
+    <p class="entry__note">Reaching out to practitioners at AWS, Snowflake, Salesforce, and Databricks for original pieces on how the function is structured at their organizations. This section sits empty deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps.</p>
   </article>
 </article>
 
@@ -603,11 +719,17 @@ input:focus-visible {
 
 </section>
 
+<div class="container">
+  <div class="divider" aria-hidden="true">
+    <span class="divider__mark">✦</span>
+  </div>
+</div>
+
 <section class="subscribe" aria-labelledby="subscribe-title">
   <div class="container">
     <div class="subscribe__kicker">Quarterly updates</div>
     <p class="subscribe__pitch" id="subscribe-title">Get the next volume when it publishes.</p>
-    <form class="subscribe__form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+    <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate>
       <label for="email-input" class="visually-hidden" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;">Email address</label>
       <input id="email-input" class="subscribe__input" type="email" name="email" placeholder="Your email" required autocomplete="email">
       <button class="subscribe__button" type="submit">Subscribe</button>
