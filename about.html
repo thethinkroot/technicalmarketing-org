@@ -96,6 +96,15 @@ a:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: -0.01em;
+  transition: color 0.15s ease;
+}
+
+a.site-header__title {
+  cursor: pointer;
+}
+
+a.site-header__title:hover {
+  color: var(--color-text-secondary);
 }
 
 .site-header__meta {
