@@ -88,7 +88,7 @@ a:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .site-header__title {
@@ -107,12 +107,33 @@ a.site-header__title:hover {
   color: var(--color-text-secondary);
 }
 
-.site-header__meta {
-  font-size: 0.6875rem;
-  letter-spacing: 0.18em;
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header__nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.site-header__nav-link:hover {
+  color: var(--color-text);
+}
+
+.site-header__nav-link[aria-current="page"] {
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .site-header__inner { flex-direction: column; align-items: flex-start; gap: 0.875rem; }
+  .site-header__nav { gap: 1.25rem; flex-wrap: wrap; }
+  .site-header__nav-link { font-size: 0.6875rem; }
 }
 
 .page-header {
@@ -265,7 +286,10 @@ a.site-header__title:hover {
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="/" class="site-header__title">Technical Marketing</a>
-    <div class="site-header__meta">An independent quarterly</div>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/what-is-technical-marketing" class="site-header__nav-link">What Is Technical Marketing?</a>
+      <a href="/about" class="site-header__nav-link" aria-current="page">About</a>
+    </nav>
   </div>
 </header>
 
@@ -273,31 +297,37 @@ a.site-header__title:hover {
 
 <section class="page-header">
   <div class="container">
-    <div class="page-header__kicker">Colophon</div>
-    <h1 class="page-header__title">About this index</h1>
+    <div class="page-header__kicker">About</div>
+    <h1 class="page-header__title">For the people who do this work.</h1>
   </div>
 </section>
 
 <section class="content container">
-  <p>Technical Marketing is an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies. The work this publication maps sits between engineering, product, and the people buying complex technical products.</p>
+  <p>technicalmarketing.org is a publication for the people who do this work. The technical marketers operating without a shared reference. The practitioners coming into the field who deserve to find something better than scattered job descriptions and vendor blog posts. The senior people whose hard-won judgment has never been collected anywhere visible.</p>
+
+  <p>The project is to give a fragmented field a working reference and a record it can collectively own. <a href="/what-is-technical-marketing">The foundational reference page</a> is the editorial anchor: what the discipline is, where it sits, how it is distinguished from adjacent roles, and why it is structurally positioned to do well in the AI transition. The quarterly index curates current thinking from across the field, with editorial commentary that names what each piece gets right and where the conversation needs to go next.</p>
+
+  <p>The work is slow on purpose. Defining a discipline that has historically resisted definition takes multiple volumes, multiple contributors, and multiple revisions of foundational pages. The empty spaces in this publication are intentional. They mark the conversations the field still needs to have.</p>
+
+  <h2>Who this serves</h2>
+
+  <p>Three audiences, named directly. Working practitioners who have done this job at scale and want the discipline they have built to be recognizable to the people they work with. Practitioners coming into the role today, including the next generation entering a field that is about to be transformed by AI, who deserve a working definition they can build on rather than invent alone. Senior practitioners and adjacent leaders whose hard-won judgment has not been collected anywhere visible yet.</p>
 
   <h2>Editorial connection</h2>
 
-  <p>The index is edited by Chad Corriveau, founder of <a href="https://thinkroot.io" rel="external noopener">ThinkRoot</a>, an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration.</p>
-
-  <p>This connection is disclosed deliberately. Anyone can verify it by clicking through any of the editor's entries. Better to name it clearly and let the editorial decisions speak for themselves.</p>
+  <p>The publication is edited by Chad Corriveau, founder of <a href="https://thinkroot.io" rel="external noopener">ThinkRoot</a>, an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration. This connection is disclosed deliberately so the editorial decisions can speak for themselves.</p>
 
   <h2>Editorial principles</h2>
 
-  <p>The index is curated, not comprehensive. Pieces are included based on the strength of their argument and the specificity of their perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry to identify what each piece gets right, where it falls short, and how it fits in the broader conversation. Empty spaces are intentional and reflect genuine gaps in the field's published thinking.</p>
+  <p>The publication is curated, not comprehensive. Pieces are included based on the strength of their argument and the specificity of their perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry to identify what each piece gets right, where it falls short, and how it fits in the broader conversation. The publication will represent more voices over time, including ones the editor disagrees with, when those voices sharpen the discipline's working definition.</p>
 
-  <h2>Submissions and recommendations</h2>
+  <h2>Submissions and contributions</h2>
 
-  <p>Submissions, recommendations, and respectful disagreement are welcome. The publication is actively commissioning original pieces from senior practitioners across the major enterprise software categories for future volumes. See the <a href="/suggest">submissions page</a> for current editorial priorities.</p>
+  <p>The publication is actively building its contributor pipeline. Senior practitioners working in technical marketing or adjacent disciplines who want to contribute a piece to a future volume should review the <a href="/suggest">submissions page</a> for current editorial priorities. Original pieces, recommendations of overlooked work, and respectful disagreement with anything published here are all welcome.</p>
 
   <h2>Publication schedule</h2>
 
-  <p>New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026.</p>
+  <p>New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026. The foundational reference page is updated continuously as the discipline's working definition sharpens.</p>
 
   <a href="/" class="back-link">← Return to the index</a>
 </section>

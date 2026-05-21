@@ -90,7 +90,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .site-header__title {
@@ -109,12 +109,29 @@ a.site-header__title:hover {
   color: var(--color-text-secondary);
 }
 
-.site-header__meta {
-  font-size: 0.6875rem;
-  letter-spacing: 0.18em;
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header__nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.site-header__nav-link:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .site-header__inner { flex-direction: column; align-items: flex-start; gap: 0.875rem; }
+  .site-header__nav { gap: 1.25rem; flex-wrap: wrap; }
+  .site-header__nav-link { font-size: 0.6875rem; }
 }
 
 .page-header {
@@ -327,7 +344,10 @@ a.site-header__title:hover {
 <header class="site-header">
   <div class="container site-header__inner">
     <a href="/" class="site-header__title">Technical Marketing</a>
-    <div class="site-header__meta">An independent quarterly</div>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/what-is-technical-marketing" class="site-header__nav-link">What Is Technical Marketing?</a>
+      <a href="/about" class="site-header__nav-link">About</a>
+    </nav>
   </div>
 </header>
 

@@ -129,7 +129,7 @@ input:focus-visible {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .site-header__title {
@@ -137,14 +137,36 @@ input:focus-visible {
   font-size: 1.125rem;
   font-weight: 500;
   letter-spacing: -0.01em;
+  transition: color 0.15s ease;
 }
 
-.site-header__meta {
-  font-size: 0.6875rem;
-  letter-spacing: 0.18em;
+a.site-header__title:hover {
+  color: var(--color-text-secondary);
+}
+
+.site-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.site-header__nav-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--color-text-tertiary);
+  color: var(--color-text-secondary);
   font-weight: 500;
+  transition: color 0.15s ease;
+}
+
+.site-header__nav-link:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 600px) {
+  .site-header__inner { flex-direction: column; align-items: flex-start; gap: 0.875rem; }
+  .site-header__nav { gap: 1.25rem; flex-wrap: wrap; }
+  .site-header__nav-link { font-size: 0.6875rem; }
 }
 
 .hero {
@@ -178,6 +200,116 @@ input:focus-visible {
   color: var(--color-text-secondary);
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* ─── FOUNDATIONAL REFERENCE ANCHOR ─── */
+.anchor {
+  background: var(--color-text);
+  color: var(--color-bg);
+  padding: 4rem 0;
+  border-top: 0.5px solid var(--color-border-strong);
+  border-bottom: 0.5px solid var(--color-border-strong);
+}
+
+.anchor__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+@media (min-width: 820px) {
+  .anchor__inner {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3.5rem;
+  }
+}
+
+.anchor__content {
+  max-width: 480px;
+}
+
+.anchor__kicker {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 247, 0.55);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.anchor__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-bg);
+  margin-bottom: 1.25rem;
+}
+
+.anchor__deck {
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.5vw, 1.1875rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: rgba(250, 250, 247, 0.82);
+  margin-bottom: 2rem;
+  max-width: 42ch;
+}
+
+.anchor__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-bg);
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(250, 250, 247, 0.4);
+  transition: border-color 0.2s ease, gap 0.2s ease;
+}
+
+.anchor__cta:hover {
+  border-bottom-color: var(--color-bg);
+  gap: 0.875rem;
+}
+
+.anchor__cta-arrow {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  transition: transform 0.2s ease;
+}
+
+.anchor__visual {
+  background: var(--color-bg);
+  padding: 1.75rem 1.5rem 1rem;
+  border-radius: 2px;
+}
+
+.anchor__visual svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.anchor__visual-caption {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  margin-top: 0.875rem;
+  padding-top: 0.75rem;
+  border-top: 0.5px solid var(--color-border);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .anchor { padding: 3rem 0; }
+  .anchor__title { margin-bottom: 1rem; }
+  .anchor__deck { margin-bottom: 1.5rem; }
 }
 
 .stats {
@@ -543,8 +675,11 @@ input:focus-visible {
 
 <header class="site-header">
   <div class="container site-header__inner">
-    <div class="site-header__title">Technical Marketing</div>
-    <div class="site-header__meta">An independent quarterly</div>
+    <a href="/" class="site-header__title">Technical Marketing</a>
+    <nav class="site-header__nav" aria-label="Primary">
+      <a href="/what-is-technical-marketing" class="site-header__nav-link">What Is Technical Marketing?</a>
+      <a href="/about" class="site-header__nav-link">About</a>
+    </nav>
   </div>
 </header>
 
@@ -554,7 +689,61 @@ input:focus-visible {
   <div class="container">
     <div class="hero__kicker">Vol. 01 · Spring 2026</div>
     <h1 id="hero-title" class="hero__title">The state of a discipline still being named.</h1>
-    <p class="hero__lede">An index of current thinking on technical marketing, the work that sits between engineering, product, and the people who buy and operate the technology being built.</p>
+    <p class="hero__lede">A working reference for technical marketing as practiced in enterprise software, and a quarterly index of current thinking from the field.</p>
+  </div>
+</section>
+
+<section class="anchor" aria-labelledby="anchor-title">
+  <div class="container anchor__inner">
+    <div class="anchor__content">
+      <div class="anchor__kicker">Foundational Reference</div>
+      <h2 id="anchor-title" class="anchor__title">What Is Technical Marketing?</h2>
+      <p class="anchor__deck">A working definition of the discipline. Where it sits, what distinguishes it from adjacent roles, and why it is structurally positioned to do well in the AI transition.</p>
+      <a href="/what-is-technical-marketing" class="anchor__cta">Read the reference <span class="anchor__cta-arrow" aria-hidden="true">→</span></a>
+    </div>
+    <div class="anchor__visual" aria-hidden="true">
+      <svg viewBox="0 0 360 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Preview of the function matrix from the reference page, showing technical marketing positioned at high technical depth and high commercial orientation.">
+        <!-- Axes -->
+        <line x1="50" y1="40" x2="50" y2="240" stroke="#1a1a1a" stroke-width="0.5" opacity="0.6"/>
+        <line x1="50" y1="240" x2="330" y2="240" stroke="#1a1a1a" stroke-width="0.5" opacity="0.6"/>
+
+        <!-- Y axis label -->
+        <text x="32" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" letter-spacing="1.5" fill="#8a8a85" font-weight="500" transform="rotate(-90, 32, 140)">TECHNICAL DEPTH</text>
+
+        <!-- Y markers -->
+        <text x="44" y="48" text-anchor="end" font-family="Inter, sans-serif" font-size="7" letter-spacing="1" fill="#8a8a85" font-weight="500">HIGH</text>
+        <text x="44" y="244" text-anchor="end" font-family="Inter, sans-serif" font-size="7" letter-spacing="1" fill="#8a8a85" font-weight="500">LOW</text>
+
+        <!-- X axis label -->
+        <text x="190" y="268" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" letter-spacing="1.5" fill="#8a8a85" font-weight="500">COMMERCIAL ORIENTATION</text>
+
+        <!-- X markers -->
+        <text x="50" y="254" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" letter-spacing="1" fill="#8a8a85" font-weight="500">LOW</text>
+        <text x="330" y="254" text-anchor="middle" font-family="Inter, sans-serif" font-size="7" letter-spacing="1" fill="#8a8a85" font-weight="500">HIGH</text>
+
+        <!-- Engineering -->
+        <circle cx="85" cy="75" r="3" fill="#1a1a1a" opacity="0.7"/>
+        <text x="92" y="78" font-family="Inter, sans-serif" font-size="9" fill="#5a5a5a" font-weight="500">Engineering</text>
+
+        <!-- Sales Engineering -->
+        <circle cx="225" cy="90" r="3" fill="#1a1a1a" opacity="0.7"/>
+        <text x="232" y="93" font-family="Inter, sans-serif" font-size="9" fill="#5a5a5a" font-weight="500">Sales Engineering</text>
+
+        <!-- Product Marketing -->
+        <circle cx="265" cy="180" r="3" fill="#1a1a1a" opacity="0.7"/>
+        <text x="259" y="183" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5a5a5a" font-weight="500">Product Marketing</text>
+
+        <!-- Brand -->
+        <circle cx="295" cy="220" r="3" fill="#1a1a1a" opacity="0.7"/>
+        <text x="289" y="223" text-anchor="end" font-family="Inter, sans-serif" font-size="9" fill="#5a5a5a" font-weight="500">Brand</text>
+
+        <!-- Technical Marketing, emphasized -->
+        <circle cx="295" cy="65" r="6" fill="#1a1a1a"/>
+        <circle cx="295" cy="65" r="11" fill="none" stroke="#1a1a1a" stroke-width="0.75" opacity="0.3"/>
+        <text x="287" y="50" text-anchor="end" font-family="Fraunces, serif" font-size="11" fill="#1a1a1a" font-weight="600">Technical Marketing</text>
+      </svg>
+      <div class="anchor__visual-caption">Figure 01 from the reference: the function matrix</div>
+    </div>
   </div>
 </section>
 
@@ -584,29 +773,13 @@ input:focus-visible {
 <section class="editors-note container" aria-labelledby="editors-note-title">
   <div class="editors-note__label" id="editors-note-title">Editor's Note</div>
   <div class="editors-note__body">
-    <p>Technical marketing sits between engineering, product, and the people actually buying and operating the technology being built.</p>
+    <p>This index is for the people who do this work. The technical marketers operating without a shared reference. The practitioners coming into the field who deserve to find something better than scattered job descriptions. The senior people whose hard-won judgment has never been collected anywhere visible.</p>
 
-    <p>Different companies call it different things. At Amazon Web Services and Snowflake, parts of the function often sit within product marketing. At ServiceNow and Salesforce, it shows up more directly as technical product marketing. At Databricks and smaller infrastructure vendors, it often blends into developer relations, solutions engineering, enablement, and field strategy.</p>
+    <p>Volume 01 is a curated starting point. Twelve pieces across five sections that capture how the discipline is currently practiced, understood, and evolving. Editorial notes are included alongside each entry to highlight what the piece gets right, where it falls short, and how it connects to the broader conversation.</p>
 
-    <p>The titles vary, but the core discipline is recognizable across all of them.</p>
+    <blockquote class="pullquote">The work clearly exists, but the industry still lacks a shared language and framework for defining it.</blockquote>
 
-    <blockquote class="pullquote">"The work clearly exists, but the industry still lacks a shared language and framework for defining it."</blockquote>
-
-    <p>That's the reason this index exists.</p>
-
-    <p>The phrase "technical marketing" is used in two distinct ways. Some practitioners use it to describe the technical implementation side of digital marketing, including tag management, analytics architecture, and the work sometimes called marketing engineering. The Technical Marketing Handbook by Simmer is the strongest free resource in that space. This index covers a different discipline: the technical marketing function inside enterprise software companies, where the work sits between engineering, product, and the people buying complex technical products.</p>
-
-    <p>Right now, the thinking around technical marketing is scattered across vendor blogs, career guides, analyst commentary, conference talks, and a relatively small number of practitioner essays. Some of it is excellent. Some of it captures only part of the role. Very little of it reflects the full shape of the work or why it has become increasingly important in modern enterprise software.</p>
-
-    <p>Volume 01 is an attempt to start organizing that thinking.</p>
-
-    <p>The entries included here are not meant to be exhaustive. They were selected because each one captures something true about how the discipline is practiced, understood, or evolving today. Editorial notes are included alongside each piece to highlight what it gets right, where it falls short, and how it connects to the broader conversation.</p>
-
-    <p>This index is intentionally curated, not comprehensive. Pieces are included based on the strength of the ideas and specificity of the perspective, not the size of the brand or the popularity of the author.</p>
-
-    <p>The empty spaces are intentional too. There are still major gaps in the published thinking around this field, and part of the goal is to help surface and fill them over time.</p>
-
-    <p>New volumes will publish quarterly. Submissions, recommendations, and thoughtful disagreement are always welcome.</p>
+    <p>New volumes publish quarterly. The empty spaces in this index are intentional. They mark the conversations the field still needs to have. Submissions and thoughtful disagreement are welcome.</p>
   </div>
 </section>
 
