@@ -38,7 +38,7 @@
   "@type": "Periodical",
   "name": "Technical Marketing",
   "url": "https://technicalmarketing.org/",
-  "description": "A quarterly index of current thinking on technical marketing.",
+  "description": "Editorial essays on technical marketing and a quarterly index of current thinking on the discipline.",
   "issn": null,
   "publishingPrinciples": "https://technicalmarketing.org/about",
   "inLanguage": "en-US"
@@ -51,7 +51,7 @@
   "@type": "ItemList",
   "name": "Technical Marketing · Volume 01, Spring 2026",
   "url": "https://technicalmarketing.org/",
-  "numberOfItems": 13,
+  "numberOfItems": 12,
   "itemListOrder": "ItemListOrderAscending"
 }
 </script>
@@ -667,6 +667,134 @@ a.site-header__title:hover {
     color: black;
   }
 }
+
+/* ─── ESSAYS SECTION ─── */
+.essays {
+  padding: 1.5rem 0 2.5rem;
+  max-width: 980px;
+}
+
+.essays__header {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.essays__kicker {
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.essays__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.625rem, 3.5vw, 2.125rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 0.625rem;
+  max-width: 28ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.essays__lede {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  max-width: 50ch;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.essays__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (min-width: 760px) {
+  .essays__grid { flex-direction: row; gap: 2rem; }
+  .essays__grid .essay-card { flex: 1 1 0; }
+}
+
+.essay-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.75rem 1.75rem;
+  background: var(--color-surface);
+  border: 0.5px solid var(--color-border-strong);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.essay-card:hover {
+  border-color: var(--color-text);
+}
+
+.essay-card__kicker {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.essay-card__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 2.6vw, 1.875rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 0.875rem;
+  color: var(--color-text);
+}
+
+.essay-card__deck {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin-bottom: 1.75rem;
+  flex-grow: 1;
+}
+
+.essay-card__cta {
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-text);
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--color-border-strong);
+  align-self: flex-start;
+  transition: border-color 0.18s ease, gap 0.18s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.essay-card:hover .essay-card__cta {
+  border-bottom-color: var(--color-text);
+  gap: 0.75rem;
+}
+
+.essay-card__cta-arrow {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+}
+
+@media (max-width: 600px) {
+  .essay-card { padding: 1.5rem 1.25rem 1.25rem; }
+  .essays__header { padding-bottom: 1.5rem; margin-bottom: 1.5rem; }
+}
+
 </style>
 </head>
 <body>
@@ -679,6 +807,7 @@ a.site-header__title:hover {
     <nav class="site-header__nav" aria-label="Primary">
       <a href="/what-is-technical-marketing" class="site-header__nav-link">What Is Technical Marketing?</a>
       <a href="/the-technical-marketer" class="site-header__nav-link">The Technical Marketer</a>
+      <a href="/before-the-name" class="site-header__nav-link">Before the Name</a>
       <a href="/about" class="site-header__nav-link">About</a>
     </nav>
   </div>
@@ -690,7 +819,7 @@ a.site-header__title:hover {
   <div class="container">
     <div class="hero__kicker">Vol. 01 · Spring 2026</div>
     <h1 id="hero-title" class="hero__title">The state of a discipline still being named.</h1>
-    <p class="hero__lede">A working reference for technical marketing as practiced in enterprise software, original long-form articles, and a quarterly index of current thinking from the field.</p>
+    <p class="hero__lede">A working reference for technical marketing as practiced in enterprise software, and a quarterly index of current thinking from the field.</p>
   </div>
 </section>
 
@@ -784,6 +913,28 @@ a.site-header__title:hover {
   </div>
 </section>
 
+<section class="essays container" aria-labelledby="essays-title">
+  <header class="essays__header">
+    <div class="essays__kicker">Volume 01 · Essays</div>
+    <h2 id="essays-title" class="essays__title">The discipline written down.</h2>
+    <p class="essays__lede">Two essays published as part of Volume 01. The job description for the role the discipline has named, and the history of the work that existed under twelve titles before the naming.</p>
+  </header>
+  <div class="essays__grid">
+    <a href="/the-technical-marketer" class="essay-card">
+      <div class="essay-card__kicker">Article I · Vol. 01</div>
+      <h3 class="essay-card__title">The Technical Marketer.</h3>
+      <p class="essay-card__deck">A canonical job description. Six workstreams, six measurable outcomes, three compensation bands, variant adaptations for platform, infrastructure, and PLG companies, and a copyable text for use in real hiring.</p>
+      <span class="essay-card__cta">Read Article I <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+    </a>
+    <a href="/before-the-name" class="essay-card">
+      <div class="essay-card__kicker">Article II · Vol. 01</div>
+      <h3 class="essay-card__title">Before the Name.</h3>
+      <p class="essay-card__deck">A history of the technical marketing function. Six decades of the work being performed under twelve different titles, traced through primary and authoritative secondary sources from 1934 through 2024.</p>
+      <span class="essay-card__cta">Read Article II <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+    </a>
+  </div>
+</section>
+
 <div class="container">
   <div class="divider" aria-hidden="true">
     <span class="divider__mark">✦</span>
@@ -791,23 +942,6 @@ a.site-header__title:hover {
 </div>
 
 <section class="index container" aria-label="The index">
-
-<article class="section" aria-labelledby="section-articles">
-  <header class="section__header">
-    <div class="section__numeral" aria-hidden="true">§</div>
-    <div>
-      <h2 id="section-articles" class="section__title">Articles</h2>
-      <p class="section__description">Original long-form from the publication.</p>
-    </div>
-  </header>
-
-  <article class="entry">
-    <div class="entry__meta">Article I · May 2026</div>
-    <a href="/the-technical-marketer" class="entry__title">The Technical Marketer</a>
-    <div class="entry__author">Chad Corriveau · Editor</div>
-    <p class="entry__note">A canonical job description for senior Technical Marketing roles. Six workstreams, six measurable outcomes, three compensation bands, variant adaptations for platform, infrastructure, and PLG companies, and a copyable text for use in real hiring.</p>
-  </article>
-</article>
 
 <article class="section" aria-labelledby="section-1">
   <header class="section__header">
