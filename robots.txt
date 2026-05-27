@@ -4,3 +4,8 @@ Disallow: /admin/
 Disallow: /api/
 
 Sitemap: https://technicalmarketing.org/sitemap.xml
+
+User-agent: *
+Disallow: /manual/
+Disallow: /manual/*
+

@@ -1,0 +1,1777 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Technical Marketing — Manual of Style and Standards. Vol. I · Anno MMXXVI</title>
+<meta name="description" content="The canonical reference for Technical Marketing. Editorial voice, house style, visual system, page architecture, and production standards. First Printing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ─────────────────────────────────────────────────────────────
+   TECHNICAL MARKETING — Manual of Style and Standards
+   Single-file folio. No JavaScript. Five colors. Three faces.
+   Print logic on a web surface.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --paper:        #F4EFE0;
+  --ink:          #1A1A1A;
+  --library-red:  #9C2F2F;
+  --butter:       #F0D560;
+  --hairline:     #A8A296;
+
+  --font-display: "Roboto Slab", "Georgia", serif;
+  --font-editorial: "Fraunces", "Georgia", serif;
+  --font-furniture: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --measure: 64ch;
+  --gutter: clamp(1.25rem, 3vw, 2.5rem);
+  --folio-pad: clamp(1.5rem, 4vw, 4rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: 18px;
+  line-height: 1.55;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+  font-feature-settings: "kern", "liga", "calt", "onum", "pnum";
+  hanging-punctuation: first allow-end last;
+}
+
+::selection { background: var(--butter); color: var(--ink); }
+
+/* ─── Folio: a page within the manual ─────────────────────── */
+
+.folio {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: clamp(3rem, 7vw, 5.5rem) var(--folio-pad);
+  border-bottom: 1px solid var(--hairline);
+}
+.folio:last-of-type { border-bottom: none; }
+
+/* Corner registration marks — render on every folio */
+.folio::before,
+.folio::after,
+.folio > .reg-bl,
+.folio > .reg-br {
+  content: "";
+  position: absolute;
+  width: 24px; height: 24px;
+  pointer-events: none;
+}
+.folio::before {
+  top: var(--folio-pad); left: var(--folio-pad);
+  border-top: 0.5px solid var(--hairline);
+  border-left: 0.5px solid var(--hairline);
+}
+.folio::after {
+  top: var(--folio-pad); right: var(--folio-pad);
+  border-top: 0.5px solid var(--hairline);
+  border-right: 0.5px solid var(--hairline);
+}
+.folio > .reg-bl {
+  bottom: var(--folio-pad); left: var(--folio-pad);
+  border-bottom: 0.5px solid var(--hairline);
+  border-left: 0.5px solid var(--hairline);
+}
+.folio > .reg-br {
+  bottom: var(--folio-pad); right: var(--folio-pad);
+  border-bottom: 0.5px solid var(--hairline);
+  border-right: 0.5px solid var(--hairline);
+}
+
+/* ─── Masthead furniture ──────────────────────────────────── */
+
+.furniture {
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+  color: var(--ink);
+}
+
+.furniture-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+}
+
+.rule {
+  border: none;
+  border-top: 0.5px solid var(--ink);
+  margin: 0.5rem 0;
+}
+.rule--hair { border-top-color: var(--hairline); }
+.rule--paired + .rule--paired { margin-top: 0.35rem; }
+
+/* ─── Masthead (cover only) ───────────────────────────────── */
+
+.masthead {
+  text-align: center;
+  margin: 2.5rem 0 1.5rem;
+}
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  letter-spacing: 0.01em;
+  line-height: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+}
+.tagline {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  margin: 0.85rem 0 0;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+/* ─── Cover composition ──────────────────────────────────── */
+
+.cover-block {
+  text-align: center;
+  margin: 4rem auto 3rem;
+  max-width: 36rem;
+}
+
+/* ─── Kickers, headlines, decks ──────────────────────────── */
+
+.kicker {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  margin: 0 0 1.25rem;
+  display: block;
+}
+.kicker--folio {
+  color: var(--library-red);
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.005em;
+  margin: 0 0 1.25rem;
+}
+
+.secondary {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(1.25rem, 2.4vw, 1.65rem);
+  line-height: 1.3;
+  margin: 0 0 1rem;
+  color: var(--ink);
+}
+
+.deck {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--ink);
+  margin: 0 auto;
+  max-width: 38rem;
+  text-wrap: balance;
+}
+
+/* ─── Body prose ──────────────────────────────────────────── */
+
+.prose {
+  max-width: var(--measure);
+  margin: 0 auto;
+  font-family: var(--font-editorial);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+.prose p { margin: 0 0 1.1em; }
+.prose p + p { text-indent: 1.25em; }
+.prose p.lead { font-size: 1.18rem; line-height: 1.5; }
+.prose p.lead, .prose p.lead + p { text-indent: 0; }
+
+.prose em, .prose i { font-style: italic; }
+.prose strong { font-weight: 600; }
+
+.prose blockquote {
+  margin: 1.5rem 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 2px solid var(--library-red);
+  font-style: italic;
+  font-size: 1.12rem;
+  color: var(--ink);
+}
+
+.prose sup {
+  font-family: var(--font-furniture);
+  font-size: 0.65em;
+  font-weight: 500;
+  color: var(--library-red);
+  vertical-align: super;
+  line-height: 0;
+}
+
+/* ─── Section heads inside folios ────────────────────────── */
+
+.section-head {
+  text-align: center;
+  margin: 2.5rem auto 1.75rem;
+  max-width: 40rem;
+}
+.section-head .display { font-size: clamp(1.7rem, 4vw, 2.6rem); }
+.section-head--inline {
+  text-align: left;
+  margin: 3rem 0 1.5rem;
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ─── Taxonomic label / answer pattern ───────────────────── */
+
+.taxo {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  margin: 0 0 0.35rem;
+}
+.taxo-answer {
+  font-family: var(--font-editorial);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.35rem;
+  margin: 0 0 1.5rem;
+}
+
+/* ─── Yellow highlight swipe ─────────────────────────────── */
+
+.swipe {
+  background: linear-gradient(transparent 0 18%, rgba(240, 213, 96, 0.55) 18% 88%, transparent 88%);
+  padding: 0 0.06em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* ─── Red diamond ─────────────────────────────────────────── */
+
+.diamond {
+  display: inline-block;
+  width: 8px; height: 8px;
+  background: var(--library-red);
+  transform: rotate(45deg);
+  vertical-align: middle;
+  margin: 0 0.5em;
+}
+.diamond--lg { width: 14px; height: 14px; }
+.diamond--ink { background: var(--ink); }
+
+/* ─── Folio footer ────────────────────────────────────────── */
+
+.folio-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 0.5px solid var(--hairline);
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+}
+.folio-foot .folio-num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  font-variant-caps: normal;
+}
+
+/* ─── Principles list ─────────────────────────────────────── */
+
+.principles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: principle;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.principles li {
+  display: grid;
+  grid-template-columns: 3.5rem 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+  border-top: 0.5px solid var(--hairline);
+  counter-increment: principle;
+}
+.principles li:last-child { border-bottom: 0.5px solid var(--hairline); }
+.principles li::before {
+  content: counter(principle, upper-roman) ".";
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  color: var(--library-red);
+  padding-top: 0.15rem;
+}
+.principles .title {
+  font-family: var(--font-editorial);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem;
+}
+.principles .body-text {
+  font-family: var(--font-editorial);
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ─── Mission tower (three lengths) ──────────────────────── */
+
+.mission-tower {
+  display: grid;
+  gap: 2rem;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.mission {
+  padding: 1.5rem 1.75rem;
+  border: 0.5px solid var(--hairline);
+  background: transparent;
+  position: relative;
+}
+.mission .taxo { margin-bottom: 0.5rem; }
+.mission-text {
+  font-family: var(--font-editorial);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+}
+.mission--six .mission-text {
+  font-style: italic;
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+/* ─── Diction grid ────────────────────────────────────────── */
+
+.diction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .diction { grid-template-columns: 1fr; }
+}
+.diction-col h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  margin: 0 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid var(--hairline);
+}
+.diction-col--banned h4 { color: var(--ink); }
+.diction-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.diction-col li {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 0.5px dotted rgba(168, 162, 150, 0.5);
+}
+.diction-col li:last-child { border-bottom: none; }
+.diction-col--banned li {
+  text-decoration: line-through;
+  text-decoration-color: var(--library-red);
+  text-decoration-thickness: 1px;
+  color: rgba(26, 26, 26, 0.55);
+}
+
+/* ─── Palette swatches ────────────────────────────────────── */
+
+.palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .palette { grid-template-columns: repeat(2, 1fr); }
+}
+.swatch {
+  display: flex;
+  flex-direction: column;
+}
+.swatch-chip {
+  height: 10rem;
+  border: 0.5px solid var(--hairline);
+  position: relative;
+}
+.swatch-chip--paper { background: var(--paper); }
+.swatch-chip--ink { background: var(--ink); }
+.swatch-chip--red { background: var(--library-red); }
+.swatch-chip--butter { background: var(--butter); }
+.swatch-chip--gray { background: var(--hairline); }
+
+.swatch-meta {
+  padding: 0.85rem 0.25rem 0;
+}
+.swatch-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 0.25rem;
+}
+.swatch-hex {
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+}
+.swatch-use {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: var(--ink);
+  margin: 0;
+}
+
+/* ─── Type specimens ──────────────────────────────────────── */
+
+.specimens {
+  display: grid;
+  gap: 2.5rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+.specimen {
+  border-top: 0.5px solid var(--hairline);
+  padding-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 12rem 1fr;
+  gap: 2rem;
+}
+@media (max-width: 720px) {
+  .specimen { grid-template-columns: 1fr; gap: 1rem; }
+}
+.specimen-meta .taxo { margin-bottom: 0.5rem; }
+.specimen-name {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem;
+}
+.specimen-credit {
+  font-family: var(--font-furniture);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  font-variant-caps: all-small-caps;
+  color: var(--ink);
+  margin: 0 0 0.5rem;
+  opacity: 0.7;
+}
+.specimen-role {
+  font-family: var(--font-editorial);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--ink);
+  margin: 0;
+}
+
+.specimen-show--slab {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: 0.005em;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+.specimen-show--fraunces {
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.1;
+  font-style: italic;
+}
+.specimen-show--fraunces .romansample {
+  display: block;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.55;
+  margin-top: 0.85rem;
+  font-weight: 400;
+}
+.specimen-show--inter {
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+}
+.specimen-show--inter .big {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ─── Hierarchy table ─────────────────────────────────────── */
+
+.hierarchy {
+  max-width: 56rem;
+  margin: 2.5rem auto 0;
+  font-family: var(--font-editorial);
+  font-size: 0.95rem;
+}
+.hierarchy table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 0.5px solid var(--hairline);
+  border-bottom: 0.5px solid var(--hairline);
+}
+.hierarchy th, .hierarchy td {
+  padding: 0.6rem 0.5rem;
+  text-align: left;
+  border-bottom: 0.5px dotted rgba(168, 162, 150, 0.5);
+  font-size: 0.92rem;
+  font-style: italic;
+  vertical-align: top;
+}
+.hierarchy th {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  font-style: normal;
+  border-bottom: 0.5px solid var(--hairline);
+}
+.hierarchy tr:last-child td { border-bottom: none; }
+
+/* ─── Marks library ───────────────────────────────────────── */
+
+.marks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+@media (max-width: 720px) {
+  .marks { grid-template-columns: repeat(2, 1fr); }
+}
+.mark {
+  border: 0.5px solid var(--hairline);
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+  position: relative;
+  min-height: 14rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mark-display {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.mark-display svg { display: block; }
+.mark-meta {
+  padding-top: 0.75rem;
+  border-top: 0.5px solid var(--hairline);
+}
+.mark-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  margin: 0 0 0.35rem;
+}
+.mark-use {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ─── Sample blocks (footnotes, cross-refs, lists) ──────── */
+
+.sample {
+  max-width: var(--measure);
+  margin: 2rem auto;
+  padding: 1.75rem 2rem;
+  border: 0.5px dashed var(--hairline);
+  position: relative;
+}
+.sample::before {
+  content: "Specimen.";
+  position: absolute;
+  top: -0.6rem; left: 1rem;
+  background: var(--paper);
+  padding: 0 0.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--library-red);
+}
+.sample p:last-child { margin-bottom: 0; }
+
+.crossref {
+  font-style: italic;
+  color: var(--library-red);
+}
+
+.footnote-line {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  padding-top: 0.75rem;
+  border-top: 0.5px solid var(--hairline);
+  margin-top: 1.5rem;
+  color: var(--ink);
+}
+.footnote-line .num {
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  color: var(--library-red);
+  margin-right: 0.35em;
+}
+
+.house-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.house-list li { display: inline; }
+.house-list li::after { content: ". "; }
+.house-list li:last-child::after { content: "."; }
+
+/* ─── Contents folio ──────────────────────────────────────── */
+
+.contents-list {
+  list-style: none;
+  padding: 0;
+  max-width: 34rem;
+  margin: 2rem auto 0;
+}
+.contents-list li {
+  border-bottom: 0.5px solid var(--hairline);
+}
+.contents-list li:first-child {
+  border-top: 0.5px solid var(--hairline);
+}
+.contents-list a {
+  display: flex;
+  align-items: baseline;
+  padding: 0.55rem 0;
+  text-decoration: none;
+  color: var(--ink);
+}
+.contents-list .num {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--library-red);
+  min-width: 3.75rem;
+  text-align: right;
+  padding-right: 0.9rem;
+  flex-shrink: 0;
+}
+.contents-list .title {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 1.08rem;
+  flex-shrink: 0;
+}
+.contents-list .leader {
+  flex: 1;
+  border-bottom: 1px dotted var(--hairline);
+  margin: 0 0.5rem 0.34em;
+  min-width: 0.5rem;
+  align-self: baseline;
+}
+.contents-list .folio-ref {
+  font-family: var(--font-furniture);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  font-variant-caps: all-small-caps;
+  color: var(--ink);
+  opacity: 0.65;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.contents-list a:hover .title {
+  color: var(--library-red);
+}
+.contents-list a:hover .leader {
+  border-bottom-color: var(--library-red);
+}
+
+/* ─── Checklist ───────────────────────────────────────────── */
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  max-width: 44rem;
+  margin: 0 auto;
+  counter-reset: check;
+}
+.checklist li {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 0.5px solid var(--hairline);
+  counter-increment: check;
+}
+.checklist li::before {
+  content: counter(check, decimal-leading-zero);
+  font-family: var(--font-furniture);
+  font-weight: 500;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--library-red);
+  padding-top: 0.15rem;
+}
+.checklist .check-title {
+  font-family: var(--font-editorial);
+  font-weight: 600;
+  font-size: 1.02rem;
+  margin: 0 0 0.15rem;
+}
+.checklist .check-body {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--ink);
+}
+
+/* ─── Distribution surfaces ───────────────────────────────── */
+
+.surfaces {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 56rem;
+  margin: 0 auto;
+}
+@media (max-width: 640px) {
+  .surfaces { grid-template-columns: 1fr; }
+}
+.surface {
+  padding: 1.5rem;
+  border: 0.5px solid var(--hairline);
+}
+.surface h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--library-red);
+  margin: 0 0 0.75rem;
+}
+.surface p {
+  font-family: var(--font-editorial);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 0.75rem;
+}
+.surface p:last-child { margin-bottom: 0; }
+.surface dl {
+  margin: 0.5rem 0 0;
+  font-family: var(--font-editorial);
+  font-size: 0.88rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.85rem;
+}
+.surface dt {
+  font-style: italic;
+  color: var(--ink);
+  opacity: 0.7;
+}
+.surface dd { margin: 0; font-weight: 500; }
+
+/* ─── Closing colophon ───────────────────────────────────── */
+
+.colophon {
+  max-width: 36rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.colophon p {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem;
+}
+.colophon .end-mark {
+  text-align: center;
+  margin: 2.5rem 0 0;
+}
+.colophon .end-mark .diamond {
+  width: 12px; height: 12px;
+}
+
+/* ─── Print rules ─────────────────────────────────────────── */
+
+@media print {
+  html, body { background: var(--paper); }
+  .folio { page-break-after: always; max-width: none; padding: 1in 1in; }
+  .folio:last-of-type { page-break-after: auto; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO I — COVER
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="cover">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>First Edition · ISSN 0000-0001</span>
+    <span>Anno MMXXVI · Manual N°<span style="font-variant-numeric: lining-nums;">I</span></span>
+  </div>
+  <hr class="rule rule--paired">
+  <hr class="rule rule--paired">
+
+  <header class="masthead">
+    <h1 class="wordmark">Technical Marketing</h1>
+    <p class="tagline">A field manual for the <span class="swipe">discipline.</span></p>
+  </header>
+
+  <hr class="rule rule--paired">
+  <hr class="rule rule--paired">
+
+  <div class="cover-block">
+    <span class="kicker">The Manual.</span>
+    <h2 class="display">Of Style. And Standards.</h2>
+    <p class="secondary">Vol.&nbsp;I · Anno MMXXVI · First Printing.</p>
+    <p class="deck">The canonical reference for what this publication sounds like, looks like, and refuses to do. Every editorial decision, whether made by a human editor, a contributor, or an AI assistant, is tested against this manual before publication.</p>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio I</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO II — CONTENTS
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="contents">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio II · Contents</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Folio II.</span>
+    <h2 class="display">Contents.</h2>
+    <p class="deck">Eight sections. One canonical reference. Read in order, or consulted in the moment.</p>
+  </div>
+
+  <ol class="contents-list">
+    <li><a href="#principles"><span class="num">I.</span><span class="title">Principles.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio III</span></a></li>
+    <li><a href="#identity"><span class="num">II.</span><span class="title">Identity and Mission.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio IV</span></a></li>
+    <li><a href="#voice"><span class="num">III.</span><span class="title">Editorial Voice.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio V</span></a></li>
+    <li><a href="#visual"><span class="num">IV.</span><span class="title">Visual System.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio VI</span></a></li>
+    <li><a href="#architecture"><span class="num">V.</span><span class="title">Page Architecture.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio VII</span></a></li>
+    <li><a href="#production"><span class="num">VI.</span><span class="title">Production Standards.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio VIII</span></a></li>
+    <li><a href="#distribution"><span class="num">VII.</span><span class="title">Distribution Conventions.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio IX</span></a></li>
+    <li><a href="#colophon"><span class="num">VIII.</span><span class="title">Colophon.</span><span class="leader" aria-hidden="true"></span><span class="folio-ref">Folio X</span></a></li>
+  </ol>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio II</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO III — PRINCIPLES
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="principles">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio III · Principles</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section I.</span>
+    <h2 class="display">Principles.</h2>
+    <p class="deck">Ten principles, in this order. When two principles conflict, the higher one governs. These are not for display. They are tests, asked before publication.</p>
+  </div>
+
+  <ol class="principles">
+    <li>
+      <div>
+        <p class="title">Truth before charm.</p>
+        <p class="body-text">The work is judged by whether it is correct, not whether it is clever.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Restraint over decoration.</p>
+        <p class="body-text">Every element earns its place. If a sentence, a rule, a color, or a diagram is not necessary, it is cut.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Citation over assertion.</p>
+        <p class="body-text">Claims made in the publication are sourced. Where a claim cannot be sourced, the claim is qualified or removed.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Specificity over generality.</p>
+        <p class="body-text">Named companies, named roles, named years. <em>&ldquo;At Red Hat in 2020&rdquo;</em> rather than <em>&ldquo;at a major enterprise software company in the early 2020s.&rdquo;</em></p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Independence over alignment.</p>
+        <p class="body-text">The publication is editorially independent. No vendor, employer, or advisor shapes the index or the essays.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Print logic on a web surface.</p>
+        <p class="body-text">Decisions are made as if for a printed quarterly. Web affordances exist only where they serve the reader.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Practitioner-direct, not academic-distant.</p>
+        <p class="body-text">The publication is written for the people doing the work. Academic register is permitted; academic posturing is not.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">The work, not the hype.</p>
+        <p class="body-text">The discipline is the subject. Movements, trends, and personalities are subordinate to the work itself.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">Trust earned in detail.</p>
+        <p class="body-text">A reader&rsquo;s confidence is built by accumulated small correctness&mdash;accurate dates, real footnotes, correct numerals, defensible claims.</p>
+      </div>
+    </li>
+    <li>
+      <div>
+        <p class="title">The discipline before the publication.</p>
+        <p class="body-text"><em>Technical Marketing</em> exists to serve the discipline. When the publication&rsquo;s interests diverge from the discipline's, the discipline wins.</p>
+      </div>
+    </li>
+  </ol>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio III</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO IV — IDENTITY AND MISSION
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="identity">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio IV · Identity</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section II.</span>
+    <h2 class="display">Identity and Mission.</h2>
+    <p class="deck">The name, the tagline, the mission at three lengths, the trust thesis. What does not appear, by design: AI, the inflection, the founder, ThinkRoot, the year. Missions outlast moments.</p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Name.</p>
+    <p class="taxo-answer">Technical Marketing.</p>
+    <div class="prose">
+      <p>Always two words, both capitalized, italicized when referenced as a publication title in running prose. The article <em>the</em> is permitted before the name in body prose (<em>&ldquo;The Technical Marketer, published in Technical Marketing&rsquo;s first volume&hellip;&rdquo;</em>) but never appears in the masthead.</p>
+      <p>The URL is <em>technicalmarketing.org</em>. Lowercase in body prose. Small caps in the masthead and OG assets.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Tagline.</p>
+    <p class="taxo-answer" style="font-style:italic;">A field manual for the <span class="swipe">discipline.</span></p>
+    <div class="prose">
+      <p>Locked. Six words. It appears on the masthead of every page, on the OG image, in the LinkedIn header, in the email footer, and in any context where the publication needs to identify itself in six words.</p>
+      <p>It is not <em>&ldquo;A field manual for technical marketing&rdquo;</em> (the discipline is implicit). It is not <em>&ldquo;The field manual&hellip;&rdquo;</em> (the indefinite article is correct&mdash;the publication does not claim to be the only one). It is not adapted for other registers.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Mission. Three Lengths.</p>
+  </div>
+
+  <div class="mission-tower">
+    <div class="mission mission--six">
+      <p class="taxo">Six words. Tagline. Masthead use.</p>
+      <p class="mission-text">A field manual for the discipline.</p>
+    </div>
+    <div class="mission">
+      <p class="taxo">Twenty-two words. One-sentence positioning.</p>
+      <p class="mission-text"><em>Technical Marketing</em> is the field manual for a discipline practiced for decades before it had a name. Published quarterly, independently edited.</p>
+    </div>
+    <div class="mission">
+      <p class="taxo">Fifty-three words. Mission paragraph.</p>
+      <p class="mission-text"><em>Technical Marketing</em> is the field manual for a discipline practiced for decades before it had a name. The publication exists for the people doing the work&mdash;the technical marketers, sales engineers, and product specialists who build the evidence layer that supports a complex sale. Published quarterly. Independently edited.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Trust Thesis.</p>
+    <div class="prose">
+      <p class="lead"><em>Technical Marketing</em> exists because the discipline has no canonical reference. Practitioners operate without a shared body of practice. New entrants arrive with no place to learn what good looks like. Senior people's hard-won judgment is uncollected.</p>
+      <p>The publication&rsquo;s job is to become the trust source&mdash;the reference that practitioners, hiring managers, analysts, and adjacent disciplines treat as authoritative because it has earned that position through accumulated correctness.</p>
+      <blockquote>Would the trust source publish this? Would the trust source make this claim? Would the trust source use this word?</blockquote>
+    </div>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio IV</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO V — EDITORIAL VOICE
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="voice">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio V · Voice</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section III.</span>
+    <h2 class="display">Editorial Voice.</h2>
+    <p class="deck">Field manual register, with explanatory-journalism vocabulary. Institutional-artisanal: the voice of a discipline writing for its own practitioners with the seriousness of a real reference and the directness of a working document.</p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Reference Set.</p>
+    <div class="prose">
+      <p>The five lineages the publication draws from. Read them. Their cadence is what the publication is reaching for.</p>
+    </div>
+  </div>
+
+  <div class="prose">
+    <ul style="list-style:none; padding:0; margin:0;">
+      <li style="padding: 0.6rem 0; border-bottom: 0.5px solid var(--hairline);"><strong style="font-weight:600;">WPA Federal Writers' Project, <em>American Guide Series</em> <span style="color:var(--ink); opacity:0.6;">(1935–43).</span></strong> For the practitioner-direct register and the cream-paper convention.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 0.5px solid var(--hairline);"><strong style="font-weight:600;"><em>Whole Earth Catalog</em> <span style="color:var(--ink); opacity:0.6;">(1968–98).</span></strong> For the catalog logic and the field-manual posture.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 0.5px solid var(--hairline);"><strong style="font-weight:600;">Edward Tufte&rsquo;s books.</strong> For footnoting density and cross-reference convention.</li>
+      <li style="padding: 0.6rem 0; border-bottom: 0.5px solid var(--hairline);"><strong style="font-weight:600;">Coudal&rsquo;s <em>Field Notes</em>.</strong> For contemporary American craftsman extension of the lineage.</li>
+      <li style="padding: 0.6rem 0;"><strong style="font-weight:600;">Vox&rsquo;s explainer journalism.</strong> For the definitional-term vocabulary&mdash;yellow highlight, footnoted source.</li>
+    </ul>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Voice Rules.</p>
+    <div class="prose">
+      <p><strong style="font-weight:600;">Sentences are declarative.</strong> No hedges&mdash;<em>perhaps, might, arguably, it could be said</em>&mdash;unless making an explicit epistemic claim. <em>&ldquo;The role exists at every major enterprise software company&rdquo;</em> is correct. <em>&ldquo;The role can perhaps be said to exist at most enterprise software companies&rdquo;</em> is wrong.</p>
+      <p><strong style="font-weight:600;">Short sentences carry the argument.</strong> One controlled longer sentence per paragraph provides rhythm. A paragraph of five short declaratives followed by one long architectural sentence is the canonical shape.</p>
+      <p><strong style="font-weight:600;">Periods on every title, kicker, deck, label, and headline.</strong> <em>Wanted. Old Work. Director or VP. Engineering proper.</em> Once committed, commit fully. House rule. Not negotiated per-piece.</p>
+      <p><strong style="font-weight:600;">Latin numerals for years and folios.</strong> Always MMXXVI, never 2026, when the numeral appears in editorial furniture. Arabic numerals for years in body prose.</p>
+      <p><strong style="font-weight:600;">Real footnotes with real sources.</strong> Superscript numeral in body. Citation at foot of folio. No fake citations, no <em>"studies show,"</em> no unsourced claims that read as factual.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Diction.</p>
+    <div class="prose"><p>The working lexicon and the banned vocabulary. When in doubt: would a federal field manual from 1942 use this word? If yes, it's safe. If no, it's not.</p></div>
+  </div>
+
+  <div class="diction">
+    <div class="diction-col">
+      <h4>In Register.</h4>
+      <ul>
+        <li>the discipline</li>
+        <li>practitioners</li>
+        <li>the role</li>
+        <li>the work</li>
+        <li>the evaluation</li>
+        <li>the demo</li>
+        <li>the proof of concept</li>
+        <li>the analyst briefing</li>
+        <li>the judgment</li>
+        <li>the field</li>
+        <li>the buying committee</li>
+        <li>the technical evaluation</li>
+        <li>the displacement deal</li>
+      </ul>
+    </div>
+    <div class="diction-col diction-col--banned">
+      <h4>Banned Outright.</h4>
+      <ul>
+        <li>leverage</li>
+        <li>drive</li>
+        <li>optimize</li>
+        <li>supercharge</li>
+        <li>unlock</li>
+        <li>unleash</li>
+        <li>harness</li>
+        <li>best practices</li>
+        <li>mindshare</li>
+        <li>top-of-funnel</li>
+        <li>synergize</li>
+        <li>ideate</li>
+        <li>action (as verb)</li>
+        <li>game-changer</li>
+        <li>paradigm shift</li>
+        <li>next-level</li>
+        <li>world-class</li>
+        <li>cutting-edge</li>
+        <li>guys, folks, dudes</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">House Style. The Signature.</p>
+    <div class="prose">
+      <p>When list items are short and parallel, render them with periods, not commas or semicolons. This is the closest thing the publication has to a true house signature. It must be preserved.</p>
+    </div>
+  </div>
+
+  <div class="sample">
+    <ul class="house-list">
+      <li>Product Management</li>
+      <li>Product Marketing</li>
+      <li>Sales Engineering</li>
+    </ul>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Punctuation. Numerals. Casing.</p>
+    <div class="prose">
+      <p><strong style="font-weight:600;">Curly quotation marks</strong> (&ldquo; &rdquo;), never straight. <strong style="font-weight:600;">Curly apostrophes</strong> (&rsquo;), never straight. <strong style="font-weight:600;">Em dashes unspaced</strong> (—), never spaced or doubled. <strong style="font-weight:600;">Ellipses</strong> use the single Unicode character (…), never three periods. <strong style="font-weight:600;">Oxford comma always.</strong></p>
+      <p><strong style="font-weight:600;">Spell out one through nine</strong> in body prose. Numerals for ten and above. Numerals always for dates, years, percentages, dollar amounts, measurements, page references.</p>
+      <p><strong style="font-weight:600;">Sentence case</strong> for headlines and decks. Title case for the publication name. <strong style="font-weight:600;">Small caps</strong> for masthead URL and ISSN furniture&mdash;true small caps via <span style="font-family:var(--font-furniture); font-size:0.9em;">font-variant-caps</span>, never CSS uppercase. <strong style="font-weight:600;">ALL CAPS</strong> reserved for taxonomic labels and the slab masthead.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Specimen. Footnote and Cross-Reference.</p>
+  </div>
+
+  <div class="sample">
+    <p>The role exists at every major enterprise software company. CrowdStrike calls it Senior Technical Marketing Manager.<sup>1</sup> ServiceNow calls it Senior Manager of Technical Product Marketing. The work is the same. <span class="crossref">see p. IX for the naming →</span></p>
+    <p class="footnote-line"><span class="num">1.</span>CrowdStrike Senior Technical Marketing Manager JD, <em>Built In</em>, November 2025.</p>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio V</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO VI — VISUAL SYSTEM
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="visual">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio VI · Visual System</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section IV.</span>
+    <h2 class="display">Visual System.</h2>
+    <p class="deck">Five colors. Three faces. One set of marks. No photography, no stock, no clip art, no AI-generated images of people or scenes. The absence is a strength. Preserve it.</p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Palette. Five Colors, Locked.</p>
+  </div>
+
+  <div class="palette">
+    <div class="swatch">
+      <div class="swatch-chip swatch-chip--paper"></div>
+      <div class="swatch-meta">
+        <p class="swatch-name">Paper.</p>
+        <p class="swatch-hex">#F4EFE0</p>
+        <p class="swatch-use">The background of every page. Warm wheat. Uncoated-stock simulation.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-chip swatch-chip--ink"></div>
+      <div class="swatch-meta">
+        <p class="swatch-name">Ink.</p>
+        <p class="swatch-hex">#1A1A1A</p>
+        <p class="swatch-use">Primary text. Warm near-black. Never pure black. Reads as printer's ink.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-chip swatch-chip--red"></div>
+      <div class="swatch-meta">
+        <p class="swatch-name">Library Red.</p>
+        <p class="swatch-hex">#9C2F2F</p>
+        <p class="swatch-use">The single accent. Article numerals. Folio labels. Taxonomic labels. The diamond.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-chip swatch-chip--butter"></div>
+      <div class="swatch-meta">
+        <p class="swatch-name">Butter Yellow.</p>
+        <p class="swatch-hex">#F0D560 <span style="opacity:0.6;">· 50–60% opacity</span></p>
+        <p class="swatch-use">The highlight. Behind selected display words only. The Vox-explainer move.</p>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-chip swatch-chip--gray"></div>
+      <div class="swatch-meta">
+        <p class="swatch-name">Hairline Gray.</p>
+        <p class="swatch-hex">#A8A296</p>
+        <p class="swatch-use">Rules. Dividers. Footnote separators. Derived from the paper.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="prose" style="margin-top:2.5rem;">
+    <p>If a sixth color is needed for a future asset, the proposal must come through editorial review. Add it to this manual or reject it.</p>
+  </div>
+
+  <div class="section-head--inline" style="margin-top:4rem;">
+    <p class="taxo">The Typography. Three Faces.</p>
+  </div>
+
+  <div class="specimens">
+    <div class="specimen">
+      <div class="specimen-meta">
+        <p class="taxo">Display Slab.</p>
+        <p class="specimen-name">Roboto Slab.</p>
+        <p class="specimen-credit">Christian Robertson · 2011</p>
+        <p class="specimen-role">The masthead. Section headlines. Taxonomic labels in caps. Bold weight 700, Black weight 900.</p>
+      </div>
+      <div class="specimen-show specimen-show--slab">
+        Technical<br>Marketing.
+      </div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-meta">
+        <p class="taxo">Editorial Serif.</p>
+        <p class="specimen-name">Fraunces.</p>
+        <p class="specimen-credit">Phaedra Charles &amp; David Jonathan Ross · 2020</p>
+        <p class="specimen-role">Article titles. Body prose. Decks, captions, footnotes in italic. Optical sizing engaged. Oldstyle numerals in body.</p>
+      </div>
+      <div class="specimen-show specimen-show--fraunces">
+        <em>The discipline before the publication.</em>
+        <span class="romansample">A discipline is the accumulated judgment of practitioners who have done the work long enough to recognize what is real about it and what is not. The role exists at every major enterprise software company. The work has been done since the early 2000s. It has rarely been named.</span>
+      </div>
+    </div>
+
+    <div class="specimen">
+      <div class="specimen-meta">
+        <p class="taxo">Body Sans.</p>
+        <p class="specimen-name">Inter.</p>
+        <p class="specimen-credit">Rasmus Andersson · 2016</p>
+        <p class="specimen-role">Furniture only. ISSN. ANNO. URL in small caps. Footer text. Used where slab and serif would be wrong.</p>
+      </div>
+      <div class="specimen-show specimen-show--inter">
+        <span class="big">First Edition · ISSN 0000-0001</span>
+        <span>Anno MMXXVI · Folio I · First Printing · technicalmarketing.org</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head--inline" style="margin-top:4rem;">
+    <p class="taxo">The Hierarchy.</p>
+    <div class="prose"><p>Fixed roles by face. Use the face assigned to the role. Substitution is not permitted.</p></div>
+  </div>
+
+  <div class="hierarchy">
+    <table>
+      <thead>
+        <tr><th>Element</th><th>Face</th><th>Weight</th><th>Treatment</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Masthead wordmark</td><td>Slab serif</td><td>Bold</td><td>All caps</td></tr>
+        <tr><td>Article number kicker</td><td>Slab serif</td><td>Bold</td><td>All caps, red</td></tr>
+        <tr><td>Article title</td><td>Fraunces</td><td>Italic 400</td><td>Sentence case</td></tr>
+        <tr><td>Display headline</td><td>Slab serif</td><td>Bold</td><td>Sentence case</td></tr>
+        <tr><td>Secondary headline</td><td>Fraunces</td><td>Italic 400</td><td>Sentence case</td></tr>
+        <tr><td>Deck</td><td>Fraunces</td><td>Italic 400</td><td>Sentence case, smaller</td></tr>
+        <tr><td>Body roman</td><td>Fraunces</td><td>400</td><td>Sentence case</td></tr>
+        <tr><td>Bold serif label (the answer)</td><td>Fraunces</td><td>SemiBold or Bold</td><td>Sentence case</td></tr>
+        <tr><td>Taxonomic label</td><td>Slab serif</td><td>Bold</td><td>All caps, red</td></tr>
+        <tr><td>Footnote</td><td>Fraunces</td><td>Italic 400</td><td>Small, indented</td></tr>
+        <tr><td>Folio number</td><td>Slab serif</td><td>Bold</td><td>All caps, red</td></tr>
+        <tr><td>Cross-reference</td><td>Fraunces</td><td>Italic 400</td><td>Small, with arrow, red</td></tr>
+        <tr><td>Furniture (ISSN, ANNO)</td><td>Inter</td><td>500</td><td>Small caps, tracked</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-head--inline" style="margin-top:4rem;">
+    <p class="taxo">Marks and Furniture.</p>
+  </div>
+
+  <div class="marks">
+    <div class="mark">
+      <div class="mark-display">
+        <span class="diamond diamond--lg" aria-hidden="true"></span>
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Body Diamond.</p>
+        <p class="mark-use">Section break. Center of horizontal rules. 6–8px, library red.</p>
+      </div>
+    </div>
+
+    <div class="mark">
+      <div class="mark-display">
+        <span class="diamond diamond--ink" aria-hidden="true" style="width:8px; height:8px;"></span>
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Folio Diamond.</p>
+        <p class="mark-use">Foot of every page. Smaller. Ink color, not red.</p>
+      </div>
+    </div>
+
+    <div class="mark">
+      <div class="mark-display">
+        <svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M 4 4 L 4 24 M 4 4 L 24 4" stroke="#A8A296" stroke-width="0.6" fill="none"/>
+          <path d="M 76 4 L 76 24 M 76 4 L 56 4" stroke="#A8A296" stroke-width="0.6" fill="none"/>
+          <path d="M 4 76 L 4 56 M 4 76 L 24 76" stroke="#A8A296" stroke-width="0.6" fill="none"/>
+          <path d="M 76 76 L 76 56 M 76 76 L 56 76" stroke="#A8A296" stroke-width="0.6" fill="none"/>
+        </svg>
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Registration Marks.</p>
+        <p class="mark-use">Four corners. L-shaped hairlines. Print-plate convention. Hairline gray on web.</p>
+      </div>
+    </div>
+
+    <div class="mark">
+      <div class="mark-display" style="flex-direction:column; gap:0.5rem;">
+        <hr class="rule rule--paired" style="width:120px; border-top-color:var(--ink);">
+        <hr class="rule rule--paired" style="width:120px; border-top-color:var(--ink);">
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Paired Rules.</p>
+        <p class="mark-use">Always paired. Never alone. Above and below the masthead. Hairline weight.</p>
+      </div>
+    </div>
+
+    <div class="mark" style="grid-column: span 2;">
+      <div class="mark-display">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:1.75rem;"><span class="swipe">Wanted.</span></span>
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Yellow Highlight Swipe.</p>
+        <p class="mark-use">Butter yellow at 50–60% opacity behind a single display word. Marks the definitional term. The editor&rsquo;s call, per piece. Not every display word earns one.</p>
+      </div>
+    </div>
+
+    <div class="mark" style="grid-column: span 2;">
+      <div class="mark-display" style="font-family:var(--font-furniture); font-weight:500; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; line-height:1.6;">
+        First Edition · ISSN 0000-0001<br>
+        Anno MMXXVI · Issue I · N°1<br>
+        technicalmarketing.org
+      </div>
+      <div class="mark-meta">
+        <p class="mark-name">Print-Publication Furniture.</p>
+        <p class="mark-use">ISSN, ANNO, URL&mdash;Inter small caps with tracked letterspacing. The convention that the page is a folio of something larger.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-head--inline" style="margin-top:3rem;">
+    <p class="taxo">Photography and Illustration.</p>
+    <div class="prose">
+      <p>The publication does not use photography. It does not use stock illustration. It does not use clip art. It does not use AI-generated images of people, scenes, or photographic subjects.</p>
+      <p>It uses original SVG diagrams designed for the publication. Historical screenshots where they document a specific factual claim. Type as visual content&mdash;display headlines, marks, ornaments. The absence of photography is a strength.</p>
+    </div>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio VI</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO VII — PAGE ARCHITECTURE
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="architecture">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio VII · Architecture</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section V.</span>
+    <h2 class="display">Page Architecture.</h2>
+    <p class="deck">How a volume is composed. How an article is composed. How the index is taxonomically organized. The numbering convention that distinguishes furniture from body.</p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Volume Structure.</p>
+    <div class="prose">
+      <p>Each volume is identified by Roman numeral and season&mdash;<em>Vol. I · Spring MMXXVI, Vol. II · Summer MMXXVI</em>, and so on. Volumes are permanent. Each volume lives at its own URL (<em>/vol-01/, /vol-02/</em>) and is preserved after the next volume publishes.</p>
+      <p>A volume contains a volume cover, an editor&rsquo;s note, numbered articles (Article I, Article II…), the curated index, and a colophon (typefaces, printing notes, contributors).</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Article Anatomy.</p>
+    <div class="prose">
+      <p>Every article has a cover folio (<em>Folio I</em>) with the article number kicker, the article title, the display headline, the secondary headline, and the deck. Numbered folios (Roman) contain the body. Footnotes sit at the foot of each folio where present. Cross-references appear where structurally useful. A closing folio carries the end-mark&mdash;the red diamond, centered, below the final line of body.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Section Taxonomy. The Index, Vol. I.</p>
+  </div>
+
+  <div class="prose">
+    <ol style="list-style:none; padding:0; margin:0; counter-reset: tax;">
+      <li style="display:grid; grid-template-columns: 4rem 1fr; gap:1rem; padding:0.75rem 0; border-bottom:0.5px solid var(--hairline); counter-increment: tax;">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.18em; color:var(--library-red);">I.</span>
+        <span style="font-style:italic;">Foundations.</span>
+      </li>
+      <li style="display:grid; grid-template-columns: 4rem 1fr; gap:1rem; padding:0.75rem 0; border-bottom:0.5px solid var(--hairline);">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.18em; color:var(--library-red);">II.</span>
+        <span style="font-style:italic;">Career and Hiring.</span>
+      </li>
+      <li style="display:grid; grid-template-columns: 4rem 1fr; gap:1rem; padding:0.75rem 0; border-bottom:0.5px solid var(--hairline);">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.18em; color:var(--library-red);">III.</span>
+        <span style="font-style:italic;">Practice and Method.</span>
+      </li>
+      <li style="display:grid; grid-template-columns: 4rem 1fr; gap:1rem; padding:0.75rem 0; border-bottom:0.5px solid var(--hairline);">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.18em; color:var(--library-red);">IV.</span>
+        <span style="font-style:italic;">Adjacent Disciplines.</span>
+      </li>
+      <li style="display:grid; grid-template-columns: 4rem 1fr; gap:1rem; padding:0.75rem 0; border-bottom:0.5px solid var(--hairline);">
+        <span style="font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.18em; color:var(--library-red);">V.</span>
+        <span style="font-style:italic;">Critique and Forward Look.</span>
+      </li>
+    </ol>
+    <p style="margin-top:1.25rem; font-style:italic;">Sections may be added, retitled, or retired between volumes. Section names must read as taxonomic categories, not as marketing copy. <em>&ldquo;Foundations,&rdquo;</em> not <em>&ldquo;The Basics.&rdquo;</em></p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Numbering Conventions.</p>
+  </div>
+
+  <div class="hierarchy">
+    <table>
+      <thead>
+        <tr><th>Element</th><th>Numeral</th><th>Example</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Volumes</td><td>Roman</td><td>Vol. I, Vol. II</td></tr>
+        <tr><td>Articles within a volume</td><td>Roman</td><td>Article I, Article II</td></tr>
+        <tr><td>Folios within an article</td><td>Roman</td><td>Folio I, Folio VIII</td></tr>
+        <tr><td>Sections of the index</td><td>Roman</td><td>I. Foundations</td></tr>
+        <tr><td>Footnotes</td><td>Arabic, superscript</td><td><sup>1, 2, 3</sup>, restarts per folio</td></tr>
+        <tr><td>Years in furniture</td><td>Latin</td><td>Anno MMXXVI</td></tr>
+        <tr><td>Years in body prose</td><td>Arabic</td><td>in 2009, the discipline…</td></tr>
+        <tr><td>URLs (compatibility)</td><td>Arabic</td><td>/vol-01/article-i/folio-8</td></tr>
+        <tr><td>URLs (displayed numeral)</td><td>Roman</td><td>Folio VIII</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio VII</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO VIII — PRODUCTION STANDARDS
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="production">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio VIII · Production</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section VI.</span>
+    <h2 class="display">Production Standards.</h2>
+    <p class="deck">The ten checks that gate publication. The AI-assisted writing protocol. The editorial decisions log. If any check fails, the asset does not ship.</p>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">The Pre-Publication Checklist.</p>
+    <div class="prose">
+      <p>Every published asset&mdash;folio, cover, OG image, LinkedIn post, web page&mdash;passes the following checks before going live.</p>
+    </div>
+  </div>
+
+  <ol class="checklist">
+    <li><div><p class="check-title">Voice check.</p><p class="check-body">Read aloud. Does it sound like <em>Technical Marketing</em>? If not, identify which voice rule it violates and rewrite.</p></div></li>
+    <li><div><p class="check-title">Citation check.</p><p class="check-body">Every factual claim is sourced or removed. Every footnote points to a real source.</p></div></li>
+    <li><div><p class="check-title">Numeral check.</p><p class="check-body">Latin numerals in furniture. Arabic in body. Years correctly formatted by context.</p></div></li>
+    <li><div><p class="check-title">Punctuation check.</p><p class="check-body">Curly quotes, curly apostrophes, em dashes, Oxford commas, periods on titles.</p></div></li>
+    <li><div><p class="check-title">Diction check.</p><p class="check-body">No banned vocabulary. No hedges. No direct address.</p></div></li>
+    <li><div><p class="check-title">Mark and furniture check.</p><p class="check-body">Corner registration marks, red diamond, folio number, ANNO, FIRST PRINTING, ISSN line.</p></div></li>
+    <li><div><p class="check-title">Color check.</p><p class="check-body">Only the five locked colors. No others.</p></div></li>
+    <li><div><p class="check-title">Type check.</p><p class="check-body">Only the three locked faces, in the assigned roles.</p></div></li>
+    <li><div><p class="check-title">Mobile check.</p><p class="check-body">Diagrams legible at 375px viewport. Touch targets at 44px or larger.</p></div></li>
+    <li><div><p class="check-title">Date check.</p><p class="check-body">The publication date is correct. The folio reference is correct.</p></div></li>
+  </ol>
+
+  <div class="section-head--inline">
+    <p class="taxo">AI-Assisted Writing Protocol.</p>
+    <div class="prose">
+      <p>Drafting with AI is permitted. Publication of unedited AI output is not.</p>
+      <p>AI may be used to draft, restructure, or compress copy. The editor must read every sentence in context and rewrite to remove AI tells&mdash;superlatives, hedges, false parallelism, the rhetorical question, the <em>&ldquo;It&rsquo;s important to note that&hellip;&rdquo;</em> tic, the <em>&ldquo;In conclusion&hellip;&rdquo;</em> tic. The editor is responsible for every claim. AI may surface candidate facts. Only the editor confirms them against sources.</p>
+      <p>This manual is the canonical reference for what <em>Technical Marketing</em> sounds like. AI prompts should include or link to this document.</p>
+    </div>
+  </div>
+
+  <div class="section-head--inline">
+    <p class="taxo">Editorial Decisions Log.</p>
+    <div class="prose">
+      <p>When a canonical decision changes&mdash;a color is relocked, a tagline is rephrased, a banned word becomes permitted&mdash;the change is logged in this manual with date and rationale. The log is the publication&rsquo;s institutional memory.</p>
+    </div>
+  </div>
+
+  <div class="hierarchy" style="margin-top:1rem;">
+    <table>
+      <thead>
+        <tr><th style="width:14rem;">Date</th><th>Decision</th><th>Rationale</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-style:normal; font-weight:500;">MMXXVI · First Printing</td>
+          <td>All decisions in this manual locked at founding state.</td>
+          <td>Initial canonical reference established.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio VIII</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO IX — DISTRIBUTION CONVENTIONS
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="distribution">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio IX · Distribution</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section VII.</span>
+    <h2 class="display">Distribution Conventions.</h2>
+    <p class="deck">Where the publication appears. How it identifies itself on each surface. The web is the primary surface. LinkedIn is the primary distribution channel. The register does not change between them.</p>
+  </div>
+
+  <div class="surfaces">
+    <div class="surface">
+      <h4>The Web.</h4>
+      <p>The primary surface. Every folio of every article exists as a permanent URL. Cover folios at <em>/vol-01/article-i/cover</em>. Numbered folios at <em>/vol-01/article-i/folio-viii</em>. The index at <em>/vol-01/</em>.</p>
+      <p>The web register is identical to the print register. No marketing CTAs. No exit popups. No banner offers. No chat widgets. No animation that does not serve the reader. The page reads as if printed.</p>
+    </div>
+
+    <div class="surface">
+      <h4>LinkedIn.</h4>
+      <p>The primary distribution channel. The publication page is <em>linkedin.com/company/technicalmarketing-org</em>.</p>
+      <dl>
+        <dt>Post format</dt><dd>Folio image, 1080 × 1350 portrait</dd>
+        <dt>Cover image</dt><dd>1128 × 191, masthead register</dd>
+        <dt>About copy</dt><dd>The twenty-two-word mission</dd>
+      </dl>
+      <p style="margin-top:0.75rem;">Posts use the publication&rsquo;s voice in the post body&mdash;not LinkedIn&rsquo;s default register.</p>
+    </div>
+
+    <div class="surface">
+      <h4>Open Graph &amp; Share.</h4>
+      <p>Every URL has an OG image. Default at <em>/og-image.png</em>. Per-article and per-volume OGs at predictable paths. All OG assets in the field-manual register&mdash;wheat paper, slab masthead, red diamond, corner marks.</p>
+      <dl>
+        <dt>Specification</dt><dd>1200 × 630 PNG, RGB</dd>
+        <dt>Transparency</dt><dd>None</dd>
+        <dt>File size</dt><dd>Under 100KB where possible</dd>
+      </dl>
+    </div>
+
+    <div class="surface">
+      <h4>Email.</h4>
+      <p>If and when a newsletter publishes, it uses the same voice and the same visual register. Field manual on paper. Field manual on the web. Field manual in the inbox.</p>
+      <p style="margin-top:0.75rem;"><em>Technical Marketing</em> is editorially independent. It does not promote, link as a CTA, or serve as a funnel for any other property&mdash;including the editor&rsquo;s own.</p>
+    </div>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio IX</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+<!-- ═════════════════════════════════════════════════════════
+     FOLIO X — COLOPHON
+     ═════════════════════════════════════════════════════════ -->
+
+<section class="folio" id="colophon">
+  <span class="reg-bl"></span><span class="reg-br"></span>
+
+  <div class="furniture-row">
+    <span>Technical Marketing</span>
+    <span>Folio X · Colophon</span>
+  </div>
+  <hr class="rule rule--hair">
+
+  <div class="section-head">
+    <span class="kicker">Section VIII.</span>
+    <h2 class="display">Colophon.</h2>
+  </div>
+
+  <div class="colophon">
+    <p><em>Technical Marketing</em> is set in <strong style="font-weight:600;">Fraunces</strong> (designed by Phaedra Charles and David Jonathan Ross), <strong style="font-weight:600;">Inter</strong> (designed by Rasmus Andersson), and <strong style="font-weight:600;">Roboto Slab</strong> (designed by Christian Robertson).</p>
+
+    <p>The publication is typeset on web and exported as image assets for distribution. Static site. No build step. Hosted on Cloudflare Pages.</p>
+
+    <p>Published from San Diego, California. Edited independently. First printing: Anno MMXXVI.</p>
+
+    <p style="margin-top:2rem; font-style:normal; font-family:var(--font-display); font-weight:700; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--library-red);">This Manual.</p>
+
+    <p>Maintained in the root of the repository as <em>EDITORIAL.md</em>. Updated when a canonical decision changes. Every change marked with a date and a reason. This rendered folio is generated from that source.</p>
+
+    <div class="end-mark">
+      <span class="diamond" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <div class="folio-foot">
+    <span class="folio-num">Folio X</span>
+    <span class="diamond" aria-hidden="true"></span>
+    <span>First Printing · MMXXVI</span>
+  </div>
+</section>
+
+</body>
+</html>
