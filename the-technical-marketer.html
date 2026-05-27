@@ -1475,6 +1475,44 @@ a.masthead__title:hover { color: var(--red); }
   .cite-text--code { font-size: 0.75rem; }
 }
 
+
+/* ── Article cover plate (Vox-style illustration) ──────────────────── */
+.article-cover-plate {
+  max-width: 540px;
+  margin: 2rem auto 0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.article-cover-plate__frame {
+  display: block;
+  box-shadow:
+    0 1px 2px rgba(28, 24, 18, 0.06),
+    0 8px 24px rgba(28, 24, 18, 0.12);
+  background: var(--paper);
+}
+.article-cover-plate__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.article-cover-plate__caption {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  text-align: center;
+  margin-top: 0.875rem;
+  font-weight: 500;
+}
+@media (max-width: 720px) {
+  .article-cover-plate {
+    max-width: 340px;
+    padding: 0 1rem;
+    margin-top: 1.25rem;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -1503,6 +1541,13 @@ a.masthead__title:hover { color: var(--red); }
   </nav>
   <hr class="masthead__rule">
 </header>
+
+<figure class="article-cover-plate">
+  <div class="article-cover-plate__frame">
+    <img class="article-cover-plate__image" src="/Images/cover-article-i.jpg" alt="Cover illustration for The Technical Marketer: a paper-collage diagram showing the role of architect feeding outputs to The Demo, The Framework, and The Competitive Response." loading="eager">
+  </div>
+  <figcaption class="article-cover-plate__caption">Cover &middot; Article I</figcaption>
+</figure>
 
 <section class="cover layout" aria-labelledby="article-title">
   <div class="cover__article-kicker">Article I.</div>
