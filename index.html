@@ -1590,6 +1590,111 @@ a.entry__title:hover { color: var(--red); border-bottom-color: var(--red); }
   .subscribe__form { flex-direction: column; }
 }
 
+
+/* ────────────────────────────────────────────────────────────────────
+   ELITE MOBILE PASS — proportional contrast, identity preservation,
+   compositional vertical rhythm
+   ──────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  /* Container breathing — slightly more inset for elegance */
+  .layout { padding: 0 1.5rem; }
+
+  /* ── Masthead holds identity at narrow widths ──────────────────── */
+  .masthead__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+  .masthead__title-row { padding: 0.75rem 0 0.5rem; }
+  .masthead__furniture { font-size: 0.5625rem; letter-spacing: 0.12em; }
+  .masthead__subtitle { font-size: 0.875rem; }
+  .masthead__url { font-size: 0.5625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.5625rem; letter-spacing: 0.12em; }
+
+  /* ── Display words restore mobile contrast ─────────────────────── */
+  .cover { padding: 2.25rem 0 2rem; }
+  .cover__display { font-size: 4rem; line-height: 0.95; }
+  .cover__display::before { height: 0.3em; bottom: 0.08em; }
+  .cover__display-wrap { margin: 1.75rem 0 2.25rem; justify-content: flex-start; }
+  .cover__article-kicker { font-size: 0.8125rem; letter-spacing: 0.2em; }
+  .cover__article-title { font-size: 1.4375rem; }
+  .cover__secondary { font-size: 1.625rem; line-height: 1.15; }
+  .cover__deck { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 1.75rem; }
+
+  /* ── Compositional vertical rhythm ─────────────────────────────── */
+  .section { margin-bottom: 3rem; scroll-margin-top: 1.25rem; }
+  .section + .section { margin-top: 0; }
+  .section h2 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    max-width: 100%;
+  }
+  .section h3 {
+    font-size: 1.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .section p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  /* Pull quotes get proportionally more air on mobile */
+  .pullquote {
+    margin: 2.75rem -0.5rem;
+    padding: 1.5rem 0;
+    background-position: center 22px;
+  }
+  .pullquote p {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    max-width: 28ch;
+  }
+  .pullquote::before,
+  .pullquote::after {
+    width: 56px;
+  }
+
+  /* Labeled lists tighter on narrow */
+  .labeled-item {
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .labeled-item__label { font-size: 1.0625rem; }
+  .labeled-item__body { font-size: 1rem; line-height: 1.55; }
+
+  /* Scope notes & editors notes */
+  .scope-note { padding: 1.25rem 1.125rem 1rem; margin-bottom: 2rem; }
+  .editors-note { padding: 1.5rem 1.25rem; }
+
+  /* Footnotes */
+  .footnotes { margin-top: 2.5rem; }
+  .footnotes li { font-size: 0.875rem; }
+
+  /* Article layout breathing on mobile */
+  .article-layout { padding: 1.75rem 0 0; gap: 1.25rem; }
+}
+
+/* ── Very narrow viewports (iPhone SE, older Androids) ─────────────── */
+@media (max-width: 400px) {
+  .layout { padding: 0 1.25rem; }
+  .masthead__title { font-size: 1.25rem; letter-spacing: 0.025em; }
+  .cover__display { font-size: 3.375rem; }
+  .cover__secondary { font-size: 1.4375rem; }
+  .section h2 { font-size: 1.4375rem; }
+  .pullquote p { font-size: 1.125rem; max-width: 24ch; }
+  .pullquote { margin: 2.25rem -0.25rem; }
+}
+
 </style>
 </head>
 <body>

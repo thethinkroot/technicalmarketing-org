@@ -967,6 +967,281 @@ a.masthead__title:hover { color: var(--red); }
   .next-article__title { font-size: 1.1875rem; }
 }
 
+
+/* ── JD copy-paste block: a field-manual specimen card ─────────────── */
+.jd-block {
+  margin: 2.5rem 0 1.5rem;
+  padding: 2.25rem 2.25rem 2rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+  max-width: var(--measure);
+}
+.jd-block::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.jd-block::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--red);
+  opacity: 0;
+}
+.jd-block__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 600;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px solid var(--border);
+  flex-wrap: wrap;
+}
+.jd-block__label-text {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.jd-block__copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--paper);
+  background: var(--ink);
+  border: 0.5px solid var(--ink);
+  padding: 0.5rem 0.875rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 32px;
+  white-space: nowrap;
+}
+.jd-block__copy-btn:hover { background: var(--red); border-color: var(--red); }
+.jd-block__copy-btn:active { transform: scale(0.98); }
+.jd-block__copy-btn.is-copied {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--paper);
+}
+.jd-block__copy-icon { font-size: 0.875rem; line-height: 1; }
+
+.jd-block h3 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 0.375rem;
+}
+.jd-block__meta-line {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-bottom: 1.5rem !important;
+}
+.jd-block h4 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin: 1.75rem 0 0.625rem;
+}
+.jd-block p {
+  font-family: var(--f-serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin-bottom: 0.875rem !important;
+  max-width: none !important;
+}
+.jd-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.jd-block li {
+  font-family: var(--f-serif);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--ink);
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.jd-block li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 4px;
+  height: 4px;
+  background: var(--red);
+  transform: rotate(45deg);
+}
+.jd-block__divider {
+  border: none;
+  border-top: 0.5px solid var(--border);
+  margin: 1.5rem 0;
+}
+.jd-block__meta {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  color: var(--ink-60);
+  margin-top: 1.75rem !important;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border);
+}
+
+@media (max-width: 600px) {
+  .jd-block {
+    padding: 1.75rem 1.375rem 1.5rem;
+    margin: 2rem -0.25rem 1.25rem;
+  }
+  .jd-block__label {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .jd-block__copy-btn {
+    align-self: stretch;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+  }
+  .jd-block h3 { font-size: 1.25rem; }
+}
+
+/* ────────────────────────────────────────────────────────────────────
+   ELITE MOBILE PASS — proportional contrast, identity preservation,
+   compositional vertical rhythm
+   ──────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  /* Container breathing — slightly more inset for elegance */
+  .layout { padding: 0 1.5rem; }
+
+  /* ── Masthead holds identity at narrow widths ──────────────────── */
+  .masthead__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+  .masthead__title-row { padding: 0.75rem 0 0.5rem; }
+  .masthead__furniture { font-size: 0.5625rem; letter-spacing: 0.12em; }
+  .masthead__subtitle { font-size: 0.875rem; }
+  .masthead__url { font-size: 0.5625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.5625rem; letter-spacing: 0.12em; }
+
+  /* ── Display words restore mobile contrast ─────────────────────── */
+  .cover { padding: 2.25rem 0 2rem; }
+  .cover__display { font-size: 4rem; line-height: 0.95; }
+  .cover__display::before { height: 0.3em; bottom: 0.08em; }
+  .cover__display-wrap { margin: 1.75rem 0 2.25rem; justify-content: flex-start; }
+  .cover__article-kicker { font-size: 0.8125rem; letter-spacing: 0.2em; }
+  .cover__article-title { font-size: 1.4375rem; }
+  .cover__secondary { font-size: 1.625rem; line-height: 1.15; }
+  .cover__deck { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 1.75rem; }
+
+  /* ── Compositional vertical rhythm ─────────────────────────────── */
+  .section { margin-bottom: 3rem; scroll-margin-top: 1.25rem; }
+  .section + .section { margin-top: 0; }
+  .section h2 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    max-width: 100%;
+  }
+  .section h3 {
+    font-size: 1.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .section p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  /* Pull quotes get proportionally more air on mobile */
+  .pullquote {
+    margin: 2.75rem -0.5rem;
+    padding: 1.5rem 0;
+    background-position: center 22px;
+  }
+  .pullquote p {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    max-width: 28ch;
+  }
+  .pullquote::before,
+  .pullquote::after {
+    width: 56px;
+  }
+
+  /* Labeled lists tighter on narrow */
+  .labeled-item {
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .labeled-item__label { font-size: 1.0625rem; }
+  .labeled-item__body { font-size: 1rem; line-height: 1.55; }
+
+  /* Scope notes & editors notes */
+  .scope-note { padding: 1.25rem 1.125rem 1rem; margin-bottom: 2rem; }
+  .editors-note { padding: 1.5rem 1.25rem; }
+
+  /* Footnotes */
+  .footnotes { margin-top: 2.5rem; }
+  .footnotes li { font-size: 0.875rem; }
+
+  /* Article layout breathing on mobile */
+  .article-layout { padding: 1.75rem 0 0; gap: 1.25rem; }
+}
+
+/* ── Very narrow viewports (iPhone SE, older Androids) ─────────────── */
+@media (max-width: 400px) {
+  .layout { padding: 0 1.25rem; }
+  .masthead__title { font-size: 1.25rem; letter-spacing: 0.025em; }
+  .cover__display { font-size: 3.375rem; }
+  .cover__secondary { font-size: 1.4375rem; }
+  .section h2 { font-size: 1.4375rem; }
+  .pullquote p { font-size: 1.125rem; max-width: 24ch; }
+  .pullquote { margin: 2.25rem -0.25rem; }
+}
+
 </style>
 </head>
 <body>
@@ -1306,50 +1581,55 @@ a.masthead__title:hover { color: var(--red); }
 
         <div class="jd-block">
           <div class="jd-block__label">
-            <span>Job Description · Senior Technical Marketing Manager</span>
-            <span class="jd-block__copy-hint">Select and copy</span>
+            <span class="jd-block__label-text">Job Description &middot; Senior Technical Marketing Manager</span>
+            <button type="button" class="jd-block__copy-btn" id="jd-copy-btn" onclick="copyJobDescription()" aria-label="Copy job description to clipboard">
+              <span class="jd-block__copy-icon" aria-hidden="true">&#10063;</span>
+              <span class="jd-block__copy-btn-text">Copy text</span>
+            </button>
           </div>
 
-          <h3>Senior Technical Marketing Manager</h3>
-          <p style="font-size: 0.9375rem; color: var(--color-text-secondary); margin-bottom: 1rem;">[Company Name] · [Location or Remote] · Full-time</p>
+          <div id="jd-content">
+            <h3>Senior Technical Marketing Manager</h3>
+            <p class="jd-block__meta-line">[Company Name] &middot; [Location or Remote] &middot; Full-time</p>
 
-          <div class="jd-block__divider"></div>
+            <hr class="jd-block__divider">
 
-          <h4>About the role</h4>
-          <p>We are looking for a Senior Technical Marketing Manager to own the technical evidence and narrative layer that supports our enterprise sales motion. You will be the editorial authority on what evidence we present to analysts, buyers, and the field. You will build the demos that our Sales Engineers run, the analyst-facing materials that move our Gartner and Forrester positions, the competitive teardowns that win contested deals, and the technical content that gives our customers a clear read on what we do and where we stand.</p>
-          <p>This is a senior individual contributor role. You will report to [Director / VP] of Technical and Product Marketing. You will work daily with Product Management, Product Marketing, Sales Engineering, Analyst Relations, and Sales Enablement. The role's success is measured by analyst position movement, win rate on contested deals, field activation, time from claim to evidence, competitive displacement, and pipeline contribution.</p>
+            <h4>About the role</h4>
+            <p>We are looking for a Senior Technical Marketing Manager to own the technical evidence and narrative layer that supports our enterprise sales motion. You will be the editorial authority on what evidence we present to analysts, buyers, and the field. You will build the demos that our Sales Engineers run, the analyst-facing materials that move our Gartner and Forrester positions, the competitive teardowns that win contested deals, and the technical content that gives our customers a clear read on what we do and where we stand.</p>
+            <p>This is a senior individual contributor role. You will report to [Director / VP] of Technical and Product Marketing. You will work daily with Product Management, Product Marketing, Sales Engineering, Analyst Relations, and Sales Enablement. The role's success is measured by analyst position movement, win rate on contested deals, field activation, time from claim to evidence, competitive displacement, and pipeline contribution.</p>
 
-          <h4>What you will own</h4>
-          <ul>
-            <li>Demo authoring and live delivery for analysts, buyers, and the field</li>
-            <li>Analyst positioning across Gartner, Forrester, and IDC evaluation cycles</li>
-            <li>Narrative architecture for product launches and earnings-adjacent positioning</li>
-            <li>Technical content for engineers, architects, and CIOs</li>
-            <li>Sales Engineering enablement and field readiness</li>
-            <li>Competitive positioning, displacement playbooks, and the company's honest competitive read</li>
-          </ul>
+            <h4>What you will own</h4>
+            <ul>
+              <li>Demo authoring and live delivery for analysts, buyers, and the field</li>
+              <li>Analyst positioning across Gartner, Forrester, and IDC evaluation cycles</li>
+              <li>Narrative architecture for product launches and earnings-adjacent positioning</li>
+              <li>Technical content for engineers, architects, and CIOs</li>
+              <li>Sales Engineering enablement and field readiness</li>
+              <li>Competitive positioning, displacement playbooks, and the company's honest competitive read</li>
+            </ul>
 
-          <h4>What you will be measured on</h4>
-          <ul>
-            <li>Analyst position shift in the next AR cycle</li>
-            <li>Win rate on contested deals</li>
-            <li>Field activation across Sales Consultants and Account Executives</li>
-            <li>Time from product claim to defensible evidence in the field</li>
-            <li>Competitive displacement in named accounts</li>
-            <li>Pipeline contribution through field activation</li>
-          </ul>
+            <h4>What you will be measured on</h4>
+            <ul>
+              <li>Analyst position shift in the next AR cycle</li>
+              <li>Win rate on contested deals</li>
+              <li>Field activation across Sales Consultants and Account Executives</li>
+              <li>Time from product claim to defensible evidence in the field</li>
+              <li>Competitive displacement in named accounts</li>
+              <li>Pipeline contribution through field activation</li>
+            </ul>
 
-          <h4>What we are looking for</h4>
-          <ul>
-            <li>Eight or more years in technical product roles: Sales Engineering, Product Management, Product Marketing, or technical content with hands-on product depth</li>
-            <li>Hands-on familiarity with [Company's product domain]</li>
-            <li>The capacity to defend technical claims under questioning from analysts, executive customers, and competitive challenge</li>
-            <li>Comfort in front of analysts, executives, customers, and on stage at industry events</li>
-            <li>Editorial judgment about which evidence matters at which stage of an evaluation</li>
-          </ul>
+            <h4>What we are looking for</h4>
+            <ul>
+              <li>Eight or more years in technical product roles: Sales Engineering, Product Management, Product Marketing, or technical content with hands-on product depth</li>
+              <li>Hands-on familiarity with [Company's product domain]</li>
+              <li>The capacity to defend technical claims under questioning from analysts, executive customers, and competitive challenge</li>
+              <li>Comfort in front of analysts, executives, customers, and on stage at industry events</li>
+              <li>Editorial judgment about which evidence matters at which stage of an evaluation</li>
+            </ul>
 
-          <h4>Compensation</h4>
-          <p>Base $[140K to 200K] · Total compensation $[200K to 330K] depending on experience and location. Equity, full benefits, and [company-specific perks].</p>
+            <h4>Compensation</h4>
+            <p>Base $[140K to 200K] &middot; Total compensation $[200K to 330K] depending on experience and location. Equity, full benefits, and [company-specific perks].</p>
+          </div>
 
           <p class="jd-block__meta">This job description is adapted from Article I of Volume 01 at technicalmarketing.org. Companies are welcome to use it without attribution. A link back is appreciated but not required.</p>
         </div>
@@ -1430,5 +1710,53 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </footer>
 
+
+<script>
+function copyJobDescription() {
+  var contentEl = document.getElementById('jd-content');
+  var btn = document.getElementById('jd-copy-btn');
+  if (!contentEl || !btn) return;
+  
+  var textNodes = contentEl.cloneNode(true);
+  // Add bullet markers for list items in plain text
+  textNodes.querySelectorAll('li').forEach(function(li) {
+    li.textContent = '• ' + li.textContent.trim();
+  });
+  var plainText = textNodes.innerText;
+  
+  var btnTextEl = btn.querySelector('.jd-block__copy-btn-text');
+  var iconEl = btn.querySelector('.jd-block__copy-icon');
+  
+  function showCopied() {
+    btn.classList.add('is-copied');
+    if (btnTextEl) btnTextEl.textContent = 'Copied';
+    if (iconEl) iconEl.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (btnTextEl) btnTextEl.textContent = 'Copy text';
+      if (iconEl) iconEl.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(plainText).then(showCopied).catch(function() {
+      fallbackCopy(plainText, showCopied);
+    });
+  } else {
+    fallbackCopy(plainText, showCopied);
+  }
+}
+
+function fallbackCopy(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+</script>
 </body>
 </html>
