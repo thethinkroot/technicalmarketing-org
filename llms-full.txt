@@ -1,0 +1,847 @@
+# Technical Marketing — Full Content
+
+> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software. First Edition, Anno MMXXVI. ISSN 0000-0001. Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
+
+This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
+
+Last updated: 2026-05-27. Version 1.0.
+
+---
+
+
+---
+
+# Technical Marketing — Volume I · Spring 2026
+
+
+*The state of a discipline still being named.*
+
+
+A working reference for technical marketing as practiced in enterprise software, and a quarterly index of current thinking from the field.
+
+
+## Publication metrics
+
+- **12** — Pieces indexed
+- **5** — Taxonomic sections
+- **Q3** — Next update
+
+## Editor's Note
+
+
+This index is for the people who do this work. The technical marketers operating without a shared reference. The practitioners coming into the field who deserve to find something better than scattered job descriptions. The senior people whose hard-won judgment has never been collected anywhere visible.
+
+
+Volume 01 is a curated starting point. Twelve pieces across five sections that capture how the discipline is currently practiced, understood, and evolving. Editorial notes are included alongside each entry to highlight what the piece gets right, where it falls short, and how it connects to the broader conversation.
+
+
+> *The work clearly exists, but the industry still lacks a shared language and framework for defining it.*
+
+
+New volumes publish quarterly. The empty spaces in this index are intentional. They mark the conversations the field still needs to have. Submissions and thoughtful disagreement are welcome.
+
+
+## The Quarterly Index — Volume I
+
+
+### Section I — Foundations
+
+Pieces attempting to define the discipline.
+
+
+**What Is Technical Marketing?**
+  
+*HG Insights*
+  
+Reference · Mar 2024
+
+The cleanest entry-level definition available. Strong on the explanatory dimension. Undersells the architectural component that practitioners spend most of their time on.
+
+**So… What Exactly Is Technical Marketing?**
+  
+*Bryan Friedman*
+  
+Essay · Nov 2025
+
+Makes the enablement-and-adoption case, the strongest version of the post-PMM framing in current circulation.
+
+**What is Technical Marketing, and How Should You Use It?**
+  
+*Digital Success*
+  
+Primer · Jan 2024
+
+Useful as a buyer-facing primer. Skews toward agencies selling technical content, which colors the definition more than the authors acknowledge.
+
+**Aligning Technical Marketing and Go-to-Market**
+  
+*Product Marketing Alliance*
+  
+Article · 2024
+
+The largest PMM professional org weighs in on the technical marketing function and its relationship to go-to-market motion. Strong on cross-functional positioning. Less specific than the practitioner accounts on what the day-to-day work looks like, but useful for understanding how the field's largest professional org defines it.
+
+### Section II — Career and Hiring
+
+How the role is recruited for and structured.
+
+
+**What Is Technical Marketing? Skills and Tips**
+  
+*Indeed*
+  
+Guide · Dec 2025
+
+Worth reading for what hiring managers think the job description should say. Notable for what it omits: demo architecture, analyst relations, competitive intelligence.
+
+**Product Marketing Program**
+  
+*Reforge*
+  
+Curriculum · Ongoing
+
+The course materials are a working snapshot of what venture-backed software companies are screening for in product marketing hires, including the technical-adjacent dimensions of the role. Worth reading as a barometer of where the discipline's hiring expectations are pointed.
+
+**One slot open for inclusion
+ Looking for the strongest practitioner-written take on career paths and how senior technical marketing leaders describe what they actually screen for in candidates. Submissions welcome →**
+  
+Open · Reaching out
+
+Looking for the strongest practitioner-written take on career paths and how senior technical marketing leaders describe what they actually screen for in candidates. [Submissions welcome →](/suggest)
+
+### Section III — Frameworks and Methodologies
+
+Structured approaches to the work itself.
+
+
+**The Demo Coherence Index, v1.1**
+  
+*Chad Corriveau*
+  
+Framework · Mar 2026
+
+The first published framework for scoring demo coherence across nine validated formats. Required reading whether or not the methodology converges with the rest of the field.
+
+**Obviously Awesome**
+  
+*April Dunford*
+  
+Book · 2019
+
+The canonical positioning text in B2B software. Required reading regardless of whether the function is called product marketing, technical marketing, or technical product marketing. The frameworks here shape how the discipline thinks about category, customer, and the work of differentiation.
+
+**Great Demo!**
+  
+*Peter Cohan*
+  
+Book · 2003–2024
+
+Still the only validated demo methodology in print. Twenty years old and most of it holds. Required reading for anyone making demo architecture claims.
+
+### Section IV — Industry Perspectives
+
+Practitioners writing from inside the work.
+
+
+**What is a Technical Marketing Manager?**
+  
+*Red Hat*
+  
+Practitioner · Nov 2025
+
+A practicing technical marketing manager describes the role from inside Red Hat. Strong on the day-to-day texture of the work and on the position's location between product management, product marketing, and engineering. Light on the strategic-influence dimension that senior TMMs at larger vendors operate at, but the most credible named-practitioner account of the work currently in public circulation.
+
+**Two slots open for inclusion
+ Commissioning original pieces from senior technical marketers and technical product marketing leaders across the major enterprise software categories: hyperscaler, data and analytics, cybersecurity, DevOps and developer tools, AI platforms, and observability. This section sits underweight deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps. Submissions welcome →**
+  
+Open · Commissioning
+
+Commissioning original pieces from senior technical marketers and technical product marketing leaders across the major enterprise software categories: hyperscaler, data and analytics, cybersecurity, DevOps and developer tools, AI platforms, and observability. This section sits underweight deliberately. The absence of published thinking from named senior practitioners is one of the field's most telling gaps. [Submissions welcome →](/suggest)
+
+### Section V — Emerging Tensions
+
+What's unresolved. What's about to change.
+
+
+**The Horseless Carriage Problem**
+  
+*Chad Corriveau*
+  
+Field Note · Apr 2026
+
+Names the tension: AI demos that mimic existing demo patterns instead of inventing new ones. The argument applies beyond demos to the discipline itself.
+
+**The Carriage and the Engine**
+  
+*Chad Corriveau*
+  
+Field Note · May 2026
+
+The follow-up. Workflow-layer governance fails open by design. Implications for any technical marketing function that builds demos around current platform abstractions.
+
+
+---
+
+# What Is Technical Marketing? — A Foundational Reference
+
+
+## 01 · Definition — A working definition
+
+
+Technical marketing is the discipline that emerged when enterprise software products outpaced the language used to sell them. Its practitioners hold technical depth and commercial orientation simultaneously and translate between the two for every audience that needs to evaluate the product.
+
+
+The role exists at every major enterprise software company. Its title varies. Technical Marketing Manager. Technical Product Marketing Manager. Principal Technical Marketing Engineer. Director of Technical Marketing. The work, where it is done well, is recognizably similar across companies even when the titles are not.
+
+
+Red Hat's [published description of the role](https://www.redhat.com/en/blog/technical-marketing-manager-skills) frames the technical marketer as someone who creates technical content, supports developer relations elements, and executes campaigns aimed at technical audiences. That definition is accurate as far as it goes. It captures the visible output of the role rather than its underlying function.
+
+
+The work itself is more specific. Technical marketing builds the evidence and story layer that supports a complex technical sale. The output takes many forms. The function is constant: produce the artifacts that allow a technically capable buyer to evaluate the product on its own terms, and the commercial structure that allows a sales team to use those artifacts to close.
+
+
+## 02 · Function Map — Where the discipline sits
+
+
+The clearest way to understand technical marketing is to plot it against two dimensions: technical depth and commercial orientation. Most disciplines that touch enterprise software products score high on one axis and low on the other. Technical marketing requires both.
+
+
+Engineering operates at high technical depth and low commercial orientation. Its work is true regardless of how the product is sold. Brand operates at low technical depth and high commercial orientation. Its work shapes the company's identity rather than the product's mechanism. Product marketing operates at moderate technical depth and high commercial orientation. It owns positioning, pricing, launch, and the customer-facing narrative.
+
+
+Sales engineering operates at high technical depth and moderate commercial orientation. It applies technical knowledge in service of specific deals. Technical marketing is the discipline that requires high scores on both axes. It needs enough technical depth to engage credibly with engineering and to evaluate product claims. It needs enough commercial orientation to know which evidence is persuasive at which stage of a buying process.
+
+
+The combination is rare. Most practitioners arrive at the role from one side and learn the other. The companies that win the most technical evaluations are usually the ones that have invested in developing practitioners who hold both natively.
+
+
+> **Figure.** **Figure 01.** The function matrix. Technical marketing is the only discipline that requires high scores on both axes. The combination is rare, which is why the role is hard to staff and hard to define.
+>
+> *Diagram description:* Function matrix plotting five disciplines against technical depth (vertical axis) and commercial orientation (horizontal axis). Engineering occupies upper left at high technical depth and low commercial orientation. Brand occupies lower right at low technical depth and high commercial orientation. Product Marketing sits in the middle right at moderate technical depth and high commercial orientation. Sales Engineering sits upper middle right at high technical depth and moderate commercial orientation. Technical Marketing sits in the upper right at high values on both axes.
+
+
+## 03 · Distinctions — What it is not
+
+
+The most useful definitions come from sharp distinctions. Technical marketing is most often confused with four adjacent disciplines.
+
+
+**Technical marketing is not product marketing.** [Product Marketing Alliance](https://www.productmarketingalliance.com), the established community for product marketers, defines product marketing as the function that owns go-to-market: positioning, messaging, personas, pricing, and launch. That is a coherent function with a clear remit. Technical marketing is oriented differently. It is an evaluation function, not a go-to-market function. Where product marketing asks how the company should tell the market about the product, technical marketing asks what the product needs to prove, to whom, and in what form, in order to win the technical evaluation.
+
+
+**Technical marketing is not sales engineering.** Sales engineers operate in the live technical conversation with a specific prospect. Discovery calls, proofs of concept, technical deep dives, customization conversations. Technical marketers create the structure that makes those conversations repeatable across prospects. The demo design, the evaluation framework, the competitive response playbook, the architecture overview that gets used in every enterprise account. Sales engineers execute in the field. Technical marketers architect the conditions for that execution.
+
+
+**Technical marketing is not developer relations.** Developer relations is a community function. Its work is engagement, advocacy, ecosystem development, and the long arc of building developer trust over time. Technical marketing is a sales support function. Its work is helping technically capable buyers make evaluation decisions in finite timeframes. The skills overlap. The orientations do not.
+
+
+**Technical marketing is not technical writing.** Technical writing produces documentation: accurate, complete, neutral. Technical marketing produces persuasion: accurate, selective, and oriented toward a specific evaluation moment. A good technical writer and a good technical marketer share a baseline of technical fluency. What they do with that fluency is different in kind.
+
+
+## 04 · The Calibration Problem — Holding the band
+
+
+Every piece of technical marketing content sits on a spectrum between two failure modes. The job of the discipline is to find the band between those modes and hold it deliberately.
+
+
+Too much polish and the work becomes a brand exercise. The clearest example is the polished commercial: high production value, cinematic music, the product appearing in beautiful but generic shots, intended to make the viewer feel something about the company. Technical buyers watch it and disengage because there is nothing to evaluate. The content moves emotion but offers no surface against which a buying committee can test a claim.
+
+
+Too much depth and the work becomes an enablement exercise. The clearest example is the visual whitepaper: an architecture diagram walkthrough, every component labeled, every flow annotated, presented as if the buyer were a new hire being onboarded to the product. Buyers learn a lot and have no idea what to do next. The commercial thread is gone. The piece teaches without persuading.
+
+
+> *Technical marketing operates in the narrow band where a buyer can see enough depth to trust the practitioner, but not so much that they are doing engineering homework.*
+
+
+Technical marketing operates in the narrow band between those failure modes. A buyer watching good technical marketing content sees that the practitioner understands the product at a credible level. The depth is real. The architecture references land. The trade-offs get acknowledged rather than glossed. But the depth is deployed in service of building trust, not in service of exhaustive documentation. The buyer leaves the content with confidence that the practitioner is a competent guide, and with a clearer view of the specific question they need to bring into the next conversation.
+
+
+The handoff matters as much as the band itself. Technical marketing rarely closes the decision on its own. The trust layer that good technical marketing builds is what allows sales engineers and solution consultants to step in and carry the evaluation the rest of the way. SEs and SCs do the customer-specific work: live demos against the buyer's actual data, configuration walkthroughs against the buyer's actual environment, proof-of-concept design against the buyer's actual decision criteria. Technical marketing creates the conditions. Sales engineering executes inside them. The decision happens at the intersection of both.
+
+
+Holding the band is harder than it sounds because the pressure to fail in both directions is constant. Marketing leadership pushes for more polish. Engineering and product push for more depth. Sales pushes for shorter content. Customers push for deeper content. The technical marketer's central skill is holding the line against all of those pressures simultaneously, in service of the buyer's actual evaluation question.
+
+
+[Peter Cohan's Great Demo! methodology](https://www.greatdemo.com) remains the most rigorously developed framework for one piece of this work. The [Demo Coherence Index](https://thinkroot.io/scorer) is a more recent attempt to score the broader question of whether demo content actually proves what it claims to prove across multiple formats. Both are responses to the same underlying problem: the calibration question has never had a shared standard, and the field has been operating without one.
+
+
+> **Figure.** **Figure 02.** The calibration band. To one side, the polished commercial that proves nothing. To the other, the visual whitepaper that decides nothing. Technical marketing operates in the narrow band where buyers see enough technical depth to trust the practitioner, then hand off to sales engineering for the customer-specific work that closes the evaluation.
+>
+> *Diagram description:* Calibration band diagram. Three horizontal zones. Left zone labeled Brand Exercise, faded. Center zone labeled Technical Marketing, emphasized. Right zone labeled Enablement, faded. A connecting band runs across the bottom showing the narrow range where technical marketing operates.
+
+
+## 05 · Evaluation Lifecycle — Where the work concentrates
+
+
+The other useful frame for understanding technical marketing is the buyer's evaluation journey. Most marketing functions concentrate at the top of the funnel. Technical marketing concentrates further down.
+
+
+Technical marketing's work is most dense in the evaluation phase, where a qualified buyer is actively comparing options and testing claims. This is where the discipline's signature work happens. Demos in every format: live walkthroughs, recorded captures, capability deep dives, format-appropriate variants for different stakeholder groups. Proof of concept scoping, where the technical marketer defines what a POC should test, what success criteria look like, and what evidence the buyer needs to take to a buying committee. Technical questionnaires and security reviews. Architecture overviews that explain the system at the level a buying committee can interrogate.
+
+
+Competitive work runs alongside this. Battlecards, competitive teardowns, displacement playbooks, and the live competitive demos that show the product against named alternatives. At companies operating in crowded categories, competitive intelligence is often the single highest-leverage piece of work the technical marketing function produces.
+
+
+The lifecycle frame also makes clear that technical marketing reaches further across the journey than the peak suggests. At the consideration stage, the discipline partners with Product Management on launch deliverables, building the launch demo, the technical narrative, the feature positioning, and the first-look content that establishes how the market should understand a new release. At the same stage, technical marketing produces the analyst-facing demos and briefing materials that drive the Gartner, Forrester, and IDC evaluations. Analyst demos are often higher-stakes than customer demos because they shape how the entire market perceives the product for a year or more.
+
+
+At the decision and post-sale stages, the discipline contributes customer reference work, case studies built around technical outcomes, and the evidence layer that supports renewal and expansion conversations. The density tapers, but the work does not disappear.
+
+
+Across the whole journey, the discipline requires different skills than the broader marketing function. The work is not about reaching the largest audience. It is about being maximally useful to the smallest audience that has the highest decision authority. A piece of technical marketing content that reaches one hundred thousand people but does not move any of them through an evaluation has failed. A piece that reaches twenty people and helps ten of them close has succeeded.
+
+
+This concentration is also why technical marketing is hard to measure with the metrics that work for the rest of marketing. Impressions, clicks, and form fills are weak signals here. The relevant metrics are evaluation conversion, technical win rate, time-to-decision, competitive displacement, and analyst position. The work is judged by what happens in the buying committee and in the analyst report, not by what happens in the analytics dashboard.
+
+
+> **Figure.** **Figure 03.** The evaluation lifecycle. Technical marketing reaches across the journey, contributing to product launches, analyst demos, competitive work, and customer references. The density concentrates at the evaluation phase, where qualified buyers actively compare options and test claims. The work is judged by what happens in the buying committee and in the analyst report.
+>
+> *Diagram description:* Evaluation lifecycle diagram. Horizontal axis shows five buyer journey stages: Awareness, Consideration, Evaluation, Decision, Post-sale. A curve plots technical marketing content density across the journey, rising from low at Awareness, increasing through Consideration, peaking at Evaluation, declining through Decision, and ending low at Post-sale.
+
+
+## 06 · Practitioner Reality — The discipline as practiced
+
+
+There is a reason the technical marketing manager role is one of the most inconsistently defined in enterprise software. Every company interprets it differently because no canonical definition exists for what the discipline covers or what good looks like.
+
+
+At some companies the role means a former sales engineer who learned to write. At others it means a former product marketer who learned to read API documentation. At a handful of companies, usually the ones that win the most technical evaluations, it means a specialist who holds both the technical depth and the commercial frame simultaneously and can move between them without losing either.
+
+
+The practitioners who do this work well almost always developed the skill through exposure rather than formal training. There is no technical marketing curriculum. No widely recognized certification. No community that has codified what good looks like the way PreSales Collective has done for sales engineers or Pragmatic Institute has done for product managers. [Wendy Covey at TREW Marketing](https://www.trewmarketing.com) has done substantial work on the adjacent question of marketing to engineers, which captures some of the same territory. But a coherent body of practice around technical marketing itself does not yet exist in a publicly available form.
+
+
+Quantitative grounding for the discipline does exist, scattered across vendor research and academic studies. [Gong's analysis of millions of B2B sales conversations](https://www.gong.io/blog/) has produced specific findings that shape what good technical marketing content should look like. Discovery is the single highest predictor of deal outcomes. The optimal pitch length is under seventy-six seconds. The ideal talk-to-listen ratio in technical conversations is roughly sixty-five to thirty-five. Demos that demonstrate fewer features tend to win more often than those that demonstrate many. Those findings have not yet been translated into a shared body of practice for the discipline as a whole.
+
+
+The field is mature in the sense that the role exists everywhere. It is immature in the sense that practitioners have no shared language for describing what they do, no agreed-upon standards for what good looks like, and no recognized place to develop publicly as members of a discipline. The work happens. The discipline has not yet been named.
+
+
+## 07 · The Inflection — A discipline at an inflection point
+
+
+The technical disciplines that move enterprise software through the market are all facing the same moment. Sales engineering, product marketing, product management, customer success engineering, developer advocacy, technical writing. Every role that produces structured technical content, runs evaluations, or translates between specialist languages is being operated on by AI agents that compress the work of production. The inflection is not unique to technical marketing. It is the condition that all of these adjacent disciplines are now navigating.
+
+
+What is worth naming is that technical marketing is structurally positioned to do well in this transition, for reasons specific to where the role sits.
+
+
+Two structural advantages worth naming.
+
+
+The first is the nature of the work itself. Technical marketing's core skill is editorial judgment about evidence under pressure. The decision about what proves what, to whom, in what form, with what handoff, at what stage of a deal. AI can draft a demo script in minutes. AI cannot decide whether this particular demo, for this particular buyer, in this particular deal context, should lead with architecture or with outcome. That decision-making chain holds the buyer's specific evaluation question, the company's commercial pressure, the engineering reality, and the competitive landscape simultaneously. It is the kind of work that gets harder to delegate to a model, not easier.
+
+
+The second is that technical marketing has always operated as the integrator between adjacent specialist functions. Most technical marketers come from a sales engineering, product marketing, or product background. The discipline's daily work involves translating between the specialist languages of product, engineering, marketing, sales, and the analyst community. As AI compresses the artifact production inside each of those specialist functions, the integration role becomes more valuable rather than less. Someone has to orchestrate AI-assisted output across multiple disciplines into a coherent evaluation experience. That orchestration is what technical marketing has always done.
+
+
+None of this is a claim that the role is unchanged. The artifact production side of technical marketing is exposed in the same ways that adjacent disciplines are exposed. The demo gets drafted faster. The competitive teardown gets first-passed by a model. The architecture overview takes one afternoon instead of one week. The hours saved on production get reinvested in the judgment work the production was previously crowding out. Practitioners who treated the production as the job will find the role compressed. Practitioners who treated the production as the means to the judgment will find the role expanded.
+
+
+This page, and this publication, exist in part to make the judgment work legible. To name what the discipline is for, so it remains recognizable when the form changes. To give practitioners entering the field today, and the practitioners doing the work now, a working reference they can build on rather than invent alone.
+
+
+> **Figure.** **Figure 04.** Disciplines plotted against AI exposure of artifact production and editorial leverage required. The technical roles that surround the enterprise sale share the inflection. Technical marketing sits in the upper-right quadrant: a discipline where AI can compress production substantially, but the work that wins evaluations is judgment, not output volume.
+>
+> *Diagram description:* Disciplines plotted against two axes: AI exposure of artifact production (horizontal) and editorial leverage required (vertical). Technical writing sits in the lower-right at high AI exposure and low editorial leverage. Product marketing and product management sit in the middle. Sales engineering sits upper-middle. Technical marketing sits in the upper right at high values on both axes, in the favorable quadrant where AI compresses production but editorial leverage stays high.
+
+
+---
+
+# The Technical Marketer — Article I of Volume I
+
+
+## 01 · The Premise — What the work is
+
+
+The work is deciding what technical evidence the company puts in front of its hardest audiences. Which two claims to lead with in an analyst submission. Whether a demo shows the rough edges or the happy path. Which competitor weakness the field should lean on. The work is editorial judgment about evidence, made one decision at a time, under buyer pressure.
+
+
+The artifacts the role produces vary. A demo for an analyst. A teardown of a competitor's launch. A first-call narrative for an enterprise rep. A reference architecture for a buying committee's principal engineer. A response to the security questionnaire that lands without overpromising. The artifacts are different. The judgment that decides which artifact to produce, in which order, with which framing, is the same judgment every time.
+
+
+That judgment is the work. Most companies that depend on it have not written it down as a job description.
+
+
+> *The artifacts vary. The judgment is the work.*
+
+
+## 02 · The Inflection — Why the moment names it
+
+
+The technical disciplines that move enterprise software through the market are all facing the same compression. Sales engineering, product marketing, product management, technical writing, developer advocacy. Every function that produces structured technical content is being operated on by AI agents that compress the work of artifact production. The inflection is not unique to technical marketing. It is the condition that all of these adjacent disciplines now share.
+
+
+What can be compressed is artifact production. Models can draft a deck. Models can summarize a competitive landscape. Models can generate a deployment guide. The mechanical labor of producing structured technical content is being absorbed by tooling that did not exist eighteen months ago.[^1]
+
+
+What cannot be compressed is editorial judgment under pressure. Which slide an analyst challenges. Which two claims a Tuesday call will pressure-test. Whether the architecture diagram should lead the briefing or close it. Those decisions hold the buyer's specific evaluation question, the company's commercial pressure, the engineering reality, and the competitive landscape simultaneously. They are not the kind of work that gets easier to delegate to a model.[^2]
+
+
+This is the structural reason to write the job description down now. The discipline does not contract under AI compression. It clarifies. The artifact production that previously consumed the role's time gets absorbed by tooling. The judgment work that previously sat unrecognized in the gaps between artifacts becomes the explicit center of the role. What gets documented as a job description today is not the role's reduction. It is the role's distillation to the work that always mattered.
+
+
+> *The discipline does not contract. It clarifies.*
+
+
+> **Figure.** **Figure 01.** Disciplines plotted against AI exposure of artifact production and editorial leverage required. Technical marketing sits in the favorable quadrant. AI compresses production substantially across all six disciplines. The work that wins evaluations is judgment, not output volume.
+>
+> *Diagram description:* Disciplines plotted against two axes: AI exposure of artifact production (horizontal) and editorial leverage required (vertical). Technical writing sits in the lower-right at high AI exposure and low editorial leverage. Product marketing and product management sit in the middle. Sales engineering sits upper-middle. Technical marketing sits in the upper right at high values on both axes, in the favorable quadrant where AI compresses production but editorial leverage stays high.
+
+
+## 03 · The Role — A working definition
+
+
+A Technical Marketer is the editorial authority on what evidence the company presents to its most skeptical audiences. Analyst briefings. Buyer demos. Competitive engagements. Earnings-adjacent positioning. Reference customer conversations. The role is decided one judgment call at a time, in rooms where the next sentence determines whether the meeting goes forward.
+
+
+The role is senior because the judgments are senior. The same call about which competitor weakness to lead with can land a contested deal or burn a customer relationship. The same call about which architectural claim to lead with in an analyst briefing can move a position in a Gartner Magic Quadrant or stall one for a cycle. The judgments compound in both directions. Senior practitioners get the calls right more often. That is the reason the role is senior.
+
+
+## 04 · What the Role Delivers — Four outcomes the company cannot get elsewhere
+
+
+Most adjacent functions touch some of this work. Product marketing owns positioning and launch. Sales engineering owns the technical conversation in active deals. Product management owns the roadmap and the build narrative. Each of those functions contributes to the technical evidence layer. None of them owns it.
+
+
+> *The T in Technical, the truth in marketing.*
+
+
+## 05 · Responsibilities — Six workstreams. One discipline.
+
+
+The six workstreams below appear, in varying combinations and weightings, in every Senior Technical Marketing Manager job description published by major enterprise software companies in the last twelve months.[^3] They are the operating surface of the role.
+
+
+## 06 · Outcomes — What it delivers, measured
+
+
+The role is judged by what happens in the rooms it influences, not by what happens in the dashboard. The six measures below are what the company can read on the scoreboard.
+
+
+Technical marketing sits one degree of separation from quota. The Sales Engineer's win is the role's win. The analyst's report is the role's report. The role is judged by results the field and the analysts produce, not by results the role produces directly.
+
+
+## 07 · Where the Role Sits — Who the role works with
+
+
+The role's organizational position varies by company stage. The collaboration surface does not. The same set of adjacent functions touches the role's work at every company that runs an enterprise software motion. The exclusion is also the same. The role does not work with engineering proper, because the work happens downstream of build, on the evidence and narrative layer rather than on the product itself.
+
+
+### Reports to
+
+
+The reporting line varies by company stage. The variants are addressed in detail in Section 08.[^4]
+
+
+### Works with daily
+
+
+Product Management. Product Marketing. Sales Engineering. Analyst Relations. Sales Enablement. Customer Success. Customer Marketing. The role does not lead any of these functions. It produces the technical evidence and editorial direction that each of them needs.
+
+
+### Does not work with
+
+
+Engineering proper. The work happens downstream of build. The role consumes engineering's output and translates it into evidence the field and the market can evaluate. The role does not influence what gets built. It influences how what gets built is understood.
+
+
+> **Figure.** **Figure 02.** The function matrix. Technical marketing is the only discipline that requires high scores on both technical depth and commercial orientation. The combination is rare, which is why the role is hard to staff and hard to define.
+>
+> *Diagram description:* Function matrix plotting five disciplines against technical depth (vertical axis) and commercial orientation (horizontal axis). Engineering occupies upper left at high technical depth and low commercial orientation. Brand occupies lower right at low technical depth and high commercial orientation. Product Marketing sits in the middle right at moderate technical depth and high commercial orientation. Sales Engineering sits upper middle right at high technical depth and moderate commercial orientation. Technical Marketing sits in the upper right at high values on both axes.
+
+
+## 08 · Variant Adaptations — How the role looks at each company stage
+
+
+The role's responsibilities and outcomes are stable across companies. The role's organizational position, scope of authority, and daily counterparts vary substantially. The three most common variants are documented below.
+
+
+### Platform companies
+
+
+Public or late-stage platform companies running a full enterprise motion (ServiceNow, Salesforce, Workday, Atlassian). The role reports to a Director or VP of Technical and Product Marketing inside the CMO organization. Title is usually Senior Technical Marketing Manager or Principal Technical Marketing Engineer. The scope is deep, vertical, and analyst-heavy. The role owns one product area (ITSM, CRM, HCM) or one buyer audience (CIO, CISO, CDO) and partners with a counterpart Product Marketing Manager who owns positioning and launch. Day-to-day, the role works most closely with Sales Engineering and Analyst Relations. Most of the visible output is analyst-facing demos, reference architectures, and competitive teardowns.
+
+
+### Infrastructure and data companies
+
+
+Companies whose buyer is technical (CrowdStrike, Snowflake, Databricks, Confluent, MongoDB). The role often reports through Product Marketing leadership inside the CPO organization rather than under the CMO. This is because the product complexity demands a closer reporting line to the product organization than a marketing organization can offer. The role spends substantial time with Product Management and Sales Engineering. Less time with Analyst Relations than at platform companies, because the analyst evaluations matter less when the buyer is already a credentialed practitioner. The visible output is heavy on technical content (reference architectures, deployment guides, integration patterns) and on enabling Sales Engineers to win technical evaluations against named competitors.
+
+
+### PLG companies
+
+
+Product-led growth companies where the product itself is the primary sales motion (Linear, Vercel, Supabase, PostHog, Notion). The role often reports directly to the Head of Marketing rather than through a separate Technical Marketing chain, because the company is too small to have built the deeper marketing organizational structure. The role combines technical authority with growth-loop responsibility. Less analyst work, more developer-facing content. Less competitive teardown, more category-defining narrative. The role is closer to Developer Relations and Documentation than at the other two company types. Comp tends to be lower at base but higher in equity if the company is pre-public.
+
+
+A practitioner moving between these variants will recognize the work as the same discipline but find the daily counterparts and the relative weighting of the six workstreams quite different. Hiring managers writing job descriptions for the role should be explicit about which variant they are hiring for. The role title may be the same. The day-to-day work is not.
+
+
+## 09 · Qualifications — What the role requires
+
+
+Five requirements. The first four are negotiable in combination. The last is not.
+
+
+The candidate must still answer the question after the polish comes off. Polish is table stakes. Substance under pressure is the qualification.
+
+
+## 10 · Compensation — What the role pays
+
+
+Three bands. Drawn from a combination of public job postings at named companies, Levels.fyi data, and the compensation discussions reflected in published Senior Technical Marketing Manager job descriptions.
+
+
+Total compensation ranges include equity at expected vested value over four years. The figures skew toward the higher end of the band at platform and infrastructure companies in major US tech markets (San Francisco Bay Area, Seattle, New York). They skew toward the lower end of base and the higher end of equity at PLG and pre-public companies, which is why a Principal IC at a pre-IPO Series C may earn more cash than a Director at a public platform company once equity is included.
+
+
+## 11 · The Job Description — A copyable text for use in real hiring
+
+
+The text below is structured for direct use. Copy, adjust the company-specific paragraph, calibrate the compensation band to your variant, and post. The language has been tested for legal review at one of the named platform companies. Adjustments may be required for your jurisdiction.
+
+
+### Senior Technical Marketing Manager
+
+
+[Company Name] · [Location or Remote] · Full-time
+
+
+We are looking for a Senior Technical Marketing Manager to own the technical evidence and narrative layer that supports our enterprise sales motion. You will be the editorial authority on what evidence we present to analysts, buyers, and the field. You will build the demos that our Sales Engineers run, the analyst-facing materials that move our Gartner and Forrester positions, the competitive teardowns that win contested deals, and the technical content that gives our customers a clear read on what we do and where we stand.
+
+
+This is a senior individual contributor role. You will report to [Director / VP] of Technical and Product Marketing. You will work daily with Product Management, Product Marketing, Sales Engineering, Analyst Relations, and Sales Enablement. The role's success is measured by analyst position movement, win rate on contested deals, field activation, time from claim to evidence, competitive displacement, and pipeline contribution.
+
+- Demo authoring and live delivery for analysts, buyers, and the field
+- Analyst positioning across Gartner, Forrester, and IDC evaluation cycles
+- Narrative architecture for product launches and earnings-adjacent positioning
+- Technical content for engineers, architects, and CIOs
+- Sales Engineering enablement and field readiness
+- Competitive positioning, displacement playbooks, and the company's honest competitive read
+
+- Analyst position shift in the next AR cycle
+- Win rate on contested deals
+- Field activation across Sales Consultants and Account Executives
+- Time from product claim to defensible evidence in the field
+- Competitive displacement in named accounts
+- Pipeline contribution through field activation
+
+- Eight or more years in technical product roles: Sales Engineering, Product Management, Product Marketing, or technical content with hands-on product depth
+- Hands-on familiarity with [Company's product domain]
+- The capacity to defend technical claims under questioning from analysts, executive customers, and competitive challenge
+- Comfort in front of analysts, executives, customers, and on stage at industry events
+- Editorial judgment about which evidence matters at which stage of an evaluation
+
+
+Base $[140K to 200K] · Total compensation $[200K to 330K] depending on experience and location. Equity, full benefits, and [company-specific perks].
+
+
+This job description is adapted from Article I of Volume 01 at technicalmarketing.org. Companies are welcome to use it without attribution. A link back is appreciated but not required.
+
+
+If you are hiring for this role and you have questions about the variant adaptations, the qualifications calibration, or the compensation bands, the editorial inbox is open at [editor@technicalmarketing.org](mailto:editor@technicalmarketing.org).
+
+
+## Footnotes
+
+[^1]: Anthropic, *Economic Index*, January 2026 report on collaboration primitives and the work activities most exposed to AI compression.
+[^2]: McKinsey, *A New Year's Resolution for Leaders*, January 2026. Discussion of judgment-intensive work and AI's complementary rather than substitutive effect on it.
+[^3]: CrowdStrike, *Senior Technical Marketing Manager* job description, posted on Built In, November 2025. Used as the canonical reference for responsibility scope and compensation band at a publicly traded infrastructure company.
+[^4]: Red Hat, Eric Hendricks, *What is a technical marketing manager?*, blog post, November 2021. The most widely cited public description of the role's day-to-day responsibilities.
+[^5]: McKinsey, *AI in the Workplace 2025*. Discussion of the skills that hold their value as AI tooling absorbs structured production work.
+[^6]: Levels.fyi senior-level marketing compensation data at Microsoft and LinkedIn, March 2026. Used as the reference point for Principal IC compensation bands at public platform companies.
+[^7]: Levels.fyi senior-level marketing data across major US tech companies, May 2026. Used as the reference for Director-level compensation bands across the platform, infrastructure, and PLG variants.
+
+
+---
+
+# Before the Name — Article II of Volume I
+
+
+## 01 · A note on scope — What this piece claims, and what it does not
+
+
+> **Scope note.**
+The discipline of this history.
+> The unit of analysis is the **function**, not the title. A title history is brittle: terminology has been contested for sixty years across industrial marketing, business marketing, technology marketing, technical marketing, technical product marketing, solutions marketing, evangelism, and developer relations. A function history is durable. The load-bearing claim of this piece is that the function of producing technically credible material for technical buyers has been continuously performed inside the U.S. computing and software industry since the 1950s, under successively different names.
+> The industry under examination is U.S. computing and software. Industrial marketing as practiced in chemicals, aerospace, and defense in the 1930s through 1950s is treated as parent context, not core. The geography is the United States, principally Silicon Valley and the East Coast computing belt. The temporal scope of the analytical claim runs from the late 1960s forward; the inheritance from earlier industrial marketing is acknowledged but not claimed as continuous with the modern discipline.
+> The evidence hierarchy is explicit. Federal classification documents and corporate filings rank highest. University oral histories and contemporaneous practitioner books and articles rank next. Trade press and secondary writing rank below those. Wikipedia and aggregator sources are starting points only. Every named date and person in this piece is traceable to a primary or authoritative secondary source listed in the footnotes.
+> The period boundaries are justified by structural change in the pressure on the function, never by chronology or fame. This piece is **not** a history of marketing, of Silicon Valley, of the individuals named within it, or a forecast of what the function will become.
+
+
+## 02 · The thesis — The work came first
+
+
+The function the discipline now calls technical marketing was already being performed inside U.S. computing companies in the 1950s. In-house publication groups at Remington Rand, IBM, Burroughs, and Sperry produced engineer-targeted brochures, demonstration scripts, and reference architectures for the early generation of commercial mainframes. The work was editorial in nature: someone decided which technical claims the company would put in front of which audience, in what order, with what supporting evidence. The artifacts that resulted were the legible output of that judgment.[^1]
+
+
+The function did not have a settled name. The people performing it were variously titled product writers, application engineers, sales engineers, technical illustrators, or had no role definition at all. The titles described the artifacts the person produced. None of them described the work that decided which artifact to produce. That work, the editorial judgment under commercial pressure, is what this piece tracks across the next seventy years.
+
+
+> *The names changed. The substance did not.*
+
+
+![A UNIVAC mainframe being operated and demonstrated by two men in suits, one examining magnetic tape reels, taken inside a U.S. computing facility in the 1950s.](https://technicalmarketing.org/Images/plate-01-univac-1950s.png)
+
+
+## 03 · The inheritance — Two parents, one function
+
+
+The modern discipline inherited from two older sources. The first is *industrial marketing*, formalized in the academic literature in the 1930s after the 1929 financial crash forced U.S. manufacturers to develop a more disciplined approach to reaching business buyers. John H. Frederick's 1934 text *Industrial Marketing* was an early major work in the field, codifying practices that producers of capital equipment, machine tools, and industrial chemicals had been using to reach engineering and procurement audiences.[^2] The discipline taught its practitioners how to write for technically literate buyers, how to construct comparative evidence, and how to translate engineering specifications into commercial argument.
+
+
+The second parent is *sales engineering*, which the U.S. Department of Labor later codified as occupation 41-9031.00.[^3] The classification pairs engineering credentials with commercial work and lists Technical Marketing Engineer as a variant title under the same code. This is the federal government's formal acknowledgment that the two functions are taxonomically related: technical marketing inherits the credibility and the credentials of sales engineering, and applies them to the production of structured material rather than the conduct of live customer conversations.
+
+
+Neither parent fully explains the modern discipline. Industrial marketing came out of academic business schools and was generic across industries; sales engineering came out of field organizations and was oriented to individual deals. The function that became technical marketing combined the editorial discipline of the first with the technical credibility of the second, and applied both inside a new kind of company: the post-1960s computing and software firm that needed to reach a technical buyer at scale.
+
+
+> *Two parents. One inheritance. No name yet.*
+
+
+![A data-processing technician examines continuous printout output from a tape-driven mainframe system, photographed in a corporate computing facility in the 1960s.](https://technicalmarketing.org/Images/plate-02-data-processing-1960s.png)
+
+
+## 04 · Era I — The function internalized · 1967–1990
+
+
+The defining structural change of the founding era is the migration of the function from external agencies into the product companies themselves. The agency model and the in-house model coexisted through the 1970s. By 1990, the in-house model had won, and the discipline had settled into the company-internal location it still occupies.
+
+
+### 1967 · Regis McKenna joins National Semiconductor
+
+
+The earliest documented anchor of the era is Regis McKenna's arrival at National Semiconductor in 1967. McKenna's own oral history, recorded for the Stanford Silicon Genesis project in August 1995, places him inside the company in this year and describes the work he was doing as the construction of the technical marketing function from the inside.[^4] This was not yet what the discipline would later call itself, but the substance of the work, deciding which technical claims to put in front of which audiences and producing the structured material to do it, is recognizable to any modern practitioner.
+
+
+### 1970 · McKenna founds his agency in Palo Alto
+
+
+Three years later, McKenna left National Semiconductor and founded Regis McKenna, Inc. in Palo Alto. The Computer History Museum documents the firm as one of the earliest specialist technology marketing agencies in the region, and the firm went on to advise Apple, Intel, Genentech, and dozens of the foundational Silicon Valley product companies.[^5] The agency model that McKenna built externalized the function for the duration of an engagement and then handed it back to the product company, which by the early 1980s was increasingly hiring people to keep doing the work after the agency engagement ended.
+
+
+### 1981 · Dennis Carter joins Intel as marketing engineer
+
+
+Carter's Purdue ECE Outstanding Alumni profile, recorded in 1995, documents his move from Intel engineering into a role explicitly titled marketing engineer in 1981.[^6] This is one of the earliest documented uses of an in-house engineer-marketer title at a major product company. Carter went on to architect the Intel Inside campaign in 1991, but the relevant fact for this history is the title itself in 1981: an engineer credentialed by the company, located inside the marketing organization, doing what the agency model had previously done from outside.
+
+
+### 1983 · Mike Boich and Guy Kawasaki at Apple
+
+
+Mike Boich began as Apple's software evangelist for the Macintosh launch in the early 1980s. He recruited Guy Kawasaki into the role in 1983, and the term *evangelism* entered the discipline's vocabulary as a name for the developer-facing variant of the work.[^7] The Computer History Museum's profile of Kawasaki and Kawasaki's own contemporaneous writing document the role and the title. What the role actually did, recruiting third-party developers, producing technical demonstrations, defending architectural claims under engineering scrutiny, is recognizable as a variant of the function the discipline now tracks under technical marketing.
+
+
+> *The agency model and the internal model coexisted. The internal model won.*
+
+
+![A user at a personal computer workstation with a monitor, keyboard, and floppy-drive unit, photographed in an office or library setting in the 1980s.](https://technicalmarketing.org/Images/plate-03-personal-computing-1980s.png)
+
+
+## 05 · Six decades on one line — The timeline
+
+
+Three eras within scope, two centuries of inheritance behind them. The boundaries between eras are marked by structural changes in the pressure on the function, not by chronology or fame.
+
+
+> **Figure.** **Figure 01.** The four periods. Inheritance, treated as parent context only. Era I, the function moving from agency to in-house. Era II, the framework and the proliferation of titles. Era III, the consolidation under the single name.
+>
+> *Diagram description:* A timeline of the technical marketing function across four periods: inheritance from 1934 through 1966, Era I from 1967 through 1990, Era II from 1991 through 2023, and Era III from 2024 forward. Anchored by Frederick's Industrial Marketing in 1934, McKenna at National Semiconductor in 1967, McKenna founding his firm in 1970, Carter at Intel in 1981, Boich and Kawasaki at Apple in 1983, Moore publishing Crossing the Chasm in 1991, Hendricks at Red Hat in 2021, and the AI inflection in 2024.
+
+
+## 06 · Era II — The function framed · 1991–2023
+
+
+The defining event of the middle era is the publication of Geoffrey Moore's *Crossing the Chasm* by HarperBusiness in 1991.[^8] The book gave the discipline its first canonical practitioner framework: the technology adoption lifecycle, the chasm between early adopters and the early majority, the bowling-alley strategy, and the whole-product concept. The framework took hold across enterprise tech in the 1990s and structured the way the function thought about its work for the next thirty years.
+
+
+The lineage of the framework is not incidental. Moore had been a partner at Regis McKenna, Inc., before he wrote the book. The framework is in direct descent from the agency work of Era I, formalized and made portable through the act of publication. The discipline's first canonical text was written by someone who had spent the previous decade inside the founding firm of the founding era.
+
+
+Under the framework, the function institutionalized at the larger product companies in the 1990s and 2000s. Cisco established Technical Marketing Engineer as a job classification. The U.S. Department of Labor added Technical Marketing Engineer as a variant title under occupation 41-9031.00.[^9] The title proliferated: Technical Product Marketing Manager. Solutions Marketing Manager. Developer Advocate. Developer Relations. Technical Evangelist. Product Evangelist. By the late 2010s, the same function was being performed under at least twelve distinct titles across the discipline.
+
+
+The titles fragmented because adjacent functions kept claiming the legible parts of the work. Product marketing claimed the launches and the positioning. Sales engineering claimed the live demos and the deal-level technical conversations. Developer relations claimed the third-party developer audience. Each adjacent function took the visible part of the work, and the editorial judgment that decided which artifact to produce, with what framing, for which audience, stayed put. It did not get a stable name because the discipline could not agree which title should hold it.
+
+
+The clearest contemporaneous evidence that the function was still searching for its name as late as 2021 is Eric Hendricks's piece on the Red Hat Partner Connect blog in November 2021, titled "What is a technical marketing manager?"[^10] That a practicing technical marketing manager at one of the largest enterprise infrastructure vendors needed to ask the question publicly is the diagnostic fact of the era.
+
+
+> *Shared framework. Fragmented name.*
+
+
+## 07 · One discipline, twelve names — The discipline-evolution map
+
+
+The function never lost its center. The titles around it multiplied because adjacent functions kept claiming the legible parts of the work, while the editorial judgment that decided which artifact to produce stayed put under a different name in each company.
+
+
+The twelve titles the function has been performed under, named for completeness: Industrial Marketer, Sales Engineer, Marketing Engineer, Technical Marketing Engineer, Technical Product Marketing Manager, Solutions Marketing Manager, Developer Advocate, Developer Relations, Product Evangelist, Technical Evangelist, Technical Content Engineer, and Technical Marketing Manager. The list is not exhaustive, and the boundaries between titles are negotiated company by company. The point of the list is that no single title held the function continuously across all of Era II.
+
+
+> **Figure.** **Figure 02.** The discipline's evolution. Two parent disciplines flow into a single trunk in Era I. The trunk forks into five title branches across Era II. The branches reconverge under a single name in Era III. The function being performed is materially the same across all of it.
+>
+> *Diagram description:* A diagram of the function's evolution. On the left, three parent disciplines: Industrial Marketing, Sales Engineering, and Technical Writing. These flow into a single trunk labeled High-tech marketing in Era I. The trunk forks in Era II into five title branches: Technical Marketing Engineer, Technical Product Marketing, Solutions Marketing, Developer Advocate, and Sales Engineer–marketing hybrid. The five branches reconverge in Era III into a single anchor labeled Technical Marketing.
+
+
+## 08 · An artifact from the middle — The discipline in 2009
+
+
+The Internet Archive's Wayback Machine capture of [technicalmarketing.org](https://web.archive.org/web/20090708150714/http://www.technicalmarketing.org/) from July 8, 2009, is a useful artifact of where the discipline sat in the middle of Era II.[^11] The domain hosted Citrix tutorials, Xen virtualization diagrams, Adobe Illustrator how-tos, and articles about NetScaler. The site mixed everything it could call technical, because the field had not yet decided what counted as the core work.
+
+
+The 2009 capture is not a claim of editorial continuity with the present publication. This domain has hosted writing about the discipline under multiple editorial regimes over the years. The 2009 capture is included here as evidence of the era's fragmentation, not as the publication's lineage. The field's failure to agree on what the discipline covered is precisely what the 2009 archive shows. The current editorial regime began in 2026 and intends to publish under a clearer definition than the field had in 2009.
+
+
+> *Twelve names. No answer yet on what counted.*
+
+
+![Screen capture of technicalmarketing.org as preserved by the Internet Archive on July 8, 2009. The page shows section headers for Adobe, Citrix, Open Source, Public Speaking, and Virtualization, with feature panels for a Citrix CloudBurst Network Diagram and a Vyatta Open Source advertisement.](https://technicalmarketing.org/Images/plate-04-tmorg-2009.png)
+
+
+## 09 · Era III — The function named · 2024–
+
+
+The defining structural change of the present era is AI compression. The Anthropic Economic Index reports of 2025 and 2026 documented the work activities most exposed to absorption by large language models: structured artifact production at the boundary of natural-language drafting and templated structure.[^12] McKinsey's January 2026 piece on judgment-intensive work argued, from the other direction, that the work least exposed to AI compression is editorial judgment under buyer pressure: the work of deciding which evidence matters at which moment in a specific evaluation.[^13]
+
+
+The two reports point at the same structural fact from opposite directions. The work of producing technical artifacts is being compressed. The work of editorial judgment about which artifact to produce, with what framing, for which audience, is not. That judgment is what the function had always been doing under twelve different names. The compression of the legible artifact production around the judgment is what made the judgment finally visible as the core of the work.
+
+
+The consolidation under a single name follows from this. Adjacent functions, sales engineering, product marketing, developer relations, technical writing, are each contracting around the parts of their work that AI cannot do. Technical marketing is contracting the same way. The difference is that the part of the work that remains, the editorial judgment, was always more concentrated in technical marketing than in the adjacent functions, because the discipline had been doing nothing else under twelve names for sixty years.
+
+
+The discipline did not contract under AI pressure. It clarified. The titles that previously fragmented the work converged on the title under which the editorial judgment had always been most concentrated. The naming, in 2024 and forward, is the structural moment the field finally agreed on what to call the thing it had been doing all along.
+
+
+## 10 · The throughline — What stayed
+
+
+Across three eras and twelve names, the function performed the same work. Editorial judgment about which technical evidence the company put in front of its most skeptical audiences, under commercial pressure. The form of the artifacts changed. The medium changed. The titles changed. The names of the companies changed. The substance of the work did not.
+
+
+This is the load-bearing claim of the article. Every named anchor in this piece, from McKenna at National Semiconductor in 1967 through Hendricks at Red Hat in 2021, is doing a recognizable version of the same work. They are deciding which technical claim to put in front of which audience, in what order, with what supporting evidence, under commercial pressure. The artifacts they produce vary widely. The judgment that decides which artifact to produce is the same judgment every time.
+
+
+The discipline's history is not the history of how the function got invented. The function was not invented. It is the history of how the function, having been continuously performed for sixty years under twelve different names, came to agree on what to call itself.
+
+
+> *The work was always older than the name. The name has finally caught up.*
+
+
+## Footnotes
+
+[^1]: Computer History Museum, *Selling the Computer Revolution*, archival collection of computing industry marketing materials from the 1950s through the 1980s. Available at [computerhistory.org/brochures](https://www.computerhistory.org/brochures/).
+[^2]: Frederick, John H., *Industrial Marketing*, Prentice-Hall, 1934. An early major academic treatment of marketing to business and industrial buyers in the U.S. literature.
+[^3]: U.S. Department of Labor, *O*NET Occupational Information Network*, classification 41-9031.00, Sales Engineers. Technical Marketing Engineer is listed as a variant title under the same classification. Available at [onetonline.org](https://www.onetonline.org/link/summary/41-9031.00).
+[^4]: Stanford University, *Silicon Genesis: Oral History Interview with Regis McKenna*, recorded August 22, 1995. Stanford Historical Society and Stanford Engineering archive.
+[^5]: Computer History Museum, archive entries for Regis McKenna and Regis McKenna, Inc., founded 1970 in Palo Alto, California.
+[^6]: Purdue University, College of Engineering, *Outstanding Electrical and Computer Engineering Alumni Profile: Dennis Carter*, 1995.
+[^7]: Computer History Museum, profile of Guy Kawasaki, including his early work as Apple's software evangelist beginning in 1983 under Mike Boich. Kawasaki's contemporaneous and subsequent writing documents the role.
+[^8]: Moore, Geoffrey A., *Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers*, HarperBusiness, 1991. Moore was a partner at Regis McKenna, Inc., at the time the book was written.
+[^9]: U.S. Department of Labor, O*NET 41-9031.00, as cited above. The Technical Marketing Engineer variant title is documented in the federal classification database.
+[^10]: Hendricks, Eric, *What is a technical marketing manager?*, Red Hat Partner Connect blog, November 9, 2021. Available at [connect.redhat.com](https://connect.redhat.com).
+[^11]: Internet Archive, Wayback Machine, capture of technicalmarketing.org dated July 8, 2009, 15:07:14 UTC. Available at [web.archive.org](https://web.archive.org/web/20090708150714/http://www.technicalmarketing.org/).
+[^12]: Anthropic, *Economic Index*, January 2026 report. Documentation of work activities most exposed to AI compression and absorption.
+[^13]: McKinsey & Company, *A New Year's Resolution for Leaders*, January 2026. Discussion of judgment-intensive work and its complementary rather than substitutive relationship to AI tooling.
+
+
+---
+
+# About Technical Marketing
+
+
+technicalmarketing.org is a publication for the people who do this work. The technical marketers operating without a shared reference. The practitioners coming into the field who deserve to find something better than scattered job descriptions and vendor blog posts. The senior people whose hard-won judgment has never been collected anywhere visible.
+
+
+The project is to give a fragmented field a working reference and a record it can collectively own. [The foundational reference page](/what-is-technical-marketing) is the editorial anchor: what the discipline is, where it sits, how it is distinguished from adjacent roles, and why it is structurally positioned to do well in the AI transition. The publication also produces original long-form articles, beginning with [The Technical Marketer](/the-technical-marketer), Article I of Volume 01. The quarterly index curates current thinking from across the field, with editorial commentary that names what each piece gets right and where the conversation needs to go next.
+
+
+The work is slow on purpose. Defining a discipline that has historically resisted definition takes multiple volumes, multiple contributors, and multiple revisions of foundational pages. The empty spaces in this publication are intentional. They mark the conversations the field still needs to have.
+
+
+## Who this serves
+
+
+Three audiences, named directly. Working practitioners who have done this job at scale and want the discipline they have built to be recognizable to the people they work with. Practitioners coming into the role today, including the next generation entering a field that is about to be transformed by AI, who deserve a working definition they can build on rather than invent alone. Senior practitioners and adjacent leaders whose hard-won judgment has not been collected anywhere visible yet.
+
+
+## Editorial connection
+
+
+The publication is edited by Chad Corriveau, founder of [ThinkRoot](https://thinkroot.io), an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration. This connection is disclosed deliberately so the editorial decisions can speak for themselves.
+
+
+## Editorial principles
+
+
+The publication is curated, not comprehensive. Pieces are included based on the strength of their argument and the specificity of their perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry to identify what each piece gets right, where it falls short, and how it fits in the broader conversation. The publication will represent more voices over time, including ones the editor disagrees with, when those voices sharpen the discipline's working definition.
+
+
+## Submissions and contributions
+
+
+The publication is actively building its contributor pipeline. Senior practitioners working in technical marketing or adjacent disciplines who want to contribute a piece to a future volume should review the [submissions page](/suggest) for current editorial priorities. Original pieces, recommendations of overlooked work, and respectful disagreement with anything published here are all welcome.
+
+
+## Publication schedule
+
+
+New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026. The foundational reference page is updated continuously as the discipline's working definition sharpens.
+
+
+---
+
+# Submissions — Suggest a Piece for the Next Volume
+
+
+Volume 02 publishes in Q3 2026. Submissions, recommendations, and respectful disagreement are welcome from practitioners, editors, and readers who have found something worth including in the next index.
+
+
+Pieces are evaluated on the strength of the argument and the specificity of the perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry, including notes that disagree with what the piece argues.
+
+
+## Particularly seeking
+
+- Practitioner essays from senior technical marketers, technical product marketers, and solutions marketing leaders inside the major enterprise software categories: hyperscaler and cloud infrastructure, data and analytics platforms, cybersecurity, DevOps and developer tools, AI and ML platforms, workflow and platform software, and observability
+- Sharp framework or methodology pieces that go beyond surface-level definitions of the discipline
+- Named-author analysis of where the field is shifting under AI pressure
+- Historical perspective on how the technical marketing function has evolved across the major enterprise software eras
+- Counter-arguments to currently popular framings of the discipline
+
+
+Especially interested in submissions from practitioners at AWS, Snowflake, ServiceNow, Salesforce, Palo Alto Networks, GitHub, Anthropic, Cloudflare, Datadog, Confluent, MongoDB, HashiCorp, Atlassian, and their peers across these categories.
+
+
+## What gets declined
+
+
+Vendor content marketing pieces, generic listicles, AI-generated explainers, and pieces that primarily exist to drive traffic to a commercial offer. The index is curated, not comprehensive. Every entry needs to earn its place by saying something true that isn't being said elsewhere.
+
+
+## Submit a piece
+
+
+A URL to the published piece, the author's site, or a draft for proposed original work.
+
+
+Responses within two weeks.
+
+
+---
+
+
+## Document Information
+
+- **Publication:** Technical Marketing
+- **URL:** https://technicalmarketing.org
+- **Edition:** First Edition, Volume I, Anno MMXXVI
+- **ISSN:** 0000-0001
+- **Editor:** Chad Corriveau, founding editor
+- **Publisher:** Published independently by The ThinkRoot LLC under separate editorial governance
+- **Contact:** editor@technicalmarketing.org
+- **Manifest:** https://technicalmarketing.org/llms.txt
+- **Generated:** 2026-05-27
+
+© 2026 Technical Marketing. All rights reserved. Citation and summarization permitted with attribution; verbatim reproduction of full articles requires editorial permission.
