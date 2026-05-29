@@ -1306,7 +1306,7 @@ a.masthead__title:hover { color: var(--red); }
 }
 
 
-/* ── Article cover plate (editorial banner) ────────────────────────── */
+/* ── Article cover plate (tipped-in plate) ─────────────────────────── */
 .article-cover-plate {
   max-width: var(--layout-max);
   margin: 2.5rem auto 0;
@@ -1314,27 +1314,65 @@ a.masthead__title:hover { color: var(--red); }
   box-sizing: border-box;
 }
 .article-cover-plate__frame {
+  position: relative;
   display: block;
+  padding: 14px;
+  background: var(--paper-light);
   box-shadow:
-    0 1px 2px rgba(28, 24, 18, 0.05),
-    0 14px 36px rgba(28, 24, 18, 0.12);
-  background: var(--paper);
-  border: 1px solid rgba(28, 24, 18, 0.08);
+    0 1px 3px rgba(28, 24, 18, 0.06),
+    0 18px 44px -8px rgba(28, 24, 18, 0.16),
+    0 6px 14px -4px rgba(28, 24, 18, 0.08);
 }
 .article-cover-plate__image {
   display: block;
   width: 100%;
   height: auto;
+  outline: 1px solid rgba(28, 24, 18, 0.18);
+  outline-offset: -1px;
+}
+/* Paper-grain overlay — implies print reproduction on the same stock */
+.article-cover-plate__frame::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: multiply;
 }
 .article-cover-plate__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+.article-cover-plate__caption-kicker {
   font-family: var(--f-sans);
-  font-size: 0.6875rem;
-  letter-spacing: 0.22em;
+  font-size: 0.625rem;
+  letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--ink-60);
-  text-align: center;
-  margin-top: 1rem;
   font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+.article-cover-plate__caption-kicker::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 1px;
+  background: rgba(28, 24, 18, 0.32);
+}
+.article-cover-plate__caption-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  letter-spacing: 0.005em;
 }
 @media (max-width: 720px) {
   .article-cover-plate {
@@ -1343,13 +1381,19 @@ a.masthead__title:hover { color: var(--red); }
     margin-top: 1.5rem;
   }
   .article-cover-plate__frame {
+    padding: 10px;
     box-shadow:
       0 1px 2px rgba(28, 24, 18, 0.05),
-      0 8px 20px rgba(28, 24, 18, 0.10);
+      0 10px 24px -6px rgba(28, 24, 18, 0.14);
+  }
+  .article-cover-plate__frame::after {
+    inset: 10px;
   }
   .article-cover-plate__caption {
-    font-size: 0.625rem;
-    margin-top: 0.75rem;
+    margin-top: 0.875rem;
+  }
+  .article-cover-plate__caption-title {
+    font-size: 0.875rem;
   }
 }
 
@@ -1386,7 +1430,10 @@ a.masthead__title:hover { color: var(--red); }
   <div class="article-cover-plate__frame">
     <img class="article-cover-plate__image" src="/Images/cover-reference.jpg" alt="Cover illustration for What Is Technical Marketing? — a paper-collage of instrumentation, gears, and lenses behind a torn paper card reading "A Discipline."" loading="eager">
   </div>
-  <figcaption class="article-cover-plate__caption">Cover &middot; Foundational Reference</figcaption>
+  <figcaption class="article-cover-plate__caption">
+    <span class="article-cover-plate__caption-kicker">Plate</span>
+    <span class="article-cover-plate__caption-title">Foundational Reference</span>
+  </figcaption>
 </figure>
 
 <section class="cover layout" aria-labelledby="article-title">
