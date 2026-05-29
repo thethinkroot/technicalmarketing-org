@@ -1476,19 +1476,20 @@ a.masthead__title:hover { color: var(--red); }
 }
 
 
-/* ── Article cover plate (Vox-style illustration) ──────────────────── */
+/* ── Article cover plate (editorial banner) ────────────────────────── */
 .article-cover-plate {
-  max-width: 540px;
-  margin: 2rem auto 0;
+  max-width: var(--layout-max);
+  margin: 2.5rem auto 0;
   padding: 0 1.5rem;
   box-sizing: border-box;
 }
 .article-cover-plate__frame {
   display: block;
   box-shadow:
-    0 1px 2px rgba(28, 24, 18, 0.06),
-    0 8px 24px rgba(28, 24, 18, 0.12);
+    0 1px 2px rgba(28, 24, 18, 0.05),
+    0 14px 36px rgba(28, 24, 18, 0.12);
   background: var(--paper);
+  border: 1px solid rgba(28, 24, 18, 0.08);
 }
 .article-cover-plate__image {
   display: block;
@@ -1497,19 +1498,28 @@ a.masthead__title:hover { color: var(--red); }
 }
 .article-cover-plate__caption {
   font-family: var(--f-sans);
-  font-size: 0.625rem;
-  letter-spacing: 0.2em;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-60);
   text-align: center;
-  margin-top: 0.875rem;
+  margin-top: 1rem;
   font-weight: 500;
 }
 @media (max-width: 720px) {
   .article-cover-plate {
-    max-width: 340px;
-    padding: 0 1rem;
-    margin-top: 1.25rem;
+    max-width: 100%;
+    padding: 0 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .article-cover-plate__frame {
+    box-shadow:
+      0 1px 2px rgba(28, 24, 18, 0.05),
+      0 8px 20px rgba(28, 24, 18, 0.10);
+  }
+  .article-cover-plate__caption {
+    font-size: 0.625rem;
+    margin-top: 0.75rem;
   }
 }
 
