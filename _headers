@@ -1,24 +1,29 @@
 /*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
-  Strict-Transport-Security: max-age=31536000; includeSubDomains
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self'; form-action https://formspree.io;
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=()
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; media-src 'self'; form-action https://formspree.io;
 
 /*.html
-  Cache-Control: public, max-age=3600, must-revalidate
+Cache-Control: public, max-age=3600, must-revalidate
 
 /*.svg
-  Cache-Control: public, max-age=31536000, immutable
+Cache-Control: public, max-age=31536000, immutable
 
 /*.xml
-  Cache-Control: public, max-age=3600
+Cache-Control: public, max-age=3600
 
 /robots.txt
-  Cache-Control: public, max-age=86400
+Cache-Control: public, max-age=86400
+
+/audio/*
+Cache-Control: public, max-age=31536000
+Accept-Ranges: bytes
+Content-Type: audio/mpeg
 
 /manual/*
-  X-Robots-Tag: noindex, nofollow, noarchive
-  Cache-Control: private, no-store
-  Referrer-Policy: no-referrer
+X-Robots-Tag: noindex, nofollow, noarchive
+Cache-Control: private, no-store
+Referrer-Policy: no-referrer
