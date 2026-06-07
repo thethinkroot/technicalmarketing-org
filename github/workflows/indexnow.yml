@@ -1,0 +1,44 @@
+name: IndexNow Ping on Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  ping-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping IndexNow for all pages
+        run: |
+          KEY="b5d219858696e9d548426f2a6045680e"
+          HOST="technicalmarketing.org"
+          
+          # Ping all indexed URLs
+          URLS=(
+            "https://$HOST/"
+            "https://$HOST/what-is-technical-marketing"
+            "https://$HOST/the-technical-marketer"
+            "https://$HOST/before-the-name"
+            "https://$HOST/technical-marketing-age-of-ai"
+            "https://$HOST/about"
+          )
+          
+          # Build JSON payload for batch ping
+          URL_LIST=$(printf '"%s",' "${URLS[@]}")
+          URL_LIST="[${URL_LIST%,}]"
+          
+          curl -s -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d "{
+              \"host\": \"$HOST\",
+              \"key\": \"$KEY\",
+              \"keyLocation\": \"https://$HOST/$KEY.txt\",
+              \"urlList\": $URL_LIST
+            }" \
+            -o /dev/null -w "IndexNow response: %{http_code}\n"
+          
+          # Also ping Bing directly
+          curl -s "https://www.bing.com/indexnow?url=https://$HOST/&key=$KEY" \
+            -o /dev/null -w "Bing response: %{http_code}\n"
+          
+          echo "IndexNow pings complete."
