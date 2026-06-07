@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:podcast="https://podcastindex.org/namespace/1.0">
+
 <channel>
   <title>Technical Marketing</title>
   <link>https://technicalmarketing.org/</link>
   <atom:link href="https://technicalmarketing.org/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>A quarterly index of current thinking on technical marketing.</description>
+  <description>A quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software. Each volume indexes current practitioner thinking on definition, craft, career, and method.</description>
   <language>en-us</language>
-  <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-  <lastBuildDate>Wed, 20 May 2026 00:00:00 GMT</lastBuildDate>
+  <copyright>Copyright 2026 ThinkRoot LLC</copyright>
+  <pubDate>Thu, 05 Jun 2026 00:00:00 GMT</pubDate>
+  <lastBuildDate>Sun, 07 Jun 2026 00:00:00 GMT</lastBuildDate>
   <generator>technicalmarketing.org</generator>
-
-  <item>
-    <title>Volume 01 — Spring 2026</title>
+  <image>
+    <url>https://technicalmarketing.org/publisher-logo.png</url>
+    <title>Technical Marketing</title>
     <link>https://technicalmarketing.org/</link>
-    <guid isPermaLink="true">https://technicalmarketing.org/volume-01</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-    <description>The state of a discipline still being named. The inaugural index of current thinking on technical marketing — definitions, frameworks, career perspectives, and emerging tensions.</description>
+  </image>
+
+  <!-- Podcast namespace -->
+  <itunes:author>Chad Corriveau</itunes:author>
+  <itunes:owner>
+    <itunes:name>Chad Corriveau</itunes:name>
+    <itunes:email>chad@thinkroot.io</itunes:email>
+  </itunes:owner>
+  <itunes:image href="https://technicalmarketing.org/og-image.png"/>
+  <itunes:category text="Business">
+    <itunes:category text="Marketing"/>
+  </itunes:category>
+  <itunes:category text="Technology"/>
+  <itunes:explicit>false</itunes:explicit>
+  <itunes:type>episodic</itunes:type>
+
+  <!-- Episode 2: Technical Marketing in the Age of AI -->
+  <item>
+    <title>Technical Marketing in the Age of AI</title>
+    <link>https://technicalmarketing.org/technical-marketing-age-of-ai</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/technical-marketing-age-of-ai</guid>
+    <pubDate>Thu, 05 Jun 2026 00:00:00 GMT</pubDate>
+    <description>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why the discipline expands when everything around it shrinks.</description>
+    <content:encoded><![CDATA[<p>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why the discipline expands when everything around it shrinks.</p><p><a href="https://technicalmarketing.org/technical-marketing-age-of-ai">Read the full article</a></p>]]></content:encoded>
+    <enclosure url="https://technicalmarketing.org/audio/tm-org-article-ii-ai-narrated.mp3" length="REPLACE_WITH_ACTUAL_BYTES" type="audio/mpeg"/>
+    <itunes:duration>12:50</itunes:duration>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:episode>2</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Chad Corriveau</itunes:author>
+    <itunes:image href="https://technicalmarketing.org/og-image-article-ii-ai.jpg"/>
   </item>
+
+  <!-- Episode 1: What Is Technical Marketing? -->
+  <item>
+    <title>What Is Technical Marketing? A Reference for the Discipline</title>
+    <link>https://technicalmarketing.org/what-is-technical-marketing</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/what-is-technical-marketing</guid>
+    <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+    <description>The foundational reference for technical marketing: what the discipline is, what it produces, how it is measured, and why it expands in the AI transition.</description>
+    <content:encoded><![CDATA[<p>The foundational reference for technical marketing: what the discipline is, what it produces, how it is measured, and why it expands in the AI transition.</p><p><a href="https://technicalmarketing.org/what-is-technical-marketing">Read the full article</a></p>]]></content:encoded>
+    <enclosure url="https://technicalmarketing.org/audio/tm-org-what-is-technical-marketing-narrated.mp3" length="REPLACE_WITH_ACTUAL_BYTES" type="audio/mpeg"/>
+    <itunes:duration>10:51</itunes:duration>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:episode>1</itunes:episode>
+    <itunes:season>1</itunes:season>
+    <itunes:episodeType>full</itunes:episodeType>
+    <itunes:author>Chad Corriveau</itunes:author>
+    <itunes:image href="https://technicalmarketing.org/og-image.png"/>
+  </item>
+
 </channel>
 </rss>
