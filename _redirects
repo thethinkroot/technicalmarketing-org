@@ -2,3 +2,7 @@
 
 # Volume archive URLs for future use
 /volume-01  /  301
+
+# Contributors directory - redirect to founding editor
+/contributors    /contributors/chad-corriveau    301
+/contributors/   /contributors/chad-corriveau    301
