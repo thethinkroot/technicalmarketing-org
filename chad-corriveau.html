@@ -5,25 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#EFE6C9">
 
-<title>About &middot; Technical Marketing</title>
-<meta name="description" content="About Technical Marketing, an independent quarterly publication and working reference for the discipline as practiced in enterprise software.">
+<title>Chad Corriveau · Founding Editor · Technical Marketing</title>
+<meta name="description" content="Chad Corriveau is the founding editor of Technical Marketing. Twelve years at ServiceNow, three Knowledge mainstage keynotes, founder of ThinkRoot LLC.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<link rel="canonical" href="https://technicalmarketing.org/about">
+<link rel="canonical" href="https://technicalmarketing.org/contributors/chad-corriveau">
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="profile">
 <meta property="og:site_name" content="Technical Marketing">
-<meta property="og:title" content="About &middot; Technical Marketing">
-<meta property="og:description" content="About Technical Marketing, an independent quarterly publication and working reference for the discipline as practiced in enterprise software.">
-<meta property="og:url" content="https://technicalmarketing.org/about">
+<meta property="og:title" content="Chad Corriveau · Founding Editor · Technical Marketing">
+<meta property="og:description" content="Chad Corriveau is the founding editor of Technical Marketing. Twelve years at ServiceNow, three Knowledge mainstage keynotes, founder of ThinkRoot LLC.">
+<meta property="og:url" content="https://technicalmarketing.org/contributors/chad-corriveau">
 <meta property="og:image" content="https://technicalmarketing.org/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="About &middot; Technical Marketing">
-<meta name="twitter:description" content="About Technical Marketing, an independent quarterly publication and working reference for the discipline as practiced in enterprise software.">
+<meta name="twitter:title" content="Chad Corriveau · Founding Editor · Technical Marketing">
+<meta name="twitter:description" content="Chad Corriveau is the founding editor of Technical Marketing. Twelve years at ServiceNow, three Knowledge mainstage keynotes, founder of ThinkRoot LLC.">
 <meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
 <meta name="twitter:site" content="@thethinkroot">
 
@@ -1009,7 +1009,7 @@ a.masthead__title:hover { color: var(--red); }
   color: var(--ink);
   margin-bottom: 1.125rem;
 }
-.content p:first-of-type::first-letter {
+.content > p:first-of-type::first-letter {
   font-family: var(--f-display);
   font-weight: 700;
   font-size: 4.25em;
@@ -1077,7 +1077,7 @@ a.masthead__title:hover { color: var(--red); }
 @media (max-width: 600px) {
   .content { padding: 2rem 0 2rem; padding-left: 1.25rem; padding-right: 1.25rem; }
   .content p { font-size: 1.0625rem; }
-  .content p:first-of-type::first-letter { font-size: 3.5em; margin-right: 0.45rem; }
+  .content > p:first-of-type::first-letter { font-size: 3.5em; margin-right: 0.45rem; }
   .content ul { font-size: 1rem; }
 }
 
@@ -1402,106 +1402,93 @@ a.masthead__title:hover { color: var(--red); }
   }
 }
 
-/* ── Article cover plate (tipped-in plate) ─────────────────────────── */
-.article-cover-plate {
-  max-width: var(--layout-max);
-  margin: 2.5rem auto 0;
-  padding: 0 1.5rem;
-  box-sizing: border-box;
-}
-.article-cover-plate__frame {
-  position: relative;
-  display: block;
-  padding: 14px;
-  background: var(--paper-light);
-  box-shadow:
-    0 1px 3px rgba(28, 24, 18, 0.06),
-    0 18px 44px -8px rgba(28, 24, 18, 0.16),
-    0 6px 14px -4px rgba(28, 24, 18, 0.08);
-}
-.article-cover-plate__image {
-  display: block;
-  width: 100%;
-  height: auto;
-  outline: 1px solid rgba(28, 24, 18, 0.18);
-  outline-offset: -1px;
-}
-/* Paper-grain overlay — implies print reproduction on the same stock */
-.article-cover-plate__frame::after {
-  content: "";
-  position: absolute;
-  inset: 14px;
-  pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-}
-.article-cover-plate__caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.125rem;
-}
-.article-cover-plate__caption-kicker {
-  font-family: var(--f-sans);
-  font-size: 0.625rem;
-  letter-spacing: 0.32em;
+
+.page-head__role {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--ink-60);
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.45rem;
-}
-.article-cover-plate__caption-kicker::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 1px;
-  background: rgba(28, 24, 18, 0.32);
-}
-.article-cover-plate__caption-title {
-  font-family: var(--f-serif);
-  font-style: italic;
-  font-size: 0.9375rem;
-  color: var(--ink);
-  letter-spacing: 0.005em;
+  color: var(--red);
+  margin: 0.5rem 0 1rem;
 }
 @media (max-width: 720px) {
-  .article-cover-plate {
-    max-width: 100%;
-    padding: 0 1.25rem;
-    margin-top: 1.5rem;
-  }
-  .article-cover-plate__frame {
-    padding: 10px;
-    box-shadow:
-      0 1px 2px rgba(28, 24, 18, 0.05),
-      0 10px 24px -6px rgba(28, 24, 18, 0.14);
-  }
-  .article-cover-plate__frame::after {
-    inset: 10px;
-  }
-  .article-cover-plate__caption {
-    margin-top: 0.875rem;
-  }
-  .article-cover-plate__caption-title {
-    font-size: 0.875rem;
-  }
+  .page-head__role { font-size: 0.6875rem; letter-spacing: 0.18em; }
+}
+
+.contrib-biblio { margin: 1.5rem 0 2rem; }
+.contrib-biblio__item { padding: 1.125rem 0; border-bottom: 0.5px solid var(--border); }
+.contrib-biblio__item:last-child { border-bottom: none; }
+.contrib-biblio__kicker {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 0.375rem; display: block;
+}
+.contrib-biblio__title {
+  font-family: var(--f-serif); font-style: italic; font-size: 1.125rem;
+  font-weight: 500; color: var(--ink); margin: 0 0 0.5rem;
+}
+.contrib-biblio__title a {
+  color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.contrib-biblio__title a:hover { color: var(--red); border-bottom-color: var(--red); }
+.contrib-biblio__note {
+  font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55;
+  color: var(--ink-60); margin: 0;
+}
+
+.contrib-connect { display: grid; grid-template-columns: 140px 1fr; gap: 0.875rem 1.75rem; margin: 1rem 0 2rem; }
+.contrib-connect__label {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); padding-top: 0.22rem;
+}
+.contrib-connect__value { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
+.contrib-connect__value a {
+  color: var(--ink); border-bottom: 1px solid var(--border-strong); padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.contrib-connect__value a:hover { color: var(--red); border-bottom-color: var(--red); }
+.contrib-connect__note { font-family: var(--f-serif); font-style: italic; font-size: 0.8125rem; color: var(--ink-60); display: block; margin-top: 0.125rem; }
+@media (max-width: 720px) {
+  .contrib-connect { grid-template-columns: 1fr; gap: 0.25rem 0; }
+  .contrib-connect__label { padding-top: 0.375rem; }
+  .contrib-connect__value { margin-bottom: 1rem; }
+  .contrib-connect__value:last-of-type { margin-bottom: 0; }
+}
+
+.contributor-card { padding: 2rem 0; border-bottom: 0.5px solid var(--border-strong); }
+.contributor-card:first-of-type { border-top: 0.5px solid var(--border-strong); }
+.contributor-card__head { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
+.contributor-card__name { font-family: var(--f-serif); font-style: italic; font-size: 1.5rem; font-weight: 500; color: var(--ink); margin: 0; line-height: 1.15; }
+.contributor-card__name a { color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 2px; transition: color 0.15s ease, border-color 0.15s ease; }
+.contributor-card__name a:hover { color: var(--red); border-bottom-color: var(--red); }
+.contributor-card__role { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); }
+.contributor-card__bio { font-family: var(--f-serif); font-size: 1rem; line-height: 1.6; color: var(--ink); margin: 0 0 0.75rem; }
+.contributor-card__more { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--red); border: none; padding: 0; }
+.contributor-card__more:hover { border-bottom: 1px solid var(--red); }
+
+.contrib-cta { margin: 3rem 0 1rem; padding: 2rem 2.25rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; }
+.contrib-cta::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.contrib-cta__kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); display: block; margin-bottom: 0.625rem; }
+.contrib-cta__title { font-family: var(--f-serif); font-style: italic; font-size: 1.375rem; font-weight: 500; color: var(--ink); margin: 0 0 0.875rem; }
+.contrib-cta__body { font-family: var(--f-serif); font-size: 1rem; line-height: 1.6; color: var(--ink); margin: 0; }
+.contrib-cta__body a { color: var(--ink); border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.contrib-cta__body a:hover { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 720px) {
+  .contrib-cta { padding: 1.5rem 1.25rem; margin: 2.25rem -0.25rem 1rem; }
+  .contrib-cta__title { font-size: 1.1875rem; }
 }
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"]},{"@type":"AboutPage","@id":"https://technicalmarketing.org/about#aboutpage","url":"https://technicalmarketing.org/about","name":"About Technical Marketing","description":"About Technical Marketing, an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies.","inLanguage":"en-US","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"mainEntity":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"about":{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"About","item":"https://technicalmarketing.org/about"}]}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"description":"Founding editor of Technical Marketing. Twelve years at ServiceNow across technical marketing roles. Founder of ThinkRoot LLC, a separate commercial advisory practice."},{"@type":"ProfilePage","@id":"https://technicalmarketing.org/contributors/chad-corriveau#profilepage","url":"https://technicalmarketing.org/contributors/chad-corriveau","name":"Chad Corriveau — Founding Editor, Technical Marketing","description":"Chad Corriveau, founding editor of Technical Marketing. Biography, publications, disclosures, and contact.","inLanguage":"en-US","mainEntity":{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau"},"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Contributors","item":"https://technicalmarketing.org/contributors"},{"@type":"ListItem","position":3,"name":"Chad Corriveau","item":"https://technicalmarketing.org/contributors/chad-corriveau"}]}}]}</script>
 </head>
 <body>
 <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="masthead layout" role="banner">
   <div class="masthead__furniture">
-    <span>First Edition &middot; ISSN pending</span>
+    <span>First Edition &middot; ISSN 0000-0001</span>
     <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
   </div>
   <hr class="masthead__rule">
@@ -1518,61 +1505,75 @@ a.masthead__title:hover { color: var(--red); }
       <a href="/what-is-technical-marketing" class="masthead__nav-link">What is Technical Marketing?</a>
       <a href="/the-technical-marketer" class="masthead__nav-link">The Technical Marketer</a>
       <a href="/before-the-name" class="masthead__nav-link">Before the Name</a>
-      <a href="/technical-marketing-age-of-ai" class="masthead__nav-link">In the Age of AI</a>
-      <a href="/about" class="masthead__nav-link" aria-current="page">About</a>
+      <a href="/about" class="masthead__nav-link">About</a>
   </nav>
   <hr class="masthead__rule">
 </header>
 
-<figure class="article-cover-plate">
-  <div class="article-cover-plate__frame">
-    <img class="article-cover-plate__image" src="/Images/cover-about.jpg" alt="Cover illustration for the About page: a magazine-style collage on cream paper with the headline ABOUT TECHNICAL MARKETING.ORG and the standfirst The Discipline. The Work. The Community., torn paper labels reading A Reference Built on Practice, Documenting the Discipline, Before the Name Beyond the Title, and A Community That Builds What's Next, alongside sketches of architectural drawings, a lighthouse, drafting tools, and a conference table." width="1100" height="480" loading="eager" fetchpriority="high" decoding="async">
-  </div>
-  <figcaption class="article-cover-plate__caption">
-    <span class="article-cover-plate__caption-kicker">Plate</span>
-    <span class="article-cover-plate__caption-title">About</span>
-  </figcaption>
-</figure>
-
 <main id="main">
 
 <section class="page-head layout">
-  <div class="page-head__kicker">About</div>
-  <h1 class="page-head__title">For the people who do this work.</h1>
-  <p class="page-head__deck">An independent quarterly publication for the practitioners building, defining, and refining technical marketing as the discipline takes its name.</p>
+  <div class="page-head__kicker">Contributor</div>
+  <h1 class="page-head__title">Chad Corriveau</h1>
+  <p class="page-head__role">Founding Editor &middot; Volume I, 2026&ndash;</p>
+  <p class="page-head__deck">Twelve years building technical marketing at scale across the enterprise. Founding editor of this publication. Founder of a separate commercial advisory practice.</p>
   <div class="page-head__ornament" aria-hidden="true">
     <span class="page-head__diamond"></span>
   </div>
 </section>
 
 <section class="content">
-<p><em>Technical Marketing</em> is the field manual for a discipline practiced for decades before it had a name. The publication exists for the people doing the work&mdash;the technical marketers, sales engineers, and product specialists who build the evidence layer that supports a complex sale. Published quarterly. Independently edited.</p>
 
-  <p>The project is to give a fragmented field a working reference and a record it can collectively own. <a href="/what-is-technical-marketing">The foundational reference page</a> is the editorial anchor: what the discipline is, where it sits, how it is distinguished from adjacent roles, and why it is structurally positioned to do well in the AI transition. The publication also produces original long-form articles, beginning with <a href="/the-technical-marketer">The Technical Marketer</a>, Article I of Volume 01. The quarterly index curates current thinking from across the field, with editorial commentary that names what each piece gets right and where the conversation needs to go next.</p>
+<p>Chad Corriveau is the founding editor of <em>Technical Marketing</em>. He spent twelve years at ServiceNow across Technical Marketing Manager, Senior Technical Marketing Engineer, and Senior Manager of Technical Product Marketing roles &mdash; building reference architectures deployed at enterprise accounts including CERN, Disney, USAA, the U.S. Air Force, Japan Railways, and Stellantis, managing analyst relations across Gartner and Forrester cycles, and delivering three consecutive Knowledge conference mainstage keynotes to audiences of twenty thousand. Before software, he served four years in the U.S. Navy as a Yeoman (1993&ndash;1997). He holds an MBA cum laude from Forbes School of Business at the University of Arizona and a BA from the University of San Diego. He founded ThinkRoot LLC in 2026 as a separate commercial technical marketing advisory practice.</p>
 
-  <p>The work is slow on purpose. Defining a discipline that has historically resisted definition takes multiple volumes, multiple contributors, and multiple revisions of foundational pages. The empty spaces in this publication are intentional. They mark the conversations the field still needs to have.</p>
+<h2>Pieces in Technical Marketing</h2>
 
-  <h2>Who this serves</h2>
+<div class="contrib-biblio">
 
-  <p>Three audiences, named directly. Working practitioners who have done this job at scale and want the discipline they have built to be recognizable to the people they work with. Practitioners coming into the role today, including the next generation entering a field that is about to be transformed by AI, who deserve a working definition they can build on rather than invent alone. Senior practitioners and adjacent leaders whose hard-won judgment has not been collected anywhere visible yet.</p>
+  <div class="contrib-biblio__item">
+    <span class="contrib-biblio__kicker">Article I &middot; Volume 01</span>
+    <h3 class="contrib-biblio__title"><a href="/the-technical-marketer">The Technical Marketer: A Canonical Job Description</a></h3>
+    <p class="contrib-biblio__note">A canonical job description for senior technical marketing roles. Six workstreams, six measurable outcomes, three compensation bands, variant adaptations for platform, infrastructure, and PLG companies, and a copyable text for use in real hiring. May 2026.</p>
+  </div>
 
-  <h2>Editorial connection</h2>
+  <div class="contrib-biblio__item">
+    <span class="contrib-biblio__kicker">Article II &middot; Volume 01</span>
+    <h3 class="contrib-biblio__title"><a href="/before-the-name">Before the Name: A History of the Technical Marketing Function</a></h3>
+    <p class="contrib-biblio__note">A history of the technical marketing function. Six decades of the work being performed under twelve different names, traced through primary and authoritative secondary sources from 1934 through 2024. May 2026.</p>
+  </div>
 
-  <p>The publication is edited by Chad Corriveau, founder of <a href="https://thinkroot.io" rel="external noopener">ThinkRoot</a>, an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration. This connection is disclosed deliberately so the editorial decisions can speak for themselves.</p>
+  <div class="contrib-biblio__item">
+    <span class="contrib-biblio__kicker">Foundational Reference &middot; Volume 01</span>
+    <h3 class="contrib-biblio__title"><a href="/what-is-technical-marketing">What Is Technical Marketing? A Working Definition</a></h3>
+    <p class="contrib-biblio__note">The foundational reference page. Published under institutional authorship; written and continuously maintained by the editor. Spring 2026, ongoing.</p>
+  </div>
 
-  <h2>Editorial principles</h2>
+</div>
 
-  <p>The publication is curated, not comprehensive. Pieces are included based on the strength of their argument and the specificity of their perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry to identify what each piece gets right, where it falls short, and how it fits in the broader conversation. The publication will represent more voices over time, including ones the editor disagrees with, when those voices sharpen the discipline's working definition.</p>
+<h2>Disclosures</h2>
 
-  <h2>Submissions and contributions</h2>
+<p>Chad founded ThinkRoot LLC in 2026 as a commercial technical marketing advisory practice. ThinkRoot operates at <a href="https://thinkroot.io" target="_blank" rel="noopener">thinkroot.io</a> and is editorially separate from <em>Technical Marketing</em> under the publisher's editorial governance framework documented on the <a href="/about">about page</a>. <em>Technical Marketing</em> does not accept commercial sponsorship of editorial content from any party, including ThinkRoot. ThinkRoot-authored work that appears in the quarterly index alongside curated pieces from other practitioners is disclosed as such on each entry.</p>
 
-  <p>The publication is actively building its contributor pipeline. Senior practitioners working in technical marketing or adjacent disciplines who want to contribute a piece to a future volume should review the <a href="/suggest">submissions page</a> for current editorial priorities. Original pieces, recommendations of overlooked work, and respectful disagreement with anything published here are all welcome.</p>
+<p>Chad's editorial role on <em>Technical Marketing</em> is unpaid. No commercial relationship exists between the publication and any subject of editorial coverage. Editorial decisions are made by the founding editor based on the principles documented at <a href="/about">/about</a>.</p>
 
-  <h2>Publication schedule</h2>
+<h2>Connect</h2>
 
-  <p>New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026. The foundational reference page is updated continuously as the discipline's working definition sharpens.</p>
+<div class="contrib-connect">
 
-  <a href="/" class="back-link">← Return to the index</a>
+  <span class="contrib-connect__label">LinkedIn</span>
+  <span class="contrib-connect__value"><a href="https://www.linkedin.com/in/chad-t-corriveau/" target="_blank" rel="noopener">linkedin.com/in/chad-t-corriveau</a></span>
+
+  <span class="contrib-connect__label">Advisory</span>
+  <span class="contrib-connect__value">
+    <a href="https://thinkroot.io" target="_blank" rel="noopener">thinkroot.io</a>
+    <span class="contrib-connect__note">ThinkRoot LLC &mdash; a separate commercial advisory practice</span>
+  </span>
+
+  <span class="contrib-connect__label">Editorial</span>
+  <span class="contrib-connect__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+
+</div>
+
 </section>
 
 </main>
@@ -1581,7 +1582,7 @@ a.masthead__title:hover { color: var(--red); }
   <hr class="folio-band__rule">
   <hr class="folio-band__rule">
   <div class="folio-band__inner">
-    <span class="folio-band__left">Folio A</span>
+    <span class="folio-band__left">Folio C</span>
     <span class="folio-band__center">&#9670;</span>
     <span class="folio-band__right">First Printing &middot; MMXXVI</span>
   </div>
@@ -1610,7 +1611,7 @@ a.masthead__title:hover { color: var(--red); }
     </div>
 
     <div class="colophon__bottom">
-      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <div class="colophon__meta">ISSN 0000-0001 &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
       <nav class="colophon__nav" aria-label="Site">
         <a href="/about" class="colophon__nav-link">About</a>
         <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
