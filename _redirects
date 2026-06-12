@@ -1,3 +1,6 @@
+# technicalmarketing.org — Cloudflare Pages redirects
+# First match wins. Current-site rules first, legacy reclamation below.
+
 # www to apex redirect (handled at Cloudflare level, but defensive)
 
 # Volume archive URLs for future use
@@ -6,3 +9,24 @@
 # Contributors directory - redirect to founding editor
 /contributors    /contributors/chad-corriveau    301
 /contributors/   /contributors/chad-corriveau    301
+
+# ---------------------------------------------------------------
+# Legacy reclamation (Wayback CDX audit, 2026-06-12)
+# Domain history: design blog 2009-2012, TM community site 2013-2016,
+# TM tools directory 2020-2023.
+
+# Era 2: Technical Marketing community site (2013-2016)
+/2013/02/the-first-technical-marketing-meetup/ /before-the-name 301
+/2013/05/technical-marketing-meetup-may-16th-2013/ /before-the-name 301
+/analyst-news/ /what-is-technical-marketing 301
+/category/analysts/ /what-is-technical-marketing 301
+/tag/technical-marketing/ /what-is-technical-marketing 301
+/jobs/ /the-technical-marketer 301
+/blog/ / 301
+
+# Era 3: tools directory (2020-2023). Retarget to /tools when that page ships.
+/listing/* / 301
+
+# Era 1 (2009-2012 design blog): intentionally not redirected.
+# Add lines here ONLY for GSC-confirmed live backlinks, e.g.:
+# /2011/05/25/writing-the-perfect-web-design-contract/ / 301

@@ -452,5 +452,8 @@ The publication is published from San Diego, California. Edited independently. F
 | Date | Decision | Rationale |
 | --- | --- | --- |
 | MMXXVI · First Printing | All decisions in this manual locked at founding state | Initial canonical reference established |
+| MMXXVI · June 12 | Narrated editions: pages whose primary payload is continuous prose of roughly 2,000 words or more receive a Charlotte narration and a podcast episode. Pages whose payload is tables, diagrams, or lookup structure do not, regardless of section. A reference page that grows past the threshold in revision is recorded at the next quarterly cycle. | Keeps the narrated edition meaningful as a treatment for essays, avoids stale audio on living reference pages, and keeps the podcast feed substantive. |
+| MMXXVI · June 12 | Contested attribution is handled by footnote, neutrally worded, without adjudication. First applied to the Crossing the Chasm origination dispute in Article II, footnote 8, following a public reader question. | A publication of record notes disputes it cannot resolve. The correction loop promised in the editor's note is real, and the first public critic became the first documented correction. |
+| MMXXVI · June 12 | Reference entries open with an answer-shaped first paragraph that states the page's conclusion in literal query language, carry an alternativeHeadline in Article schema, and include Google Scholar citation meta tags. ISSN added to citation tags when the Library of Congress issues it. | Retrieval is literal. The page that states the answer plainly is the page that gets cited. |
 
 *Future entries appended here. Format: date, decision, rationale.*
