@@ -142,6 +142,15 @@ a.masthead__title:hover{color:var(--red)}
   .masthead__url{font-size:.5625rem;letter-spacing:.14em}
   .masthead__nav{gap:0 1rem;padding:.625rem 0 .75rem}
   .masthead__nav-link{font-size:.5625rem;letter-spacing:.12em}
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { flex-direction: column; gap: 0.5rem 0; }
+  .masthead__nav-divider { display: none; }
+}
   .cover{padding:2.25rem 0 2rem}
   .cover__display{font-size:4rem;line-height:.95}
   .cover__rule{width:120px;margin-bottom:1.75rem}
