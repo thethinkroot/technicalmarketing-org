@@ -1324,6 +1324,21 @@ a.masthead__title:hover { color: var(--red); }
 .essay-card__cta-arrow { transition: transform 0.15s ease; display: inline-block; margin-left: 0.25rem; }
 .essay-card:hover .essay-card__cta-arrow { transform: translateX(3px); }
 
+.essay-card--featured {
+  background: var(--paper-shade);
+  border-color: var(--border-strong);
+}
+.essay-card--featured::before {
+  height: 4px;
+  background: var(--ink);
+}
+.essay-card--featured:hover { background: var(--paper-shade); }
+.essay-card--featured:hover::before { height: 6px; background: var(--ink); }
+@media (min-width: 720px) {
+  .essay-card--featured { grid-column: 1 / -1; }
+  .essay-card--featured .essay-card__deck { max-width: 64ch; }
+}
+
 /* ── Quarterly index ───────────────────────────────────────────────── */
 .index {
   padding: 2rem 0;
@@ -1966,13 +1981,13 @@ a.entry__title:hover { color: var(--red); border-bottom-color: var(--red); }
   <header class="essays__header">
     <div class="essays__kicker">Volume 01 · Essays</div>
     <h2 id="essays-title" class="essays__title">The discipline written down.</h2>
-    <p class="essays__lede">Two essays published as part of Volume 01. The job description for the role the discipline has named, and the history of the work that existed under twelve titles before the naming.</p>
+    <p class="essays__lede">Three articles published as part of Volume 01. A canonical job description. A history of the function across six decades. And the structural argument for why AI expands the discipline rather than contracting it.</p>
   </header>
   <div class="essays__grid">
     <a href="/the-technical-marketer" class="essay-card">
       <div class="essay-card__kicker">Article I · Vol. 01</div>
       <h3 class="essay-card__title">The Technical Marketer.</h3>
-      <p class="essay-card__deck">A canonical job description. Six workstreams, six measurable outcomes, three compensation bands, variant adaptations for platform, infrastructure, and PLG companies, and a copyable text for use in real hiring.</p>
+      <p class="essay-card__deck">A canonical job description. Six workstreams, six measurable outcomes, three compensation bands, four demo archetypes by company type, and a copyable text for use in real hiring.</p>
       <span class="essay-card__cta">Read Article I <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
     </a>
     <a href="/before-the-name" class="essay-card">
@@ -1980,6 +1995,12 @@ a.entry__title:hover { color: var(--red); border-bottom-color: var(--red); }
       <h3 class="essay-card__title">Before the Name.</h3>
       <p class="essay-card__deck">A history of the technical marketing function. Six decades of the work being performed under twelve different titles, traced through primary and authoritative secondary sources from 1934 through 2024.</p>
       <span class="essay-card__cta">Read Article II <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+    </a>
+    <a href="/technical-marketing-age-of-ai" class="essay-card essay-card--featured">
+      <div class="essay-card__kicker">Article III · Vol. 01 · New</div>
+      <h3 class="essay-card__title">Technical Marketing in the Age of AI.</h3>
+      <p class="essay-card__deck">AI compresses artifact production across every GTM discipline. Technical marketing does not contract under that pressure. It clarifies. The structural argument for why the discipline expands when everything around it shrinks, and why AI companies are building this function from scratch right now.</p>
+      <span class="essay-card__cta">Read Article III <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
     </a>
   </div>
 </section>
