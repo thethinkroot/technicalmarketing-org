@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>Technical Marketing vs Product Marketing: The Difference &middot; Technical Marketing</title>
+<meta name="description" content="Product marketing decides what the company says. Technical marketing decides what the company can prove. A working reference on the boundary between the two functions, who owns what, and why the AI era sharpened the line.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/technical-marketing-vs-product-marketing">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="Technical Marketing vs Product Marketing: The Difference &middot; Technical Marketing">
+<meta property="og:description" content="Product marketing decides what the company says. Technical marketing decides what the company can prove. A working reference on the boundary between the two functions, who owns what, and why the AI era sharpened the line.">
+<meta property="og:url" content="https://technicalmarketing.org/technical-marketing-vs-product-marketing">
+<meta property="og:image" content="https://technicalmarketing.org/og-image-reference-tmm-pmm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-06-12T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-06-12T00:00:00+00:00">
+<meta property="article:author" content="https://technicalmarketing.org/about">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Technical Marketing vs Product Marketing: The Difference &middot; Technical Marketing">
+<meta name="twitter:description" content="Product marketing decides what the company says. Technical marketing decides what the company can prove. A working reference on the boundary between the two functions, who owns what, and why the AI era sharpened the line.">
+<meta name="twitter:image" content="https://technicalmarketing.org/og-image-reference-tmm-pmm.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"knowsAbout":["Technical Marketing","Demo Strategy","Enterprise Software Marketing","Sales Engineering","Product Marketing","Technical Product Marketing","AI in Enterprise Software","Demo Coherence"],"hasOccupation":{"@type":"Occupation","name":"Technical Marketing Manager","occupationLocation":{"@type":"Country","name":"United States"}}},{"@type":"Article","@id":"https://technicalmarketing.org/technical-marketing-vs-product-marketing#article","headline":"Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning","alternativeHeadline":"The Difference Between Technical Marketing and Product Marketing","description":"Product marketing owns what the company says: positioning, messaging, segmentation, launch. Technical marketing owns what the company can prove: demonstrations, reference architectures, benchmarks, and the technical evidence placed in front of skeptical evaluators. A working reference on the boundary.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-06-12","dateModified":"2026-06-12","url":"https://technicalmarketing.org/technical-marketing-vs-product-marketing","mainEntityOfPage":"https://technicalmarketing.org/technical-marketing-vs-product-marketing","wordCount":1150,"articleSection":"Reference","image":{"@type":"ImageObject","url":"https://technicalmarketing.org/og-image-reference-tmm-pmm.png","width":1200,"height":630},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#answer","#boundary"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between technical marketing and product marketing?","acceptedAnswer":{"@type":"Answer","text":"The difference is the difference between proof and positioning. Product marketing owns what the company says about the product: the positioning, the messaging, the segmentation, the launch. Technical marketing owns what the company can prove: the demonstrations, reference architectures, benchmarks, and technical evidence placed in front of the buyer's most skeptical evaluators. One function decides a claim is worth making. The other decides whether it will survive contact with a technical audience."}},{"@type":"Question","name":"Is technical marketing part of product marketing?","acceptedAnswer":{"@type":"Answer","text":"In some organizations technical marketing reports into product marketing, in others into product or engineering, and in the largest enterprise software companies it operates as a peer function. Taxonomically the two are distinct: the U.S. Department of Labor classifies Technical Marketing Engineer under occupation 41-9031.00 with Sales Engineer, not as a marketing occupation. The reporting line matters less than the boundary. The function that owns proof must hold the authority to say a claim cannot be supported, wherever it reports."}},{"@type":"Question","name":"Should a company hire a technical marketer or a product marketer first?","acceptedAnswer":{"@type":"Answer","text":"The sequence follows the buyer. A company whose buyers evaluate hands-on before purchasing, which describes developer tools, infrastructure, security, and enterprise platforms, tends to need the proof function before positioning can convert. A company selling to business buyers on outcome narratives tends to need positioning first. In small companies one person frequently performs both functions until evaluation volume forces the split."}},{"@type":"Question","name":"Can the same person do technical marketing and product marketing?","acceptedAnswer":{"@type":"Answer","text":"Yes, and in early-stage companies one person usually does. The risk of the combined role is structural: the person originating claims also holds the authority to veto them, and under commercial pressure that veto weakens. As products grow evaluation-heavy, the functions separate so that proof retains an independent voice."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technical Marketing vs Product Marketing","item":"https://technicalmarketing.org/technical-marketing-vs-product-marketing"}]}]}</script>
+
+<style>
+
+:root {
+  --paper: #EFE6C9;
+  --paper-shade: #E5D9B4;
+  --paper-light: #F5EED8;
+  --ink: #1C1812;
+  --ink-60: #5C4E3C;
+  --ink-40: #8B7D69;
+  --border: rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red: #A7352A;
+  --red-soft: #B85146;
+  --yellow: #EACF82;
+
+  --f-display: 'Roboto Slab', 'Georgia', serif;
+  --f-serif: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --f-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 64ch;
+  --layout-max: 1100px;
+  --reading-max: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+*::selection { background: var(--yellow); color: var(--ink); }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--f-serif);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.62;
+  /* Subtle paper texture via dot grid */
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px);
+  background-size: 14px 14px;
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 200;
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.layout {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+@media (max-width: 600px) {
+  .layout { padding: 0 1.25rem; }
+  body { background-size: 12px 12px; }
+}
+
+/* ── Masthead band: top frontispiece on every page ───────────────────── */
+.masthead {
+  border-top: 2px solid var(--ink);
+  padding-top: 0.875rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.masthead__furniture {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.masthead__furniture-right {
+  text-align: right;
+  line-height: 1.5;
+}
+
+.masthead__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  margin: 0;
+}
+
+.masthead__title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 1.25rem 0 1rem;
+  position: relative;
+}
+
+.masthead__title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 5.5vw, 3.25rem);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+}
+a.masthead__title:hover { color: var(--red); }
+
+.masthead__subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0 0.875rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.masthead__subtitle {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.masthead__url {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+
+/* Primary navigation row sits below the subtitle, also separated by a rule */
+.masthead__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 1.875rem;
+  padding: 0.75rem 0 0.875rem;
+}
+
+.masthead__nav-link {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+
+@media (max-width: 600px) {
+  .masthead__furniture { font-size: 0.625rem; letter-spacing: 0.14em; }
+  .masthead__furniture-right { line-height: 1.4; }
+  .masthead__title-row { padding: 0.875rem 0 0.5rem; }
+  .masthead__subtitle-row { padding: 0.5rem 0 0.75rem; }
+  .masthead__subtitle { font-size: 0.9375rem; }
+  .masthead__url { font-size: 0.625rem; letter-spacing: 0.16em; }
+  .masthead__nav { gap: 0 1.25rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; }
+}
+
+/* ── Folio footer: closing furniture on every page ──────────────────── */
+.folio-band {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+
+.folio-band__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.folio-band__left {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.folio-band__center {
+  color: var(--ink);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.folio-band__right {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  text-align: right;
+}
+
+.folio-band__rule + .folio-band__rule { margin-top: 4px; }
+
+@media (max-width: 600px) {
+  .folio-band__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right" "center center";
+    gap: 0.5rem 1rem;
+  }
+  .folio-band__left { grid-area: left; }
+  .folio-band__right { grid-area: right; }
+  .folio-band__center { grid-area: center; margin-top: 0.25rem; }
+  }
+
+/* ── Article cover: field-manual title page ─────────────────────────── */
+.cover {
+  padding: 3rem 0 2.75rem;
+  border-bottom: 0.5px solid var(--border);
+  text-align: left;
+  position: relative;
+}
+
+.cover__article-kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.cover__article-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.cover__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  width: 180px;
+  margin: 0 0 2.5rem;
+}
+
+.cover__display-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.cover__display {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(3.25rem, 11vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+.cover__display::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.08em;
+  height: 0.32em;
+  background: var(--yellow);
+  z-index: -1;
+}
+
+.cover__secondary {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 22ch;
+}
+
+.cover__deck {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
+  font-weight: 400;
+  color: var(--ink-60);
+  line-height: 1.5;
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+
+.cover__byline {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.cover__byline strong { color: var(--ink); font-weight: 500; }
+.cover__byline strong a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.cover__byline strong a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.cover__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+.cover__ornament-rule {
+  flex: 0 0 80px;
+  height: 0.5px;
+  background: var(--border-strong);
+}
+.cover__ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .cover { padding: 2rem 0 2rem; }
+  .cover__rule { width: 120px; margin-bottom: 1.75rem; }
+  .cover__display-wrap { margin: 1.5rem 0 2rem; justify-content: flex-start; }
+  .cover__display::before { height: 0.3em; bottom: 0.1em; }
+  .cover__secondary { font-size: 1.5rem; line-height: 1.18; }
+  .cover__deck { font-size: 1.0625rem; }
+  .cover__byline { font-size: 0.625rem; letter-spacing: 0.14em; margin-bottom: 1.75rem; }
+  .cover__ornament-rule { flex-basis: 50px; }
+}
+
+/* ── Article body in field-manual register ──────────────────────────── */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem 0 0;
+}
+@media (min-width: 960px) {
+  .article-layout {
+    grid-template-columns: 1fr 220px;
+    gap: 4rem;
+  }
+}
+
+.article-main { max-width: var(--reading-max); }
+
+.article-aside { position: relative; }
+@media (min-width: 960px) {
+  .article-aside {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    height: fit-content;
+  }
+}
+
+/* TOC */
+.toc {
+  border-top: 0.5px solid var(--border-strong);
+  padding-top: 1.125rem;
+}
+.toc-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.toc-list a {
+  font-family: var(--f-sans);
+  font-size: 0.8125rem;
+  color: var(--ink-60);
+  font-weight: 400;
+  line-height: 1.45;
+  display: block;
+  transition: color 0.15s ease;
+}
+.toc-list a:hover { color: var(--red); }
+.toc-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-40);
+  display: inline-block;
+  width: 1.5rem;
+  font-weight: 500;
+}
+
+/* Mobile: promote TOC to top of article as compact 2-column grid */
+@media (max-width: 959px) {
+  .article-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .article-main { order: 2; }
+  .article-aside {
+    order: 1;
+    padding-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.25rem;
+  }
+  .article-aside .toc-list a { font-size: 0.8125rem; padding: 0.125rem 0; }
+  .article-aside .toc-num { width: 1.5rem; }
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3.25rem;
+  scroll-margin-top: 1.5rem;
+}
+.section-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.section h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 1.625rem;
+  max-width: 22ch;
+}
+.section h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.875rem;
+}
+.section p {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 1.125rem;
+  max-width: var(--measure);
+}
+.section p a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.section sup {
+  font-size: 0.72em;
+  vertical-align: super;
+  color: var(--red);
+  font-weight: 500;
+  margin-left: 0.05em;
+}
+
+/* Inline italic + emphasis */
+.section em, .section i { font-style: italic; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* Pull quotes: center diamond, italic */
+.pullquote {
+  margin: 2.75rem auto;
+  padding: 1.25rem 0;
+  text-align: center;
+  position: relative;
+}
+.pullquote::before,
+.pullquote::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 0.5px;
+  background: var(--border-strong);
+  margin: 0 auto;
+}
+.pullquote::before { margin-bottom: 1.125rem; }
+.pullquote::after { margin-top: 1.125rem; }
+.pullquote p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.1875rem, 2vw, 1.4375rem);
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 400;
+  max-width: 36ch;
+  margin: 0 auto !important;
+}
+.pullquote::before {
+  background: linear-gradient(to right, transparent, var(--border-strong) 30%, var(--border-strong) 70%, transparent);
+  position: relative;
+}
+/* Diamond at top of pullquote */
+.pullquote {
+  background-image:
+    radial-gradient(circle, var(--red) 3.5px, transparent 4px);
+  background-repeat: no-repeat;
+  background-position: center 19px;
+  background-size: 7px 7px;
+}
+
+/* Labeled lists (workstreams, qualifications, etc.) */
+.labeled-list { margin: 1.5rem 0 1.75rem; }
+.labeled-item {
+  margin-bottom: 1.5rem;
+  max-width: var(--measure);
+  padding-left: 0.875rem;
+  border-left: 2px solid var(--red);
+}
+.labeled-item:last-child { margin-bottom: 0; }
+.labeled-item__label {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.375rem;
+}
+.labeled-item__body {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+/* Diagrams */
+.diagram {
+  margin: 2.5rem 0 2.5rem;
+  padding: 1.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border);
+}
+.diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.diagram-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 56ch;
+  line-height: 1.5;
+}
+.diagram-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Diagrams: SVG content uses ink + red on mobile-friendly scroll */
+.diagram svg rect[fill="#fafaf7"] { fill: var(--paper-light); }
+.diagram svg text[fill="#1a1a1a"] { fill: var(--ink); }
+.diagram svg text[fill="#5a5a5a"] { fill: var(--ink-60); }
+.diagram svg text[fill="#8a8a85"] { fill: var(--ink-40); }
+.diagram svg line[stroke="#1a1a1a"], .diagram svg path[stroke="#1a1a1a"] { stroke: var(--ink); }
+.diagram svg circle[fill="#1a1a1a"] { fill: var(--ink); }
+
+/* Mobile: diagrams scroll horizontally rather than shrink illegibly */
+@media (max-width: 720px) {
+  .diagram {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  .diagram > div[role="img"] { min-width: 580px; }
+  .diagram svg { min-width: 580px; max-width: none; }
+  .diagram-caption {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 0.875rem;
+  }
+  .diagram::after {
+    content: "Swipe to view full diagram \2192";
+    display: block;
+    font-family: var(--f-sans);
+    font-size: 0.625rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-40);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Figures (photographic plates) */
+.figure { margin: 2.5rem 0 2.75rem; }
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0.5px solid var(--border-strong);
+  filter: sepia(0.08) saturate(0.95);
+}
+.figure-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 60ch;
+  line-height: 1.55;
+}
+.figure-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.figure-caption .source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--ink-40);
+}
+
+/* Scope note */
+.scope-note {
+  background: var(--paper-light);
+  border-left: 2px solid var(--red);
+  padding: 1.5rem 1.5rem 1.25rem;
+  margin: 0 0 2.5rem;
+}
+.scope-note h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+  margin-top: 0;
+}
+.scope-note p {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-60);
+  margin-bottom: 0.75rem;
+  max-width: none;
+}
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note strong { color: var(--ink); font-weight: 600; }
+
+/* Footnotes */
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border-strong);
+}
+.footnotes-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.footnotes ol { list-style: none; counter-reset: footnotes; }
+.footnotes li {
+  counter-increment: footnotes;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-60);
+  margin-bottom: 0.625rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.footnotes li::before {
+  content: counter(footnotes);
+  position: absolute;
+  left: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--red);
+  font-style: normal;
+  top: 0.1em;
+}
+.footnotes a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.footnotes a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* Editors note */
+.editors-note {
+  margin-top: 4rem;
+  padding: 2.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+}
+.editors-note::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.editors-note-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+.editors-note p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 0.875rem;
+  max-width: 58ch;
+}
+.editors-note p:last-child { margin-bottom: 0; }
+.editors-note p a {
+  font-style: normal;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.editors-note p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.editors-sig {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  font-style: normal !important;
+  margin-top: 1.25rem;
+}
+
+/* Next article teaser */
+.next-article {
+  margin-top: 3.5rem;
+  padding: 2rem 0;
+  border-top: 0.5px solid var(--border-strong);
+}
+.next-article__label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+.next-article__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.4375rem;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.next-article__title .arrow {
+  color: var(--red);
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.next-article a:hover .next-article__title { color: var(--red); }
+.next-article a:hover .arrow { transform: translateX(4px); }
+.next-article__meta {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .section { margin-bottom: 2.5rem; }
+  .section h2 { font-size: 1.5rem; }
+  .editors-note { padding: 1.625rem 1.375rem; }
+  .scope-note { padding: 1.25rem 1.125rem 1rem; }
+  .next-article__title { font-size: 1.1875rem; }
+}
+
+
+/* ────────────────────────────────────────────────────────────────────
+   ELITE MOBILE PASS : proportional contrast, identity preservation,
+   compositional vertical rhythm
+   ──────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  /* Container breathing : slightly more inset for elegance */
+  .layout { padding: 0 1.5rem; }
+
+  /* ── Masthead holds identity at narrow widths ──────────────────── */
+  .masthead__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+  .masthead__title-row { padding: 0.75rem 0 0.5rem; }
+  .masthead__furniture { font-size: 0.5625rem; letter-spacing: 0.12em; }
+  .masthead__subtitle { font-size: 0.875rem; }
+  .masthead__url { font-size: 0.5625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.5625rem; letter-spacing: 0.12em; }
+
+  /* ── Display words restore mobile contrast ─────────────────────── */
+  .cover { padding: 2.25rem 0 2rem; }
+  .cover__display { font-size: 4rem; line-height: 0.95; }
+  .cover__display::before { height: 0.3em; bottom: 0.08em; }
+  .cover__display-wrap { margin: 1.75rem 0 2.25rem; justify-content: flex-start; }
+  .cover__article-kicker { font-size: 0.8125rem; letter-spacing: 0.2em; }
+  .cover__article-title { font-size: 1.4375rem; }
+  .cover__secondary { font-size: 1.625rem; line-height: 1.15; }
+  .cover__deck { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 1.75rem; }
+
+  /* ── Compositional vertical rhythm ─────────────────────────────── */
+  .section { margin-bottom: 3rem; scroll-margin-top: 1.25rem; }
+  .section + .section { margin-top: 0; }
+  .section h2 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    max-width: 100%;
+  }
+  .section h3 {
+    font-size: 1.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .section p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  /* Pull quotes get proportionally more air on mobile */
+  .pullquote {
+    margin: 2.75rem -0.5rem;
+    padding: 1.5rem 0;
+    background-position: center 22px;
+  }
+  .pullquote p {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    max-width: 28ch;
+  }
+  .pullquote::before,
+  .pullquote::after {
+    width: 56px;
+  }
+
+  /* Labeled lists tighter on narrow */
+  .labeled-item {
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .labeled-item__label { font-size: 1.0625rem; }
+  .labeled-item__body { font-size: 1rem; line-height: 1.55; }
+
+  /* Scope notes & editors notes */
+  .scope-note { padding: 1.25rem 1.125rem 1rem; margin-bottom: 2rem; }
+  .editors-note { padding: 1.5rem 1.25rem; }
+
+  /* Footnotes */
+  .footnotes { margin-top: 2.5rem; }
+  .footnotes li { font-size: 0.875rem; }
+
+  /* Article layout breathing on mobile */
+  .article-layout { padding: 1.75rem 0 0; gap: 1.25rem; }
+}
+
+/* ── Very narrow viewports (iPhone SE, older Androids) ─────────────── */
+@media (max-width: 400px) {
+  .layout { padding: 0 1.25rem; }
+  .masthead__title { font-size: 1.25rem; letter-spacing: 0.025em; }
+  .cover__display { font-size: 3.375rem; }
+  .cover__secondary { font-size: 1.4375rem; }
+  .section h2 { font-size: 1.4375rem; }
+  .pullquote p { font-size: 1.125rem; max-width: 24ch; }
+  .pullquote { margin: 2.25rem -0.25rem; }
+}
+
+
+/* ── Colophon : replaces the generic site-footer ────────────────── */
+.colophon {
+  margin-top: 0;
+  padding: 3rem 0 1.25rem;
+  background: transparent;
+  border-top: 0.5px solid var(--border-strong);
+}
+.colophon__inner {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+.colophon__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+.colophon__ornament::before,
+.colophon__ornament::after {
+  content: "";
+  height: 0.5px;
+  background: var(--border-strong);
+  flex: 0 0 60px;
+}
+.colophon__diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.colophon__grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem 2rem;
+  max-width: 820px;
+  margin-bottom: 2.25rem;
+}
+.colophon__label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.22rem;
+}
+.colophon__value {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.colophon__value a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.colophon__value a:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+.colophon__bottom {
+  border-top: 0.5px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.colophon__meta {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+.colophon__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.colophon__nav-link {
+  color: var(--ink-60);
+  transition: color 0.15s ease;
+}
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); }
+
+@media (max-width: 720px) {
+  .colophon { padding: 2.25rem 0 1.25rem; }
+  .colophon__inner { padding: 0 1.5rem; }
+  .colophon__ornament::before,
+  .colophon__ornament::after { flex-basis: 40px; }
+  .colophon__grid {
+    grid-template-columns: 1fr;
+    gap: 0.25rem 0;
+    margin-bottom: 1.75rem;
+  }
+  .colophon__label { padding-top: 0.25rem; }
+  .colophon__value { margin-bottom: 1.25rem; font-size: 0.9375rem; }
+  .colophon__value:last-of-type { margin-bottom: 0; }
+  .colophon__bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+
+/* ── Citation card: how to cite this entry ─────────────────────────── */
+.cite-card {
+  margin: 3rem 0 1rem;
+  padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+  scroll-margin-top: 1.5rem;
+  max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.cite-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+.cite-card__kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.cite-card__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+
+.cite-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.125rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
+
+.cite-label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.3rem;
+}
+
+.cite-text {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cite-text em { font-style: italic; }
+.cite-text a {
+  color: inherit;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.cite-text--code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cite-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 32px;
+  white-space: nowrap;
+  align-self: start;
+}
+.cite-copy:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.cite-copy:active { transform: scale(0.97); }
+.cite-copy.is-copied {
+  background: var(--red);
+  color: var(--paper);
+  border-color: var(--red);
+}
+.cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+
+@media (max-width: 720px) {
+  .cite-card {
+    padding: 1.5rem 1.25rem 1rem;
+    margin: 2.25rem -0.25rem 0.75rem;
+  }
+  .cite-card__header {
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .cite-card__title { font-size: 1.0625rem; }
+  .cite-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.125rem 0;
+  }
+  .cite-label { padding-top: 0; }
+  .cite-copy {
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.625rem 1rem;
+    font-size: 0.6875rem;
+    margin-top: 0.25rem;
+  }
+  .cite-text { font-size: 0.9375rem; }
+  .cite-text--code { font-size: 0.75rem; }
+}
+
+
+/* ── Article cover plate (tipped-in plate) ─────────────────────────── */
+.article-cover-plate {
+  max-width: var(--layout-max);
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.article-cover-plate__frame {
+  position: relative;
+  display: block;
+  padding: 14px;
+  background: var(--paper-light);
+  box-shadow:
+    0 1px 3px rgba(28, 24, 18, 0.06),
+    0 18px 44px -8px rgba(28, 24, 18, 0.16),
+    0 6px 14px -4px rgba(28, 24, 18, 0.08);
+}
+.article-cover-plate__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 1px solid rgba(28, 24, 18, 0.18);
+  outline-offset: -1px;
+}
+/* Paper-grain overlay : implies print reproduction on the same stock */
+.article-cover-plate__frame::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+}
+.article-cover-plate__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+.article-cover-plate__caption-kicker {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+.article-cover-plate__caption-kicker::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 1px;
+  background: rgba(28, 24, 18, 0.32);
+}
+.article-cover-plate__caption-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  letter-spacing: 0.005em;
+}
+@media (max-width: 720px) {
+  .article-cover-plate {
+    max-width: 100%;
+    padding: 0 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .article-cover-plate__frame {
+    padding: 10px;
+    box-shadow:
+      0 1px 2px rgba(28, 24, 18, 0.05),
+      0 10px 24px -6px rgba(28, 24, 18, 0.14);
+  }
+  .article-cover-plate__frame::after {
+    inset: 10px;
+  }
+  .article-cover-plate__caption {
+    margin-top: 0.875rem;
+  }
+  .article-cover-plate__caption-title {
+    font-size: 0.875rem;
+  }
+}
+
+
+/* Reference ledger */
+.ledger { border-top: 2px solid var(--border-strong); border-bottom: 2px solid var(--border-strong); margin: 2rem 0 1rem; }
+.ledger__head, .ledger__row { display: grid; grid-template-columns: 150px 1fr 1fr; gap: 1.25rem; padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.ledger__row:last-child { border-bottom: none; }
+.ledger__head { font-family: var(--f-display); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-60); }
+.ledger__label { font-family: var(--f-display); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-60); }
+.ledger__cell { font-family: var(--f-serif); font-size: 0.98rem; line-height: 1.55; color: var(--ink); }
+.ledger__note { font-family: var(--f-serif); font-style: italic; font-size: 0.9rem; color: var(--ink-60); margin-top: 0.9rem; }
+@media (max-width: 640px) { .ledger__head { display: none; } .ledger__row { grid-template-columns: 1fr; gap: 0.4rem; } .ledger__cell::before { content: attr(data-col); display: block; font-family: var(--f-display); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); margin-bottom: 0.15rem; } }
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { flex-direction: column; gap: 0.5rem 0; }
+  .masthead__nav-divider { display: none; }
+}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">A field manual for the discipline.</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Reference</span>
+      <a href="/what-is-technical-marketing" class="masthead__nav-link">What is Technical Marketing?</a>
+      <a href="/technical-marketing-vs-product-marketing" class="masthead__nav-link" aria-current="page">TMM vs PMM</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Volume 01</span>
+      <a href="/the-technical-marketer" class="masthead__nav-link">The Technical Marketer</a>
+      <a href="/before-the-name" class="masthead__nav-link">Before the Name</a>
+      <a href="/technical-marketing-age-of-ai" class="masthead__nav-link">In the Age of AI</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
+    <a href="/about" class="masthead__nav-link">About</a>
+  </nav>
+  <hr class="masthead__rule">
+</header>
+
+
+
+<section class="cover layout" aria-labelledby="article-title">
+  <div class="cover__article-kicker">Reference.</div>
+  <h1 class="cover__article-title" id="article-title">Technical Marketing vs Product Marketing.</h1>
+  <hr class="cover__rule">
+
+  <div class="cover__display-wrap">
+    <span class="cover__display">The Boundary.</span>
+  </div>
+
+  <p class="cover__secondary">Two Functions. One Line Between Them.</p>
+  <p class="cover__deck">Product marketing decides what the company says. Technical marketing decides what the company can prove. A working reference on where the line sits, who owns what, and why the AI era sharpened it.</p>
+
+  <div class="cover__byline">Edited by <strong><a href="/contributors/chad-corriveau" rel="author">Chad Corriveau</a></strong>, Founding Editor &middot; <time datetime="2026-06-12">June 12, 2026</time></div>
+
+  <div class="cover__ornament" aria-hidden="true">
+    <span class="cover__ornament-rule"></span>
+    <span class="cover__ornament-diamond"></span>
+    <span class="cover__ornament-rule"></span>
+  </div>
+</section>
+
+<div class="article-layout layout">
+  <main class="article-main" id="main">
+<section class="section" id="answer">
+        <span class="section-num">01 &middot; The short answer</span>
+        <h2>The distinction in one paragraph</h2>
+        <p>The difference between technical marketing and product marketing is the difference between proof and positioning. Product marketing owns what the company says about the product: the positioning, the messaging, the segmentation, the launch. Technical marketing owns what the company can prove about the product: the demonstrations, the reference architectures, the benchmarks, and the technical evidence placed in front of the buyer's most skeptical evaluators. The two functions meet at every claim the company makes. One decides the claim is worth making. The other decides whether it will survive contact with a technical audience.</p>
+        <div class="pullquote">
+          <p>One function makes the claim. The other makes it survivable.</p>
+        </div>
+      </section>
+
+      <section class="section" id="tmm">
+        <span class="section-num">02 &middot; Technical marketing</span>
+        <h2>The technical marketer's side of the line</h2>
+        <p>Technical marketing is accountable to the skeptical evaluator: the architect, the administrator, the engineer who will live with the product after the contract is signed. The deliverables follow from that accountability. Demonstration environments and the narratives that run inside them. Reference architectures. Competitive technical analysis. Benchmark methodology. The canonical environments and deep-dive material that field teams present from. The role is documented in full in <a href="/the-technical-marketer">The Technical Marketer</a>, Article I of this publication.</p>
+        <p>The judgment beneath the deliverables is editorial. Which technical evidence goes in front of which audience, in what order, under commercial pressure. The discipline performed that judgment under twelve different names across six decades before the field settled on what to call it, a history traced in <a href="/before-the-name">Before the Name</a>. The artifacts changed throughout. The accountability to the skeptical evaluator did not.</p>
+      </section>
+
+      <section class="section" id="pmm">
+        <span class="section-num">03 &middot; Product marketing</span>
+        <h2>The product marketer's side of the line</h2>
+        <p>Product marketing is accountable to the market: the category, the buying committee as a whole, and the company's position within both. Its deliverables follow the same logic. Positioning and messaging architecture. Launch orchestration. Segmentation and persona work. Pricing and packaging input. The strategic tier of analyst narrative. Sales enablement at the level of message.</p>
+        <p>The function answers a different question than technical marketing does. Not whether a claim is provable, but whether it is the right claim: differentiated, relevant to the segment, sequenced against the market moment. Done well, product marketing decides what story the company tells and when. Done without its counterpart, it decides those things with no one holding authority over whether the story can be demonstrated.</p>
+      </section>
+
+      <section class="section" id="ledger">
+        <span class="section-num">04 &middot; The ledger</span>
+        <h2>The same questions, answered side by side</h2>
+        <div class="ledger" role="table" aria-label="Technical marketing and product marketing compared">
+          <div class="ledger__head" role="row"><span role="columnheader"></span><span role="columnheader">Technical Marketing</span><span role="columnheader">Product Marketing</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Accountable to</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">The skeptical technical evaluator.</span><span class="ledger__cell" role="cell" data-col="Product Marketing">The market and the buying committee.</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Core question</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">Can we prove it?</span><span class="ledger__cell" role="cell" data-col="Product Marketing">Should we say it?</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Native artifacts</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">Demonstrations, reference architectures, benchmarks, technical analysis.</span><span class="ledger__cell" role="cell" data-col="Product Marketing">Positioning, messaging, launches, segmentation.</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Failure mode</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">Accurate but inert. Truth nobody was given a reason to read.</span><span class="ledger__cell" role="cell" data-col="Product Marketing">Compelling but unprovable. Claims that die in evaluation.</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Federal classification</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">O*NET 41-9031.00, alongside Sales Engineer.<sup>1</sup></span><span class="ledger__cell" role="cell" data-col="Product Marketing">Classified with marketing occupations. No engineering pairing.</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">Center of gravity, AI era</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">Editorial judgment over technical evidence.</span><span class="ledger__cell" role="cell" data-col="Product Marketing">Narrative judgment over market position.</span></div>
+        </div>
+        <p class="ledger__note">The rows describe centers of gravity, not fences. In practice the two functions overlap at every launch and at every claim.</p>
+      </section>
+
+      <section class="section" id="boundary">
+        <span class="section-num">05 &middot; The boundary</span>
+        <h2>Where the functions meet</h2>
+        <p>Every significant claim a company makes about a technical product crosses the line once in each direction. Product marketing originates the claim from market position. Technical marketing tests it against what the product can demonstrate, then builds the evidence that lets the claim survive evaluation. When the claim cannot survive, the information flows back and the positioning adjusts. A healthy company runs that loop on every launch.</p>
+        <p>The failure modes are symmetrical. A company with product marketing and no technical marketing ships claims that collapse in the proof-of-concept stage, in front of exactly the audience that decides enterprise deals. A company with technical marketing and no product marketing ships accurate material into a market that was never given a reason to look. The functions are not rivals. They are the two halves of a single claims discipline.</p>
+        <figure class="figure">
+          <svg viewBox="0 0 800 384" role="img" aria-label="Diagram plotting common go-to-market artifacts along a spectrum from positioning to proof. Press releases, messaging architecture, and launch decks sit on the product marketing side. Demo narratives, reference architectures, and benchmark methodology sit on the technical marketing side. Solution briefs, analyst decks, and the competitive battlecard occupy a contested middle, with the battlecard directly on the line." xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+            <!-- contested middle band -->
+            <rect x="320" y="88" width="160" height="208" fill="#EACF82" opacity="0.28"/>
+            <line x1="320" y1="88" x2="320" y2="296" stroke="#8B7D69" stroke-width="1" stroke-dasharray="3 4"/>
+            <line x1="480" y1="88" x2="480" y2="296" stroke="#8B7D69" stroke-width="1" stroke-dasharray="3 4"/>
+            <text x="400" y="78" text-anchor="middle" font-family="Roboto Slab, serif" font-size="12" font-weight="700" letter-spacing="2" fill="#8B7D69">THE CONTESTED MIDDLE</text>
+            <!-- the line -->
+            <line x1="400" y1="106" x2="400" y2="286" stroke="#A7352A" stroke-width="2"/>
+            <text x="400" y="316" text-anchor="middle" font-family="Roboto Slab, serif" font-size="12" font-weight="700" letter-spacing="2" fill="#A7352A">THE LINE</text>
+            <!-- axis -->
+            <line x1="42" y1="196" x2="758" y2="196" stroke="#1C1812" stroke-width="1.5"/>
+            <polygon points="36,196 50,190 50,202" fill="#1C1812"/>
+            <polygon points="764,196 750,190 750,202" fill="#1C1812"/>
+            <text x="42" y="356" font-family="Roboto Slab, serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#5C4E3C">POSITIONING</text>
+            <text x="42" y="374" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#8B7D69">Product marketing's side</text>
+            <text x="758" y="356" text-anchor="end" font-family="Roboto Slab, serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#5C4E3C">PROOF</text>
+            <text x="758" y="374" text-anchor="end" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#8B7D69">Technical marketing's side</text>
+            <!-- PMM-side artifacts (labels above, below, above) -->
+            <circle cx="84" cy="196" r="5" fill="#1C1812"/>
+            <line x1="84" y1="190" x2="84" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="84" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Press release</text>
+            <circle cx="180" cy="196" r="5" fill="#1C1812"/>
+            <line x1="180" y1="202" x2="180" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="180" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Messaging architecture</text>
+            <circle cx="272" cy="196" r="5" fill="#1C1812"/>
+            <line x1="272" y1="190" x2="272" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="272" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Launch deck</text>
+            <!-- contested artifacts -->
+            <circle cx="352" cy="196" r="5" fill="#1C1812"/>
+            <line x1="352" y1="202" x2="352" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="352" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Solution brief</text>
+            <circle cx="400" cy="196" r="6" fill="#A7352A"/>
+            <circle cx="400" cy="196" r="11" fill="none" stroke="#A7352A" stroke-width="1.5"/>
+            <line x1="400" y1="184" x2="400" y2="130" stroke="#A7352A" stroke-width="1"/>
+            <text x="400" y="120" text-anchor="middle" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#A7352A">Competitive battlecard</text>
+            <circle cx="450" cy="196" r="5" fill="#1C1812"/>
+            <line x1="450" y1="202" x2="450" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="450" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Analyst deck</text>
+            <!-- TMM-side artifacts -->
+            <circle cx="548" cy="196" r="5" fill="#1C1812"/>
+            <line x1="548" y1="190" x2="548" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="548" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Demo narrative</text>
+            <circle cx="646" cy="196" r="5" fill="#1C1812"/>
+            <line x1="646" y1="202" x2="646" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="646" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Reference architecture</text>
+            <circle cx="730" cy="196" r="5" fill="#1C1812"/>
+            <line x1="730" y1="190" x2="730" y2="130" stroke="#8B7D69" stroke-width="1"/>
+            <text x="756" y="120" text-anchor="end" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Benchmark methodology</text>
+          </svg>
+          <figcaption class="figure-caption"><strong>The spectrum.</strong> Common go-to-market artifacts, plotted by which judgment governs them. The contested middle is where the claims loop above runs hottest, and the battlecard sits directly on the line: a positioning document that dies without proof.</figcaption>
+        </figure>
+        <div class="pullquote">
+          <p>Positioning without proof collapses. Proof without positioning goes unread.</p>
+        </div>
+      </section>
+
+      <section class="section" id="org">
+        <span class="section-num">06 &middot; One role or two</span>
+        <h2>Org placement and the hiring order</h2>
+        <p>In small companies the same person frequently performs both functions, and the federal taxonomy reflects the entanglement: Technical Marketing Engineer is classified as a variant of Sales Engineer, occupation 41-9031.00, rather than as a marketing occupation.<sup>1</sup> The practical hiring question is sequence. A company whose buyers evaluate hands-on before they purchase, which describes developer tools, infrastructure, security, and enterprise platforms, tends to need the proof function before positioning can convert. A company selling to business buyers on outcome narratives tends to need positioning first.</p>
+        <p>Where both functions exist, reporting structures vary. Technical marketing reports into product marketing in some organizations, into product or engineering in others, and operates as a peer function in the largest enterprise software companies. Red Hat's public description of the technical marketing manager role documents the peer model in current practice.<sup>2</sup> The placement matters less than the boundary. The function that owns proof must hold the authority to say a claim cannot be supported, wherever it reports.</p>
+      </section>
+
+      <section class="section" id="ai">
+        <span class="section-num">07 &middot; The AI era</span>
+        <h2>The compression sharpened the line</h2>
+        <p>Through the early 2020s the two functions were easy to confuse because both produced large volumes of structured content, and content volume looked like the job. The structural compression that began in 2024 removed the ambiguity. Artifact production, the drafting and templated assembly both functions once spent their hours on, has been progressively absorbed, a shift documented in the Anthropic Economic Index and in McKinsey's work on judgment-intensive roles.<sup>3</sup> What remains in each function is its judgment. For product marketing, narrative judgment about market position. For technical marketing, editorial judgment about technical evidence.</p>
+        <p>The distinction is clearer now than at any point in the discipline's history. The full argument for what AI compressed and what it did not is made in <a href="/technical-marketing-age-of-ai">Technical Marketing in the Age of AI</a> and in the closing eras of <a href="/before-the-name">Before the Name</a>.</p>
+      </section>
+
+      <section class="footnotes" id="footnotes" aria-labelledby="footnotes-label">
+        <span class="footnotes-label" id="footnotes-label">Sources</span>
+        <ol>
+          <li>U.S. Department of Labor, <em>O*NET Occupational Information Network</em>, classification 41-9031.00, Sales Engineers. Technical Marketing Engineer is listed as a variant title under the same classification. Available at <a href="https://www.onetonline.org/link/summary/41-9031.00" target="_blank" rel="noopener">onetonline.org</a>.</li>
+          <li>Hendricks, Eric, <em>What is a technical marketing manager?</em>, Red Hat Partner Connect blog, November 9, 2021. Available at <a href="https://connect.redhat.com" target="_blank" rel="noopener">connect.redhat.com</a>.</li>
+          <li>Anthropic, <em>Economic Index</em>, January 2026 report, on work activities most exposed to AI absorption. McKinsey &amp; Company, <em>A New Year's Resolution for Leaders</em>, January 2026, on judgment-intensive work.</li>
+        </ol>
+      </section>
+
+      <aside class="editors-note" aria-labelledby="editors-note-label">
+        <span class="editors-note-label" id="editors-note-label">Editor's Note</span>
+        <p>This is a reference entry, not a Volume article. The boundary described here is drawn from practice inside enterprise software, where the editor spent his career on the technical marketing side of the line. Product marketers who would draw the line differently are invited to <a href="/suggest">suggest revisions</a>. The strongest corrections will be published.</p>
+        <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
+      </aside>
+
+      <div class="next-article">
+        <a href="/the-technical-marketer">
+          <span class="next-article__label">Read also &middot; Article I &middot; Vol. 01</span>
+          <div class="next-article__title">The Technical Marketer. A canonical job description for the role on the proof side of the line. <span class="arrow">&rarr;</span></div>
+        </a>
+        <p class="next-article__meta">For the history of the boundary, read <a href="/before-the-name">Before the Name</a>.</p>
+      </div>
+  
+    <section class="cite-card" id="cite" aria-labelledby="cite-title">
+      <div class="cite-card__header">
+        <span class="cite-card__kicker">Citation</span>
+        <p class="cite-card__title" id="cite-title">How to cite this entry.</p>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">APA</span>
+        <div class="cite-text" id="cite-ref-tvp-apa">Corriveau, C. (2026). Technical marketing vs product marketing: The boundary between proof and positioning. <em>Technical Marketing</em>, <em>I</em>. <a href="https://technicalmarketing.org/technical-marketing-vs-product-marketing">https://technicalmarketing.org/technical-marketing-vs-product-marketing</a></div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-apa', this)" aria-label="Copy APA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">Copy</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">MLA</span>
+        <div class="cite-text" id="cite-ref-tvp-mla">Corriveau, Chad. "Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning." <em>Technical Marketing</em>, vol. I, 2026, <a href="https://technicalmarketing.org/technical-marketing-vs-product-marketing">technicalmarketing.org/technical-marketing-vs-product-marketing</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-mla', this)" aria-label="Copy MLA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">Copy</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">Chicago</span>
+        <div class="cite-text" id="cite-ref-tvp-chicago">Corriveau, Chad. "Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning." <em>Technical Marketing</em> I (2026). <a href="https://technicalmarketing.org/technical-marketing-vs-product-marketing">https://technicalmarketing.org/technical-marketing-vs-product-marketing</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-chicago', this)" aria-label="Copy Chicago citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">Copy</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">BibTeX</span>
+        <pre class="cite-text cite-text--code" id="cite-ref-tvp-bibtex">@article{corriveau2026tmmvspmm,
+  author  = {Corriveau, Chad},
+  title   = {Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning},
+  journal = {Technical Marketing},
+  volume  = {I},
+  year    = {2026},
+  url     = {https://technicalmarketing.org/technical-marketing-vs-product-marketing}
+}</pre>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-bibtex', this)" aria-label="Copy BibTeX citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">Copy</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+  <aside class="article-aside" aria-label="Table of contents">
+    <nav class="toc" aria-label="On this page">
+<span class="toc-label">On this page</span>
+        <ul class="toc-list">
+          <li><a href="#answer"><span class="toc-num">01</span>The Short Answer</a></li>
+          <li><a href="#tmm"><span class="toc-num">02</span>Technical Marketing</a></li>
+          <li><a href="#pmm"><span class="toc-num">03</span>Product Marketing</a></li>
+          <li><a href="#ledger"><span class="toc-num">04</span>The Ledger</a></li>
+          <li><a href="#boundary"><span class="toc-num">05</span>The Boundary</a></li>
+          <li><a href="#org"><span class="toc-num">06</span>One Role or Two</a></li>
+          <li><a href="#ai"><span class="toc-num">07</span>The AI Era</a></li>
+          <li><a href="#footnotes"><span class="toc-num">&middot;</span>Sources</a></li>
+          <li><a href="#cite"><span class="toc-num">&middot;</span>Cite</a></li>
+        </ul>
+    </nav>
+  </aside>
+</div>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Reference &middot; The Boundary</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true">
+      <span class="colophon__diamond"></span>
+    </div>
+
+    <div class="colophon__grid">
+      <span class="colophon__label">Editorial</span>
+      <span class="colophon__value">A field manual for the discipline. Edited and curated by Chad Corriveau.</span>
+
+      <span class="colophon__label">Type</span>
+      <span class="colophon__value">Set in Fraunces, Roboto Slab, and Inter. Composed in wheat and library red.</span>
+
+      <span class="colophon__label">Publisher</span>
+      <span class="colophon__value">Technical Marketing is published independently by The ThinkRoot LLC under separate editorial governance.</span>
+
+      <span class="colophon__label">Contact</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/about" class="colophon__nav-link">About</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/contributors" class="colophon__nav-link">Contributors</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/glossary" class="colophon__nav-link">Glossary</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/suggest" class="colophon__nav-link">Suggest</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function copyCitation(targetId, btn) {
+  var el = document.getElementById(targetId);
+  if (!el || !btn) return;
+  var text = el.innerText.trim();
+  
+  function showCopied() {
+    btn.classList.add('is-copied');
+    var txt = btn.querySelector('.cite-copy-text');
+    var icon = btn.querySelector('.cite-copy-icon');
+    if (txt) txt.textContent = 'Copied';
+    if (icon) icon.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (txt) txt.textContent = 'Copy';
+      if (icon) icon.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(function() {
+      fallbackCopyCitation(text, showCopied);
+    });
+  } else {
+    fallbackCopyCitation(text, showCopied);
+  }
+}
+
+function fallbackCopyCitation(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>

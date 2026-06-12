@@ -575,7 +575,7 @@ a.masthead__title:hover { color: var(--red); }
 .section em, .section i { font-style: italic; }
 .section strong { font-weight: 600; color: var(--ink); }
 
-/* Pull quotes — center diamond, italic */
+/* Pull quotes : center diamond, italic */
 .pullquote {
   margin: 2.75rem auto;
   padding: 1.25rem 0;
@@ -1180,12 +1180,12 @@ a.masthead__title:hover { color: var(--red); }
 
 
 /* ────────────────────────────────────────────────────────────────────
-   ELITE MOBILE PASS — proportional contrast, identity preservation,
+   ELITE MOBILE PASS : proportional contrast, identity preservation,
    compositional vertical rhythm
    ──────────────────────────────────────────────────────────────────── */
 
 @media (max-width: 600px) {
-  /* Container breathing — slightly more inset for elegance */
+  /* Container breathing : slightly more inset for elegance */
   .layout { padding: 0 1.5rem; }
 
   /* ── Masthead holds identity at narrow widths ──────────────────── */
@@ -1284,7 +1284,7 @@ a.masthead__title:hover { color: var(--red); }
 }
 
 
-/* ── Colophon — replaces the generic site-footer ────────────────── */
+/* ── Colophon : replaces the generic site-footer ────────────────── */
 .colophon {
   margin-top: 0;
   padding: 3rem 0 1.25rem;
@@ -1426,7 +1426,7 @@ a.masthead__title:hover { color: var(--red); }
   outline: 1px solid rgba(28, 24, 18, 0.18);
   outline-offset: -1px;
 }
-/* Paper-grain overlay — implies print reproduction on the same stock */
+/* Paper-grain overlay : implies print reproduction on the same stock */
 .article-cover-plate__frame::after {
   content: "";
   position: absolute;
@@ -1493,6 +1493,16 @@ a.masthead__title:hover { color: var(--red); }
   }
 }
 
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { flex-direction: column; gap: 0.5rem 0; }
+  .masthead__nav-divider { display: none; }
+}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"]},{"@type":"AboutPage","@id":"https://technicalmarketing.org/about#aboutpage","url":"https://technicalmarketing.org/about","name":"About Technical Marketing","description":"About Technical Marketing, an independent quarterly index of current thinking on the technical marketing discipline as practiced in enterprise software companies.","inLanguage":"en-US","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"mainEntity":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"about":{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"About","item":"https://technicalmarketing.org/about"}]}}]}</script>
 </head>
@@ -1515,11 +1525,20 @@ a.masthead__title:hover { color: var(--red); }
   </div>
   <hr class="masthead__rule">
   <nav class="masthead__nav" aria-label="Primary">
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Reference</span>
       <a href="/what-is-technical-marketing" class="masthead__nav-link">What is Technical Marketing?</a>
+      <a href="/technical-marketing-vs-product-marketing" class="masthead__nav-link">TMM vs PMM</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Volume 01</span>
       <a href="/the-technical-marketer" class="masthead__nav-link">The Technical Marketer</a>
       <a href="/before-the-name" class="masthead__nav-link">Before the Name</a>
       <a href="/technical-marketing-age-of-ai" class="masthead__nav-link">In the Age of AI</a>
-      <a href="/about" class="masthead__nav-link" aria-current="page">About</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
+    <a href="/about" class="masthead__nav-link" aria-current="page">About</a>
   </nav>
   <hr class="masthead__rule">
 </header>

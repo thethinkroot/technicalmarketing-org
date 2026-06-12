@@ -354,7 +354,7 @@ a.masthead__title:hover { color: var(--red); }
   .diagram svg { min-width: 560px; max-width: none; }
 }
 
-/* Data callout — for citing specific statistics inline */
+/* Data callout : for citing specific statistics inline */
 .data-callout {
   margin: 2rem 0 2.25rem;
   padding: 1.25rem 1.375rem;
@@ -704,6 +704,16 @@ a.masthead__title:hover { color: var(--red); }
 .colophon__nav-link:hover { color: var(--red); }
 .colophon__nav-sep { color: var(--ink-40); font-size: 0.625rem; }
 
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { flex-direction: column; gap: 0.5rem 0; }
+  .masthead__nav-divider { display: none; }
+}
 </style>
 </head>
 <body>
@@ -725,9 +735,19 @@ a.masthead__title:hover { color: var(--red); }
   </div>
   <hr class="masthead__rule">
   <nav class="masthead__nav" aria-label="Primary">
-    <a href="/what-is-technical-marketing" class="masthead__nav-link">What is Technical Marketing?</a>
-    <a href="/the-technical-marketer" class="masthead__nav-link">The Technical Marketer</a>
-    <a href="/before-the-name" class="masthead__nav-link">Before the Name</a>
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Reference</span>
+      <a href="/what-is-technical-marketing" class="masthead__nav-link">What is Technical Marketing?</a>
+      <a href="/technical-marketing-vs-product-marketing" class="masthead__nav-link">TMM vs PMM</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
+    <span class="masthead__nav-group">
+      <span class="masthead__nav-kicker">Volume 01</span>
+      <a href="/the-technical-marketer" class="masthead__nav-link">The Technical Marketer</a>
+      <a href="/before-the-name" class="masthead__nav-link">Before the Name</a>
+      <a href="/technical-marketing-age-of-ai" class="masthead__nav-link" aria-current="page">In the Age of AI</a>
+    </span>
+    <span class="masthead__nav-divider" aria-hidden="true">&#9670;</span>
     <a href="/about" class="masthead__nav-link">About</a>
   </nav>
   <hr class="masthead__rule">
@@ -992,7 +1012,7 @@ a.masthead__title:hover { color: var(--red); }
           <text x="358" y="297" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Developer Advocacy</text>
           <circle cx="555" cy="380" r="5" fill="#1a1a1a" opacity="0.6"/>
           <text x="543" y="377" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Technical Writing</text>
-          <!-- Technical Marketing — prominent, red -->
+          <!-- Technical Marketing: prominent, red -->
           <circle cx="555" cy="128" r="10" fill="#A7352A"/>
           <circle cx="555" cy="128" r="16" fill="none" stroke="#A7352A" stroke-width="1" opacity="0.45"/>
           <text x="538" y="103" text-anchor="end" font-family="Fraunces, serif" font-size="15" fill="#1a1a1a" font-weight="600">Technical Marketing</text>
