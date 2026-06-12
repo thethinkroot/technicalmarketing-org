@@ -4,7 +4,7 @@
 
 This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
 
-Last updated: 2026-06-12. Version 1.1.
+Last updated: 2026-06-12. Version 1.2.
 
 ---
 
@@ -566,6 +566,58 @@ Companies whose buyer is technical (CrowdStrike, Snowflake, Databricks, Confluen
 Product-led growth companies where the product itself is the primary sales motion (Linear, Vercel, Supabase, PostHog, Notion). The role often reports directly to the Head of Marketing rather than through a separate Technical Marketing chain, because the company is too small to have built the deeper marketing organizational structure. The role combines technical authority with growth-loop responsibility. Less analyst work, more developer-facing content. Less competitive teardown, more category-defining narrative. The role is closer to Developer Relations and Documentation than at the other two company types. Comp tends to be lower at base but higher in equity if the company is pre-public.
 
 
+### Hardware and semiconductor companies
+
+
+Companies whose buyer is a procurement engineer or standards body rather than a software practitioner (Intel, NVIDIA). The role produces Benchmark Artifacts: performance data, comparative specifications, and reference designs that prove the claim against a measurable standard. The artifact ships without a sales cycle. The audience is a procurement engineer or standards body, not a buying committee led by an SE.
+
+
+### Demo archetype by company type (Figure 04)
+
+
+The four demo archetypes, organized on an axis from built for the field to use (left) to built for the buyer to use (right):
+
+**Configured Environment** (Platform companies: ServiceNow, Workday)
+- What it is: A live tenant built to prove the platform does what the positioning claims
+- Time to build: Months
+- Who deploys it: Sales Engineer in the field
+- Who owns it: Technical Marketer owns the architecture, the data, and the scenario integrity
+- Artifact form: Live instance, curated data set, scenario scripts
+- Audience: Analyst, Sales Engineer, buying committee
+
+**Reference Architecture** (Infrastructure and data companies: Databricks, Elastic)
+- What it is: Code, pipelines, notebooks, and integrations that prove the technical claim at the level an engineer interrogates
+- Time to build: Weeks to months
+- Who deploys it: The buyer's own engineering team validates it
+- Who owns it: Technical Marketer builds it; buyer's engineers run it
+- Artifact form: GitHub repo, notebook, runbook, integration pattern
+- Audience: Principal engineer, architect
+
+**Benchmark Artifact** (Hardware and semiconductor companies: Intel, NVIDIA)
+- What it is: Performance data, specifications, and reference designs that prove the claim against a measurable standard
+- Time to build: Weeks
+- Who deploys it: Analyst or procurement body
+- Who owns it: Technical Marketer produces it; it ships without a sales conversation
+- Artifact form: Benchmark report, datasheet, reference design
+- Audience: Procurement engineer, standards body
+
+**Interactive Proof** (PLG companies: Datadog, Linear)
+- What it is: A trial environment or sandbox the buyer runs themselves
+- Time to build: Days
+- Who deploys it: The buyer, independently
+- Who owns it: Technical Marketer builds the environment and the narrative layer
+- Artifact form: Self-serve sandbox, guided trial, in-product onboarding environment
+- Audience: Developer, practitioner, buyer
+
+The practitioner reality, one line per archetype:
+- Configured Environment: You build it once. The field runs it forever.
+- Reference Architecture: The SE never enters the buyer's terminal.
+- Benchmark Artifact: It ships without a conversation.
+- Interactive Proof: No SE in the room. The product closes it.
+
+The artifact changes by company type. The discipline does not.
+
+
 A practitioner moving between these variants will recognize the work as the same discipline but find the daily counterparts and the relative weighting of the six workstreams quite different. Hiring managers writing job descriptions for the role should be explicit about which variant they are hiring for. The role title may be the same. The day-to-day work is not.
 
 
@@ -581,10 +633,17 @@ The candidate must still answer the question after the polish comes off. Polish 
 ## 10 · Compensation · What the role pays
 
 
-Three bands. Drawn from a combination of public job postings at named companies, Levels.fyi data, and the compensation discussions reflected in published Senior Technical Marketing Manager job descriptions.
+Three bands. Drawn from a combination of public job postings at named companies, Levels.fyi data, and published Senior Technical Marketing Manager job descriptions.
 
+| Band | Base | Total Compensation |
+|---|---|---|
+| Senior IC | $140K–$200K | $200K–$330K |
+| Principal IC | $180K–$240K | $280K–$430K |
+| Director, Technical and Product Marketing | $200K–$260K | $320K–$500K |
 
-Total compensation ranges include equity at expected vested value over four years. The figures skew toward the higher end of the band at platform and infrastructure companies in major US tech markets (San Francisco Bay Area, Seattle, New York). They skew toward the lower end of base and the higher end of equity at PLG and pre-public companies, which is why a Principal IC at a pre-IPO Series C may earn more cash than a Director at a public platform company once equity is included.
+Total compensation includes equity at expected vested value over four years. The figures skew toward the higher end of the band at platform and infrastructure companies in major US tech markets (San Francisco Bay Area, Seattle, New York). They skew toward the lower end of base and the higher end of equity at PLG and pre-public companies, which is why a Principal IC at a pre-IPO Series C may take home more cash than a Director at a public platform company once equity is factored in.
+
+Sources: CrowdStrike published JD · Levels.fyi Microsoft and LinkedIn data · Published STMM postings · 2025–2026
 
 
 ## 11 · The Job Description · A copyable text for use in real hiring
