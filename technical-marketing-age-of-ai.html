@@ -463,29 +463,36 @@ a.masthead__title:hover { color: var(--red); }
 
 /* Cite card */
 .cite-card {
-  margin-top: 3rem; padding: 1.5rem 1.625rem 1.25rem;
-  border: 0.5px solid var(--border-strong);
+  margin: 3rem 0 1rem; padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light); border: 0.5px solid var(--border-strong);
+  position: relative; scroll-margin-top: 1.5rem; max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: ""; position: absolute; top: -1px; left: -1px; right: -1px;
+  height: 3px; background: var(--red);
 }
 .cite-card__header {
-  display: flex; flex-direction: column; gap: 0.25rem;
-  padding-bottom: 1.25rem; margin-bottom: 0.5rem; border-bottom: 0.5px solid var(--border);
+  display: flex; align-items: baseline; gap: 1.5rem;
+  padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem; flex-wrap: wrap;
 }
 .cite-card__kicker {
-  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
-  text-transform: uppercase; color: var(--red); font-weight: 600;
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--red);
 }
-.cite-card__title { font-family: var(--f-display); font-weight: 700; font-size: 1.125rem; color: var(--ink); }
+.cite-card__title { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); margin: 0; }
 .cite-row {
-  display: grid; grid-template-columns: 3.5rem 1fr auto;
-  gap: 0 1rem; padding: 1.125rem 0; border-bottom: 0.5px solid var(--border); align-items: start;
+  display: grid; grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem; padding: 1.125rem 0; border-bottom: 0.5px solid var(--border); align-items: start;
 }
-.cite-row:last-child { border-bottom: none; }
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
 .cite-label {
-  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.2em;
-  text-transform: uppercase; color: var(--ink-40); font-weight: 600; padding-top: 0.125rem;
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); padding-top: 0.3rem;
 }
 .cite-text { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
-.cite-text a { border-bottom: 1px solid var(--border); }
+.cite-text em { font-style: italic; }
+.cite-text a { color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
 .cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
 .cite-text--code {
   font-family: 'SF Mono', 'Consolas', 'Monaco', monospace; font-size: 0.8125rem;
@@ -494,15 +501,16 @@ a.masthead__title:hover { color: var(--red); }
 }
 .cite-copy {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em;
-  text-transform: uppercase; font-weight: 600; color: var(--ink);
+  font-family: var(--f-display); font-size: 0.6875rem; letter-spacing: 0.16em;
+  text-transform: uppercase; font-weight: 700; color: var(--ink);
   background: transparent; border: 0.5px solid var(--border-strong);
-  padding: 0.5rem 0.75rem; cursor: pointer; min-height: 32px;
+  padding: 0.5rem 0.875rem; cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s; white-space: nowrap; align-self: start;
 }
 .cite-copy:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .cite-copy.is-copied { background: var(--red); color: var(--paper); border-color: var(--red); }
 .cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+
 
 /* ── Narrated Edition Player ─────────────────────────────────────────────── */
 
@@ -802,6 +810,59 @@ a.masthead__title:hover { color: var(--red); }
   margin: 0;
   max-width: none;
 }
+/* ── Share surface ───────────────────────────────────────────────────── */
+.share-surface {
+  margin-top: 2.5rem; padding-top: 1.5rem;
+  border-top: 0.5px solid var(--border);
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  max-width: var(--measure);
+}
+.share-surface__label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 600; flex-shrink: 0;
+}
+.share-btn {
+  display: inline-flex; align-items: center; gap: 0.375rem;
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em;
+  text-transform: uppercase; font-weight: 600; color: var(--ink);
+  background: transparent; border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.875rem; cursor: pointer; text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  min-height: 36px; white-space: nowrap;
+}
+.share-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.share-btn:active { transform: scale(0.97); }
+.share-btn.is-copied { background: var(--red); color: var(--paper); border-color: var(--red); }
+.share-btn__icon { font-size: 0.8125rem; line-height: 1; }
+
+/* ── FAQ section ─────────────────────────────────────────────────────── */
+.faq {
+  margin: 3rem 0 0;
+  border-top: 0.5px solid var(--border);
+  padding-top: 2rem;
+  max-width: var(--measure);
+}
+.faq > h2 {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--red); font-weight: 700;
+  margin-bottom: 1.75rem;
+}
+.faq-item {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.faq-q {
+  font-family: var(--f-serif); font-weight: 700; font-size: 1.0625rem;
+  line-height: 1.3; color: var(--ink); margin-bottom: 0.625rem;
+}
+.faq-a {
+  font-family: var(--f-serif); font-size: 1rem; line-height: 1.62;
+  color: var(--ink); margin: 0;
+}
+.faq-a a { border-bottom: 1px solid var(--border-strong); transition: color 0.15s, border-color 0.15s; }
+.faq-a a:hover { color: var(--red); border-bottom-color: var(--red); }
 </style>
 </head>
 <body>
@@ -1213,6 +1274,7 @@ a.masthead__title:hover { color: var(--red); }
         <li>McKinsey Technology Practice, interview with Prashanth Chandrasekar, CEO of Stack Overflow, January 29, 2026. <em>Building trust to scale AI in software development.</em> <a href="https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-trust-to-scale-ai-interview-with-the-ceo-of-stack-overflow">mckinsey.com</a></li>
         <li>Corriveau, C. (2026). The technical marketer: A canonical job description. <em>Technical Marketing</em>, I. <a href="https://technicalmarketing.org/the-technical-marketer">technicalmarketing.org/the-technical-marketer</a>. The function matrix diagram in that article establishes the two-axis framework used throughout this one.</li>
       </ol>
+      <p style="font-family:var(--f-sans);font-size:0.75rem;line-height:1.55;color:var(--ink-60);margin-top:1.25rem;max-width:var(--measure);">Terms used in this article are defined in the publication's <a href="/glossary" style="color:inherit;border-bottom:1px solid var(--border-strong);">Glossary of Technical Marketing &rarr;</a></p>
     </section>
 
     <aside class="editors-note" aria-labelledby="editors-note-label">
@@ -1222,6 +1284,22 @@ a.masthead__title:hover { color: var(--red); }
       <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
     </aside>
 
+    <div class="share-surface" aria-label="Share this article">
+      <span class="share-surface__label">Share</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftechnicalmarketing.org%2Ftechnical-marketing-age-of-ai" class="share-btn" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+        <span class="share-btn__icon" aria-hidden="true">in</span>
+        LinkedIn
+      </a>
+      <a href="https://twitter.com/intent/post?url=https%3A%2F%2Ftechnicalmarketing.org%2Ftechnical-marketing-age-of-ai&text=Technical+Marketing+in+the+Age+of+AI+%E2%80%94+the+argument+for+why+the+discipline+expands+when+everything+around+it+shrinks." class="share-btn" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+        <span class="share-btn__icon" aria-hidden="true">&#120143;</span>
+        Post
+      </a>
+      <button type="button" class="share-btn" onclick="copyArticleLink(this)" aria-label="Copy link to this article">
+        <span class="share-btn__icon" aria-hidden="true">&#10063;</span>
+        Copy link
+      </button>
+    </div>
+
     <div class="next-article">
       <a href="/before-the-name">
         <span class="next-article__label">Article II &middot; Vol. 01</span>
@@ -1229,10 +1307,56 @@ a.masthead__title:hover { color: var(--red); }
       </a>
     </div>
 
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">Does AI replace technical marketing?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">No. AI compresses artifact production: drafting decks, summarizing competitive landscapes, generating deployment guides. What it cannot compress is editorial judgment under pressure. Which claim to lead with in an analyst briefing. Which architectural truth to hold when the buyer challenges it. Whether the demo shows the rough edges or the happy path. That judgment is the definition of technical marketing. It has always been the definition.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">How does AI change the technical marketing role?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">AI accelerates production of structured technical content, freeing the technical marketer to concentrate on the judgment work that always mattered most. The role does not shrink. It clarifies. Production work that previously consumed a substantial portion of the role's time gets absorbed by tooling. The editorial authority over which artifact to build, and which claim to anchor it to, becomes the explicit center of the discipline.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">Why do technically sophisticated buyers still need human technical marketers?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">Because they do not trust AI-generated technical claims at face value. Stack Overflow's 2025 Developer Survey found that trust in AI accuracy fell from 40% to 29% in a single year, with 46% of developers actively distrusting AI output. When the buyer is a principal engineer or a CISO and the decision is a seven-figure contract, the AI-generated demo and the AI-generated architecture diagram require a practitioner who can defend them under questioning. That practitioner is the technical marketer.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">What is the trust gap in AI-generated technical content?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">The trust gap is the distance between adoption and confidence. Stack Overflow's 2025 survey found 84% of developers using AI tools while only 29% trust the accuracy of what those tools produce. McKinsey's 2026 AI Trust Maturity Survey found 74% of organizations identify inaccuracy as a highly relevant AI risk. The gap creates structural demand for practitioners who can verify, defend, and be accountable for technical claims.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">Do AI companies like OpenAI and Anthropic need technical marketers?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">Yes, and they are building the function from scratch. AI companies face the hardest version of the technical marketing problem: their products are the most technically complex in the current market, their buyers are the most technically sophisticated, and the claims being evaluated fail in verifiable ways when overstated. OpenAI, Anthropic, Cohere, Mistral, and Scale AI all need practitioners who can defend technical claims about AI systems to enterprise buyers who have their own AI engineers. That is the technical marketing function.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">What does technical marketing look like at an AI company?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">At an AI company, technical marketing owns the evidence layer for AI product claims: accuracy benchmarks, context window behavior demonstrations, agentic task completion proofs, safety and compliance positioning for regulated industries. The artifacts differ from enterprise software (reference implementations rather than configured tenants, benchmark reports rather than standard demos) but the judgment work is identical. Which claim to lead with. Which architectural truth to defend. Whether the positioning holds under questioning from a buyer's technical team. The <a href="/glossary">Glossary</a> defines terms used across the discipline.</p>
+        </div>
+      </div>
+    </section>
+
     <section class="cite-card" id="cite" aria-labelledby="cite-title">
       <div class="cite-card__header">
         <span class="cite-card__kicker">Citation</span>
-        <p class="cite-card__title" id="cite-title">How to cite this article.</p>
+        <p class="cite-card__title" id="cite-title">How to cite this entry.</p>
       </div>
 
       <div class="cite-row">
@@ -1294,6 +1418,7 @@ a.masthead__title:hover { color: var(--red); }
         <li><a href="#new-context"><span class="toc-num">07</span>AI Companies</a></li>
         <li><a href="#the-position"><span class="toc-num">08</span>The Argument</a></li>
         <li><a href="#footnotes"><span class="toc-num">&middot;</span>Sources</a></li>
+        <li><a href="#faq-title"><span class="toc-num">&middot;</span>FAQ</a></li>
         <li><a href="#cite"><span class="toc-num">&middot;</span>Cite</a></li>
       </ul>
     </nav>
@@ -1375,6 +1500,24 @@ function fallbackCopy(text, callback) {
   document.body.appendChild(ta); ta.select();
   try { document.execCommand('copy'); callback(); } catch(e) {}
   document.body.removeChild(ta);
+}
+function copyArticleLink(btn) {
+  var url = 'https://technicalmarketing.org/technical-marketing-age-of-ai';
+  var icon = btn.querySelector('.share-btn__icon');
+  var label = btn.lastChild;
+  function showCopied() {
+    btn.classList.add('is-copied');
+    if (icon) icon.innerHTML = '&#10003;';
+    if (label) label.textContent = ' Copied';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (icon) icon.innerHTML = '&#10063;';
+      if (label) label.textContent = ' Copy link';
+    }, 2400);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(showCopied).catch(function() { fallbackCopy(url, showCopied); });
+  } else { fallbackCopy(url, showCopied); }
 }
 </script>
 
