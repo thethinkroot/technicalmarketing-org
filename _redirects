@@ -6,9 +6,10 @@
 # Volume archive URLs for future use
 /volume-01  /  301
 
-# Contributors directory - redirect to founding editor
-/contributors    /contributors/chad-corriveau    301
-/contributors/   /contributors/chad-corriveau    301
+# Contributors directory
+# /contributors serves contributors/index.html (the roster page)
+# /contributors/[name] serves contributors/[name].html (individual profiles)
+# No redirect needed — Cloudflare Pages file routing handles this directly
 
 # ---------------------------------------------------------------
 # Legacy reclamation (Wayback CDX audit, 2026-06-12)
