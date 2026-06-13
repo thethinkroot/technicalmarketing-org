@@ -222,7 +222,7 @@ a.masthead__title:hover{color:var(--red)}
       <p id="glossary-lede">Every discipline accumulates vocabulary before it accumulates definitions. Technical marketing is no exception. The terms below are defined as the field uses them in practice: in job descriptions, in deal reviews, in conversations between practitioners who know what the work is and are trying to name it precisely.</p>
 
       <div id="scope-note">
-        <p><strong>Scope.</strong> This glossary covers the operational vocabulary of technical marketing as practiced in enterprise software. Definitions prioritize field usage over etymological correctness. Where a term is used differently across companies or contexts, the definition reflects the most common practitioner interpretation.</p>
+        <p><strong>Scope.</strong> This glossary covers the operational vocabulary of technical marketing as practiced across enterprise software, infrastructure, AI, and hardware. Definitions prioritize field usage over etymological correctness. Where a term is used differently across companies or contexts, the definition reflects the most common practitioner interpretation.</p>
         <p>For the foundational definition of the discipline itself, see <a href="/what-is-technical-marketing">What Is Technical Marketing?</a></p>
       </div>
 
@@ -332,12 +332,48 @@ a.masthead__title:hover{color:var(--red)}
             <span class="term-see-also-sep">&middot;</span>
             <a href="#playbook">Playbook</a>
           </div>
+        <div class="term-entry" id="benchmark-artifact">
+          <div class="term-head"><span class="term-name">Benchmark Artifact</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">A structured technical deliverable, including performance data, comparative specifications, and reference designs, that proves a product's claim against a measurable standard. The primary demo archetype of hardware and semiconductor companies, where the audience is a procurement engineer, a standards body, or a technical architect evaluating performance under defined conditions.</p>
+          <p class="term-body">A benchmark artifact is evidence-first by design. The argument is in the data: frame rates, throughput, latency, power efficiency, comparative specs against named alternatives. The practitioner's editorial work is in selecting which benchmark to run, against which baseline, under which conditions, and presenting the result with enough methodological transparency to survive scrutiny from an audience that knows how to read benchmark methodology and reject convenient test designs.</p>
+          <p class="term-body">Hardware and semiconductor companies have produced benchmark artifacts formally since the 1960s. The pattern appeared later in enterprise software as performance and scalability became evaluation criteria. In both cases the benchmark artifact sits at the far right of the demo archetype axis: built for the buyer to evaluate, not for the field to run. The SE does not demo it. The buyer's engineers interrogate it.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Benchmark artifact vs. reference architecture.</strong> A reference architecture proves that the product can be deployed correctly for a use case. A benchmark artifact proves that the deployment performs to a stated standard. Both are evidence artifacts. The benchmark is oriented toward performance; the reference architecture is oriented toward fit.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-architecture">Reference architecture</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#interactive-proof">Interactive proof</a>
+          </div>
         </div>
       </div>
 
       <!-- C -->
       <div class="letter-group" id="letter-C">
         <h2 class="letter-anchor">C</h2>
+
+        <div class="term-entry" id="configured-environment">
+          <div class="term-head"><span class="term-name">Configured environment</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">A live software tenant built to prove that the platform does what the positioning claims, using realistic data, configured workflows, and the personas a buyer recognizes as their own. The primary demo archetype of platform companies, where the technical marketer owns the architecture, the data integrity, and the scenario coherence, and the sales engineer deploys it in the field.</p>
+          <p class="term-body">A configured environment takes months to build correctly. It is not a sandbox and not a scratch instance. It is a managed artifact: the canonical source from which field demonstrations are derived. The data supports the demo argument. The workflows reflect an actual use case. The personas are specific enough to be recognizable and generic enough to survive across verticals. Every element is in service of a single consistent claim.</p>
+          <p class="term-body">Platform companies, where the product is horizontal and the proof surface is wide, depend on configured environments more than any other company type. A ServiceNow, Salesforce, or Workday demo that runs from a poorly maintained environment exposes every integration gap, every placeholder, every workflow that was never finished. The configured environment is where the technical marketing function's infrastructure investment is most visible and most consequential.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Configured environment vs. reference environment.</strong> A reference environment is the canonical source. A configured environment is a specific expression of that source, built for a defined scenario, audience, or vertical. All configured environments should derive from a reference environment. A configured environment built without a reference source becomes technical debt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+          </div>
+        </div>
 
         <div class="term-entry" id="calibration-band">
           <div class="term-head"><span class="term-name">Calibration band</span><span class="term-pos">noun</span></div>
@@ -601,6 +637,25 @@ a.masthead__title:hover{color:var(--red)}
       <div class="letter-group" id="letter-I">
         <h2 class="letter-anchor">I</h2>
 
+        <div class="term-entry" id="interactive-proof">
+          <div class="term-head"><span class="term-name">Interactive proof</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">A trial environment or sandbox that a buyer runs themselves, converting skepticism through direct experience rather than through a vendor-led demonstration. The primary demo archetype of PLG companies, where the technical marketer builds both the environment and the narrative layer that makes the experience legible.</p>
+          <p class="term-body">An interactive proof inverts the demo relationship. In a configured environment, the vendor controls what the buyer sees. In an interactive proof, the buyer controls what they do. The practitioner's job is not to script the experience but to architect it: the default data, the onboarding path, the moments where the product's value claim becomes self-evident. The buyer who reaches that moment without being escorted has been more thoroughly convinced than one who watched a representative reach it for them.</p>
+          <p class="term-body">PLG companies, where product adoption precedes or replaces the traditional sales motion, use interactive proofs as the primary technical marketing output. The trial environment is the demo. Field activation looks different here: technical marketing measures whether buyers who enter the trial reach the proof moment, not whether the SE ran a good session. Designing the path to that moment is the practitioner's core work.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Interactive proof vs. proof of concept.</strong> A proof of concept is a structured evaluation run with vendor involvement against the customer's specific environment. An interactive proof is self-directed, vendor-designed, and typically runs in a controlled sandbox. The POC is deal-specific. The interactive proof is built once and used at scale.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
+
         <div class="term-entry" id="integration-guide">
           <div class="term-head"><span class="term-name">Integration guide</span><span class="term-pos">noun</span></div>
           <p class="term-definition">A structured technical document that explains how to connect a vendor's product to a buyer's existing systems, covering authentication, data flow, configuration requirements, and common failure modes, written at the depth required for a technical evaluator to assess integration feasibility during a purchase evaluation.</p>
@@ -760,6 +815,25 @@ a.masthead__title:hover{color:var(--red)}
       <!-- R -->
       <div class="letter-group" id="letter-R">
         <h2 class="letter-anchor">R</h2>
+
+        <div class="term-entry" id="reference-architecture">
+          <div class="term-head"><span class="term-name">Reference architecture</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">A structured technical artifact, typically code, pipelines, notebooks, or integration patterns, that proves a product's claim at the level a technically capable evaluator can interrogate directly. The primary demo archetype of infrastructure and data companies, where the buyer's engineers validate the artifact, not the sales engineer.</p>
+          <p class="term-body">A reference architecture sits closer to a GitHub repository than to a slide deck. The claim is embedded in the artifact itself: if the code runs, if the pipeline connects, if the notebook produces the stated output, the claim is proven without narration. Technical marketing owns the architecture's integrity: which use case it proves, whether the configuration reflects production-realistic conditions, and whether the stated outcome actually results from the work as written.</p>
+          <p class="term-body">Infrastructure and data companies, including Databricks, Elastic, HashiCorp, and CrowdStrike, produce reference architectures as primary technical marketing outputs. The audience is a principal engineer or an architect, not a business buyer. The evaluation happens at a depth of technical scrutiny that a configured environment or a slide-based demo cannot satisfy. A reference architecture that contains shortcuts, aspirational configurations, or undisclosed dependencies will be found and will damage the vendor's technical credibility in ways that are hard to recover from.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Reference architecture vs. architecture overview.</strong> An architecture overview describes what the product is and how it is structured. A reference architecture shows how to deploy and configure it for a specific use case, at a level of technical completeness that allows a practitioner to build from it. The overview lives earlier in the buyer journey; the reference architecture lives in the evaluation and implementation stages.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
 
         <div class="term-entry" id="reference-environment">
           <div class="term-head"><span class="term-name">Reference environment</span><span class="term-pos">noun</span></div>
