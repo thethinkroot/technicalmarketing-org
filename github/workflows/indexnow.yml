@@ -13,7 +13,7 @@ jobs:
           KEY="b5d219858696e9d548426f2a6045680e"
           HOST="technicalmarketing.org"
 
-          # Ping all indexed URLs — keep in sync with sitemap.xml
+          # Ping all indexed URLs
           URLS=(
             "https://$HOST/"
             "https://$HOST/what-is-technical-marketing"
@@ -24,8 +24,9 @@ jobs:
             "https://$HOST/glossary"
             "https://$HOST/landscape"
             "https://$HOST/about"
-            "https://$HOST/suggest"
+            "https://$HOST/contributors"
             "https://$HOST/contributors/chad-corriveau"
+            "https://$HOST/suggest"
           )
 
           # Build JSON payload for batch ping

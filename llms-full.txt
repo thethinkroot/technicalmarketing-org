@@ -1124,6 +1124,24 @@ Hardware and semiconductor companies (Intel, NVIDIA) have used these titles form
 
 ---
 
+# Contributors · Index
+
+technicalmarketing.org/contributors
+
+The practitioners and editors who have contributed original work to Technical Marketing. Inclusion is based on editorial judgment: the strength of the argument and the specificity of the perspective. Brand, company name, and title are not criteria.
+
+## Volume I · Spring 2026
+
+**Chad Corriveau** · Founding Editor · Volume I, 2026–
+
+Twelve years building technical marketing at scale inside ServiceNow across ITSM, ITOM, security, DevOps, and AI products. Three Knowledge conference mainstage keynotes. Founder of ThinkRoot LLC. U.S. Navy veteran. Contributor to: The Technical Marketer (Article I), Before the Name (Article II), Technical Marketing in the Age of AI (Article III). Full profile: technicalmarketing.org/contributors/chad-corriveau
+
+## Volume II · Q3 2026
+
+Volume II opens the contributor pipeline to senior practitioners across the field. Submissions reviewed on editorial merit. See /suggest for current editorial priorities.
+
+---
+
 # About Technical Marketing
 
 
