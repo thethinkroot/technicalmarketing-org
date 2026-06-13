@@ -1,10 +1,10 @@
 # Technical Marketing · Full Content
 
-> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software. First Edition, Anno MMXXVI. ISSN pending (Library of Congress application in process). Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
+> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. First Edition, Anno MMXXVI. ISSN pending (Library of Congress application in process). Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
 
 This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
 
-Last updated: 2026-06-12. Version 1.2.
+Last updated: 2026-06-12. Version 1.3.
 
 ---
 
@@ -17,7 +17,7 @@ Last updated: 2026-06-12. Version 1.2.
 *The state of a discipline still being named.*
 
 
-A working reference for technical marketing as practiced in enterprise software, and a quarterly index of current thinking from the field.
+A working reference for technical marketing as practiced in enterprise software, AI, infrastructure, and hardware, and a quarterly index of current thinking from the field.
 
 
 ## Publication metrics
@@ -188,10 +188,10 @@ The follow-up. Workflow-layer governance fails open by design. Implications for 
 ## 01 · Definition · A working definition
 
 
-**Technical marketing** is a discipline practiced in enterprise software that translates complex product capabilities into evidence-based content: demos, architecture overviews, competitive analysis, and proof-of-concept frameworks, all for technically sophisticated buyers who evaluate products on how they work, not just what they promise. It is distinct from product marketing in that it operates at the level of technical proof rather than positioning, and from sales engineering in that it builds the repeatable artifacts and frameworks that sales engineers then execute against in individual deals.
+**Technical marketing** is a discipline practiced across enterprise software, AI, infrastructure, and hardware that translates complex product capabilities into evidence-based content: demos, architecture overviews, competitive analysis, and proof-of-concept frameworks, all for technically sophisticated buyers who evaluate products on how they work, not just what they promise. It is distinct from product marketing in that it operates at the level of technical proof rather than positioning, and from sales engineering in that it builds the repeatable artifacts and frameworks that sales engineers then execute against in individual deals.
 
 
-Technical marketing is the discipline that emerged when enterprise software products outpaced the language used to sell them. Its practitioners hold technical depth and commercial orientation simultaneously and translate between the two for every audience that needs to evaluate the product.
+Technical marketing is the discipline that exists when products are technically complex, buyers are technically capable, and commercial pressure is real. Its practitioners hold technical depth and commercial orientation simultaneously and translate between the two for every audience that needs to evaluate the product.
 
 
 The role exists at every major enterprise software company. Its title varies. Technical Marketing Manager. Technical Product Marketing Manager. Principal Technical Marketing Engineer. Director of Technical Marketing. The work, where it is done well, is recognizably similar across companies even when the titles are not.
@@ -991,6 +991,138 @@ The compression removes the surrounding work. What remains is the discipline's c
 
 ---
 
+# Glossary of Technical Marketing · Working Reference
+
+> A working reference for the terms practitioners use. Definitions as the field applies them across enterprise software, AI, infrastructure, and hardware. Not as a dictionary would.
+
+## Scope
+
+This glossary covers the operational vocabulary of technical marketing as practiced across enterprise software, AI, infrastructure, and hardware. Definitions prioritize field usage over etymological correctness. Where a term is used differently across companies or contexts, the definition reflects the most common practitioner interpretation.
+
+---
+
+**Agentic AI** · AI systems that plan and execute multi-step tasks autonomously, using tools, APIs, and external data sources, rather than responding to a single prompt and stopping. The distinction from generative AI is operational rather than architectural. A generative model answers a question. An agentic system pursues a goal through a sequence of actions, evaluating intermediate results and adjusting. For technical marketing, agentic AI is both a product category to market and a production accelerator.
+
+**Analyst briefing** · A structured presentation delivered to a technology research analyst at Gartner, Forrester, IDC, or a comparable firm, with the goal of accurately positioning a company's product within the analyst's ongoing research and evaluation frameworks. An analyst briefing is not a sales call. A single briefing can influence how an entire market segment perceives a product category for twelve to eighteen months. Technical marketing owns the substance of analyst briefings.
+
+**AR cycle** (analyst relations cycle) · The structured, recurring process by which a company engages with technology research analysts: briefing them on product direction, responding to research inquiries, participating in evaluation frameworks, and tracking resulting position changes in published reports. The AR cycle is typically annual. Technical marketing owns the substance of AR cycle participation. Analyst position shift in the next AR cycle is one of the clearest measurable outcomes the role produces.
+
+**Architecture overview** · A structured diagram and accompanying explanation that describes how a software product is built, how its components relate to each other, and how it connects to the systems a buyer already operates. An architecture overview is one of the most durable artifacts in the technical marketing portfolio. It serves buyers at the evaluation stage who need to understand not just what the product does but how it does it.
+
+**Battlecard** · A concise, structured reference document that equips a sales or pre-sales team member to handle a specific competitor in a live deal. A decision aid, not a research document. Length discipline is required: a battlecard that requires twenty minutes to read before a call is not a battlecard. It is a white paper with a competitive posture.
+
+**Benchmark artifact** · A structured technical deliverable, including performance data, comparative specifications, and reference designs, that proves a product's claim against a measurable standard. The primary demo archetype of hardware and semiconductor companies, where the audience is a procurement engineer, a standards body, or a technical architect evaluating performance under defined conditions. The SE does not demo it. The buyer's engineers interrogate it. Source: /the-technical-marketer, /glossary.
+
+**Buying committee** · The group of stakeholders within a prospect organization who collectively influence or make a purchase decision, typically spanning technical evaluators, business sponsors, economic buyers, procurement, legal, and security functions. No single demo, no single artifact, and no single conversation wins a buying committee. Technical marketing builds for the entire committee.
+
+**Calibration band** · The range of technical depth at which marketing content is most effective in a complex enterprise sale: enough depth to give a technically capable buyer a surface to evaluate, but not so much that the content becomes an enablement exercise rather than a persuasion instrument. Technical marketing occupies the band deliberately. Source: /what-is-technical-marketing, /glossary.
+
+**Champion** · An individual within a buying organization who actively advocates for a vendor's product internally, carries the evaluation forward when the vendor is not in the room, and is willing to stake personal credibility on the purchase recommendation. The materials technical marketing produces are the tools a champion uses to do their internal selling.
+
+**Competitive engagement** · An active sales situation in which the buyer is simultaneously evaluating one or more named competitors. In a competitive engagement, the demo, the technical narrative, and the battlecard all change character under competitive pressure. Win rate on contested deals is one of the clearest direct measures of whether technical marketing's competitive work is landing.
+
+**Configured environment** · A live software tenant built to prove that the platform does what the positioning claims, using realistic data, configured workflows, and the personas a buyer recognizes as their own. The primary demo archetype of platform companies (ServiceNow, Salesforce, Workday). The technical marketer owns the architecture, the data integrity, and the scenario coherence. The sales engineer deploys it in the field. Source: /the-technical-marketer, /glossary.
+
+**Demo** · A structured, live or recorded presentation of software in operation, designed to produce a specific belief in a specific audience at a specific stage of a sale or evaluation. The unit of a demo is not the feature. It is the belief the feature is meant to produce. A practitioner who cannot state the target belief before building the demo is building a tour.
+
+**Demo coherence** · The degree to which every element of a demo, including data, workflow, persona, and narrative, serves a single, consistent argument rather than demonstrating coverage of features. Demo coherence is the primary quality signal for technical marketing output.
+
+**Discovery call** · A structured conversation between a vendor's sales or pre-sales team and a prospect, conducted early in the sales cycle to understand the buyer's current environment, the problem they are trying to solve, and the criteria they will use to evaluate solutions. Technical marketing builds the frameworks that make discovery consistent; it does not typically conduct discovery calls.
+
+**Economic buyer** · The individual within a buying organization who holds final budget authority. The economic buyer is often not the person running the evaluation. Technical marketing's relationship to the economic buyer is indirect: the function rarely presents to them directly, but the materials it produces are what the champion uses to make the case in meetings the vendor cannot attend.
+
+**Editorial judgment** · The practitioner's capacity to decide, under commercial pressure, which technical evidence to present to which audience, in what order, with what framing, and at what level of depth, such that the result advances a specific buyer's evaluation. The defining skill of technical marketing and the dimension most resistant to compression by AI tooling.
+
+**Evaluation conversion** · The rate at which opportunities entering a formal technical evaluation stage result in a technical win. The most direct signal that technical marketing content is working at the stage where it matters. Impressions, clicks, and form fills measure awareness. Evaluation conversion measures whether the discipline's output is actually winning evaluations.
+
+**Field activation** · The percentage of the sales and pre-sales field team actively using the current validated demo, competitive battlecards, and current technical positioning in live customer conversations. Low field activation is diagnostic: it can indicate content that does not fit how SCs are actually selling, a communication failure, or content that is technically accurate but not usable in the time constraints of a real customer conversation.
+
+**Integration guide** · A structured technical document that explains how to connect a vendor's product to a buyer's existing systems, covering authentication, data flow, configuration requirements, and common failure modes, written at the depth required for a technical evaluator to assess integration feasibility during a purchase evaluation.
+
+**Interactive proof** · A trial environment or sandbox that a buyer runs themselves, converting skepticism through direct experience rather than through a vendor-led demonstration. The primary demo archetype of PLG companies (Datadog, Linear, Vercel). The technical marketer builds both the environment and the narrative layer that makes the experience legible. Source: /the-technical-marketer, /glossary.
+
+**Magic Quadrant** · Gartner's primary market evaluation framework, positioning vendors in one of four quadrants: Leaders, Challengers, Visionaries, or Niche Players. A Magic Quadrant position is one of the most consequential outputs of an AR cycle for an enterprise software company. Technical marketing's contribution to Magic Quadrant position is direct: the briefing materials, demo content, and technical proof points the function produces are what Gartner analysts evaluate when assessing Ability to Execute.
+
+**Pipeline** · The set of active sales opportunities tracked by a revenue organization, representing the total potential closed revenue at any given point. Technical marketing influences pipeline indirectly: by improving evaluation conversion, reducing time-to-decision, and improving win rate on competitive deals, it makes the existing pipeline worth more.
+
+**Playbook** · A structured collection of resources, guidance, and pre-built materials that enables a sales or pre-sales team to execute a defined sales motion consistently across opportunities. The playbook is the distribution mechanism for technical marketing's output.
+
+**Presales** · The organizational function that supports a complex sale from initial prospect engagement through contract signature. Presales is the parent category that contains the sales engineering and solutions consulting functions. Technical marketing is adjacent to presales but distinct: presales runs the play; technical marketing writes the playbook.
+
+**Proof of concept** (POC) · A structured technical evaluation in which the vendor configures and tests their product against a customer's specific environment, data, or use case. A POC that surfaces a genuine product gap is a product signal, not only a deal post-mortem event. Technical marketing is involved in POC strategy: defining the success criteria, the scope, the data requirements, and the evaluation framework before the POC begins. An undefined POC is not a POC. It is a free consulting engagement.
+
+**Proof of value** (POV) · A structured evaluation in which the buyer tests whether a product produces a measurable improvement against a business outcome they have committed to achieving. A POV without a stated value hypothesis is an extended trial with a subjective exit.
+
+**Reference architecture** · A structured technical artifact, typically code, pipelines, notebooks, or integration patterns, that proves a product's claim at the level a technically capable evaluator can interrogate directly. The primary demo archetype of infrastructure and data companies (Databricks, Elastic, CrowdStrike, HashiCorp). The buyer's own engineering team validates it. Closer to a GitHub repo than a slide deck. Source: /the-technical-marketer, /glossary.
+
+**Reference environment** · The canonical configuration of a software product that serves as the authoritative source from which demonstrations, technical content, and evaluation materials are produced. A reference environment is not a demo. It is the infrastructure from which demos are produced. A reference environment without clear ownership is not a reference environment. It is a shared demo instance, and shared demo instances degrade toward incoherence.
+
+**Regis McKenna** · A Silicon Valley marketing strategist who joined National Semiconductor in 1967 and later founded Regis McKenna Inc., becoming one of the earliest practitioners and theorists of technical marketing in the semiconductor and computing industries. In the history of the discipline, McKenna represents the Era I anchor: the point at which technical marketing became a recognized in-house function at product companies.
+
+**RFP** (request for proposal) · A formal procurement document issued by a buying organization that requires vendors to respond to a structured set of questions covering product capabilities, technical architecture, security posture, pricing, implementation approach, and company stability. An RFP response is one of the highest-effort, highest-stakes artifacts in the technical marketing portfolio. Technical marketing's work before the RFP arrives shapes the RFP itself.
+
+**Sales engineer / Solutions consultant** · A technical practitioner embedded in the sales motion whose job is to win individual deals by conducting discovery, running demonstrations, building proofs of concept, and handling technical objections. The SE executes in the field; the technical marketer architects the conditions for that execution.
+
+**Teardown** · A structured competitive analysis of a rival product, conducted by the technical marketing team to understand how the competitor's product actually works, what it can and cannot do, and where it is vulnerable to displacement.
+
+**Technical champion** · A technically credible individual within the buying organization who validates the product's claims to peers and to leadership. Not all champions are technical champions, but in complex enterprise software sales the strongest champions are both.
+
+**Technical marketer** · A senior practitioner of technical marketing, typically with eight or more years in technical product roles, holding editorial authority on what evidence the company presents to its most skeptical audiences. Source: /the-technical-marketer.
+
+**Technical narrative** · The structured, evidence-anchored story the company tells about how its product works and why that matters to a specific audience at a specific stage of an evaluation.
+
+**Technical win** · The formal outcome of a technical evaluation in which the buying committee's technical evaluators conclude that the vendor's product meets their technical requirements and recommend it for commercial consideration. Technical marketing exists to improve technical win rate.
+
+**Time to decision** · The elapsed time between a formal evaluation beginning and a technical win or loss. Technical marketing reduces time to decision by ensuring that the evidence a buyer needs is pre-built, accessible, and calibrated for the relevant evaluation stage.
+
+**Trust layer** · The body of technical marketing content that occupies the calibration band: evidence that is deep enough for a technically capable buyer to trust, but not so deep that it becomes enablement content rather than evaluation content. Source: /what-is-technical-marketing.
+
+---
+
+# Technical Marketing Landscape · The Discipline in Practice
+
+> How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function. Verified from public job postings and named-practitioner accounts. Updated each volume.
+
+The technical marketing function appears in job postings at companies across every category of enterprise software, AI, infrastructure, and hardware. The titles are inconsistent. The org placement varies. The work is recognizably similar.
+
+## Company entries
+
+| Company | Title used | Org placement | Note |
+|---|---|---|---|
+| Anthropic | Senior Product Marketing Manager | Marketing | Supports the B2B sales motion for Claude for Work. Owns value proposition to enterprise buyers. Distills complex technical and market issues into sales materials across a wide spectrum of AI knowledge. Embeds directly with the sales team. Requires strong storytelling, enterprise sales enablement experience, and deep AI/ML fluency. |
+| Autodesk | Technical Marketing Manager | Marketing | Reports into Product Marketing under the CMO organization. Specific to the Autodesk Tandem (Digital Twin) product team. Participates in alpha and beta programs, builds demos and talk tracks. AECO industry focus. |
+| AWS | Sr. Technical Product Marketing Manager | Marketing | Inside AWS Product Marketing. Partners with product and GTM teams on portfolio-level strategy and positioning. Container services, serverless, and AI/ML focus areas active. |
+| Cisco | Director, Technical Marketing | Presales / Field | Senior IC collaborating across engineering, product management, sales, and the broader industry ecosystem. Data Center Networking Business unit. 15 years networking experience expected. |
+| Cohere | Product Marketing Manager | Marketing | Enterprise-facing AI platform. Positions as security-first AI for regulated industries including finance, healthcare, and the public sector. Role requires distilling complex model capabilities into enterprise-grade proof points for technically sophisticated buyers. Sovereign AI positioning. |
+| CrowdStrike | Sr. Technical Marketing Manager / Director, Technical Marketing | Marketing | Function named "Product & Technical Marketing" at the VP level. Multiple Directors across product areas: Next-Gen SIEM, Cloud Security, SaaS Security. One of the most explicitly structured technical marketing functions in enterprise cybersecurity. |
+| Databricks | Sr. Technical Marketing Engineer | Marketing | Reports to Director of Technical Marketing. Works closely with Lakebase and Databricks Apps teams. Builds demo applications and reference architectures. Primary audience: application developers and data engineers. |
+| Datadog | Sr. Technical Product Marketing Manager | Marketing | First hire on the security product marketing team. Owns technical positioning and go-to-market for security offerings. |
+| Elastic | Technical Marketing Engineer / Principal Product Marketing Engineer | Marketing | Uses both titles for the same function. Security TME focus includes attack scenario development. Engineer-heritage title convention. |
+| IBM (formerly HashiCorp) | Sr. Technical Product Marketing Manager | Marketing | HashiCorp had a named Senior Director of Technical Product Marketing before its 2024 IBM acquisition. Function persists under IBM. Infrastructure software reference archetype. |
+| Intel Corporation | Technical Marketing Engineer | Marketing | Processor and platform strategy. Long-established hardware TME function predating the enterprise software version by decades. |
+| JFrog | Technical Marketing Manager | Marketing | DevOps and software supply chain security. |
+| LucidLink | Technical Marketing Manager | Marketing | Cloud-native file services for creative and media workflows. |
+| Neo4j | Technical Marketing Manager | Marketing | Graph database and analytics. |
+| NVIDIA | Technical Marketing Engineer (Memory Architecture) | Marketing | Memory Technology focus. Works across business units to align supplier roadmaps to NVIDIA's platform needs. Represents NVIDIA in JEDEC standards bodies. Requires 12 years of memory architecture experience. Hardware TMM predates the enterprise software version by at least two decades. |
+| OpenAI | Senior Product Marketing Manager, Platform | Marketing | Covers the API platform business targeting developers, startups, and enterprise. Job description explicitly lists "product marketing, technical marketing, sales engineering" as the qualifying experience track. Partners with Product, Sales, and Comms on positioning, adoption, and competitive differentiation. |
+| Oracle | Sr. Principal Technical Product Marketing Manager | Product / Marketing | Owns technical positioning for Oracle Autonomous AI Lakehouse. "Intersection of deep engineering knowledge and strategic marketing." Explicitly leads analyst briefings for Gartner MQ and Forrester Wave. |
+| Palo Alto Networks | Principal Technical Marketing Engineer / Director, Technical Marketing Engineering | Marketing | Uses "Technical Marketing Engineering" as the primary title frame. Multiple Directors across Prisma SASE, CDSS, and Cortex. Sits inside Product Marketing. |
+| Pure Storage | Sr. Technical Marketing Engineer | Marketing | AI and Portworx (Kubernetes storage) focus. TME title at scale, not TMM. Engineering-heritage naming convention. |
+| Red Hat | Technical Marketing Manager | Marketing | Most widely cited public description of the role's day-to-day responsibilities. Role creates technical content, supports developer relations, and executes campaigns aimed at technical audiences. |
+| Salesforce / MuleSoft | Technical Product Marketing Manager / Director | Marketing | MuleSoft Director-level IC owning flagship portfolio narrative. Explicitly seeks prior background as developer, solutions architect, SE, or PM converted to marketing. |
+| ServiceNow | Sr. Director, Technical Marketing | Marketing | Reports to VP of Technical and Platform Marketing, who reports to VP of Product and Solutions, then CMO. Platform company archetype: TMM inside marketing with direct product partnership. |
+| Workday | Sr. Technical Product Marketing Manager | Product / Marketing | Sits at the intersection of product, engineering, and GTM for the Workday Build & Platform team. Measures success through platform adoption, analyst engagement, and field readiness. |
+
+## What the table shows
+
+Three org placement archetypes appear consistently. The majority sit inside Marketing and report through a CMO organization. A second group sits at the explicit intersection of product and marketing, with language like "intersection of product, engineering, and field." A smaller number sit closer to the field and presales technical organization.
+
+The title is not standardized. "Technical Marketing Manager," "Technical Product Marketing Manager," and "Technical Marketing Engineer" all appear across companies doing recognizably similar work. Companies with engineering-first cultures use "engineer." Companies with strong marketing org traditions use "manager." The work is the same.
+
+Hardware and semiconductor companies (Intel, NVIDIA) have used these titles formally since the 1960s. The enterprise software version came decades later. AI companies (Anthropic, OpenAI, Cohere) are now building the same function for a new product category. The function's roots in hardware are not incidental. They are the origin point. The history is documented in Before the Name.
+
+---
+
 # About Technical Marketing
 
 
@@ -1006,7 +1138,7 @@ The work is slow on purpose. Defining a discipline that has historically resiste
 ## Who this serves
 
 
-Three audiences, named directly. Working practitioners who have done this job at scale and want the discipline they have built to be recognizable to the people they work with. Practitioners coming into the role today, including the next generation entering a field that is about to be transformed by AI, who deserve a working definition they can build on rather than invent alone. Senior practitioners and adjacent leaders whose hard-won judgment has not been collected anywhere visible yet.
+Five audiences, named directly. Working practitioners who have done this job at scale and want the discipline they have built to be recognizable to the people they work with. Practitioners coming into the role today, including the next generation entering a field that is about to be transformed by AI, who deserve a working definition they can build on rather than invent alone. Senior practitioners and adjacent leaders whose hard-won judgment has not been collected anywhere visible yet. AI GTM practitioners who are building the technical proof layer for foundation models, agent platforms, and AI infrastructure, and who are discovering that the discipline's evaluation-stage tools apply directly to their work even when the product category is new. Hardware and semiconductor technical marketers, for whom the benchmark artifact and reference architecture have been standard practice for decades, and whose history is the origin point the enterprise software version of the role grew from.
 
 
 ## Editorial connection
@@ -1079,11 +1211,11 @@ Responses within two weeks.
 - **Publication:** Technical Marketing
 - **URL:** https://technicalmarketing.org
 - **Edition:** First Edition, Volume I, Anno MMXXVI
-- **ISSN:** 0000-0001
+- **ISSN:** Pending (Library of Congress application APPL0006905 in process)
 - **Editor:** Chad Corriveau, founding editor
 - **Publisher:** Published independently by The ThinkRoot LLC under separate editorial governance
 - **Contact:** editor@technicalmarketing.org
 - **Manifest:** https://technicalmarketing.org/llms.txt
-- **Generated:** 2026-06-12
+- **Generated:** 2026-06-12 · Version 1.3
 
 © 2026 Technical Marketing. All rights reserved. Citation and summarization permitted with attribution; verbatim reproduction of full articles requires editorial permission.
