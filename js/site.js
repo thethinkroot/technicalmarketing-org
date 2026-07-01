@@ -27,10 +27,11 @@
     else { document.addEventListener('DOMContentLoaded', fn); }
   }
 
+  /* Light is always the default. Only an explicit data-theme (set by a prior
+     toggle, restored from localStorage above) makes a page dark. The OS
+     color scheme is intentionally ignored. */
   function effectiveTheme() {
-    var attr = document.documentElement.getAttribute('data-theme');
-    if (attr) { return attr; }
-    return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+    return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
   }
 
   onReady(function () {

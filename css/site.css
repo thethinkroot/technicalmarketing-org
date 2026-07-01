@@ -3,12 +3,13 @@
   =====================================================
   This file is loaded on every page AFTER the page's own inline <style>.
   It adds two things the site did not have before:
-    1. Dark mode (system-preference + manual toggle via data-theme on <html>)
+    1. Dark mode (opt-in via a manual toggle only; light is the default)
     2. Reading experience (progress bar, reading time, mobile TOC)
 
-  Dark mode works with zero JS via prefers-color-scheme. The manual toggle
-  (added by /js/site.js) sets data-theme="dark" | "light" on <html> and
-  overrides the system default.
+  Light mode is ALWAYS the default, regardless of the operating system's
+  color scheme. Dark mode is opt-in only: the toggle button (added by
+  /js/site.js) sets data-theme="dark" on <html> and persists the choice to
+  localStorage. There is deliberately no prefers-color-scheme auto-switching.
 
   IMPORTANT: the site's inline :root already defines the palette as CSS
   variables (--paper, --ink, --red, ...). Dark mode simply re-points those
@@ -33,31 +34,7 @@
   --dg-A7352A: #A7352A;
 }
 
-/* ---- 2. Dark palette (re-points the site's existing variables) --------- */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --paper:         #1C1812;
-    --paper-shade:   #26221A;
-    --paper-light:   #2E2A20;
-    --ink:           #EFE6C9;
-    --ink-60:        #C8B98A;
-    --ink-40:        #8A7E6A;
-    --border:        rgba(239, 230, 201, 0.14);
-    --border-strong: rgba(239, 230, 201, 0.30);
-    --red:           #D0685C;
-    --red-soft:      #DE8378;
-    --yellow:        #EACF82;
-
-    --dg-fafaf7: #211d16;
-    --dg-1a1a1a: #EFE6C9;
-    --dg-1C1812: #EFE6C9;
-    --dg-5C4E3C: #C8B98A;
-    --dg-8a8a85: #9a8f7b;
-    --dg-5a5a5a: #c2b699;
-    --dg-A7352A: #D0685C;
-  }
-}
-
+/* ---- 2. Dark palette (opt-in only, applied via data-theme="dark") ------ */
 [data-theme="dark"] {
   --paper:         #1C1812;
   --paper-shade:   #26221A;
@@ -117,12 +94,6 @@
 
 /* ---- 4. Dark-mode surface tweaks -------------------------------------- */
 /* Selection: keep the yellow highlight but force dark text for contrast */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) *::selection { background: var(--yellow); color: #1C1812; }
-  :root:not([data-theme="light"]) body {
-    background-image: radial-gradient(circle at 50% 50%, rgba(239, 230, 201, 0.04) 1px, transparent 1.2px);
-  }
-}
 [data-theme="dark"] *::selection { background: var(--yellow); color: #1C1812; }
 [data-theme="dark"] body {
   background-image: radial-gradient(circle at 50% 50%, rgba(239, 230, 201, 0.04) 1px, transparent 1.2px);
@@ -130,9 +101,6 @@
 
 /* ---- 5. Images in dark mode ------------------------------------------- */
 /* Dim light-background plate/cover images slightly; never invert.        */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) img { filter: brightness(0.88) contrast(1.05); }
-}
 [data-theme="dark"] img { filter: brightness(0.88) contrast(1.05); }
 /* Logos are exempt */
 .site-logo img,
