@@ -4,7 +4,18 @@
 
 This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
 
-Last updated: 2026-06-12. Version 1.3.
+## Departments and canonical URLs
+
+The publication is organized into finite departments, each at a stable address:
+
+- Reference — https://technicalmarketing.org/reference (foundational definition, TMM vs PMM, glossary, landscape)
+- Volume 01 — https://technicalmarketing.org/volume-01 (essays, reference, field kit, index — Spring–Summer 2026)
+- The Index — https://technicalmarketing.org/the-index (the full annotated twelve-source quarterly index; its full text appears below under "The Quarterly Index · Volume I")
+- Tools — https://technicalmarketing.org/tools (the Demo Coherence Index scorer; the copyable job description)
+- Archive — https://technicalmarketing.org/archive (the permanent record of volumes)
+- About — https://technicalmarketing.org/about · Contributors — https://technicalmarketing.org/contributors · Suggest — https://technicalmarketing.org/suggest
+
+Last updated: 2026-07-01. Version 1.4.
 
 ---
 

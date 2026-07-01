@@ -3,9 +3,6 @@
 
 # www to apex redirect (handled at Cloudflare level, but defensive)
 
-# Volume archive URLs for future use
-/volume-01  /  301
-
 # Contributors directory
 # /contributors serves contributors/index.html (the roster page)
 # /contributors/[name] serves contributors/[name].html (individual profiles)

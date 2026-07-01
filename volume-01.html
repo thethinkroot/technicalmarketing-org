@@ -5,26 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#EFE6C9">
 
-<title>Technical Marketing &middot; A field manual for the discipline</title>
-<meta name="description" content="The working reference for technical marketing: proving technically complex claims to technically capable buyers, under commercial pressure. An independent quarterly publication and index of current thinking from the field.">
+<title>Volume 01 &middot; Spring&ndash;Summer 2026 &middot; Technical Marketing</title>
+<meta name="description" content="The contents of Volume 01 of Technical Marketing: three essays, the foundational reference, the field kit, and the twelve-source quarterly index. Spring–Summer 2026.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<link rel="canonical" href="https://technicalmarketing.org/">
+<link rel="canonical" href="https://technicalmarketing.org/volume-01">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Technical Marketing">
-<meta property="og:title" content="Technical Marketing &middot; A field manual for the discipline">
-<meta property="og:description" content="The working reference for technical marketing. The discipline of proving technically complex claims to technically capable buyers. An independent quarterly publication and index of current thinking from the field.">
-<meta property="og:url" content="https://technicalmarketing.org/">
-<meta property="og:image" content="https://technicalmarketing.org/og-image.png">
+<meta property="og:title" content="Volume 01 &middot; Spring&ndash;Summer 2026 &middot; Technical Marketing">
+<meta property="og:description" content="The contents of Volume 01 of Technical Marketing: three essays, the foundational reference, the field kit, and the twelve-source quarterly index. Spring–Summer 2026.">
+<meta property="og:url" content="https://technicalmarketing.org/volume-01">
+<meta property="og:image" content="https://technicalmarketing.org/Images/og-volume-01.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Technical Marketing &middot; A field manual for the discipline">
-<meta name="twitter:description" content="The working reference for technical marketing. The discipline of proving technically complex claims to technically capable buyers. An independent quarterly publication and index of current thinking from the field.">
-<meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
+<meta name="twitter:title" content="Volume 01 &middot; Spring&ndash;Summer 2026 &middot; Technical Marketing">
+<meta name="twitter:description" content="The contents of Volume 01 of Technical Marketing: three essays, the foundational reference, the field kit, and the twelve-source quarterly index. Spring–Summer 2026.">
+<meta name="twitter:image" content="https://technicalmarketing.org/Images/og-volume-01.png">
 <meta name="twitter:site" content="@thethinkroot">
 
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -32,7 +32,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/avif" href="/Images/hero-truth-layer.avif" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -270,17 +269,55 @@ a.masthead__title:hover { color: var(--red); }
 .colophon__value a:hover { color:var(--red); border-bottom-color:var(--red); }
 @media (max-width:720px){ .colophon__grid{ grid-template-columns:1fr; gap:0.25rem 0; margin-bottom:1.75rem; } .colophon__label{ padding-top:0.25rem; } .colophon__value{ margin-bottom:1.25rem; } .colophon__value:last-of-type{ margin-bottom:0; } }
 
+
+/* ── interior page-head ─────────────────────────────────────── */
+.page-head{ padding:3rem 0 2rem; border-bottom:0.5px solid var(--border); }
+.page-head__kicker{ font-family:var(--f-display); font-weight:700; font-size:0.8125rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:1rem; }
+.page-head__title{ font-family:var(--f-serif); font-style:italic; font-size:clamp(2.25rem,5.5vw,3.5rem); font-weight:400; line-height:1.05; letter-spacing:-0.015em; color:var(--ink); max-width:20ch; margin-bottom:1.5rem; }
+.page-head__deck{ font-family:var(--f-serif); font-size:1.1875rem; line-height:1.55; color:var(--ink-60); max-width:54ch; }
+.page-head__deck em{ font-style:italic; color:var(--ink); }
+.page-head__ornament{ margin-top:1.75rem; display:flex; align-items:center; gap:1rem; }
+.page-head__ornament::before{ content:""; flex:0 0 80px; height:0.5px; background:var(--border-strong); }
+.page-head__diamond{ width:8px; height:8px; background:var(--red); transform:rotate(45deg); display:inline-block; }
+@media (max-width:600px){ .page-head{ padding:2.25rem 0 1.75rem; } .page-head__ornament::before{ flex-basis:50px; } }
+
+/* ── intro prose + directory list ───────────────────────────── */
+.content{ padding:2.5rem 0 0; }
+.content__lead{ max-width:var(--reading-max); }
+.content__lead p{ font-family:var(--f-serif); font-size:1.0625rem; line-height:1.7; color:var(--ink); margin-bottom:1.125rem; max-width:64ch; }
+.content__lead p a{ border-bottom:1px solid var(--border-strong); padding-bottom:1px; transition:color .15s ease, border-color .15s ease; }
+.content__lead p a:hover{ color:var(--red); border-bottom-color:var(--red); }
+.dir-section{ margin:2.75rem 0 3rem; }
+.dir-section__head{ display:grid; grid-template-columns:auto 1fr; gap:1.25rem; align-items:baseline; padding-bottom:1rem; margin-bottom:1rem; border-bottom:2px solid var(--ink); }
+.dir-section__num{ font-family:var(--f-display); font-weight:700; font-size:clamp(1.75rem,3.5vw,2.5rem); color:var(--red); line-height:0.85; }
+.dir-section__title{ font-family:var(--f-serif); font-style:italic; font-size:clamp(1.25rem,2.2vw,1.625rem); font-weight:500; color:var(--ink); }
+.dir-section__desc{ font-family:var(--f-serif); font-style:italic; font-size:1rem; color:var(--ink-60); margin-top:0.25rem; }
+.entry{ padding:1.5rem 0; border-bottom:0.5px solid var(--border); max-width:var(--reading-max); }
+.entry:last-child{ border-bottom:none; }
+.entry__meta{ font-family:var(--f-sans); font-size:0.6875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--ink-40); margin-bottom:0.5rem; font-weight:500; }
+.entry__title{ font-family:var(--f-serif); font-style:italic; font-size:1.25rem; font-weight:500; line-height:1.25; color:var(--ink); display:inline-block; margin-bottom:0.375rem; border-bottom:1px solid transparent; padding-bottom:1px; transition:color .15s ease, border-color .15s ease; }
+a.entry__title:hover{ color:var(--red); border-bottom-color:var(--red); }
+.entry__author{ font-family:var(--f-sans); font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--ink-60); margin-bottom:0.5rem; font-weight:500; }
+.entry__note{ font-family:var(--f-serif); font-size:1rem; line-height:1.6; color:var(--ink); max-width:64ch; }
+.entry__note a{ border-bottom:1px solid var(--border-strong); padding-bottom:1px; transition:color .15s ease, border-color .15s ease; }
+.entry__note a:hover{ color:var(--red); border-bottom-color:var(--red); }
+.entry--open{ background:var(--paper-light); padding:1.5rem; border:0.5px dashed var(--border-strong); }
+.entry--open .entry__title{ color:var(--ink-60); font-style:italic; border-bottom:none; }
+.entry__cta{ display:inline-block; margin-top:0.5rem; font-family:var(--f-sans); font-size:0.75rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--red); font-weight:600; border-bottom:1px solid var(--red); padding-bottom:1px; }
+.back-link{ display:inline-block; font-family:var(--f-sans); font-size:0.6875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); font-weight:600; margin-top:2.5rem; border-bottom:1px solid var(--red); padding-bottom:2px; }
+.back-link:hover{ color:var(--ink); border-bottom-color:var(--ink); }
+.band--first .band__head{ margin-top:0; }
+
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["WebSite","Periodical"],"@id":"https://technicalmarketing.org/#website","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers under commercial pressure, across enterprise software, AI products, hardware, developer infrastructure, and any industry where technical complexity is the central challenge of the sale.","inLanguage":"en-US","publisher":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"publishingPrinciples":"https://technicalmarketing.org/about","datePublished":"2026-05-20"},{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers under commercial pressure, across enterprise software, AI products, hardware, developer infrastructure, and any industry where technical complexity is the central challenge of the sale.","publishingPrinciples":"https://technicalmarketing.org/about","address":{"@type":"PostalAddress","streetAddress":"1835 S Centre City Pkwy, Ste A #5026","addressLocality":"Escondido","addressRegion":"CA","postalCode":"92025","addressCountry":"US"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":["CollectionPage","PublicationVolume"],"@id":"https://technicalmarketing.org/volume-01#page","url":"https://technicalmarketing.org/volume-01","name":"Volume 01 — Technical Marketing","volumeNumber":"1","description":"The contents of Volume 01 of Technical Marketing: three essays, the foundational reference, the field kit, and the quarterly index. Spring–Summer 2026.","datePublished":"2026-05-20","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"inLanguage":"en-US","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Volume 01","item":"https://technicalmarketing.org/volume-01"}]}},{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"]}]}</script>
 </head>
 <body>
-
 <a href="#main" class="skip-link">Skip to content</a>
 
 <header class="masthead layout" role="banner">
   <div class="masthead__furniture">
-    <span>First Edition · ISSN pending</span>
-    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I · N°1</span>
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
   </div>
   <hr class="masthead__rule">
   <div class="masthead__title-row">
@@ -294,7 +331,7 @@ a.masthead__title:hover { color: var(--red); }
   <hr class="masthead__rule">
   <nav class="masthead__nav" aria-label="Primary">
     <a href="/reference" class="masthead__nav-link">Reference</a>
-    <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/volume-01" class="masthead__nav-link" aria-current="page">Volume 01</a>
     <a href="/tools" class="masthead__nav-link">Tools</a>
     <a href="/archive" class="masthead__nav-link">Archive</a>
     <a href="/about" class="masthead__nav-link">About</a>
@@ -304,228 +341,93 @@ a.masthead__title:hover { color: var(--red); }
 
 <main id="main">
 
-  <!-- HERO -->
-  <section class="hero layout" aria-labelledby="hero-title">
-    <div class="hero__grid">
-      <div class="hero__text">
-        <div class="hero__kicker">Volume 01 · Spring–Summer 2026</div>
-        <h1 class="hero__title" id="hero-title">The state of a discipline still being <span class="hl">named</span>.</h1>
-        <p class="hero__lede">A working reference for the practice of proving technically complex claims to technically capable buyers, under commercial pressure — and a quarterly index of <em>current thinking</em> from the field.</p>
-        <div class="hero__meta">
-          <span><strong>4</strong> Essays</span>
-          <span><strong>2</strong> Tools</span>
-          <span><strong>12</strong> Sources</span>
-          <span>Next — <strong>Q3 2026</strong></span>
-        </div>
-        <a href="#feature" class="hero__cta">Begin with the feature <span class="hero__cta-arrow" aria-hidden="true">→</span></a>
-      </div>
-      <figure class="hero__plate">
-        <picture>
-          <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
-          <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
-          <img src="/Images/hero-truth-layer.png" width="1200" height="1396" fetchpriority="high" decoding="async" alt="An engraved illustration: a hand holds a printed plate on which a technical machine diagram is partly rendered and partly dissolving into blank paper — the line between what is shown and what has been built.">
-        </picture>
-        <figcaption class="hero__plate-caption">
-          <span class="t">The truth layer — between the thing and the picture of the thing.</span>
-          <span class="n">Plate I · Engraving</span>
-        </figcaption>
-      </figure>
+<section class="page-head layout">
+  <div class="page-head__kicker">The Volume &middot; Spring&ndash;Summer 2026</div>
+  <h1 class="page-head__title">Volume 01.</h1>
+  <p class="page-head__deck">Three essays, the foundational reference, the field kit, and the quarterly index &mdash; the first printing of the field manual.</p>
+  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+</section>
+<section class="content layout">
+  <div class="content__lead"><p>The first printing of the field manual. Volume 01 collects three essays, the foundational reference, the field kit, and the quarterly index &mdash; a curated starting point for a discipline practiced for decades before it had a name. New volumes publish quarterly.</p></div>
+<section class="dir-section">
+  <div class="dir-section__head">
+    <span class="dir-section__num" aria-hidden="true">I</span>
+    <div>
+      <h2 class="dir-section__title">The Essays</h2>
+      <p class="dir-section__desc">The argument, written down.</p>
     </div>
-  </section>
-
-  <!-- IN THIS ISSUE -->
-  <section class="issue-strip" aria-label="In this issue">
-    <div class="issue-strip__inner layout">
-      <span class="issue-strip__label">In this issue</span>
-      <div class="issue-strip__links">
-        <a href="#feature" class="issue-strip__link"><span>The Feature</span>In the Age of AI</a>
-        <a href="#forthcoming" class="issue-strip__link"><span>Forthcoming</span>Practitioner Profiles</a>
-        <a href="#tools" class="issue-strip__link"><span>Tools</span>The Demo Coherence Index</a>
-        <a href="#index" class="issue-strip__link"><span>Index</span>The field, curated</a>
-      </div>
+  </div>
+  <article class="entry">
+    <div class="entry__meta">Article I &middot; Reference Essay</div>
+    <a href="/the-technical-marketer" class="entry__title">The Technical Marketer.</a>
+    <p class="entry__note">A canonical job description. Six workstreams, six measurable outcomes, three compensation bands, and four demo archetypes by company type &mdash; with a copyable text for use in real hiring.</p>
+  </article>
+  <article class="entry">
+    <div class="entry__meta">Article II &middot; History</div>
+    <a href="/before-the-name" class="entry__title">Before the Name.</a>
+    <p class="entry__note">Six decades of the work performed under twelve different titles, traced through primary and authoritative sources from 1934 through 2024.</p>
+  </article>
+  <article class="entry">
+    <div class="entry__meta">Article III &middot; Structural Argument</div>
+    <a href="/technical-marketing-age-of-ai" class="entry__title">In the Age of AI.</a>
+    <p class="entry__note">AI compresses artifact production across every go-to-market discipline. Technical marketing does not contract under that pressure. It clarifies.</p>
+  </article>
+</section><section class="dir-section">
+  <div class="dir-section__head">
+    <span class="dir-section__num" aria-hidden="true">II</span>
+    <div>
+      <h2 class="dir-section__title">The Reference</h2>
+      <p class="dir-section__desc">The foundational definition.</p>
     </div>
-  </section>
-
-  <!-- FEATURE WELL -->
-  <section class="band" id="feature" aria-labelledby="feature-title">
-    <div class="layout">
-      <div class="feature">
-        <div class="feature__text">
-          <div class="feature__banner">
-            <span class="feature__banner-label">The Feature</span>
-            <span class="feature__banner-rule" aria-hidden="true"></span>
-          </div>
-          <div class="feature__kicker">Structural Argument · Article III of Volume 01</div>
-          <h2 class="feature__title" id="feature-title">In the Age of AI.</h2>
-          <p class="feature__deck">AI is compressing artifact production across every discipline that moves enterprise software through the market. Technical marketing does not contract under that pressure — <em>it clarifies</em>. The case for why the discipline expands when everything around it shrinks.</p>
-          <div class="feature__byline">By Chad Corriveau, Founding Editor · June 2026</div>
-          <a href="/technical-marketing-age-of-ai" class="feature__cta">Read the essay <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="feature__pullbox">
-          <p class="feature__pull">“The discipline does not contract under AI compression. It clarifies.”</p>
-          <div class="feature__pull-attr">Article III · The structural argument</div>
-        </div>
-      </div>
+  </div>
+  <article class="entry">
+    <div class="entry__meta">Foundational Reference</div>
+    <a href="/what-is-technical-marketing" class="entry__title">What Is Technical Marketing?</a>
+    <p class="entry__note">The working definition of the discipline: where it sits, what distinguishes it from adjacent roles, and why it is structurally positioned to do well in the AI transition. See the full <a href="/reference">reference department</a> for the glossary and landscape.</p>
+  </article>
+</section><section class="dir-section">
+  <div class="dir-section__head">
+    <span class="dir-section__num" aria-hidden="true">III</span>
+    <div>
+      <h2 class="dir-section__title">The Field Kit</h2>
+      <p class="dir-section__desc">Instruments you use, not just read.</p>
     </div>
-  </section>
-
-  <!-- FORTHCOMING TEASER -->
-  <section id="forthcoming" aria-label="Forthcoming" style="border-top:0.5px solid var(--border-strong);border-bottom:0.5px solid var(--border-strong);">
-    <div class="layout" style="display:grid;grid-template-columns:auto 1fr;gap:0.75rem 2.25rem;align-items:center;padding:1.5rem 0;">
-      <span style="font-family:var(--f-display);font-weight:700;font-size:0.6875rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--red);white-space:nowrap;">Forthcoming</span>
-      <p style="font-family:var(--f-serif);font-style:italic;font-size:1.0625rem;line-height:1.55;color:var(--ink-60);margin:0;max-width:78ch;">A new department — <strong style="font-style:normal;font-weight:600;color:var(--ink);">Practitioner Profiles</strong> — opens with the next printing: a conversation with someone who has spent a career on the line between what can be shown and what has been built. <a href="#subscribe" style="font-style:normal;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">Subscribe for the next volume →</a></p>
+  </div>
+  <article class="entry">
+    <div class="entry__meta">Interactive Scorer &middot; Standing</div>
+    <a href="https://thinkroot.io/scorer" class="entry__title" rel="external noopener">The Demo Coherence Index, v1.1</a>
+    <p class="entry__note">Score any demo across nine validated formats. Collected in <a href="/tools">Tools</a>.</p>
+  </article>
+  <article class="entry">
+    <div class="entry__meta">Copyable Template &middot; Standing</div>
+    <a href="/the-technical-marketer#template" class="entry__title">The Technical Marketer &mdash; Job Description</a>
+    <p class="entry__note">The canonical role description as paste-ready hiring text.</p>
+  </article>
+</section><section class="dir-section">
+  <div class="dir-section__head">
+    <span class="dir-section__num" aria-hidden="true">IV</span>
+    <div>
+      <h2 class="dir-section__title">The Index</h2>
+      <p class="dir-section__desc">Current thinking from the field, curated.</p>
     </div>
-  </section>
-
-  <!-- EDITOR'S NOTE -->
-  <section class="band band--tint" aria-labelledby="ednote-title">
-    <div class="layout">
-      <div class="ednote">
-        <div class="ednote__label" id="ednote-title">Editor's Note</div>
-        <p>This index is for the people who do this work. The technical marketers operating without a shared reference. The practitioners coming into the field who deserve better than scattered job descriptions. The senior people whose hard-won judgment has never been collected anywhere visible.</p>
-        <p class="ednote__pull">The work clearly exists. The industry still lacks a shared language for defining it.</p>
-        <p>Volume 01 is a curated starting point — the feature, the essays, the reference spine, the field kit, and the current thinking. New volumes publish quarterly. The empty spaces in the index are intentional: they mark the conversations the field still needs to have.</p>
-        <div class="ednote__sig">Chad Corriveau · Founding Editor</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESSAYS -->
-  <section class="band" id="essays" aria-labelledby="essays-title">
-    <div class="layout">
-      <div class="band__head">
-        <h2 class="band__name" id="essays-title">Essays</h2>
-        <span class="band__desc">The argument, written down.</span>
-        <span class="band__meta">Four · Vol. 01</span>
-      </div>
-      <div class="essays-grid">
-        <a href="/the-technical-marketer" class="essay-card">
-          <div class="essay-card__folio">I</div>
-          <div class="essay-card__kicker">Reference Essay</div>
-          <h3 class="essay-card__title">The Technical Marketer.</h3>
-          <p class="essay-card__deck">A canonical job description. Six workstreams, six measurable outcomes, three compensation bands, and four demo archetypes by company type.</p>
-          <span class="essay-card__cta">Read Article I <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a href="/before-the-name" class="essay-card">
-          <div class="essay-card__folio">II</div>
-          <div class="essay-card__kicker">History</div>
-          <h3 class="essay-card__title">Before the Name.</h3>
-          <p class="essay-card__deck">Six decades of the work performed under twelve different titles, traced through primary sources from 1934 through 2024.</p>
-          <span class="essay-card__cta">Read Article II <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
-        </a>
-        <a href="/technical-marketing-age-of-ai" class="essay-card">
-          <div class="essay-card__folio">III</div>
-          <div class="essay-card__kicker">Structural Argument · New</div>
-          <h3 class="essay-card__title">In the Age of AI.</h3>
-          <p class="essay-card__deck">AI compresses artifact production across every GTM discipline. Technical marketing does not contract under that pressure. It clarifies.</p>
-          <span class="essay-card__cta">Read Article III <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOUNDATIONAL ANCHOR -->
-  <section class="anchor" aria-labelledby="anchor-title">
-    <div class="anchor__inner">
-      <div class="anchor__text">
-        <div class="anchor__kicker">Foundational Reference</div>
-        <h2 class="anchor__title" id="anchor-title">What Is <span class="u">Technical Marketing?</span></h2>
-        <p class="anchor__deck">A working definition of the discipline. Where it sits, what distinguishes it from adjacent roles, and why it is structurally positioned to do well in the AI transition.</p>
-        <a href="/what-is-technical-marketing" class="anchor__cta">Read the reference <span aria-hidden="true">→</span></a>
-      </div>
-      <figure class="anchor__visual">
-        <svg viewBox="0 0 560 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The function matrix: disciplines plotted by technical depth and commercial orientation, with technical marketing alone in the high-high quadrant.">
-          <line x1="72" y1="34" x2="72" y2="322" stroke="#EFE6C9" stroke-width="0.75" opacity="0.42"></line>
-          <line x1="72" y1="322" x2="532" y2="322" stroke="#EFE6C9" stroke-width="0.75" opacity="0.42"></line>
-          <line x1="302" y1="34" x2="302" y2="322" stroke="#EFE6C9" stroke-width="0.5" opacity="0.12" stroke-dasharray="2,3"></line>
-          <line x1="72" y1="178" x2="532" y2="178" stroke="#EFE6C9" stroke-width="0.5" opacity="0.12" stroke-dasharray="2,3"></line>
-          <text x="54" y="178" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing="2" fill="rgba(239,230,201,0.55)" font-weight="500" transform="rotate(-90,54,178)">TECHNICAL DEPTH</text>
-          <text x="302" y="350" text-anchor="middle" font-family="Inter,sans-serif" font-size="9" letter-spacing="2" fill="rgba(239,230,201,0.55)" font-weight="500">COMMERCIAL ORIENTATION</text>
-          <circle cx="128" cy="92" r="4" fill="#EFE6C9" opacity="0.7"></circle><text x="138" y="95" font-family="Inter,sans-serif" font-size="11" fill="rgba(239,230,201,0.72)">Engineering</text>
-          <circle cx="338" cy="112" r="4" fill="#EFE6C9" opacity="0.7"></circle><text x="348" y="115" font-family="Inter,sans-serif" font-size="11" fill="rgba(239,230,201,0.72)">Sales Engineering</text>
-          <circle cx="384" cy="244" r="4" fill="#EFE6C9" opacity="0.7"></circle><text x="376" y="247" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="rgba(239,230,201,0.72)">Product Marketing</text>
-          <circle cx="432" cy="288" r="4" fill="#EFE6C9" opacity="0.7"></circle><text x="424" y="291" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="rgba(239,230,201,0.72)">Brand</text>
-          <circle cx="452" cy="84" r="9" fill="#EACF82"></circle><circle cx="452" cy="84" r="15" fill="none" stroke="#EACF82" stroke-width="1" opacity="0.45"></circle>
-          <text x="438" y="66" text-anchor="end" font-family="Fraunces,serif" font-size="14" fill="#EFE6C9" font-weight="600">Technical Marketing</text>
-        </svg>
-        <figcaption class="anchor__cap">Figure 01 — the function matrix: high technical depth, high commercial orientation.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- TOOLS -->
-  <section class="band band--tint" id="tools" aria-labelledby="tools-title">
-    <div class="layout">
-      <div class="band__head">
-        <h2 class="band__name" id="tools-title">Tools</h2>
-        <span class="band__desc">The field kit — things you use, not just read.</span>
-        <span class="band__meta">Two · Standing</span>
-      </div>
-      <div class="tools-grid">
-        <a href="https://thinkroot.io/scorer" class="tool" rel="external noopener">
-          <span class="tool__mark" aria-hidden="true"></span>
-          <span class="tool__body">
-            <span class="tool__kicker">Interactive Scorer</span>
-            <span class="tool__title">The Demo Coherence Index, v1.1</span>
-            <span class="tool__note">Score any demo across nine validated formats.</span>
-          </span>
-          <span class="tool__go">Open →</span>
-        </a>
-        <a href="/the-technical-marketer#template" class="tool">
-          <span class="tool__mark" aria-hidden="true"></span>
-          <span class="tool__body">
-            <span class="tool__kicker">Copyable Template</span>
-            <span class="tool__title">The Technical Marketer — Job Description</span>
-            <span class="tool__note">The canonical description as a paste-ready hiring text.</span>
-          </span>
-          <span class="tool__go">Copy →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- THE INDEX -->
-  <section class="band" id="index" aria-labelledby="index-title">
-    <div class="layout">
-      <div class="band__head">
-        <h2 class="band__name" id="index-title">The Index</h2>
-        <span class="band__desc">Current thinking from the field, curated.</span>
-        <span class="band__meta">Twelve sources · Five sections</span>
-      </div>
-      <div class="index-pointer">
-        <span class="index-pointer__item"><span class="n">I</span> Foundations <span class="c">3</span></span>
-        <span class="index-pointer__item"><span class="n">II</span> Career &amp; Hiring <span class="c">3</span></span>
-        <span class="index-pointer__item"><span class="n">III</span> Practice &amp; Method <span class="c">3</span></span>
-        <span class="index-pointer__item"><span class="n">IV</span> Adjacent Disciplines <span class="c">1</span></span>
-        <span class="index-pointer__item"><span class="n">V</span> Critique &amp; Forward Look <span class="c">2</span></span>
-      </div>
-      <a href="/the-index" class="index-pointer__link">Open the full annotated index →</a>
-    </div>
-  </section>
-
-  <!-- SUBSCRIBE -->
-  <section class="band band--tint subscribe" id="subscribe" aria-labelledby="subscribe-title">
-    <div class="layout subscribe__inner">
-      <div class="subscribe__kicker">Quarterly updates</div>
-      <p class="subscribe__pitch" id="subscribe-title">Get the next volume when it publishes.</p>
-      <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate="">
-        <label for="email-input" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Email address</label>
-        <input id="email-input" class="subscribe__input" type="email" name="email" placeholder="Your email" required="" autocomplete="email">
-        <button class="subscribe__button" type="submit">Subscribe</button>
-      </form>
-      <p class="subscribe__disclaimer">No promotion. Four emails a year.</p>
-    </div>
-  </section>
-
+  </div>
+  <article class="entry">
+    <div class="entry__meta">Twelve sources &middot; Five sections</div>
+    <a href="/the-index" class="entry__title">The Quarterly Index</a>
+    <p class="entry__note">An editorially curated index of current thinking on the discipline, with commentary on what each piece gets right and where the conversation needs to go next.</p>
+  </article>
+</section>
+  <a href="/" class="back-link">&#8592; Return to the index</a>
+</section>
 </main>
 
 <div class="folio-band layout" aria-hidden="true">
   <hr class="folio-band__rule">
   <hr class="folio-band__rule">
   <div class="folio-band__inner">
-    <span class="folio-band__left">Folio I</span>
-    <span class="folio-band__center">◆</span>
-    <span class="folio-band__right">First Printing · MMXXVI</span>
+    <span class="folio-band__left">Folio V</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
   </div>
   <hr class="folio-band__rule">
   <hr class="folio-band__rule">
@@ -564,8 +466,6 @@ a.masthead__title:hover { color: var(--red); }
     </div>
   </div>
 </footer>
-
-
 
 </body>
 </html>

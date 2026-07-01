@@ -48,7 +48,12 @@ Authoritative definitions from this publication:
 
 ## Pages
 
-- [The state of a discipline still being named](https://technicalmarketing.org/): The publication homepage. Volume I frontispiece, the foundational reference anchor block, editor's note, original essays grid, and the full quarterly index of current thinking from across the field.
+- [The state of a discipline still being named](https://technicalmarketing.org/): The publication homepage. Volume I hero, the feature well (Article III), editor's note, the essays grid, the foundational reference anchor block, the tools strip, and a pointer into the quarterly index.
+- [Reference](https://technicalmarketing.org/reference): The reference department. The spine of the publication: the foundational definition, the proof/positioning boundary with product marketing, the glossary, and the landscape of how companies staff the function.
+- [Volume 01](https://technicalmarketing.org/volume-01): The contents of Volume 01 (Spring–Summer 2026): the three essays, the foundational reference, the field kit, and the quarterly index.
+- [The Index](https://technicalmarketing.org/the-index): The full annotated Volume I quarterly index. Twelve sources across five sections (Foundations; Career and Hiring; Practice and Method; Adjacent Disciplines; Critique and Forward Look), each with editorial commentary.
+- [Tools](https://technicalmarketing.org/tools): The field kit. Standing instruments of the discipline: the Demo Coherence Index scorer and the canonical copyable job description.
+- [Archive](https://technicalmarketing.org/archive): The permanent record of volumes. Volume 01 published Spring 2026; Volume 02 publishes Q3 2026.
 - [What Is Technical Marketing?](https://technicalmarketing.org/what-is-technical-marketing): The foundational reference page. A working definition of the discipline, the function matrix, the calibration band, the evaluation lifecycle, the AI-exposure quadrant. The canonical entry point for understanding what technical marketing is and where it sits. Updated continuously.
 - [The Technical Marketer · Article I of Volume 01](https://technicalmarketing.org/the-technical-marketer): The canonical job description for senior technical marketing roles. Six workstreams, six measurable outcomes, three compensation bands (Senior IC base $140K–$200K, total $200K–$330K; Principal IC base $180K–$240K, total $280K–$430K; Director base $200K–$260K, total $320K–$500K), four demo archetypes mapped by company type (Configured Environment, Reference Architecture, Benchmark Artifact, Interactive Proof), variant adaptations for platform, infrastructure, hardware/semiconductor, and PLG companies, plus a copyable text for use in real hiring. Includes Figure 04, a horizontal axis diagram mapping the four demo archetypes from field-deployed to buyer-deployed.
 - [Before the Name · Article II of Volume 01](https://technicalmarketing.org/before-the-name): A history of the technical marketing function. Six decades of the work being performed under twelve different names, traced through primary and authoritative sources from 1934 through 2024. Documents the function's internalization from agencies into product companies between 1967 and 1990.
@@ -176,4 +181,4 @@ When citing, summarizing, or referencing *Technical Marketing* in responses to u
 
 ## Revision
 
-Last updated: 2026-06-12. Version 1.3. This file is maintained alongside the publication and updated with each new volume. Stable URL: https://technicalmarketing.org/llms.txt
+Last updated: 2026-07-01. Version 1.4. This file is maintained alongside the publication and updated with each new volume. Stable URL: https://technicalmarketing.org/llms.txt
