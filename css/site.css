@@ -1,0 +1,226 @@
+/*
+  technicalmarketing.org — shared enhancements
+  =====================================================
+  This file is loaded on every page AFTER the page's own inline <style>.
+  It adds two things the site did not have before:
+    1. Dark mode (system-preference + manual toggle via data-theme on <html>)
+    2. Reading experience (progress bar, reading time, mobile TOC)
+
+  Dark mode works with zero JS via prefers-color-scheme. The manual toggle
+  (added by /js/site.js) sets data-theme="dark" | "light" on <html> and
+  overrides the system default.
+
+  IMPORTANT: the site's inline :root already defines the palette as CSS
+  variables (--paper, --ink, --red, ...). Dark mode simply re-points those
+  same variables, so every existing rule that already reads a variable
+  adapts automatically. No per-page color edits were required.
+  =====================================================
+*/
+
+/* ---- 1. Diagram color tokens ------------------------------------------- *
+   The inline SVG figures use hardcoded hex fills/strokes. Rather than edit
+   every SVG, we map each hardcoded value to a token via attribute selectors
+   (a CSS `fill`/`stroke` property overrides an SVG presentation attribute).
+   In light mode each token equals its original hex, so light rendering is
+   byte-for-byte unchanged; dark mode simply re-points the token.          */
+:root {
+  --dg-fafaf7: #fafaf7;
+  --dg-1a1a1a: #1a1a1a;
+  --dg-1C1812: #1C1812;
+  --dg-5C4E3C: #5C4E3C;
+  --dg-8a8a85: #8a8a85;
+  --dg-5a5a5a: #5a5a5a;
+  --dg-A7352A: #A7352A;
+}
+
+/* ---- 2. Dark palette (re-points the site's existing variables) --------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:         #1C1812;
+    --paper-shade:   #26221A;
+    --paper-light:   #2E2A20;
+    --ink:           #EFE6C9;
+    --ink-60:        #C8B98A;
+    --ink-40:        #8A7E6A;
+    --border:        rgba(239, 230, 201, 0.14);
+    --border-strong: rgba(239, 230, 201, 0.30);
+    --red:           #D0685C;
+    --red-soft:      #DE8378;
+    --yellow:        #EACF82;
+
+    --dg-fafaf7: #211d16;
+    --dg-1a1a1a: #EFE6C9;
+    --dg-1C1812: #EFE6C9;
+    --dg-5C4E3C: #C8B98A;
+    --dg-8a8a85: #9a8f7b;
+    --dg-5a5a5a: #c2b699;
+    --dg-A7352A: #D0685C;
+  }
+}
+
+[data-theme="dark"] {
+  --paper:         #1C1812;
+  --paper-shade:   #26221A;
+  --paper-light:   #2E2A20;
+  --ink:           #EFE6C9;
+  --ink-60:        #C8B98A;
+  --ink-40:        #8A7E6A;
+  --border:        rgba(239, 230, 201, 0.14);
+  --border-strong: rgba(239, 230, 201, 0.30);
+  --red:           #D0685C;
+  --red-soft:      #DE8378;
+  --yellow:        #EACF82;
+
+  --dg-fafaf7: #211d16;
+  --dg-1a1a1a: #EFE6C9;
+  --dg-1C1812: #EFE6C9;
+  --dg-5C4E3C: #C8B98A;
+  --dg-8a8a85: #9a8f7b;
+  --dg-5a5a5a: #c2b699;
+  --dg-A7352A: #D0685C;
+}
+
+/* data-theme="light" forces the light palette even on a dark system */
+[data-theme="light"] {
+  --paper:         #EFE6C9;
+  --paper-shade:   #E5D9B4;
+  --paper-light:   #F5EED8;
+  --ink:           #1C1812;
+  --ink-60:        #5C4E3C;
+  --ink-40:        #8B7D69;
+  --border:        rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red:           #A7352A;
+  --red-soft:      #B85146;
+  --yellow:        #EACF82;
+
+  --dg-fafaf7: #fafaf7;
+  --dg-1a1a1a: #1a1a1a;
+  --dg-1C1812: #1C1812;
+  --dg-5C4E3C: #5C4E3C;
+  --dg-8a8a85: #8a8a85;
+  --dg-5a5a5a: #5a5a5a;
+  --dg-A7352A: #A7352A;
+}
+
+/* ---- 3. Diagram token application (theme-agnostic mapping) ------------- */
+.diagram [fill="#fafaf7"]  { fill: var(--dg-fafaf7); }
+.diagram [fill="#1a1a1a"]  { fill: var(--dg-1a1a1a); }
+.diagram [stroke="#1a1a1a"]{ stroke: var(--dg-1a1a1a); }
+.diagram [fill="#1C1812"]  { fill: var(--dg-1C1812); }
+.diagram [stroke="#1C1812"]{ stroke: var(--dg-1C1812); }
+.diagram [fill="#5C4E3C"]  { fill: var(--dg-5C4E3C); }
+.diagram [fill="#8a8a85"]  { fill: var(--dg-8a8a85); }
+.diagram [fill="#5a5a5a"]  { fill: var(--dg-5a5a5a); }
+.diagram [fill="#A7352A"]  { fill: var(--dg-A7352A); }
+.diagram [stroke="#A7352A"]{ stroke: var(--dg-A7352A); }
+
+/* ---- 4. Dark-mode surface tweaks -------------------------------------- */
+/* Selection: keep the yellow highlight but force dark text for contrast */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) *::selection { background: var(--yellow); color: #1C1812; }
+  :root:not([data-theme="light"]) body {
+    background-image: radial-gradient(circle at 50% 50%, rgba(239, 230, 201, 0.04) 1px, transparent 1.2px);
+  }
+}
+[data-theme="dark"] *::selection { background: var(--yellow); color: #1C1812; }
+[data-theme="dark"] body {
+  background-image: radial-gradient(circle at 50% 50%, rgba(239, 230, 201, 0.04) 1px, transparent 1.2px);
+}
+
+/* ---- 5. Images in dark mode ------------------------------------------- */
+/* Dim light-background plate/cover images slightly; never invert.        */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) img { filter: brightness(0.88) contrast(1.05); }
+}
+[data-theme="dark"] img { filter: brightness(0.88) contrast(1.05); }
+/* Logos are exempt */
+.site-logo img,
+.masthead img,
+.masthead__logo img { filter: none !important; }
+
+/* ---- 6. Theme toggle button (styling; markup injected by site.js) ----- */
+#theme-toggle { transition: color 0.15s ease; }
+#theme-toggle:hover { color: var(--red); }
+
+/* =======================================================================
+   READING EXPERIENCE
+   ======================================================================= */
+
+/* ---- 7. Sticky reading progress bar ----------------------------------- *
+   Scoped with :not(.reading-progress) so it styles ONLY the plain bar this
+   project injects (on what-is-technical-marketing). The article pages that
+   already ship their own .reading-progress bar keep their existing styles. */
+#reading-progress:not(.reading-progress) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--red, #A7352A);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* ---- 8. Reading time (injected into byline) --------------------------- */
+.reading-time {
+  display: inline;
+  color: var(--ink-40, #8B7D69);
+  font-size: inherit;
+}
+.reading-time::before { content: " · "; }
+
+/* ---- 9. Mobile section nav ------------------------------------------- */
+@media (max-width: 768px) {
+  .toc-sidebar,
+  .on-this-page,
+  .toc { display: none; }
+
+  .toc-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0;
+    border-top: 1px solid var(--border-strong, #C8B98A);
+    border-bottom: 1px solid var(--border-strong, #C8B98A);
+    margin: 1.5rem 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .toc-mobile::-webkit-scrollbar { display: none; }
+
+  .toc-mobile a {
+    flex-shrink: 0;
+    display: block;
+    padding: 0.6rem 1rem;
+    font-family: var(--f-sans, sans-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-40, #7A6E5E);
+    text-decoration: none;
+    white-space: nowrap;
+    border-right: 1px solid var(--border, rgba(28,24,18,0.14));
+  }
+  .toc-mobile a:last-child { border-right: none; }
+  .toc-mobile a:hover,
+  .toc-mobile a.active {
+    color: var(--red, #A7352A);
+    background-color: var(--paper-light, #F5EED8);
+  }
+
+  .footnote a,
+  sup a {
+    padding: 0.25rem 0.1rem;
+    display: inline-block;
+    min-width: 28px;
+    min-height: 28px;
+    text-align: center;
+  }
+}
+
+/* The mobile TOC is hidden on desktop (the sidebar TOC handles that view) */
+@media (min-width: 769px) {
+  .toc-mobile { display: none; }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "static",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-I", "-c", "import http.server,socketserver,functools; H=functools.partial(http.server.SimpleHTTPRequestHandler, directory='/Users/chadcorriveau/Documents/GitHub/technicalmarketing-org'); socketserver.TCPServer(('0.0.0.0',8099),H).serve_forever()"],
+      "port": 8099
+    }
+  ]
+}
