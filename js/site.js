@@ -14,11 +14,19 @@
 (function () {
   'use strict';
 
+  /* Dark mode is offered ONLY on reading pages, which opt in with a
+     data-allow-dark attribute on <html>. The art-directed home + hub pages
+     stay in the signature light palette, and a saved "dark" choice does not
+     leak onto them. */
+  var allowDark = document.documentElement.hasAttribute('data-allow-dark');
+
   /* 1. Apply saved theme as early as possible (documentElement exists here). */
   try {
-    var saved = localStorage.getItem('tm-theme');
-    if (saved === 'dark' || saved === 'light') {
-      document.documentElement.setAttribute('data-theme', saved);
+    if (allowDark) {
+      var saved = localStorage.getItem('tm-theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
     }
   } catch (e) {}
 
@@ -36,9 +44,10 @@
 
   onReady(function () {
 
-    /* 2. Theme toggle button, appended as the last item in the masthead nav. */
+    /* 2. Theme toggle button, appended as the last item in the masthead nav.
+          Only on reading pages that opted into dark mode. */
     var nav = document.querySelector('.masthead__nav');
-    if (nav && !document.getElementById('theme-toggle')) {
+    if (allowDark && nav && !document.getElementById('theme-toggle')) {
       var btn = document.createElement('button');
       btn.id = 'theme-toggle';
       btn.type = 'button';

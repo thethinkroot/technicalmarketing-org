@@ -80,6 +80,27 @@
   --dg-A7352A: #A7352A;
 }
 
+/* ---- 2b. Inverted "ink band" islands ---------------------------------- *
+   Some sections are dark-on-light BY DESIGN in light mode (e.g. .anchor uses
+   background: var(--ink) with light text). A plain token swap double-inverts
+   them into jarring bright bands in dark mode. Fix: re-declare the palette
+   LOCALLY on those islands so they stay a dark surface with light text in
+   both modes. The band lifts to a --paper-shade-like dark so it still reads
+   as an elevated panel against the darker page. */
+[data-theme="dark"] .anchor,
+[data-theme="dark"] .comp-plate {
+  --paper:         #EFE6C9;
+  --paper-shade:   #E5D9B4;
+  --paper-light:   #F5EED8;
+  --ink:           #26221A;
+  --ink-60:        #C8B98A;
+  --ink-40:        #A2947B;
+  --border:        rgba(239, 230, 201, 0.14);
+  --border-strong: rgba(239, 230, 201, 0.30);
+  --red:           #D0685C;
+  --red-soft:      #DE8378;
+}
+
 /* ---- 3. Diagram token application (theme-agnostic mapping) ------------- */
 .diagram [fill="#fafaf7"]  { fill: var(--dg-fafaf7); }
 .diagram [fill="#1a1a1a"]  { fill: var(--dg-1a1a1a); }
