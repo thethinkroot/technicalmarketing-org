@@ -1402,95 +1402,147 @@ a.masthead__title:hover { color: var(--red); }
   }
 }
 
-/* ── Article cover plate (tipped-in plate) ─────────────────────────── */
-.article-cover-plate {
+/* ── About plate: mounted intaglio print of the commissioned engraving ── */
+.plate {
   max-width: var(--layout-max);
   margin: 2.5rem auto 0;
   padding: 0 1.5rem;
   box-sizing: border-box;
 }
-.article-cover-plate__frame {
+.plate__mount {
   position: relative;
-  display: block;
   padding: 14px;
-  background: var(--paper-light);
+  background: var(--paper-shade);
   box-shadow:
-    0 1px 3px rgba(28, 24, 18, 0.06),
-    0 18px 44px -8px rgba(28, 24, 18, 0.16),
-    0 6px 14px -4px rgba(28, 24, 18, 0.08);
+    0 1px 3px rgba(28, 24, 18, 0.08),
+    0 30px 64px -18px rgba(28, 24, 18, 0.34);
+  transition:
+    opacity 600ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.article-cover-plate__image {
+/* Plate-mark: hairline ring set 6px in from the mount edge, evoking the
+   embossed impression a real letterpress plate leaves in the stock. */
+.plate__mount::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--border-strong);
+  pointer-events: none;
+}
+.plate__mount.plate--pre {
+  opacity: 0;
+  transform: translateY(16px);
+  box-shadow:
+    0 1px 2px rgba(28, 24, 18, 0.05),
+    0 10px 20px -10px rgba(28, 24, 18, 0.18);
+}
+.plate__mount.plate--in {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow:
+    0 1px 3px rgba(28, 24, 18, 0.08),
+    0 30px 64px -18px rgba(28, 24, 18, 0.34);
+}
+.plate__frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.plate__image {
   display: block;
   width: 100%;
-  height: auto;
-  outline: 1px solid rgba(28, 24, 18, 0.18);
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid rgba(28, 24, 18, 0.22);
   outline-offset: -1px;
+  will-change: transform;
 }
-/* Paper-grain overlay : implies print reproduction on the same stock */
-.article-cover-plate__frame::after {
+/* Raking-light sheen: follows the cursor to suggest a printed surface
+   catching light. Pointer-driven only; see script for touch/reduced-motion gating. */
+.plate__frame::after {
   content: "";
   position: absolute;
-  inset: 14px;
+  inset: 0;
   pointer-events: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
-  opacity: 0.05;
-  mix-blend-mode: multiply;
+  background: radial-gradient(circle at var(--sheen-x, 50%) var(--sheen-y, 50%), rgba(245, 238, 216, 0.06), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-.article-cover-plate__caption {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 1.125rem;
-}
-.article-cover-plate__caption-kicker {
-  font-family: var(--f-sans);
-  font-size: 0.625rem;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: var(--ink-60);
-  font-weight: 500;
-  position: relative;
-  padding-bottom: 0.5rem;
-  margin-bottom: 0.45rem;
-}
-.article-cover-plate__caption-kicker::after {
-  content: "";
+.plate__frame.plate__frame--sheen::after { opacity: 1; }
+
+/* Folio tab: a single accent, top-left of the mount */
+.plate__folio {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 1px;
-  background: rgba(28, 24, 18, 0.32);
+  top: -10px;
+  left: 18px;
+  z-index: 2;
+  background: var(--red);
+  color: var(--paper);
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 0 2px 6px rgba(28, 24, 18, 0.25);
 }
-.article-cover-plate__caption-title {
+
+/* Editorial caption bar, justified between */
+.plate__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+}
+.plate__caption-left {
   font-family: var(--f-serif);
   font-style: italic;
   font-size: 0.9375rem;
-  color: var(--ink);
-  letter-spacing: 0.005em;
+  color: var(--ink-60);
+  line-height: 1.4;
 }
-@media (max-width: 720px) {
-  .article-cover-plate {
-    max-width: 100%;
-    padding: 0 1.25rem;
-    margin-top: 1.5rem;
-  }
-  .article-cover-plate__frame {
-    padding: 10px;
+.plate__caption-right {
+  font-family: var(--f-sans);
+  font-size: 0.5625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate__mount,
+  .plate__mount.plate--pre,
+  .plate__mount.plate--in,
+  .plate__image {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
     box-shadow:
-      0 1px 2px rgba(28, 24, 18, 0.05),
-      0 10px 24px -6px rgba(28, 24, 18, 0.14);
+      0 1px 3px rgba(28, 24, 18, 0.08),
+      0 30px 64px -18px rgba(28, 24, 18, 0.34) !important;
   }
-  .article-cover-plate__frame::after {
-    inset: 10px;
+  .plate__frame::after { display: none !important; }
+}
+
+@media (max-width: 900px) {
+  .plate {
+    max-width: 560px;
+    padding: 0 1.25rem;
   }
-  .article-cover-plate__caption {
-    margin-top: 0.875rem;
-  }
-  .article-cover-plate__caption-title {
-    font-size: 0.875rem;
-  }
+}
+
+@media (max-width: 720px) {
+  .plate { margin-top: 1.5rem; }
+  .plate__mount { padding: 10px; }
+  .plate__mount::before { inset: 6px; }
+  .plate__folio { top: -9px; left: 14px; font-size: 0.625rem; padding: 0.28rem 0.6rem; }
+  .plate__caption { margin-top: 0.875rem; flex-direction: column; align-items: flex-start; gap: 0.375rem; }
 }
 
 
@@ -1536,15 +1588,19 @@ a.masthead__title:hover { color: var(--red); }
   <hr class="masthead__rule">
 </header>
 
-<figure class="article-cover-plate">
-  <div class="article-cover-plate__frame">
-    <img class="article-cover-plate__image" src="/Images/cover-about.jpg" alt="Cover illustration for the About page: a magazine-style collage on cream paper with the headline ABOUT TECHNICAL MARKETING.ORG and the standfirst The Discipline. The Work. The Community., torn paper labels reading A Reference Built on Practice, Documenting the Discipline, Before the Name Beyond the Title, and A Community That Builds What's Next, alongside sketches of architectural drawings, a lighthouse, drafting tools, and a conference table." width="1100" height="480" loading="eager" fetchpriority="high" decoding="async">
+<figure class="plate" id="about-plate">
+  <div class="plate__mount plate--pre">
+    <span class="plate__folio" aria-hidden="true">About</span>
+    <div class="plate__frame">
+      <img class="plate__image" src="/images/about-plate-lighthouse.png" alt="An engraved architectural study of a lighthouse rising from a lattice of technical linework — the discipline drawn as a structure." width="1600" height="900" loading="eager" fetchpriority="high" decoding="async">
+    </div>
   </div>
-  <figcaption class="article-cover-plate__caption">
-    <span class="article-cover-plate__caption-kicker">Plate</span>
-    <span class="article-cover-plate__caption-title">About</span>
+  <figcaption class="plate__caption">
+    <span class="plate__caption-left">The discipline, drawn as a structure.</span>
+    <span class="plate__caption-right">Plate &middot; Engraving</span>
   </figcaption>
 </figure>
+<noscript><style>.plate__mount.plate--pre{opacity:1!important;transform:none!important;box-shadow:0 1px 3px rgba(28,24,18,0.08),0 30px 64px -18px rgba(28,24,18,0.34)!important;}</style></noscript>
 
 <main id="main">
 
@@ -1647,6 +1703,59 @@ a.masthead__title:hover { color: var(--red); }
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  var mount = document.querySelector('.plate__mount');
+  if (!mount) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          mount.classList.remove('plate--pre');
+          mount.classList.add('plate--in');
+          io.unobserve(mount);
+        }
+      });
+    }, { threshold: 0.2 });
+    io.observe(mount);
+  } else {
+    mount.classList.remove('plate--pre');
+    mount.classList.add('plate--in');
+  }
+
+  var img = mount.querySelector('.plate__image');
+  var ticking = false;
+  function updateParallax() {
+    ticking = false;
+    var rect = mount.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var progress = (vh - rect.top) / (vh + rect.height);
+    progress = Math.max(0, Math.min(1, progress));
+    var offset = (progress - 0.5) * 8;
+    img.style.transform = 'translateY(' + offset.toFixed(2) + 'px)';
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); }
+  }, { passive: true });
+  updateParallax();
+
+  if (!window.matchMedia('(pointer: coarse)').matches) {
+    var frame = mount.querySelector('.plate__frame');
+    frame.addEventListener('pointermove', function (e) {
+      var r = frame.getBoundingClientRect();
+      frame.style.setProperty('--sheen-x', ((e.clientX - r.left) / r.width) * 100 + '%');
+      frame.style.setProperty('--sheen-y', ((e.clientY - r.top) / r.height) * 100 + '%');
+      frame.classList.add('plate__frame--sheen');
+    });
+    frame.addEventListener('pointerleave', function () {
+      frame.classList.remove('plate__frame--sheen');
+    });
+  }
+})();
+</script>
 
 </body>
 </html>
