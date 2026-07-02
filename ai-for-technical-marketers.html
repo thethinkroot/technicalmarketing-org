@@ -195,7 +195,8 @@ a.masthead__title:hover { color: var(--red); }
 
 /* ── AI at-a-glance cards ─────────────────────────────────────── */
 .ai-glance { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 2rem; max-width: none; }
-@media (min-width: 720px) { .ai-glance { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 560px) and (max-width: 899px) { .ai-glance { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .ai-glance { grid-template-columns: repeat(4, 1fr); } }
 .ai-glance__card { padding: 1.25rem 1.125rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-top: 3px solid var(--red); }
 .ai-glance__name { font-family: var(--f-display); font-weight: 700; font-size: 0.9375rem; color: var(--ink); margin-bottom: 0.625rem; }
 .ai-glance__for { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.5; color: var(--ink-60); margin-bottom: 0.875rem; }
@@ -243,7 +244,8 @@ a.masthead__title:hover { color: var(--red); }
 
 /* ── workstream risk map ──────────────────────────────────────── */
 .risk-map { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 1rem; }
-@media (min-width: 640px) { .risk-map { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 640px) and (max-width: 899px) { .risk-map { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .risk-map { grid-template-columns: repeat(5, 1fr); } }
 .risk-map__card { padding: 1.125rem 1rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-left: 3px solid var(--red); }
 .risk-map__ws { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.5rem; }
 .risk-map__name { font-family: var(--f-serif); font-style: italic; font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.625rem; line-height: 1.25; }
