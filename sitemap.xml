@@ -68,7 +68,13 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/tools</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-04</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ai-for-technical-marketers</loc>
+    <lastmod>2026-07-04</lastmod>
     <changefreq>quarterly</changefreq>
     <priority>0.7</priority>
   </url>

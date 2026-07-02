@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>AI for Technical Marketers &middot; The Problem, the Method, the Checklist</title>
+<meta name="description" content="Where AI genuinely compresses the work of a Technical Marketer, where it quietly produces something that only looks finished, and a copyable checklist to catch the difference. Sourced, five workstreams, one method.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/ai-for-technical-marketers">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="AI for Technical Marketers &middot; The Problem, the Method, the Checklist">
+<meta property="og:description" content="Where AI genuinely compresses the work of a Technical Marketer, where it quietly produces something that only looks finished, and a copyable checklist to catch the difference.">
+<meta property="og:url" content="https://technicalmarketing.org/ai-for-technical-marketers">
+<meta property="og:image" content="https://technicalmarketing.org/Images/og-tools.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-07-02T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-07-02T00:00:00+00:00">
+<meta property="article:author" content="https://technicalmarketing.org/contributors/chad-corriveau">
+<meta property="article:publisher" content="https://technicalmarketing.org">
+<meta property="article:section" content="Tools">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI for Technical Marketers &middot; The Problem, the Method, the Checklist">
+<meta name="twitter:description" content="Where AI genuinely compresses the work of a Technical Marketer, where it quietly produces something that only looks finished, and a copyable checklist to catch the difference.">
+<meta name="twitter:image" content="https://technicalmarketing.org/Images/og-tools.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: #F5EED8;
+  --ink: #1C1812; --ink-60: #5C4E3C; --ink-40: #8B7D69;
+  --border: rgba(28,24,18,0.14); --border-strong: rgba(28,24,18,0.32);
+  --red: #A7352A; --yellow: #EACF82;
+  --f-display: 'Roboto Slab','Georgia',serif; --f-serif: 'Fraunces','Georgia',serif; --f-sans: 'Inter',sans-serif;
+  --measure: 64ch; --layout-max: 1180px; --reading-max: 760px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+::selection { background: var(--yellow); color: var(--ink); }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62;
+  background-image: radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px); background-size: 14px 14px; background-attachment: fixed; }
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+.skip-link { position: absolute; left: -9999px; top: 0; padding: 0.5rem 1rem; background: var(--ink); color: var(--paper); z-index: 200; font-family: var(--f-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+.layout { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+@media (max-width: 600px) { .layout { padding: 0 1.25rem; } body { background-size: 12px 12px; } }
+
+/* ── Masthead ─────────────────────────────────────────────────── */
+.masthead { border-top: 2px solid var(--ink); padding-top: 0.875rem; }
+.masthead__furniture { display: flex; justify-content: space-between; align-items: flex-start; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding-bottom: 0.75rem; }
+.masthead__furniture-right { text-align: right; line-height: 1.5; }
+.masthead__rule { border: none; border-top: 0.5px solid var(--border-strong); margin: 0; }
+.masthead__title-row { display: flex; align-items: baseline; justify-content: center; padding: 1.25rem 0 1rem; }
+.masthead__title { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 5.5vw, 3.25rem); letter-spacing: 0.04em; color: var(--ink); line-height: 1; }
+a.masthead__title:hover { color: var(--red); }
+.masthead__subtitle-row { display: flex; justify-content: space-between; align-items: center; padding: 0.625rem 0 0.875rem; gap: 1rem; flex-wrap: wrap; }
+.masthead__subtitle { font-family: var(--f-serif); font-style: italic; font-size: 1rem; color: var(--ink); }
+.masthead__url { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.masthead__nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0 2.25rem; padding: 0.75rem 0 0.875rem; }
+.masthead__nav-link { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding: 0.375rem 0; border-bottom: 1px solid transparent; transition: color 0.15s, border-color 0.15s; }
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 600px) { .masthead__nav { gap: 0 1.25rem; } .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; } .masthead__title { font-size: 1.5rem; white-space: nowrap; } }
+
+/* ── interior page-head ─────────────────────────────────────── */
+.page-head{ padding:3rem 0 2rem; border-bottom:0.5px solid var(--border); }
+.page-head__kicker{ font-family:var(--f-display); font-weight:700; font-size:0.8125rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:1rem; }
+.page-head__title{ font-family:var(--f-serif); font-style:italic; font-size:clamp(2rem,4.8vw,3.25rem); font-weight:400; line-height:1.08; letter-spacing:-0.015em; color:var(--ink); max-width:22ch; margin-bottom:1.5rem; }
+.page-head__deck{ font-family:var(--f-serif); font-size:1.1875rem; line-height:1.55; color:var(--ink-60); max-width:56ch; }
+.page-head__ornament{ margin-top:1.75rem; display:flex; align-items:center; gap:1rem; }
+.page-head__ornament::before{ content:""; flex:0 0 80px; height:0.5px; background:var(--border-strong); }
+.page-head__diamond{ width:8px; height:8px; background:var(--red); transform:rotate(45deg); display:inline-block; }
+@media (max-width:600px){ .page-head{ padding:2.25rem 0 1.75rem; } .page-head__ornament::before{ flex-basis:50px; } }
+
+/* ── problem statement (numbered, large-scale) ───────────────── */
+.problem { padding: 2.75rem 0 0.5rem; max-width: var(--reading-max); }
+.problem__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; }
+.problem p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.125rem; }
+.problem p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 3.1em; float: left; line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red); }
+
+/* ── method diagram ───────────────────────────────────────────── */
+.method { padding: 2.5rem 0 1rem; }
+.method__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.75rem; }
+.method__intro { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink-60); max-width: var(--reading-max); margin-bottom: 1.75rem; }
+.diagram { margin: 0 0 1rem; padding: 1.5rem 1.25rem; background: var(--paper-light); border: 0.5px solid var(--border); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); max-width: 64ch; line-height: 1.5; }
+@media (max-width: 720px) {
+  .diagram { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; padding: 1rem; margin-left: -1.25rem; margin-right: -1.25rem; }
+  .diagram > div[role="img"] { min-width: 620px; }
+  .diagram svg { min-width: 620px; max-width: none; }
+  .diagram::after { content: "Swipe to view full diagram \2192"; display: block; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.5rem; text-align: center; padding-bottom: 0.25rem; }
+}
+
+/* ── scope note ─────────────────────────────────────────────── */
+.scope-note { background: var(--paper-light); border-left: 2px solid var(--red); padding: 1.5rem 1.5rem 1.25rem; margin: 0.5rem 0 0; max-width: var(--reading-max); }
+.scope-note h3 { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
+.scope-note p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.65; color: var(--ink-60); margin-bottom: 0.75rem; max-width: none; }
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note strong { color: var(--ink); font-weight: 600; }
+
+/* ── article layout / TOC ──────────────────────────────────────── */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2.75rem 0 0; }
+@media (min-width: 960px) { .article-layout { grid-template-columns: 1fr 220px; gap: 4rem; } }
+.article-main { max-width: var(--reading-max); }
+.article-aside { position: relative; }
+@media (min-width: 960px) { .article-aside { position: sticky; top: 2rem; align-self: start; height: fit-content; } }
+.toc { border-top: 0.5px solid var(--border-strong); padding-top: 1.125rem; }
+.toc-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; margin-bottom: 0.875rem; display: block; }
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.toc-list a { font-family: var(--f-sans); font-size: 0.8125rem; color: var(--ink-60); font-weight: 400; line-height: 1.45; display: block; transition: color 0.15s ease; }
+.toc-list a:hover { color: var(--red); }
+.toc-num { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em; color: var(--ink-40); display: inline-block; width: 2.75rem; font-weight: 500; }
+@media (max-width: 959px) {
+  .article-layout { display: flex; flex-direction: column; gap: 1.5rem; }
+  .article-main { order: 2; }
+  .article-aside { order: 1; padding-bottom: 1.25rem; margin-bottom: 0.5rem; border-bottom: 0.5px solid var(--border); }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.25rem; }
+}
+
+/* ── sections ─────────────────────────────────────────────────── */
+.section { margin-bottom: 3.5rem; scroll-margin-top: 1.5rem; }
+.section-num { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.875rem; display: block; }
+.section h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.375rem, 2.6vw, 1.75rem); line-height: 1.2; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.875rem; max-width: 30ch; }
+.section > p.dek { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 1.5rem; max-width: var(--measure); }
+.section p a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.section sup { font-size: 0.72em; vertical-align: super; color: var(--red); font-weight: 500; margin-left: 0.05em; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* ── compare grid: helps / fails / fix ───────────────────────── */
+.compare { display: grid; grid-template-columns: 1fr; border: 0.5px solid var(--border-strong); margin-bottom: 1.5rem; }
+@media (min-width: 720px) { .compare { grid-template-columns: repeat(3, 1fr); } }
+.compare__cell { padding: 1.375rem 1.25rem; border-bottom: 0.5px solid var(--border); }
+@media (min-width: 720px) { .compare__cell { border-bottom: none; border-right: 0.5px solid var(--border); } .compare__cell:last-child { border-right: none; } }
+.compare__cell:last-child { border-bottom: none; }
+.compare__cell--helps { background: var(--paper-light); }
+.compare__cell--fails { background: rgba(167,53,42,0.045); }
+.compare__cell--fix { background: rgba(234,207,130,0.18); }
+.compare__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.625rem; display: block; }
+.compare__cell--helps .compare__label { color: #4a6b4d; }
+.compare__cell--fails .compare__label { color: var(--red); }
+.compare__cell--fix .compare__label { color: #8a6a1a; }
+.compare__cell p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
+
+/* ── lesson callout ───────────────────────────────────────────── */
+.lesson { margin: 0 0 1.5rem; padding: 1.125rem 1.25rem; background: var(--paper-shade); border-left: 2px solid var(--ink-40); max-width: var(--measure); }
+.lesson__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-60); font-weight: 700; margin-bottom: 0.5rem; }
+.lesson p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); margin-bottom: 0; }
+.lesson strong { color: var(--ink); }
+
+/* ── insider-move callout ────────────────────────────────────── */
+.move { margin: 0 0 0.5rem; padding-left: 0.875rem; border-left: 2px solid var(--red); max-width: var(--measure); }
+.move__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.5rem; }
+.move p { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin-bottom: 0; }
+
+/* ── aside note (small print asides, e.g. category/model notes) ─ */
+.aside-note { margin: 0.5rem 0 1.5rem; max-width: var(--measure); }
+.aside-note p { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.6; color: var(--ink-60); }
+
+/* ── method step-notes ─────────────────────────────────────────── */
+.step-notes { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 0 0 1.75rem; max-width: var(--reading-max); }
+@media (min-width: 720px) { .step-notes { grid-template-columns: 1fr 1fr; } }
+.step-note { padding-left: 0.875rem; border-left: 2px solid var(--border-strong); }
+.step-note__num { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; color: var(--red); font-weight: 700; margin-bottom: 0.375rem; }
+.step-note p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); }
+
+/* ── reference rows (model / tool comparisons) ───────────────────── */
+.ref-row { padding: 1.375rem 0; border-bottom: 0.5px solid var(--border); max-width: var(--measure); }
+.ref-row:last-child { border-bottom: none; }
+.ref-row__name { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
+.ref-row__for { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); font-weight: 600; margin-right: 0.5rem; }
+.ref-row p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.62; color: var(--ink); margin-bottom: 0.5rem; }
+.ref-row p:last-child { margin-bottom: 0; }
+.caution { background: rgba(167,53,42,0.07); border-left: 2px solid var(--red); padding: 0.75rem 1rem; margin-top: 0.625rem; max-width: var(--measure); }
+.caution p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); }
+.caution strong { color: var(--red); }
+
+/* ── AI at-a-glance cards ─────────────────────────────────────── */
+.ai-glance { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 2rem; max-width: none; }
+@media (min-width: 720px) { .ai-glance { grid-template-columns: repeat(4, 1fr); } }
+.ai-glance__card { padding: 1.25rem 1.125rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-top: 3px solid var(--red); }
+.ai-glance__name { font-family: var(--f-display); font-weight: 700; font-size: 0.9375rem; color: var(--ink); margin-bottom: 0.625rem; }
+.ai-glance__for { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.5; color: var(--ink-60); margin-bottom: 0.875rem; }
+.ai-glance__tag { display: inline-block; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; padding: 0.25rem 0.5rem; }
+.ai-glance__tag--strong { background: rgba(74,107,77,0.15); color: #4a6b4d; }
+.ai-glance__tag--partial { background: rgba(138,106,26,0.15); color: #8a6a1a; }
+.ai-glance__tag--caution { background: rgba(167,53,42,0.12); color: var(--red); }
+
+/* ── demo capture spectrum diagram ───────────────────────────────── */
+.spectrum-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); max-width: 64ch; line-height: 1.5; }
+
+/* ── checklist deliverable (copy-paste specimen card) ───────────── */
+.checklist-block { margin: 1rem 0 1.5rem; padding: 2rem 2rem 1.75rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; max-width: var(--measure); }
+.checklist-block::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.checklist-block__label { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 600; padding-bottom: 1rem; margin-bottom: 1.375rem; border-bottom: 0.5px solid var(--border); flex-wrap: wrap; }
+.checklist-block__label-text { flex: 1 1 auto; min-width: 0; }
+.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 32px; white-space: nowrap; }
+.checklist-block__copy-btn:hover { background: var(--red); border-color: var(--red); }
+.checklist-block__copy-btn.is-copied { background: var(--red); border-color: var(--red); }
+.checklist-block__copy-icon { font-size: 0.875rem; line-height: 1; }
+.checklist-block h3 { font-family: var(--f-serif); font-style: italic; font-size: 1.3125rem; font-weight: 500; color: var(--ink); margin-bottom: 0.375rem; }
+.checklist-block__meta-line { font-family: var(--f-sans); font-size: 0.75rem; color: var(--ink-40); margin-bottom: 1.375rem; letter-spacing: 0.02em; }
+.checklist-block ol { list-style: none; counter-reset: cl; }
+.checklist-block li { counter-increment: cl; font-family: var(--f-serif); font-size: 1rem; line-height: 1.55; color: var(--ink); margin-bottom: 1rem; padding-left: 2rem; position: relative; }
+.checklist-block li::before { content: counter(cl); position: absolute; left: 0; top: 0.05em; font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem; color: var(--red); border: 1.5px solid var(--red); width: 1.5rem; height: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.checklist-block li:last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .checklist-block { padding: 1.5rem 1.375rem; } }
+
+/* ── practitioner bio card ────────────────────────────────────── */
+.bio-card { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 0 0 1.75rem; padding: 1.75rem; background: var(--paper-shade); border: 0.5px solid var(--border-strong); max-width: var(--measure); }
+@media (min-width: 640px) { .bio-card { grid-template-columns: auto 1fr; align-items: start; } }
+.bio-card__mark { width: 56px; height: 56px; background: var(--ink); color: var(--paper); font-family: var(--f-display); font-weight: 700; font-size: 1.375rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.bio-card__name { font-family: var(--f-serif); font-style: italic; font-size: 1.25rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
+.bio-card p { font-family: var(--f-sans); font-size: 0.875rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 0.625rem; }
+.bio-card p:last-child { margin-bottom: 0; }
+.bio-card strong { color: var(--ink); }
+
+/* ── inside track list ─────────────────────────────────────────── */
+.inside-track { list-style: none; counter-reset: it; }
+.inside-track li { counter-increment: it; padding: 1.25rem 0 1.25rem 3rem; border-bottom: 0.5px solid var(--border); position: relative; max-width: var(--measure); }
+.inside-track li:last-child { border-bottom: none; }
+.inside-track li::before { content: counter(it); position: absolute; left: 0; top: 1.25rem; font-family: var(--f-display); font-weight: 700; font-size: 1.125rem; color: var(--red); width: 2rem; height: 2rem; border: 1.5px solid var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.inside-track p { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin: 0; }
+.inside-track strong { color: var(--red); }
+
+/* ── workstream risk map ──────────────────────────────────────── */
+.risk-map { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 1rem; }
+@media (min-width: 640px) { .risk-map { grid-template-columns: repeat(5, 1fr); } }
+.risk-map__card { padding: 1.125rem 1rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-left: 3px solid var(--red); }
+.risk-map__ws { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.5rem; }
+.risk-map__name { font-family: var(--f-serif); font-style: italic; font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.625rem; line-height: 1.25; }
+.risk-map__risk { font-family: var(--f-sans); font-size: 0.75rem; line-height: 1.5; color: var(--ink-60); }
+.risk-map__risk strong { color: var(--ink); }
+
+/* ── footnotes ────────────────────────────────────────────────── */
+.footnotes { margin-top: 3rem; padding-top: 1.25rem; border-top: 0.5px solid var(--border-strong); }
+.footnotes-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.875rem; display: block; }
+.footnotes ol { list-style: none; counter-reset: footnotes; }
+.footnotes li { counter-increment: footnotes; font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 0.625rem; padding-left: 1.5rem; position: relative; }
+.footnotes li::before { content: counter(footnotes); position: absolute; left: 0; font-family: var(--f-display); font-weight: 700; font-size: 0.75rem; color: var(--red); font-style: normal; top: 0.1em; }
+.footnotes a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.footnotes a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* ── editor's note ────────────────────────────────────────────── */
+.editors-note { margin-top: 3.5rem; padding: 2.25rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; }
+.editors-note::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.editors-note-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; display: block; }
+.editors-note p { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin-bottom: 0.875rem; max-width: 58ch; }
+.editors-note p:last-child { margin-bottom: 0; }
+.editors-note p a { font-style: normal; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.editors-note p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.editors-sig { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; font-style: normal !important; margin-top: 1.25rem; }
+
+.back-link{ display:inline-block; font-family:var(--f-sans); font-size:0.6875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); font-weight:600; margin-top:2.5rem; border-bottom:1px solid var(--red); padding-bottom:2px; }
+.back-link:hover{ color:var(--ink); border-bottom-color:var(--ink); }
+
+/* ── subscribe (sitewide, verbatim) ─────────────────────────────── */
+.band { padding: 3.75rem 0; }
+.band--tint { background: var(--paper-shade); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+.subscribe { text-align: center; }
+.subscribe__inner { max-width: var(--reading-max); margin: 0 auto; }
+.subscribe__kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+.subscribe__pitch { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 500; line-height: 1.2; color: var(--ink); margin-bottom: 1.75rem; max-width: 24ch; margin-left: auto; margin-right: auto; }
+.subscribe__form { display: flex; gap: 0.5rem; max-width: 460px; margin: 0 auto; }
+.subscribe__input { flex: 1; padding: 0.9375rem 1rem; font-family: var(--f-sans); font-size: 0.9375rem; border: 0.5px solid var(--border-strong); background: var(--paper); color: var(--ink); min-height: 48px; }
+.subscribe__input::placeholder { color: var(--ink-40); }
+.subscribe__button { padding: 0.9375rem 1.5rem; font-family: var(--f-sans); font-size: 0.8125rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; background: var(--ink); color: var(--paper); border: 0.5px solid var(--ink); cursor: pointer; transition: background 0.15s; min-height: 48px; }
+.subscribe__button:hover { background: var(--red); border-color: var(--red); }
+.subscribe__disclaimer { font-family: var(--f-serif); font-style: italic; font-size: 0.875rem; color: var(--ink-60); margin-top: 1.25rem; }
+@media (max-width: 600px) { .subscribe__form { flex-direction: column; } .band { padding: 2.75rem 0; } .subscribe__pitch { font-size: 1.5rem; } }
+
+/* ── folio band + colophon (sitewide, verbatim) ─────────────────── */
+.folio-band { margin-top: 4rem; }
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+.folio-band__rule + .folio-band__rule { margin-top: 4px; }
+.folio-band__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 1rem 0; gap: 1rem; }
+.folio-band__left { font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.14em; color: var(--red); text-transform: uppercase; }
+.folio-band__center { color: var(--ink); font-size: 0.9375rem; text-align: center; }
+.folio-band__right { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; text-align: right; }
+.colophon { padding: 3rem 0 1.5rem; border-top: 0.5px solid var(--border-strong); }
+.colophon__inner { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+.colophon__ornament { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 2.25rem; }
+.colophon__ornament::before, .colophon__ornament::after { content: ""; height: 0.5px; background: var(--border-strong); flex: 0 0 60px; }
+.colophon__diamond { width: 8px; height: 8px; background: var(--red); transform: rotate(45deg); }
+.colophon__bottom { border-top: 0.5px solid var(--border); padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.colophon__meta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.colophon__nav { display: flex; align-items: center; gap: 0.875rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; }
+.colophon__nav-link { color: var(--ink-60); transition: color 0.15s; }
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); }
+.colophon__grid { display:grid; grid-template-columns:120px 1fr; gap:1rem 2rem; max-width:820px; margin-bottom:2.25rem; }
+.colophon__label { font-family:var(--f-display); font-weight:700; font-size:0.6875rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); padding-top:0.22rem; }
+.colophon__value { font-family:var(--f-serif); font-size:0.9375rem; line-height:1.55; color:var(--ink); }
+.colophon__value a { border-bottom:1px solid var(--border-strong); padding-bottom:1px; }
+.colophon__value a:hover { color:var(--red); border-bottom-color:var(--red); }
+@media (max-width: 720px) { .colophon__bottom { flex-direction: column-reverse; align-items: flex-start; } .colophon__grid{ grid-template-columns:1fr; gap:0.25rem 0; margin-bottom:1.75rem; } .colophon__value{ margin-bottom:1.25rem; } }
+
+@media (max-width: 600px) {
+  .section { margin-bottom: 2.75rem; }
+  .editors-note { padding: 1.625rem 1.375rem; }
+  .scope-note { padding: 1.25rem 1.125rem 1rem; }
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"]},{"@type":"Article","@id":"https://technicalmarketing.org/ai-for-technical-marketers#article","headline":"AI for Technical Marketers: The Problem, the Method, the Checklist","description":"Where AI genuinely compresses the work of a Technical Marketer, where it quietly produces something that only looks finished, and a copyable checklist to catch the difference. Sourced, five workstreams, one method.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-07-02","dateModified":"2026-07-02","url":"https://technicalmarketing.org/ai-for-technical-marketers","mainEntityOfPage":"https://technicalmarketing.org/ai-for-technical-marketers","about":{"@id":"https://technicalmarketing.org/the-technical-marketer#workstreams"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".problem",".checklist-block"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the biggest AI mistake technical marketers make in analyst relations?","acceptedAnswer":{"@type":"Answer","text":"Treating an AI draft as final, especially anything that references a specific analyst by name. Generative AI is prone to fabrication, and Gartner's own usage policy prohibits using its research to train or ground an AI model, so reading past analyst reports into a tool for briefing prep can be a licensing violation, not just an accuracy risk."}},{"@type":"Question","name":"Which AI is best for finding information already inside my company?","acceptedAnswer":{"@type":"Answer","text":"Microsoft Copilot. It is grounded in Microsoft Graph and can search your organization's own SharePoint, Teams, and OneDrive content, including PowerPoint decks, Word documents, and Excel files, which a standalone ChatGPT, Claude, or Gemini account cannot do because it has no access path to your company's files."}},{"@type":"Question","name":"Can AI write an effective competitive battlecard on its own?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. General-purpose AI models weigh their training data roughly equally, so an unguided battlecard converges on the same generic differentiation points every other AI-written battlecard lands on. The fix is grounding every draft in your own win-loss call transcripts and notes, with a human owner signing off before it reaches a sales rep."}},{"@type":"Question","name":"Why does claim verification matter when using AI for technical marketing?","acceptedAnswer":{"@type":"Answer","text":"Because a wrong claim carries different consequences depending on where it lands. A wrong line in a rehearsed demo script gets caught in rehearsal. A wrong claim in an analyst briefing, a battlecard, or a customer reference can cost a deal or damage a company's credibility with an analyst for years."}},{"@type":"Question","name":"Is Grok reliable for competitive intelligence research?","acceptedAnswer":{"@type":"Answer","text":"It has a real advantage: native, live access to X posts that no training-cutoff model can match, so it can tell you something happened today. But an independent Tow Center for Digital Journalism study found its citations were wrong roughly 94 percent of the time. Use it to learn that something happened, then verify what actually happened through a primary source before it goes in front of a buyer."}},{"@type":"Question","name":"Do AI demo capture tools show a real product or a recreation of it?","acceptedAnswer":{"@type":"Answer","text":"It depends on the category. Auto-capture walkthrough tools like Arcade and Tango record a real click-through as a static screenshot sequence. Interactive platforms like Storylane and Reprise capture the real product at the DOM level and let you edit it, so the demo can drift from what the live product actually does if it is not recaptured. Live-data-injection tools like Saleo inject better data into your real, live, functional product rather than recreating it, so they stay closest to the real thing."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://technicalmarketing.org/tools"},{"@type":"ListItem","position":3,"name":"AI for Technical Marketers","item":"https://technicalmarketing.org/ai-for-technical-marketers"}]}]}</script>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">A field manual for the discipline.</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/reference" class="masthead__nav-link">Reference</a>
+    <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/tools" class="masthead__nav-link" aria-current="page">Tools</a>
+    <a href="/archive" class="masthead__nav-link">Archive</a>
+    <a href="/about" class="masthead__nav-link">About</a>
+  </nav>
+  <hr class="masthead__rule">
+</header>
+
+<main id="main">
+
+<section class="page-head layout">
+  <div class="page-head__kicker">Department &middot; Tools &middot; Field Guide</div>
+  <h1 class="page-head__title">AI for Technical Marketers.</h1>
+  <p class="page-head__deck">One method, applied to five deliverables you actually own. Every claim below is footnoted to a named, dated source. Where one could not be confirmed against a primary source, it was cut rather than kept with a hedge.</p>
+  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+</section>
+
+<section class="layout">
+  <div class="problem">
+    <div class="problem__label">The Problem</div>
+    <p>Every Technical Marketer has been told to &ldquo;use AI.&rdquo; Almost none of that advice is scoped to what this role actually owns.</p>
+    <p>Generic AI advice does not tell you where a model produces something that looks finished and fails the moment a skeptical analyst, a skeptical buyer, or an engineer with the real API spec pushes back. This guide answers one question, five times, once for each deliverable this role owns: <strong>where does AI genuinely save real work, and where does it quietly produce something you will regret shipping?</strong></p>
+  </div>
+</section>
+
+<section class="layout">
+  <div class="method">
+    <div class="method__label">The Method</div>
+    <p class="method__intro">The same four steps apply to every deliverable below. Only step two changes from section to section: the specific way each one fails.</p>
+    <div class="diagram" role="img" aria-label="Four-step method, left to right. Step one: draft from your own source material, such as transcripts, specs, or notes, not general knowledge. Step two: name the specific risk for this deliverable. Step three: gate every claim through a human before it ships. Step four: apply the one verified move for this workstream.">
+      <svg viewBox="0 0 900 210" xmlns="http://www.w3.org/2000/svg">
+        <rect width="900" height="210" fill="#F5EED8"/>
+        <g font-family="Inter, sans-serif">
+          <rect x="14" y="26" width="196" height="150" fill="#EFE6C9" stroke="#1C1812" stroke-width="0.75" stroke-opacity="0.5"/>
+          <text x="34" y="58" font-size="13" font-weight="700" fill="#A7352A" letter-spacing="1">01</text>
+          <text x="34" y="86" font-size="14" font-weight="600" fill="#1C1812">Draft from your</text>
+          <text x="34" y="106" font-size="14" font-weight="600" fill="#1C1812">own source</text>
+          <text x="34" y="132" font-size="11.5" fill="#5C4E3C">Transcripts, specs,</text>
+          <text x="34" y="150" font-size="11.5" fill="#5C4E3C">notes. Not general</text>
+          <text x="34" y="168" font-size="11.5" fill="#5C4E3C">knowledge.</text>
+
+          <path d="M212 101 L238 101 M230 93 L238 101 L230 109" stroke="#A7352A" stroke-width="2" fill="none"/>
+
+          <rect x="240" y="26" width="196" height="150" fill="#EFE6C9" stroke="#1C1812" stroke-width="0.75" stroke-opacity="0.5"/>
+          <text x="260" y="58" font-size="13" font-weight="700" fill="#A7352A" letter-spacing="1">02</text>
+          <text x="260" y="86" font-size="14" font-weight="600" fill="#1C1812">Name the</text>
+          <text x="260" y="106" font-size="14" font-weight="600" fill="#1C1812">specific risk</text>
+          <text x="260" y="132" font-size="11.5" fill="#5C4E3C">Each deliverable fails</text>
+          <text x="260" y="150" font-size="11.5" fill="#5C4E3C">a different way. See</text>
+          <text x="260" y="168" font-size="11.5" fill="#5C4E3C">the section below.</text>
+
+          <path d="M438 101 L464 101 M456 93 L464 101 L456 109" stroke="#A7352A" stroke-width="2" fill="none"/>
+
+          <rect x="466" y="26" width="196" height="150" fill="#EFE6C9" stroke="#1C1812" stroke-width="0.75" stroke-opacity="0.5"/>
+          <text x="486" y="58" font-size="13" font-weight="700" fill="#A7352A" letter-spacing="1">03</text>
+          <text x="486" y="86" font-size="14" font-weight="600" fill="#1C1812">Gate every claim</text>
+          <text x="486" y="106" font-size="14" font-weight="600" fill="#1C1812">through a human</text>
+          <text x="486" y="132" font-size="11.5" fill="#5C4E3C">The one practice every</text>
+          <text x="486" y="150" font-size="11.5" fill="#5C4E3C">source below converged</text>
+          <text x="486" y="168" font-size="11.5" fill="#5C4E3C">on independently</text>
+
+          <path d="M664 101 L690 101 M682 93 L690 101 L682 109" stroke="#A7352A" stroke-width="2" fill="none"/>
+
+          <rect x="692" y="26" width="196" height="150" fill="#EACF82" fill-opacity="0.35" stroke="#A7352A" stroke-width="1"/>
+          <text x="712" y="58" font-size="13" font-weight="700" fill="#A7352A" letter-spacing="1">04</text>
+          <text x="712" y="86" font-size="14" font-weight="600" fill="#1C1812">Apply the</text>
+          <text x="712" y="106" font-size="14" font-weight="600" fill="#1C1812">verified move</text>
+          <text x="712" y="132" font-size="11.5" fill="#5C4E3C">One sourced, durable</text>
+          <text x="712" y="150" font-size="11.5" fill="#5C4E3C">tactic. Marked</text>
+          <text x="712" y="168" font-size="11.5" fill="#5C4E3C">&ldquo;The move.&rdquo;</text>
+        </g>
+      </svg>
+    </div>
+    <p class="diagram-caption"><strong>Method.</strong> Four steps, applied once per deliverable below. Step three is the only step that never changes.</p>
+
+    <div class="step-notes">
+      <div class="step-note">
+        <div class="step-note__num">01 &middot; In practice</div>
+        <p>Paste the actual transcript, spec, or call notes into the prompt before you ask for anything. If you don&rsquo;t have the source material handy, go get it before you draft. Don&rsquo;t let the model fill the gap with plausible-sounding general knowledge.</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">02 &middot; In practice</div>
+        <p>Before you draft, name the specific way this deliverable fails. A fabricated analyst quote, an invented API signature, a generic battlecard bullet. Naming it before you draft is what keeps you looking for it once the output is in front of you.</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">03 &middot; In practice</div>
+        <p>Read every number, name, and specific claim in the output and ask: could I defend this in front of the person it&rsquo;s about? If the honest answer is no, it doesn&rsquo;t ship yet.</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">04 &middot; In practice</div>
+        <p>Apply the one sourced move for that deliverable last, not first. It only works once the draft already reflects your real source material. It is not a substitute for steps one through three.</p>
+      </div>
+    </div>
+
+    <div class="caution">
+      <p><strong>Before step one: know where your source material is allowed to go.</strong> &ldquo;Paste in your real source material&rdquo; assumes a tool your company has actually authorized for that data. A personal, free-tier AI account is not the same thing as an enterprise-licensed one, and the difference is not academic: IBM&rsquo;s own AR team found that free-tier tools can retain what you type as training data, so unreleased roadmap detail, unpublished pricing, or a not-yet-public analyst conversation can leak into a model that isn&rsquo;t yours.<sup>1</sup> If your company hasn&rsquo;t said a tool is cleared for that category of information, don&rsquo;t paste it in. That is a company policy question to confirm first, not a productivity tip to skip.</p>
+    </div>
+  </div>
+
+  <div class="scope-note">
+    <h3>Scope and shelf life.</h3>
+    <p>This guide covers five of the six Technical Marketing workstreams<sup>&dagger;</sup>: Analyst Positioning, Narrative Architecture, Technical Content, Sales Engineering Enablement, and Competitive Positioning. It also includes a model-selection reference and a brief compass on demo-capture tooling. A full evaluation of demo-building platforms is its own dedicated guide, coming separately. What&rsquo;s below is the one distinction worth understanding before you evaluate any of them.</p>
+    <p><strong>On durability.</strong> Named tools and product features go stale in months. Structural findings (why a failure mode occurs, not which button triggers it) are the ones worth remembering. Where a finding depends on a current feature or a number a vendor could revise, it is dated. Read the dates.</p>
+  </div>
+
+  <div class="risk-map" role="img" aria-label="Five workstreams and the single biggest AI risk in each. Analyst Positioning: fabricated claims about a named analyst. Narrative Architecture: letting AI originate positioning instead of pressure-testing it. Technical Content: invented API behavior that compiles but fails at runtime. Sales Engineering Enablement: AI deciding which discovery question matters instead of a human. Competitive Positioning: generic battlecard claims nobody actually won or lost a deal on.">
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-02</div>
+      <div class="risk-map__name">Analyst Positioning</div>
+      <div class="risk-map__risk"><strong>The risk:</strong> a fabricated claim about a named analyst.</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-03</div>
+      <div class="risk-map__name">Narrative Architecture</div>
+      <div class="risk-map__risk"><strong>The risk:</strong> letting AI originate positioning instead of pressure-testing it.</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-04</div>
+      <div class="risk-map__name">Technical Content</div>
+      <div class="risk-map__risk"><strong>The risk:</strong> invented API behavior that compiles but fails at runtime.</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-05</div>
+      <div class="risk-map__name">SE Enablement</div>
+      <div class="risk-map__risk"><strong>The risk:</strong> AI deciding which discovery question matters, instead of a human.</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-06</div>
+      <div class="risk-map__name">Competitive Positioning</div>
+      <div class="risk-map__risk"><strong>The risk:</strong> a generic claim nobody actually won or lost a deal on.</div>
+    </div>
+  </div>
+</section>
+
+<section class="layout">
+<div class="article-layout">
+  <aside class="article-aside">
+    <nav class="toc" aria-label="Table of contents">
+      <span class="toc-label">In this guide</span>
+      <ol class="toc-list">
+        <li><a href="#ws-02"><span class="toc-num">WS-02</span>Analyst Positioning</a></li>
+        <li><a href="#ws-03"><span class="toc-num">WS-03</span>Narrative Architecture</a></li>
+        <li><a href="#ws-04"><span class="toc-num">WS-04</span>Technical Content</a></li>
+        <li><a href="#ws-05"><span class="toc-num">WS-05</span>SE Enablement</a></li>
+        <li><a href="#ws-06"><span class="toc-num">WS-06</span>Competitive Positioning</a></li>
+        <li><a href="#which-ai"><span class="toc-num">&#10023;</span>Which AI, for what</a></li>
+        <li><a href="#demo-capture"><span class="toc-num">&#10023;</span>Demo capture, briefly</a></li>
+        <li><a href="#checklist"><span class="toc-num">&#10063;</span>The checklist</a></li>
+        <li><a href="#inside-track"><span class="toc-num">&#9670;</span>Inside track</a></li>
+        <li><a href="#what-holds"><span class="toc-num">&#9670;</span>What doesn&rsquo;t change</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <div class="article-main">
+
+    <div class="section" id="ws-02">
+      <span class="section-num">WS-02 &middot; Analyst Positioning</span>
+      <h2>Briefing prep, RFI response, and one legal wall almost nobody checks.</h2>
+      <p class="dek">Named AR leaders at Asana, IBM, and Sprout Social all use the same pattern: AI drafts, a human gates it before an analyst sees it.<sup>1</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">Where it helps</span>
+          <p>Drafting briefing-prep documents and anticipated Q&amp;A. IBM pre-populates roughly 95% of RFI responses this way, with human QA before submission.<sup>1</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">Where it fails</span>
+          <p>Anything naming a specific analyst. Generative AI is &ldquo;prone to total fabrication &mdash; outright lies&rdquo; and should be treated as junior-level draft work.<sup>3</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">The fix</span>
+          <p>A human gates everything analyst-specific before it ships. Check your research license before you check your prompt.</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>IBM&rsquo;s AR team found that free-tier consumer AI tools can retain what you type as training data. Unreleased roadmap detail can leak into a model that isn&rsquo;t yours.<sup>1</sup> <strong>Lesson:</strong> use enterprise-licensed tools for anything proprietary.</p>
+      </div>
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>Gartner&rsquo;s own Research Documents Usage Policy prohibits using its published research &ldquo;as input into or for the training or development of generative artificial intelligence.&rdquo;<sup>2</sup> <strong>Lesson:</strong> &ldquo;have AI read the analyst&rsquo;s past reports for you&rdquo; is not just a capability question for licensed research. It can be a licensing violation.</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">The move</div>
+        <p>Draft with AI. Gate everything that references a specific analyst, number, or competitive claim through a human before it goes out. Worth noting for calibration: Forrester&rsquo;s own newest public briefing-prep guidance, from five named Forrester analysts in January 2026, doesn&rsquo;t mention AI at all.<sup>4</sup> The people who run the briefings still treat this as a human-craft skill.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-03">
+      <span class="section-num">WS-03 &middot; Narrative Architecture</span>
+      <h2>An underbuilt craft, and three model differences that will outlast this quarter&rsquo;s benchmark.</h2>
+      <p class="dek">No senior positioning specialist, not Dunford, Raskin, or Lochhead, has published their own AI workflow. This is genuinely open ground, not a solved problem you are late to.<sup>5,6</sup> The closest named example of a practitioner building a living AI workflow for this work is Emily Kramer of MKT1, who maintains strategy documents inside Claude Projects.<sup>7</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">Where it helps</span>
+          <p>Stress-testing a positioning one-liner you already believe: deliberately attacking your own claim to find its weak points before a buyer does. Feed it in, ask the model to find holes, name three real competitors, argue why a skeptical buyer walks away.<sup>8</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">Where it fails</span>
+          <p>Originating positioning from scratch. The tools built on top of Dunford&rsquo;s and Raskin&rsquo;s frameworks are third-party implementations, not the authors&rsquo; own endorsed method.<sup>5,6</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">The fix</span>
+          <p>Use AI to pressure-test a draft you already believe. Never let it originate the one-liner.</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>The only rigorous, independent test of AI citation accuracy, run by Columbia&rsquo;s Tow Center across eight tools and 1,600 queries, found an overall failure rate above 60%. Perplexity posted the <em>lowest</em> failure rate of that field, at roughly 37% wrong.<sup>9</sup> <strong>Lesson:</strong> that is best-of-a-bad-field, not reliable. Verify every citation any AI search tool hands you, regardless of which one.</p>
+      </div>
+
+      <div class="aside-note">
+        <p><strong>A note on which model to use here:</strong> see the full model-selection reference further down this page for a detailed, sourced breakdown of Claude, Copilot, Gemini, and Grok. For narrative work specifically, Perplexity is the one worth a caution: see the lesson above before you trust any citation it hands you.</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">The move</div>
+        <p>&ldquo;If it can&rsquo;t argue against you, your positioning isn&rsquo;t sharp enough.&rdquo;<sup>8</sup> Run that test before you ship, not after a buyer runs it for you.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-04">
+      <span class="section-num">WS-04 &middot; Technical Content</span>
+      <h2>Grounding beats general knowledge, every time it has been tested.</h2>
+      <p class="dek">Twilio open-sourced its internal documentation prompt library in December 2025: role-separated prompts, constrained to the actual style guide, with human review still enforcing accuracy.<sup>10</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">Where it helps</span>
+          <p>Drafting and restructuring documentation against a locked style guide, with a distinct AI editing pass separate from the drafting pass.<sup>10</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">Where it fails</span>
+          <p>Letting a model recall &ldquo;how APIs like this usually work.&rdquo; It routinely invents method signatures that compile but fail at runtime.<sup>12</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">The fix</span>
+          <p>Ground every generation in your actual spec, SDK, and product version. Never general knowledge. Then verify it anyway.</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>Plain retrieval over a docs corpus produces &ldquo;hallucinated steps, mixed product versions, feature explanations that never existed,&rdquo; because &ldquo;similar text is not the same thing as relevant knowledge.&rdquo;<sup>11</sup> <strong>Lesson:</strong> structure your source of truth before you automate against it. A flat pile of docs is not enough.</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">The move</div>
+        <p>If a demo, integration guide, or reference architecture makes a claim about how an API behaves, check that claim against the real spec or SDK. Never against what a model recalls about APIs that look like it.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-05">
+      <span class="section-num">WS-05 &middot; Sales Engineering Enablement</span>
+      <h2>A different problem than demo scoring, confirmed by the absence of overlap.</h2>
+      <p class="dek">Nothing found in this research treats demo-effectiveness scoring as an established term. The nearest concept, Consensus&rsquo;s demo analytics, tracks engagement and completion.<sup>13</sup> That is a different axis than whether a finished demo is narratively coherent.</p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">Where it helps</span>
+          <p>Generating a wide first draft of discovery questions or demo-recipe variants, fast, for volume.</p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">Where it fails</span>
+          <p>Deciding which questions matter for this specific deal. It doesn&rsquo;t chase hedge language, phrases like &ldquo;it depends&rdquo; or &ldquo;I&rsquo;m not sure&rdquo;, where the real discovery signal lives.</p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">The fix</span>
+          <p>AI for volume. A human for judgment on which one matters here, and for chasing the hedge.</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>55% of sales orgs already use generic AI for tactical content like scripts and collateral, but only 31% trust it for strategic tasks like qualification, because general tools lack business context.<sup>14</sup> <strong>Lesson:</strong> know which side of that line your task is on before you delegate it.</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">The move</div>
+        <p>This workstream feeds a demo. It does not score one. Use AI to widen the raw material, question sets, recipe variants, then run the finished demo through the <a href="https://thinkroot.io/demo-intelligence?ref=tmorg" rel="external noopener">Demo Coherence Index</a>, a separate step, before it goes live.</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-06">
+      <span class="section-num">WS-06 &middot; Competitive Positioning</span>
+      <h2>Why AI battlecards converge to the same three bullets.</h2>
+      <p class="dek">A twenty-year CI veteran of Cisco, Juniper, and Polycom put the boundary plainly: &ldquo;Automation isn&rsquo;t about replacing human intelligence, it&rsquo;s about enhancing it.&rdquo;<sup>15</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">Where it helps</span>
+          <p>Desk research synthesis plus conversation-intelligence extraction from real sales calls, combined into a first-pass battlecard in roughly 30 minutes.<sup>16</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">Where it fails</span>
+          <p>Letting a general model draft differentiation from its own training data. It weighs everything equally, so it lands on the same generic points every other AI battlecard lands on.</p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">The fix</span>
+          <p>Ground every draft in your own win-loss transcripts and call notes. A human owns final sign-off.</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">Lesson learned</div>
+        <p>&ldquo;AI research tools can hallucinate specifics &mdash; pricing numbers, feature claims, customer names.&rdquo;<sup>16</sup> <strong>Lesson:</strong> every specific claim in an AI-assisted battlecard needs a named, checkable source before a rep repeats it in front of a buyer.</p>
+      </div>
+
+      <div class="aside-note">
+        <p>Klue and Crayon were both named Leaders, among several, not exclusively, in Gartner&rsquo;s inaugural Magic Quadrant for Competitive and Market Intelligence Platforms. Klue was also a Strong Performer in <em>The Forrester Wave&trade;: Market And Competitive Intelligence Platforms, Q4 2024</em>.<sup>17,18</sup> A real, analyst-validated category. It operationalizes the grounding discipline above at scale. It doesn&rsquo;t replace it.</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">The move</div>
+        <p>Before any AI-assisted battlecard ships, ask it, and ask yourself, the question a skeptical rep will ask: &ldquo;What specific deal did we actually win or lose because of this claim?&rdquo; If the honest answer is none, the claim is generic, not competitive intelligence.</p>
+      </div>
+    </div>
+
+    <div class="section" id="which-ai">
+      <span class="section-num">Model Selection</span>
+      <h2>Which AI, for what.</h2>
+      <p class="dek">Each model below has a real, structural reason it might be the better tool for a specific job. Not a vague &ldquo;model quality&rdquo; claim, and not something that resets next release, but a genuine difference in what the model can access or was built to do. Where the evidence is vendor-sourced only, that is stated plainly. Where a real strength ships with a real risk, both are here.</p>
+
+      <div class="ai-glance">
+        <div class="ai-glance__card">
+          <div class="ai-glance__name">Claude</div>
+          <div class="ai-glance__for">Keeping one long document consistent through many rounds of edits.</div>
+          <span class="ai-glance__tag ai-glance__tag--partial">Real, self-reported</span>
+        </div>
+        <div class="ai-glance__card">
+          <div class="ai-glance__name">Copilot</div>
+          <div class="ai-glance__for">Finding what your company already has in its own PowerPoint, Word, and Excel files.</div>
+          <span class="ai-glance__tag ai-glance__tag--strong">Strongest, confirmed</span>
+        </div>
+        <div class="ai-glance__card">
+          <div class="ai-glance__name">Gemini</div>
+          <div class="ai-glance__for">Reading a video&rsquo;s visuals and narration together, or turning a spec into a quick explainer.</div>
+          <span class="ai-glance__tag ai-glance__tag--strong">Real, confirmed</span>
+        </div>
+        <div class="ai-glance__card">
+          <div class="ai-glance__name">Grok</div>
+          <div class="ai-glance__for">Knowing something happened today. Not knowing what actually happened.</div>
+          <span class="ai-glance__tag ai-glance__tag--caution">Use with caution</span>
+        </div>
+        <div class="ai-glance__card">
+          <div class="ai-glance__name">ChatGPT</div>
+          <div class="ai-glance__for">Seeing what a buyer most likely sees when they ask AI about you.</div>
+          <span class="ai-glance__tag ai-glance__tag--strong">Real, confirmed</span>
+        </div>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Claude</div>
+        <p><span class="ref-row__for">Best for</span>Drafting and revising one long document that has to stay internally consistent through many rounds of edits. A competitive positioning brief you revise after every new objection you hear in the field. A multi-section analyst briefing deck where the same three differentiators need to appear worded the same way on page two and page twelve.</p>
+        <p><strong>Why this matters:</strong> paste in a fifty-page draft and ask for one section to change, and a model that loses track of your established terminology halfway through will quietly introduce a different word for the same feature. Nobody catches it until an analyst asks which one is correct.</p>
+        <p><strong>Why, honestly:</strong> real, but self-reported. Anthropic&rsquo;s own retesting shows major improvement in long-document retrieval after specific prompt structuring.<sup>19</sup> Independent researchers track long-context reliability as a real, improving category<sup>20</sup> without crowning a winner. Treat &ldquo;Claude holds format better over long documents&rdquo; as a working hypothesis worth testing on your own material, not a settled, independently verified fact.</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Microsoft Copilot</div>
+        <p><span class="ref-row__for">Best for</span>Finding what your own company already knows before you write anything new. Your last five competitive teardowns live in PowerPoint decks scattered across SharePoint. Your pricing history lives in a spreadsheet an account manager built two years ago. Your last three responses to this exact analyst question live in Word documents in someone else&rsquo;s OneDrive.</p>
+        <p><strong>Why, honestly:</strong> the most solidly confirmed advantage in this table. Copilot is architecturally grounded in Microsoft Graph, so it can search and read your organization&rsquo;s permissioned PowerPoint, Word, Excel, Teams, and OneDrive content directly. A standalone ChatGPT, Claude, or Gemini account cannot do this. It has no access path into your company&rsquo;s files at all.<sup>21</sup> A Microsoft-commissioned Forrester study found real return on this in practice. Attribute it as commissioned, not independent, but the underlying architecture is documented and independently verifiable.<sup>22</sup></p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Gemini</div>
+        <p><span class="ref-row__for">Best for</span>Two different things, both genuine. First, analyzing a video someone else made: your own recorded demo, or a competitor&rsquo;s product video pulled from YouTube, reading the visuals and the spoken narration together instead of treating them as separate inputs. Second, turning a long written spec or technical document into a quick narrated walkthrough your team can watch instead of read.</p>
+        <p><strong>Why, honestly:</strong> the video-analysis capability is real and currently distinctive. Gemini processes video and audio as one input rather than running separate transcription and image passes, and can reference specific timestamps directly, which is a genuine advantage when you want to point at the exact moment a competitor&rsquo;s demo makes a claim.<sup>23</sup> Google&rsquo;s NotebookLM can turn a set of source documents into a narrated slide presentation, useful for a fast internal explainer, though it produces narrated slides, not live product footage, so it is not a substitute for a real demo video.<sup>24</sup> Google&rsquo;s video generation model, Veo, makes short eight-second clips with real, documented use for social and ad content.<sup>25</sup> It has not been tested here against the specific job of a narrated technical product walkthrough, so verify its dialogue and accuracy on your own material before you trust it for anything buyer-facing.</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Grok</div>
+        <p><span class="ref-row__for">Best for</span>The first flag that something moved: a competitor&rsquo;s stock, an acquisition rumor, an executive statement, a product announcement, surfaced from live X activity before it shows up anywhere else. Genuinely useful for competitive research and for scoping a demo to a company&rsquo;s current situation: if you&rsquo;re about to build a demo for a company that just got acquired, just had a leadership change, or just missed earnings, that context changes what the demo should emphasize.</p>
+        <p><strong>Why, honestly:</strong> Grok is the only major model with native, first-party access to live X post streams, not a training-cutoff snapshot. That is a genuine structural difference from every other model in this table, and it is the right tool for noticing that something happened.</p>
+        <div class="caution"><p><strong>The caution has to be foregrounded, not buried.</strong> A Tow Center for Digital Journalism study found Grok&rsquo;s citations were wrong roughly 94% of the time. Multiple outlets have separately documented specific fabricated claims.<sup>26</sup> Grok is not the tool for finding out what actually happened, only that something did. Once it flags a signal, close the loop against a real source: the company&rsquo;s own investor relations page, its actual SEC filings (10-K, 10-Q, 8-K for a material event like an acquisition), or its official press release. That combination, Grok to notice, primary filings to confirm, is what makes this useful for competitive intelligence rather than a rumor mill you repeat in front of a buyer.</p></div>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">ChatGPT</div>
+        <p><span class="ref-row__for">Best for</span>Seeing what an actual buyer most likely sees when they ask an AI chatbot about your product, your category, or your competitor.</p>
+        <p><strong>Why this matters:</strong> a growing practice called AI-visibility monitoring, sometimes called generative engine optimization, is now checking how AI chatbots answer questions about a company the same way marketers used to check Google rankings. ChatGPT is the single largest surface for that check. OpenAI reported 900 million weekly active users as of February 2026, a large increase over the prior year, and ChatGPT still holds the largest share of worldwide AI-chatbot traffic of any tool in this table, at roughly 54%, ahead of Gemini, Claude, and Copilot combined, though that share has been shrinking as competitors gain ground.<sup>33,34</sup> If you want to know what a prospect sees before they ever talk to your sales team, test the question in ChatGPT specifically, not just whichever model your team happens to prefer.</p>
+        <p>This is real enough that Adobe paid roughly 1.9 billion dollars to acquire Semrush in November 2025, explicitly framed around this kind of AI-visibility monitoring.<sup>35</sup> The practice has moved from a fringe idea to an institutionally validated one.</p>
+      </div>
+    </div>
+
+    <div class="section" id="demo-capture">
+      <span class="section-num">Demo Capture</span>
+      <h2>Demo capture tools, in brief.</h2>
+      <p class="dek">One distinction is worth understanding before you evaluate any of these. It is the same test Mike Moran uses to judge any demo: does the tool capture the real, live product, or a recreation of it? A tool that captures your real product&rsquo;s actual behavior inherits that behavior&rsquo;s truth, bugs included. A tool that recreates the interface inherits only what its builder remembered to recreate.</p>
+
+      <div class="diagram" role="img" aria-label="A spectrum from recreation to the real thing. Left: auto-capture walkthrough tools like Arcade, Tango, and Scribe, which record static screenshots of a real click-through. Middle: interactive sales-demo platforms like Storylane, Walnut, and Reprise, which capture the real product at the DOM level, then let you edit it, so it can drift from the live product over time. Right: live-data-injection tools like Saleo and Reprise Reveal, which inject better data directly into your real, live, functional product rather than recreating it at all.">
+        <svg viewBox="0 0 900 190" xmlns="http://www.w3.org/2000/svg">
+          <rect width="900" height="190" fill="#F5EED8"/>
+          <line x1="60" y1="95" x2="840" y2="95" stroke="#A7352A" stroke-width="2"/>
+          <text x="60" y="30" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.5" fill="#8B7D69">RECREATION</text>
+          <text x="775" y="30" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.5" fill="#8B7D69" text-anchor="end">THE REAL THING</text>
+          <circle cx="150" cy="95" r="7" fill="#1C1812"/>
+          <text x="150" y="60" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">Auto-capture</text>
+          <text x="150" y="78" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">walkthroughs</text>
+          <text x="150" y="120" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Arcade, Tango,</text>
+          <text x="150" y="136" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Scribe, Supademo</text>
+          <text x="150" y="156" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Static once recorded</text>
+          <circle cx="450" cy="95" r="7" fill="#1C1812"/>
+          <text x="450" y="60" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">Interactive DOM</text>
+          <text x="450" y="78" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">capture</text>
+          <text x="450" y="120" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Storylane, Walnut,</text>
+          <text x="450" y="136" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Navattic, Reprise</text>
+          <text x="450" y="156" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Real, then edited. Can drift.</text>
+          <circle cx="750" cy="95" r="8" fill="#A7352A"/>
+          <text x="750" y="60" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">Live-data</text>
+          <text x="750" y="78" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#1C1812" text-anchor="middle">injection</text>
+          <text x="750" y="120" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">Saleo, Reprise Reveal</text>
+          <text x="750" y="156" font-family="Inter, sans-serif" font-size="11.5" fill="#5C4E3C" text-anchor="middle">The real product, live</text>
+        </svg>
+      </div>
+      <p class="spectrum-caption"><strong>The spectrum.</strong> The further right, the more a bug in the demo is also a bug in the product, which is the point.</p>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Auto-capture walkthrough tools</div>
+        <p><span class="ref-row__for">Examples</span>Arcade, Tango, Scribe, Supademo</p>
+        <p>Capture a real click-through of your actual product as a screenshot or short video sequence, then add narration, hotspots, or AI voiceover on top.<sup>27</sup> Real capture, but usually static once recorded. One practitioner testing Tango found it worked only in Chrome and produced a character-encoding bug in PDF exports.<sup>28</sup> A separate hands-on comparison of documentation tools found Tango&rsquo;s automation shallower than the name implies: &ldquo;There was basic automation, but you need to type out your guides and steps manually.&rdquo;<sup>29</sup> The category-wide failure mode is simple either way: screenshots go stale the moment the product ships a UI change, and nothing in the tool detects it for you.</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Interactive sales-demo platforms</div>
+        <p><span class="ref-row__for">Examples</span>Storylane, Walnut, Navattic, Reprise</p>
+        <p>Capture your real product at the DOM level, then let you edit and rebrand the result into a clickable demo. Closer to &ldquo;the real thing, edited&rdquo; than a pure mockup, but editability cuts both ways. The demo can quietly drift from what the live product actually does if it isn&rsquo;t recaptured on a schedule, and presales teams report spending real time on exactly this: one industry report found teams spending as much as 21 days a year maintaining sandbox environments.<sup>30</sup> Pricing is a real barrier for smaller teams: engineers on Hacker News pushed back on one platform&rsquo;s roughly $8,400 a year cost, with one commenter saying he built a comparable demo tour himself in about ten minutes using open-source tools, and the vendor&rsquo;s own co-founder confirmed the product is built for larger companies, not bootstrapped ones.<sup>31</sup></p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Live-data-injection tools</div>
+        <p><span class="ref-row__for">Examples</span>Saleo, Reprise Reveal</p>
+        <p>Closest to &ldquo;the thing itself,&rdquo; not a recreation of it. These inject editable, realistic data directly into your real, functional product during a live sales call, rather than cloning or recreating the interface.<sup>32</sup></p>
+      </div>
+
+      <div class="aside-note">
+        <p>Most sources for this category are vendor-published: comparison blogs, press releases, and reviews, not independent journalism. Four tools above (Navattic, Tango, Scribe, Storylane) have real independent practitioner accounts cited directly. Walnut, Reprise, Arcade, Consensus, Saleo, and Supademo turned up vendor sources only in this pass. A dedicated, independently-sourced evaluation of this category is planned as a separate guide.</p>
+      </div>
+    </div>
+
+    <div class="section" id="checklist">
+      <span class="section-num">The Deliverable</span>
+      <h2>Why this checklist is foundational.</h2>
+      <p class="dek">Every workstream above describes a different way AI produces something that looks finished but isn&rsquo;t actually verified. A wrong line in a rehearsed demo script gets caught in rehearsal. A wrong claim in an analyst briefing, a competitive battlecard, or a customer reference doesn&rsquo;t get caught until it&rsquo;s in front of the person who can hurt you most, and by then it can cost a deal or damage a relationship with an analyst for years. This checklist is the one habit underneath everything above. It catches the difference before it ships, regardless of which workstream or which AI model produced the draft.</p>
+      <p class="dek">Copy it. Run every AI-assisted claim through it before it ships.</p>
+
+      <div class="checklist-block">
+        <div class="checklist-block__label">
+          <span class="checklist-block__label-text">Claim Verification Checklist &middot; Technical Marketing</span>
+          <button type="button" class="checklist-block__copy-btn" id="checklist-copy-btn" onclick="copyChecklist()" aria-label="Copy checklist to clipboard">
+            <span class="checklist-block__copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="checklist-block__copy-btn-text">Copy text</span>
+          </button>
+        </div>
+        <div id="checklist-content">
+          <h3>Claim Verification Checklist</h3>
+          <p class="checklist-block__meta-line">Run before any AI-assisted claim ships &middot; technicalmarketing.org</p>
+          <ol>
+            <li>Does this claim trace to a real source, such as a transcript, a spec, or a win-loss note, and not the model&rsquo;s general knowledge?</li>
+            <li>Has a human confirmed every number, name, and date before this ships?</li>
+            <li>If this references a specific analyst, competitor, or customer by name, has someone who actually knows them checked it?</li>
+            <li>If this was drawn from a licensed research report (Gartner, Forrester, IDC), does the license actually permit that use?</li>
+            <li>Could this claim survive a skeptical buyer or analyst asking, directly, &ldquo;how do you know that&rdquo;?</li>
+            <li>If the answer to five is no, is the claim cut, or is the evidence behind it strengthened, before this ships?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="inside-track">
+      <span class="section-num">The Inside Track</span>
+      <h2>Six things that surprised us most.</h2>
+      <p class="dek">Read everything above and here is the digest. Every one of these is already sourced in the sections you just read. If you only remember six things from this guide, remember these.</p>
+      <ol class="inside-track">
+        <li><p><strong>Licensed research has a legal wall, not just an accuracy risk.</strong> Feeding Gartner&rsquo;s published research into an AI model to prep for that same firm&rsquo;s briefing can violate Gartner&rsquo;s own usage policy, not just risk a wrong answer.<sup>2</sup></p></li>
+        <li><p><strong>Positioning has no published AI playbook yet.</strong> Not one of the field&rsquo;s best-known specialists, Dunford, Raskin, Lochhead, has put out their own AI workflow. This craft is wide open.<sup>5,6</sup></p></li>
+        <li><p><strong>The tool with the flashiest capability has the worst accuracy record here.</strong> Grok can tell you something happened today. An independent study found it is wrong about what actually happened roughly 94% of the time.<sup>26</sup></p></li>
+        <li><p><strong>A $8,400-a-year platform got rebuilt in ten minutes.</strong> A team on Hacker News reconstructed about 70% of one demo platform&rsquo;s functionality themselves with free, open-source tools. The vendor&rsquo;s own co-founder confirmed the product simply isn&rsquo;t built for teams that size.<sup>31</sup></p></li>
+        <li><p><strong>The most-used AI tool is also the one worth testing your own positioning in.</strong> ChatGPT still holds the largest share of AI-chatbot traffic of any tool in this guide. Testing how it answers questions about your product shows you what a buyer is statistically most likely to see first.<sup>33,34</sup></p></li>
+        <li><p><strong>The habit matters more than the tool.</strong> IBM&rsquo;s AR team pre-populates roughly 95% of RFI responses with AI, then has a human check every single one before it ships. Every workstream in this guide converges on that same habit. The tool changes. The habit doesn&rsquo;t.<sup>1</sup></p></li>
+      </ol>
+    </div>
+
+    <div class="bio-card">
+      <div class="bio-card__mark" aria-hidden="true">MM</div>
+      <div>
+        <div class="bio-card__name">Who is Mike Moran, and why take his advice on what stays the same</div>
+        <p>Mike Moran led the team that built the first commercial linguistic search engine in 1989, nearly a decade before Google existed, and holds thirteen patents in search and retrieval technology. He rose to IBM Distinguished Engineer over thirty years at IBM. At his company SoloSegment, he built a search-ranking technique that, by his own account, a federal court case later revealed Google had been calling its own most important secret while publicly denying any such technique existed. That account is his, told in his own words, and has not been independently verified against court records for this guide.</p>
+        <p>He is the author of <em>Do It Wrong Quickly</em>, co-author of <em>Search Engine Marketing Inc.</em> and <em>Outside-In Marketing</em>, founder of Biznology, and co-founder and Chief Product Officer of ThinkStream. He consults and speaks on AI, product management, and digital marketing at mikemoran.com.<sup>&Dagger;</sup></p>
+        <p>His advice on what stays the same is worth taking specifically because he has watched multiple technology waves promise to change everything, and has the patents, the court case, and the thirty-year career to know which parts of the work actually didn&rsquo;t.</p>
+      </div>
+    </div>
+
+    <div class="editors-note" id="what-holds">
+      <span class="editors-note-label">What Doesn&rsquo;t Change</span>
+      <p>Mike Moran&rsquo;s own advice, drawn from nearly fifty years on the same side of this line, is to pay attention to what stays the same rather than what changes. A practitioner can build a career on understanding what the market needs, how the offer truly differentiates, and how to say that plainly, because as the tooling changes, those three things do not.<sup>&Dagger;</sup></p>
+      <p>Every finding above will partly age. The named tools will be superseded. The specific percentages will be revised by their next report. What should not age is the shape of the judgment underneath each one. AI compresses drafting and first-pass synthesis. It does not compress the editorial call about which claim survives contact with a skeptical audience. That call is still yours to make, every time.</p>
+      <p class="editors-sig">The Editors</p>
+    </div>
+
+    <div class="footnotes">
+      <span class="footnotes-label">Sources</span>
+      <ol>
+        <li>Jerry Weltsch (Asana), Beth Bamonte (IBM), and Chris Manfredi (Sprout Social), quoted in ARInsights, &ldquo;Cracking the AI Code for AR: Takeaways from ARchitect User Forum Panelists,&rdquo; arinsights.com, 2025.</li>
+        <li>Gartner, <em>Research Documents Usage Policy</em>, gartner.com/en/about/policies/research-docs.</li>
+        <li>Jason Mashak, &ldquo;On Leveraging Generative AI for Analyst Relations (AR),&rdquo; Medium, April 22, 2024.</li>
+        <li>Joseph Blankenship, Jess Burn, Allie Mellen, Jeff Pollard, and James Plouffe, Forrester Blogs, January 2026.</li>
+        <li>Third-party AI implementations of April Dunford&rsquo;s positioning canvas (getskillsai.org, pmprompt.com), 2025. Derivative tooling, not the framework author&rsquo;s own endorsement.</li>
+        <li>Third-party AI implementation of Andy Raskin&rsquo;s Strategic Narrative framework (pmprompt.com), 2025. Derivative tooling, not the framework author&rsquo;s own endorsement.</li>
+        <li>Emily Kramer, MKT1, newsletter.mkt1.co, 2025.</li>
+        <li>Michelle Stanaland, quoted in Diana Bocco, &ldquo;How to Use AI to Stress-Test Your Startup Idea Before You Build It,&rdquo; Inc.com, June 25, 2026.</li>
+        <li>Klaudia Ja&#378;wi&#324;ska and Aisvarya Chandrasekar, &ldquo;AI Search Has A Citation Problem,&rdquo; Columbia Journalism Review / Tow Center for Digital Journalism, March 2025.</li>
+        <li>Ana Maria Benites Rodr&iacute;guez, &ldquo;Docs AI Buddy,&rdquo; Twilio Engineering Blog, December 17, 2025.</li>
+        <li>Scott Abel, &ldquo;Ontology-Grounded RAG,&rdquo; The Content Wrangler, February 5, 2026.</li>
+        <li>&ldquo;On Mitigating Code LLM Hallucinations with API Documentation,&rdquo; arXiv:2407.09726, 2024&ndash;2025.</li>
+        <li>Consensus, &ldquo;Top AI Powered Product Demos &amp; Assistants,&rdquo; goconsensus.com, 2025.</li>
+        <li>Gary Drenik, Forbes, August 14, 2025.</li>
+        <li>Edward Allison (CompeteIQ), remarks at the Competitive Intelligence Summit, reported by CompetitiveIntelligenceAlliance.io, February 20, 2025.</li>
+        <li>Thomas E. Doherty, <em>The AI-Accelerated GTM Playbook</em>, Medium, February 12, 2026.</li>
+        <li>Klue, &ldquo;Klue Is a Leader in the First-Ever Gartner Magic Quadrant for Competitive and Market Intelligence Platforms,&rdquo; klue.com, 2025; Crayon, &ldquo;Crayon Named a Leader in the Inaugural Gartner Magic Quadrant for Competitive and Market Intelligence Platforms,&rdquo; crayon.co, 2025. (Gartner, <em>Magic Quadrant for Competitive and Market Intelligence Platforms</em>, inaugural edition, 2025; report itself access-restricted, vendor citations of their own placement used as standard evidence.)</li>
+        <li>Beth Caplow et al., &ldquo;<em>The Forrester Wave&trade;: Market And Competitive Intelligence Platforms, Q4 2024</em>,&rdquo; Forrester Research, December 13, 2024.</li>
+        <li>Anthropic, &ldquo;Long context prompting for Claude 2.1,&rdquo; anthropic.com, December 6, 2023, re-testing Greg Kamradt&rsquo;s original Needle-in-a-Haystack benchmark. A vendor-published, not independently audited, result.</li>
+        <li>Simon Willison, ongoing tracking of long-context model behavior across vendors, simonwillison.net/tags/long-context/, 2024&ndash;2026.</li>
+        <li>Microsoft, &ldquo;How Microsoft 365 Copilot Works,&rdquo; Microsoft Learn, updated 2024&ndash;2026.</li>
+        <li>Forrester Consulting, &ldquo;The Total Economic Impact&trade; Of Microsoft 365 Copilot,&rdquo; commissioned by Microsoft, 2024.</li>
+        <li>Google, Gemini 2.5 launch documentation (Anirudh Baddepudi, Antoine Yang, and Mario Lu&#269;i&#263;, developers.googleblog.com, May 9, 2025) and Gemini API video-understanding documentation, ai.google.dev, updated through June 2026.</li>
+        <li>Shan Wang and Usama Bin Shafqat, &ldquo;NotebookLM Video Overviews,&rdquo; blog.google and workspaceupdates.googleblog.com, July 29, 2025.</li>
+        <li>Google DeepMind, Veo 3.1 product documentation, deepmind.google/models/veo, current; Think with Google, Wild Hare Group / No Biscuits case study, business.google.com, late 2025 or early 2026 (exact date unconfirmed).</li>
+        <li>Tow Center for Digital Journalism, findings on Grok citation accuracy, reported via eWeek, 2025; fabrication incidents separately documented by TechCrunch, March 19, 2025, and Al Jazeera, July 11, 2025.</li>
+        <li>Arcade, &ldquo;AI Demo Generator&rdquo; product page and 2026 Benchmarks Report, arcade.software, 2026.</li>
+        <li>&ldquo;Tango: Create step-by-step documentation with screenshots,&rdquo; Hacker News, January 2022 (news.ycombinator.com/item?id=30128265), comments from users nvr219 and spapas82.</li>
+        <li>Chris Mielke, &ldquo;I Investigated 11 Automation &amp; Documentation Tools,&rdquo; The AI Powered Project Manager (Substack), 2025.</li>
+        <li>The Reprise Presales Landscape Report, 2024 edition, cited via Storylane and Navattic industry analysis.</li>
+        <li>&ldquo;Launch HN: Navattic,&rdquo; Hacker News, March 2021 (news.ycombinator.com/item?id=26478189), comments from users michaelpb, ericb, and nrmclean (Navattic co-founder).</li>
+        <li>Saleo, vendor product documentation and customer case studies, 2025&ndash;2026; Reprise, product documentation for its Reveal live-data-injection product (one of three products in the Reprise suite, alongside Replay and Replicate), 2025&ndash;2026.</li>
+        <li>OpenAI, weekly active user figures reported via TechCrunch, February 27, 2026: 900 million weekly active users, a large increase over the prior year.</li>
+        <li>Similarweb, Gen AI Stats, similarweb.com, data through May 2026: ChatGPT holds roughly 53.9% of worldwide AI-chatbot web-visit share (58.3% in the United States), down from 76.5% in February 2025 as Gemini and Claude gained share.</li>
+        <li>Adobe, acquisition of Semrush announced November 19, 2025, reported at approximately 1.9 billion dollars; AI-visibility and generative-engine-optimization framing was more prominent in the deal&rsquo;s 2026 close announcement than at initial announcement.</li>
+      </ol>
+      <p style="font-family:var(--f-sans); font-size:0.75rem; color:var(--ink-40); margin-top:1.25rem; max-width:var(--measure);">&dagger; See the six-workstream taxonomy in <a href="/the-technical-marketer#responsibilities">The Technical Marketer, Article I</a>. &Dagger; Mike Moran, in conversation with <em>Technical Marketing</em>, Summer 2026.</p>
+    </div>
+
+    <a href="/tools" class="back-link">&#8592; Return to Tools</a>
+
+  </div>
+</div>
+</section>
+
+<section class="band band--tint subscribe" id="subscribe" aria-labelledby="subscribe-title">
+  <div class="layout subscribe__inner">
+    <div class="subscribe__kicker">Quarterly updates</div>
+    <p class="subscribe__pitch" id="subscribe-title">Get the next volume when it publishes.</p>
+    <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate="">
+      <label for="ai-email-input" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Email address</label>
+      <input id="ai-email-input" class="subscribe__input" type="email" name="email" placeholder="Your email" required="" autocomplete="email">
+      <button class="subscribe__button" type="submit">Subscribe</button>
+    </form>
+    <p class="subscribe__disclaimer">No promotion. Four emails a year.</p>
+  </div>
+</section>
+
+</main>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Folio T &middot; 02</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true"><span class="colophon__diamond"></span></div>
+    <div class="colophon__grid">
+      <span class="colophon__label">Editorial</span>
+      <span class="colophon__value">A field manual for the discipline. Edited and curated by Chad Corriveau.</span>
+      <span class="colophon__label">Type</span>
+      <span class="colophon__value">Set in Fraunces, Roboto Slab, and Inter. Composed in wheat and library red.</span>
+      <span class="colophon__label">Charter</span>
+      <span class="colophon__value">Indexed entries are reviewed against the editorial charter criteria: primary sourcing, practitioner relevance, and absence of vendor promotion. ThinkRoot LLC provides publishing infrastructure and administrative support.</span>
+      <span class="colophon__label">Publisher</span>
+      <span class="colophon__value">Published by ThinkRoot LLC &middot; Escondido, CA</span>
+      <span class="colophon__label">Contact</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/about" class="colophon__nav-link">About</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/contributors" class="colophon__nav-link">Contributors</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/glossary" class="colophon__nav-link">Glossary</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/landscape" class="colophon__nav-link">Landscape</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/suggest" class="colophon__nav-link">Suggest</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+function copyChecklist() {
+  var contentEl = document.getElementById('checklist-content');
+  var btn = document.getElementById('checklist-copy-btn');
+  if (!contentEl || !btn) return;
+
+  var clone = contentEl.cloneNode(true);
+  var n = 0;
+  clone.querySelectorAll('li').forEach(function(li) {
+    n += 1;
+    li.textContent = n + '. ' + li.textContent.trim();
+  });
+  var plainText = clone.innerText;
+
+  var btnTextEl = btn.querySelector('.checklist-block__copy-btn-text');
+  var iconEl = btn.querySelector('.checklist-block__copy-icon');
+
+  function showCopied() {
+    btn.classList.add('is-copied');
+    if (btnTextEl) btnTextEl.textContent = 'Copied';
+    if (iconEl) iconEl.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (btnTextEl) btnTextEl.textContent = 'Copy text';
+      if (iconEl) iconEl.innerHTML = '&#10063;';
+    }, 2400);
+  }
+
+  function fallbackCopy(text, callback) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); callback(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(plainText).then(showCopied).catch(function() {
+      fallbackCopy(plainText, showCopied);
+    });
+  } else {
+    fallbackCopy(plainText, showCopied);
+  }
+}
+</script>
+
+</body>
+</html>

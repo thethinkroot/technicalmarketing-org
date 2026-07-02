@@ -11,11 +11,11 @@ The publication is organized into finite departments, each at a stable address:
 - Reference — https://technicalmarketing.org/reference (foundational definition, TMM vs PMM, glossary, landscape)
 - Volume 01 — https://technicalmarketing.org/volume-01 (essays, reference, field kit, index — Spring–Summer 2026)
 - The Index — https://technicalmarketing.org/the-index (the full annotated twelve-source quarterly index; its full text appears below under "The Quarterly Index · Volume I")
-- Tools — https://technicalmarketing.org/tools (the Demo Coherence Index scorer; the copyable job description)
+- Tools — https://technicalmarketing.org/tools (the Demo Coherence Index scorer; the copyable job description; the AI for Technical Marketers field guide, full text below)
 - Archive — https://technicalmarketing.org/archive (the permanent record of volumes)
 - About — https://technicalmarketing.org/about · Contributors — https://technicalmarketing.org/contributors · Suggest — https://technicalmarketing.org/suggest
 
-Last updated: 2026-07-01. Version 1.4.
+Last updated: 2026-07-04. Version 1.5.
 
 ---
 
@@ -1236,6 +1236,70 @@ Responses within two weeks.
 ---
 
 
+# AI for Technical Marketers · The Problem, the Method, the Checklist
+
+URL: https://technicalmarketing.org/ai-for-technical-marketers · Department: Tools · Published: 2026-07-02
+
+A sourced field guide to where AI genuinely compresses the work of a Technical Marketer and where it quietly produces something that only looks finished. Thirty-five footnoted sources. Unverifiable claims were cut rather than kept with a hedge.
+
+## The Problem
+
+Every Technical Marketer has been told to "use AI." Almost none of that advice is scoped to what this role actually owns. This guide answers one question, five times, once for each deliverable this role owns: where does AI genuinely save real work, and where does it quietly produce something you will regret shipping?
+
+## The Method
+
+Four steps apply to every deliverable: (1) draft from your own source material, such as transcripts, specs, or notes, never general knowledge; (2) name the specific way this deliverable fails before you draft; (3) gate every claim through a human before it ships, the one practice every source in this guide converged on independently; (4) apply the one sourced move for that deliverable last, not first.
+
+Before step one: know where your source material is allowed to go. A personal, free-tier AI account is not the same thing as an enterprise-licensed one. IBM's own AR team found free-tier tools can retain what you type as training data, so unreleased roadmap detail, unpublished pricing, or a not-yet-public analyst conversation can leak into a model that isn't yours. Confirm with your company before pasting proprietary material into any AI tool.
+
+## Analyst Positioning (WS-02)
+
+Where it helps: drafting briefing-prep documents and anticipated Q&A. IBM pre-populates roughly 95% of RFI responses this way, with human QA before submission. Where it fails: anything naming a specific analyst; generative AI is prone to fabrication and should be treated as junior-level draft work. The fix: a human gates everything analyst-specific before it ships. Gartner's own Research Documents Usage Policy prohibits using its published research to train or ground an AI model, so reading licensed analyst reports into a tool for briefing prep can be a licensing violation, not just an accuracy risk.
+
+## Narrative Architecture (WS-03)
+
+No senior positioning specialist (Dunford, Raskin, Lochhead) has published their own AI workflow; this craft is genuinely open ground. Where it helps: stress-testing a positioning one-liner you already believe by asking the model to find holes and argue why a skeptical buyer walks away. Where it fails: originating positioning from scratch. The only rigorous independent test of AI citation accuracy (Columbia's Tow Center, eight tools, 1,600 queries) found an overall failure rate above 60%, with Perplexity posting the lowest failure rate at roughly 37% wrong: best-of-a-bad-field, not reliable.
+
+## Technical Content (WS-04)
+
+Twilio open-sourced its internal documentation prompt library in December 2025: role-separated prompts constrained to the actual style guide, with human review still enforcing accuracy. Where it fails: letting a model recall "how APIs like this usually work"; it routinely invents method signatures that compile but fail at runtime. The fix: ground every generation in the actual spec, SDK, and product version, then verify anyway.
+
+## Sales Engineering Enablement (WS-05)
+
+A different problem than demo scoring, confirmed by the absence of overlap: nothing in this research treats demo-effectiveness scoring as an established term outside the Demo Coherence Index. Where it helps: generating a wide first draft of discovery questions or demo-recipe variants. Where it fails: deciding which question matters for this specific deal; AI doesn't chase hedge language ("it depends," "I'm not sure") where the real discovery signal lives. This workstream feeds a demo; it does not score one — the finished demo still needs the Demo Coherence Index as a separate step.
+
+## Competitive Positioning (WS-06)
+
+Where it helps: desk research synthesis plus conversation-intelligence extraction from real sales calls, combined into a first-pass battlecard in roughly 30 minutes. Where it fails: a general model drafting differentiation from its own training data converges on the same generic points every other AI battlecard lands on. The fix: ground every draft in your own win-loss transcripts and call notes, with a human owning final sign-off. Klue and Crayon were both named Leaders in Gartner's inaugural Magic Quadrant for Competitive and Market Intelligence Platforms.
+
+## Which AI, For What
+
+**Claude** — best for drafting and revising one long document that has to stay internally consistent through many rounds of edits (a competitive positioning brief revised after field objections; a multi-section analyst briefing deck). Real, but self-reported by Anthropic; not independently verified against other models.
+
+**Microsoft Copilot** — best for finding what your own company already knows: PowerPoint decks, Word documents, and Excel files already in SharePoint, Teams, and OneDrive. The most solidly confirmed advantage in this guide: Copilot is architecturally grounded in Microsoft Graph, something a standalone ChatGPT, Claude, or Gemini account structurally cannot do.
+
+**Gemini** — best for analyzing a video's visuals and narration together (your own demo, or a competitor's YouTube video) and for turning a long spec into a quick narrated explainer via NotebookLM. Real and currently distinctive capability.
+
+**Grok** — best for the first flag that something moved: a competitor's stock, an acquisition, an executive statement. The only major model with native, live access to X post streams. The caution has to be foregrounded: an independent Tow Center study found Grok's citations were wrong roughly 94% of the time. Use Grok to notice a signal, then confirm it against a primary source (investor relations, SEC filings, official press release) before it goes in front of a buyer.
+
+**ChatGPT** — best for seeing what a buyer most likely sees when they ask an AI chatbot about your product or category. ChatGPT reached 900 million weekly active users by February 2026 and holds roughly 54% of worldwide AI-chatbot traffic, the largest single surface for AI-visibility monitoring (also called generative engine optimization), a practice validated at market scale by Adobe's ~$1.9 billion acquisition of Semrush in November 2025.
+
+## Demo Capture Tools, In Brief
+
+The test: does the tool capture the real, live product, or a recreation of it? Auto-capture walkthrough tools (Arcade, Tango, Scribe, Supademo) record a real click-through as a static screenshot sequence; screenshots go stale the moment the product ships a UI change. Interactive sales-demo platforms (Storylane, Walnut, Navattic, Reprise) capture the real product at the DOM level, then let you edit it, so the demo can drift from the live product if not recaptured; presales teams report spending as much as 21 days a year maintaining sandbox environments. Live-data-injection tools (Saleo, Reprise Reveal) inject better data directly into the real, live, functional product rather than recreating it, staying closest to the real thing.
+
+## The Claim Verification Checklist
+
+A copyable, six-question checklist, the same for every workstream above: (1) does this claim trace to a real source, not the model's general knowledge; (2) has a human confirmed every number, name, and date; (3) if this references a specific analyst, competitor, or customer by name, has someone who actually knows them checked it; (4) if drawn from a licensed research report, does the license permit that use; (5) could this claim survive a skeptical buyer or analyst asking "how do you know that"; (6) if the answer to five is no, is the claim cut or the evidence strengthened before it ships. Full text at /ai-for-technical-marketers#checklist.
+
+## What Doesn't Change
+
+AI compresses drafting and first-pass synthesis. It does not compress the editorial call about which claim survives contact with a skeptical audience. That call is still yours to make, every time.
+
+
+---
+
+
 ## Document Information
 
 - **Publication:** Technical Marketing
@@ -1246,6 +1310,6 @@ Responses within two weeks.
 - **Publisher:** Published independently by The ThinkRoot LLC under separate editorial governance
 - **Contact:** editor@technicalmarketing.org
 - **Manifest:** https://technicalmarketing.org/llms.txt
-- **Generated:** 2026-06-12 · Version 1.3
+- **Generated:** 2026-07-04 · Version 1.5
 
 © 2026 Technical Marketing. All rights reserved. Citation and summarization permitted with attribution; verbatim reproduction of full articles requires editorial permission.
