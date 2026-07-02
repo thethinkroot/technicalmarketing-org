@@ -117,10 +117,11 @@ a.masthead__title:hover { color: var(--red); }
 
 /* ── article layout / TOC ──────────────────────────────────────── */
 .article-layout { display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2.75rem 0 0; }
-@media (min-width: 960px) { .article-layout { grid-template-columns: 1fr 220px; gap: 4rem; } }
+@media (min-width: 960px) { .article-layout { grid-template-columns: 220px 1fr; gap: 4rem; } }
 .article-main { max-width: var(--reading-max); }
+@media (min-width: 960px) { .article-main { grid-column: 2; } }
 .article-aside { position: relative; }
-@media (min-width: 960px) { .article-aside { position: sticky; top: 2rem; align-self: start; height: fit-content; } }
+@media (min-width: 960px) { .article-aside { grid-column: 1; position: sticky; top: 2rem; align-self: start; height: fit-content; } }
 .toc { border-top: 0.5px solid var(--border-strong); padding-top: 1.125rem; }
 .toc-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; margin-bottom: 0.875rem; display: block; }
 .toc-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
