@@ -15,7 +15,7 @@ The publication is organized into finite departments, each at a stable address:
 - Archive — https://technicalmarketing.org/archive (the permanent record of volumes)
 - About — https://technicalmarketing.org/about · Contributors — https://technicalmarketing.org/contributors · Suggest — https://technicalmarketing.org/suggest
 
-Last updated: 2026-07-04. Version 1.5.
+Last updated: 2026-07-04. Version 1.6.
 
 ---
 
@@ -1313,3 +1313,166 @@ AI compresses drafting and first-pass synthesis. It does not compress the editor
 - **Generated:** 2026-07-04 · Version 1.5
 
 © 2026 Technical Marketing. All rights reserved. Citation and summarization permitted with attribution; verbatim reproduction of full articles requires editorial permission.
+
+---
+
+## Nice Job Hooking Me: A Conversation with Mike Moran
+
+**Practitioner Profile · Volume 01 · Summer 2026**
+
+*Canonical URL: https://technicalmarketing.org/nice-job-hooking-me*
+
+*Edison, New Jersey · Summer 2026*
+
+There is a line in technical marketing between what can be shown and what has been built. Between the demo and the picture of the demo. Between the patent and the press release about the patent. Between the technique that holds up in a federal court and the industry that never hears it happened.
+
+Call it the truth layer.
+
+The Wayback Machine shows a meetup. May 2013. This domain. A room of practitioners trying to name something the market had not named yet. One of the presenter names in that archive was Mike Moran.
+
+Thirteen years later, when this publication launched on the same domain, he was the first call we made.
+
+The first message back was seven words: “Nice job hooking me, even if it was AI.”
+
+That reflex does not develop in a classroom. It develops in nearly fifty years of rooms where the thing either ran or it did not. Moran led the team that built the first commercial linguistic search engine in 1989, nearly a decade before Google existed. He holds thirteen patents in search and retrieval technology. He built a search technique at SoloSegment that a federal court would later reveal Google had been calling their secret sauce, while publicly denying any such thing existed.
+
+What followed was three rounds of written exchange. The conversation below is drawn from those exchanges, edited for length and sequence. Nothing has been put in his mouth. The words are his.
+
+---
+
+**On the reflex that nearly fifty years of building things that actually have to work will give you.**
+
+**TM.org:** Your first response to my outreach was "nice job hooking me, even if it was AI." Where does that reflex come from?
+
+**Moran:** I was hired by IBM in 1978 and quickly realized that as soon as you understand the computers don’t work, the world becomes a less frustrating place. Software always starts out not doing what it is supposed to do and frequently is released into production with many problems. So once you have seen the sausage being made, you want to ensure that what you personally eat has been USDA inspected.
+
+I am old enough to have seen corporate executives approve the first projects whose business case was developed on a spreadsheet because “the computer said this project would work.” Seeing that taught me to ask many questions when I didn’t understand something, which some people don’t like to do. They think it makes them look dumb. I decided I would rather look stupid than be stupid.
+
+---
+
+**On the line between the demo and the thing.**
+
+**TM.org:** You led the team that built the first commercial linguistic search engine in 1989. Today someone can open Figma on a Tuesday and have something that looks like a working product by Wednesday morning. What is actually lost when the demo stops being the thing and becomes a picture of the thing?
+
+**Moran:** Sometimes, nothing is lost. If the point is to show a new kind of user interface, Figma is great. Spreadsheets are a good example. If we could have used Figma to demonstrate the first spreadsheet, that would have been extremely helpful because the interface was the innovation. Once you had the interface, you just needed the computer to do math, which was not hard.
+
+But if you used Figma to demonstrate a prototype of ChatGPT, that wouldn’t have been helpful, because the interface was not the innovation. The innovation was all behind the glass. So in each case, you need to judge whether Figma actually demonstrates the innovation.
+
+**TM.org:** AI tools can now spin up working environments in hours, not mockups. Does that change where you draw the line, or does it just move where the deception can hide?
+
+**Moran:** I don’t think it changes where I draw the line. I have seen many cooked demos. Cooking them with AI just makes them more flexible. Instead of following a single script, you can ask the audience to throw something out as a task.
+
+It’s still true that you can judge something from Figma if the UI is what’s new. If what it does behind the scenes is what’s new, that requires a lot of testing before it’s believable.
+
+---
+
+**On building what Google was secretly building, not knowing it, patenting it first, and finding out in court.**
+
+**TM.org:** The SoloSegment story stopped me. You built a technique, patented it, and years later a federal court case revealed Google had called it their secret sauce. Most of the industry never heard it happened. How do you make sense of that?
+
+**Moran:** That was a strange experience. Google apparently had been collecting user behavior since 2003 to make an educated guess about whether searchers found what they were looking for. Every searcher’s movement is a signal of success or failure. Did the searcher click on the result? Immediately hit the back button? Or scroll down at the speed of reading? Did they then enter another query? Was that a rephrasing of the first one or a new question?
+
+If you know which search results lead to success for each query, that becomes your ranking algorithm. Google had been doing this for years, but not only did they not file a patent, they publicly denied doing any such thing.
+
+When I developed the analytics for our SoloSegment website search engine product, I independently thought these ideas made sense and built a search engine that learned from the searchers. We were awarded a patent and only after that did it come out in court that Google considered this technique its most important secret. I was floored.
+
+SoloSegment had a great search engine but the business failed during COVID when venture capital dried up. We still have the patent if anyone wants to implement the technique. It definitely worked.
+
+**TM.org:** You said had you known what Google was doing, you would never have attempted it. Is that specific to you or is there a broader principle?
+
+**Moran:** Sometimes it’s great to be naive. Had I known this is what Google was doing I would have despaired that we’d need tons of money and tons of data to make it work. I’d have never attempted it.
+
+I think sometimes experience can prevent you from attempting something because it seems too bold. In this case, had I known Google was doing this, I probably would have assumed there were multiple patents already filed, that it took dozens of engineers, and way more signal data than we would ever have from the searches on a single corporate website. So I think I would have lost my nerve.
+
+There are two things a practitioner can know. Whether something is possible. And whether someone else is already doing it at scale. Mike Moran had the first. The second would have ended it before it started.
+
+But I don’t think there is a case to be made for ignorance in general. Knowing more usually leads to better decisions and market ignorance has been the cause of death of most new products I have ever seen. In this case, knowledge might have stopped me from trying something. But usually ignorance stops you from succeeding at what you do try.
+
+---
+
+**On what buyers can see now that they could not see before.**
+
+**TM.org:** You said today’s buyers have more ways to size you up, and that it is good for you. What specifically are they looking at that they could not before?
+
+**Moran:** I think what’s changed is that buyers are more technically savvy than when I started consulting seventeen years ago. There are usually two kinds of personas in B2B marketing: the business domain buyer who cares what you do, and the technical specialist buyer who cares how you do it.
+
+What I see is that the gap in knowledge between the technical specialist buyer and me is much narrower than it once was. When I explain how I do things today, they much more readily understand it and it makes sense to them. They are buying me less for my reputation and testimonials than because they believe in the approach.
+
+**TM.org:** Is that transparency good for everyone, or only for practitioners whose work actually holds up under scrutiny?
+
+**Moran:** That change is good for clients because they make better purchasing decisions. But it’s also good for any consultant that can explain what they do in simple terms.
+
+---
+
+**On nearly fifty years inside AI before it was a job title.**
+
+**TM.org:** You have been working in AI for longer than most of the people currently writing about it have been alive. From that vantage point, what do you actually see when you look at what AI is doing to the go-to-market stack right now?
+
+**Moran:** It is true that I am seriously old. Nothing I was working on in the 1980s would be considered AI today because the real definition of AI is whatever a computer can do that surprises us.
+
+I think marketers should listen to the advice from Jeff Bezos to pay attention to what stays the same more than to what changes. Similarly, marketers can build a career around what won’t change: they will always need to understand what their market needs, understand how they truly differentiate from their competitors, and craft a message that communicates that advantage. As technology changes, those things don’t change.
+
+If your product is now being purchased by AI agents, you need to understand them and craft a message for them. Or you need such a strong brand image that the human buyer specifies your brand in the prompt.
+
+**TM.org:** Where is the truth layer getting thinner, and where does it hold?
+
+**Moran:** AI is great at going deep on a task, but it is not very good at going wide. The broader your knowledge, the more dots you can connect and the better you can use AI to do the detailed work. I think that human beings will keep finding ways to remain valuable by broadening their perspective.
+
+---
+
+**On Bezos, the baseline, and the enterprise software platforms now learning what happens when simplicity was always the product.**
+
+**TM.org:** You cited Bezos on what stays the same. I would argue Amazon also shifted what customers believed they were entitled to expect. Bezos did not just serve existing needs. He moved the baseline. Does your framework account for that?
+
+**Moran:** I still think it is very stable. Customers always expect more once their initial needs are fulfilled, but the stability stems from their expectations moving along the same tried and true path of selection, price, and delivery. Knowing what they always want allows you to consistently make decisions about what to do next through that lens.
+
+**TM.org:** Enterprise software customers are leaving platforms they have used for years. Not because their needs changed. Because AI is threatening to serve the same needs without the platform. Is that Bezos proving right or proving wrong?
+
+**Moran:** I think they are leaving because LLMs better serve a need than they do. The need for simplicity. Those platforms work but no one likes using them. I think if people liked using them they’d stay with them. But they like using a chatbot better.
+
+---
+
+This profile began with a LinkedIn message and a seven-word response that told us everything we needed to know.
+
+What followed, over three rounds of exchange, was a practitioner who has spent nearly fifty years on the same side of the same line. The side where the thing either works or it does not. Where the patent either holds in court or it does not. Where the buyer either understands the approach and believes it, or they do not.
+
+The truth layer is not a framework Moran named. It is a condition he has operated inside for long enough that he no longer distinguishes it from the work itself.
+
+That is what this publication is for. The practitioners for whom the truth layer is not an idea.
+
+It is the job.
+
+*Mike Moran is the author of Do It Wrong Quickly, co-author of Search Engine Marketing Inc. and Outside-In Marketing, founder of Biznology, and co-founder and Chief Product Officer of ThinkStream. He rose to IBM Distinguished Engineer during his thirty years at IBM and was awarded thirteen patents in search and retrieval technology. mikemoran.com*
+
+*Note 1. The Technical Marketing Meetup of May 16, 2013 was posted on this domain on May 15, 2013. The page lists Mike Moran as presenter of a session titled SEO Basics, describing him as "a leader in the field." The source is a Wayback Machine capture dated September 10, 2016, 15:17:24 UTC.*
+
+---
+
+## New Glossary Terms · Summer 2026 Addition
+
+### Briefing prep
+
+The structured preparation work a technical marketer produces before an analyst briefing, including the demo to be run, the technical proof points to be led with, the limitations to be named proactively, and the anticipated questions with prepared answers.
+
+Briefing prep is where analyst relations either compounds or erodes a vendor’s credibility. The analyst enters with a detailed picture of the competitive landscape, recent briefings from other vendors in the category, and a set of questions designed to stress-test the claims they expect to hear.
+
+The most common failure in briefing prep is optimizing for coverage rather than argument. A briefing that attempts to show everything the product does leaves no time to demonstrate anything convincingly. Technical marketing’s editorial role is to select: which claim to lead with, which proof point to anchor on, which limitation to name before the analyst does.
+
+*Distinctions: Briefing prep vs. briefing deck. The briefing deck is one artifact within the broader briefing prep. Briefing prep also includes the demo environment, the anticipated Q&A, the competitive context the analyst is likely to surface, and a shared understanding among everyone in the room about what the session is trying to accomplish.*
+
+*See also: Analyst briefing, AR cycle, RFI response. Source: https://technicalmarketing.org/glossary#briefing-prep*
+
+---
+
+### RFI response
+
+A vendor’s structured reply to a buying organization’s request for information, submitted before a formal evaluation begins, used by the buyer to assess whether a vendor should be invited into a full RFP process.
+
+An RFI arrives earlier in the buyer’s decision process than an RFP and is correspondingly less specific in its requirements. The buyer is running a market survey, not a formal evaluation. Technical marketing maintains the content library from which RFI responses are built, including approved positioning claims, representative proof points, and customer reference summaries that can be deployed quickly across multiple simultaneous RFIs.
+
+IBM’s analyst relations team documented a pattern in which AI drafting pre-populates roughly 95 percent of RFI response content, with a human QA step before submission.
+
+*Distinctions: RFI response vs. RFP response. An RFI response is shorter, earlier, and less technically specific. Its goal is to earn a place on the shortlist. An RFP response is longer, later, and more architecturally detailed. Its goal is to win the evaluation.*
+
+*See also: RFP, Briefing prep, AR cycle. Source: https://technicalmarketing.org/glossary#rfi-response*
+
