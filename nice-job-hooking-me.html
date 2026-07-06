@@ -83,6 +83,21 @@ a.masthead__title:hover { color: var(--red); }
 .hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block; filter: grayscale(100%) contrast(1.05); }
 .hero__caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 0.5rem 1.75rem; background: linear-gradient(transparent, rgba(28,24,18,0.65)); font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(239,230,201,0.8); }
 
+/* Video feature — vertical short, above the lede */
+.video-feature { max-width: 400px; margin: 0 auto 3rem; text-align: center; }
+.video-feature__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; }
+.video-feature__frame { position: relative; display: block; width: 100%; aspect-ratio: 9 / 16; background: var(--ink); overflow: hidden; border: 0.5px solid var(--border-strong); }
+.video-feature__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.video-feature__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+.video-feature__play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.video-feature__play::before { content: ""; display: flex; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; border-radius: 50%; background: rgba(28, 24, 18, 0.55); border: 1px solid rgba(239, 230, 201, 0.55); transition: background 0.15s ease, transform 0.15s ease; }
+.video-feature__frame:hover .video-feature__play::before { background: var(--red); transform: scale(1.06); }
+.video-feature__play::after { content: ""; position: absolute; width: 0; height: 0; border-top: 0.625rem solid transparent; border-bottom: 0.625rem solid transparent; border-left: 1rem solid var(--paper); margin-left: 0.3rem; }
+.video-feature__caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); }
+@media (max-width: 480px) {
+  .video-feature { max-width: 280px; }
+}
+
 /* Page head */
 .page-head { padding: 3rem 0 2rem; border-bottom: 0.5px solid var(--border); }
 .page-head__kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
@@ -126,6 +141,8 @@ a.masthead__title:hover { color: var(--red); }
 .afterword { max-width: var(--reading-max); margin: 3rem auto 0; padding-top: 2.5rem; border-top: 0.5px solid var(--border-strong); }
 .afterword p { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.125rem; }
 .afterword p strong { font-style: normal; font-weight: 700; font-family: var(--f-display); letter-spacing: 0.02em; }
+.afterword p a { color: var(--red); border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+.afterword p a:hover { border-bottom-color: var(--red); }
 .afterword__rule { border: none; border-top: 2px solid var(--ink); margin: 2.5rem 0 2rem; }
 
 /* Bio */
@@ -180,7 +197,7 @@ a.masthead__title:hover { color: var(--red); }
 }
 </style>
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},{"@type":"Article","@id":"https://technicalmarketing.org/nice-job-hooking-me#article","headline":"Nice Job Hooking Me: A Conversation with Mike Moran","description":"A story about a practitioner Google never called. Mike Moran on nearly fifty years of building things that had to work. The SoloSegment story, the truth layer, the Figma test, what does not change.","author":{"@type":"Person","name":"Mike Moran","url":"https://www.mikemoran.com","sameAs":"https://www.linkedin.com/in/mikemoran/"},"editor":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau"},"publisher":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"datePublished":"2026-07-04","dateModified":"2026-07-04","url":"https://technicalmarketing.org/nice-job-hooking-me","mainEntityOfPage":"https://technicalmarketing.org/nice-job-hooking-me","about":[{"@type":"Person","name":"Mike Moran","url":"https://www.mikemoran.com","jobTitle":"IBM Distinguished Engineer (ret.)","sameAs":"https://www.linkedin.com/in/mikemoran/"},{"@type":"Concept","name":"Truth layer","description":"The line in technical marketing between what can be shown and what has been built."}],"isPartOf":{"@type":"Periodical","@id":"https://technicalmarketing.org/#publication","name":"Technical Marketing","issn":"pending"},"citation":[{"@type":"WebPage","name":"Technical Marketing Meetup May 16th, 2013","url":"https://web.archive.org/web/20160910151724/http://www.technicalmarketing.org/2013/05/technical-marketing-meetup-may-16th-2013/","description":"Wayback Machine capture dated September 10, 2016. Lists Mike Moran as presenter of a session titled SEO Basics."}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Volume 01","item":"https://technicalmarketing.org/volume-01"},{"@type":"ListItem","position":3,"name":"Nice Job Hooking Me","item":"https://technicalmarketing.org/nice-job-hooking-me"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},{"@type":"Article","@id":"https://technicalmarketing.org/nice-job-hooking-me#article","headline":"Nice Job Hooking Me: A Conversation with Mike Moran","description":"A story about a practitioner Google never called. Mike Moran on nearly fifty years of building things that had to work. The SoloSegment story, the truth layer, the Figma test, what does not change.","author":{"@type":"Person","name":"Mike Moran","url":"https://www.mikemoran.com","sameAs":"https://www.linkedin.com/in/mikemoran/"},"editor":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau"},"publisher":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"datePublished":"2026-07-04","dateModified":"2026-07-04","url":"https://technicalmarketing.org/nice-job-hooking-me","mainEntityOfPage":"https://technicalmarketing.org/nice-job-hooking-me","video":{"@id":"https://technicalmarketing.org/nice-job-hooking-me#video"},"about":[{"@type":"Person","name":"Mike Moran","url":"https://www.mikemoran.com","jobTitle":"IBM Distinguished Engineer (ret.)","sameAs":"https://www.linkedin.com/in/mikemoran/"},{"@type":"Concept","name":"Truth layer","description":"The line in technical marketing between what can be shown and what has been built."}],"isPartOf":{"@type":"Periodical","@id":"https://technicalmarketing.org/#publication","name":"Technical Marketing","issn":"pending"},"citation":[{"@type":"WebPage","name":"Technical Marketing Meetup May 16th, 2013","url":"https://web.archive.org/web/20160910151724/http://www.technicalmarketing.org/2013/05/technical-marketing-meetup-may-16th-2013/","description":"Wayback Machine capture dated September 10, 2016. Lists Mike Moran as presenter of a session titled SEO Basics."}]},{"@type":"VideoObject","@id":"https://technicalmarketing.org/nice-job-hooking-me#video","name":"Nice Job Hooking Me &mdash; A 101-Second Introduction with Mike Moran","description":"A 101-second introduction to the practitioner profile conversation with Mike Moran, who led the team that built the first commercial linguistic search engine in 1989 and holds thirteen patents in search and retrieval technology.","thumbnailUrl":["https://i.ytimg.com/vi/scd2WfCnZq4/maxresdefault.jpg"],"uploadDate":"2026-07-04","duration":"PT1M41S","contentUrl":"https://youtube.com/shorts/scd2WfCnZq4","embedUrl":"https://www.youtube.com/embed/scd2WfCnZq4","publisher":{"@id":"https://technicalmarketing.org/#organization"},"about":{"@id":"https://technicalmarketing.org/contributors/mike-moran#person"},"isFamilyFriendly":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Volume 01","item":"https://technicalmarketing.org/volume-01"},{"@type":"ListItem","position":3,"name":"Nice Job Hooking Me","item":"https://technicalmarketing.org/nice-job-hooking-me"}]}]}</script>
 </head>
 
 <body>
@@ -225,6 +242,15 @@ a.masthead__title:hover { color: var(--red); }
 
 <div class="article-body">
 <div class="layout">
+
+<div class="video-feature">
+  <p class="video-feature__label">Video &middot; 101 Seconds &middot; Practitioner Profile</p>
+  <a class="video-feature__frame" id="video-feature-frame" href="https://youtube.com/shorts/scd2WfCnZq4" target="_blank" rel="external noopener" aria-label="Play: Nice Job Hooking Me &mdash; a 101-second introduction with Mike Moran">
+    <img class="video-feature__poster" src="https://i.ytimg.com/vi/scd2WfCnZq4/maxresdefault.jpg" alt="" loading="eager" width="1080" height="1920">
+    <span class="video-feature__play" aria-hidden="true"></span>
+  </a>
+  <p class="video-feature__caption">A 101-second introduction to the conversation below.</p>
+</div>
 
 <div class="intro">
   <p>There is a line in technical marketing between what can be shown and what has been built. Between the demo and the picture of the demo. Between the patent and the press release about the patent. Between the technique that holds up in a federal court and the industry that never hears it happened.</p>
@@ -447,6 +473,7 @@ a.masthead__title:hover { color: var(--red); }
   <p>What followed, over three rounds of exchange, was a practitioner who has spent nearly fifty years on the same side of the same line. The side where the thing either works or it does not. Where the patent either holds in court or it does not. Where the buyer either understands the approach and believes it, or they do not.</p>
   <p>The truth layer is not a framework Moran named. It is a condition he has operated inside for long enough that he no longer distinguishes it from the work itself.</p>
   <p>That is what this publication is for. The practitioners for whom the truth layer is not an idea.</p>
+  <p>His closing view on what does not change across technology waves does not stay contained to this page &mdash; it closes out <a href="/ai-for-technical-marketers#what-holds">the AI field guide</a> too, same conversation, different deliverable.</p>
   <p><strong>It is the job.</strong></p>
   <hr class="afterword__rule">
 </div>
@@ -526,6 +553,23 @@ a.masthead__title:hover { color: var(--red); }
   }
   window.addEventListener('scroll', update, { passive: true });
   update();
+}());
+
+(function() {
+  'use strict';
+  var frame = document.getElementById('video-feature-frame');
+  if (!frame) return;
+  frame.addEventListener('click', function(e) {
+    e.preventDefault();
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    iframe.allowFullscreen = true;
+    frame.innerHTML = '';
+    frame.appendChild(iframe);
+  });
 }());
 </script>
 

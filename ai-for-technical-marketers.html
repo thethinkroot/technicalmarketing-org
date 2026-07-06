@@ -551,6 +551,8 @@ a.masthead__title:hover { color: var(--red); }
 .problem__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; }
 .problem p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.125rem; }
 .problem p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 3.1em; float: left; line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red); }
+.problem p a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.problem p a:hover { color: var(--red); border-bottom-color: var(--red); }
 
 /* ── method diagram ───────────────────────────────────────────── */
 .method { padding: 2.5rem 0 1rem; }
@@ -1149,7 +1151,7 @@ a.masthead__title:hover { color: var(--red); }
     <div class="problem__label">The Problem</div>
     <p>Every Technical Marketer has been told to “use AI.” Almost none of that advice is scoped to what this role actually owns.</p>
     <p>Generic AI advice does not tell you where a model produces something that looks finished and fails the moment a skeptical analyst, a skeptical buyer, or an engineer with the real API spec pushes back. This guide answers one question, five times, once for each deliverable this role owns: <strong>where does AI genuinely save real work, and where does it quietly produce something you will regret shipping?</strong></p>
-    <p>This guide closes with a practitioner who built the first commercial linguistic search engine in 1989, holds thirteen patents in search and retrieval, and spent thirty years at IBM watching multiple technology waves promise to change everything. His view on what does not change across those waves is the reason this guide ends where it does.</p>
+    <p>This guide closes with a practitioner who built the first commercial linguistic search engine in 1989, holds thirteen patents in search and retrieval, and spent thirty years at IBM watching multiple technology waves promise to change everything. His view on what does not change across those waves is the reason this guide ends where it does &mdash; read <a href="/nice-job-hooking-me">the full conversation</a> it was drawn from.</p>
   </div>
 </section>
 
