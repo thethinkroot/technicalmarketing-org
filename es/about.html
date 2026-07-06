@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>Acerca de &middot; Technical Marketing</title>
+<meta name="description" content="Acerca de Technical Marketing: una publicación trimestral independiente y una referencia de trabajo para la disciplina del marketing técnico. Misión editorial, audiencias a las que sirve, gobernanza de colaboradores y divulgación del editor fundador.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/es/about">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/about" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/about" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/about" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/about" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/about" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/about" />
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="Acerca de &middot; Technical Marketing">
+<meta property="og:description" content="Acerca de Technical Marketing: una publicación trimestral independiente y una referencia de trabajo para la disciplina del marketing técnico. Misión editorial, audiencias a las que sirve, gobernanza de colaboradores y divulgación del editor fundador.">
+<meta property="og:url" content="https://technicalmarketing.org/es/about">
+<meta property="og:image" content="https://technicalmarketing.org/Images/og-about.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Acerca de &middot; Technical Marketing">
+<meta name="twitter:description" content="Acerca de Technical Marketing: una publicación trimestral independiente y una referencia de trabajo para la disciplina del marketing técnico. Misión editorial, audiencias a las que sirve, gobernanza de colaboradores y divulgación del editor fundador.">
+<meta name="twitter:image" content="https://technicalmarketing.org/Images/og-about.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+
+
+<style>
+
+:root {
+  --paper: #EFE6C9;
+  --paper-shade: #E5D9B4;
+  --paper-light: #F5EED8;
+  --ink: #1C1812;
+  --ink-60: #5C4E3C;
+  --ink-40: #8B7D69;
+  --border: rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red: #A7352A;
+  --red-soft: #B85146;
+  --yellow: #EACF82;
+
+  --f-display: 'Roboto Slab', 'Georgia', serif;
+  --f-serif: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --f-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 64ch;
+  --layout-max: 1100px;
+  --reading-max: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+*::selection { background: var(--yellow); color: var(--ink); }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--f-serif);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.62;
+  /* Subtle paper texture via dot grid */
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px);
+  background-size: 14px 14px;
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 200;
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.layout {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+@media (max-width: 600px) {
+  .layout { padding: 0 1.25rem; }
+  body { background-size: 12px 12px; }
+}
+
+/* ── Masthead band: top frontispiece on every page ───────────────────── */
+.masthead {
+  border-top: 2px solid var(--ink);
+  padding-top: 0.875rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.masthead__furniture {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.masthead__furniture-right {
+  text-align: right;
+  line-height: 1.5;
+}
+
+.masthead__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  margin: 0;
+}
+
+.masthead__title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 1.25rem 0 1rem;
+  position: relative;
+}
+
+.masthead__title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 5.5vw, 3.25rem);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+}
+a.masthead__title:hover { color: var(--red); }
+
+.masthead__subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0 0.875rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.masthead__subtitle {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.masthead__url {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+
+/* Primary navigation row sits below the subtitle, also separated by a rule */
+.masthead__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 1.875rem;
+  padding: 0.75rem 0 0.875rem;
+}
+
+.masthead__nav-link {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+
+@media (max-width: 600px) {
+  .masthead__furniture { font-size: 0.625rem; letter-spacing: 0.14em; }
+  .masthead__furniture-right { line-height: 1.4; }
+  .masthead__title-row { padding: 0.875rem 0 0.5rem; }
+  .masthead__subtitle-row { padding: 0.5rem 0 0.75rem; }
+  .masthead__subtitle { font-size: 0.9375rem; }
+  .masthead__url { font-size: 0.625rem; letter-spacing: 0.16em; }
+  .masthead__nav { gap: 0 1.25rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; }
+}
+
+/* ── Folio footer: closing furniture on every page ──────────────────── */
+.folio-band {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+
+.folio-band__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.folio-band__left {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.folio-band__center {
+  color: var(--ink);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.folio-band__right {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  text-align: right;
+}
+
+.folio-band__rule + .folio-band__rule { margin-top: 4px; }
+
+@media (max-width: 600px) {
+  .folio-band__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right" "center center";
+    gap: 0.5rem 1rem;
+  }
+  .folio-band__left { grid-area: left; }
+  .folio-band__right { grid-area: right; }
+  .folio-band__center { grid-area: center; margin-top: 0.25rem; }
+  }
+
+/* ── Article cover: field-manual title page ─────────────────────────── */
+.cover {
+  padding: 3rem 0 2.75rem;
+  border-bottom: 0.5px solid var(--border);
+  text-align: left;
+  position: relative;
+}
+
+.cover__article-kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.cover__article-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.cover__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  width: 180px;
+  margin: 0 0 2.5rem;
+}
+
+.cover__display-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.cover__display {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(3.25rem, 11vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+.cover__display::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.08em;
+  height: 0.32em;
+  background: var(--yellow);
+  z-index: -1;
+}
+
+.cover__secondary {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 22ch;
+}
+
+.cover__deck {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
+  font-weight: 400;
+  color: var(--ink-60);
+  line-height: 1.5;
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+
+.cover__byline {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.cover__byline strong { color: var(--ink); font-weight: 500; }
+.cover__byline strong a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.cover__byline strong a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.cover__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+.cover__ornament-rule {
+  flex: 0 0 80px;
+  height: 0.5px;
+  background: var(--border-strong);
+}
+.cover__ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .cover { padding: 2rem 0 2rem; }
+  .cover__rule { width: 120px; margin-bottom: 1.75rem; }
+  .cover__display-wrap { margin: 1.5rem 0 2rem; justify-content: flex-start; }
+  .cover__display::before { height: 0.3em; bottom: 0.1em; }
+  .cover__secondary { font-size: 1.5rem; line-height: 1.18; }
+  .cover__deck { font-size: 1.0625rem; }
+  .cover__byline { font-size: 0.625rem; letter-spacing: 0.14em; margin-bottom: 1.75rem; }
+  .cover__ornament-rule { flex-basis: 50px; }
+}
+
+/* ── Article body in field-manual register ──────────────────────────── */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem 0 0;
+}
+@media (min-width: 960px) {
+  .article-layout {
+    grid-template-columns: 1fr 220px;
+    gap: 4rem;
+  }
+}
+
+.article-main { max-width: var(--reading-max); }
+
+.article-aside { position: relative; }
+@media (min-width: 960px) {
+  .article-aside {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    height: fit-content;
+  }
+}
+
+/* TOC */
+.toc {
+  border-top: 0.5px solid var(--border-strong);
+  padding-top: 1.125rem;
+}
+.toc-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.toc-list a {
+  font-family: var(--f-sans);
+  font-size: 0.8125rem;
+  color: var(--ink-60);
+  font-weight: 400;
+  line-height: 1.45;
+  display: block;
+  transition: color 0.15s ease;
+}
+.toc-list a:hover { color: var(--red); }
+.toc-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-40);
+  display: inline-block;
+  width: 1.5rem;
+  font-weight: 500;
+}
+
+/* Mobile: promote TOC to top of article as compact 2-column grid */
+@media (max-width: 959px) {
+  .article-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .article-main { order: 2; }
+  .article-aside {
+    order: 1;
+    padding-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.25rem;
+  }
+  .article-aside .toc-list a { font-size: 0.8125rem; padding: 0.125rem 0; }
+  .article-aside .toc-num { width: 1.5rem; }
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3.25rem;
+  scroll-margin-top: 1.5rem;
+}
+.section-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.section h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 1.625rem;
+  max-width: 22ch;
+}
+.section h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.875rem;
+}
+.section p {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 1.125rem;
+  max-width: var(--measure);
+}
+.section p a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.section sup {
+  font-size: 0.72em;
+  vertical-align: super;
+  color: var(--red);
+  font-weight: 500;
+  margin-left: 0.05em;
+}
+
+/* Inline italic + emphasis */
+.section em, .section i { font-style: italic; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* Pull quotes : center diamond, italic */
+.pullquote {
+  margin: 2.75rem auto;
+  padding: 1.25rem 0;
+  text-align: center;
+  position: relative;
+}
+.pullquote::before,
+.pullquote::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 0.5px;
+  background: var(--border-strong);
+  margin: 0 auto;
+}
+.pullquote::before { margin-bottom: 1.125rem; }
+.pullquote::after { margin-top: 1.125rem; }
+.pullquote p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.1875rem, 2vw, 1.4375rem);
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 400;
+  max-width: 36ch;
+  margin: 0 auto !important;
+}
+.pullquote::before {
+  background: linear-gradient(to right, transparent, var(--border-strong) 30%, var(--border-strong) 70%, transparent);
+  position: relative;
+}
+/* Diamond at top of pullquote */
+.pullquote {
+  background-image:
+    radial-gradient(circle, var(--red) 3.5px, transparent 4px);
+  background-repeat: no-repeat;
+  background-position: center 19px;
+  background-size: 7px 7px;
+}
+
+/* Labeled lists (workstreams, qualifications, etc.) */
+.labeled-list { margin: 1.5rem 0 1.75rem; }
+.labeled-item {
+  margin-bottom: 1.5rem;
+  max-width: var(--measure);
+  padding-left: 0.875rem;
+  border-left: 2px solid var(--red);
+}
+.labeled-item:last-child { margin-bottom: 0; }
+.labeled-item__label {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.375rem;
+}
+.labeled-item__body {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+/* Diagrams */
+.diagram {
+  margin: 2.5rem 0 2.5rem;
+  padding: 1.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border);
+}
+.diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.diagram-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 56ch;
+  line-height: 1.5;
+}
+.diagram-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Diagrams: SVG content uses ink + red on mobile-friendly scroll */
+.diagram svg rect[fill="#fafaf7"] { fill: var(--paper-light); }
+.diagram svg text[fill="#1a1a1a"] { fill: var(--ink); }
+.diagram svg text[fill="#5a5a5a"] { fill: var(--ink-60); }
+.diagram svg text[fill="#8a8a85"] { fill: var(--ink-40); }
+.diagram svg line[stroke="#1a1a1a"], .diagram svg path[stroke="#1a1a1a"] { stroke: var(--ink); }
+.diagram svg circle[fill="#1a1a1a"] { fill: var(--ink); }
+
+/* Mobile: diagrams scroll horizontally rather than shrink illegibly */
+@media (max-width: 720px) {
+  .diagram {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  .diagram > div[role="img"] { min-width: 580px; }
+  .diagram svg { min-width: 580px; max-width: none; }
+  .diagram-caption {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 0.875rem;
+  }
+  .diagram::after {
+    content: "Swipe to view full diagram \2192";
+    display: block;
+    font-family: var(--f-sans);
+    font-size: 0.625rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-40);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Figures (photographic plates) */
+.figure { margin: 2.5rem 0 2.75rem; }
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0.5px solid var(--border-strong);
+  filter: sepia(0.08) saturate(0.95);
+}
+.figure-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 60ch;
+  line-height: 1.55;
+}
+.figure-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.figure-caption .source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--ink-40);
+}
+
+/* Scope note */
+.scope-note {
+  background: var(--paper-light);
+  border-left: 2px solid var(--red);
+  padding: 1.5rem 1.5rem 1.25rem;
+  margin: 0 0 2.5rem;
+}
+.scope-note h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+  margin-top: 0;
+}
+.scope-note p {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-60);
+  margin-bottom: 0.75rem;
+  max-width: none;
+}
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note strong { color: var(--ink); font-weight: 600; }
+
+/* Footnotes */
+.footnotes {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border-strong);
+}
+.footnotes-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.footnotes ol { list-style: none; counter-reset: footnotes; }
+.footnotes li {
+  counter-increment: footnotes;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-60);
+  margin-bottom: 0.625rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.footnotes li::before {
+  content: counter(footnotes);
+  position: absolute;
+  left: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--red);
+  font-style: normal;
+  top: 0.1em;
+}
+.footnotes a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.footnotes a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* Editors note */
+.editors-note {
+  margin-top: 4rem;
+  padding: 2.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+}
+.editors-note::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.editors-note-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+.editors-note p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 0.875rem;
+  max-width: 58ch;
+}
+.editors-note p:last-child { margin-bottom: 0; }
+.editors-note p a {
+  font-style: normal;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.editors-note p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.editors-sig {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  font-style: normal !important;
+  margin-top: 1.25rem;
+}
+
+/* Next article teaser */
+.next-article {
+  margin-top: 3.5rem;
+  padding: 2rem 0;
+  border-top: 0.5px solid var(--border-strong);
+}
+.next-article__label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+.next-article__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.4375rem;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.next-article__title .arrow {
+  color: var(--red);
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.next-article a:hover .next-article__title { color: var(--red); }
+.next-article a:hover .arrow { transform: translateX(4px); }
+.next-article__meta {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .section { margin-bottom: 2.5rem; }
+  .section h2 { font-size: 1.5rem; }
+  .editors-note { padding: 1.625rem 1.375rem; }
+  .scope-note { padding: 1.25rem 1.125rem 1rem; }
+  .next-article__title { font-size: 1.1875rem; }
+}
+
+/* ── Page header (about, suggest, simple pages) ────────────────────── */
+.page-head {
+  padding: 3.5rem 0 2.75rem;
+  text-align: left;
+  border-bottom: 0.5px solid var(--border);
+}
+.page-head__kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+.page-head__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  max-width: 22ch;
+  margin-bottom: 1.5rem;
+}
+.page-head__deck {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--ink-60);
+  max-width: 44ch;
+  line-height: 1.5;
+}
+.page-head__ornament {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.page-head__ornament::before {
+  content: "";
+  flex: 0 0 80px;
+  height: 0.5px;
+  background: var(--border-strong);
+}
+.page-head__diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+@media (max-width: 600px) {
+  .page-head { padding: 2.5rem 0 2rem; }
+  .page-head__ornament::before { flex-basis: 50px; }
+}
+
+/* ── Generic content block ─────────────────────────────────────────── */
+.content {
+  padding: 3rem 0 2.5rem;
+  max-width: var(--reading-max);
+  margin: 0 auto;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.content h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.375rem, 2.5vw, 1.75rem);
+  letter-spacing: -0.015em;
+  margin: 2.5rem 0 1rem;
+  color: var(--ink);
+}
+.content h2:first-of-type { margin-top: 0; }
+.content p {
+  font-family: var(--f-serif);
+  font-size: 1.125rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 1.125rem;
+}
+.content p:first-of-type::first-letter {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 4.25em;
+  float: left;
+  line-height: 0.82;
+  margin: 0.04em 0.6rem -0.05em 0;
+  padding: 0;
+  color: var(--red);
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+.content p:first-of-type::first-line {
+  font-family: var(--f-display);
+  font-weight: 500;
+  letter-spacing: 0.005em;
+}
+.content p:last-child { margin-bottom: 0; }
+.content a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.content a:hover { color: var(--red); border-bottom-color: var(--red); }
+.content ul {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 0 0 1.5rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+.content ul li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.content ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  transform: rotate(45deg);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-top: 2.5rem;
+  border-bottom: 1px solid var(--red);
+  padding-bottom: 2px;
+}
+.back-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+
+@media (max-width: 600px) {
+  .content { padding: 2rem 0 2rem; padding-left: 1.25rem; padding-right: 1.25rem; }
+  .content p { font-size: 1.0625rem; }
+  .content p:first-of-type::first-letter { font-size: 3.5em; margin-right: 0.45rem; }
+  .content ul { font-size: 1rem; }
+}
+
+/* ── Submission form ───────────────────────────────────────────────── */
+.form {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 0.5px solid var(--border-strong);
+  position: relative;
+}
+.form::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--red);
+}
+.form h2 { margin-top: 0; }
+.form__field { margin-bottom: 1.75rem; }
+.form__label {
+  display: block;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink-60);
+  margin-bottom: 0.5rem;
+}
+.form__input,
+.form__textarea {
+  width: 100%;
+  padding: 0.9375rem 1rem;
+  font-size: 1rem;
+  font-family: var(--f-serif);
+  border: 0.5px solid var(--border-strong);
+  background: var(--paper-light);
+  color: var(--ink);
+  border-radius: 0;
+  line-height: 1.5;
+  min-height: 48px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.form__input:focus,
+.form__textarea:focus {
+  border-color: var(--red);
+  background: var(--paper);
+}
+.form__textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: var(--ink-40);
+  font-style: italic;
+}
+.form__help {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.875rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+.form__actions {
+  margin-top: 2.25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+.form__submit {
+  padding: 1rem 1.875rem;
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: var(--ink);
+  color: var(--paper);
+  border: 0.5px solid var(--ink);
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+  min-height: 48px;
+}
+.form__submit:hover { background: var(--red); border-color: var(--red); }
+.form__disclaimer {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.875rem;
+  color: var(--ink-60);
+}
+
+@media (max-width: 600px) {
+  .form__actions { flex-direction: column; align-items: flex-start; gap: 1rem; }
+}
+
+
+/* ────────────────────────────────────────────────────────────────────
+   ELITE MOBILE PASS : proportional contrast, identity preservation,
+   compositional vertical rhythm
+   ──────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  /* Container breathing : slightly more inset for elegance */
+  .layout { padding: 0 1.5rem; }
+
+  /* ── Masthead holds identity at narrow widths ──────────────────── */
+  .masthead__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+  .masthead__title-row { padding: 0.75rem 0 0.5rem; }
+  .masthead__furniture { font-size: 0.5625rem; letter-spacing: 0.12em; }
+  .masthead__subtitle { font-size: 0.875rem; }
+  .masthead__url { font-size: 0.5625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.5625rem; letter-spacing: 0.12em; }
+
+  /* ── Display words restore mobile contrast ─────────────────────── */
+  .cover { padding: 2.25rem 0 2rem; }
+  .cover__display { font-size: 4rem; line-height: 0.95; }
+  .cover__display::before { height: 0.3em; bottom: 0.08em; }
+  .cover__display-wrap { margin: 1.75rem 0 2.25rem; justify-content: flex-start; }
+  .cover__article-kicker { font-size: 0.8125rem; letter-spacing: 0.2em; }
+  .cover__article-title { font-size: 1.4375rem; }
+  .cover__secondary { font-size: 1.625rem; line-height: 1.15; }
+  .cover__deck { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 1.75rem; }
+
+  /* ── Compositional vertical rhythm ─────────────────────────────── */
+  .section { margin-bottom: 3rem; scroll-margin-top: 1.25rem; }
+  .section + .section { margin-top: 0; }
+  .section h2 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    max-width: 100%;
+  }
+  .section h3 {
+    font-size: 1.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .section p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  /* Pull quotes get proportionally more air on mobile */
+  .pullquote {
+    margin: 2.75rem -0.5rem;
+    padding: 1.5rem 0;
+    background-position: center 22px;
+  }
+  .pullquote p {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    max-width: 28ch;
+  }
+  .pullquote::before,
+  .pullquote::after {
+    width: 56px;
+  }
+
+  /* Labeled lists tighter on narrow */
+  .labeled-item {
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .labeled-item__label { font-size: 1.0625rem; }
+  .labeled-item__body { font-size: 1rem; line-height: 1.55; }
+
+  /* Scope notes & editors notes */
+  .scope-note { padding: 1.25rem 1.125rem 1rem; margin-bottom: 2rem; }
+  .editors-note { padding: 1.5rem 1.25rem; }
+
+  /* Footnotes */
+  .footnotes { margin-top: 2.5rem; }
+  .footnotes li { font-size: 0.875rem; }
+
+  /* Article layout breathing on mobile */
+  .article-layout { padding: 1.75rem 0 0; gap: 1.25rem; }
+}
+
+/* ── Very narrow viewports (iPhone SE, older Androids) ─────────────── */
+@media (max-width: 400px) {
+  .layout { padding: 0 1.25rem; }
+  .masthead__title { font-size: 1.25rem; letter-spacing: 0.025em; }
+  .cover__display { font-size: 3.375rem; }
+  .cover__secondary { font-size: 1.4375rem; }
+  .section h2 { font-size: 1.4375rem; }
+  .pullquote p { font-size: 1.125rem; max-width: 24ch; }
+  .pullquote { margin: 2.25rem -0.25rem; }
+}
+
+
+/* ── Colophon : replaces the generic site-footer ────────────────── */
+.colophon {
+  margin-top: 0;
+  padding: 3rem 0 1.25rem;
+  background: transparent;
+  border-top: 0.5px solid var(--border-strong);
+}
+.colophon__inner {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+.colophon__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+.colophon__ornament::before,
+.colophon__ornament::after {
+  content: "";
+  height: 0.5px;
+  background: var(--border-strong);
+  flex: 0 0 60px;
+}
+.colophon__diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.colophon__grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem 2rem;
+  max-width: 820px;
+  margin-bottom: 2.25rem;
+}
+.colophon__label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.22rem;
+}
+.colophon__value {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.colophon__value a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.colophon__value a:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+.colophon__bottom {
+  border-top: 0.5px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.colophon__meta {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+.colophon__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.colophon__nav-link {
+  color: var(--ink-60);
+  transition: color 0.15s ease;
+}
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); }
+
+@media (max-width: 720px) {
+  .colophon { padding: 2.25rem 0 1.25rem; }
+  .colophon__inner { padding: 0 1.5rem; }
+  .colophon__ornament::before,
+  .colophon__ornament::after { flex-basis: 40px; }
+  .colophon__grid {
+    grid-template-columns: 1fr;
+    gap: 0.25rem 0;
+    margin-bottom: 1.75rem;
+  }
+  .colophon__label { padding-top: 0.25rem; }
+  .colophon__value { margin-bottom: 1.25rem; font-size: 0.9375rem; }
+  .colophon__value:last-of-type { margin-bottom: 0; }
+  .colophon__bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+/* ── About plate: mounted intaglio print of the commissioned engraving ── */
+.plate {
+  max-width: var(--layout-max);
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.plate__mount {
+  position: relative;
+  padding: 14px;
+  background: var(--paper-shade);
+  box-shadow:
+    0 1px 3px rgba(28, 24, 18, 0.08),
+    0 30px 64px -18px rgba(28, 24, 18, 0.34);
+  transition:
+    opacity 600ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    transform 600ms cubic-bezier(0.2, 0.7, 0.2, 1),
+    box-shadow 600ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+/* Plate-mark: hairline ring set 6px in from the mount edge, evoking the
+   embossed impression a real letterpress plate leaves in the stock. */
+.plate__mount::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border: 1px solid var(--border-strong);
+  pointer-events: none;
+}
+.plate__mount.plate--pre {
+  opacity: 0;
+  transform: translateY(16px);
+  box-shadow:
+    0 1px 2px rgba(28, 24, 18, 0.05),
+    0 10px 20px -10px rgba(28, 24, 18, 0.18);
+}
+.plate__mount.plate--in {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow:
+    0 1px 3px rgba(28, 24, 18, 0.08),
+    0 30px 64px -18px rgba(28, 24, 18, 0.34);
+}
+.plate__frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1456 / 816;
+}
+.plate__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  outline: 1px solid rgba(28, 24, 18, 0.22);
+  outline-offset: -1px;
+  will-change: transform;
+}
+/* Raking-light sheen: follows the cursor to suggest a printed surface
+   catching light. Pointer-driven only; see script for touch/reduced-motion gating. */
+.plate__frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--sheen-x, 50%) var(--sheen-y, 50%), rgba(245, 238, 216, 0.06), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.plate__frame.plate__frame--sheen::after { opacity: 1; }
+
+/* Folio tab: a single accent, top-left of the mount */
+.plate__folio {
+  position: absolute;
+  top: -10px;
+  left: 18px;
+  z-index: 2;
+  background: var(--red);
+  color: var(--paper);
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 0 2px 6px rgba(28, 24, 18, 0.25);
+}
+
+/* Editorial caption bar, justified between */
+.plate__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+}
+.plate__caption-left {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  line-height: 1.4;
+}
+.plate__caption-right {
+  font-family: var(--f-sans);
+  font-size: 0.5625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .plate__mount,
+  .plate__mount.plate--pre,
+  .plate__mount.plate--in,
+  .plate__image {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    box-shadow:
+      0 1px 3px rgba(28, 24, 18, 0.08),
+      0 30px 64px -18px rgba(28, 24, 18, 0.34) !important;
+  }
+  .plate__frame::after { display: none !important; }
+}
+
+@media (max-width: 900px) {
+  .plate {
+    max-width: 560px;
+    padding: 0 1.25rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .plate { margin-top: 1.5rem; }
+  .plate__mount { padding: 10px; }
+  .plate__mount::before { inset: 6px; }
+  .plate__folio { top: -9px; left: 14px; font-size: 0.625rem; padding: 0.28rem 0.6rem; }
+  .plate__caption { margin-top: 0.875rem; flex-direction: column; align-items: flex-start; gap: 0.375rem; }
+}
+
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { gap: 0.5rem 1.25rem; }
+  .masthead__nav-divider { display: none; }
+}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"Una publicación trimestral independiente y una referencia de trabajo para la disciplina del marketing técnico: la práctica de demostrar afirmaciones técnicamente complejas a compradores técnicamente capaces, con un resultado comercial en juego.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"]},{"@type":"AboutPage","@id":"https://technicalmarketing.org/about#aboutpage","url":"https://technicalmarketing.org/about","name":"Acerca de Technical Marketing","description":"Acerca de Technical Marketing: una publicación trimestral independiente y una referencia de trabajo para la disciplina del marketing técnico. Misión editorial, audiencias a las que sirve, gobernanza de colaboradores y divulgación del editor fundador.","inLanguage":"es-ES","datePublished":"2026-05-20","keywords":["technical marketing","technical marketing manager","TMM","demo archetype","editorial judgment","technical marketing discipline","product marketing vs technical marketing","AI technical marketing"],"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"mainEntity":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"author":{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau"},"about":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},{"@type":"DefinedTerm","name":"Technical Marketing","url":"https://technicalmarketing.org/what-is-technical-marketing"}],"publishingPrinciples":"https://technicalmarketing.org/about","speakable":{"@type":"SpeakableSpecification","cssSelector":["#about-mission","#about-charter","#about-audiences"]},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Acerca de","item":"https://technicalmarketing.org/about"}]}}]}</script>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>Primera Edición &middot; ISSN pendiente</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Número I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/es/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">Un manual de campo para la disciplina. <em>(“A field manual for the discipline.”)</em></span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/reference" class="masthead__nav-link">Reference</a>
+    <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/tools" class="masthead__nav-link">Tools</a>
+    <a href="/archive" class="masthead__nav-link">Archive</a>
+    <a href="/es/about" class="masthead__nav-link" aria-current="page">Acerca de</a>
+  </nav>
+  <hr class="masthead__rule">
+</header>
+
+<figure class="plate" id="about-plate">
+  <div class="plate__mount plate--pre">
+    <span class="plate__folio" aria-hidden="true">Acerca de</span>
+    <div class="plate__frame">
+      <img class="plate__image" src="/Images/about-plate-lighthouse.png" alt="Un estudio arquitectónico grabado de un faro que se eleva desde un entramado de trazos técnicos — la disciplina dibujada como una estructura." width="1456" height="816" loading="eager" fetchpriority="high" decoding="async">
+    </div>
+  </div>
+  <figcaption class="plate__caption">
+    <span class="plate__caption-left">La disciplina, dibujada como una estructura.</span>
+    <span class="plate__caption-right">Lámina &middot; Grabado</span>
+  </figcaption>
+</figure>
+<noscript><style>.plate__mount.plate--pre{opacity:1!important;transform:none!important;box-shadow:0 1px 3px rgba(28,24,18,0.08),0 30px 64px -18px rgba(28,24,18,0.34)!important;}</style></noscript>
+
+<main id="main">
+
+<section class="page-head layout">
+  <div class="page-head__kicker">Acerca de</div>
+  <h1 class="page-head__title">Para las personas que hacen este trabajo.</h1>
+  <p class="page-head__deck">Una publicación trimestral independiente para los profesionales que construyen, definen y perfeccionan el marketing técnico a medida que la disciplina toma su nombre.</p>
+  <div class="page-head__ornament" aria-hidden="true">
+    <span class="page-head__diamond"></span>
+  </div>
+</section>
+
+<section class="content">
+
+  <h2 id="about-mission">Misión</h2>
+
+  <p><em>Technical Marketing</em> es el manual de campo de una disciplina practicada durante décadas antes de tener un nombre. La publicación existe para las personas que hacen el trabajo: los profesionales de marketing técnico, los sales engineers y los especialistas de producto que construyen la capa de evidencia que sostiene una venta compleja. Publicación trimestral. Edición independiente.</p>
+
+  <p>El proyecto consiste en dar a un campo fragmentado una referencia de trabajo y un registro que pueda poseer colectivamente. <a href="/es/what-is-technical-marketing">La página de referencia fundacional</a> es el ancla editorial: qué es la disciplina, dónde se sitúa, cómo se distingue de roles adyacentes y por qué está posicionada estructuralmente para prosperar en la transición hacia la IA. La publicación también produce artículos originales de formato extenso, comenzando con <a href="/es/the-technical-marketer">The Technical Marketer</a>, Artículo I del Volumen 01. El índice trimestral cura el pensamiento actual de todo el campo, con comentario editorial que señala qué acierta cada pieza y hacia dónde debe avanzar la conversación.</p>
+
+  <p>El trabajo es deliberadamente lento. Definir una disciplina que históricamente se ha resistido a ser definida requiere múltiples volúmenes, múltiples colaboradores y múltiples revisiones de las páginas fundacionales. Los espacios vacíos en esta publicación son intencionales. Marcan las conversaciones que el campo todavía necesita tener.</p>
+
+  <h2 id="about-charter">Carta editorial</h2>
+
+  <p>technicalmarketing.org opera bajo una carta editorial permanente. Las entradas indexadas se revisan según los criterios de la carta: fuentes primarias, relevancia para el profesional y ausencia de promoción de proveedores. La carta se revisa en cada volumen. ThinkRoot LLC provee la infraestructura de publicación y el apoyo administrativo.</p>
+
+  <p>La publicación es curada, no exhaustiva. Las piezas se incluyen según la solidez de su argumento y la especificidad de su perspectiva, no según el tamaño de la marca o la popularidad del autor. Notas editoriales acompañan cada entrada para señalar qué acierta cada pieza, dónde se queda corta y cómo encaja en la conversación más amplia. La publicación representará más voces con el tiempo, incluidas algunas con las que el editor está en desacuerdo, cuando esas voces afinen la definición de trabajo de la disciplina.</p>
+
+  <h2 id="about-audiences">A quién sirve esta publicación</h2>
+
+  <p>Cinco audiencias, nombradas directamente. Profesionales en ejercicio que han hecho este trabajo a gran escala y quieren que la disciplina que han construido sea reconocible para las personas con quienes trabajan. Profesionales que ingresan al rol hoy, incluida la próxima generación que entra a un campo a punto de ser transformado por la IA, que merecen una definición de trabajo sobre la cual construir en lugar de inventarla en solitario. Profesionales senior y líderes de disciplinas adyacentes cuyo juicio, ganado con esfuerzo, no ha sido recopilado en ningún lugar visible todavía. Profesionales de AI GTM que están construyendo la capa de prueba técnica para modelos base, plataformas de agentes e infraestructura de IA, y que están descubriendo que las herramientas de la etapa de evaluación de la disciplina aplican directamente a su trabajo incluso cuando la categoría de producto es nueva. Profesionales de marketing técnico de hardware y semiconductores, para quienes el benchmark artifact y la reference architecture han sido práctica estándar durante décadas, y cuya historia es el punto de origen del que creció la versión de software empresarial de este rol.</p>
+
+  <h2 id="about-contributions">Contribuciones</h2>
+
+  <p>La publicación está construyendo activamente su cartera de colaboradores. Los profesionales senior que trabajan en marketing técnico o disciplinas adyacentes y desean contribuir con una pieza para un volumen futuro deben revisar la <a href="/es/suggest">página de propuestas</a> para conocer las prioridades editoriales vigentes. Se aceptan piezas originales, recomendaciones de trabajo pasado por alto y desacuerdos respetuosos con cualquier cosa publicada aquí.</p>
+
+  <h2 id="about-editor">Editor fundador</h2>
+
+  <p>Chad Corriveau es el editor fundador. Es el fundador de <a href="https://thinkroot.io" rel="external noopener">ThinkRoot</a>, una consultora independiente de marketing técnico. El trabajo de ThinkRoot, incluidos el Demo Coherence Index y las Root Cause Field Notes, aparece en el índice junto a piezas curadas de otros profesionales y se somete a los mismos criterios de la carta que cualquier otra entrada. Esta relación se divulga aquí para que las decisiones editoriales puedan evaluarse en sus propios términos.</p>
+
+  <h2 id="about-schedule">Calendario de publicación</h2>
+
+  <p>Los nuevos volúmenes se publican trimestralmente. El Volumen 01 se publicó en la primavera de 2026. El Volumen 02 se publica en el tercer trimestre de 2026. La página de referencia fundacional se actualiza continuamente a medida que se afina la definición de trabajo de la disciplina.</p>
+
+  <a href="/es/" class="back-link">&#8592; Volver al índice</a>
+</section>
+
+</main>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Folio A</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true">
+      <span class="colophon__diamond"></span>
+    </div>
+
+    <div class="colophon__grid">
+      <span class="colophon__label">Editorial</span>
+      <span class="colophon__value">A field manual for the discipline. Edited and curated by Chad Corriveau.</span>
+
+      <span class="colophon__label">Type</span>
+      <span class="colophon__value">Set in Fraunces, Roboto Slab, and Inter. Composed in wheat and library red.</span>
+
+      <span class="colophon__label">Charter</span>
+      <span class="colophon__value">Indexed entries are reviewed against the editorial charter criteria: primary sourcing, practitioner relevance, and absence of vendor promotion. ThinkRoot LLC provides publishing infrastructure and administrative support.</span>
+
+      <span class="colophon__label">Publisher</span>
+      <span class="colophon__value">Published by ThinkRoot LLC &middot; Escondido, CA</span>
+
+      <span class="colophon__label">Contact</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/about" class="colophon__nav-link">About</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/contributors" class="colophon__nav-link">Contributors</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/glossary" class="colophon__nav-link">Glossary</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/landscape" class="colophon__nav-link">Landscape</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/suggest" class="colophon__nav-link">Suggest</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var mount = document.querySelector('.plate__mount');
+  if (!mount) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          mount.classList.remove('plate--pre');
+          mount.classList.add('plate--in');
+          io.unobserve(mount);
+        }
+      });
+    }, { threshold: 0.2 });
+    io.observe(mount);
+  } else {
+    mount.classList.remove('plate--pre');
+    mount.classList.add('plate--in');
+  }
+
+  var img = mount.querySelector('.plate__image');
+  var ticking = false;
+  function updateParallax() {
+    ticking = false;
+    var rect = mount.getBoundingClientRect();
+    var vh = window.innerHeight || document.documentElement.clientHeight;
+    var progress = (vh - rect.top) / (vh + rect.height);
+    progress = Math.max(0, Math.min(1, progress));
+    var offset = (progress - 0.5) * 8;
+    img.style.transform = 'translateY(' + offset.toFixed(2) + 'px)';
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(updateParallax); }
+  }, { passive: true });
+  updateParallax();
+
+  if (!window.matchMedia('(pointer: coarse)').matches) {
+    var frame = mount.querySelector('.plate__frame');
+    frame.addEventListener('pointermove', function (e) {
+      var r = frame.getBoundingClientRect();
+      frame.style.setProperty('--sheen-x', ((e.clientX - r.left) / r.width) * 100 + '%');
+      frame.style.setProperty('--sheen-y', ((e.clientY - r.top) / r.height) * 100 + '%');
+      frame.classList.add('plate__frame--sheen');
+    });
+    frame.addEventListener('pointerleave', function () {
+      frame.classList.remove('plate__frame--sheen');
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

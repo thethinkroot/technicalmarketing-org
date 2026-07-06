@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="ja" data-allow-dark>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>テクニカルマーケティング用語集 · 用語と定義 · Technical Marketing</title>
+<meta name="description" content="テクニカルマーケティングという分野のための実務用語集。demo、proof of concept、technical win、reference environment、demo coherenceなどの定義を収録。">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Chad Corriveau">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="テクニカルマーケティング用語集 · 用語と定義">
+<meta property="og:description" content="テクニカルマーケティングという分野のための実務用語集。demo、proof of concept、technical win、reference environment、demo coherenceなどの定義を収録。">
+<meta property="og:url" content="https://technicalmarketing.org/ja/glossary">
+<meta property="og:image" content="https://technicalmarketing.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Technical Marketing — Glossary of Terms">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="テクニカルマーケティング用語集 · 用語と定義">
+<meta name="twitter:description" content="テクニカルマーケティングという分野のための実務用語集。demo、proof of concept、technical win、reference environment、demo coherenceなどの定義を収録。">
+<meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+<link rel="canonical" href="https://technicalmarketing.org/ja/glossary">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/glossary" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/glossary" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/glossary" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/glossary" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/glossary" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/glossary" />
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"テクニカルマーケティングという分野――技術的に複雑な主張を、技術に精通した購買者に対して、商業的な成果を懸けて証明する実践――のための、独立系季刊誌であり実務リファレンス。","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"]},{"@type":"DefinedTermSet","@id":"https://technicalmarketing.org/glossary#termset","name":"テクニカルマーケティング用語集","description":"エンタープライズソフトウェア、AI、インフラストラクチャー、ハードウェアの各領域で実践されているテクニカルマーケティングという分野のための実務用語集。定義は、企業の種類や製品カテゴリーを横断した実務者の使用実態を反映している。","url":"https://technicalmarketing.org/glossary","publisher":{"@id":"https://technicalmarketing.org/#organization"}},{"@type":"WebPage","@id":"https://technicalmarketing.org/glossary#page","url":"https://technicalmarketing.org/glossary","name":"テクニカルマーケティング用語集","isPartOf":{"@id":"https://technicalmarketing.org/#organization"},"author":{"@id":"https://technicalmarketing.org/#person-chad-corriveau"},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#glossary-lede","#scope-note"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org/"},{"@type":"ListItem","position":2,"name":"用語集","item":"https://technicalmarketing.org/glossary"}]},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#agentic-ai","name":"Agentic AI","description":"単一のプロンプトに応答して終わるのではなく、ツール、API、外部データソースを用いて複数ステップのタスクを自律的に計画・実行するAIシステム。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#agentic-ai"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#analyst-briefing","name":"アナリストブリーフィング","description":"Gartner、Forrester、IDC、またはそれに準ずる調査会社のテクノロジーリサーチアナリストに対して行う体系立てられたプレゼンテーションであり、その企業の製品をアナリストの継続的なリサーチおよび評価フレームワークの中に正確に位置づけることを目的とする。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#analyst-briefing"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#ar-cycle","name":"AR cycle","description":"企業がGartner、Forrester、IDCなどのテクノロジーリサーチアナリストと関わる、構造化された反復プロセス。製品の方向性についてブリーフィングを行い、リサーチに関する問い合わせに応答し、評価フレームワークに参加し、公表されたレポートにおけるポジションの変化を追跡する一連の流れを指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#ar-cycle"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#architecture-overview","name":"アーキテクチャ概要","description":"ソフトウェア製品がどのように構築されているか、各コンポーネントがどう関連し合っているか、そして購買者がすでに運用しているシステムとどのように接続するかを説明する、構造化された図とそれに付随する解説。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#architecture-overview"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#battlecard","name":"Battlecard","description":"営業やプリセールスのチームメンバーが、実際の商談の中で特定の競合に対応できるようにするための、簡潔で構造化されたリファレンス資料。ポジショニングの取り方、よくある反論への対応方法、強調すべき技術的な差別化ポイントをまとめたもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#battlecard"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#calibration-band","name":"Calibration band","description":"複雑なエンタープライズセールスにおいて、マーケティングコンテンツが最も効果を発揮する技術的深度の範囲。技術に精通した購買者が評価できるだけの深さを持ちながら、その内容がイネーブルメント教材になってしまうほど深くはなく、説得の手段として機能する状態を指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#calibration-band"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#champion","name":"チャンピオン","description":"購買組織内で、ベンダーの製品を社内で積極的に擁護し、ベンダーが同席していない場面でも評価プロセスを前に進め、購買の推奨に自らの信用を賭ける意思のある個人。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#champion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#competitive-engagement","name":"競合エンゲージメント","description":"購買者が同時に1社以上の名指しされた競合を評価しているアクティブな商談状況であり、ベンダーの営業活動はその比較を直接的に踏まえて進める必要がある状態を指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#competitive-engagement"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo","name":"Demo","description":"商談や評価の特定の段階において、特定のオーディエンスに特定の確信を持たせるように設計された、ソフトウェアが実際に動作する様子を示すライブまたは録画形式の構造化されたプレゼンテーション。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo-coherence","name":"Demo coherence","description":"デモを構成するあらゆる要素、すなわちデータ、ワークフロー、ペルソナ、ナラティブが、機能の網羅性を示すのではなく、単一の一貫した主張に奉仕している度合いを指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo-coherence"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo-environment","name":"Demo environment","description":"本番環境、ステージング環境、開発環境とは区別される、営業活動および評価活動を支援するために特別に構築されたソフトウェア製品の構成済みインスタンス。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo-environment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#displacement","name":"ディスプレイスメント","description":"ベンダーが、現在名指しされた競合の製品を使用している購買者から案件を獲得する営業活動であり、自社製品を肯定的に訴求するだけでなく、乗り換えコスト、既存の関係性、そして先行者優位を覆す必要がある状態を指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#displacement"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#editorial-judgment","name":"編集判断","description":"商業的なプレッシャーの下で、どの技術的な根拠を、どのオーディエンスに、どの順序で、どのようなフレーミングで、どの深さで提示するかを決定する実務者の能力であり、その結果としてベンダー側の「すべて見せたい」という衝動を満たすのではなく、特定の購買者の評価を前進させるもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#editorial-judgment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#evaluation-conversion","name":"評価コンバージョン","description":"正式な技術評価の段階に入った案件のうち、テクニカルウィンに至った割合であり、テクニカルマーケティングの効果を測る主要な指標として用いられる。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#evaluation-conversion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#field-activation","name":"フィールドアクティベーション","description":"現行の検証済みデモ、現行の競合バトルカード、現行の技術的ポジショニングを、実際の顧客との会話の中で活用している営業・プリセールスのフィールドチームの割合。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#field-activation"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#generative-ai","name":"Generative AI","description":"大規模な学習データセットから統計的パターンを学習し、プロンプトの意図に合致する出力を生成することで、テキスト、画像、コード、音声といった新しいコンテンツを生み出すAIシステム。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#generative-ai"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#gtm","name":"GTM","description":"企業が自社製品をターゲット市場に届けるための戦略、チーム構成、運用モデル。購買者をどう定義し、どうリーチするか、製品の価格設定とパッケージングをどう行うか、どの営業活動を展開するかを含む。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#gtm"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#integration-guide","name":"インテグレーションガイド","description":"ベンダーの製品を購買者の既存システムに接続する方法を説明する構造化された技術文書であり、購入評価の過程で技術評価者が統合の実現可能性を判断できるだけの深さで書かれたもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#integration-guide"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#magic-quadrant","name":"Magic Quadrant","description":"Gartnerが提供する主要な市場評価フレームワークであり、定義されたテクノロジーカテゴリー内のベンダーを、実行能力（Ability to Execute）とビジョンの完全性（Completeness of Vision）の2軸からなるグリッド上に位置づけるもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#magic-quadrant"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#pipeline","name":"パイプライン","description":"ある期間内に企業が追っているアクティブな営業案件の総体であり、通常は営業プロセスの各段階における金額ベースで測定される。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#pipeline"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#playbook","name":"プレイブック","description":"特定の種類の営業活動や競合状況をどう実行するかを文書化した、構造化された再現可能なガイドであり、異なるフィールドチームのメンバーが一貫して同じプレイを実行できるようにするもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#playbook"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#plg-company","name":"PLG company","description":"トップダウン型のエンタープライズセールスではなく、エンドユーザーによる製品採用によって主に成長を牽引する、エンタープライズソフトウェア企業。製品そのものが顧客獲得・アクティベーション・拡大の主要な仕組みとなる。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#plg-company"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-of-concept","name":"Proof of concept","description":"ベンダーが顧客固有の環境、データ、ユースケースに対して自社製品を構成し検証する、構造化された技術評価であり、製品が謳い通りに機能するという証拠を生み出すことを目的とする。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-of-concept"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-of-value","name":"Proof of value","description":"製品が技術的に機能するかどうかではなく、購買者がコミットしているビジネス上の成果に対して測定可能な改善をもたらすかどうかを、購買者自身が検証する構造化された評価。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-of-value"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-point","name":"プルーフポイント","description":"技術に精通した購買者からの追及に耐えうる精度で製品の主張を裏づける、具体的で検証可能な証拠の一片。ベンチマーク結果、顧客の成果、文書化された技術的能力、第三者による検証などを指す。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-point"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#reference-environment","name":"Reference environment","description":"デモンストレーション、技術コンテンツ、評価資料が生み出される際の典拠となる、ソフトウェア製品の正典的な構成。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#reference-environment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#regis-mckenna","name":"Regis McKenna","description":"1967年にナショナル セミコンダクターに参画したシリコンバレーのマーケティング戦略家であり、半導体およびコンピューティング業界においてテクニカルマーケティングを実践し理論化した最も早期の人物の一人となった。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#regis-mckenna"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#sales-engineer","name":"Sales engineer / Solutions consultant","description":"実際の商談の中で技術的な会話をリードする、技術的な訓練を受けたプリセールス担当者。ライブデモの実施、製品に関する質問への回答、proof of conceptのスコーピング、商業的な営業活動を支える技術的信頼性の提供を担う。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#sales-engineer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#teardown","name":"ティアダウン","description":"競合の製品、アーキテクチャ、価格設定、ポジショニング、公開されている技術的主張について、テクニカルマーケティングが競合戦略、バトルカード、ディスプレイスメントのプレイブックに活かすために作成する、構造化された文書化済み分析。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#teardown"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-champion","name":"テクニカルチャンピオン","description":"購買組織内で技術的に信頼される個人であり、ベンダーの製品を評価し、その能力について結論に達し、評価が購買決定に向かって進む過程でその結論を技術的な同僚やビジネスリーダーシップに対して擁護する意思のある人物。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-champion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-marketer","name":"テクニカルマーケター","description":"複雑な商談を支える技術的根拠とナラティブの層を担う実務者。デモ、リファレンス環境、競合資料、アナリスト向けコンテンツ、そして製品の能力と購買者の確信との間の距離を縮める技術コンテンツを含む。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-marketer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-narrative","name":"テクニカルナラティブ","description":"製品が何をするか、どのように行うか、なぜそれが重要か、他の選択肢とどう違うかについての権威ある一貫した説明であり、フィールド向けのあらゆる技術コンテンツが導き出される拠り所として、テクニカルマーケティングが維持するもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-narrative"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-win","name":"テクニカルウィン","description":"購買者側の技術評価者が、ベンダーが主張した通りに製品が機能する能力を備えていると結論づけ、その結論が文書化されエコノミックバイヤーに伝えられた、セールスサイクル上の時点。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-win"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#time-to-decision","name":"意思決定までの時間","description":"最初の実質的な技術評価活動から、購買者が購入するか否かを決定するまでの経過時間であり、ベンダーのテクニカルマーケティングコンテンツが購買者を確信ある結論へと導く効率性を測る指標として用いられる。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#time-to-decision"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#trust-layer","name":"Trust layer","description":"商談における技術的深度の帯域であり、技術に精通した購買者が、本格的なエンジニアリングレベルの評価を必要とせずに製品の主張を信頼できるだけの根拠を与えるもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#trust-layer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#buying-committee","name":"購買委員会","description":"購買決定に集合的に影響を与える、あるいは決定を下す、見込み顧客組織内のステークホルダーの集団。技術評価者、ビジネススポンサー、エコノミックバイヤー、調達、法務、セキュリティの各機能にまたがり、それぞれが異なる基準と最終的な結果に対する異なる権限のレベルを持つ。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#buying-committee"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#discovery-call","name":"ディスカバリーコール","description":"ベンダーの営業またはプリセールスチームと見込み顧客との間で行われる構造化された会話であり、セールスサイクルの早い段階で、購買者の現在の環境、解決しようとしている課題、ソリューションを評価する基準、そして従うことになる意思決定プロセスを理解するために実施される。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#discovery-call"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#economic-buyer","name":"エコノミックバイヤー","description":"購買組織内で最終的な予算権限を持つ個人であり、それまでに形成された技術的またはビジネス上のコンセンサスにかかわらず、購入を確約するにはこの人物の承認が必要となる。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#economic-buyer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#presales","name":"プリセールス","description":"最初の見込み顧客との接点から契約締結に至るまで複雑な商談を支える組織機能および一連の活動であり、技術的なディスカバリー、ソリューション設計、製品デモンストレーション、proof of conceptの調整、RFP対応、セキュリティ質問票の管理を含む。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#presales"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#rfp","name":"RFP","description":"購買組織が発行する正式な調達文書であり、製品機能、技術アーキテクチャ、セキュリティ体制、価格、導入アプローチ、企業の安定性を網羅する構造化された質問群にベンダーが回答することを求めるもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#rfp"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#security-questionnaire","name":"セキュリティ質問票","description":"購買組織のセキュリティ、法務、または調達チームが発行する構造化された文書であり、ベンダーに対してセキュリティ管理体制、データ取り扱い方針、コンプライアンス認証、事業継続体制、インシデント対応手順の開示と文書化を求めるもの。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#security-questionnaire"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#briefing-prep","name":"Briefing prep","description":"アナリストブリーフィングの前にテクニカルマーケターが行う構造化された準備作業であり、実施するデモ、先に提示する技術的なproof point、あらかじめ名指ししておくべき制約事項、想定される質問とその回答の準備を含む。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#briefing-prep"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#rfi-response","name":"RFI response","description":"正式な評価が始まる前に提出される、購買組織のrequest for informationに対するベンダーの構造化された回答であり、ベンダーを正式なRFPプロセスに招くべきかどうかを購買者が判断する材料として使われる。","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#rfi-response"}]}</script>
+
+<style>
+:root{--paper:#EFE6C9;--paper-shade:#E5D9B4;--paper-light:#F5EED8;--ink:#1C1812;--ink-60:#5C4E3C;--ink-40:#8B7D69;--border:rgba(28,24,18,0.14);--border-strong:rgba(28,24,18,0.32);--red:#A7352A;--yellow:#EACF82;--f-display:'Roboto Slab','Georgia',serif;--f-serif:'Fraunces','Georgia','Times New Roman',serif;--f-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--measure:64ch;--layout-max:1100px;--reading-max:720px}
+*{box-sizing:border-box;margin:0;padding:0}
+*::selection{background:var(--yellow);color:var(--ink)}
+html{font-size:16px;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{font-family:var(--f-serif);background:var(--paper);color:var(--ink);line-height:1.62;background-image:radial-gradient(circle at 50% 50%,rgba(28,24,18,0.045) 1px,transparent 1.2px);background-size:14px 14px;background-attachment:fixed}
+a{color:inherit;text-decoration:none;transition:color .15s ease}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:1px}
+img{max-width:100%;height:auto;display:block}
+.skip-link{position:absolute;left:-9999px;top:0;padding:.5rem 1rem;background:var(--ink);color:var(--paper);z-index:200;font-family:var(--f-sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
+.skip-link:focus{left:1rem;top:1rem}
+.layout{max-width:var(--layout-max);margin:0 auto;padding:0 1.75rem}
+.masthead{border-top:2px solid var(--ink);padding-top:.875rem;margin-bottom:0}
+.masthead__furniture{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;padding-bottom:.75rem}
+.masthead__furniture-right{text-align:right;line-height:1.5}
+.masthead__rule{border:none;border-top:.5px solid var(--border-strong);margin:0}
+.masthead__title-row{display:flex;align-items:baseline;justify-content:center;padding:1.25rem 0 1rem}
+.masthead__title{font-family:var(--f-display);font-weight:700;font-size:clamp(1.75rem,5.5vw,3.25rem);letter-spacing:.04em;color:var(--ink);line-height:1;text-decoration:none;display:inline-block}
+a.masthead__title:hover{color:var(--red)}
+.masthead__subtitle-row{display:flex;justify-content:space-between;align-items:center;padding:.625rem 0 .875rem;gap:1rem;flex-wrap:wrap}
+.masthead__subtitle{font-family:var(--f-serif);font-style:italic;font-size:1rem;color:var(--ink);font-weight:400}
+.masthead__url{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:500}
+.masthead__nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:0 1.875rem;padding:.75rem 0 .875rem}
+.masthead__nav-link{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-60);font-weight:500;padding:.375rem 0;border-bottom:1px solid transparent;transition:color .15s ease,border-color .15s ease}
+.masthead__nav-link:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.masthead__nav-link[aria-current="page"]{color:var(--red);border-bottom-color:var(--red)}
+.masthead__nav{row-gap:.4rem}
+.masthead__nav-group{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:0 1.375rem}
+.masthead__nav-kicker{font-family:var(--f-display);font-weight:700;font-size:.5625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-right:.125rem}
+.masthead__nav-divider{color:var(--border-strong);font-size:.4375rem;line-height:1}
+.cover{padding:3rem 0 2.75rem;border-bottom:.5px solid var(--border);text-align:left;position:relative}
+.cover__article-kicker{font-family:var(--f-display);font-weight:700;font-size:.875rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem}
+.cover__article-title{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3.5vw,2rem);font-weight:400;letter-spacing:-.005em;color:var(--ink);line-height:1.15;margin-bottom:1rem}
+.cover__rule{border:none;border-top:.5px solid var(--border-strong);width:180px;margin:0 0 2.5rem}
+.cover__display-wrap{position:relative;display:flex;justify-content:center;margin:2rem 0 2.5rem}
+.cover__display{font-family:var(--f-display);font-weight:700;font-size:clamp(3.25rem,11vw,7rem);line-height:1;letter-spacing:-.02em;color:var(--ink);position:relative;display:inline-block;padding:0 .25em}
+.cover__display::before{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:var(--yellow);z-index:-1}
+.cover__secondary{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2rem);font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:1.25rem;max-width:22ch}
+.cover__deck{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.0625rem,1.5vw,1.1875rem);font-weight:400;color:var(--ink-60);line-height:1.5;max-width:44ch;margin-bottom:2rem}
+.cover__byline{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;margin-bottom:2.5rem}
+.cover__byline strong{color:var(--ink);font-weight:500}
+.cover__byline strong a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+.cover__byline strong a:hover{color:var(--red);border-bottom-color:var(--red)}
+.cover__ornament{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1.5rem 0 0}
+.cover__ornament-rule{flex:0 0 80px;height:.5px;background:var(--border-strong)}
+.cover__ornament-diamond{width:8px;height:8px;background:var(--red);transform:rotate(45deg);flex-shrink:0}
+.glossary-layout{display:grid;grid-template-columns:1fr;gap:2.5rem;padding:2.5rem 0 0}
+@media(min-width:960px){.glossary-layout{grid-template-columns:1fr 220px;gap:4rem}}
+.glossary-main{max-width:var(--reading-max)}
+.glossary-aside{position:relative}
+@media(min-width:960px){.glossary-aside{position:sticky;top:2rem;align-self:start;height:fit-content}}
+#glossary-lede{font-family:var(--f-serif);font-size:1.1875rem;font-weight:500;line-height:1.55;color:var(--ink);margin-bottom:1.625rem;max-width:var(--measure)}
+#scope-note{background:var(--paper-light);border-left:2px solid var(--red);padding:1.5rem 1.5rem 1.25rem;margin:0 0 3rem}
+#scope-note p{font-family:var(--f-serif);font-size:.9375rem;line-height:1.65;color:var(--ink-60);margin-bottom:.75rem;max-width:none}
+#scope-note p:last-child{margin-bottom:0}
+#scope-note strong{color:var(--ink);font-weight:600}
+#scope-note a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+#scope-note a:hover{color:var(--red);border-bottom-color:var(--red)}
+.alpha-index{border-top:.5px solid var(--border-strong);padding-top:1.125rem}
+.alpha-index-label{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:500;margin-bottom:.875rem;display:block}
+.alpha-index-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.alpha-index-grid a{font-family:var(--f-display);font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--ink-60);text-align:center;padding:4px 2px;border:.5px solid var(--border);transition:color .15s ease,background .15s ease,border-color .15s ease;line-height:1.6}
+.alpha-index-grid a:hover{color:var(--red);border-color:var(--red);background:var(--paper-light)}
+.alpha-index-grid a.active{color:var(--red);border-color:var(--red)}
+.alpha-index-grid a.empty{color:var(--ink-40);pointer-events:none;opacity:.4}
+.letter-group{margin-bottom:3.5rem;scroll-margin-top:1.5rem}
+.letter-anchor{font-family:var(--f-display);font-weight:700;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.02em;color:var(--ink);line-height:1;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border-strong);display:flex;align-items:baseline;gap:.875rem}
+.letter-anchor::after{content:"";flex:1;height:.5px;background:linear-gradient(to right,var(--border-strong),transparent);margin-bottom:.25rem}
+.term-entry{margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:.5px solid var(--border);scroll-margin-top:1.5rem}
+.term-entry:last-child{border-bottom:none}
+.term-head{display:flex;align-items:baseline;gap:.875rem;flex-wrap:wrap;margin-bottom:.625rem}
+.term-name{font-family:var(--f-display);font-weight:700;font-size:1.25rem;letter-spacing:-.01em;color:var(--ink)}
+.term-pos{font-family:var(--f-serif);font-style:italic;font-size:.875rem;color:var(--ink-40);font-weight:400}
+.term-definition{font-family:var(--f-serif);font-size:1.0625rem;font-weight:500;line-height:1.55;color:var(--ink);margin-bottom:.875rem;max-width:var(--measure);border-left:2px solid var(--red);padding-left:1rem}
+.term-body{font-family:var(--f-serif);font-size:1rem;line-height:1.7;color:var(--ink-60);max-width:var(--measure);margin-bottom:.75rem}
+.term-body:last-child{margin-bottom:0}
+.term-body a{border-bottom:1px solid var(--border-strong);padding-bottom:1px;transition:color .15s ease,border-color .15s ease}
+.term-body a:hover{color:var(--red);border-bottom-color:var(--red)}
+.term-body strong{color:var(--ink);font-weight:600}
+.term-distinctions{margin-top:1rem;background:var(--paper-light);border:.5px solid var(--border);padding:1rem 1.25rem}
+.term-distinctions-label{font-family:var(--f-sans);font-size:.5625rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:600;display:block;margin-bottom:.625rem}
+.term-distinctions p{font-family:var(--f-serif);font-style:italic;font-size:.9375rem;line-height:1.6;color:var(--ink-60);margin-bottom:.5rem}
+.term-distinctions p:last-child{margin-bottom:0}
+.term-distinctions strong{font-style:normal;color:var(--ink);font-weight:600}
+.term-see-also{margin-top:.875rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.term-see-also-label{font-family:var(--f-sans);font-size:.5625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40);font-weight:500}
+.term-see-also a{font-family:var(--f-sans);font-size:.75rem;font-weight:500;color:var(--red);border-bottom:1px solid rgba(167,53,42,.3);padding-bottom:1px;letter-spacing:.04em;transition:border-color .15s ease}
+.term-see-also a:hover{border-bottom-color:var(--red)}
+.term-see-also-sep{color:var(--ink-40);font-size:.625rem}
+.colophon{border-top:2px solid var(--ink);margin-top:5rem;padding:2rem 0}
+.colophon__inner{max-width:var(--layout-max);margin:0 auto;padding:0 1.75rem}
+.colophon__ornament{text-align:center;margin-bottom:1.5rem}
+.colophon__diamond{display:inline-block;width:8px;height:8px;background:var(--red);transform:rotate(45deg)}
+.colophon__grid{display:grid;grid-template-columns:auto 1fr;gap:.375rem 1.25rem;margin-bottom:1.75rem}
+.colophon__label{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40);font-weight:500;padding-top:.1em;white-space:nowrap}
+.colophon__value{font-family:var(--f-serif);font-size:.9375rem;line-height:1.55;color:var(--ink-60)}
+.colophon__value a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+.colophon__value a:hover{color:var(--red);border-bottom-color:var(--red)}
+.colophon__bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;padding-top:1.25rem;border-top:.5px solid var(--border-strong)}
+.colophon__meta{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);font-weight:500}
+.colophon__nav{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.colophon__nav-link{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;transition:color .15s ease}
+.colophon__nav-link:hover{color:var(--red)}
+.colophon__nav-sep{color:var(--ink-40);font-size:.625rem}
+@media(max-width:600px){
+  .layout{padding:0 1.5rem}
+  .masthead__title{font-size:1.5rem;letter-spacing:.035em;white-space:nowrap}
+  .masthead__title-row{padding:.75rem 0 .5rem}
+  .masthead__furniture{font-size:.5625rem;letter-spacing:.12em}
+  .masthead__subtitle{font-size:.875rem}
+  .masthead__url{font-size:.5625rem;letter-spacing:.14em}
+  .masthead__nav{gap:0 1rem;padding:.625rem 0 .75rem}
+  .masthead__nav-link{font-size:.5625rem;letter-spacing:.12em}
+  .cover{padding:2.25rem 0 2rem}
+  .cover__display{font-size:4rem;line-height:.95}
+  .cover__rule{width:120px;margin-bottom:1.75rem}
+  .glossary-layout{display:flex;flex-direction:column;gap:1.5rem}
+  .glossary-main{order:2}
+  .glossary-aside{order:1;padding-bottom:1.25rem;margin-bottom:.5rem;border-bottom:.5px solid var(--border)}
+  .glossary-aside .alpha-index{border-top:none;padding-top:0}
+  .term-name{font-size:1.125rem}
+  .letter-anchor{font-size:2rem}
+  .colophon__inner{padding:0 1.5rem}
+  .colophon__grid{grid-template-columns:1fr;gap:.125rem}
+  .colophon__label{padding-top:.625rem}
+  .colophon__bottom{flex-direction:column;align-items:flex-start}
+}
+
+/* ── Citation card ────────────────────────────────────────────────────── */
+.cite-card {
+  margin: 3rem 0 1rem;
+  padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+  scroll-margin-top: 1.5rem;
+  max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.cite-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+.cite-card__kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.cite-card__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+.cite-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.125rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
+.cite-label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.3rem;
+}
+.cite-text {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cite-text em { font-style: italic; }
+.cite-text a {
+  color: inherit;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
+.cite-text--code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+.cite-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 32px;
+  white-space: nowrap;
+  align-self: start;
+}
+.cite-copy:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.cite-copy:active { transform: scale(0.97); }
+.cite-copy.is-copied {
+  background: var(--red);
+  color: var(--paper);
+  border-color: var(--red);
+}
+.cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+@media (max-width: 720px) {
+  .cite-card {
+    padding: 1.5rem 1.25rem 1rem;
+    margin: 2.25rem 0 0.75rem;
+  }
+  .cite-card__header { gap: 0.5rem; padding-bottom: 1rem; margin-bottom: 0; }
+  .cite-card__title { font-size: 1.0625rem; }
+  .cite-row { grid-template-columns: 1fr; gap: 0.5rem; padding: 1.125rem 0; }
+  .cite-label { padding-top: 0; }
+  .cite-copy {
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.625rem 1rem;
+    font-size: 0.6875rem;
+    margin-top: 0.25rem;
+  }
+  .cite-text { font-size: 0.9375rem; }
+  .cite-text--code { font-size: 0.75rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Demo coherenceとは何か。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Demo coherenceとは、デモを構成するあらゆる要素――データ、ワークフロー、ペルソナ、ナラティブ――が、機能の網羅性を示すのではなく、単一の一貫した主張に奉仕している度合いを指す。一貫性のあるデモにはテーゼがある。データはそのテーゼを裏づける。ワークフローを操作するペルソナは、購買者が自分自身だと認識できる人物である。Demo coherenceは、テクニカルマーケティングのアウトプットにおける最も重要な品質シグナルである。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "テクニカルマーケティングにおけるtrust layerとは何か。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trust layerとは、商談における技術的深度の帯域――デモ、アーキテクチャ資料、競合ポジショニング、proof point――であり、技術に精通した購買者が、本格的なエンジニアリングレベルの評価を必要とせずに製品の主張を信頼できるだけの根拠を与えるものである。それは、洗練された商業的な訴求（何かを感じさせるが何も証明しない）と、本格的な技術ホワイトペーパー（すべてを教えるが何も決めない）との間に位置する。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AR cycleとは何か。",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AR cycle（アナリストリレーションズサイクル）とは、企業がGartner、Forrester、IDCなどのテクノロジーリサーチアナリストと関わる、構造化された反復プロセスである。製品の方向性についてブリーフィングを行い、リサーチに関する問い合わせに応答し、評価フレームワークに参加し、Gartner Magic QuadrantやForrester Waveといった公表されたレポートにおけるポジションの変化を追跡することを含む。"
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/ja" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">A field manual for the discipline.</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/reference" class="masthead__nav-link" aria-current="page">Reference</a>
+    <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/tools" class="masthead__nav-link">Tools</a>
+    <a href="/archive" class="masthead__nav-link">Archive</a>
+    <a href="/ja/about" class="masthead__nav-link">About</a>
+  </nav>
+</header>
+
+<div class="layout">
+  <div class="cover">
+    <p class="cover__article-kicker">Reference</p>
+    <h1 class="cover__article-title" id="article-title">テクニカルマーケティング用語集。</h1>
+    <hr class="cover__rule">
+    <div class="cover__display-wrap">
+      <span class="cover__display">Terms.</span>
+    </div>
+    <p class="cover__secondary">この分野の語彙を、定義する。</p>
+    <p class="cover__deck">実務者が使う用語のための実務リファレンス。辞書的な定義ではなく、現場が実際に適用している通りの定義。</p>
+    <p class="cover__byline">Maintained by <strong>Chad Corriveau</strong> &middot; Founding Editor &middot; Technical Marketing</p>
+    <div class="cover__ornament" aria-hidden="true">
+      <span class="cover__ornament-rule"></span>
+      <span class="cover__ornament-diamond"></span>
+      <span class="cover__ornament-rule"></span>
+    </div>
+  </div>
+
+  <div class="glossary-layout" id="main">
+    <main class="glossary-main" id="glossary-body">
+
+      <p id="glossary-lede">どんな分野も、定義が固まる前に語彙が積み上がっていく。テクニカルマーケティングも例外ではない。以下の用語は、現場が実際に使っている通りに定義したものである。求人票の中で、商談レビューの中で、この仕事が何であるかを理解し、それを正確に名指ししようとする実務者同士の会話の中で使われている意味に基づく。</p>
+
+      <div id="scope-note">
+        <p><strong>Scope（対象範囲）.</strong> この用語集は、エンタープライズソフトウェア、インフラストラクチャー、AI、ハードウェアの各領域で実践されているテクニカルマーケティングの実務語彙を対象とする。定義は語源的な正確さよりも現場での使用実態を優先している。用語が企業や文脈によって異なる使われ方をする場合、定義は最も一般的な実務者の解釈を反映している。</p>
+        <p>この分野そのものの基礎的な定義については、<a href="/ja/what-is-technical-marketing">What Is Technical Marketing?</a>を参照。</p>
+      </div>
+
+      <!-- A -->
+      <div class="letter-group" id="letter-A">
+        <h2 class="letter-anchor">A</h2>
+
+        <div class="term-entry" id="agentic-ai">
+          <div class="term-head"><span class="term-name">Agentic AI</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">単一のプロンプトに応答して終わるのではなく、ツール、API、外部データソースを用いて複数ステップのタスクを自律的に計画・実行するAIシステム。</p>
+          <p class="term-body">Generative AIとの違いは、アーキテクチャ上の違いというより運用上の違いである。生成モデルは質問に答える。エージェント型システムは、一連のアクションを通じてゴールを追求し、途中の結果を評価しながら調整していく。エンタープライズソフトウェアにおいて、エージェント型の展開へのシフトは、トラストギャップの主な要因となっている。テキストを起草するモデルは受け入れた購買者も、ワークフローを実行し、レコードを変更し、外部プロセスをトリガーするモデルに対してはより慎重になる。</p>
+          <p class="term-body">テクニカルマーケティングにとって、Agentic AIはマーケティングすべきプロダクトカテゴリーであると同時に、制作を加速させる存在でもある。Gartnerは、2026年までにエンタープライズアプリケーションの40パーセントがタスク特化型のAIエージェントを備えるようになると予測した。McKinseyは、エンタープライズ購買者の3分の2近くが、Agentic AIの展開を拡大する上での最大の障壁としてセキュリティとリスクへの懸念を挙げていることを明らかにした。この環境下でのテクニカルマーケターの仕事は、その懸念が間違っていると主張することではない。技術に精通した購買者が自らの基準でその主張を評価できるようにする根拠――デモ、アーキテクチャ図、セキュリティ資料――を生み出すことである。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#generative-ai">Generative AI</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="analyst-briefing">
+          <div class="term-head"><span class="term-name">アナリストブリーフィング</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">Gartner、Forrester、IDC、またはそれに準ずる調査会社のテクノロジーリサーチアナリストに対して行う体系立てられたプレゼンテーションであり、その企業の製品やプラットフォームをアナリストの継続的なリサーチおよび評価フレームワークの中に正確に位置づけることを目的とする。</p>
+          <p class="term-body">アナリストブリーフィングは営業の商談ではない。アナリストは購入する立場にはない。彼らは、リサーチノート、Magic Quadrantの評価、Forrester Waveのレポート、そして実際の購買者であるアナリストのクライアントとのアドバイザリー会話に反映されるポジションを形成、あるいは更新しているのである。一度のアナリストブリーフィングが、市場セグメント全体がある製品カテゴリーをどう認識するかに、12ヶ月から18ヶ月にわたって影響を与えることもある。</p>
+          <p class="term-body">アナリストブリーフィングの中身はテクニカルマーケティングが所有する。アナリストブリーフィングで実施されるデモは、顧客向けデモよりも高いリスクを伴うことが多い。アナリストはカテゴリー全体を同時に評価しており、目にしたものをすべての競合の主張と比較するからである。どのアーキテクチャ上の主張を先に打ち出すか、どの制約をアナリストより先に名指しするか、どの深さの技術情報が会話に資するかを判断する編集判断は、この分野があらゆる場面で適用しているのと同じ判断であり、それがより厳しい精査のもとで求められるだけである。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Briefing vs. inquiry.</strong> ブリーフィングはベンダーからアナリストへ向かう。インクワイアリーはアナリストからベンダーへ向かう。同じ会議の中に両方が含まれることもある。テクニカルマーケティングはブリーフィングの内容に責任を持つ。インクワイアリーへの応答も同等の準備を要する。アナリストは厳しい質問を投げかけ、その回答はリサーチの記録の一部になるからである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-narrative">Technical narrative</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+
+        <div class="term-entry" id="ar-cycle">
+          <div class="term-head"><span class="term-name">AR cycle</span><span class="term-pos">名詞 · 略語 analyst relations cycle</span></div>
+          <p class="term-definition">企業がGartner、Forrester、IDCなどのテクノロジーリサーチアナリストと関わる、構造化された反復プロセス。製品の方向性についてブリーフィングを行い、リサーチに関する問い合わせに応答し、評価フレームワークに参加し、公表されたレポートにおけるポジションの変化を追跡する一連の流れを指す。</p>
+          <p class="term-body">AR cycleは通常年次だが、評価のペースは市場カテゴリーによって異なる。主要な市場ではMagic Quadrantが毎年更新される一方、ニッチなカテゴリーでは18ヶ月から24ヶ月のサイクルで運用されることもある。Gartner Magic Quadrant、Forrester Wave、IDC MarketScapeといった主要なアナリスト評価製品は、それぞれ独自のカレンダーで運用されている。ブリーフィングの窓を逃した企業は、そのサイクル内で再びチャンスを得ることはない。結果として公表されたレポートに載るポジションは記録として残り、12ヶ月から18ヶ月にわたって購買者の意思決定に影響を与え続ける。</p>
+          <p class="term-body">AR cycleへの参加の中身はテクニカルマーケティングが所有する。ブリーフィング資料、デモコンテンツ、技術的なproof point、そして自社製品が競合と比べてどこに位置しているかについての正直な見立てはすべて、テクニカルマーケティングの機能を通じて流れる。次のAR cycleにおけるアナリストポジションの変化は、この役割が生み出す最も明確に測定可能な成果の一つである。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#magic-quadrant">Magic Quadrant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="architecture-overview">
+          <div class="term-head"><span class="term-name">アーキテクチャ概要</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">ソフトウェア製品がどのように構築されているか、各コンポーネントがどう関連し合っているか、そして購買者がすでに運用しているシステムとどのように接続するかを説明する、構造化された図とそれに付随する解説。</p>
+          <p class="term-body">アーキテクチャ概要は、テクニカルマーケティングのポートフォリオの中でも最も長く使われるアーティファクトの一つである。評価段階の購買者にとって、製品が何をするかだけでなく、どのようにそれを行うか、そしてそのやり方がリスク、複雑性、依存関係を生むかどうかを理解する必要がある場面で役立つ。プラットフォームの購入を評価するプリンシパルエンジニアは、会社が制作するどのマーケティングコピーよりも、アーキテクチャ概要を注意深く読む。</p>
+          <p class="term-body">テクニカルマーケターの役割は編集的なものである。アーキテクチャのどの層を見せ、どの層を省くか、その図がどの技術的主張をしているか、そしてその主張が直接的な質問攻めに耐えられるかどうかを判断することである。製品が実現していない単純さを約束するアーキテクチャ図は、信頼を損なうリスクになる。複雑さを明快な説明とともに正確に表現する図は、技術的信頼性の証拠となる。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>アーキテクチャ概要 vs. reference architecture.</strong> アーキテクチャ概要は製品が何であるかを説明する。Reference architectureは、特定のユースケースや業界向けにそれをどう展開・構成するかを説明する。どちらもテクニカルマーケティングのアウトプットである。概要は購買者の旅のより早い段階に位置し、reference architectureは評価・導入の段階に位置する。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- B -->
+      <div class="letter-group" id="letter-B">
+        <h2 class="letter-anchor">B</h2>
+
+        <div class="term-entry" id="buying-committee">
+          <div class="term-head"><span class="term-name">購買委員会</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買決定に集合的に影響を与える、あるいは決定を下す、見込み顧客組織内のステークホルダーの集団。通常、技術評価者、ビジネススポンサー、エコノミックバイヤー、調達、法務、セキュリティの各機能にまたがり、それぞれが異なる基準と最終的な結果に対する異なる権限のレベルを持つ。</p>
+          <p class="term-body">単一のデモ、単一のアーティファクト、単一の会話だけで購買委員会を勝ち取ることはできない。それぞれのステークホルダーの役割には異なる問いと異なるリスク許容度がある。プリンシパルエンジニアはアーキテクチャ上の適合性を評価している。CISOはセキュリティ体制を評価している。エコノミックバイヤーは戦略的な適合性と予算権限を評価している。テクニカルマーケティングは、デモに出席する可能性が最も高い技術評価者だけでなく、委員会全体に向けて構築する。</p>
+          <p class="term-body">購買委員会の構造は、案件の規模と企業の種類によって変わる。ミッドマーケットの案件では、役割が重なり合う3〜4人のステークホルダーで済むこともある。規制の厳しい企業のエンタープライズ案件では、製品デモには一切出席しないが単独で案件を停滞させ得る調達や法務を含め、8人以上に及ぶこともある。購買委員会の構成、そしてどのアーティファクトがどのメンバーに届くかを理解することは、あらゆる重要な案件におけるテクニカルマーケターの戦略的な仕事の一部である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>購買委員会 vs. champion.</strong> Championは、評価から社内での擁護へと移行した購買委員会の一員である。購買委員会はステークホルダーの全体集合である。委員会全体をカバーしないchampionは、同意に必要な根拠を受け取っていないかもしれない同僚に対して擁護しているに過ぎない。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#economic-buyer">Economic buyer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-champion">Technical champion</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="battlecard">
+          <div class="term-head"><span class="term-name">Battlecard</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">営業やプリセールスのチームメンバーが、実際の商談の中で特定の競合に対応できるようにするための、簡潔で構造化されたリファレンス資料。ポジショニングの取り方、よくある反論への対応方法、強調すべき技術的な差別化ポイントをまとめたもの。</p>
+          <p class="term-body">Battlecardはフィールドイネーブルメントのアーティファクトである。その役割は、テクニカルマーケターの競合分析を、Sales Engineerが生の調査資料から議論を再構築することなくリアルタイムで、商談の場で使える形式に圧縮することである。それはリサーチ文書ではなく意思決定の補助である。分量の規律が求められる。通話前に読むのに20分かかるようなbattlecardはbattlecardではない。それは競合姿勢を帯びたホワイトペーパーにすぎない。</p>
+          <p class="term-body">Battlecardは競合状況が定めるペースでのメンテナンスを必要とする。競合の製品ローンチ、価格変更、顧客の獲得は、一夜にして旧バージョンを無効にし得る。フィールドはbattlecardを使って購買者に約束をするため、テクニカルマーケティングはその主張の正確性に責任を持つ。古くなった情報に基づく約束は、案件が終わった後も長く続く信頼の問題を生む。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Battlecard vs. 競合ティアダウン.</strong> ティアダウンは分析作業である。競合の製品、アーキテクチャ、価格設定、ポジショニングについての、深く構造化された評価である。Battlecardは、その分析から導き出されたフィールド即応型のアウトプットである。テクニカルマーケティングは両方を制作するが、ティアダウンがbattlecardの材料となる一方で、両者は異なる瞬間に異なるオーディエンスに奉仕する。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#teardown">Teardown</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+
+        <div class="term-entry" id="briefing-prep">
+          <div class="term-head"><span class="term-name">Briefing prep</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">アナリストブリーフィングの前にテクニカルマーケターが行う構造化された準備作業であり、実施するデモ、先に提示する技術的なproof point、あらかじめ名指ししておくべき制約事項、想定される質問とその回答の準備を含む。</p>
+          <p class="term-body">Briefing prepは、アナリストリレーションズがベンダーの信用を積み上げる場にも、損なう場にもなり得る局面である。アナリストは、競合状況の詳細な把握、カテゴリー内の他ベンダーによる最近のブリーフィング、そして聞くと予想される主張をストレステストするために設計された一連の質問を携えて臨む。それらの質問を予期せず、擁護可能な回答を準備せず、製品デモンストレーションと技術的な説明の間の移行を練習していないテクニカルマーケターは、アナリストの既存のポジションを揺るがすのではなく、それを裏づけただけの状態でブリーフィングを終えることになる。</p>
+          <p class="term-body">Briefing prepにおける最もよくある失敗は、主張ではなく網羅性を最適化してしまうことである。製品がすることをすべて見せようとするブリーフィングは、何一つ説得力を持って実演する時間を残さない。テクニカルマーケティングの編集的な役割は、どの主張を先に打ち出すか、どのproof pointを軸に据えるか、どの制約をアナリストより先に名指しするかを選び取ることである。既知の弱点を先回りして提示し、ロードマップがそれにどう対応するかを説明するブリーフィングは、それを隠して後で見破られるブリーフィングよりも、より高い信用を築く。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Briefing prep vs. briefing deck.</strong> ブリーフィングデックは、より広いbriefing prepの中の一つのアーティファクトにすぎない。Briefing prepには、デモ環境、想定されるQ&amp;A、アナリストが提起しそうな競合の文脈、そしてそのセッションが何を達成しようとしているかについて部屋にいる全員が共有している理解も含まれる。デックは送られるものである。Prepは、その会議を有意義な方向に進めるものである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#ar-cycle">AR cycle</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#rfi-response">RFI response</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="benchmark-artifact">
+          <div class="term-head"><span class="term-name">Benchmark Artifact</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">パフォーマンスデータ、比較仕様、リファレンスデザインを含む、測定可能な基準に対して製品の主張を証明する構造化された技術的成果物。ハードウェア・半導体企業の主要なデモアーキタイプであり、対象読者は調達エンジニア、標準化団体、あるいは定義された条件下でパフォーマンスを評価する技術アーキテクトである。</p>
+          <p class="term-body">Benchmark artifactは設計上、根拠が最優先される。主張はデータの中にある。フレームレート、スループット、レイテンシー、電力効率、名指しされた代替製品との比較スペック。実務者の編集的な仕事は、どのベンチマークを、どのベースラインに対して、どの条件下で実行するかを選び取り、ベンチマークの方法論を読み解き都合の良いテスト設計を見抜く力を持つオーディエンスの精査に耐えられるだけの方法論的な透明性をもって結果を提示することにある。</p>
+          <p class="term-body">ハードウェア・半導体企業は1960年代から正式にbenchmark artifactを制作してきた。このパターンは、パフォーマンスとスケーラビリティが評価基準となるにつれて、後にエンタープライズソフトウェアにも現れた。いずれの場合も、benchmark artifactはデモアーキタイプの軸の右端に位置する。フィールドが実演するためではなく、購買者が評価するために作られたものである。SEはそれをデモしない。購買者側のエンジニアがそれを追及する。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Benchmark artifact vs. reference architecture.</strong> Reference architectureは、製品がユースケースに対して正しく展開できることを証明する。Benchmark artifactは、その展開が明示された基準どおりに機能することを証明する。どちらも根拠となるアーティファクトである。ベンチマークはパフォーマンスに、reference architectureは適合性に、それぞれ軸足を置いている。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-architecture">Reference architecture</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#interactive-proof">Interactive proof</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="letter-group" id="letter-C">
+        <h2 class="letter-anchor">C</h2>
+
+        <div class="term-entry" id="configured-environment">
+          <div class="term-head"><span class="term-name">Configured environment</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">現実的なデータ、構成されたワークフロー、そして購買者が自分自身と認識できるペルソナを用いて、プラットフォームがポジショニングの主張どおりに機能することを証明するために構築された、実働のソフトウェアテナント。プラットフォーム企業の主要なデモアーキタイプであり、テクニカルマーケターがアーキテクチャ、データの整合性、シナリオの一貫性を所有し、Sales Engineerがそれをフィールドで展開する。</p>
+          <p class="term-body">Configured environmentを正しく構築するには数ヶ月を要する。それはサンドボックスでも使い捨てのインスタンスでもない。管理されたアーティファクトであり、フィールドでのデモンストレーションが導き出される典拠となる存在である。データはデモの主張を裏づける。ワークフローは実際のユースケースを反映する。ペルソナは認識できるほど具体的でありながら、複数の業種を横断して通用するほど汎用的である。あらゆる要素が、単一の一貫した主張に奉仕している。</p>
+          <p class="term-body">製品が水平的で証明すべき対象が広いプラットフォーム企業は、他のどの企業タイプよりもconfigured environmentに依存している。メンテナンスが行き届いていない環境から実施されるServiceNow、Salesforce、Workdayのデモは、あらゆる統合のギャップ、あらゆるプレースホルダー、完成しなかったあらゆるワークフローを露呈させる。Configured environmentは、テクニカルマーケティング機能によるインフラ投資が最も可視化され、最も重要な意味を持つ場所である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Configured environment vs. reference environment.</strong> Reference environmentは典拠となる源である。Configured environmentは、定義されたシナリオ、オーディエンス、業種向けに構築された、その源の具体的な表現である。あらゆるconfigured environmentはreference environmentから派生しているべきである。典拠なしに構築されたconfigured environmentは技術的負債になる。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="calibration-band">
+          <div class="term-head"><span class="term-name">Calibration band</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">複雑なエンタープライズセールスにおいて、マーケティングコンテンツが最も効果を発揮する技術的深度の範囲。技術に精通した購買者が評価できるだけの深さを持ちながら、その内容がイネーブルメント教材になってしまうほど深くはなく、説得の手段として機能する状態を指す。</p>
+          <p class="term-body">Calibration bandという概念は、テクニカルマーケティングの中心にある編集上の課題を説明するものである。一方の端には純粋な商業的コンテンツがある。洗練され、感情に訴えるが、購買委員会が主張を検証できる技術的な実体を何も提供しない。もう一方の端には純粋な技術的深度がある。すべてのコンポーネントにラベルが付いたアーキテクチャ図、ソースコードへのアクセス、内部文書。そうしたコンテンツはすべてを教えるが、何も決めない。</p>
+          <p class="term-body">テクニカルマーケティングは、意図的にその両端の間の帯域を占める。帯域内の正確な位置は、オーディエンスの肩書きではなく、評価における役割によって変わる。技術評価者は、経験年数にかかわらず、技術的な端に近い位置が必要になる。エコノミックバイヤーは、技術的な背景にかかわらず、ビジネスインパクトとリスクに合わせて調整されたコンテンツを必要とする。オーディエンスごと、評価の段階ごとにその位置を調整することが、実務者の主要な編集判断である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Calibration band vs. trust layer.</strong> Trust layerは、calibration bandを占めるコンテンツそのものである。Calibration bandは、適切な深度の範囲という概念である。実務者はcalibration bandを何を構築すべきかを決めるためのフレームワークとして使い、trust layerはそれを正しく構築した結果として生まれるものである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#editorial-judgment">Editorial judgment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="champion">
+          <div class="term-head"><span class="term-name">チャンピオン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買組織内で、ベンダーの製品を社内で積極的に擁護し、ベンダーが同席していない場面でも評価プロセスを前に進め、購買の推奨に自らの信用を賭ける意思のある個人。</p>
+          <p class="term-body">チャンピオンは単なる支持者ではない。この違いは重大である。支持者はその製品を好む。チャンピオンは社内でそれを売り込み、セキュリティチームからの反論に対応し、CFOに対して説明し、競合が評価基準を再定義しようとする試みからそれを守る。テクニカルウィンに達しながら商業的なクロージングの前で停滞する案件には、技術評価の段階を越えて議論を運べるチャンピオンがほぼ常に欠けている。</p>
+          <p class="term-body">テクニカルマーケティングが制作する資料は、チャンピオンが社内での売り込みを行うために使う道具である。良い資料を持たないチャンピオンは記憶に頼って擁護している。よく構築された技術的根拠を持つチャンピオンは、ベンダーが同席していなくても残る記録に基づいて擁護している。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>チャンピオン vs. technical champion.</strong> チャンピオンは、エコノミックバイヤーにも、ビジネススポンサーにも、技術評価者にもなり得る。<a href="#technical-champion">Technical champion</a>とは特に、購買組織内で技術的に信頼される、製品の主張を同僚やリーダーシップに対して検証する個人を指す。すべてのチャンピオンがtechnical championであるわけではないが、複雑なエンタープライズソフトウェアの商談においては、最も強力なチャンピオンは両方を兼ねている。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-champion">Technical champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-value">Proof of value</a>
+          </div>
+        </div>
+        <div class="term-entry" id="competitive-engagement">
+          <div class="term-head"><span class="term-name">競合エンゲージメント</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買者が同時に1社以上の名指しされた競合を評価しているアクティブな商談状況であり、ベンダーの営業活動はその比較を直接的に踏まえて進める必要がある状態を指す。</p>
+          <p class="term-body">競合エンゲージメントは、一般的な市場状況ではなく、特定の案件の状態である。この違いは運用上重要である。非競合の案件では、テクニカルマーケターの仕事は能力を実証することである。競合エンゲージメントでは、仕事の性質が変わる。購買者は製品が機能するかどうかを尋ねているのではない。彼らは、同時に評価している代替案よりもうまく機能するかどうかを尋ねているのである。デモ、technical narrative、battlecardはすべて、競合のプレッシャーの下で性格を変える。</p>
+          <p class="term-body">競合の多いカテゴリーで事業を展開する企業では、競合インテリジェンスはテクニカルマーケティング機能が生み出す中でも単独で最もレバレッジの高い仕事であることが多い。競合案件での勝率は、その仕事が功を奏しているかどうかの最も明確な直接的指標の一つである。競合エンゲージメントにおけるテクニカルマーケティングの仕事は、競合を悪く言うことではない。技術に精通した購買者が正直な比較を行い、正しい結論に至れるだけの根拠を生み出すことである。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#teardown">Teardown</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- D -->
+      <div class="letter-group" id="letter-D">
+        <h2 class="letter-anchor">D</h2>
+
+        <div class="term-entry" id="demo">
+          <div class="term-head"><span class="term-name">Demo</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">商談や評価の特定の段階において、特定のオーディエンスに特定の確信を持たせるように設計された、ソフトウェアが実際に動作する様子を示すライブまたは録画形式の構造化されたプレゼンテーション。</p>
+          <p class="term-body">プロダクトツアーはdemoが取り得る一つの形式にすぎない。運用上重要な違いは形式ではなく意図である。ナビゲーション型のdemoは、誰かが探しているものを見つける手助けをする。論証型のdemoは、特定の結論を導き出すために設計されている。テクニカルマーケティングは両方を制作するが、論証型のdemoこそがこの分野の主たる関心事である。何を見せるか、何を省くか、見せるのではなく何をオーディエンスにやらせるか――これらはすべて、目標とする確信に奉仕するために下される編集判断である。</p>
+          <p class="term-body">Demoの単位は機能ではない。その機能が生み出すことを意図した確信である。Demoを構築する前に目標とする確信を言葉にできない実務者は、ツアーを構築しているにすぎない。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Demo vs. proof of concept.</strong> Demoはベンダーが所有する制御された環境で実行される。Proof of conceptは、顧客の環境の中で、あるいはそれに対して実行される。Demoは確信を生み出す。POCは、その確信が顧客固有の条件下でも成り立つかどうかを検証する。</p>
+            <p><strong>Demo vs. reference environment.</strong> Reference environmentは、demoが生み出される際のインフラである。それ自体はdemoではない。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="demo-coherence">
+          <div class="term-head"><span class="term-name">Demo coherence</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">デモを構成するあらゆる要素、すなわちデータ、ワークフロー、ペルソナ、ナラティブが、機能の網羅性を示すのではなく、単一の一貫した主張に奉仕している度合い。</p>
+          <p class="term-body">一貫性のあるdemoにはテーゼがある。データはそのテーゼを裏づける。ワークフローを操作するペルソナは、購買者が自分自身だと認識できる人物である。画面の展開は、製品のナビゲーションロジックではなく、論証のロジックに従う。多くの機能を網羅していながら何も主張していないdemoは、技術的な完成度にかかわらず一貫性を欠く。</p>
+          <p class="term-body">Demo coherenceは、テクニカルマーケティングのアウトプットにおける最も重要な品質シグナルである。網羅性が正しいブリーフになる場合もある。プラットフォームの広さを評価するアナリストや、複数のペルソナに同時に販売する水平的な製品は、単一の論証よりも幅広さを示すdemoを必要とすることがある。この分野の力量とは、いつ網羅性が評価に資し、いつそれを妨げるかを見極めることにある。最もよくある失敗は、論証こそが正しい選択だった場面で、網羅性をデフォルトにしてしまうことである。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo">Demo</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="demo-environment">
+          <div class="term-head"><span class="term-name">Demo environment</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">本番環境、ステージング環境、開発環境とは区別される、営業活動および評価活動を支援するために特別に構築されたソフトウェア製品の構成済みインスタンス。</p>
+          <p class="term-body">Demo environmentは、論証のために目的を持って構築される。そのデータはサンプリングされたものではなく、キュレーションされたものである。その構成は、ベンダー社内のデフォルトではなく、購買者の世界を反映している。その安定性は必須要件である。ライブプレゼンテーション中に壊れるdemo environmentは、些細な不都合ではなく信頼を損なう出来事である。</p>
+          <p class="term-body">Demo environmentは、他のどの環境タイプよりも早く負債を蓄積する。実証済みの一貫性を持つ前に新しい製品機能を追加しようとするプレッシャーが、明確なオーナーの不在と相まって、製品マップは網羅しているが何も主張しない環境を生み出す。テクニカルマーケティングは、demo environmentの技術的なメンテナンスだけでなく、その編集上の整合性にも責任を持つ。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+
+        <div class="term-entry" id="displacement">
+          <div class="term-head"><span class="term-name">ディスプレイスメント</span><span class="term-pos">名詞 · 別名 competitive displacement</span></div>
+          <p class="term-definition">ベンダーが、現在名指しされた競合の製品を使用している購買者から案件を獲得する営業活動であり、自社製品を肯定的に訴求するだけでなく、乗り換えコスト、既存の関係性、そして先行者優位を覆す必要がある状態を指す。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>ディスプレイスメント vs. expansion.</strong> ディスプレイスメントは競合から案件を奪う。Expansionは既存顧客内で案件を拡大する。どちらもテクニカルマーケティングにとってのパイプライン貢献の指標だが、必要とされるコンテンツは異なる。ディスプレイスメントには競合battlecardと乗り換え価値の証明が必要であり、expansionにはreference architectureと顧客成功の根拠が必要である。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#playbook">Playbook</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+        <div class="term-entry" id="discovery-call">
+          <div class="term-head"><span class="term-name">ディスカバリーコール</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">ベンダーの営業またはプリセールスチームと見込み顧客との間で行われる構造化された会話であり、セールスサイクルの早い段階で、購買者の現在の環境、解決しようとしている課題、ソリューションを評価する基準、そして従うことになる意思決定プロセスを理解するために実施される。</p>
+          <p class="term-body">ディスカバリーは、複雑な商談における診断の段階である。うまく行われれば、SEにどのdemoを構築すべきか、テクニカルマーケターにどのproof pointを準備すべきか、AEにどの反論を予期すべきかを伝えるものになる。うまく行われなければ、間違ったオーディエンス向けに構築されたdemo、購買者の実際の懸念に応えていないproof point、そして購買者が決定を下すのに必要な確信を得るために何が必要かをベンダーが理解しないまま停滞する案件を生む。</p>
+          <p class="term-body">テクニカルマーケティングとディスカバリーの関係は間接的だが重要な意味を持つ。この機能が実際にディスカバリーコールを実施することは通常ないが、ディスカバリーを一貫したものにするフレームワークを構築する。質問ガイド、技術的ディスカバリーのテンプレート、SEにどの情報を、なぜ集めるべきかを伝える適格性基準である。フレームワークなしにディスカバリーを行うフィールドチームは、一つの案件のために情報を集めているにすぎない。テクニカルマーケティングのフレームワークを使ってディスカバリーを行うフィールドチームは、営業資料のポートフォリオ全体をより役立つものにする情報を集めているのである。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Discovery vs. technical discovery.</strong> Discoveryは、購買者の状況、目標、意思決定プロセスについての広範な会話である。Technical discoveryは、アーキテクチャ、統合、データフロー、セキュリティ要件、そして製品が適合するかどうかを左右する技術的な制約に焦点を当てた、SEが主導するより深い段階である。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#buying-committee">Buying committee</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+
+      <!-- E -->
+      <div class="letter-group" id="letter-E">
+        <h2 class="letter-anchor">E</h2>
+
+        <div class="term-entry" id="editorial-judgment">
+          <div class="term-head"><span class="term-name">編集判断</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">商業的なプレッシャーの下で、どの技術的な根拠を、どのオーディエンスに、どの順序で、どのようなフレーミングで、どの深さで提示するかを決定する実務者の能力であり、その結果としてベンダー側の「すべて見せたい」という衝動を満たすのではなく、特定の購買者の評価を前進させるもの。</p>
+          <p class="term-body">編集判断はテクニカルマーケティングを定義するスキルであり、AIツールによる圧縮に最も抵抗する領域である。モデルは数分で競合サマリーを起草できる。しかし、アーキテクチャ上の弱点と価格のギャップのどちらを先に打ち出すべきかを決めることはできない。その決断は、見込み顧客が現在どの競合を評価しているか、このデックを見るアナリストが実際に何を気にかけているか、追及されたときにエンジニアリングチームが実際に何を支持してくれるかに左右されるからである。それらの入力は学習データの中にはない。それは、その場にある。</p>
+          <p class="term-body">この概念は、出版における編集の実践から借用されたものである。編集者はすべてを書くわけではないが、何が書かれ、何が削られ、何が先頭に来て、何がそれに続くかを決める。テクニカルマーケターは、複雑な商談の証拠レイヤーに同じ機能を適用する。この役割が生み出すあらゆるアーティファクトは、購買委員会が何を見る必要があり、何を見る必要がないかについての編集判断の結果である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>編集判断 vs. コンテンツ制作.</strong> コンテンツ制作は、アーティファクトを作る機械的な作業である。編集判断はその上にある意思決定のレイヤーである。どのアーティファクトを構築するか、どの主張にそれを紐づけるか、そしてその結果が購買者からのプレッシャーの下で持ちこたえるかどうかを決めることである。AIはコンテンツ制作を圧縮した。編集判断は圧縮していない。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#calibration-band">Calibration band</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="evaluation-conversion">
+          <div class="term-head"><span class="term-name">評価コンバージョン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">正式な技術評価の段階に入った案件のうち、テクニカルウィンに至った割合をパーセンテージで表したものであり、この分野の仕事が最も集中する段階における、テクニカルマーケティングの効果を測る主要な指標として用いられる。</p>
+          <p class="term-body">評価コンバージョンは、テクニカルマーケティングのコンテンツが重要な段階で機能しているかどうかを示す最も直接的なシグナルである。インプレッション、クリック、フォーム入力は認知と関心を測る。評価コンバージョンは、この分野のアウトプットが実際に評価に勝っているかどうかを測る。認知系の指標は高いが評価コンバージョンが低い機能は、関心を引くが精査に耐えないコンテンツを生み出している。</p>
+          <p class="term-body">評価コンバージョンを改善するには、評価がどこで失敗しているかを理解する必要がある。Proof of conceptに到達しながらテクニカルウィンに転換しない案件は、最初のdemoで失敗する案件とは異なる種類の失敗である。テクニカルマーケティングは両方を調査する。POCの失敗は製品のギャップやスコーピングの問題を示している可能性があり、demoの失敗はcoherenceやcalibrationの問題を示している可能性がある。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#time-to-decision">Time to decision</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#field-activation">Field activation</a>
+          </div>
+
+        <div class="term-entry" id="economic-buyer">
+          <div class="term-head"><span class="term-name">エコノミックバイヤー</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買組織内で最終的な予算権限を持つ個人であり、それまでに形成された技術的またはビジネス上のコンセンサスにかかわらず、購入を確約するにはこの人物の承認が必要となる。</p>
+          <p class="term-body">エコノミックバイヤーは、評価を主導する人物ではないことが多い。典型的なエンタープライズソフトウェアの案件では、技術評価者、ビジネススポンサー、チャンピオンが、エコノミックバイヤーが正式に関与する前にすでに見解を形成している。彼らの役割は製品を再評価することではない。戦略的な優先順位と財務的なコミットメントが正当化されるかどうかを判断することである。技術評価とビジネスケースに勝った案件でも、価値のフレーミングが彼らの説明責任の範囲であるビジネスインパクトと財務リスクのレベルに響かなければ、エコノミックバイヤーの段階で失敗し得る。</p>
+          <p class="term-body">テクニカルマーケティングとエコノミックバイヤーとの関係は間接的である。この機能が彼らに直接プレゼンすることは稀である。しかし、それが生み出す資料――ビジネス価値のナラティブ、競合ポジショニング、精査に耐えるproof point――は、ベンダーが同席できない会議でチャンピオンが主張を展開するために使うものである。評価を正当化した技術的信頼性を失うことなく、エコノミックバイヤーの抽象度で機能するコンテンツを構築することは、この分野における難しいcalibrationの課題の一つである。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>エコノミックバイヤー vs. 技術評価者.</strong> 技術評価者は、製品が主張どおりのことをできるかどうかを判断する。エコノミックバイヤーは、その購入が行う価値があるかどうかを判断する。ビジネスケースが技術的な言葉から財務的・戦略的な言葉へと翻訳されなければ、製品は技術評価に勝ちながらもエコノミックバイヤーとの会話で失われることがある。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#buying-committee">Buying committee</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- F -->
+      <div class="letter-group" id="letter-F">
+        <h2 class="letter-anchor">F</h2>
+
+        <div class="term-entry" id="field-activation">
+          <div class="term-head"><span class="term-name">フィールドアクティベーション</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">現行の検証済みデモ、現行の競合バトルカード、現行の技術的ポジショニングを、実際の顧客との会話の中で活用している営業・プリセールスのフィールドチームの割合であり、テクニカルマーケティングのコンテンツが、それが作られた対象に届き、使われているかどうかを測る指標として用いられる。</p>
+          <p class="term-body">フィールドアクティベーションは、テクニカルマーケティングの効果を示す遅行指標である。制作されてもフィールドに使われないコンテンツは成功とは言えない。30人中3人のSCしか使っていないフィールド向け環境は、アクティベーションの連鎖のどこか――コンテンツ、コミュニケーション、あるいは適合性――が失敗していることを示すシグナルである。フィールドアクティベーションを測定するには、どの資料が営業ポータルに公開されたかではなく、どの資料が実際の案件で使われているかを追跡する必要がある。</p>
+          <p class="term-body">フィールドアクティベーションが低いことは診断的な意味を持つ。それは、SCが実際に販売している方法に合っていないコンテンツ、フィールドが新しいbattlecardの存在を知らないというコミュニケーションの失敗、あるいは技術的には正確だが実際の顧客との会話の時間的制約の中では使えないコンテンツを示している可能性がある。それぞれの失敗モードには異なる対処法がある。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#evaluation-conversion">Evaluation conversion</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- G -->
+      <div class="letter-group" id="letter-G">
+        <h2 class="letter-anchor">G</h2>
+
+        <div class="term-entry" id="generative-ai">
+          <div class="term-head"><span class="term-name">Generative AI</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">大規模な学習データセットから統計的パターンを学習し、保存された応答を検索するのではなくプロンプトの意図に合致する出力を生成することで、テキスト、画像、コード、音声といった新しいコンテンツを生み出すAIシステム。</p>
+          <p class="term-body">テクニカルマーケティングの文脈において、Generative AIは二つの層で同時に機能している。マーケティングすべきプロダクトカテゴリーとしての層と、この分野の仕事の進め方を変える制作ツールとしての層である。制作の層では、Generative AIはアーティファクト制作のレイヤーを圧縮する。競合サマリーの初稿、デプロイガイドの下書き、技術スライドのアウトラインなどである。生まれた時間の余裕は本物である。しかし、初稿を擁護可能なアーティファクトへと変える編集判断は、同じツールによっては圧縮されない。</p>
+          <p class="term-body">プロダクトの層では、Generative AIはテクニカルマーケティングが構造的に対応すべき立場にある、特有の信頼の問題を生み出す。AIを活用した製品を評価するエンタープライズ購買者は、トラストギャップに直面する。それは、その能力の採用と、そのアウトプットへの確信との間の距離である。そのギャップを埋めることは根拠づくりの仕事である。現実的な条件下でのモデルの挙動を示すdemo、モデルが顧客データに対して何を行うかを説明するアーキテクチャ資料、そして製品が持つ失敗モードとその対処法についての正直な提示がそれにあたる。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Generative AI vs. Agentic AI.</strong> 生成モデルはプロンプトに応じて出力を生成し、そこで止まる。エージェント型システムは、生成モデルを、アクションを取り、結果を評価し、続行する、より大きなループの中の推論コンポーネントとして使う。2026年時点のほとんどのエンタープライズAI製品は両方を組み合わせている。推論と生成のための生成レイヤーと、実行のためのエージェントレイヤーである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#agentic-ai">Agentic AI</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="gtm">
+          <div class="term-head"><span class="term-name">GTM</span><span class="term-pos">名詞 · 略語 go-to-market</span></div>
+          <p class="term-definition">企業が自社製品をターゲット市場に届けるための戦略、チーム構成、運用モデル。購買者をどう定義し、どうリーチするか、製品の価格設定とパッケージングをどう行うか、どの営業活動を展開するか、そして評価・購入・拡大を通じて顧客をどの機能が支えるかを含む。</p>
+          <p class="term-body">GTMはテクニカルマーケティングの文脈において、プロダクト企業が運用する顧客対応機能の集合を指す略語として最もよく使われる。マーケティング、営業、セールスエンジニアリング、プロダクトマーケティング、そしてテクニカルマーケティングが合わさって、ほとんどのエンタープライズソフトウェア企業においてGTM組織を構成する。AIがあらゆるGTMの職能にわたってアーティファクト制作を圧縮していると言われるとき、それはこれらすべての機能が、以前より速く同じ種類の構造化されたコンテンツを生み出していることを意味する。</p>
+          <p class="term-body">GTM組織内でのテクニカルマーケティングの位置づけは、企業タイプによって異なる。プラットフォーム企業では通常マーケティングの内部に位置する。インフラストラクチャー・データ企業ではしばしばプロダクトの内部に位置する。PLG企業ではマーケティング責任者に直接レポートすることもある。その位置づけはこの機能の優先順位に影響するが、その中核的な仕事には影響しない。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#plg-company">PLG company</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#pipeline">Pipeline</a>
+          </div>
+        </div>
+        </div>
+
+
+      <!-- I -->
+      <div class="letter-group" id="letter-I">
+        <h2 class="letter-anchor">I</h2>
+
+        <div class="term-entry" id="interactive-proof">
+          <div class="term-head"><span class="term-name">Interactive proof</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買者自身が操作するトライアル環境またはサンドボックスであり、ベンダー主導のデモンストレーションではなく直接体験を通じて懐疑心を転換させるもの。PLG企業の主要なデモアーキタイプであり、テクニカルマーケターが環境と、その体験を理解可能にするナラティブレイヤーの両方を構築する。</p>
+          <p class="term-body">Interactive proofは、demoの関係性を逆転させる。Configured environmentでは、ベンダーが購買者に何を見せるかを制御する。Interactive proofでは、購買者が自分が何をするかを制御する。実務者の仕事は、その体験を台本化することではなく、それを設計することである。デフォルトのデータ、オンボーディングの経路、製品の価値の主張が自明になる瞬間である。エスコートされることなくその瞬間にたどり着いた購買者は、代理人がそこに至る様子をただ見ていた購買者よりも、はるかに深く納得している。</p>
+          <p class="term-body">製品の採用が従来の営業活動に先行する、あるいはそれに取って代わるPLG企業は、interactive proofを主要なテクニカルマーケティングのアウトプットとして使う。トライアル環境がdemoなのである。ここではフィールドアクティベーションの見え方が異なる。テクニカルマーケティングは、SEが良いセッションを行ったかどうかではなく、トライアルに入った購買者がその証明の瞬間に到達するかどうかを測定する。その瞬間への経路を設計することが、実務者の中核的な仕事である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Interactive proof vs. proof of concept.</strong> Proof of conceptは、顧客固有の環境に対してベンダーの関与のもとで実施される構造化された評価である。Interactive proofは、自己主導型で、ベンダーが設計し、通常は制御されたサンドボックスの中で実行される。POCは案件固有のものである。Interactive proofは一度構築され、大規模に使い回される。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="integration-guide">
+          <div class="term-head"><span class="term-name">インテグレーションガイド</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">ベンダーの製品を購買者の既存システムに接続する方法を説明する構造化された技術文書であり、認証、データフロー、構成要件、よくある失敗モードを網羅し、購入評価の過程で技術評価者が統合の実現可能性を判断できるだけの深さで書かれたもの。</p>
+          <p class="term-body">インテグレーションガイドは、テクニカルマーケティングと技術文書の境界に位置する。ドキュメンテーションは、すでに購入したユーザー向けに書かれる。評価目的で書かれるインテグレーションガイドは意図が異なる。それは、購入を確約する前に統合が実現可能かどうかを尋ねる、技術に精通した購買者向けに書かれる。その違いは、フレーミング、前提とする文脈、そして十分な深さと見なされるものを変える。</p>
+          <p class="term-body">よく構築されたインテグレーションガイドは、よくある評価のブロッカーを減らす。購買者のセキュリティチームやアーキテクチャチームが購入を進める前に長時間の技術レビューを要求することである。テクニカルマーケティングがこのアーティファクトを制作する。それはドキュメンテーションの成果物ではない。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- M -->
+      <div class="letter-group" id="letter-M">
+        <h2 class="letter-anchor">M</h2>
+
+        <div class="term-entry" id="magic-quadrant">
+          <div class="term-head"><span class="term-name">Magic Quadrant</span><span class="term-pos">名詞 · Gartnerの商標</span></div>
+          <p class="term-definition">Gartnerが提供する主要な市場評価フレームワークであり、定義されたテクノロジーカテゴリー内のベンダーを、実行能力（Ability to Execute）とビジョンの完全性（Completeness of Vision）の2軸からなるグリッド上に位置づけ、Leaders、Challengers、Visionaries、Niche Playersの4つの象限のいずれかに分類するもの。</p>
+          <p class="term-body">Magic Quadrantでのポジションは、エンタープライズソフトウェア企業にとってAR cycleの中でも最も重要な意味を持つアウトプットの一つである。購買者はショートリストを作成する際にMagic Quadrantのレポートを積極的に活用する。関連するMagic Quadrantに掲載されていないベンダーは、エンタープライズの評価に含まれないことが多い。Leaders象限に位置づけられたベンダーは、そのレポートが有効な12ヶ月から18ヶ月の間、そのポジショニングを商談の会話の中に持ち込むことになる。</p>
+          <p class="term-body">Magic Quadrantでのポジションへのテクニカルマーケティングの貢献は直接的である。この機能が生み出すブリーフィング資料、demoコンテンツ、技術的なproof pointは、Gartnerのアナリストが実行能力を評価する際に評価する対象そのものである。次のAR cycleにおけるアナリストポジションの変化、具体的には象限内、あるいは象限間の移動は、テクニカルマーケティング機能の主要な測定可能な成果である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Magic Quadrant vs. Forrester Wave.</strong> どちらもカテゴリー内でベンダーを位置づけるアナリスト評価フレームワークだが、それぞれ異なる方法論、異なる採点基準、異なる視覚的フォーマットを用いる。どちらもエンタープライズ購買者に対して同程度の影響力を持ち、テクニカルマーケティングは各社の評価プロセスに対して個別に準備を行う。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#ar-cycle">AR cycle</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- P -->
+      <div class="letter-group" id="letter-P">
+        <h2 class="letter-anchor">P</h2>
+
+        <div class="term-entry" id="presales">
+          <div class="term-head"><span class="term-name">プリセールス</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">最初の見込み顧客との接点から契約締結に至るまで複雑な商談を支える組織機能および一連の活動であり、技術的なディスカバリー、ソリューション設計、製品デモンストレーション、proof of conceptの調整、RFP対応、セキュリティ質問票の管理を含む。</p>
+          <p class="term-body">プリセールスは、sales engineeringとsolutions consultingの各機能を含む上位カテゴリーである。テクニカルマーケティングはプリセールスに隣接しているが、それとは区別される。プリセールスは個々の、案件固有の会話の中で機能する。テクニカルマーケティングは製品全体のポジショニングのレベルで機能し、プリセールスがすべての案件を通じて使う資料を構築する。最もシンプルな違いは、プリセールスがプレイを実行し、テクニカルマーケティングがプレイブックを書くということである。</p>
+          <p class="term-body">テクニカルマーケティングとプリセールスの境界は、エンタープライズソフトウェアの中でも最も標準化が進んでいない領域の一つである。企業によっては、テクニカルマーケティングがプリセールス組織の内部に位置し、VP of PresalesやSolutions Engineeringの責任者にレポートする。別の企業では、マーケティングの内部に位置し、組織的にプリセールスとは完全に分離している。レポートラインはこの機能のインセンティブと優先順位に影響するが、仕事の本質、すなわちプリセールスの会話を再現可能かつ勝てるものにする技術的根拠のレイヤーを生み出すことには影響しない。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>プリセールス vs. テクニカルマーケティング.</strong> プリセールスは個々の案件の中で実行する。テクニカルマーケティングは、その実行を一貫性があり拡張可能なものにするシステム、アーティファクト、フレームワークを構築する。案件のたびに一から自分でdemoを構築するSEは、テクニカルマーケティングの支援なしにプリセールスを行っている。正典となるreference environmentから検証済みのdemoを実行するSEは、テクニカルマーケティングのインフラに支えられたプリセールスを行っている。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="pipeline">
+          <div class="term-head"><span class="term-name">パイプライン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">ある期間内に企業が追っているアクティブな営業案件の総体であり、通常は営業プロセスの各段階における金額ベースで測定される。</p>
+          <p class="term-body">テクニカルマーケティングはクォータから一段離れた位置にある。その仕事はパイプラインを直接クローズするものではない。それは営業機能の役割だが、テクニカルマーケティングはパイプラインがクローズされ得る条件を作り出す。関連する指標はパイプライン貢献である。この役割が生み出す技術コンテンツ、demoアセット、競合イネーブルメントに起因するパイプラインを指す。自らの仕事をパイプラインへの影響に紐づけて追跡できないテクニカルマーケティング機能は、説明責任なしに運用されていることになる。</p>
+          <p class="term-body">パイプラインという言葉は、テクニカルマーケティング自体の制作プロセスの略称としても使われる。生の製品知識から、フォーマット済みでフィールドが使える状態のアーティファクトに至る一連の流れである。AIツールはこの制作パイプラインを大幅に圧縮した。かつて4時間を要した競合サマリーは、今では40分で初稿ができあがる。どの主張が擁護可能か、どのフレーミングが購買者からのプレッシャーの下で持ちこたえるかを決める編集上のパイプラインは、同じペースでは圧縮されていない。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="playbook">
+          <div class="term-head"><span class="term-name">プレイブック</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">特定の種類の営業活動や競合状況をどう実行するかを文書化した、構造化された再現可能なガイドであり、ディスカバリーの質問、demoの流れ、反論への対応、proof pointを網羅し、異なるフィールドチームのメンバーが一貫して同じプレイを実行できるようにするもの。</p>
+          <p class="term-body">プレイブックは、個人の才能に依存する営業活動と、チームとしてスケールする営業活動との違いを生む。テクニカルマーケティングはプレイブックの技術的な中身を執筆する。どのオーディエンスにどのdemoを実行するか、どの競合上の主張を先に打ち出すか、各段階でどの技術的なproof pointが購買者からのプレッシャーに耐えるかである。営業のリーダーシップは商業的な活動を所有する。テクニカルマーケティングはその下にある根拠のレイヤーを所有する。</p>
+          <p class="term-body">Displacement playbook、すなわち特定の名指しされた競合の既存顧客基盤に対して案件を勝ち取るための構造化されたガイドは、テクニカルマーケティングが生み出す中でも最もレバレッジの高いアーティファクトの一つである。よく構築されたdisplacement playbookは時間とともに複利的に効果を生む。ディスプレイスメントに勝つたびに顧客リファレンスが生まれ、それが次のサイクルの糧になる。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>プレイブック vs. battlecard.</strong> Battlecardはその場で参照されるリファレンスアーティファクトである。プレイブックは、案件の一連の流れを通じて実行されるプロセスアーティファクトである。Battlecardは会議中にタブの中で生きているが、プレイブックはディスカバリーからクロージングまで、案件がどう進められるかを形作る。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-point">
+          <div class="term-head"><span class="term-name">プルーフポイント</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">技術に精通した購買者からの追及に耐えうる精度で製品の主張を裏づける、具体的で検証可能な証拠の一片。ベンチマーク結果、顧客の成果、文書化された技術的能力、あるいは第三者による検証などを指す。</p>
+          <p class="term-body">プルーフポイントは主張そのものではない。この違いは、「当社のプラットフォームはスケーラブルです」と「当社のプラットフォームは、独立系ベンチマークにおいて秒間1000万件のイベントを処理しました」の違いである。前者はポジショニングである。後者がプルーフポイントである。テクニカルマーケティングは、どの主張にプルーフポイントが必要か、どのプルーフポイントがすでに存在するか、そしてベンチマーク、顧客リファレンス、第三者評価を通じてどれを新たに生み出す必要があるかを特定する責任を負う。</p>
+          <p class="term-body">プルーフポイントは劣化する。二世代前の製品のベンチマークは、もはや現行のプルーフポイントではない。その後解約した企業からの顧客の声も、もはや現行のプルーフポイントではない。プルーフポイントの一覧を最新かつ正確に保ち、もはや擁護できなくなったものを退役させることは、テクニカルマーケティングの継続的な責務である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>プルーフポイント vs. proof of concept.</strong> プルーフポイントは、主張を裏づけるために使われる既存の証拠である。Proof of conceptは、特定の顧客の環境で新しい証拠を生み出すために実施されるライブの評価である。プルーフポイントは案件の前から存在し、POCは案件の最中に作られる。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="plg-company">
+          <div class="term-head"><span class="term-name">PLG company</span><span class="term-pos">名詞 · 略語 product-led growth</span></div>
+          <p class="term-definition">トップダウン型のエンタープライズセールスではなく、エンドユーザーによる製品採用によって主に成長を牽引する、エンタープライズソフトウェア企業。製品そのものが顧客獲得・アクティベーション・拡大の主要な仕組みとなる。</p>
+          <p class="term-body">PLG companyにおけるテクニカルマーケティング機能は、従来型のエンタープライズセールスを行うプラットフォーム企業やインフラストラクチャー企業とは大きく異なる様相を呈する。PLG companyでは、購買の意思決定がSales Engineerが関与するよりも前に行われることが多い。そのため、技術的な根拠のレイヤーは、営業のdemoにではなく、主に製品体験、ドキュメンテーション、開発者向けコンテンツの中に組み込まれている。PLG companyのテクニカルマーケターは、プリセールス機能よりもデベロッパーリレーションズやドキュメンテーションに近い存在である。</p>
+          <p class="term-body">この役割の競合ポジショニングの仕事もまた、PLGの活動においては異なる様相を見せる。名指しされたアカウントのディスプレイスメントへの注力は薄れ、カテゴリーナラティブ、すなわち競合がそれを別の形で定義する前に、そのプロダクトカテゴリーが何であるかを定義することへの注力が強まる。フィールドアクティベーションの指標は、PLGの文脈では弱いシグナルになる。プロダクトクオリファイドリードのコンバージョンと既存アカウント内での拡大の方が、テクニカルマーケティングの効果を示すより強い指標となる。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-of-concept">
+          <div class="term-head"><span class="term-name">Proof of concept</span><span class="term-pos">名詞 · 略語 POC</span></div>
+          <p class="term-definition">ベンダーが顧客固有の環境、データ、ユースケースに対して自社製品を構成し検証する、構造化された技術評価であり、製品が謳い通りに機能するという証拠を生み出すことを目的とする。</p>
+          <p class="term-body">Proof of conceptは、営業の演習ではなく、根拠を生み出すための演習である。好ましくない結果を生んだよく実施されたPOCは、好ましい印象を生んだ不十分なPOCよりも価値がある。好ましくない結果は正直であり、好ましい印象は本番環境への展開に耐えないからである。真の製品ギャップを浮き彫りにするPOCもまた、製品にとってのシグナルである。その発見は、案件の事後分析だけでなく、プロダクトロードマップの議論にも活かされるべきものである。</p>
+          <p class="term-body">テクニカルマーケティングはPOCの戦略に関与する。POCが始まる前に、成功基準、スコープ、データ要件、評価フレームワークを定義することである。定義されていないPOCはPOCではない。それは無償のコンサルティング業務である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>POC vs. proof of value.</strong> Proof of conceptは製品が機能するかどうかを検証する。Proof of valueは、製品が購買者の達成しようとしている成果を生み出すかどうかを検証する。製品はPOCに合格しながらPOVには失敗することがある。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-value">Proof of value</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-of-value">
+          <div class="term-head"><span class="term-name">Proof of value</span><span class="term-pos">名詞 · 略語 POV</span></div>
+          <p class="term-definition">製品が技術的に機能するかどうかではなく、購買者がコミットしているビジネス上の成果に対して測定可能な改善をもたらすかどうかを、購買者自身が検証する構造化された評価。</p>
+          <p class="term-body">Proof of valueは、評価の問いを「機能するか」から「私たちにとって重要な形で機能するか」へと再定義する。テクニカルマーケティングは、POVが始まる前に価値の仮説を定義する。どんな成果を、どう測定し、どの時間軸で、どのベースラインと比較するかである。価値の仮説が明示されていないPOVは、主観的な終わり方をする長期化したトライアルにすぎない。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- R -->
+      <div class="letter-group" id="letter-R">
+        <h2 class="letter-anchor">R</h2>
+
+        <div class="term-entry" id="reference-architecture">
+          <div class="term-head"><span class="term-name">Reference architecture</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">通常はコード、パイプライン、ノートブック、あるいは統合パターンといった、技術に精通した評価者が直接追及できるレベルで製品の主張を証明する、構造化された技術アーティファクト。インフラストラクチャー・データ企業の主要なデモアーキタイプであり、そのアーティファクトを検証するのはSales Engineerではなく購買者側のエンジニアである。</p>
+          <p class="term-body">Reference architectureは、スライドデックよりもGitHubリポジトリに近い位置にある。主張はそのアーティファクト自体に埋め込まれている。コードが動けば、パイプラインが接続すれば、ノートブックが明示された出力を生み出せば、その主張はナレーションなしに証明される。テクニカルマーケティングは、そのアーキテクチャの整合性を所有する。どのユースケースを証明するか、その構成が本番環境に近い現実的な条件を反映しているか、そして明示された成果が実際に書かれた通りの作業から生じているかどうかである。</p>
+          <p class="term-body">Databricks、Elastic、HashiCorp、CrowdStrikeを含むインフラストラクチャー・データ企業は、reference architectureを主要なテクニカルマーケティングのアウトプットとして制作する。対象読者はビジネス上の購買者ではなく、プリンシパルエンジニアやアーキテクトである。その評価は、configured environmentやスライドベースのdemoでは満たせない深さの技術的な精査のもとで行われる。近道、願望的な構成、非開示の依存関係を含むreference architectureは見破られ、回復が難しい形でベンダーの技術的信頼性を損なう。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Reference architecture vs. アーキテクチャ概要.</strong> アーキテクチャ概要は、製品が何であり、どう構造化されているかを説明する。Reference architectureは、実務者がそこから構築できるだけの技術的な完成度をもって、特定のユースケース向けにそれをどう展開・構成するかを示す。概要は購買者の旅のより早い段階に位置し、reference architectureは評価・導入の段階に位置する。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="reference-environment">
+          <div class="term-head"><span class="term-name">Reference environment</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">デモンストレーション、技術コンテンツ、評価資料が生み出される際の典拠となる、ソフトウェア製品の正典的な構成。</p>
+          <p class="term-body">Reference environmentはdemoではない。それはdemoが生み出される際のインフラである。明確な所有者を持たないreference environmentはreference environmentではない。それは共有のdemoインスタンスであり、共有のdemoインスタンスは、コミット権限を持つ人数に比例した速度で一貫性を失っていく。</p>
+          <p class="term-body">正典となるreference environmentは、実務者の主要なアーティファクトである。フィールド向けのあらゆるdemo environmentは、この典拠となる源から派生している、あるいはそれと整合しているべきである。地域別、業種別、ペルソナ別に意図的に分岐した環境であっても、その分岐の根拠を文書化しておく必要がある。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Reference environment vs. サンドボックス.</strong> サンドボックスは実験のための使い捨ての環境である。Reference environmentは本番使用のための管理されたアーティファクトである。両者を混同することは、demo environmentの負債の最も一般的な原因である。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo-environment">Demo environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="regis-mckenna">
+          <div class="term-head"><span class="term-name">Regis McKenna</span><span class="term-pos">名詞 · 人物</span></div>
+          <p class="term-definition">1967年にナショナル セミコンダクターに参画し、後にRegis McKenna Inc.を設立したシリコンバレーのマーケティング戦略家であり、半導体およびコンピューティング業界においてテクニカルマーケティングを実践し理論化した最も早期の人物の一人となった。</p>
+          <p class="term-body">McKennaのこの分野への貢献は方法論的なものだった。彼は、ほとんどのマーケティング実践が消費財を中心に構築されていた時代に、技術に精通した購買者に向けて技術製品をマーケティングするための構造化されたアプローチを開発し、言語化した。ナショナル セミコンダクターでの彼の仕事と、IntelおよびAppleでのアドバイザリーの役割は、エンタープライズテクノロジー企業が技術的信頼性と商業的説得の関係をどう考えるべきかについてのひな型を確立した。</p>
+          <p class="term-body">この分野の歴史において、McKennaはEra Iの起点を象徴する存在である。テクニカルマーケティングが、エンジニアリングと営業に分散したその場しのぎの責務ではなく、プロダクト企業内で認識された社内機能となった時点である。The Before the Nameという記事が、この分野の草創期における彼の役割を詳しく辿っている。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-marketer">Technical marketer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="rfp">
+          <div class="term-head"><span class="term-name">RFP</span><span class="term-pos">名詞 · 略語 request for proposal</span></div>
+          <p class="term-definition">購買組織が発行する正式な調達文書であり、製品機能、技術アーキテクチャ、セキュリティ体制、価格、導入アプローチ、企業の安定性を網羅する構造化された質問群にベンダーが回答することを求め、正式な評価プロセスの中でベンダーを体系的に比較するために用いられる。</p>
+          <p class="term-body">RFP対応は、テクニカルマーケティングのポートフォリオの中でも最も労力を要し、最もリスクの高いアーティファクトの一つである。テクニカルマーケティングは、RFPのコンテンツライブラリ、承認済みの主張、そして案件を横断して対応を速く擁護可能なものにするproof pointの一覧を維持する。RFP以前の会話に参加していなかったベンダーは、対応がどれほどよく書かれていても構造的に不利な立場にある。RFPに最終的に盛り込まれる評価基準は、購買委員会がすでに信頼しているベンダーと交わした会話を反映していることが多いからである。</p>
+          <p class="term-body">RFPが届く前のテクニカルマーケティングの仕事が、RFPそのものを形作る。アナリストとの関わり、リファレンス資料、そして購買委員会の評価者との早期の技術的な会話は、購買者が評価要件を起草する際に使う語彙と基準を確立する。RFPが届くのを待つテクニカルマーケティング機能は受け身である。RFPが書かれる前に評価基準に影響を与える機能は、どれほど対応の質が高くても埋め合わせられない構造的優位性を持つ。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>RFP vs. RFI.</strong> Request for information（RFI）は、どのベンダーを正式な評価に招く価値があるかを特定するために使われる、より早期で、より広範な文書である。RFPは、すでに適格と判断されたベンダーのショートリストに対して発行される。テクニカルマーケティングは両方に対応するが、RFP対応はよりリスクの高い文書であり、通常はプロダクト、セキュリティ、法務、財務の各チームとのより多くの社内調整を伴う。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#security-questionnaire">Security questionnaire</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-point">Proof point</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#buying-committee">Buying committee</a>
+          </div>
+        </div>
+
+
+        <div class="term-entry" id="rfi-response">
+          <div class="term-head"><span class="term-name">RFI response</span><span class="term-pos">名詞 &middot; 略語 request for information response</span></div>
+          <p class="term-definition">正式な評価が始まる前に提出される、購買組織のrequest for informationに対するベンダーの構造化された回答であり、ベンダーを正式なRFPプロセスに招くべきかどうかを購買者が判断する材料として使われる。</p>
+          <p class="term-body">RFIはRFPよりも購買者の意思決定プロセスの早い段階で届き、それに応じて要件はより具体性に欠ける。購買者は正式な評価ではなく、市場調査を行っている。彼らは、そのカテゴリーにどのベンダーが存在するか、主要な差別化の主張は何か、そしてそのベンダーのプロフィールが正式な評価にかける労力に見合うかどうかを理解したいのである。これにより、RFI responseはRFP responseとは異なる種類の文書になる。ショートリストに入るだけの鋭さが必要であり、あらゆるセキュリティとアーキテクチャの質問に答えられるほどの網羅性は必要ない。</p>
+          <p class="term-body">テクニカルマーケティングは、承認済みのポジショニングの主張、代表的なproof point、そして複数の同時進行するRFIにまたがって迅速に展開できる顧客リファレンスの要約を含む、RFI responseが構築される際のコンテンツライブラリを維持する。IBMのアナリストリレーションズチームは、AIによる草稿作成がRFI responseの内容の約95パーセントを事前に埋め、提出前に人間によるQAのステップを経るというパターンを文書化した。このパターンは構造的な真実を反映している。ほとんどのRFIの質問は購買者やカテゴリーを横断して繰り返されるため、よく維持されたコンテンツライブラリは、精度を犠牲にすることなく対応時間を劇的に圧縮する。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>RFI response vs. RFP response.</strong> RFI responseはより短く、より早期で、技術的な具体性がより低い。その目標はショートリストに入ることである。RFP responseはより長く、より後の段階で、よりアーキテクチャ的に詳細である。その目標は評価に勝つことである。どちらも技術的に正確な主張を必要とする。RFP responseは、プロダクト、セキュリティ、法務の各チームとのより多くの社内調整を必要とする。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#rfp">RFP</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#briefing-prep">Briefing prep</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#ar-cycle">AR cycle</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- S -->
+      <div class="letter-group" id="letter-S">
+        <h2 class="letter-anchor">S</h2>
+
+        <div class="term-entry" id="security-questionnaire">
+          <div class="term-head"><span class="term-name">セキュリティ質問票</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買組織のセキュリティ、法務、または調達チームが発行する構造化された文書であり、通常は購入やベンダー承認の条件として、ベンダーに対してセキュリティ管理体制、データ取り扱い方針、コンプライアンス認証、事業継続体制、インシデント対応手順の開示と文書化を求めるもの。</p>
+          <p class="term-body">セキュリティ質問票は製品の評価ではない。それはリスクアセスメントである。購買組織は製品が良いかどうかを尋ねているのではない。ベンダーが自分たちのデータとシステムを託すに値するかどうかを尋ねているのである。セキュリティ質問票で不合格になったベンダーは、製品の優劣で案件を失うのではない。組織としての備えで失うのである。誇大約束をせずに着地するセキュリティ質問票への回答は、この分野の言葉で言えば、他のどのテクニカルマーケティングのアーティファクトとも同じ編集判断を必要とする。すなわち、製品や組織が支えきれない主張を作り出すことなく、問われていることに対応する形で、真実を述べることである。</p>
+          <p class="term-body">テクニカルマーケティングは、製品のアーキテクチャ、データ取り扱い、コンプライアンス体制についての承認済みの技術的主張を維持し、それがセキュリティ質問票への回答の拠り所となる。SEやアカウントチームが回答を作成するが、承認されていない主張の上に構築された調整不足の回答は、最悪のタイミングで表面化する負債である。テクニカルウィンの後、調達の段階で、一つの矛盾が評価を最初からやり直させることになりかねない。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>セキュリティ質問票 vs. RFP.</strong> RFPは、ベンダーの製品が購買者の要件に適合するかどうかを評価する。セキュリティ質問票は、ベンダーの組織がデータ処理者およびサービス提供者として信頼できるかどうかを評価する。どちらも独立して案件をブロックし得る。多くのエンタープライズの購入では両方が必要とされ、それぞれベンダー側で異なる担当者が対応する。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#rfp">RFP</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-point">Proof point</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="sales-engineer">
+          <div class="term-head"><span class="term-name">Sales engineer / Solutions consultant</span><span class="term-pos">名詞 · 略語 SE, SC</span></div>
+          <p class="term-definition">実際の商談の中で技術的な会話をリードする、技術的な訓練を受けたプリセールス担当者。ライブデモの実施、製品に関する質問への回答、proof of conceptのスコーピング、商業的な営業活動を支える技術的信頼性の提供を担う。</p>
+          <p class="term-body">SEやSCは、テクニカルマーケティングが構築する根拠とフレームワークのフィールド実行レイヤーである。テクニカルマーケターがreference environmentを設計し、SEがそこからdemoを実行する。テクニカルマーケターが競合battlecardを執筆し、SCが名指しされた競合に対する火曜日の商談でそれを使う。この関係は構造的である。テクニカルマーケティングが再現可能な資料を作り、SE/SCがそれを、どんな再現可能なフレームワークも完全には予期できない案件固有の文脈の中で適用する。</p>
+          <p class="term-body">この二つの役割の違いがテクニカルマーケターにとって重要な理由は、SE/SCのフィールドでの経験が、マーケティング資料が機能しているかどうかについて最も速いフィードバックシグナルだからである。勝率、demoコンバージョン、名指しされたアカウントでの競合ディスプレイスメント。これらの指標は、SE/SCの実行の質と、彼らが手渡された技術コンテンツの質の両方を反映している。両方を測定すればシグナルは明瞭になる。片方しか測定しなければ、帰属は誤ったものになる。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>SE vs. SCの呼称.</strong> Sales Engineer（SE）はインフラストラクチャー企業やプラットフォーム企業でより一般的である。Solutions Consultant（SC）はSaaSやアプリケーションソフトウェアでより一般的である。実際には二つの肩書きの機能的な違いは小さく、どちらもプリセールスの技術的役割を指す。Solutions Architect（SA）は、AWS、GCP、Azureを含む多くのクラウド・インフラストラクチャー企業においてプリセールスの役割であり、SAは評価段階を通じて技術的な会話を所有する。SaaS企業では、SAはより多くの場合、ポストセールスや導入のスコープを意味する。使われ方は企業によって大きく異なり、肩書きだけから推測すべきではない。</p>
+            <p><strong>SE vs. テクニカルマーケター.</strong> SEは個々の、案件固有の会話の中で機能する。テクニカルマーケターは製品全体の技術的ポジショニングのレベルで機能し、SEがすべての案件を通じて使う資料を構築する。テクニカルマーケティングはSEを置き換えるものではない。SEの仕事を拡張可能かつ再現可能にするものである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- T -->
+      <div class="letter-group" id="letter-T">
+        <h2 class="letter-anchor">T</h2>
+
+        <div class="term-entry" id="teardown">
+          <div class="term-head"><span class="term-name">ティアダウン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">競合の製品、アーキテクチャ、価格設定、ポジショニング、公開されている技術的主張について、テクニカルマーケティングが競合戦略、battlecard、displacement playbookに活かすために作成する、構造化された文書化済み分析。</p>
+          <p class="term-body">ティアダウンは、営業資産である前にリサーチである。実務者は、技術的な同業者がそうするように競合の製品を評価する。Demoを試し、ドキュメンテーションを読み、アーキテクチャ資料を精査し、統合のストーリーを評価する。目標は、競合がどこで強く、どこで弱く、技術的な精査に耐えられない主張は何かについての正直な見立てである。</p>
+          <p class="term-body">競合ティアダウンは、AIツールが最も直接的に影響を与えたアーティファクトの一つである。かつて丸一日の午後を要した競合サマリーの初稿は、今では1時間足らずで作業可能な草稿ができあがる。この圧縮は本物であり、正味でプラスである。AIが生み出せないのは、特定の案件で、特定の競合に対して、特定の購買者の懸念を目の前にして、どのアーキテクチャ上の弱点を先に打ち出すべきかを決める編集判断である。その判断には購買者の文脈を知ることが必要であり、その文脈は学習データの中にはない。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>ティアダウン vs. battlecard.</strong> ティアダウンは分析である。Battlecardは、その分析から導き出されたフィールド即応型のアウトプットである。ティアダウンは社内向けであり、battlecardはSCが実際の商談で使うアーティファクトである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-marketer">
+          <div class="term-head"><span class="term-name">テクニカルマーケター</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">複雑な商談を支える技術的根拠とナラティブの層を担う実務者。デモ、リファレンス環境、競合資料、アナリスト向けコンテンツ、そして製品の能力と購買者の確信との間の距離を縮める技術コンテンツを含む。</p>
+          <p class="term-body">テクニカルマーケターは、エンジニアリングとフィールドの間に位置し、製品の実態を市場の言葉に、市場の実態を製品へのシグナルに翻訳する。そのアウトプットは、他の人々が案件を進め、アナリストに影響を与え、カテゴリーポジションを確立するために使う環境、フレームワーク、資料である。この役割の完全な定義については、<a href="/ja/the-technical-marketer">The Technical Marketer</a>を参照。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-champion">
+          <div class="term-head"><span class="term-name">テクニカルチャンピオン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買組織内で技術的に信頼される個人であり、ベンダーの製品を評価し、その能力について結論に達し、評価が購買決定に向かって進む過程でその結論を技術的な同僚やビジネスリーダーシップに対して擁護する意思のある人物。</p>
+          <p class="term-body">テクニカルチャンピオンは、Sales Engineerの購買者側の対応物である。SEがベンダーの技術的な議論を案件の中に持ち込む一方で、テクニカルチャンピオンはそれを、ベンダーが同席できない会話の中で社内に持ち込む。アーキテクチャを検証した購買委員会のプリンシパルエンジニアや、proof of conceptを実施したITアーキテクトは、評価から擁護へと移行したときにテクニカルチャンピオンになる。</p>
+          <p class="term-body">テクニカルマーケティングは、テクニカルチャンピオンがその場にいないときでも、テクニカルチャンピオンのために構築する。よく構築されたreference architecture、明快なproof of conceptのフレームワーク、既存ベンダーを名指しして正直にその限界を説明する競合ティアダウン。これらは、懐疑的なCFOや慎重なセキュリティチームに対して購入の推奨を擁護する際に、テクニカルチャンピオンが引用するアーティファクトである。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-narrative">
+          <div class="term-head"><span class="term-name">テクニカルナラティブ</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">製品が何をするか、どのように行うか、なぜそれが重要か、他の選択肢とどう違うかについての権威ある一貫した説明であり、フィールド向けのあらゆる技術コンテンツが導き出される拠り所として、テクニカルマーケティングが維持するもの。</p>
+          <p class="term-body">テクニカルナラティブはピッチデックではない。それは、ピッチデック、アナリスト向け資料、demoスクリプト、競合battlecard、reference architectureがすべて導き出される、根底にある構造である。異なるフィールドチームのメンバーが異なる購買者に製品について異なる説明をするとき、テクニカルナラティブは分裂している。それを立て直すことは、テクニカルマーケティングの主要な責務である。</p>
+          <p class="term-body">テクニカルナラティブには、変化の速い製品を持つ企業に特有の失敗モードがある。それはローンチサイクルの間に一度書かれ、製品が進化しても二度と更新されないというものである。18ヶ月前には正確だったが維持されていないナラティブは負債になる。フィールドは現行の製品が支えきれない主張をし、約束されたことと購買者が本番環境で実際に目にすることとの間にトラストギャップが開く。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>テクニカルナラティブ vs. メッセージング.</strong> メッセージングは、マーケティングチームが商業的なコミュニケーションで使う言葉である。短く、オーディエンス固有で、共感を呼ぶように設計されている。テクニカルナラティブは、メッセージングの下にあるより深い構造である。正確で、詳細で、技術的な追及に耐えられる。メッセージングはテクニカルナラティブから導き出されるのであって、その逆ではない。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-win">
+          <div class="term-head"><span class="term-name">テクニカルウィン</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">購買者側の技術評価者が、ベンダーが主張した通りに製品が機能する能力を備えていると結論づけ、その結論が文書化されエコノミックバイヤーに伝えられた、セールスサイクル上の時点。</p>
+          <p class="term-body">実際には、多くのテクニカルウィンは文書化されない握手にすぎない。この分野が保つべき基準はより高い。テクニカルウィンとは、文書化された状態変化であり、技術評価者によって書面で確認され、エコノミックバイヤーに伝えられたものである。その文書化なしには、テクニカルウィンのように感じられるものは単なる感覚にすぎず、感覚は調達を生き延びない。テクニカルマーケティングは、本物のテクニカルウィンを生み出す条件を作り、その結果が確実に記録されるようにする責任を負う。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>テクニカルウィン vs. ビジネスウィン.</strong> テクニカルウィンは能力の問いを解決する。ビジネスウィンは、価値、優先順位、タイミングの問いを解決する。技術的な成功がエコノミックバイヤーが行動できるビジネス言語に翻訳されないままだと、案件はテクニカルウィンとビジネスウィンの間で頓挫する。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-value">Proof of value</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="time-to-decision">
+          <div class="term-head"><span class="term-name">意思決定までの時間</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">最初の実質的な技術評価活動から、購買者が購入するか否かを決定するまでの経過時間であり、ベンダーのテクニカルマーケティングコンテンツが購買者を確信ある結論へと導く効率性を測る指標として用いられる。</p>
+          <p class="term-body">意思決定までの時間は、評価における摩擦を測る指標である。意思決定までの時間が長いことは、必ずしもベンダーの責任ではない。複雑なエンタープライズの購入には、テクニカルマーケティングが加速できない調達プロセス、法務レビュー、予算サイクルが関わる。しかし、購買者の技術チームが追加の根拠、追加のデモンストレーション、追加のproof of concept活動を求めることに起因する長い意思決定までの時間は、既存の技術コンテンツが想定された段階で意思決定に必要な確信を生み出せなかったことを示している。</p>
+          <p class="term-body">意思決定までの時間を短縮することは、テクニカルマーケティングの実践的な目標の一つである。セキュリティチームの質問を先回りするproof pointの一覧は、セキュリティレビューを圧縮する。成功基準が定義されたよく設計されたPOCフレームワークは、評価段階を圧縮する。統合に関する質問に、尋ねられる前に答えるreference architectureは、アーキテクチャレビューを圧縮する。</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#evaluation-conversion">Evaluation conversion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="trust-layer">
+          <div class="term-head"><span class="term-name">Trust layer</span><span class="term-pos">名詞</span></div>
+          <p class="term-definition">商談における技術的深度の帯域であり、デモ、アーキテクチャ資料、競合ポジショニング、proof pointが、技術に精通した購買者に、本格的なエンジニアリングレベルの評価を必要とせずに製品の主張を信頼できるだけの根拠を与えるもの。</p>
+          <p class="term-body">Trust layerという概念は、テクニカルマーケティングが生み出すよう調整されているものが何かを説明する。帯域の一方の端には純粋な商業的コンテンツがある。洗練され、感情に訴えるが、購買委員会が主張を検証できる実体を何も提供しない。何かを感じさせるが、何も証明しない。もう一方の端には純粋な技術的深度がある。アーキテクチャ図、ソースコードへのアクセス、内部文書。すべてを教えるが、何も決めない。それは営業支援機能ではなく、イネーブルメントの演習である。</p>
+          <p class="term-body">テクニカルマーケティングは、意図的にその両端の間の帯域を占める。信頼できるだけの深さを持ちながら、トレーニング演習になってしまうほどではない。Sales Engineerとsolutions consultantが、テクニカルマーケティングが構築した資料を武器に、残りの会話を引き継ぐ。そのキャリブレーションこそが、この分野の中心にある編集判断である。</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Trust layer vs. trust gap.</strong> Trust layerは、購買者の確信を支えるためにベンダーが生み出す根拠である。Trust gapは、購買者がある能力を採用することと、それへの確信との間の距離であり、採用がモデルの信頼性への確信を追い越しているエンタープライズAIの展開において最も顕著に見られる。テクニカルマーケティングの仕事は、trust layerを構築することでtrust gapを埋めることである。</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="cite-card" id="cite" aria-labelledby="cite-title-glossary">
+        <div class="cite-card__header">
+          <span class="cite-card__kicker">Citation</span>
+          <p class="cite-card__title" id="cite-title-glossary">この用語集の引用方法。</p>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">APA</span>
+          <div class="cite-text" id="cite-ref-apa">Technical Marketing. (2026). <em>Glossary of technical marketing.</em> <a href="https://technicalmarketing.org/glossary">https://technicalmarketing.org/glossary</a></div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-apa', this)" aria-label="Copy APA citation">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Copy</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">MLA</span>
+          <div class="cite-text" id="cite-ref-mla">"Glossary of Technical Marketing." <em>Technical Marketing</em>, vol. I, 2026, <a href="https://technicalmarketing.org/glossary">technicalmarketing.org/glossary</a>.</div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-mla', this)" aria-label="Copy MLA citation">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Copy</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">Chicago</span>
+          <div class="cite-text" id="cite-ref-chicago">"Glossary of Technical Marketing." <em>Technical Marketing</em> I (2026). <a href="https://technicalmarketing.org/glossary">https://technicalmarketing.org/glossary</a>.</div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-chicago', this)" aria-label="Copy Chicago citation">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Copy</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">BibTeX</span>
+          <pre class="cite-text cite-text--code" id="cite-ref-bibtex">@misc{technicalmarketing2026glossary,
+  author    = {{Technical Marketing}},
+  title     = {Glossary of Technical Marketing},
+  year      = {2026},
+  publisher = {Technical Marketing},
+  url       = {https://technicalmarketing.org/glossary},
+  note      = {Working reference, continuously updated}
+}</pre>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-bibtex', this)" aria-label="Copy BibTeX citation">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Copy</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="glossary-aside" aria-label="Alphabetical index">
+      <nav class="alpha-index" aria-label="Jump to letter">
+        <span class="alpha-index-label">Index（索引）</span>
+        <div class="alpha-index-grid">
+          <a href="#letter-A" class="active">A</a>
+          <a href="#letter-B" class="active">B</a>
+          <a href="#letter-C" class="active">C</a>
+          <a href="#letter-D" class="active">D</a>
+          <a href="#letter-E" class="active">E</a>
+          <a href="#letter-F" class="active">F</a>
+          <a href="#letter-G" class="active">G</a>
+          <a href="#letter-H" class="empty">H</a>
+          <a href="#letter-I" class="active">I</a>
+          <a href="#letter-J" class="empty">J</a>
+          <a href="#letter-K" class="empty">K</a>
+          <a href="#letter-L" class="empty">L</a>
+          <a href="#letter-M" class="active">M</a>
+          <a href="#letter-N" class="empty">N</a>
+          <a href="#letter-O" class="empty">O</a>
+          <a href="#letter-P" class="active">P</a>
+          <a href="#letter-Q" class="empty">Q</a>
+          <a href="#letter-R" class="active">R</a>
+          <a href="#letter-S" class="active">S</a>
+          <a href="#letter-T" class="active">T</a>
+          <a href="#letter-U" class="empty">U</a>
+          <a href="#letter-V" class="empty">V</a>
+          <a href="#letter-W" class="empty">W</a>
+          <a href="#letter-X" class="empty">X</a>
+          <a href="#letter-Y" class="empty">Y</a>
+          <a href="#letter-Z" class="empty">Z</a>
+        </div>
+      </nav>
+    </aside>
+  </div>
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true"><span class="colophon__diamond"></span></div>
+    <div class="colophon__grid">
+      <span class="colophon__label">Editorial</span>
+      <span class="colophon__value">この分野のためのフィールドマニュアル。Chad Corriveauが編集・監修。</span>
+      <span class="colophon__label">Type</span>
+      <span class="colophon__value">Fraunces、Roboto Slab、Interで組版。ウィートとライブラリーレッドで構成。</span>
+      <span class="colophon__label">Charter</span>
+      <span class="colophon__value">掲載されている項目は、一次情報源であること、実務者にとっての妥当性、ベンダーによる宣伝の排除という編集憲章の基準に照らしてレビューされている。ThinkRoot LLCが出版インフラと事務サポートを提供している。</span>
+      <span class="colophon__label">Contact</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/ja/about" class="colophon__nav-link">About</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/contributors" class="colophon__nav-link">Contributors</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/glossary" class="colophon__nav-link" aria-current="page">用語集</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/landscape" class="colophon__nav-link">Landscape</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/suggest" class="colophon__nav-link">Suggest</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+function copyCitation(targetId, btn) {
+  var el = document.getElementById(targetId);
+  if (!el || !btn) return;
+  var text = el.innerText.trim();
+  function showCopied() {
+    btn.classList.add('is-copied');
+    var txt = btn.querySelector('.cite-copy-text');
+    var icon = btn.querySelector('.cite-copy-icon');
+    if (txt) txt.textContent = 'Copied';
+    if (icon) icon.innerHTML = '&#10003;';
+    setTimeout(function () {
+      btn.classList.remove('is-copied');
+      if (txt) txt.textContent = 'Copy';
+      if (icon) icon.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+      fallbackCopyCitation(text, showCopied);
+    });
+  } else {
+    fallbackCopyCitation(text, showCopied);
+  }
+}
+function fallbackCopyCitation(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch (e) {}
+  document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>

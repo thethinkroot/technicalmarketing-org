@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="ja" data-allow-dark>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>AI時代のテクニカルマーケティング &middot; Volume 01 第3稿 &middot; Technical Marketing</title>
+<meta name="description" content="AIはあらゆるGTM分野で成果物制作を圧縮している。テクニカルマーケティングはその圧力の下で縮小しない。なぜそれが拡大するのか、そしてなぜAI企業がこの機能をゼロから構築しているのか、その論拠。">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/ja/technical-marketing-age-of-ai">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/technical-marketing-age-of-ai" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/technical-marketing-age-of-ai" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/technical-marketing-age-of-ai" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/technical-marketing-age-of-ai" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/technical-marketing-age-of-ai" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/technical-marketing-age-of-ai" />
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="AI時代のテクニカルマーケティング &middot; Volume 01 第3稿 &middot; Technical Marketing">
+<meta property="og:description" content="AIはあらゆるGTM分野で成果物制作を圧縮している。テクニカルマーケティングはその圧力の下で縮小しない。なぜそれが拡大するのか、そしてなぜAI企業がこの機能をゼロから構築しているのか、その論拠。">
+<meta property="og:url" content="https://technicalmarketing.org/ja/technical-marketing-age-of-ai">
+<meta property="og:image" content="https://technicalmarketing.org/og-image-article-ii-ai.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover illustration for Technical Marketing in the Age of AI, Article III of Volume 01 at technicalmarketing.org">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-06-05T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-06-12T00:00:00+00:00">
+<meta property="article:author" content="https://technicalmarketing.org/contributors/chad-corriveau">
+<meta property="article:publisher" content="https://technicalmarketing.org">
+<meta property="article:section" content="AI and Technical Marketing">
+<meta property="article:tag" content="Technical Marketing">
+<meta property="article:tag" content="AI in Enterprise Software">
+<meta property="article:tag" content="Technical Marketing at AI Companies">
+<meta property="article:tag" content="GTM Strategy">
+<meta property="article:tag" content="Sales Engineering">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI時代のテクニカルマーケティング &middot; Volume 01 第3稿 &middot; Technical Marketing">
+<meta name="twitter:description" content="AIはあらゆるGTM分野で成果物制作を圧縮している。テクニカルマーケティングはその圧力の下で縮小しない。なぜそれが拡大するのか、その論拠。">
+<meta name="twitter:image" content="https://technicalmarketing.org/og-image-article-ii-ai.jpg">
+<meta name="twitter:image:alt" content="Cover illustration for Technical Marketing in the Age of AI — technicalmarketing.org">
+<meta name="twitter:site" content="@thethinkroot">
+<meta name="twitter:creator" content="@thethinkroot">
+
+<!-- Academic / citation indexing (Google Scholar, Perplexity, Consensus) -->
+<meta name="citation_title" content="Technical Marketing in the Age of AI">
+<meta name="citation_author" content="Corriveau, Chad">
+<meta name="citation_date" content="2026/06/05">
+<meta name="citation_journal_title" content="Technical Marketing">
+<meta name="citation_volume" content="1">
+<meta name="citation_fulltext_html_url" content="https://technicalmarketing.org/technical-marketing-age-of-ai">
+<meta name="citation_language" content="en">
+
+<!-- Dublin Core -->
+<meta name="DC.title" content="Technical Marketing in the Age of AI">
+<meta name="DC.creator" content="Chad Corriveau">
+<meta name="DC.subject" content="Technical Marketing; Artificial Intelligence; GTM Strategy; AI Companies; Enterprise Software">
+<meta name="DC.date" content="2026-06-05">
+<meta name="DC.type" content="Text">
+<meta name="DC.format" content="text/html">
+<meta name="DC.identifier" content="https://technicalmarketing.org/technical-marketing-age-of-ai">
+<meta name="DC.language" content="en">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+
+<!-- Performance: preload primary fonts -->
+<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/frauncestext/v24/e79mlG93yPCDdKJKcKCGgq67hU24n-jkiUTqeE.woff2" crossorigin>
+<link rel="preload" as="font" type="font/woff2" href="https://fonts.gstatic.com/s/roboto-slab/v26/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWWaA.woff2" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet"></noscript>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"テクニカルマーケティングという分野のための、独立系季刊誌であり実務参考資料。技術的に複雑な主張を、技術的に理解力のある購買者に対して証明する実務であり、そこには商業的な成果が懸かっている。","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"knowsAbout":["Technical Marketing","Demo Strategy","AI in Technical Marketing","Technical Marketing at AI Companies","Enterprise Software Marketing","Sales Engineering","Product Marketing","Technical Product Marketing","Demo Coherence","Trust Gap in AI Content"],"hasOccupation":{"@type":"Occupation","name":"Technical Marketing Manager","occupationLocation":{"@type":"Country","name":"United States"}}},{"@type":"Article","@id":"https://technicalmarketing.org/technical-marketing-age-of-ai#article","headline":"Technical Marketing in the Age of AI","alternativeHeadline":"Why AI compresses technical marketing's production layer but expands the discipline's strategic importance","description":"AIはあらゆるGTM分野で成果物制作を圧縮している。テクニカルマーケティングはその圧力の下で縮小しない。それは明瞭になる。周囲のすべてが縮小するときにこの分野が拡大する理由、そしてAI企業がなぜ今、テクニカルマーケティングを主要なGTMモーションとしてゼロから構築しているのかについての論拠。","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-06-05","dateModified":"2026-06-12","url":"https://technicalmarketing.org/technical-marketing-age-of-ai","mainEntityOfPage":"https://technicalmarketing.org/technical-marketing-age-of-ai","wordCount":4600,"timeRequired":"PT19M","articleSection":"Volume 01","isPartOf":{"@type":"PublicationVolume","volumeNumber":"01","name":"Volume 01"},"image":{"@type":"ImageObject","url":"https://technicalmarketing.org/og-image-article-ii-ai.jpg","width":1200,"height":630},"citation":[{"@type":"CreativeWork","name":"2025 Developer Survey","publisher":{"@type":"Organization","name":"Stack Overflow"},"url":"https://survey.stackoverflow.co/2025/ai","datePublished":"2025-07-31"},{"@type":"CreativeWork","name":"Building trust to scale AI","publisher":{"@type":"Organization","name":"McKinsey"},"url":"https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-trust-to-scale-ai-interview-with-the-ceo-of-stack-overflow","datePublished":"2026-01-29"},{"@type":"CreativeWork","name":"State of AI trust in 2026","publisher":{"@type":"Organization","name":"McKinsey"},"url":"https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era","datePublished":"2026-03-25"},{"@type":"CreativeWork","name":"Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026","publisher":{"@type":"Organization","name":"Gartner"},"url":"https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025","datePublished":"2025-08-26"}],"speakable":{"@type":"SpeakableSpecification","cssSelector":["#condition","#trust-gap","#new-context","#the-position"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does AI replace technical marketing?","acceptedAnswer":{"@type":"Answer","text":"いいえ。AIは成果物制作を圧縮する。デッキの草稿作成、競合状況の要約、導入ガイドの生成といったものだ。AIが圧縮できないのは、プレッシャーの下での編集判断である。アナリストブリーフィングでどの主張を先頭に置くか。購買者に異議を唱えられたときにどのアーキテクチャ上の真実を守るか。デモが粗削りな部分を見せるか、それとも順調な部分だけを見せるか。その判断こそがテクニカルマーケティングの定義である。"}},{"@type":"Question","name":"How does AI affect the technical marketing role?","acceptedAnswer":{"@type":"Answer","text":"AIは構造化された技術コンテンツの制作を加速し、テクニカルマーケターが常に最も重要だった判断業務に集中できるようにする。役割は縮小しない。明瞭になる。これまで役割の時間の相当部分を消費していた制作業務は、ツールに吸収される。どの成果物を構築するか、どの主張にそれを結び付けるかという編集上の権限が、この分野の明確な中心となる。"}},{"@type":"Question","name":"Why do technically sophisticated buyers still need human technical marketers?","acceptedAnswer":{"@type":"Answer","text":"彼らはAIが生成した技術的な主張を額面通りには信頼しないからだ。Stack Overflowの2025年Developer Surveyでは、AIの正確性への信頼はわずか1年で40%から29%に低下し、46%の開発者がAIの出力を積極的に不信視していることが分かった。購買者がプリンシパルエンジニアやCISOであり、決定が7桁規模のエンタープライズ契約である場合、AI生成のデモやAI生成のアーキテクチャ図には、質問攻めの中でそれらを守り抜けるプラクティショナーが必要になる。そのプラクティショナーがテクニカルマーケターである。"}},{"@type":"Question","name":"What is the trust gap in AI-generated technical content?","acceptedAnswer":{"@type":"Answer","text":"トラストギャップとは、導入と信頼の間の距離である。Stack Overflowの2025年調査では84%の開発者がAIツールを使用している一方、それらのツールが生み出すものの正確性を信頼しているのはわずか29%であることが分かった。McKinseyの2026年AI Trust Maturity Surveyでは、74%の組織が不正確性を非常に関連性の高いAIリスクとして挙げている。このギャップが、技術的な主張を検証し、擁護し、責任を負うことのできるプラクティショナーへの構造的な需要を生み出している。"}},{"@type":"Question","name":"Do AI companies like OpenAI and Anthropic need technical marketers?","acceptedAnswer":{"@type":"Answer","text":"必要としている。しかも彼らはこの機能をゼロから構築している最中だ。AI企業はテクニカルマーケティング問題の中で最も難しいバージョンに直面している。彼らの製品は現在の市場で最も技術的に複雑であり、彼らの購買者は最も技術的に洗練されており、評価対象となる主張——モデルの精度、コンテキストウィンドウの挙動、エージェント型の信頼性、安全性特性——は、誇張された場合に検証可能な形で破綻するものばかりだ。OpenAI、Anthropic、Cohere、Mistral、そしてScale AIはいずれも同じ構造的課題に直面している。彼らは、自前のAIエンジニアを抱えるエンタープライズ購買者に対してAIシステムに関する技術的主張を擁護できるプラクティショナーを必要としている。それがテクニカルマーケティングの機能である。"}},{"@type":"Question","name":"What does technical marketing look like at an AI company?","acceptedAnswer":{"@type":"Answer","text":"AI企業において、テクニカルマーケティングはAI製品の主張に関するエビデンス層を担う。精度ベンチマーク、コンテキストウィンドウの挙動を示すデモンストレーション、エージェント型タスク完了の証明、規制業界向けの安全性・コンプライアンスのポジショニングなどだ。成果物はエンタープライズソフトウェアとは異なる——設定済みテナントではなくリファレンス実装、標準的なデモではなくベンチマークレポート——が、判断業務は同一である。どの主張を先頭に置くか、どのアーキテクチャ上の真実を守るか、購買者側の技術チームからの質問に対してそのポジショニングが持ちこたえるかどうか。AI企業でのデモのアーキタイプは、フィールド展開型からバイヤー主導型に至るスペクトラムの中で、Reference ArchitectureまたはInteractive Proofに最も近い。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technical Marketing in the Age of AI","item":"https://technicalmarketing.org/technical-marketing-age-of-ai"}]}]}</script>
+
+<style>
+
+:root {
+  --paper: #EFE6C9;
+  --paper-shade: #E5D9B4;
+  --paper-light: #F5EED8;
+  --ink: #1C1812;
+  --ink-60: #5C4E3C;
+  --ink-40: #8B7D69;
+  --border: rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red: #A7352A;
+  --red-soft: #B85146;
+  --yellow: #EACF82;
+
+  --f-display: 'Roboto Slab', 'Georgia', serif;
+  --f-serif: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --f-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 64ch;
+  --layout-max: 1100px;
+  --reading-max: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+*::selection { background: var(--yellow); color: var(--ink); }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--f-serif);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.62;
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px);
+  background-size: 14px 14px;
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible,
+button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 1px; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  padding: 0.5rem 1rem; background: var(--ink); color: var(--paper);
+  z-index: 200; font-family: var(--f-sans); font-size: 0.75rem;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.layout { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+
+@media (max-width: 600px) {
+  .layout { padding: 0 1.25rem; }
+  body { background-size: 12px 12px; }
+}
+
+/* ── Masthead ─────────────────────────────────────────────────────────── */
+.masthead {
+  border-top: 2px solid var(--ink);
+  padding-top: 0.875rem;
+  margin-bottom: 0;
+}
+.masthead__furniture {
+  display: flex; justify-content: space-between; align-items: flex-start;
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding-bottom: 0.75rem;
+}
+.masthead__furniture-right { text-align: right; line-height: 1.5; }
+.masthead__rule { border: none; border-top: 0.5px solid var(--border-strong); margin: 0; }
+.masthead__title-row {
+  display: flex; align-items: baseline; justify-content: center;
+  padding: 1.25rem 0 1rem;
+}
+.masthead__title {
+  font-family: var(--f-display); font-weight: 700;
+  font-size: clamp(1.75rem, 5.5vw, 3.25rem); letter-spacing: 0.04em;
+  color: var(--ink); line-height: 1; text-decoration: none; display: inline-block;
+}
+a.masthead__title:hover { color: var(--red); }
+.masthead__subtitle-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.625rem 0 0.875rem; gap: 1rem; flex-wrap: wrap;
+}
+.masthead__subtitle { font-family: var(--f-serif); font-style: italic; font-size: 1rem; color: var(--ink); }
+.masthead__url {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500;
+}
+.masthead__nav {
+  display: flex; justify-content: center; align-items: center;
+  flex-wrap: wrap; gap: 0 1.875rem; padding: 0.75rem 0 0.875rem;
+}
+.masthead__nav-link {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500;
+  padding: 0.375rem 0; border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+
+@media (max-width: 600px) {
+  .masthead__furniture { font-size: 0.625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1.25rem; }
+  .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; }
+}
+
+/* ── Folio band ───────────────────────────────────────────────────────── */
+.folio-band { margin-top: 4.5rem; padding-top: 0; }
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+.folio-band__inner {
+  display: grid; grid-template-columns: 1fr auto 1fr;
+  align-items: center; padding: 1rem 0; gap: 1rem;
+}
+.folio-band__left {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem;
+  letter-spacing: 0.14em; color: var(--red); text-transform: uppercase;
+}
+.folio-band__center { color: var(--ink); font-size: 0.9375rem; text-align: center; }
+.folio-band__right {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500; text-align: right;
+}
+
+/* ── Cover plate ─────────────────────────────────────────────────────── */
+.article-cover-plate {
+  max-width: var(--layout-max); margin: 2.5rem auto 0; padding: 0 1.5rem; box-sizing: border-box;
+}
+.article-cover-plate__frame {
+  position: relative; display: block; padding: 14px; background: var(--paper-light);
+  box-shadow: 0 1px 3px rgba(28,24,18,0.06), 0 18px 44px -8px rgba(28,24,18,0.16), 0 6px 14px -4px rgba(28,24,18,0.08);
+}
+.article-cover-plate__image { display: block; width: 100%; height: auto; outline: 1px solid rgba(28,24,18,0.18); outline-offset: -1px; }
+.article-cover-plate__frame::after {
+  content: ""; position: absolute; inset: 14px; pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05; mix-blend-mode: multiply;
+}
+.article-cover-plate__caption { display: flex; flex-direction: column; align-items: center; margin-top: 1.125rem; }
+.article-cover-plate__caption-kicker {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.32em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500;
+  position: relative; padding-bottom: 0.5rem; margin-bottom: 0.45rem;
+}
+.article-cover-plate__caption-kicker::after {
+  content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 20px; height: 1px; background: rgba(28,24,18,0.32);
+}
+.article-cover-plate__caption-title {
+  font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink); letter-spacing: 0.005em;
+}
+
+/* ── Article cover ────────────────────────────────────────────────────── */
+.cover { padding: 3rem 0 2.75rem; border-bottom: 0.5px solid var(--border); text-align: left; position: relative; }
+.cover__article-kicker {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.875rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem;
+}
+.cover__article-title {
+  font-family: var(--f-serif); font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2rem); font-weight: 400;
+  letter-spacing: -0.005em; color: var(--ink); line-height: 1.15; margin-bottom: 1rem;
+}
+.cover__rule { border: none; border-top: 0.5px solid var(--border-strong); width: 180px; margin: 0 0 2.5rem; }
+.cover__display-wrap { position: relative; display: flex; justify-content: center; margin: 2rem 0 2.5rem; }
+.cover__display {
+  font-family: var(--f-display); font-weight: 700;
+  font-size: clamp(3.25rem, 11vw, 7rem); line-height: 1; letter-spacing: -0.02em;
+  color: var(--ink); position: relative; display: inline-block; padding: 0 0.25em;
+}
+.cover__display::before {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0.08em;
+  height: 0.32em; background: var(--yellow); z-index: -1;
+}
+.cover__secondary {
+  font-family: var(--f-serif); font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 400;
+  color: var(--ink); line-height: 1.2; margin-bottom: 1.25rem; max-width: 26ch;
+}
+.cover__deck {
+  font-family: var(--f-serif); font-style: italic;
+  font-size: clamp(1.0625rem, 1.5vw, 1.1875rem); font-weight: 400;
+  color: var(--ink-60); line-height: 1.5; max-width: 44ch; margin-bottom: 2rem;
+}
+.cover__byline {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500; margin-bottom: 2.5rem;
+}
+.cover__byline strong { color: var(--ink); font-weight: 500; }
+.cover__byline strong a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.cover__byline strong a:hover { color: var(--red); border-bottom-color: var(--red); }
+.cover__ornament { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0 0; }
+.cover__ornament-rule { flex: 0 0 80px; height: 0.5px; background: var(--border-strong); }
+.cover__ornament-diamond { width: 8px; height: 8px; background: var(--red); transform: rotate(45deg); flex-shrink: 0; }
+
+@media (max-width: 600px) {
+  .cover { padding: 2rem 0 2rem; }
+  .cover__rule { width: 120px; margin-bottom: 1.75rem; }
+  .cover__display-wrap { margin: 1.5rem 0 2rem; justify-content: flex-start; }
+  .cover__display::before { height: 0.3em; bottom: 0.1em; }
+  .cover__secondary { font-size: 1.5rem; }
+  .cover__deck { font-size: 1.0625rem; }
+}
+
+/* ── Article layout ───────────────────────────────────────────────────── */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2.5rem 0 0; }
+@media (min-width: 960px) { .article-layout { grid-template-columns: 1fr 220px; gap: 4rem; } }
+.article-main { max-width: var(--reading-max); }
+.article-aside { position: relative; }
+@media (min-width: 960px) { .article-aside { position: sticky; top: 2rem; align-self: start; height: fit-content; } }
+
+@media (max-width: 959px) {
+  .article-layout { display: flex; flex-direction: column; gap: 1.5rem; }
+  .article-main { order: 2; }
+  .article-aside { order: 1; padding-bottom: 1.25rem; margin-bottom: 0.5rem; border-bottom: 0.5px solid var(--border); }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.25rem; }
+}
+
+/* TOC */
+.toc { border-top: 0.5px solid var(--border-strong); padding-top: 1.125rem; }
+.toc-label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 500; margin-bottom: 0.875rem; display: block;
+}
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.toc-list a {
+  font-family: var(--f-sans); font-size: 0.8125rem; color: var(--ink-60);
+  font-weight: 400; line-height: 1.45; display: block; transition: color 0.15s ease;
+}
+.toc-list a:hover { color: var(--red); }
+.toc-num {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em;
+  color: var(--ink-40); display: inline-block; width: 1.5rem; font-weight: 500;
+}
+
+/* Sections */
+.section { margin-bottom: 3.25rem; scroll-margin-top: 1.5rem; }
+.section-num {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.875rem; display: block;
+}
+.section h2 {
+  font-family: var(--f-display); font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.18; letter-spacing: -0.015em;
+  color: var(--ink); margin-bottom: 1.625rem; max-width: 22ch;
+}
+.section h3 {
+  font-family: var(--f-serif); font-style: italic; font-size: 1.25rem;
+  font-weight: 500; line-height: 1.3; color: var(--ink); margin-top: 2rem; margin-bottom: 0.875rem;
+}
+.section p {
+  font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.7;
+  color: var(--ink); margin-bottom: 1.125rem; max-width: var(--measure);
+}
+.section p a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.section sup { font-size: 0.72em; vertical-align: super; color: var(--red); font-weight: 500; margin-left: 0.05em; }
+.section em, .section i { font-style: italic; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* Pull quotes */
+.pullquote {
+  margin: 2.75rem auto; padding: 1.25rem 0; text-align: center; position: relative;
+  background-image: radial-gradient(circle, var(--red) 3.5px, transparent 4px);
+  background-repeat: no-repeat; background-position: center 19px; background-size: 7px 7px;
+}
+.pullquote::before, .pullquote::after {
+  content: ""; display: block; width: 64px; height: 0.5px;
+  background: linear-gradient(to right, transparent, var(--border-strong) 30%, var(--border-strong) 70%, transparent);
+  margin: 0 auto;
+}
+.pullquote::before { margin-bottom: 1.125rem; }
+.pullquote::after { margin-top: 1.125rem; }
+.pullquote p {
+  font-family: var(--f-serif); font-style: italic;
+  font-size: clamp(1.1875rem, 2vw, 1.4375rem); line-height: 1.4;
+  color: var(--ink); font-weight: 400; max-width: 36ch; margin: 0 auto !important;
+}
+
+/* Labeled lists */
+.labeled-list { margin: 1.5rem 0 1.75rem; }
+.labeled-item { margin-bottom: 1.5rem; max-width: var(--measure); padding-left: 0.875rem; border-left: 2px solid var(--red); }
+.labeled-item:last-child { margin-bottom: 0; }
+.labeled-item__label { font-family: var(--f-serif); font-style: italic; font-size: 1.125rem; font-weight: 500; color: var(--ink); margin-bottom: 0.375rem; }
+.labeled-item__body { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); }
+
+/* Diagrams */
+.diagram { margin: 2.5rem 0; padding: 1.25rem; background: var(--paper-light); border: 0.5px solid var(--border); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram-caption {
+  font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem;
+  color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border); max-width: 56ch; line-height: 1.5;
+}
+.diagram-caption strong {
+  color: var(--red); font-weight: 600; font-style: normal;
+  font-family: var(--f-display); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase;
+}
+@media (max-width: 720px) {
+  .diagram { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; padding: 1rem; margin-left: -1.25rem; margin-right: -1.25rem; }
+  .diagram svg { min-width: 560px; max-width: none; }
+}
+
+/* Data callout : for citing specific statistics inline */
+.data-callout {
+  margin: 2rem 0 2.25rem;
+  padding: 1.25rem 1.375rem;
+  border: 0.5px solid var(--border-strong);
+  border-left: 3px solid var(--red);
+  background: var(--paper-light);
+  max-width: var(--measure);
+}
+.data-callout__stat {
+  font-family: var(--f-display); font-weight: 700;
+  font-size: clamp(2rem, 5vw, 3rem); line-height: 1; color: var(--red);
+  letter-spacing: -0.02em; margin-bottom: 0.375rem;
+}
+.data-callout__label {
+  font-family: var(--f-serif); font-size: 1rem; line-height: 1.5; color: var(--ink); margin-bottom: 0.5rem;
+}
+.data-callout__source {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-40); font-weight: 500;
+}
+
+/* Footnotes */
+.footnotes {
+  margin-top: 3rem; padding-top: 1.5rem; border-top: 0.5px solid var(--border-strong);
+}
+.footnotes-label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 600;
+  display: block; margin-bottom: 1rem;
+}
+.footnotes ol {
+  padding-left: 1.25rem; display: flex; flex-direction: column; gap: 0.625rem;
+}
+.footnotes li {
+  font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55;
+  color: var(--ink-60); max-width: var(--measure);
+}
+.footnotes li a { border-bottom: 1px solid var(--border); }
+.footnotes li a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* Editor's note */
+.editors-note {
+  margin-top: 2.5rem; padding: 1.5rem 1.625rem 1.25rem;
+  border: 0.5px solid var(--border); background: var(--paper-light);
+}
+.editors-note-label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--red); font-weight: 600; display: block; margin-bottom: 0.875rem;
+}
+.editors-note p {
+  font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6;
+  color: var(--ink-60); margin-bottom: 0.75rem; max-width: var(--measure);
+}
+.editors-note p:last-of-type { margin-bottom: 1rem; }
+.editors-sig { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
+
+/* Next article link */
+.next-article { margin-top: 2.5rem; padding-top: 1.5rem; border-top: 0.5px solid var(--border-strong); }
+.next-article a { display: block; }
+.next-article__label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-40); font-weight: 500;
+  display: block; margin-bottom: 0.5rem;
+}
+.next-article__title {
+  font-family: var(--f-serif); font-style: italic;
+  font-size: clamp(1.125rem, 1.75vw, 1.3125rem); color: var(--ink); line-height: 1.38;
+  transition: color 0.15s ease;
+}
+.next-article a:hover .next-article__title { color: var(--red); }
+.arrow { display: inline-block; margin-left: 0.25rem; font-style: normal; transition: transform 0.15s ease; }
+.next-article a:hover .arrow { transform: translateX(4px); }
+
+/* Cite card */
+.cite-card {
+  margin: 3rem 0 1rem; padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light); border: 0.5px solid var(--border-strong);
+  position: relative; scroll-margin-top: 1.5rem; max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: ""; position: absolute; top: -1px; left: -1px; right: -1px;
+  height: 3px; background: var(--red);
+}
+.cite-card__header {
+  display: flex; align-items: baseline; gap: 1.5rem;
+  padding-bottom: 1.25rem; border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem; flex-wrap: wrap;
+}
+.cite-card__kicker {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--red);
+}
+.cite-card__title { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); margin: 0; }
+.cite-row {
+  display: grid; grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem; padding: 1.125rem 0; border-bottom: 0.5px solid var(--border); align-items: start;
+}
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
+.cite-label {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); padding-top: 0.3rem;
+}
+.cite-text { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
+.cite-text em { font-style: italic; }
+.cite-text a { color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
+.cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
+.cite-text--code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace; font-size: 0.8125rem;
+  line-height: 1.55; color: var(--ink); white-space: pre; overflow-x: auto;
+  padding: 0; margin: 0; background: transparent; border: none; display: block;
+}
+.cite-copy {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--f-display); font-size: 0.6875rem; letter-spacing: 0.16em;
+  text-transform: uppercase; font-weight: 700; color: var(--ink);
+  background: transparent; border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.875rem; cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s; white-space: nowrap; align-self: start;
+}
+.cite-copy:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.cite-copy.is-copied { background: var(--red); color: var(--paper); border-color: var(--red); }
+.cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+
+
+/* ── Narrated Edition Player ─────────────────────────────────────────────── */
+
+.narrated-edition {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+  box-sizing: border-box;
+}
+
+.narrated-edition__inner {
+  border-top: 0.5px solid var(--border-strong);
+  border-bottom: 0.5px solid var(--border-strong);
+  padding: 1.375rem 0 1.5rem;
+  max-width: var(--reading-max);
+}
+
+.narrated-edition__kicker {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.875rem;
+}
+
+.narrated-edition__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.125rem;
+  flex-wrap: wrap;
+}
+
+.narrated-edition__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.narrated-edition__meta {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.narrated-edition__track {
+  position: relative;
+  height: 1px;
+  background: var(--border-strong);
+  margin-bottom: 1.125rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.narrated-edition__progress {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 0%;
+  background: var(--red);
+  transition: width 0.25s linear;
+  pointer-events: none;
+}
+
+.narrated-edition__playhead {
+  position: absolute;
+  top: 50%; left: 0%;
+  width: 7px; height: 7px;
+  background: var(--red);
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0;
+  transition: left 0.25s linear, opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.narrated-edition__inner.is-playing .narrated-edition__playhead,
+.narrated-edition__inner.is-paused  .narrated-edition__playhead {
+  opacity: 1;
+}
+
+.narrated-edition__controls {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.narrated-edition__play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem; height: 2.25rem;
+  border: 0.5px solid var(--border-strong);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.narrated-edition__play:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+.narrated-edition__play:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+.narrated-edition__play svg {
+  width: 14px; height: 14px;
+  display: block;
+}
+
+.icon-play  { display: block; }
+.icon-pause { display: none;  }
+
+.is-playing .icon-play  { display: none;  }
+.is-playing .icon-pause { display: block; }
+.is-paused  .icon-play  { display: block; }
+.is-paused  .icon-pause { display: none;  }
+
+.narrated-edition__time {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-40);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  min-width: 7ch;
+}
+
+.narrated-edition__voice {
+  margin-left: auto;
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 500;
+}
+
+.narrated-edition__waveform {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 0.5rem;
+}
+
+.narrated-edition__waveform span {
+  display: block;
+  width: 2px;
+  background: var(--border-strong);
+  border-radius: 0;
+  transition: background 0.2s ease;
+}
+
+.narrated-edition__waveform span:nth-child(1)  { height: 6px;  }
+.narrated-edition__waveform span:nth-child(2)  { height: 10px; }
+.narrated-edition__waveform span:nth-child(3)  { height: 14px; }
+.narrated-edition__waveform span:nth-child(4)  { height: 8px;  }
+.narrated-edition__waveform span:nth-child(5)  { height: 16px; }
+.narrated-edition__waveform span:nth-child(6)  { height: 12px; }
+.narrated-edition__waveform span:nth-child(7)  { height: 18px; }
+.narrated-edition__waveform span:nth-child(8)  { height: 10px; }
+.narrated-edition__waveform span:nth-child(9)  { height: 14px; }
+.narrated-edition__waveform span:nth-child(10) { height: 8px;  }
+.narrated-edition__waveform span:nth-child(11) { height: 16px; }
+.narrated-edition__waveform span:nth-child(12) { height: 6px;  }
+
+.is-playing .narrated-edition__waveform span {
+  background: var(--red);
+  animation: waveform-pulse 1.2s ease-in-out infinite;
+}
+
+.is-playing .narrated-edition__waveform span:nth-child(2)  { animation-delay: 0.10s; }
+.is-playing .narrated-edition__waveform span:nth-child(3)  { animation-delay: 0.20s; }
+.is-playing .narrated-edition__waveform span:nth-child(4)  { animation-delay: 0.05s; }
+.is-playing .narrated-edition__waveform span:nth-child(5)  { animation-delay: 0.30s; }
+.is-playing .narrated-edition__waveform span:nth-child(6)  { animation-delay: 0.15s; }
+.is-playing .narrated-edition__waveform span:nth-child(7)  { animation-delay: 0.35s; }
+.is-playing .narrated-edition__waveform span:nth-child(8)  { animation-delay: 0.08s; }
+.is-playing .narrated-edition__waveform span:nth-child(9)  { animation-delay: 0.25s; }
+.is-playing .narrated-edition__waveform span:nth-child(10) { animation-delay: 0.12s; }
+.is-playing .narrated-edition__waveform span:nth-child(11) { animation-delay: 0.28s; }
+.is-playing .narrated-edition__waveform span:nth-child(12) { animation-delay: 0.04s; }
+
+@keyframes waveform-pulse {
+  0%, 100% { transform: scaleY(0.5); }
+  50%       { transform: scaleY(1.2); }
+}
+
+.is-paused .narrated-edition__waveform span {
+  background: var(--red);
+  opacity: 0.45;
+}
+
+@media (max-width: 600px) {
+  .narrated-edition { padding: 0 1.25rem; }
+  .narrated-edition__voice { display: none; }
+  .narrated-edition__waveform { display: none; }
+  .narrated-edition__head { margin-bottom: 1rem; }
+}
+
+/* Colophon */
+.colophon { margin-top: 3rem; padding: 2.5rem 0 2rem; border-top: 2px solid var(--ink); }
+.colophon__inner { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+.colophon__ornament { display: flex; justify-content: center; margin-bottom: 1.75rem; }
+.colophon__diamond { width: 10px; height: 10px; background: var(--red); transform: rotate(45deg); }
+.colophon__grid { display: grid; grid-template-columns: 5rem 1fr; gap: 0.75rem 1.5rem; margin-bottom: 2rem; }
+.colophon__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-40); font-weight: 600; padding-top: 0.125rem; }
+.colophon__value { font-family: var(--f-serif); font-size: 0.9375rem; color: var(--ink-60); line-height: 1.55; }
+.colophon__value a:hover { color: var(--red); }
+.colophon__bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem 1rem; padding-top: 1.25rem; border-top: 0.5px solid var(--border); }
+.colophon__meta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
+.colophon__nav { display: flex; align-items: center; gap: 0.625rem; flex-wrap: wrap; }
+.colophon__nav-link { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; transition: color 0.15s; }
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); font-size: 0.625rem; }
+
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { gap: 0.5rem 1.25rem; }
+  .masthead__nav-divider { display: none; }
+}
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--red);
+  z-index: 1000;
+  transition: width 0.1s linear;
+  will-change: width;
+}
+
+.toc-list a.is-active {
+  color: var(--red);
+  font-weight: 500;
+}
+.toc-list a.is-active .toc-num {
+  color: var(--red);
+}
+
+.definition-block {
+  margin: 0 0 2rem;
+  padding: 1.25rem 1.5rem 1.125rem;
+  background: var(--paper-light);
+  border-left: 3px solid var(--red);
+  max-width: var(--measure);
+}
+.definition-block__kicker {
+  font-family: var(--f-sans);
+  font-size: 0.5625rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.625rem;
+}
+.definition-block__term {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.definition-block__def {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin: 0;
+  max-width: none;
+}
+/* ── Share surface ───────────────────────────────────────────────────── */
+.share-surface {
+  margin-top: 2.5rem; padding-top: 1.5rem;
+  border-top: 0.5px solid var(--border);
+  display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+  max-width: var(--measure);
+}
+.share-surface__label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--ink-60); font-weight: 600; flex-shrink: 0;
+}
+.share-btn {
+  display: inline-flex; align-items: center; gap: 0.375rem;
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em;
+  text-transform: uppercase; font-weight: 600; color: var(--ink);
+  background: transparent; border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.875rem; cursor: pointer; text-decoration: none;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  min-height: 36px; white-space: nowrap;
+}
+.share-btn:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.share-btn:active { transform: scale(0.97); }
+.share-btn.is-copied { background: var(--red); color: var(--paper); border-color: var(--red); }
+.share-btn__icon { font-size: 0.8125rem; line-height: 1; }
+
+/* ── FAQ section ─────────────────────────────────────────────────────── */
+.faq {
+  margin: 3rem 0 0;
+  border-top: 0.5px solid var(--border);
+  padding-top: 2rem;
+  max-width: var(--measure);
+}
+.faq > h2 {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--red); font-weight: 700;
+  margin-bottom: 1.75rem;
+}
+.faq-item {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px solid var(--border);
+}
+.faq-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.faq-q {
+  font-family: var(--f-serif); font-weight: 700; font-size: 1.0625rem;
+  line-height: 1.3; color: var(--ink); margin-bottom: 0.625rem;
+}
+.faq-a {
+  font-family: var(--f-serif); font-size: 1rem; line-height: 1.62;
+  color: var(--ink); margin: 0;
+}
+.faq-a a { border-bottom: 1px solid var(--border-strong); transition: color 0.15s, border-color 0.15s; }
+.faq-a a:hover { color: var(--red); border-bottom-color: var(--red); }
+</style>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<a href="#main" class="skip-link">本文へスキップ</a>
+<div class="reading-progress" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/ja/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">この分野のフィールドマニュアル。</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/reference" class="masthead__nav-link">Reference</a>
+    <a href="/volume-01" class="masthead__nav-link" aria-current="page">Volume 01</a>
+    <a href="/tools" class="masthead__nav-link">Tools</a>
+    <a href="/archive" class="masthead__nav-link">Archive</a>
+    <a href="/ja/about" class="masthead__nav-link">概要</a>
+  </nav>
+  <hr class="masthead__rule">
+</header>
+
+<figure class="article-cover-plate">
+  <div class="article-cover-plate__frame">
+    <img
+      class="article-cover-plate__image"
+      src="/Images/cover-article-ii-ai.jpg"
+      alt="A practitioner presents architectural diagrams on a whiteboard while a colleague evaluates the evidence, the editorial judgment moment at the center of technical marketing, where the work cannot be delegated to a model." width="1100" height="480" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <figcaption class="article-cover-plate__caption">
+    <span class="article-cover-plate__caption-kicker">Plate</span>
+    <span class="article-cover-plate__caption-title">Article III</span>
+  </figcaption>
+</figure>
+
+<section class="cover layout" aria-labelledby="article-title">
+  <div class="cover__article-kicker">Article III.</div>
+  <h1 class="cover__article-title" id="article-title">構造的な論拠。</h1>
+  <hr class="cover__rule">
+
+  <div class="cover__display-wrap">
+    <span class="cover__display">明瞭化。</span>
+  </div>
+
+  <p class="cover__secondary">AI時代のテクニカルマーケティング。</p>
+  <p class="cover__deck">AIはエンタープライズソフトウェアを市場へと動かすあらゆる分野で成果物制作を圧縮している。テクニカルマーケティングはその圧力の下で縮小しない。それは明瞭になる。周囲のすべてが縮小するときに、この分野が拡大する理由についての論拠。</p>
+
+  <div class="cover__byline">By <strong><a href="/ja/contributors/chad-corriveau" rel="author">Chad Corriveau</a></strong>, Founding Editor &middot; <time datetime="2026-06-05">2026年6月5日</time> &middot; 更新 <time datetime="2026-06-12">2026年6月12日</time> &middot; <span id="reading-time">19分で読了</span></div>
+
+  <div class="cover__ornament" aria-hidden="true">
+    <span class="cover__ornament-rule"></span>
+    <span class="cover__ornament-diamond"></span>
+    <span class="cover__ornament-rule"></span>
+  </div>
+</section>
+
+<div class="narrated-edition layout" role="region" aria-label="Narrated edition">
+  <div class="narrated-edition__inner" id="narrated-player">
+
+    <span class="narrated-edition__kicker">ナレーション版</span>
+
+    <div class="narrated-edition__head">
+      <span class="narrated-edition__title">この記事を聴く</span>
+      <span class="narrated-edition__meta">12分 &middot; 全文</span>
+    </div>
+
+    <div
+      class="narrated-edition__track"
+      id="player-track"
+      role="slider"
+      aria-label="Audio progress"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="0"
+      tabindex="0"
+    >
+      <div class="narrated-edition__progress" id="player-progress"></div>
+      <div class="narrated-edition__playhead" id="player-playhead"></div>
+    </div>
+
+    <div class="narrated-edition__controls">
+
+      <button
+        class="narrated-edition__play"
+        id="player-btn"
+        aria-label="Play narrated edition"
+        type="button"
+      >
+        <svg class="icon-play" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+          <polygon points="2,1 13,7 2,13"/>
+        </svg>
+        <svg class="icon-pause" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true">
+          <rect x="2" y="1" width="3.5" height="12"/>
+          <rect x="8.5" y="1" width="3.5" height="12"/>
+        </svg>
+      </button>
+
+      <span class="narrated-edition__time" id="player-time" aria-live="off">0:00 / 12:50</span>
+
+      <div class="narrated-edition__waveform" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+      </div>
+
+      <span class="narrated-edition__voice">Charlotte &middot; ナレーション</span>
+
+    </div>
+
+    <audio
+      id="player-audio"
+      preload="auto"
+      src="/audio/tm-org-article-ii-ai-narrated.mp3"
+    ></audio>
+
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var audio    = document.getElementById('player-audio');
+  var btn      = document.getElementById('player-btn');
+  var progress = document.getElementById('player-progress');
+  var playhead = document.getElementById('player-playhead');
+  var timeEl   = document.getElementById('player-time');
+  var track    = document.getElementById('player-track');
+  var inner    = document.getElementById('narrated-player');
+  if (!audio || !btn) return;
+
+  function fmt(s) {
+    s = Math.floor(s) || 0;
+    return Math.floor(s / 60) + ':' + (s % 60 < 10 ? '0' : '') + (s % 60);
+  }
+
+  function updateProgress() {
+    if (!audio.duration) return;
+    var pct = (audio.currentTime / audio.duration) * 100;
+    progress.style.width = pct + '%';
+    playhead.style.left  = pct + '%';
+    track.setAttribute('aria-valuenow', Math.round(pct));
+    timeEl.textContent = fmt(audio.currentTime) + ' / ' + fmt(audio.duration);
+  }
+
+  btn.addEventListener('click', function () {
+    audio.paused ? audio.play() : audio.pause();
+  });
+
+  audio.addEventListener('play', function () {
+    inner.classList.remove('is-paused', 'is-loading');
+    inner.classList.add('is-playing');
+    btn.setAttribute('aria-label', 'Pause narrated edition');
+  });
+
+  audio.addEventListener('pause', function () {
+    inner.classList.remove('is-playing');
+    inner.classList.add('is-paused');
+    btn.setAttribute('aria-label', 'Play narrated edition');
+  });
+
+  audio.addEventListener('ended', function () {
+    inner.classList.remove('is-playing', 'is-paused');
+    btn.setAttribute('aria-label', 'Play narrated edition');
+    progress.style.width = '0%';
+    playhead.style.left  = '0%';
+    timeEl.textContent   = '0:00';
+    track.setAttribute('aria-valuenow', 0);
+  });
+
+  audio.addEventListener('timeupdate', updateProgress);
+
+  audio.addEventListener('loadedmetadata', function () {
+    timeEl.textContent = '0:00 / ' + fmt(audio.duration);
+  });
+
+  track.addEventListener('click', function (e) {
+    if (!audio.duration) return;
+    var rect = track.getBoundingClientRect();
+    audio.currentTime = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width)) * audio.duration;
+    updateProgress();
+  });
+
+  track.addEventListener('keydown', function (e) {
+    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); btn.click(); }
+    if (e.key === 'ArrowRight') { e.preventDefault(); audio.currentTime = Math.min(audio.duration, audio.currentTime + 10); }
+    if (e.key === 'ArrowLeft')  { e.preventDefault(); audio.currentTime = Math.max(0, audio.currentTime - 10); }
+  });
+
+  track.addEventListener('touchstart', function (e) { e.preventDefault(); seekTouch(e.touches[0]); }, { passive: false });
+  track.addEventListener('touchmove',  function (e) { e.preventDefault(); seekTouch(e.touches[0]); }, { passive: false });
+
+  function seekTouch(t) {
+    if (!audio.duration) return;
+    var rect = track.getBoundingClientRect();
+    audio.currentTime = Math.max(0, Math.min(1, (t.clientX - rect.left) / rect.width)) * audio.duration;
+    updateProgress();
+  }
+}());
+</script>
+
+<div class="article-layout layout">
+  <main class="article-main" id="main">
+
+    <section class="section" id="condition">
+      <span class="section-num">01・状況</span>
+      <h2>GTMスタックに何が起きているか</h2>
+
+      <div class="definition-block" itemscope itemtype="https://schema.org/DefinedTerm">
+        <span class="definition-block__kicker">状況</span>
+        <span class="definition-block__term" itemprop="name">GTM成果物制作のAIによる圧縮</span>
+        <p class="definition-block__def" itemprop="description">GTM（Go-to-Market）機能全体にわたる構造化コンテンツ制作が、AIツールによって体系的に吸収されていくこと。草稿作成、要約、フォーマット化、初期リサーチのとりまとめに影響する。どの成果物を制作するか、どの主張にそれを結び付けるか、その主張が技術的に理解力のある購買者との接触に耐えられるかどうかを決める<a href="/ja/glossary#editorial-judgment">editorial judgment</a>には影響しない。</p>
+      </div>
+      <p>今、エンタープライズソフトウェアのGTMの中で何かが動いている。それは脅威ではない。圧縮である。営業活動のために構造化された技術コンテンツを制作するあらゆる機能が、制作の機械的な労働を吸収するAIツールによって作用を受けている。デッキは草稿が作成される。競合状況の要約は生成される。導入ガイドは組み立てられる。生の製品知識から整形された成果物に至るパイプラインが縮小しつつある。</p>
+      <p>この圧縮は文書化されている。Gartnerは、タスク特化型AIエージェントを統合したエンタープライズアプリケーションの割合が、2025年の5%未満から、2026年末までに40%に達すると予測した。<sup>1</sup>Salesforceはサポート人員を9,000人から約5,000人に削減した。Marc Benioffは、2026会計年度に新規のソフトウェアエンジニアを採用しないと公に述べた。Microsoft、Workday、Atlassian、Oracleはいずれも、隣接機能における人員削減の構造的な根拠としてAIによる効率化を挙げた。<sup>2</sup></p>
+      <p>圧縮は現実である。問題は、それが何を圧縮し、何を圧縮しないかである。その問いへの答えが、テクニカルマーケティングがGTMスタックの他部分と共に縮小するのか、それとも何か別のものを占めるのかを決定する。</p>
+
+      <div class="pullquote">
+        <p>圧縮は現実である。問題は、それが何を圧縮し、何を圧縮しないかである。</p>
+      </div>
+    </section>
+
+    <section class="section" id="what-compresses">
+      <span class="section-num">02・圧縮層</span>
+      <h2>AIが実際に吸収するもの</h2>
+      <p>AIが圧縮する作業は成果物制作である。既存の知識を構造化されたフォーマットへと機械的に変換する作業だ。製品ブリーフと競合他社の公開済みポジショニングを与えられた言語モデルは、数分で有用な競合要約を作成できる。同じモデルに機能説明とリファレンスアーキテクチャを与えれば、技術スライドの草稿を作成できる。価格表と公開済みの実証ポイント一式を与えれば、初回評価フレームワークを組み立てることができる。</p>
+      <p>これは無視できるものではない。成果物制作は、この役割が存在してきた期間、テクニカルマーケティングの役割の時間のかなりの部分を消費してきた。<a href="/ja/glossary#teardown">競合ティアダウンデック</a>の構築に4時間を費やしていたTMEには、今や40分で草稿を作成するツールがある。解放された時間は本物だ。この圧縮は、それを使いこなす方法を理解しているプラクティショナーにとって純粋にプラスである。</p>
+      <p>圧縮しないものは、どの成果物を構築するか、どの主張にそれを結び付けるか、そしてその主張が受けるであろう質問に耐えられるかどうかを決める判断である。モデルは競合ティアダウンの草稿を作成できる。しかし、アーキテクチャ上の弱点を先頭に置くか、価格差を先頭に置くかを決めることはできない。なぜなら、その決定は、見込み客が現在評価している競合他社は誰か、このデックを見るアナリストが実際に何を気にかけているか、そしてエンジニアリングチームが押し返された場合に実際にどこまで支持するかに依存するからだ。それらの入力はプロンプトの中には存在しない。それらは現場に存在する。</p>
+      <p>その現場こそ、テクニカルマーケティングが存在する場所である。</p>
+    </section>
+
+    <section class="section" id="trust-gap">
+      <span class="section-num">03・トラストギャップ</span>
+      <h2>なぜ技術的に理解力のある購買者はAIが生み出すものを信頼しないのか</h2>
+      <p>複雑な製品を評価する可能性が最も高いエンタープライズソフトウェアの購買者は、それについてAIが生成したコンテンツを不信視する可能性も最も高い購買者である。これは感情論ではない。データである。</p>
+
+      <div class="data-callout">
+        <div class="data-callout__stat">29%</div>
+        <div class="data-callout__label">2025年にAIツールの出力の正確性を信頼した開発者の割合。前年の40%から低下した。AIの出力を積極的に不信視する開発者（46%）は、それを信頼する開発者よりも多い。</div>
+        <div class="data-callout__source">Stack Overflow Developer Survey, 2025 &middot; 177カ国、49,000人の回答者</div>
+      </div>
+
+      <p>Stack Overflowの2025年Developer Surveyでは、AIの正確性への信頼がわずか1年で40%から29%へと11ポイント低下したことが分かった。<sup>3</sup>AIがほとんどのコーディングタスクをこなせるようになったとしても、それでも人間に求めたいものは何かと尋ねられたとき、75%の開発者がAIの回答を信頼しないと答えた。回答者の45%が挙げた最大の不満は、「惜しいところまでは行くが、完全には正しくない」AIソリューションへの対処だった。</p>
+      <p>「惜しいが正しくない」は、技術的な商談を殺す正確な失敗モードである。ほぼ正しいアーキテクチャ図をレビューするプリンシパルエンジニアは、その内容に関与しない。その企業から離れていく。1度だけ過大に約束された<a href="/ja/glossary#security-questionnaire">セキュリティ質問票</a>をレビューするCISOは、その但し書きに注目しない。ベンダーにフラグを立てる。テクニカルマーケティングが機能する現場において、「惜しいが正しくない」への許容度はゼロである。</p>
+      <p>McKinseyの2026年AI Trust Maturity Surveyでは、74%の組織が不正確性を非常に関連性の高いAIリスクとして挙げ、3分の2近くがエージェント型AI展開の拡大における最大の障壁としてセキュリティとリスクへの懸念を挙げていることが分かった。<sup>4</sup>Stack OverflowのCEOはMcKinseyのテクノロジー部門への取材でこの状況を率直に述べている。「組織内に高品質で専門家によって検証された知識を持つことは、あれば良いものではなく、不可欠なものになった。」<sup>5</sup></p>
+      <p>専門家によって検証された知識とは、職務内容そのものである。それはテクニカルマーケターの職務内容である。</p>
+
+      <div class="pullquote">
+        <p>「惜しいが正しくない」は、技術的な商談を殺す正確な失敗モードである。</p>
+      </div>
+    </section>
+
+    <section class="section" id="favorable-quadrant">
+      <span class="section-num">04・有利な位置</span>
+      <h2>圧縮マップの中でテクニカルマーケティングが占める場所</h2>
+      <p><a href="/ja/the-technical-marketer">本Volumeの第1稿</a>は、技術的な深さを一方の軸に、商業的な志向をもう一方の軸に置く<a href="/ja/what-is-technical-marketing#function-map">機能マトリクス</a>を紹介した。<sup>6</sup>このマトリクスは、エンタープライズソフトウェアのGTMに関わる分野を特定し、両方の軸で高いスコアを必要とする象限にテクニカルマーケティングを単独で位置付ける。その位置付けは、ここでは別の理由から関連性を持つ。</p>
+      <p>AIがGTMスタック全体で成果物制作を圧縮するとき、最もさらされる分野は、構造化コンテンツを主要な成果物として生産する分野である。テクニカルライティング。初稿のドキュメンテーション。定型的な競合要約。標準的な営業デック。それらの成果物はもともと機械的だった。AIはそれらをさらに効率的に機械的なものにした。そうした成果物を大量に生産することに自らの価値を築いてきたプラクティショナーは、本物の圧縮に直面している。</p>
+      <p>最もさらされていない分野は、成果物が大量の構造化コンテンツではなく、商業的なプレッシャーの下での判断である分野だ。問題が、成果物をどう作るかではなく、どの成果物を作るか、どの主張に賭けるか、そしてアナリストが押し返してきたときに企業がそれを守れるかどうかである分野だ。その問いに答えるには、購買者固有の評価コンテキスト、企業の商業的プレッシャー、エンジニアリングチームの正直な制約、そして競合状況を同時に把握する必要がある。それは、それらの入力を一切持たないモデルに有用な形で委任することはできない。</p>
+
+      <div class="diagram" role="img" aria-label="Two axes: AI exposure of artifact production (horizontal, low to high) and editorial leverage required (vertical, low to high). Technical writing sits lower-right, high AI exposure and lower editorial leverage. Product marketing and developer advocacy sit middle. Sales engineering upper-middle. Technical marketing sits upper-right in the favorable quadrant, high on both axes, with a red circle marking the position.">
+        <svg viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+          <rect width="680" height="520" fill="#fafaf7"/>
+          <!-- Favorable quadrant shading -->
+          <rect x="360" y="80" width="260" height="190" fill="#A7352A" opacity="0.06"/>
+          <!-- Axes -->
+          <line x1="100" y1="80" x2="100" y2="460" stroke="#1a1a1a" stroke-width="0.5" opacity="0.6"/>
+          <line x1="100" y1="460" x2="620" y2="460" stroke="#1a1a1a" stroke-width="0.5" opacity="0.6"/>
+          <!-- Midpoint guides -->
+          <line x1="100" y1="270" x2="620" y2="270" stroke="#1a1a1a" stroke-width="0.3" opacity="0.12" stroke-dasharray="2,3"/>
+          <line x1="360" y1="80" x2="360" y2="460" stroke="#1a1a1a" stroke-width="0.3" opacity="0.12" stroke-dasharray="2,3"/>
+          <!-- Axis labels -->
+          <text x="58" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" letter-spacing="2" fill="#8a8a85" font-weight="500" transform="rotate(-90, 58, 270)">EDITORIAL LEVERAGE</text>
+          <text x="92" y="92" text-anchor="end" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.5" fill="#8a8a85" font-weight="500">HIGH</text>
+          <text x="92" y="464" text-anchor="end" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.5" fill="#8a8a85" font-weight="500">LOW</text>
+          <text x="360" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" letter-spacing="2" fill="#8a8a85" font-weight="500">AI EXPOSURE OF ARTIFACT PRODUCTION</text>
+          <text x="100" y="478" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.5" fill="#8a8a85" font-weight="500">LOW</text>
+          <text x="620" y="478" text-anchor="middle" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.5" fill="#8a8a85" font-weight="500">HIGH</text>
+          <!-- Disciplines -->
+          <circle cx="200" cy="195" r="5" fill="#1a1a1a" opacity="0.6"/>
+          <text x="214" y="192" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Product Management</text>
+          <circle cx="390" cy="155" r="5" fill="#1a1a1a" opacity="0.6"/>
+          <text x="404" y="152" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Sales Engineering</text>
+          <circle cx="440" cy="240" r="5" fill="#1a1a1a" opacity="0.6"/>
+          <text x="428" y="237" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Product Marketing</text>
+          <circle cx="370" cy="300" r="5" fill="#1a1a1a" opacity="0.6"/>
+          <text x="358" y="297" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Developer Advocacy</text>
+          <circle cx="555" cy="380" r="5" fill="#1a1a1a" opacity="0.6"/>
+          <text x="543" y="377" text-anchor="end" font-family="Inter, sans-serif" font-size="12" fill="#1a1a1a" font-weight="500">Technical Writing</text>
+          <!-- Technical Marketing: prominent, red -->
+          <circle cx="555" cy="128" r="10" fill="#A7352A"/>
+          <circle cx="555" cy="128" r="16" fill="none" stroke="#A7352A" stroke-width="1" opacity="0.45"/>
+          <text x="538" y="103" text-anchor="end" font-family="Fraunces, serif" font-size="15" fill="#1a1a1a" font-weight="600">Technical Marketing</text>
+          <text x="538" y="120" text-anchor="end" font-family="Fraunces, serif" font-size="12" fill="#A7352A" font-style="italic" font-weight="500">judgment under pressure</text>
+          <text x="605" y="260" text-anchor="end" font-family="Inter, sans-serif" font-size="9" letter-spacing="1.5" fill="#A7352A" font-weight="600" font-style="italic">favorable quadrant</text>
+        </svg>
+        <p class="diagram-caption"><strong>図01。</strong>成果物制作のAIへのさらされ度と、必要とされる編集上のレバレッジに対して各分野をプロットしたもの。テクニカルマーケティングは有利な象限に位置する。制作層における高いAIへのさらされ度がそれを加速させる一方で、圧縮できない編集上のレバレッジと組み合わさっている。圧縮は機械的な負担を取り除く。判断は残る。</p>
+      </div>
+
+      <p>圧縮は有利な象限を脅かさない。それを明らかにする。AIが判断を取り巻いていた制作作業を吸収するとき、判断は希少な資源として可視化される。この役割が常に行ってきた最も価値のあることが、その明確な中心となる。</p>
+    </section>
+
+    <section class="section" id="what-clarifies">
+      <span class="section-num">05・明瞭化</span>
+      <h2>制作層が持ち上がるとき、この分野は何になるのか</h2>
+      <p>成果物制作の圧縮は、テクニカルマーケティングの役割から作業を取り除くわけではない。それは、この役割の最も高いレバレッジを持つ貢献であったことが一度もない部分の作業を取り除く。初稿、フォーマット化、初期リサーチのとりまとめ、基本的なコンテンツ組み立てにかかっていた時間はツールに吸収される。残る時間は、そもそもその初稿を作る価値があったかどうかを決めていた時間である。</p>
+      <p>どの競合に対応するか。どのアーキテクチャ上の主張が擁護可能で、どれがエンジニアリングチームがライブブリーフィングで支持しないほど過大に約束しているか。デモが統合を見せるべきか、それともネイティブの機能を見せるべきか、そしてその選択が、対象がGartnerのアナリストなのか購買委員会のプリンシパルエンジニアなのかによってなぜ変わるのか。その一連の決定は常にこの役割の本当の仕事だった。AIはそれに触れない。</p>
+
+      <div class="labeled-list">
+        <div class="labeled-item">
+          <div class="labeled-item__label">制作層が持ち上がる。</div>
+          <div class="labeled-item__body">初稿、リサーチのとりまとめ、初期のフォーマット化、構造的な組み立ては、ツールに吸収される。これを理解しているテクニカルマーケターは、AIを使って以前のほんの一部の時間で成果物を制作する。解放された時間は本物である。生産量は増える。どの成果物を制作するかを決める判断は変わらない。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">判断層が明示的になる。</div>
+          <div class="labeled-item__body">制作がもはや希少でなくなるとき、希少性は制作を統べる編集上の決定へと移る。どの主張か。どのフォーマットか。どの対象か。どの競合か。それらの決定は常にこの役割の最もレバレッジの高い貢献だった。それらは今や、この役割の最も目に見える貢献でもある。なぜなら、それらを覆い隠していた制作作業が吸収されたからだ。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">検証機能が拡大する。</div>
+          <div class="labeled-item__body">技術営業の活動に入るすべてのAI生成成果物は、それを検証できるプラクティショナーを必要とする。アーキテクチャの主張が技術的に正確であること。競合比較が誇張していないこと。セキュリティ質問票への回答が、購買者側のセキュリティチームからのフォローアップの電話に耐えられること。AIが生み出すものが増えるほど、検証層はより不可欠になる。テクニカルマーケターがその層である。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">説明責任の対象が拡大する。</div>
+          <div class="labeled-item__body">不正確であることが判明したAI生成の主張に遭遇した技術的に理解力のある購買者は、その責任をモデルではなく企業に帰属させる。テクニカルマーケターは、その主張に名前が紐づくプラクティショナーである。その説明責任は委任できない。それは、AI生成コンテンツへの依存を増すGTM活動における、この役割の恒久的な構造上の位置付けである。</div>
+        </div>
+      </div>
+
+      <div class="pullquote">
+        <p>AIが生み出すものが増えるほど、検証層はより不可欠になる。</p>
+      </div>
+    </section>
+
+    <section class="section" id="practitioner-posture">
+      <span class="section-num">06・プラクティショナーの姿勢</span>
+      <h2>これが実務上何を求めるか</h2>
+      <p>この転換を理解しているテクニカルマーケターは、AIツールに抵抗しない。彼らはそれを使って制作層を加速させながら、制作層が生み出すものに対する編集上の権限を守る。以前は4時間かかっていた草稿は、今は40分で済む。その草稿が正確かどうか、その主張が持ちこたえるかどうか、そのフレーミングが購買者の実際の評価上の問いに応えているかどうかという判断——その判断は、常に必要としてきたのと同じ入力を必要とするため、常にかかっていたのと全く同じ時間がかかる。</p>
+      <p>この転換はプラクティショナーに2つのことを求める。第一に、モデルに従属することなくAIツールを使いこなせるだけの慣れである。モデルのフレーミングを、製品の実際のエンジニアリング上の現実に照らして評価するのではなく、それに従属してしまうプラクティショナーは、購買者からのプレッシャーの下で破綻するAI支援コンテンツを生み出すことになる。モデルのフレーミングは出発点である。プラクティショナーの判断が編集である。第二に、どの作業を守るべきかについての明確さである。編集上の決定——どの主張か、どの競合か、どの対象向けのフレーミングか——は委任の対象にはならない。営業活動に入るすべての成果物への検証パスは任意ではない。説明責任は譲渡できない。</p>
+      <p>AIが向上しても、この分野は縮小しない。より重要になる。すべての競合他社のフィールドチームが同じ量のAI生成技術コンテンツを制作しているとき、差別化要因となるのは、そのコンテンツが実際に何を主張しているかを検証でき、企業の正直なエンジニアリング上の現実を同じ手に握り、火曜日にアナリストの前に何を出すかを決められるテクニカルマーケターである。そのプラクティショナーはツールに取って代わられているのではない。それによって明らかにされているのである。</p>
+    </section>
+
+    <section class="section" id="new-context">
+      <span class="section-num">07・新しい文脈</span>
+      <h2>この分野がゼロから構築されている場所</h2>
+      <p>今、テクニカルマーケティングにおける最も重要な展開は、エンタープライズソフトウェア企業の内部で起きているのではない。それはAI企業で起きている。そこでは、これまでに存在した中で最も難しいバージョンのテクニカルマーケティング問題の下で、この機能がゼロから構築されている。</p>
+      <p>エンタープライズ購買者に販売するAI企業は、2023年より前にはどのエンタープライズソフトウェア企業も直面したことのない問題に直面している。その製品は、購買者がこれまで評価を求められた中で最も技術的に複雑なものである。その主張(モデルの精度、コンテキストウィンドウの挙動、推論の信頼性、エージェント型タスク完了、規制環境における安全性特性)は、誇張された場合に検証可能で、高くつき、恥ずかしい形で破綻する主張である。購買者は自前のAIエンジニアを抱えている。そのエンジニアたちはその主張をテストする。「惜しいが正しくない」への許容度は、技術的な商談において常にそうであったのと同じ——ゼロである。</p>
+      <p>OpenAIはエンタープライズGTM活動を構築している。Anthropicは規制業界に販売している。Cohereは基盤モデルに対抗するポジションを取っている。Mistralはヨーロッパで技術的信頼性を確立している。Scale AIは、自らAIシステムを構築している購買者に対してデータと評価サービスを正当化している。これらの企業のすべてが、自社のAIシステムの正直な技術的現実を片手に、購買者の評価上の問いをもう片方の手に握り、火曜日にアナリストの前に何を出すかを決められるプラクティショナーを必要としている。それがテクニカルマーケティングの機能である。これらの企業のほとんどでは、まだそれに名前が付いていない。その作業はとにかく行われている。まだそれを反映していない肩書きの下で。</p>
+      <p>AI企業におけるデモのアーキタイプは、第1稿で確立されたスペクトラムの中で、Reference ArchitectureとInteractive Proofの間に位置する。購買者のエンジニアは、自分たちのデータに対してモデルを実行したいと考えている。彼らは自分たちの環境でベンチマークが再現されるのを見たいと考えている。彼らは、モデルが自社のセキュリティおよびコンプライアンススタックとどう統合されるかのアーキテクチャ図を見たいと考えている。その成果物は設定済みテナントではない。それはリファレンス実装であり、ベンチマークレポートであり、インタラクティブな評価環境である。AI企業のTechnical Marketerはこの3つすべてを構築し、それらが行う主張を擁護する。</p>
+
+      <div class="labeled-list">
+        <div class="labeled-item">
+          <div class="labeled-item__label">主張の擁護がより難しい。</div>
+          <div class="labeled-item__body">AI製品の主張——精度ベンチマーク、コンテキストウィンドウの挙動、エージェント型の信頼性。これらは、CRMのデモやセキュリティプラットフォームのナラティブとは異なり、検証可能な形でテスト可能だ。購買者は火曜日の午後に自分たちのデータに対してモデルを実行し、水曜日には結果を手にすることができる。AI企業のテクニカルマーケターは、モデルが何をし、何をしないかを正確に把握し、その正直な見立てに自社のポジショニングを賭ける必要がある。過大な約束は、エンタープライズソフトウェアの他のどこよりも早くここで破綻する。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">購買者はより高い能力を持つ。</div>
+          <div class="labeled-item__body">エンタープライズのAI購買者は自前のAIエンジニアを抱えている。そのエンジニアたちは、コンテキストウィンドウ、ファインチューニングの手法、RAGアーキテクチャ、評価方法論について意見を持っている。彼らはアーキテクチャレベルで主張に異議を唱える。AI企業のテクニカルマーケターは、デモを鵜呑みにするCIOにブリーフィングしているのではない。彼らは、すでに自前の評価を実行済みのプリンシパルML エンジニアにブリーフィングしている。その現場を保持するために必要な判断は、常にこの役割を定義してきたのと同じ判断である。技術的な文脈が新しいだけだ。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">トラストギャップは両方向に働く。</div>
+          <div class="labeled-item__body">AI企業は、トラスト問題のもう一つの層に直面している。AI生成コンテンツへの購買者の懐疑心は、そのAI企業自身のマーケティングにも当てはまる。見込み客が「ベンダー自身のモデルによって生成されたのではないか」と疑う営業デックは、意思決定の瞬間に割り引かれるデックである。AI企業におけるテクニカルマーケティングには、モデルが言いそうにないことだからこそ通用するエビデンスを制作できるプラクティショナーが必要である。人間による編集層こそが信頼性の層である。</div>
+        </div>
+        <div class="labeled-item">
+          <div class="labeled-item__label">名前のないまま機能が存在する。</div>
+          <div class="labeled-item__body">ほとんどのAI企業では、テクニカルマーケティングの作業は、Solutions Architect、AI Engineer、Technical Advisorといった肩書きを持つ人々によって行われている。この機能は、技術的な深さと商業的な志向を同時に保持し、次の一文が評価の継続を左右する現場で仕事をしてきたどのプラクティショナーにとっても見覚えのあるものだ。名前はドキュメンテーションの後に付いてくる。この出版物はそのドキュメンテーションの一部である。</div>
+        </div>
+      </div>
+
+      <div class="pullquote">
+        <p>名前はドキュメンテーションの後に付いてくる。作業はすでに行われている。</p>
+      </div>
+    </section>
+
+    <section class="section" id="the-position">
+      <span class="section-num">08・立場</span>
+      <h2>率直に述べた構造的な論拠</h2>
+      <p>AIはあらゆるGTM機能にわたって構造化技術コンテンツの制作を圧縮する。セールスエンジニアリング、プロダクトマーケティング、テクニカルライティング、デベロッパーアドボカシー——そのすべてが、18か月前よりも効率的に成果物を生産している。組み立ての機械的な労働は、あらゆる場所で安くなっている。</p>
+      <p>安くならないのは、どの成果物を制作するか、どの主張にそれを結び付けるか、そして購買者が決断を下す現場で企業がその主張を擁護できるかを決める判断である。その判断こそがテクニカルマーケティングの定義である。それは常にテクニカルマーケティングの定義だった。それを取り巻いていた制作作業は、その判断を実行するために必要だった。それが判断そのものだったことは一度もない。</p>
+      <p>圧縮は周囲の作業を取り除く。残るのはこの分野の核心である。この分野はAIの圧縮の下で縮小しない。それは明瞭になる。そして、それが明らかにするのは、それが常にそうであったもの——技術的なエビデンスに対する編集上の権限を、購買者からのプレッシャーの下で、一つ一つの決定に適用すること、その判断が重要になる場所で。</p>
+
+      <div class="pullquote">
+        <p>この分野はAIの圧縮の下で縮小しない。それは明瞭になる。</p>
+      </div>
+    </section>
+
+    <section class="footnotes" id="footnotes" aria-labelledby="footnotes-label">
+      <span class="footnotes-label" id="footnotes-label">出典</span>
+      <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-bottom:1rem;max-width:var(--measure);">最終確認：2026年6月 &middot; このページは変動する市場データを参照している。実質的な改訂は各Volumeの発行に合わせて行われる。</p>
+      <ol>
+        <li>Gartner, press release, August 26, 2025. <em>Gartner Predicts 40% of Enterprise Apps Will Feature Task-Specific AI Agents by 2026, Up from Less Than 5% in 2025.</em> <a href="https://www.gartner.com/en/newsroom/press-releases/2025-08-26-gartner-predicts-40-percent-of-enterprise-apps-will-feature-task-specific-ai-agents-by-2026-up-from-less-than-5-percent-in-2025">gartner.com</a></li>
+        <li>Layoffs.fyi and public company statements, 2025 and 2026. Salesforce headcount reduction from 9,000 to approximately 5,000 in support, and CEO Marc Benioff's public statement regarding no new software engineering hires in fiscal year 2026. Microsoft, Workday, Atlassian, and Oracle each cited AI-driven efficiency as the structural rationale for headcount reductions in adjacent GTM functions.</li>
+        <li>Stack Overflow, <em>2025 Developer Survey</em>, published July 31, 2025. 49,000 respondents across 177 countries. Trust in AI accuracy: 29% in 2025, down from 40% in 2024. Developers actively distrusting AI output: 46%. Top frustration: AI solutions almost right but not quite, cited by 45% of respondents. Reason developers would still want human help even if AI could do most tasks: 75.3% cited not trusting AI answers. <a href="https://survey.stackoverflow.co/2025/ai">survey.stackoverflow.co/2025/ai</a></li>
+        <li>McKinsey, <em>State of AI trust in 2026: Shifting to the agentic era</em>, March 25, 2026. Approximately 500 organizations surveyed. 74% of respondents identify inaccuracy as a highly relevant AI risk. Nearly two-thirds cite security and risk concerns as the top barrier to scaling agentic AI. <a href="https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/state-of-ai-trust-in-2026-shifting-to-the-agentic-era">mckinsey.com</a></li>
+        <li>McKinsey Technology Practice, interview with Prashanth Chandrasekar, CEO of Stack Overflow, January 29, 2026. <em>Building trust to scale AI in software development.</em> <a href="https://www.mckinsey.com/capabilities/mckinsey-technology/our-insights/building-trust-to-scale-ai-interview-with-the-ceo-of-stack-overflow">mckinsey.com</a></li>
+        <li>Corriveau, C. (2026). The technical marketer: A canonical job description. <em>Technical Marketing</em>, I. <a href="https://technicalmarketing.org/ja/the-technical-marketer">technicalmarketing.org/the-technical-marketer</a>. The function matrix diagram in that article establishes the two-axis framework used throughout this one.</li>
+      </ol>
+      <p style="font-family:var(--f-sans);font-size:0.75rem;line-height:1.55;color:var(--ink-60);margin-top:1.25rem;max-width:var(--measure);">本稿で使われている用語は、この出版物の<a href="/ja/glossary" style="color:inherit;border-bottom:1px solid var(--border-strong);">Glossary of Technical Marketing &rarr;</a>で定義されている</p>
+    </section>
+
+    <aside class="editors-note" aria-labelledby="editors-note-label">
+      <span class="editors-note-label" id="editors-note-label">編集後記</span>
+      <p>この記事が記述する圧縮は予測ではない。それは、ここで名前を挙げたすべてのGTM機能の上級プラクティショナーにとっての現在の運用条件である。この論拠は、データがそうであるように、より鋭くなっていくだろう。</p>
+      <p>この構造的な立場に異論がある、あるいはそれに反する証拠を持つプラクティショナーは、<a href="/ja/suggest">意見を提出する</a>よう招待する。この出版物は、予測されていた発展の姿としてではなく、実際に実践されているままにこの分野を記録するために存在する。</p>
+      <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
+    </aside>
+
+    <div class="share-surface" aria-label="Share this article">
+      <span class="share-surface__label">共有</span>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Ftechnicalmarketing.org%2Fja%2Ftechnical-marketing-age-of-ai" class="share-btn" target="_blank" rel="noopener noreferrer" aria-label="Share on LinkedIn">
+        <span class="share-btn__icon" aria-hidden="true">in</span>
+        LinkedIn
+      </a>
+      <a href="https://twitter.com/intent/post?url=https%3A%2F%2Ftechnicalmarketing.org%2Fja%2Ftechnical-marketing-age-of-ai&text=AI%E6%99%82%E4%BB%A3%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%82%AB%E3%83%AB%E3%83%9E%E3%83%BC%E3%82%B1%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E2%80%94%E5%91%A8%E5%9B%B2%E3%81%AE%E3%81%99%E3%81%B9%E3%81%A6%E3%81%8C%E7%B8%AE%E5%B0%8F%E3%81%99%E3%82%8B%E3%81%A8%E3%81%8D%E3%81%AB%E3%81%93%E3%81%AE%E5%88%86%E9%87%8E%E3%81%8C%E6%8B%A1%E5%A4%A7%E3%81%99%E3%82%8B%E7%90%86%E7%94%B1%E3%81%AE%E8%AB%96%E6%8B%A0%E3%80%82" class="share-btn" target="_blank" rel="noopener noreferrer" aria-label="Share on X">
+        <span class="share-btn__icon" aria-hidden="true">&#120143;</span>
+        Post
+      </a>
+      <button type="button" class="share-btn" onclick="copyArticleLink(this)" aria-label="Copy link to this article">
+        <span class="share-btn__icon" aria-hidden="true">&#10063;</span>
+        リンクをコピー
+      </button>
+    </div>
+
+    <div class="next-article">
+      <a href="/before-the-name">
+        <span class="next-article__label">Article II &middot; Vol. 01</span>
+        <div class="next-article__title">名前が付く前。肩書きが生まれる前から存在していた仕事。 <span class="arrow">&rarr;</span></div>
+      </a>
+    </div>
+
+    <section class="faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">よくある質問</h2>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">AIはテクニカルマーケティングに取って代わるのか？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">いいえ。AIは成果物制作を圧縮する。デッキの草稿作成、競合状況の要約、導入ガイドの生成といったものだ。AIが圧縮できないのは、プレッシャーの下での編集判断である。アナリストブリーフィングでどの主張を先頭に置くか。購買者に異議を唱えられたときにどのアーキテクチャ上の真実を守るか。デモが粗削りな部分を見せるか、それとも順調な部分だけを見せるか。その判断こそがテクニカルマーケティングの定義である。それは常にその定義だった。</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">AIはテクニカルマーケティングの役割をどう変えるのか？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">AIは構造化された技術コンテンツの制作を加速し、テクニカルマーケターが常に最も重要だった判断業務に集中できるようにする。役割は縮小しない。明瞭になる。これまで役割の時間の相当部分を消費していた制作業務は、ツールに吸収される。どの成果物を構築するか、どの主張にそれを結び付けるかという編集上の権限が、この分野の明確な中心となる。</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">なぜ技術的に洗練された購買者は依然として人間のテクニカルマーケターを必要とするのか？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">彼らはAIが生成した技術的な主張を額面通りには信頼しないからだ。Stack Overflowの2025年Developer Surveyでは、AIの正確性への信頼はわずか1年で40%から29%に低下し、46%の開発者がAIの出力を積極的に不信視していることが分かった。購買者がプリンシパルエンジニアやCISOであり、決定が7桁規模の契約である場合、AI生成のデモやAI生成のアーキテクチャ図には、質問攻めの中でそれらを守り抜けるプラクティショナーが必要になる。そのプラクティショナーがテクニカルマーケターである。</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">AI生成技術コンテンツにおけるトラストギャップとは何か？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">トラストギャップとは、導入と信頼の間の距離である。Stack Overflowの2025年調査では84%の開発者がAIツールを使用している一方、それらのツールが生み出すものの正確性を信頼しているのはわずか29%であることが分かった。McKinseyの2026年AI Trust Maturity Surveyでは、74%の組織が不正確性を非常に関連性の高いAIリスクとして挙げている。このギャップが、技術的な主張を検証し、擁護し、責任を負うことのできるプラクティショナーへの構造的な需要を生み出している。</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">OpenAIやAnthropicのようなAI企業にもテクニカルマーケターは必要か？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">必要としている。しかも彼らはこの機能をゼロから構築している最中だ。AI企業はテクニカルマーケティング問題の中で最も難しいバージョンに直面している。彼らの製品は現在の市場で最も技術的に複雑であり、彼らの購買者は最も技術的に洗練されており、評価対象となる主張は誇張された場合に検証可能な形で破綻する。OpenAI、Anthropic、Cohere、Mistral、Scale AIはいずれも、自前のAIエンジニアを抱えるエンタープライズ購買者に対してAIシステムに関する技術的主張を擁護できるプラクティショナーを必要としている。それがテクニカルマーケティングの機能である。</p>
+        </div>
+      </div>
+
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+        <h3 class="faq-q" itemprop="name">AI企業におけるテクニカルマーケティングはどのようなものか？</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p class="faq-a" itemprop="text">AI企業において、テクニカルマーケティングはAI製品の主張に関するエビデンス層を担う。精度ベンチマーク、コンテキストウィンドウの挙動を示すデモンストレーション、エージェント型タスク完了の証明、規制業界向けの安全性・コンプライアンスのポジショニングなどだ。成果物はエンタープライズソフトウェアとは異なる（設定済みテナントではなくリファレンス実装、標準的なデモではなくベンチマークレポート）が、判断業務は同一である。どの主張を先頭に置くか。どのアーキテクチャ上の真実を守るか。購買者側の技術チームからの質問に対してそのポジショニングが持ちこたえるかどうか。<a href="/ja/glossary">Glossary</a>には、この分野全体で使われる用語が定義されている。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cite-card" id="cite" aria-labelledby="cite-title">
+      <div class="cite-card__header">
+        <span class="cite-card__kicker">引用</span>
+        <p class="cite-card__title" id="cite-title">この記事の引用方法。</p>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">APA</span>
+        <div class="cite-text" id="cite-ai-apa">Corriveau, C. (2026). Technical marketing in the age of AI. <em>Technical Marketing</em>, <em>I</em>. <a href="https://technicalmarketing.org/technical-marketing-age-of-ai">https://technicalmarketing.org/technical-marketing-age-of-ai</a></div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ai-apa', this)" aria-label="Copy APA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">MLA</span>
+        <div class="cite-text" id="cite-ai-mla">Corriveau, Chad. "Technical Marketing in the Age of AI." <em>Technical Marketing</em>, vol. I, 2026, <a href="https://technicalmarketing.org/technical-marketing-age-of-ai">technicalmarketing.org/technical-marketing-age-of-ai</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ai-mla', this)" aria-label="Copy MLA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">Chicago</span>
+        <div class="cite-text" id="cite-ai-chicago">Corriveau, Chad. "Technical Marketing in the Age of AI." <em>Technical Marketing</em> I (2026). <a href="https://technicalmarketing.org/technical-marketing-age-of-ai">https://technicalmarketing.org/technical-marketing-age-of-ai</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ai-chicago', this)" aria-label="Copy Chicago citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">BibTeX</span>
+        <pre class="cite-text cite-text--code" id="cite-ai-bibtex">@article{corriveau2026aiai,
+  author  = {Corriveau, Chad},
+  title   = {Technical Marketing in the Age of {AI}},
+  journal = {Technical Marketing},
+  volume  = {I},
+  year    = {2026},
+  url     = {https://technicalmarketing.org/technical-marketing-age-of-ai}
+}</pre>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ai-bibtex', this)" aria-label="Copy BibTeX citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="article-aside" aria-label="Table of contents">
+    <nav class="toc" aria-label="On this page">
+      <span class="toc-label">このページの内容</span>
+      <ul class="toc-list">
+        <li><a href="#condition"><span class="toc-num">01</span>状況</a></li>
+        <li><a href="#what-compresses"><span class="toc-num">02</span>圧縮</a></li>
+        <li><a href="#trust-gap"><span class="toc-num">03</span>トラストギャップ</a></li>
+        <li><a href="#favorable-quadrant"><span class="toc-num">04</span>位置</a></li>
+        <li><a href="#what-clarifies"><span class="toc-num">05</span>明瞭化</a></li>
+        <li><a href="#practitioner-posture"><span class="toc-num">06</span>実務上の姿勢</a></li>
+        <li><a href="#new-context"><span class="toc-num">07</span>AI企業</a></li>
+        <li><a href="#the-position"><span class="toc-num">08</span>論拠</a></li>
+        <li><a href="#footnotes"><span class="toc-num">&middot;</span>出典</a></li>
+        <li><a href="#faq-title"><span class="toc-num">&middot;</span>FAQ</a></li>
+        <li><a href="#cite"><span class="toc-num">&middot;</span>引用</a></li>
+      </ul>
+    </nav>
+  </aside>
+</div>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Folio III</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true">
+      <span class="colophon__diamond"></span>
+    </div>
+    <div class="colophon__grid">
+      <span class="colophon__label">編集</span>
+      <span class="colophon__value">この分野のフィールドマニュアル。Chad Corriveauによる編集・監修。</span>
+      <span class="colophon__label">書体</span>
+      <span class="colophon__value">Fraunces、Roboto Slab、Interを使用。小麦色とライブラリーレッドで構成。</span>
+      <span class="colophon__label">憲章</span>
+      <span class="colophon__value">掲載項目は、一次情報源、プラクティショナーとの関連性、ベンダープロモーションの不在という編集憲章の基準に照らしてレビューされる。ThinkRoot LLCが出版インフラと運営支援を提供する。</span>
+
+      <span class="colophon__label">発行元</span>
+      <span class="colophon__value">Published by ThinkRoot LLC &middot; Escondido, CA</span>
+      <span class="colophon__label">連絡先</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/ja/about" class="colophon__nav-link">概要</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/contributors" class="colophon__nav-link">コントリビューター</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/glossary" class="colophon__nav-link">用語集</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/landscape" class="colophon__nav-link">ランドスケープ</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/suggest" class="colophon__nav-link">提案する</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+function copyCitation(targetId, btn) {
+  var el = document.getElementById(targetId);
+  if (!el || !btn) return;
+  var text = el.innerText.trim();
+  function showCopied() {
+    btn.classList.add('is-copied');
+    var txt = btn.querySelector('.cite-copy-text');
+    var icon = btn.querySelector('.cite-copy-icon');
+    if (txt) txt.textContent = 'コピー済み';
+    if (icon) icon.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (txt) txt.textContent = 'コピー';
+      if (icon) icon.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(function() {
+      fallbackCopy(text, showCopied);
+    });
+  } else { fallbackCopy(text, showCopied); }
+}
+function fallbackCopy(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text; ta.style.position = 'fixed'; ta.style.left = '-9999px';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); callback(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+function copyArticleLink(btn) {
+  var url = 'https://technicalmarketing.org/ja/technical-marketing-age-of-ai';
+  var icon = btn.querySelector('.share-btn__icon');
+  var label = btn.lastChild;
+  function showCopied() {
+    btn.classList.add('is-copied');
+    if (icon) icon.innerHTML = '&#10003;';
+    if (label) label.textContent = ' コピー済み';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (icon) icon.innerHTML = '&#10063;';
+      if (label) label.textContent = ' リンクをコピー';
+    }, 2400);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(url).then(showCopied).catch(function() { fallbackCopy(url, showCopied); });
+  } else { fallbackCopy(url, showCopied); }
+}
+</script>
+
+<script>
+(function() {
+  'use strict';
+  var progressBar = document.getElementById('reading-progress');
+  var main = document.getElementById('main');
+  var tocLinks = [];
+  var sections = [];
+
+  function updateProgress() {
+    if (!progressBar || !main) return;
+    var mainTop = main.getBoundingClientRect().top + window.pageYOffset;
+    var total = main.offsetHeight - window.innerHeight;
+    var pct = total > 0 ? Math.min(100, Math.max(0, ((window.pageYOffset - mainTop) / total) * 100)) : 0;
+    progressBar.style.width = pct + '%';
+    progressBar.setAttribute('aria-valuenow', Math.round(pct));
+  }
+
+  function calcReadingTime() {
+    var el = document.getElementById('reading-time');
+    if (!el || !main) return;
+    var words = (main.innerText || main.textContent || '').trim().split(/\s+/).length;
+    el.textContent = Math.max(1, Math.round(words / 220)) + '分で読了';
+  }
+
+  function initScrollSpy() {
+    document.querySelectorAll('.toc-list a[href^="#"]').forEach(function(link) {
+      var sec = document.getElementById(link.getAttribute('href').slice(1));
+      if (sec) { tocLinks.push(link); sections.push(sec); }
+    });
+  }
+
+  function updateScrollSpy() {
+    if (!sections.length) return;
+    var mid = window.pageYOffset + 120;
+    var active = null;
+    for (var i = sections.length - 1; i >= 0; i--) {
+      if (sections[i].offsetTop <= mid) { active = tocLinks[i]; break; }
+    }
+    tocLinks.forEach(function(l) { l.classList.toggle('is-active', l === active); });
+  }
+
+  var ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() { updateProgress(); updateScrollSpy(); ticking = false; });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  function init() { calcReadingTime(); initScrollSpy(); updateProgress(); updateScrollSpy(); }
+  if (document.readyState !== 'loading') { init(); }
+  else { document.addEventListener('DOMContentLoaded', init); }
+})();
+</script>
+</body>
+</html>
