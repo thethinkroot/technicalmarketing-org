@@ -15,7 +15,11 @@ The publication is organized into finite departments, each at a stable address:
 - Archive — https://technicalmarketing.org/archive (the permanent record of volumes)
 - About — https://technicalmarketing.org/about · Contributors — https://technicalmarketing.org/contributors · Suggest — https://technicalmarketing.org/suggest
 
-Last updated: 2026-07-04. Version 1.6.
+## Language editions
+
+The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
+
+Last updated: 2026-07-07. Version 1.7.
 
 ---
 
