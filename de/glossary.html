@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="de" data-allow-dark>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glossar des Technischen Marketings · Begriffe und Definitionen · Technical Marketing</title>
+<meta name="description" content="Ein Arbeitsglossar für die Disziplin des Technischen Marketings. Definitionen für Demo, Proof of Concept, Technical Win, Referenzumgebung und Demo Coherence.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="Chad Corriveau">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Glossar des Technischen Marketings · Begriffe und Definitionen">
+<meta property="og:description" content="Ein Arbeitsglossar für die Disziplin des Technischen Marketings. Definitionen für Demo, Proof of Concept, Technical Win, Referenzumgebung und Demo Coherence.">
+<meta property="og:url" content="https://technicalmarketing.org/de/glossary">
+<meta property="og:image" content="https://technicalmarketing.org/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Technical Marketing — Glossar der Begriffe">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Glossar des Technischen Marketings · Begriffe und Definitionen">
+<meta name="twitter:description" content="Ein Arbeitsglossar für die Disziplin des Technischen Marketings. Definitionen für Demo, Proof of Concept, Technical Win, Referenzumgebung und Demo Coherence.">
+<meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+<link rel="canonical" href="https://technicalmarketing.org/de/glossary">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/glossary" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/glossary" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/glossary" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/glossary" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/glossary" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/glossary" />
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing" href="/feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"Eine unabhängige Quartalspublikation und ein Arbeitsreferenzwerk für die Disziplin des Technischen Marketings: die Praxis, technisch komplexe Aussagen gegenüber technisch versierten Käufern zu beweisen, mit einem kommerziellen Ergebnis auf dem Spiel.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"]},{"@type":"DefinedTermSet","@id":"https://technicalmarketing.org/glossary#termset","name":"Glossar des Technischen Marketings","description":"Ein Arbeitsglossar für die Disziplin des Technischen Marketings, wie sie in Unternehmenssoftware, KI, Infrastruktur und Hardware praktiziert wird. Die Definitionen spiegeln den praktischen Sprachgebrauch über verschiedene Unternehmenstypen und Produktkategorien hinweg wider.","url":"https://technicalmarketing.org/glossary","publisher":{"@id":"https://technicalmarketing.org/#organization"}},{"@type":"WebPage","@id":"https://technicalmarketing.org/glossary#page","url":"https://technicalmarketing.org/glossary","name":"Glossar des Technischen Marketings","isPartOf":{"@id":"https://technicalmarketing.org/#organization"},"author":{"@id":"https://technicalmarketing.org/#person-chad-corriveau"},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#glossary-lede","#scope-note"]}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org/"},{"@type":"ListItem","position":2,"name":"Glossar","item":"https://technicalmarketing.org/glossary"}]},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#agentic-ai","name":"Agentic AI","description":"KI-Systeme, die mehrstufige Aufgaben autonom planen und ausführen, unter Verwendung von Tools, APIs und externen Datenquellen, anstatt auf einen einzelnen Prompt zu antworten und dann zu stoppen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#agentic-ai"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#analyst-briefing","name":"Analyst briefing","description":"Eine strukturierte Präsentation, die einem Technologieanalysten bei Gartner, Forrester, IDC oder einem vergleichbaren Unternehmen gehalten wird, mit dem Ziel, das Produkt eines Unternehmens präzise innerhalb der laufenden Forschungs- und Bewertungsrahmen des Analysten zu positionieren.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#analyst-briefing"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#ar-cycle","name":"AR cycle","description":"Der strukturierte, wiederkehrende Prozess, durch den ein Unternehmen mit Technologieanalysten bei Firmen wie Gartner, Forrester und IDC interagiert: sie über die Produktrichtung zu briefen, auf Forschungsanfragen zu antworten, an Bewertungsrahmen teilzunehmen und die daraus resultierenden Positionsänderungen in veröffentlichten Berichten zu verfolgen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#ar-cycle"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#architecture-overview","name":"Architecture overview","description":"Ein strukturiertes Diagramm mit begleitender Erklärung, das beschreibt, wie ein Softwareprodukt aufgebaut ist, wie sich seine Komponenten zueinander verhalten und wie es sich mit den Systemen verbindet, die ein Käufer bereits betreibt.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#architecture-overview"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#battlecard","name":"Battlecard","description":"Ein prägnantes, strukturiertes Referenzdokument, das ein Mitglied eines Vertriebs- oder Presales-Teams befähigt, einen bestimmten Wettbewerber in einem laufenden Deal zu behandeln: wie man sich positioniert, wie man auf häufige Einwände reagiert und welche technischen Differenzierungsmerkmale zu betonen sind.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#battlecard"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#calibration-band","name":"Calibration band","description":"Der Bereich technischer Tiefe, in dem Marketinginhalte in einem komplexen Unternehmensverkauf am wirkungsvollsten sind: genug Tiefe, um einem technisch versierten Käufer eine Fläche zur Bewertung zu geben, aber nicht so viel Tiefe, dass der Inhalt zu einer Schulungsmaßnahme statt zu einem Überzeugungsinstrument wird.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#calibration-band"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#champion","name":"Champion","description":"Eine Person innerhalb einer Käuferorganisation, die aktiv für das Produkt eines Anbieters intern wirbt, die Bewertung vorantreibt, wenn der Anbieter nicht im Raum ist, und bereit ist, persönliche Glaubwürdigkeit für die Kaufempfehlung einzusetzen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#champion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#competitive-engagement","name":"Competitive engagement","description":"Eine aktive Vertriebssituation, in der der Käufer gleichzeitig einen oder mehrere namentlich genannte Wettbewerber bewertet und die Vertriebsstrategie des Anbieters diesen Vergleich direkt berücksichtigen muss.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#competitive-engagement"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo","name":"Demo","description":"Eine strukturierte, live oder aufgezeichnete Präsentation von Software im Betrieb, die darauf ausgelegt ist, bei einem bestimmten Publikum in einer bestimmten Phase eines Verkaufs oder einer Evaluierung eine bestimmte Überzeugung zu erzeugen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo-coherence","name":"Demo coherence","description":"Der Grad, in dem jedes Element einer Demo, einschließlich Daten, Workflow, Persona und Narrativ, einem einzigen, konsistenten Argument dient, anstatt die Abdeckung von Funktionen zu demonstrieren.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo-coherence"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#demo-environment","name":"Demo environment","description":"Eine konfigurierte Instanz eines Softwareprodukts, die speziell zur Unterstützung von Vertriebs- und Evaluierungsaktivitäten aufgebaut wurde, im Unterschied zu Produktions-, Staging- oder Entwicklungsumgebungen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#demo-environment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#displacement","name":"Displacement","description":"Eine Vertriebsbewegung, bei der ein Anbieter Geschäft von einem Käufer gewinnt, der derzeit das Produkt eines namentlich genannten Wettbewerbers nutzt, wodurch der Anbieter Wechselkosten, bestehende Beziehungen und einen Vorteil des etablierten Anbieters überwinden muss.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#displacement"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#editorial-judgment","name":"Redaktionelles Urteilsvermögen","description":"Die Fähigkeit des Praktikers, unter kommerziellem Druck zu entscheiden, welche technischen Beweise welchem Publikum in welcher Reihenfolge, mit welcher Rahmung und in welcher Tiefe präsentiert werden, sodass das Ergebnis die Evaluierung eines bestimmten Käufers voranbringt.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#editorial-judgment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#evaluation-conversion","name":"Evaluation conversion","description":"Die Rate, mit der Opportunities, die in eine formale technische Evaluierungsphase eintreten, zu einem Technical Win führen, verwendet als primäres Maß für die Wirksamkeit des Technischen Marketings.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#evaluation-conversion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#field-activation","name":"Field activation","description":"Der Prozentsatz des Vertriebs- und Presales-Teams, der aktiv die aktuell validierte Demo, die aktuellen Battlecards für den Wettbewerb und die aktuelle technische Positionierung in laufenden Kundengesprächen verwendet.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#field-activation"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#generative-ai","name":"Generative AI","description":"KI-Systeme, die neue Inhalte wie Text, Bilder, Code und Audio erzeugen, indem sie statistische Muster aus großen Trainingsdatensätzen lernen und Ausgaben generieren, die der Absicht eines Prompts entsprechen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#generative-ai"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#gtm","name":"GTM","description":"Die Strategie, Teamstruktur und das operative Modell, mit dem ein Unternehmen ein Produkt auf seinen Zielmarkt bringt, einschließlich der Definition und Erreichung von Käufern, der Preisgestaltung und Verpackung des Produkts und der Vertriebsbewegungen, die es ausführt.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#gtm"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#integration-guide","name":"Integration guide","description":"Ein strukturiertes technisches Dokument, das erklärt, wie das Produkt eines Anbieters mit den bestehenden Systemen eines Käufers verbunden wird, geschrieben in der Tiefe, die ein technischer Bewerter benötigt, um die Integrationsfähigkeit während einer Kaufevaluierung zu beurteilen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#integration-guide"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#magic-quadrant","name":"Magic Quadrant","description":"Gartners primäres Marktbewertungsrahmenwerk, in dem Anbieter innerhalb einer definierten Technologiekategorie auf einem Zwei-Achsen-Raster aus Ability to Execute und Completeness of Vision positioniert werden.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#magic-quadrant"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#pipeline","name":"Pipeline","description":"Die Gesamtheit der aktiven Vertriebschancen, die ein Unternehmen in einem bestimmten Zeitraum verfolgt, typischerweise gemessen am Dollarwert in jeder Phase des Vertriebsprozesses.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#pipeline"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#playbook","name":"Playbook","description":"Ein strukturierter, wiederholbarer Leitfaden, der dokumentiert, wie eine bestimmte Art von Vertriebsbewegung oder Wettbewerbssituation auszuführen ist, sodass verschiedene Mitglieder des Feldteams denselben Spielzug konsistent ausführen können.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#playbook"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#plg-company","name":"PLG company","description":"Ein Unternehmenssoftwareunternehmen, dessen primäre Wachstumsbewegung durch die Endnutzer-Produktakzeptanz statt durch klassischen Top-down-Unternehmensvertrieb angetrieben wird, wobei das Produkt selbst der primäre Akquisitions-, Aktivierungs- und Expansionsmechanismus ist.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#plg-company"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-of-concept","name":"Proof of concept","description":"Eine strukturierte technische Evaluierung, bei der der Anbieter sein Produkt gegen die spezifische Umgebung, Daten oder den Anwendungsfall eines Kunden konfiguriert und testet, mit dem Ziel, Beweise zu liefern, dass das Produkt wie behauptet funktioniert.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-of-concept"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-of-value","name":"Proof of value","description":"Eine strukturierte Evaluierung, bei der der Käufer testet, ob ein Produkt eine messbare Verbesserung gegenüber einem Geschäftsergebnis erzielt, zu dem er sich verpflichtet hat, statt ob das Produkt technisch funktioniert.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-of-value"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#proof-point","name":"Proof point","description":"Ein spezifisches, verifizierbares Beweisstück, das eine Produktaussage auf dem Präzisionsniveau stützt, das erforderlich ist, um der Befragung durch einen technisch versierten Käufer standzuhalten.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#proof-point"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#reference-environment","name":"Reference environment","description":"Die kanonische Konfiguration eines Softwareprodukts, die als maßgebliche Quelle dient, aus der Demonstrationen, technische Inhalte und Evaluierungsmaterialien erstellt werden.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#reference-environment"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#regis-mckenna","name":"Regis McKenna","description":"Ein Marketingstratege aus dem Silicon Valley, der 1967 zu National Semiconductor stieß und einer der frühesten Praktiker und Theoretiker des Technischen Marketings in der Halbleiter- und Computerindustrie wurde.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#regis-mckenna"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#sales-engineer","name":"Sales engineer / Solutions consultant","description":"Ein technisch geschulter Presales-Experte, der das technische Gespräch in laufenden Deals führt, Live-Demos durchführt, Produktfragen beantwortet, Proof of Concepts abgrenzt und die technische Glaubwürdigkeit liefert, die eine kommerzielle Vertriebsbewegung unterstützt.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#sales-engineer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#teardown","name":"Teardown","description":"Eine strukturierte, dokumentierte Analyse des Produkts, der Architektur, der Preisgestaltung, der Positionierung und der öffentlich verfügbaren technischen Aussagen eines Wettbewerbers, erstellt vom Technischen Marketing, um die Wettbewerbsstrategie, Battlecards und Displacement-Playbooks zu informieren.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#teardown"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-champion","name":"Technical champion","description":"Eine technisch glaubwürdige Person innerhalb einer Käuferorganisation, die das Produkt des Anbieters evaluiert hat, zu einer Schlussfolgerung über dessen Fähigkeiten gekommen ist und bereit ist, diese Schlussfolgerung gegenüber technischen Kollegen und der Geschäftsführung zu verteidigen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-champion"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-marketer","name":"Technical marketer","description":"Ein Praktiker, der die technische Beweis- und Narrativebene besitzt, die einen komplexen Verkauf unterstützt, einschließlich der Demos, Referenzumgebungen, Wettbewerbsmaterialien, analystenorientierten Inhalte und technischen Inhalte, die die Distanz zwischen Produktfähigkeit und Käuferüberzeugung schließen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-marketer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-narrative","name":"Technical narrative","description":"Der maßgebliche, intern konsistente Bericht darüber, was ein Produkt tut, wie es das tut, warum das wichtig ist und was es von Alternativen unterscheidet, gepflegt vom Technischen Marketing als die Quelle der Wahrheit, aus der alle feldorientierten technischen Inhalte abgeleitet werden.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-narrative"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#technical-win","name":"Technical win","description":"Der Punkt in einem Vertriebszyklus, an dem die technischen Bewerter auf Käuferseite zu dem Schluss gekommen sind, dass das Produkt in der Lage ist, das zu leisten, was der Anbieter behauptet hat, und diese Schlussfolgerung dokumentiert und dem Economic Buyer mitgeteilt wird.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#technical-win"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#time-to-decision","name":"Time to decision","description":"Die verstrichene Zeit von der ersten substanziellen technischen Evaluierungsaktivität bis zur Kaufentscheidung des Käufers, verwendet als Maß dafür, wie effizient die technischen Marketinginhalte eines Anbieters einem Käufer ermöglichen, zu einer sicheren Schlussfolgerung zu gelangen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#time-to-decision"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#trust-layer","name":"Trust layer","description":"Das Band technischer Tiefe in einer Vertriebsinteraktion, das einem technisch versierten Käufer genug Beweise gibt, um den Aussagen des Produkts zu vertrauen, ohne eine vollständige Evaluierung auf Ingenieursebene zu erfordern.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#trust-layer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#buying-committee","name":"Buying committee","description":"Die Gruppe von Stakeholdern innerhalb einer Interessentenorganisation, die gemeinsam eine Kaufentscheidung beeinflussen oder treffen, typischerweise umfassend technische Bewerter, Business Sponsors, Economic Buyers, Einkauf, Recht und Sicherheitsfunktionen, jeweils mit unterschiedlichen Kriterien und unterschiedlichen Autoritätsebenen über das Endergebnis.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#buying-committee"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#discovery-call","name":"Discovery call","description":"Ein strukturiertes Gespräch zwischen dem Vertriebs- oder Presales-Team eines Anbieters und einem Interessenten, das früh im Vertriebszyklus geführt wird, um die aktuelle Umgebung des Käufers, das zu lösende Problem, die Bewertungskriterien und den zu befolgenden Entscheidungsprozess zu verstehen.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#discovery-call"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#economic-buyer","name":"Economic buyer","description":"Die Person innerhalb einer Käuferorganisation, die die endgültige Budgetautorität innehat und deren Genehmigung erforderlich ist, um einen Kauf zu tätigen, unabhängig vom technischen oder geschäftlichen Konsens, der ihrer Einbeziehung vorausgeht.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#economic-buyer"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#presales","name":"Presales","description":"Die organisatorische Funktion und die Reihe von Aktivitäten, die einen komplexen Verkauf vom ersten Kontakt mit dem Interessenten bis zur Vertragsunterzeichnung unterstützen, einschließlich technischer Discovery, Lösungsdesign, Produktdemonstration, Proof-of-Concept-Koordination, RFP-Beantwortung und Sicherheitsfragebogen-Management.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#presales"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#rfp","name":"RFP","description":"Ein formelles Beschaffungsdokument, das von einer Käuferorganisation ausgestellt wird und Anbieter dazu verpflichtet, auf einen strukturierten Satz von Fragen zu Produktfähigkeiten, technischer Architektur, Sicherheitslage, Preisgestaltung, Implementierungsansatz und Unternehmensstabilität zu antworten.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#rfp"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#security-questionnaire","name":"Security questionnaire","description":"Ein strukturiertes Dokument, das vom Sicherheits-, Rechts- oder Beschaffungsteam einer Käuferorganisation ausgestellt wird und den Anbieter verpflichtet, seine Sicherheitskontrollen, Datenverarbeitungspraktiken, Compliance-Zertifizierungen, Business-Continuity-Lage und Incident-Response-Verfahren offenzulegen und zu dokumentieren.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#security-questionnaire"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#briefing-prep","name":"Briefing prep","description":"Die strukturierte Vorbereitungsarbeit, die ein Technical Marketer vor einem Analyst Briefing erstellt, einschließlich der durchzuführenden Demo, der zu führenden technischen Proof Points, der proaktiv zu benennenden Einschränkungen und der erwarteten Fragen mit vorbereiteten Antworten.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#briefing-prep"},{"@type":"DefinedTerm","@id":"https://technicalmarketing.org/glossary#rfi-response","name":"RFI response","description":"Die strukturierte Antwort eines Anbieters auf die Informationsanfrage einer Käuferorganisation, eingereicht bevor eine formale Evaluierung beginnt, die vom Käufer verwendet wird, um zu beurteilen, ob ein Anbieter zu einem vollständigen RFP-Prozess eingeladen werden sollte.","inDefinedTermSet":{"@id":"https://technicalmarketing.org/glossary#termset"},"url":"https://technicalmarketing.org/glossary#rfi-response"}]}</script>
+
+<style>
+:root{--paper:#EFE6C9;--paper-shade:#E5D9B4;--paper-light:#F5EED8;--ink:#1C1812;--ink-60:#5C4E3C;--ink-40:#8B7D69;--border:rgba(28,24,18,0.14);--border-strong:rgba(28,24,18,0.32);--red:#A7352A;--yellow:#EACF82;--f-display:'Roboto Slab','Georgia',serif;--f-serif:'Fraunces','Georgia','Times New Roman',serif;--f-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;--measure:64ch;--layout-max:1100px;--reading-max:720px}
+*{box-sizing:border-box;margin:0;padding:0}
+*::selection{background:var(--yellow);color:var(--ink)}
+html{font-size:16px;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+body{font-family:var(--f-serif);background:var(--paper);color:var(--ink);line-height:1.62;background-image:radial-gradient(circle at 50% 50%,rgba(28,24,18,0.045) 1px,transparent 1.2px);background-size:14px 14px;background-attachment:fixed}
+a{color:inherit;text-decoration:none;transition:color .15s ease}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:1px}
+img{max-width:100%;height:auto;display:block}
+.skip-link{position:absolute;left:-9999px;top:0;padding:.5rem 1rem;background:var(--ink);color:var(--paper);z-index:200;font-family:var(--f-sans);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase}
+.skip-link:focus{left:1rem;top:1rem}
+.layout{max-width:var(--layout-max);margin:0 auto;padding:0 1.75rem}
+.masthead{border-top:2px solid var(--ink);padding-top:.875rem;margin-bottom:0}
+.masthead__furniture{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;padding-bottom:.75rem}
+.masthead__furniture-right{text-align:right;line-height:1.5}
+.masthead__rule{border:none;border-top:.5px solid var(--border-strong);margin:0}
+.masthead__title-row{display:flex;align-items:baseline;justify-content:center;padding:1.25rem 0 1rem}
+.masthead__title{font-family:var(--f-display);font-weight:700;font-size:clamp(1.75rem,5.5vw,3.25rem);letter-spacing:.04em;color:var(--ink);line-height:1;text-decoration:none;display:inline-block}
+a.masthead__title:hover{color:var(--red)}
+.masthead__subtitle-row{display:flex;justify-content:space-between;align-items:center;padding:.625rem 0 .875rem;gap:1rem;flex-wrap:wrap}
+.masthead__subtitle{font-family:var(--f-serif);font-style:italic;font-size:1rem;color:var(--ink);font-weight:400}
+.masthead__url{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:500}
+.masthead__nav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:0 1.875rem;padding:.75rem 0 .875rem}
+.masthead__nav-link{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-60);font-weight:500;padding:.375rem 0;border-bottom:1px solid transparent;transition:color .15s ease,border-color .15s ease}
+.masthead__nav-link:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.masthead__nav-link[aria-current="page"]{color:var(--red);border-bottom-color:var(--red)}
+.masthead__nav{row-gap:.4rem}
+.masthead__nav-group{display:flex;align-items:center;flex-wrap:wrap;justify-content:center;gap:0 1.375rem}
+.masthead__nav-kicker{font-family:var(--f-display);font-weight:700;font-size:.5625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-right:.125rem}
+.masthead__nav-divider{color:var(--border-strong);font-size:.4375rem;line-height:1}
+.cover{padding:3rem 0 2.75rem;border-bottom:.5px solid var(--border);text-align:left;position:relative}
+.cover__article-kicker{font-family:var(--f-display);font-weight:700;font-size:.875rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:.5rem}
+.cover__article-title{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3.5vw,2rem);font-weight:400;letter-spacing:-.005em;color:var(--ink);line-height:1.15;margin-bottom:1rem}
+.cover__rule{border:none;border-top:.5px solid var(--border-strong);width:180px;margin:0 0 2.5rem}
+.cover__display-wrap{position:relative;display:flex;justify-content:center;margin:2rem 0 2.5rem}
+.cover__display{font-family:var(--f-display);font-weight:700;font-size:clamp(3.25rem,11vw,7rem);line-height:1;letter-spacing:-.02em;color:var(--ink);position:relative;display:inline-block;padding:0 .25em}
+.cover__display::before{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.32em;background:var(--yellow);z-index:-1}
+.cover__secondary{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.5rem,3vw,2rem);font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:1.25rem;max-width:22ch}
+.cover__deck{font-family:var(--f-serif);font-style:italic;font-size:clamp(1.0625rem,1.5vw,1.1875rem);font-weight:400;color:var(--ink-60);line-height:1.5;max-width:44ch;margin-bottom:2rem}
+.cover__byline{font-family:var(--f-sans);font-size:.6875rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;margin-bottom:2.5rem}
+.cover__byline strong{color:var(--ink);font-weight:500}
+.cover__byline strong a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+.cover__byline strong a:hover{color:var(--red);border-bottom-color:var(--red)}
+.cover__ornament{display:flex;align-items:center;justify-content:center;gap:1rem;margin:1.5rem 0 0}
+.cover__ornament-rule{flex:0 0 80px;height:.5px;background:var(--border-strong)}
+.cover__ornament-diamond{width:8px;height:8px;background:var(--red);transform:rotate(45deg);flex-shrink:0}
+.glossary-layout{display:grid;grid-template-columns:1fr;gap:2.5rem;padding:2.5rem 0 0}
+@media(min-width:960px){.glossary-layout{grid-template-columns:1fr 220px;gap:4rem}}
+.glossary-main{max-width:var(--reading-max)}
+.glossary-aside{position:relative}
+@media(min-width:960px){.glossary-aside{position:sticky;top:2rem;align-self:start;height:fit-content}}
+#glossary-lede{font-family:var(--f-serif);font-size:1.1875rem;font-weight:500;line-height:1.55;color:var(--ink);margin-bottom:1.625rem;max-width:var(--measure)}
+#scope-note{background:var(--paper-light);border-left:2px solid var(--red);padding:1.5rem 1.5rem 1.25rem;margin:0 0 3rem}
+#scope-note p{font-family:var(--f-serif);font-size:.9375rem;line-height:1.65;color:var(--ink-60);margin-bottom:.75rem;max-width:none}
+#scope-note p:last-child{margin-bottom:0}
+#scope-note strong{color:var(--ink);font-weight:600}
+#scope-note a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+#scope-note a:hover{color:var(--red);border-bottom-color:var(--red)}
+.alpha-index{border-top:.5px solid var(--border-strong);padding-top:1.125rem}
+.alpha-index-label{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-60);font-weight:500;margin-bottom:.875rem;display:block}
+.alpha-index-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.alpha-index-grid a{font-family:var(--f-display);font-weight:700;font-size:.75rem;letter-spacing:.06em;color:var(--ink-60);text-align:center;padding:4px 2px;border:.5px solid var(--border);transition:color .15s ease,background .15s ease,border-color .15s ease;line-height:1.6}
+.alpha-index-grid a:hover{color:var(--red);border-color:var(--red);background:var(--paper-light)}
+.alpha-index-grid a.active{color:var(--red);border-color:var(--red)}
+.alpha-index-grid a.empty{color:var(--ink-40);pointer-events:none;opacity:.4}
+.letter-group{margin-bottom:3.5rem;scroll-margin-top:1.5rem}
+.letter-anchor{font-family:var(--f-display);font-weight:700;font-size:clamp(2rem,5vw,3rem);letter-spacing:-.02em;color:var(--ink);line-height:1;margin-bottom:1.25rem;padding-bottom:.75rem;border-bottom:.5px solid var(--border-strong);display:flex;align-items:baseline;gap:.875rem}
+.letter-anchor::after{content:"";flex:1;height:.5px;background:linear-gradient(to right,var(--border-strong),transparent);margin-bottom:.25rem}
+.term-entry{margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:.5px solid var(--border);scroll-margin-top:1.5rem}
+.term-entry:last-child{border-bottom:none}
+.term-head{display:flex;align-items:baseline;gap:.875rem;flex-wrap:wrap;margin-bottom:.625rem}
+.term-name{font-family:var(--f-display);font-weight:700;font-size:1.25rem;letter-spacing:-.01em;color:var(--ink)}
+.term-pos{font-family:var(--f-serif);font-style:italic;font-size:.875rem;color:var(--ink-40);font-weight:400}
+.term-definition{font-family:var(--f-serif);font-size:1.0625rem;font-weight:500;line-height:1.55;color:var(--ink);margin-bottom:.875rem;max-width:var(--measure);border-left:2px solid var(--red);padding-left:1rem}
+.term-body{font-family:var(--f-serif);font-size:1rem;line-height:1.7;color:var(--ink-60);max-width:var(--measure);margin-bottom:.75rem}
+.term-body:last-child{margin-bottom:0}
+.term-body a{border-bottom:1px solid var(--border-strong);padding-bottom:1px;transition:color .15s ease,border-color .15s ease}
+.term-body a:hover{color:var(--red);border-bottom-color:var(--red)}
+.term-body strong{color:var(--ink);font-weight:600}
+.term-distinctions{margin-top:1rem;background:var(--paper-light);border:.5px solid var(--border);padding:1rem 1.25rem}
+.term-distinctions-label{font-family:var(--f-sans);font-size:.5625rem;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:600;display:block;margin-bottom:.625rem}
+.term-distinctions p{font-family:var(--f-serif);font-style:italic;font-size:.9375rem;line-height:1.6;color:var(--ink-60);margin-bottom:.5rem}
+.term-distinctions p:last-child{margin-bottom:0}
+.term-distinctions strong{font-style:normal;color:var(--ink);font-weight:600}
+.term-see-also{margin-top:.875rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+.term-see-also-label{font-family:var(--f-sans);font-size:.5625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40);font-weight:500}
+.term-see-also a{font-family:var(--f-sans);font-size:.75rem;font-weight:500;color:var(--red);border-bottom:1px solid rgba(167,53,42,.3);padding-bottom:1px;letter-spacing:.04em;transition:border-color .15s ease}
+.term-see-also a:hover{border-bottom-color:var(--red)}
+.term-see-also-sep{color:var(--ink-40);font-size:.625rem}
+.colophon{border-top:2px solid var(--ink);margin-top:5rem;padding:2rem 0}
+.colophon__inner{max-width:var(--layout-max);margin:0 auto;padding:0 1.75rem}
+.colophon__ornament{text-align:center;margin-bottom:1.5rem}
+.colophon__diamond{display:inline-block;width:8px;height:8px;background:var(--red);transform:rotate(45deg)}
+.colophon__grid{display:grid;grid-template-columns:auto 1fr;gap:.375rem 1.25rem;margin-bottom:1.75rem}
+.colophon__label{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-40);font-weight:500;padding-top:.1em;white-space:nowrap}
+.colophon__value{font-family:var(--f-serif);font-size:.9375rem;line-height:1.55;color:var(--ink-60)}
+.colophon__value a{border-bottom:1px solid var(--border-strong);padding-bottom:1px}
+.colophon__value a:hover{color:var(--red);border-bottom-color:var(--red)}
+.colophon__bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem;padding-top:1.25rem;border-top:.5px solid var(--border-strong)}
+.colophon__meta{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-40);font-weight:500}
+.colophon__nav{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.colophon__nav-link{font-family:var(--f-sans);font-size:.625rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-60);font-weight:500;transition:color .15s ease}
+.colophon__nav-link:hover{color:var(--red)}
+.colophon__nav-sep{color:var(--ink-40);font-size:.625rem}
+@media(max-width:600px){
+  .layout{padding:0 1.5rem}
+  .masthead__title{font-size:1.5rem;letter-spacing:.035em;white-space:nowrap}
+  .masthead__title-row{padding:.75rem 0 .5rem}
+  .masthead__furniture{font-size:.5625rem;letter-spacing:.12em}
+  .masthead__subtitle{font-size:.875rem}
+  .masthead__url{font-size:.5625rem;letter-spacing:.14em}
+  .masthead__nav{gap:0 1rem;padding:.625rem 0 .75rem}
+  .masthead__nav-link{font-size:.5625rem;letter-spacing:.12em}
+  .cover{padding:2.25rem 0 2rem}
+  .cover__display{font-size:4rem;line-height:.95}
+  .cover__rule{width:120px;margin-bottom:1.75rem}
+  .glossary-layout{display:flex;flex-direction:column;gap:1.5rem}
+  .glossary-main{order:2}
+  .glossary-aside{order:1;padding-bottom:1.25rem;margin-bottom:.5rem;border-bottom:.5px solid var(--border)}
+  .glossary-aside .alpha-index{border-top:none;padding-top:0}
+  .term-name{font-size:1.125rem}
+  .letter-anchor{font-size:2rem}
+  .colophon__inner{padding:0 1.5rem}
+  .colophon__grid{grid-template-columns:1fr;gap:.125rem}
+  .colophon__label{padding-top:.625rem}
+  .colophon__bottom{flex-direction:column;align-items:flex-start}
+}
+
+/* ── Citation card ────────────────────────────────────────────────────── */
+.cite-card {
+  margin: 3rem 0 1rem;
+  padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+  scroll-margin-top: 1.5rem;
+  max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.cite-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+.cite-card__kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.cite-card__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+.cite-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.125rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
+.cite-label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.3rem;
+}
+.cite-text {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cite-text em { font-style: italic; }
+.cite-text a {
+  color: inherit;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
+.cite-text--code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+.cite-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 32px;
+  white-space: nowrap;
+  align-self: start;
+}
+.cite-copy:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.cite-copy:active { transform: scale(0.97); }
+.cite-copy.is-copied {
+  background: var(--red);
+  color: var(--paper);
+  border-color: var(--red);
+}
+.cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+@media (max-width: 720px) {
+  .cite-card {
+    padding: 1.5rem 1.25rem 1rem;
+    margin: 2.25rem 0 0.75rem;
+  }
+  .cite-card__header { gap: 0.5rem; padding-bottom: 1rem; margin-bottom: 0; }
+  .cite-card__title { font-size: 1.0625rem; }
+  .cite-row { grid-template-columns: 1fr; gap: 0.5rem; padding: 1.125rem 0; }
+  .cite-label { padding-top: 0; }
+  .cite-copy {
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.625rem 1rem;
+    font-size: 0.6875rem;
+    margin-top: 0.25rem;
+  }
+  .cite-text { font-size: 0.9375rem; }
+  .cite-text--code { font-size: 0.75rem; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Demo Coherence?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Demo Coherence ist der Grad, in dem jedes Element einer Demo — Daten, Workflow, Persona und Narrativ — einem einzigen, konsistenten Argument dient, anstatt die Abdeckung von Funktionen zu demonstrieren. Eine kohärente Demo hat eine These. Die Daten stützen die These. Die Persona, die den Workflow ausführt, ist die Person, die der Käufer als sich selbst erkennt. Demo Coherence ist das primäre Qualitätssignal für die Ergebnisse des Technischen Marketings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist die Trust Layer im Technischen Marketing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Trust Layer ist das Band technischer Tiefe in einer Vertriebsinteraktion — Demos, Architekturmaterialien, Wettbewerbspositionierung, Proof Points —, das einem technisch versierten Käufer genug Beweise gibt, um den Aussagen des Produkts zu vertrauen, ohne eine vollständige Evaluierung auf Ingenieursebene zu erfordern. Sie liegt zwischen einem polierten Werbespot (der etwas fühlt, aber nichts beweist) und einem vollständigen technischen Whitepaper (das alles lehrt, aber nichts entscheidet)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist ein AR Cycle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein AR Cycle (Analyst-Relations-Zyklus) ist der strukturierte, wiederkehrende Prozess, durch den ein Unternehmen mit Technologieanalysten bei Firmen wie Gartner, Forrester und IDC interagiert: sie über die Produktrichtung zu briefen, auf Forschungsanfragen zu antworten, an Bewertungsrahmen teilzunehmen und die daraus resultierenden Positionsänderungen in veröffentlichten Berichten wie dem Gartner Magic Quadrant und der Forrester Wave zu verfolgen."
+      }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/de/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">Ein Praxishandbuch für die Disziplin.</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/reference" class="masthead__nav-link" aria-current="page">Reference</a>
+    <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/tools" class="masthead__nav-link">Tools</a>
+    <a href="/archive" class="masthead__nav-link">Archive</a>
+    <a href="/de/about" class="masthead__nav-link">Über uns</a>
+  </nav>
+  <nav class="masthead__langs" aria-label="Language">
+    <a href="/glossary" class="masthead__lang-link">English</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/ja/glossary" class="masthead__lang-link">日本語</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/es/glossary" class="masthead__lang-link">Español</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/fr/glossary" class="masthead__lang-link">Français</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <span class="masthead__lang-link" aria-current="true">Deutsch</span>
+  </nav>
+
+</header>
+
+<div class="layout">
+  <div class="cover">
+    <p class="cover__article-kicker">Reference</p>
+    <h1 class="cover__article-title" id="article-title">Glossar des Technischen Marketings.</h1>
+    <hr class="cover__rule">
+    <div class="cover__display-wrap">
+      <span class="cover__display">Begriffe.</span>
+    </div>
+    <p class="cover__secondary">Das Vokabular der Disziplin, definiert.</p>
+    <p class="cover__deck">Ein Arbeitsreferenzwerk für die Begriffe, die Praktiker verwenden. Definitionen so, wie das Feld sie anwendet, nicht so, wie ein Wörterbuch es täte.</p>
+    <p class="cover__byline">Gepflegt von <strong>Chad Corriveau</strong> &middot; Founding Editor &middot; Technical Marketing</p>
+    <div class="cover__ornament" aria-hidden="true">
+      <span class="cover__ornament-rule"></span>
+      <span class="cover__ornament-diamond"></span>
+      <span class="cover__ornament-rule"></span>
+    </div>
+  </div>
+
+  <div class="glossary-layout" id="main">
+    <main class="glossary-main" id="glossary-body">
+
+      <p id="glossary-lede">Jede Disziplin sammelt Vokabular an, bevor sie Definitionen ansammelt. Das Technische Marketing bildet da keine Ausnahme. Die folgenden Begriffe werden so definiert, wie das Feld sie in der Praxis verwendet: in Stellenbeschreibungen, in Deal-Reviews, in Gesprächen zwischen Praktikern, die wissen, was die Arbeit ist, und versuchen, sie präzise zu benennen.</p>
+
+      <div id="scope-note">
+        <p><strong>Umfang.</strong> Dieses Glossar deckt das operative Vokabular des Technischen Marketings ab, wie es in Unternehmenssoftware, Infrastruktur, KI und Hardware praktiziert wird. Die Definitionen priorisieren den praktischen Sprachgebrauch gegenüber etymologischer Korrektheit. Wo ein Begriff unternehmens- oder kontextübergreifend unterschiedlich verwendet wird, spiegelt die Definition die gängigste Interpretation der Praktiker wider.</p>
+        <p>Für die grundlegende Definition der Disziplin selbst siehe <a href="/de/what-is-technical-marketing">What Is Technical Marketing?</a></p>
+      </div>
+
+      <!-- A -->
+      <div class="letter-group" id="letter-A">
+        <h2 class="letter-anchor">A</h2>
+
+        <div class="term-entry" id="agentic-ai">
+          <div class="term-head"><span class="term-name">Agentic AI</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">KI-Systeme, die mehrstufige Aufgaben autonom planen und ausführen, unter Verwendung von Tools, APIs und externen Datenquellen, anstatt auf einen einzelnen Prompt zu antworten und dann zu stoppen.</p>
+          <p class="term-body">Die Unterscheidung zur Generative AI ist eher operativ als architektonisch. Ein generatives Modell beantwortet eine Frage. Ein agentisches System verfolgt ein Ziel durch eine Abfolge von Aktionen, wertet Zwischenergebnisse aus und passt sich an. In der Unternehmenssoftware ist die Verlagerung hin zu agentischen Bereitstellungen der Haupttreiber der Trust Gap: Käufer, die ein Modell akzeptiert haben, das Texte entworfen hat, sind vorsichtiger bei einem Modell, das Workflows ausführt, Datensätze verändert und externe Prozesse auslöst.</p>
+          <p class="term-body">Für das Technische Marketing ist Agentic AI sowohl eine zu vermarktende Produktkategorie als auch ein Produktionsbeschleuniger. Gartner prognostizierte, dass bis 2026 40 Prozent der Unternehmensanwendungen aufgabenspezifische KI-Agenten enthalten würden. McKinsey dokumentierte, dass fast zwei Drittel der Unternehmenskäufer Sicherheits- und Risikobedenken als größtes Hindernis für die Skalierung von Agentic-AI-Bereitstellungen nennen. Die Aufgabe des Technical Marketers in diesem Umfeld besteht nicht darin, zu argumentieren, dass die Bedenken falsch seien. Sie besteht darin, die Beweise zu liefern: Demos, Architekturdiagramme, Sicherheitsmaterialien, die es einem technisch versierten Käufer ermöglichen, die Aussage nach eigenen Maßstäben zu bewerten.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#generative-ai">Generative AI</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="analyst-briefing">
+          <div class="term-head"><span class="term-name">Analyst briefing</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine strukturierte Präsentation, die einem Technologieanalysten bei Gartner, Forrester, IDC oder einem vergleichbaren Unternehmen gehalten wird, mit dem Ziel, das Produkt oder die Plattform eines Unternehmens präzise innerhalb der laufenden Forschungs- und Bewertungsrahmen des Analysten zu positionieren.</p>
+          <p class="term-body">Ein Analyst Briefing ist kein Verkaufsgespräch. Der Analyst kauft nicht. Er bildet oder aktualisiert eine Position, die in Research Notes, Magic-Quadrant-Bewertungen, Forrester-Wave-Berichten und Beratungsgesprächen mit den Kunden des Analysten erscheinen wird, die die tatsächlichen Käufer sind. Ein einziges Analyst Briefing kann beeinflussen, wie ein ganzes Marktsegment eine Produktkategorie zwölf bis achtzehn Monate lang wahrnimmt.</p>
+          <p class="term-body">Das Technische Marketing besitzt die inhaltliche Substanz von Analyst Briefings. Die Demo, die in einem Analyst Briefing läuft, ist oft risikoreicher als eine Kundendemo, da der Analyst gleichzeitig die gesamte Kategorie bewertet und das Gesehene mit der Aussage jedes Wettbewerbers vergleichen wird. Das erforderliche redaktionelle Urteilsvermögen: welche architektonische Aussage vorangestellt wird, welche Einschränkung genannt wird, bevor der Analyst sie anspricht, welches Niveau technischer Tiefe dem Gespräch dient, ist dasselbe Urteilsvermögen, das die Disziplin überall anwendet, nur unter höherer Prüfung.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Briefing vs. Inquiry.</strong> Ein Briefing fließt vom Anbieter zum Analysten. Eine Inquiry fließt vom Analysten zum Anbieter. Dasselbe Treffen kann beides enthalten. Das Technische Marketing ist für den Inhalt des Briefings verantwortlich. Die Antwort auf die Inquiry erfordert ebenso viel Vorbereitung, da Analysten schwierige Fragen stellen und die Antworten Teil des Forschungsprotokolls werden.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-narrative">Technical narrative</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+
+        <div class="term-entry" id="ar-cycle">
+          <div class="term-head"><span class="term-name">AR cycle</span><span class="term-pos">noun · abbrev. analyst relations cycle</span></div>
+          <p class="term-definition">Der strukturierte, wiederkehrende Prozess, durch den ein Unternehmen mit Technologieanalysten bei Firmen wie Gartner, Forrester und IDC interagiert: sie über die Produktrichtung zu briefen, auf Forschungsanfragen zu antworten, an Bewertungsrahmen teilzunehmen und die daraus resultierenden Positionsänderungen in veröffentlichten Berichten zu verfolgen.</p>
+          <p class="term-body">Der AR Cycle ist typischerweise jährlich, obwohl die Bewertungszyklen je nach Marktkategorie variieren: große Märkte sehen möglicherweise jährliche Magic-Quadrant-Updates, während Nischenkategorien in 18- bis 24-Monats-Zyklen laufen. Die wichtigsten Analystenbewertungsprodukte, Gartner Magic Quadrant, Forrester Wave und IDC MarketScape, laufen jeweils nach ihrem eigenen Kalender. Ein Unternehmen, das ein Briefing-Fenster verpasst, bekommt in diesem Zyklus keine weitere Chance. Die im resultierenden Bericht veröffentlichte Position bleibt bestehen und beeinflusst Käuferentscheidungen zwölf bis achtzehn Monate lang.</p>
+          <p class="term-body">Das Technische Marketing besitzt die inhaltliche Substanz der Teilnahme am AR Cycle. Briefing-Materialien, Demo-Inhalte, technische Proof Points und die ehrliche Einschätzung des Unternehmens darüber, wo sein Produkt im Vergleich zu Wettbewerbern steht, fließen alle durch die Funktion des Technischen Marketings. Die Positionsverschiebung des Analysten im nächsten AR Cycle ist eines der klarsten messbaren Ergebnisse, die diese Rolle hervorbringt.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#magic-quadrant">Magic Quadrant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="architecture-overview">
+          <div class="term-head"><span class="term-name">Architecture overview</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes Diagramm mit begleitender Erklärung, das beschreibt, wie ein Softwareprodukt aufgebaut ist, wie sich seine Komponenten zueinander verhalten und wie es sich mit den Systemen verbindet, die ein Käufer bereits betreibt.</p>
+          <p class="term-body">Ein Architecture Overview ist eines der langlebigsten Artefakte im Portfolio des Technischen Marketings. Es dient Käufern in der Evaluierungsphase, die nicht nur verstehen müssen, was das Produkt tut, sondern auch, wie es das tut, und ob das Wie Risiko, Komplexität oder Abhängigkeit schafft. Ein Principal Engineer, der einen Plattformkauf bewertet, wird ein Architecture Overview sorgfältiger lesen als jeden Marketingtext, den das Unternehmen produziert.</p>
+          <p class="term-body">Die Rolle des Technical Marketers ist redaktioneller Natur: zu entscheiden, welche Architekturebenen gezeigt werden, welche weggelassen werden, welche technischen Aussagen das Diagramm trifft und ob diese Aussagen unter direkter Befragung verteidigt werden können. Ein Architekturdiagramm, das eine Einfachheit verspricht, die das Produkt nicht liefert, ist ein Vertrauensrisiko. Eines, das Komplexität mit klaren Erklärungen genau darstellt, ist ein Beweis technischer Glaubwürdigkeit.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Architecture Overview vs. Reference Architecture.</strong> Ein Architecture Overview beschreibt, was das Produkt ist. Eine Reference Architecture beschreibt, wie es für einen bestimmten Anwendungsfall oder eine Branche bereitgestellt und konfiguriert wird. Beide sind Ergebnisse des Technischen Marketings. Das Overview steht früher in der Käuferreise; die Reference Architecture steht in den Evaluierungs- und Implementierungsphasen.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- B -->
+      <div class="letter-group" id="letter-B">
+        <h2 class="letter-anchor">B</h2>
+
+        <div class="term-entry" id="buying-committee">
+          <div class="term-head"><span class="term-name">Buying committee</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die Gruppe von Stakeholdern innerhalb einer Interessentenorganisation, die gemeinsam eine Kaufentscheidung beeinflussen oder treffen, typischerweise umfassend technische Bewerter, Business Sponsors, Economic Buyers, Einkauf, Recht und Sicherheitsfunktionen, jeweils mit unterschiedlichen Kriterien und unterschiedlichen Autoritätsebenen über das Endergebnis.</p>
+          <p class="term-body">Keine einzelne Demo, kein einzelnes Artefakt und kein einzelnes Gespräch gewinnt ein Buying Committee. Jede Stakeholder-Rolle hat unterschiedliche Fragen und unterschiedliche Risikotoleranzen. Der Principal Engineer bewertet die architektonische Passung. Der CISO bewertet die Sicherheitslage. Der Economic Buyer bewertet strategische Passung und Budgetautorität. Das Technische Marketing baut für das gesamte Committee, nicht nur für die technischen Bewerter, die am wahrscheinlichsten an der Demo teilnehmen.</p>
+          <p class="term-body">Die Struktur eines Buying Committee verschiebt sich je nach Dealgröße und Unternehmenstyp. Ein Mid-Market-Deal mag drei oder vier Stakeholder mit überlappenden Rollen haben. Ein Enterprise-Deal bei einem regulierten Unternehmen mag acht oder mehr haben, einschließlich Einkauf und Recht, die nie an einer Produktdemonstration teilnehmen, aber einen Deal einseitig blockieren können. Das Verständnis der Zusammensetzung des Buying Committee, und welche Artefakte welche Mitglieder erreichen, ist Teil der strategischen Arbeit des Technical Marketers bei jeder bedeutenden Opportunity.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Buying Committee vs. Champion.</strong> Ein Champion ist ein Mitglied des Buying Committee, das von der Evaluierung zur internen Fürsprache übergegangen ist. Das Buying Committee ist die vollständige Menge der Stakeholder. Ein Champion ohne Abdeckung des breiteren Committees wirbt bei Kollegen, die möglicherweise nicht die Beweise erhalten haben, die sie zur Zustimmung benötigen.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#economic-buyer">Economic buyer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-champion">Technical champion</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="battlecard">
+          <div class="term-head"><span class="term-name">Battlecard</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein prägnantes, strukturiertes Referenzdokument, das ein Mitglied eines Vertriebs- oder Presales-Teams befähigt, einen bestimmten Wettbewerber in einem laufenden Deal zu behandeln: wie man sich positioniert, wie man auf häufige Einwände reagiert und welche technischen Differenzierungsmerkmale zu betonen sind.</p>
+          <p class="term-body">Eine Battlecard ist ein Field-Enablement-Artefakt. Ihre Aufgabe ist es, die Wettbewerbsanalyse des Technical Marketers in ein Format zu komprimieren, das ein Sales Engineer in Echtzeit, in einem Meeting, nutzen kann, ohne das Argument aus der Rohrecherche neu aufbauen zu müssen. Es ist eine Entscheidungshilfe, kein Rechercheddokument. Kürzedisziplin ist erforderlich: Eine Battlecard, die zwanzig Minuten Lesezeit vor einem Anruf erfordert, ist keine Battlecard. Sie ist ein Whitepaper mit Wettbewerbshaltung.</p>
+          <p class="term-body">Battlecards erfordern Wartung in einem Takt, den die Wettbewerbslandschaft vorgibt. Ein Produktlaunch, eine Preisänderung oder ein Kundengewinn eines Wettbewerbers kann die vorherige Version über Nacht ungültig machen. Das Technische Marketing ist für die Genauigkeit der Aussagen verantwortlich, da das Feld Battlecards nutzt, um Käufern gegenüber Zusagen zu machen, und Zusagen, die auf veralteten Erkenntnissen beruhen, schaffen Vertrauensprobleme, die den Deal überdauern.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Battlecard vs. Competitive Teardown.</strong> Ein Teardown ist die analytische Arbeit: eine tiefgehende, strukturierte Bewertung des Produkts, der Architektur, der Preisgestaltung und der Positionierung eines Wettbewerbers. Eine Battlecard ist das feldfertige Ergebnis, das aus dieser Analyse abgeleitet wird. Das Technische Marketing produziert beides; der Teardown informiert die Battlecard, aber sie dienen unterschiedlichen Zielgruppen zu unterschiedlichen Momenten.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#teardown">Teardown</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+
+        <div class="term-entry" id="briefing-prep">
+          <div class="term-head"><span class="term-name">Briefing prep</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die strukturierte Vorbereitungsarbeit, die ein Technical Marketer vor einem Analyst Briefing erstellt, einschließlich der durchzuführenden Demo, der zu führenden technischen Proof Points, der proaktiv zu benennenden Einschränkungen und der erwarteten Fragen mit vorbereiteten Antworten.</p>
+          <p class="term-body">Briefing Prep ist der Punkt, an dem Analyst Relations die Glaubwürdigkeit eines Anbieters entweder verstärkt oder untergräbt. Der Analyst kommt mit einem detaillierten Bild der Wettbewerbslandschaft, jüngsten Briefings anderer Anbieter in der Kategorie und einer Reihe von Fragen, die darauf ausgelegt sind, die erwarteten Aussagen auf die Probe zu stellen. Ein Technical Marketer, der diese Fragen nicht antizipiert, keine vertretbaren Antworten vorbereitet und die Übergänge zwischen Produktdemonstration und technischer Erklärung nicht geprobt hat, wird das Briefing verlassen, nachdem er die bestehende Position des Analysten eher bestätigt als verändert hat.</p>
+          <p class="term-body">Der häufigste Fehler bei der Briefing Prep ist die Optimierung auf Abdeckung statt auf Argumentation. Ein Briefing, das versucht, alles zu zeigen, was das Produkt tut, lässt keine Zeit, irgendetwas überzeugend zu demonstrieren. Die redaktionelle Rolle des Technischen Marketings besteht darin, auszuwählen: welche Aussage vorangestellt wird, an welchem Proof Point man sich verankert, welche Einschränkung genannt wird, bevor der Analyst sie anspricht. Das Briefing, das proaktiv eine bekannte Schwäche offenlegt und erklärt, wie die Roadmap sie angeht, schafft mehr Glaubwürdigkeit als eines, das sie verbirgt und dabei entdeckt wird.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Briefing Prep vs. Briefing Deck.</strong> Das Briefing Deck ist ein Artefakt innerhalb der breiteren Briefing Prep. Briefing Prep umfasst auch die Demo-Umgebung, die erwartete Q&amp;A, den Wettbewerbskontext, den der Analyst wahrscheinlich zur Sprache bringt, und ein gemeinsames Verständnis aller Anwesenden darüber, was die Sitzung erreichen soll. Das Deck wird verschickt. Die Prep ist das, was das Meeting zu etwas Nützlichem führt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#ar-cycle">AR cycle</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#rfi-response">RFI response</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="benchmark-artifact">
+          <div class="term-head"><span class="term-name">Benchmark Artifact</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes technisches Ergebnis, einschließlich Leistungsdaten, vergleichender Spezifikationen und Referenzdesigns, das die Aussage eines Produkts anhand eines messbaren Standards beweist. Der primäre Demo-Archetyp von Hardware- und Halbleiterunternehmen, bei dem das Publikum ein Beschaffungsingenieur, eine Normungsorganisation oder ein technischer Architekt ist, der die Leistung unter definierten Bedingungen bewertet.</p>
+          <p class="term-body">Ein Benchmark Artifact ist von Natur aus evidenzorientiert. Das Argument liegt in den Daten: Bildraten, Durchsatz, Latenz, Energieeffizienz, vergleichende Spezifikationen gegenüber namentlich genannten Alternativen. Die redaktionelle Arbeit des Praktikers liegt in der Auswahl, welcher Benchmark unter welchen Bedingungen gegen welche Baseline durchgeführt wird, und in der Präsentation des Ergebnisses mit genügend methodischer Transparenz, um der Prüfung durch ein Publikum standzuhalten, das weiß, wie man Benchmark-Methodik liest und bequeme Testdesigns ablehnt.</p>
+          <p class="term-body">Hardware- und Halbleiterunternehmen produzieren seit den 1960er-Jahren formal Benchmark Artifacts. Das Muster erschien später in der Unternehmenssoftware, als Leistung und Skalierbarkeit zu Bewertungskriterien wurden. In beiden Fällen sitzt das Benchmark Artifact ganz rechts auf der Achse der Demo-Archetypen: gebaut, damit der Käufer es bewertet, nicht damit das Feld es vorführt. Der SE demonstriert es nicht. Die Ingenieure des Käufers befragen es.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Benchmark Artifact vs. Reference Architecture.</strong> Eine Reference Architecture beweist, dass das Produkt für einen Anwendungsfall korrekt bereitgestellt werden kann. Ein Benchmark Artifact beweist, dass die Bereitstellung einem angegebenen Standard entsprechend leistet. Beide sind Evidenzartefakte. Der Benchmark ist auf Leistung ausgerichtet; die Reference Architecture ist auf Passung ausgerichtet.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-architecture">Reference architecture</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#interactive-proof">Interactive proof</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="letter-group" id="letter-C">
+        <h2 class="letter-anchor">C</h2>
+
+        <div class="term-entry" id="configured-environment">
+          <div class="term-head"><span class="term-name">Configured environment</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein Live-Software-Tenant, der aufgebaut wird, um zu beweisen, dass die Plattform das tut, was die Positionierung behauptet, unter Verwendung realistischer Daten, konfigurierter Workflows und der Personas, die ein Käufer als seine eigenen erkennt. Der primäre Demo-Archetyp von Plattformunternehmen, bei dem der Technical Marketer die Architektur, die Datenintegrität und die Szenario-Kohärenz besitzt, und der Sales Engineer sie im Feld einsetzt.</p>
+          <p class="term-body">Eine Configured Environment braucht Monate, um korrekt aufgebaut zu werden. Sie ist keine Sandbox und keine Scratch-Instanz. Sie ist ein verwaltetes Artefakt: die kanonische Quelle, aus der Felddemonstrationen abgeleitet werden. Die Daten stützen das Demo-Argument. Die Workflows spiegeln einen tatsächlichen Anwendungsfall wider. Die Personas sind spezifisch genug, um erkennbar zu sein, und generisch genug, um branchenübergreifend zu überleben. Jedes Element dient einer einzigen konsistenten Aussage.</p>
+          <p class="term-body">Plattformunternehmen, bei denen das Produkt horizontal ist und die Beweisfläche breit ist, sind stärker auf Configured Environments angewiesen als jeder andere Unternehmenstyp. Eine ServiceNow-, Salesforce- oder Workday-Demo, die aus einer schlecht gepflegten Umgebung läuft, legt jede Integrationslücke, jeden Platzhalter, jeden nie fertiggestellten Workflow offen. Die Configured Environment ist der Ort, an dem die Infrastrukturinvestition der Technical-Marketing-Funktion am sichtbarsten und folgenreichsten ist.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Configured Environment vs. Reference Environment.</strong> Eine Reference Environment ist die kanonische Quelle. Eine Configured Environment ist ein spezifischer Ausdruck dieser Quelle, aufgebaut für ein definiertes Szenario, Publikum oder eine Branche. Alle Configured Environments sollten von einer Reference Environment abgeleitet sein. Eine Configured Environment, die ohne Referenzquelle aufgebaut wird, wird zu technischer Schuld.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="calibration-band">
+          <div class="term-head"><span class="term-name">Calibration band</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Der Bereich technischer Tiefe, in dem Marketinginhalte in einem komplexen Unternehmensverkauf am wirkungsvollsten sind: genug Tiefe, um einem technisch versierten Käufer eine Fläche zur Bewertung zu geben, aber nicht so viel Tiefe, dass der Inhalt zu einer Schulungsmaßnahme statt zu einem Überzeugungsinstrument wird.</p>
+          <p class="term-body">Das Konzept der Calibration Band beschreibt das redaktionelle Kernproblem des Technischen Marketings. Auf der einen Seite steht reiner kommerzieller Inhalt: poliert, emotional ansprechend, aber ohne technische Substanz, an der ein Buying Committee eine Aussage prüfen könnte. Auf der anderen Seite steht reine technische Tiefe: Architekturdiagramme mit jeder beschrifteten Komponente, Zugriff auf den Quellcode, interne Dokumentation. Dieser Inhalt lehrt alles und entscheidet nichts.</p>
+          <p class="term-body">Das Technische Marketing besetzt das Band dazwischen bewusst. Die genaue Position innerhalb des Bandes verschiebt sich je nach der Rolle des Publikums in der Evaluierung, nicht nach dessen Titel. Ein technischer Bewerter, unabhängig von seiner Seniorität, muss näher an der technischen Kante sein. Ein Economic Buyer, unabhängig vom technischen Hintergrund, braucht auf geschäftliche Auswirkungen und Risiko kalibrierte Inhalte. Diese Position für jedes Publikum und jede Evaluierungsphase zu kalibrieren, ist das primäre redaktionelle Urteilsvermögen des Praktikers.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Calibration Band vs. Trust Layer.</strong> Die Trust Layer ist der Inhalt, der das Calibration Band besetzt. Das Calibration Band ist das Konzept des richtigen Tiefenbereichs. Ein Praktiker nutzt das Calibration Band als Rahmenwerk, um zu entscheiden, was gebaut wird; die Trust Layer ist das Ergebnis, wenn es richtig gebaut wird.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#editorial-judgment">Redaktionelles Urteilsvermögen</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="champion">
+          <div class="term-head"><span class="term-name">Champion</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine Person innerhalb einer Käuferorganisation, die aktiv für das Produkt eines Anbieters intern wirbt, die Bewertung vorantreibt, wenn der Anbieter nicht im Raum ist, und bereit ist, persönliche Glaubwürdigkeit für die Kaufempfehlung einzusetzen.</p>
+          <p class="term-body">Ein Champion ist nicht nur ein Befürworter. Die Unterscheidung ist folgenreich. Ein Befürworter bevorzugt das Produkt. Ein Champion verkauft es intern, wehrt Einwände des Sicherheitsteams ab, macht den Fall gegenüber dem CFO und verteidigt die Bewertungskriterien gegen den Versuch eines Wettbewerbers, sie umzudeuten. Deals, die einen Technical Win erreichen und vor dem kommerziellen Abschluss ins Stocken geraten, fehlt fast immer ein Champion, der das Argument über die technische Evaluierungsphase hinaus tragen könnte.</p>
+          <p class="term-body">Die Materialien, die das Technische Marketing produziert, sind die Werkzeuge, die ein Champion für sein internes Verkaufen nutzt. Ein Champion ohne gute Materialien wirbt aus dem Gedächtnis. Ein Champion mit gut aufgebauten technischen Beweisen wirbt aus einer Aufzeichnung, die überdauert, auch wenn der Anbieter nicht im Raum ist.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Champion vs. Technical Champion.</strong> Ein Champion kann ein Economic Buyer, ein Business Sponsor oder ein technischer Bewerter sein. Ein <a href="#technical-champion">Technical Champion</a> ist speziell eine technisch glaubwürdige Person innerhalb der Käuferorganisation, die die Aussagen des Produkts gegenüber Kollegen und der Geschäftsführung validiert. Nicht alle Champions sind Technical Champions, aber bei komplexen Unternehmenssoftware-Verkäufen sind die stärksten Champions beides.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-champion">Technical champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-value">Proof of value</a>
+          </div>
+        </div>
+        <div class="term-entry" id="competitive-engagement">
+          <div class="term-head"><span class="term-name">Competitive engagement</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine aktive Vertriebssituation, in der der Käufer gleichzeitig einen oder mehrere namentlich genannte Wettbewerber bewertet und die Vertriebsbewegung des Anbieters diesen Vergleich direkt berücksichtigen muss.</p>
+          <p class="term-body">Ein Competitive Engagement ist ein spezifischer Dealzustand, keine allgemeine Marktbedingung. Die Unterscheidung ist operativ bedeutsam. In einem nicht-wettbewerblichen Deal besteht die Aufgabe des Technical Marketers darin, Fähigkeiten zu demonstrieren. In einem Competitive Engagement verschiebt sich die Aufgabe: Der Käufer fragt nicht, ob das Produkt funktioniert. Er fragt, ob es besser funktioniert als die Alternative, die er ebenfalls bewertet. Die Demo, das Technical Narrative und die Battlecard ändern alle ihren Charakter unter Wettbewerbsdruck.</p>
+          <p class="term-body">Bei Unternehmen, die in überfüllten Kategorien tätig sind, ist Wettbewerbsintelligenz oft die Arbeit mit dem höchsten Hebel, die die Technical-Marketing-Funktion produziert. Die Gewinnrate bei umkämpften Deals ist eines der klarsten direkten Maße dafür, ob diese Arbeit greift. Die Aufgabe des Technischen Marketings in einem Competitive Engagement besteht nicht darin, den Wettbewerber schlecht aussehen zu lassen. Sie besteht darin, die Beweise zu liefern, die es einem technisch versierten Käufer ermöglichen, einen ehrlichen Vergleich anzustellen und zur richtigen Schlussfolgerung zu gelangen.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#teardown">Teardown</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- D -->
+      <div class="letter-group" id="letter-D">
+        <h2 class="letter-anchor">D</h2>
+
+        <div class="term-entry" id="demo">
+          <div class="term-head"><span class="term-name">Demo</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine strukturierte, live oder aufgezeichnete Präsentation von Software im Betrieb, die darauf ausgelegt ist, bei einem bestimmten Publikum in einer bestimmten Phase eines Verkaufs oder einer Evaluierung eine bestimmte Überzeugung zu erzeugen.</p>
+          <p class="term-body">Eine Produkttour ist ein Format, das eine Demo annehmen kann. Die Unterscheidung, die operativ zählt, ist nicht das Format, sondern die Absicht: Eine navigatorische Demo hilft jemandem, das zu finden, wonach er sucht. Eine argumentative Demo ist darauf ausgelegt, eine bestimmte Schlussfolgerung zu erzeugen. Das Technische Marketing baut beide, aber die argumentative Demo ist das Hauptanliegen der Disziplin: Was gezeigt wird, was weggelassen wird, was das Publikum tun soll, anstatt zuzusehen, sind alles redaktionelle Entscheidungen im Dienst einer Zielüberzeugung.</p>
+          <p class="term-body">Die Einheit einer Demo ist nicht das Feature. Es ist die Überzeugung, die das Feature erzeugen soll. Ein Praktiker, der die Zielüberzeugung nicht benennen kann, bevor er die Demo baut, baut eine Tour.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Demo vs. Proof of Concept.</strong> Eine Demo läuft in einer kontrollierten, vom Anbieter besessenen Umgebung. Ein Proof of Concept läuft in oder gegen die Umgebung des Kunden. Die Demo erzeugt Überzeugung. Der POC testet, ob diese Überzeugung unter den spezifischen Bedingungen des Kunden standhält.</p>
+            <p><strong>Demo vs. Reference Environment.</strong> Eine Reference Environment ist die Infrastruktur, aus der Demos produziert werden. Sie ist selbst keine Demo.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="demo-coherence">
+          <div class="term-head"><span class="term-name">Demo coherence</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Der Grad, in dem jedes Element einer Demo: Daten, Workflow, Persona und Narrativ, einem einzigen, konsistenten Argument dient, anstatt die Abdeckung von Funktionen zu demonstrieren.</p>
+          <p class="term-body">Eine kohärente Demo hat eine These. Die Daten stützen die These. Die Persona, die den Workflow ausführt, ist die Person, die der Käufer als sich selbst erkennt. Die Abfolge der Bildschirme folgt einer argumentativen Logik, nicht einer Produktnavigationslogik. Eine Demo, die viele Funktionen abdeckt, aber für nichts argumentiert, ist inkohärent, unabhängig von ihrer technischen Vollständigkeit.</p>
+          <p class="term-body">Demo Coherence ist das primäre Qualitätssignal für die Ergebnisse des Technischen Marketings. Abdeckung ist manchmal die richtige Vorgabe: Ein Analyst, der die Plattformbreite bewertet, oder ein horizontales Produkt, das gleichzeitig an mehrere Personas verkauft, mag eine Demo erfordern, die Bandbreite statt eines einzigen Arguments demonstriert. Die Disziplin besteht darin, zu wissen, wann Abdeckung der Evaluierung dient und wann sie sie zunichtemacht. Der häufigste Fehler ist, standardmäßig auf Abdeckung zurückzugreifen, wenn Argumentation die richtige Wahl gewesen wäre.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo">Demo</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="demo-environment">
+          <div class="term-head"><span class="term-name">Demo environment</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine konfigurierte Instanz eines Softwareprodukts, die speziell zur Unterstützung von Vertriebs- und Evaluierungsaktivitäten aufgebaut wurde, im Unterschied zu Produktions-, Staging- oder Entwicklungsumgebungen.</p>
+          <p class="term-body">Eine Demo Environment ist zweckgebaut für Argumentation. Ihre Daten sind kuratiert, nicht gesampelt. Ihre Konfiguration spiegelt die Welt des Käufers wider, nicht die internen Standardeinstellungen des Anbieters. Ihre Stabilität ist eine Anforderung. Eine Demo Environment, die während einer Live-Präsentation ausfällt, ist ein Vertrauensvorfall, keine kleine Unannehmlichkeit.</p>
+          <p class="term-body">Demo Environments sammeln schneller Schulden an als jeder andere Umgebungstyp. Der Druck, neue Produktfähigkeiten hinzuzufügen, bevor sie nachweislich kohärent sind, kombiniert mit dem Fehlen eines klaren Besitzers, produziert Umgebungen, die die Produktlandkarte abdecken, aber für nichts argumentieren. Das Technische Marketing ist für die redaktionelle Integrität der Demo Environment verantwortlich, nicht nur für ihre technische Wartung.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+
+        <div class="term-entry" id="displacement">
+          <div class="term-head"><span class="term-name">Displacement</span><span class="term-pos">noun · also competitive displacement</span></div>
+          <p class="term-definition">Eine Vertriebsbewegung, bei der ein Anbieter Geschäft von einem Käufer gewinnt, der derzeit das Produkt eines namentlich genannten Wettbewerbers nutzt, wodurch der Anbieter Wechselkosten, bestehende Beziehungen und einen Vorteil des etablierten Anbieters überwinden muss, zusätzlich dazu, den positiven Fall für sein eigenes Produkt zu machen.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Displacement vs. Expansion.</strong> Displacement nimmt Geschäft von einem Wettbewerber. Expansion vergrößert das Geschäft innerhalb eines bestehenden Kunden. Beide sind Pipeline-Beitragskennzahlen für das Technische Marketing, aber sie erfordern unterschiedliche Inhalte: Displacement erfordert Wettbewerbs-Battlecards und Beweise für den Wechselwert; Expansion erfordert Reference Architecture und Kundenerfolgsnachweise.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#playbook">Playbook</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+        <div class="term-entry" id="discovery-call">
+          <div class="term-head"><span class="term-name">Discovery call</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes Gespräch zwischen dem Vertriebs- oder Presales-Team eines Anbieters und einem Interessenten, das früh im Vertriebszyklus geführt wird, um die aktuelle Umgebung des Käufers, das zu lösende Problem, die Bewertungskriterien für Lösungen und den zu befolgenden Entscheidungsprozess zu verstehen.</p>
+          <p class="term-body">Discovery ist die diagnostische Phase eines komplexen Verkaufs. Gut gemacht, sagt sie dem SE, welche Demo er bauen soll, dem Technical Marketer, welche Proof Points er vorbereiten soll, und dem AE, welche Einwände er antizipieren soll. Schlecht gemacht, produziert sie eine Demo für das falsche Publikum, Proof Points, die die tatsächlichen Bedenken des Käufers nicht ansprechen, und einen Deal, der ins Stocken gerät, weil der Anbieter nie verstanden hat, was der Käufer brauchte, um sich sicher genug für eine Entscheidung zu fühlen.</p>
+          <p class="term-body">Die Beziehung des Technischen Marketings zur Discovery ist indirekt, aber folgenreich. Die Funktion führt typischerweise keine Discovery Calls durch, aber sie baut die Rahmenwerke, die Discovery konsistent machen: die Fragenleitfäden, die technischen Discovery-Vorlagen, die Qualifikationskriterien, die dem SE sagen, welche Informationen er sammeln soll und warum. Ein Feldteam, das Discovery ohne Rahmenwerk durchführt, sammelt Informationen für einen Deal. Ein Feldteam, das Discovery mit einem Technical-Marketing-Rahmenwerk durchführt, sammelt Informationen, die das gesamte Portfolio an Vertriebsmaterialien nützlicher machen.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Discovery vs. Technical Discovery.</strong> Discovery ist das breite Gespräch über die Situation, die Ziele und den Entscheidungsprozess des Käufers. Technical Discovery ist die tiefere, SE-geführte Phase, die sich auf Architektur, Integrationen, Datenflüsse, Sicherheitsanforderungen und die technischen Einschränkungen konzentriert, die bestimmen, ob das Produkt passt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#buying-committee">Buying committee</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+      </div>
+      </div>
+
+
+      <!-- E -->
+      <div class="letter-group" id="letter-E">
+        <h2 class="letter-anchor">E</h2>
+
+        <div class="term-entry" id="editorial-judgment">
+          <div class="term-head"><span class="term-name">Redaktionelles Urteilsvermögen</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die Fähigkeit des Praktikers, unter kommerziellem Druck zu entscheiden, welche technischen Beweise welchem Publikum in welcher Reihenfolge, mit welcher Rahmung und in welcher Tiefe präsentiert werden, sodass das Ergebnis die Evaluierung eines bestimmten Käufers voranbringt, statt dem Instinkt des Anbieters zu entsprechen, alles zu zeigen.</p>
+          <p class="term-body">Redaktionelles Urteilsvermögen ist die entscheidende Fähigkeit des Technischen Marketings und die Dimension, die sich am stärksten gegen die Kompression durch KI-Tools sperrt. Ein Modell kann eine Wettbewerbszusammenfassung in Minuten entwerfen. Es kann nicht entscheiden, ob die architektonische Schwäche oder die Preislücke vorangestellt werden soll, weil diese Entscheidung davon abhängt, welchen Wettbewerber der Interessent derzeit bewertet, was den Analysten, der dieses Deck sehen wird, tatsächlich interessiert, und was das Engineering-Team tatsächlich vertreten wird, wenn man nachhakt. Diese Eingaben stehen nicht in den Trainingsdaten. Sie sind im Raum.</p>
+          <p class="term-body">Das Konzept entlehnt sich der redaktionellen Praxis im Verlagswesen: Ein Redakteur schreibt nicht alles, aber er entscheidet, was geschrieben wird, was gestrichen wird, was vorangestellt wird und was folgt. Der Technical Marketer wendet dieselbe Funktion auf die Beweisebene eines komplexen Verkaufs an. Jedes Artefakt, das die Rolle produziert, ist das Ergebnis von redaktionellem Urteilsvermögen darüber, was das Buying Committee sehen muss und was nicht.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Redaktionelles Urteilsvermögen vs. Content Production.</strong> Content Production ist die mechanische Arbeit, ein Artefakt zu erstellen. Redaktionelles Urteilsvermögen ist die Entscheidungsebene darüber: zu entscheiden, welches Artefakt gebaut wird, an welche Aussagen es verankert wird und ob das Ergebnis dem Druck des Käufers standhält. KI hat die Content Production komprimiert. Sie hat das redaktionelle Urteilsvermögen nicht komprimiert.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#calibration-band">Calibration band</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="evaluation-conversion">
+          <div class="term-head"><span class="term-name">Evaluation conversion</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die Rate, mit der Opportunities, die in eine formale technische Evaluierungsphase eintreten, zu einem Technical Win führen, ausgedrückt als Prozentsatz und verwendet als primäres Maß für die Wirksamkeit des Technischen Marketings in der Phase, in der die Arbeit der Disziplin am konzentriertesten ist.</p>
+          <p class="term-body">Evaluation Conversion ist das direkteste Signal dafür, dass Technical-Marketing-Inhalte in der Phase funktionieren, in der es darauf ankommt. Impressionen, Klicks und Formularausfüllungen messen Bekanntheit und Interesse. Evaluation Conversion misst, ob die Ergebnisse der Disziplin tatsächlich Evaluierungen gewinnen. Eine Funktion mit hohen Awareness-Kennzahlen und niedriger Evaluation Conversion produziert Inhalte, die Interesse wecken, aber der Prüfung nicht standhalten.</p>
+          <p class="term-body">Die Verbesserung der Evaluation Conversion erfordert das Verständnis, wo Evaluierungen scheitern. Ein Deal, der einen Proof of Concept erreicht und nicht zu einem Technical Win konvertiert, ist ein anderes Scheitern als ein Deal, der in der ersten Demo scheitert. Das Technische Marketing untersucht beides: Das POC-Scheitern kann auf eine Produktlücke oder ein Scoping-Problem hinweisen; das Demo-Scheitern kann auf ein Kohärenz- oder Kalibrierungsproblem hinweisen.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#time-to-decision">Time to decision</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#field-activation">Field activation</a>
+          </div>
+
+        <div class="term-entry" id="economic-buyer">
+          <div class="term-head"><span class="term-name">Economic buyer</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die Person innerhalb einer Käuferorganisation, die die endgültige Budgetautorität innehat und deren Genehmigung erforderlich ist, um einen Kauf zu tätigen, unabhängig vom technischen oder geschäftlichen Konsens, der ihrer Einbeziehung vorausgeht.</p>
+          <p class="term-body">Der Economic Buyer ist oft nicht die Person, die die Evaluierung leitet. In einem typischen Unternehmenssoftware-Deal haben die technischen Bewerter, Business Sponsors und Champions bereits eine Meinung gebildet, bevor der Economic Buyer formal einsteigt. Seine Rolle besteht nicht darin, das Produkt neu zu bewerten. Sie besteht darin, zu bestimmen, ob die strategische Priorität und die finanzielle Verpflichtung gerechtfertigt sind. Ein Deal, der die technische Evaluierung und den Business Case gewonnen hat, kann beim Economic Buyer immer noch scheitern, wenn die Wertrahmung nicht auf der Ebene der geschäftlichen Auswirkungen und des finanziellen Risikos landet, für die er verantwortlich ist.</p>
+          <p class="term-body">Die Beziehung des Technischen Marketings zum Economic Buyer ist indirekt. Die Funktion präsentiert selten direkt vor ihm. Aber die Materialien, die sie produziert, das Business-Value-Narrativ, die Wettbewerbspositionierung, die Proof Points, die der Prüfung standhalten, sind das, was der Champion nutzt, um den Fall in Meetings zu machen, an denen der Anbieter nicht teilnehmen kann. Inhalte zu bauen, die auf der Abstraktionsebene des Economic Buyer funktionieren, ohne die technische Glaubwürdigkeit zu verlieren, die die Evaluierung gerechtfertigt hat, ist eines der schwierigeren Kalibrierungsprobleme der Disziplin.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Economic Buyer vs. Technical Evaluator.</strong> Der technische Bewerter bestimmt, ob das Produkt das kann, was behauptet wird. Der Economic Buyer bestimmt, ob sich der Kauf lohnt. Ein Produkt kann die technische Evaluierung gewinnen und das Gespräch mit dem Economic Buyer verlieren, wenn der Business Case nie von technischen Begriffen in finanzielle und strategische übersetzt wurde.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#buying-committee">Buying committee</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- F -->
+      <div class="letter-group" id="letter-F">
+        <h2 class="letter-anchor">F</h2>
+
+        <div class="term-entry" id="field-activation">
+          <div class="term-head"><span class="term-name">Field activation</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Der Prozentsatz des Vertriebs- und Presales-Teams, der aktiv die aktuell validierte Demo, die aktuellen Wettbewerbs-Battlecards und die aktuelle technische Positionierung in laufenden Kundengesprächen verwendet, genutzt als Maß dafür, ob Technical-Marketing-Inhalte diejenigen erreichen und von ihnen genutzt werden, für die sie gebaut wurden.</p>
+          <p class="term-body">Field Activation ist ein nachlaufender Indikator für die Wirksamkeit des Technischen Marketings. Inhalt, der produziert, aber nicht vom Feld genutzt wird, ist kein Erfolg. Eine Reihe feldorientierter Umgebungen, die nur drei von dreißig SCs nutzen, signalisiert, dass etwas in der Aktivierungskette gescheitert ist: der Inhalt, die Kommunikation oder die Passung. Die Messung der Field Activation erfordert die Verfolgung, welche Materialien tatsächlich in Deals laufen, nicht welche Materialien auf einem Vertriebsportal veröffentlicht wurden.</p>
+          <p class="term-body">Niedrige Field Activation ist diagnostisch. Sie kann auf Inhalte hinweisen, die nicht dazu passen, wie SCs tatsächlich verkaufen, auf ein Kommunikationsversagen, bei dem das Feld nicht weiß, dass die neue Battlecard existiert, oder auf Inhalte, die technisch korrekt, aber innerhalb der Zeitzwänge eines echten Kundengesprächs nicht nutzbar sind. Jeder Fehlermodus hat eine andere Abhilfe.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#evaluation-conversion">Evaluation conversion</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- G -->
+      <div class="letter-group" id="letter-G">
+        <h2 class="letter-anchor">G</h2>
+
+        <div class="term-entry" id="generative-ai">
+          <div class="term-head"><span class="term-name">Generative AI</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">KI-Systeme, die neue Inhalte erzeugen: Text, Bilder, Code und Audio, indem sie statistische Muster aus großen Trainingsdatensätzen lernen und Ausgaben generieren, die der Absicht eines Prompts entsprechen, ohne gespeicherte Antworten abzurufen.</p>
+          <p class="term-body">Im Kontext des Technischen Marketings operiert Generative AI gleichzeitig auf zwei Ebenen: als zu vermarktende Produktkategorie und als Produktionswerkzeug, das verändert, wie die Arbeit der Disziplin erledigt wird. Auf der Produktionsebene komprimiert Generative AI die Artefaktproduktionsebene: erste Entwürfe von Wettbewerbszusammenfassungen, Entwürfe von Bereitstellungsleitfäden, technische Foliengliederungen. Die freigewordenen Stunden sind real. Das redaktionelle Urteilsvermögen, das erforderlich ist, um einen ersten Entwurf in ein vertretbares Artefakt zu verwandeln, wird von denselben Tools nicht komprimiert.</p>
+          <p class="term-body">Auf der Produktebene schafft Generative AI ein spezifisches Vertrauensproblem, das das Technische Marketing strukturell zu adressieren positioniert ist. Unternehmenskäufer, die KI-fähige Produkte bewerten, stehen vor der Trust Gap: der Distanz zwischen der Akzeptanz der Fähigkeit und dem Vertrauen in das Ergebnis. Diese Lücke zu schließen ist Beweisarbeit: Demos, die das Verhalten des Modells unter realistischen Bedingungen zeigen, Architekturmaterialien, die erklären, was das Modell mit Kundendaten macht, und ehrliche Darstellung der Fehlermodi, die das Produkt hat, und wie es mit ihnen umgeht.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Generative vs. Agentic AI.</strong> Ein generatives Modell erzeugt eine Ausgabe als Reaktion auf einen Prompt und stoppt. Ein agentisches System verwendet generative Modelle als Denkkomponenten innerhalb einer größeren Schleife, die Aktionen ausführt, Ergebnisse auswertet und fortfährt. Die meisten Unternehmens-KI-Produkte im Jahr 2026 kombinieren beides: eine generative Ebene für Denken und Erzeugung, eine agentische Ebene für die Ausführung.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#agentic-ai">Agentic AI</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="gtm">
+          <div class="term-head"><span class="term-name">GTM</span><span class="term-pos">noun · abbrev. go-to-market</span></div>
+          <p class="term-definition">Die Strategie, Teamstruktur und das operative Modell, mit dem ein Unternehmen ein Produkt auf seinen Zielmarkt bringt, einschließlich der Definition und Erreichung von Käufern, der Preisgestaltung und Verpackung des Produkts, der Vertriebsbewegungen, die es ausführt, und der Funktionen, die den Kunden durch Evaluierung, Kauf und Expansion unterstützen.</p>
+          <p class="term-body">GTM wird in Technical-Marketing-Kontexten am häufigsten als Kurzform für die Sammlung kundenorientierter Funktionen verwendet, die ein Produktunternehmen betreibt: Marketing, Vertrieb, Sales Engineering, Product Marketing und Technical Marketing bilden zusammen die GTM-Organisation in den meisten Unternehmenssoftwareunternehmen. Wenn KI beschrieben wird, als komprimiere sie die Artefaktproduktion über jede GTM-Disziplin hinweg, bedeutet das, dass jede dieser Funktionen dieselbe Art strukturierter Inhalte schneller als zuvor produziert.</p>
+          <p class="term-body">Die Position des Technischen Marketings innerhalb der GTM-Organisation variiert je nach Unternehmenstyp. Bei Plattformunternehmen sitzt sie typischerweise innerhalb des Marketings. Bei Infrastruktur- und Datenunternehmen sitzt sie oft innerhalb des Produkts. Bei PLG-Unternehmen kann sie direkt an den Marketingleiter berichten. Die Platzierung beeinflusst die Prioritäten der Funktion, nicht aber ihre Kernarbeit.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#plg-company">PLG company</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#pipeline">Pipeline</a>
+          </div>
+        </div>
+        </div>
+
+
+      <!-- I -->
+      <div class="letter-group" id="letter-I">
+        <h2 class="letter-anchor">I</h2>
+
+        <div class="term-entry" id="interactive-proof">
+          <div class="term-head"><span class="term-name">Interactive proof</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine Testumgebung oder Sandbox, die ein Käufer selbst betreibt, und die Skepsis durch direkte Erfahrung statt durch eine anbietergeführte Demonstration umwandelt. Der primäre Demo-Archetyp von PLG-Unternehmen, bei dem der Technical Marketer sowohl die Umgebung als auch die narrative Ebene baut, die die Erfahrung nachvollziehbar macht.</p>
+          <p class="term-body">Ein Interactive Proof kehrt die Demo-Beziehung um. In einer Configured Environment kontrolliert der Anbieter, was der Käufer sieht. In einem Interactive Proof kontrolliert der Käufer, was er tut. Die Aufgabe des Praktikers besteht nicht darin, die Erfahrung zu skripten, sondern sie zu architektieren: die Standarddaten, den Onboarding-Pfad, die Momente, in denen die Wertaussage des Produkts selbstevident wird. Der Käufer, der diesen Moment erreicht, ohne begleitet zu werden, wurde gründlicher überzeugt als einer, der zusah, wie ein Vertreter ihn für ihn erreichte.</p>
+          <p class="term-body">PLG-Unternehmen, bei denen die Produktakzeptanz der traditionellen Vertriebsbewegung vorausgeht oder sie ersetzt, verwenden Interactive Proofs als primäres Ergebnis des Technischen Marketings. Die Testumgebung ist die Demo. Field Activation sieht hier anders aus: Das Technische Marketing misst, ob Käufer, die die Testphase betreten, den Beweismoment erreichen, nicht ob der SE eine gute Sitzung durchgeführt hat. Den Weg zu diesem Moment zu gestalten, ist die Kernarbeit des Praktikers.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Interactive Proof vs. Proof of Concept.</strong> Ein Proof of Concept ist eine strukturierte Evaluierung, die mit Beteiligung des Anbieters gegen die spezifische Umgebung des Kunden durchgeführt wird. Ein Interactive Proof ist selbstgesteuert, vom Anbieter gestaltet und läuft typischerweise in einer kontrollierten Sandbox. Der POC ist dealspezifisch. Der Interactive Proof wird einmal gebaut und in großem Maßstab genutzt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#reference-environment">Reference environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="integration-guide">
+          <div class="term-head"><span class="term-name">Integration guide</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes technisches Dokument, das erklärt, wie das Produkt eines Anbieters mit den bestehenden Systemen eines Käufers verbunden wird, das Authentifizierung, Datenfluss, Konfigurationsanforderungen und häufige Fehlermodi abdeckt, geschrieben in der Tiefe, die ein technischer Bewerter benötigt, um die Integrationsfähigkeit während einer Kaufevaluierung zu beurteilen.</p>
+          <p class="term-body">Integration Guides sitzen an der Grenze zwischen Technical Marketing und technischer Dokumentation. Dokumentation wird für Nutzer geschrieben, die bereits gekauft haben. Ein für Evaluierungszwecke geschriebener Integration Guide unterscheidet sich in der Absicht: Er wird für einen technisch versierten Käufer geschrieben, der fragt, ob eine Integration machbar ist, bevor er sich zu einem Kauf verpflichtet. Diese Unterscheidung verändert die Rahmung, den angenommenen Kontext und was als ausreichende Tiefe gilt.</p>
+          <p class="term-body">Ein gut aufgebauter Integration Guide reduziert einen häufigen Evaluierungsblocker: die Anforderung des Sicherheits- oder Architekturteams des Käufers nach einer langwierigen technischen Überprüfung, bevor der Kauf fortschreiten kann. Das Technische Marketing produziert dieses Artefakt; es ist kein Dokumentationsergebnis.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- M -->
+      <div class="letter-group" id="letter-M">
+        <h2 class="letter-anchor">M</h2>
+
+        <div class="term-entry" id="magic-quadrant">
+          <div class="term-head"><span class="term-name">Magic Quadrant</span><span class="term-pos">noun · trademark Gartner</span></div>
+          <p class="term-definition">Gartners primäres Marktbewertungsrahmenwerk, in dem Anbieter innerhalb einer definierten Technologiekategorie auf einem Zwei-Achsen-Raster aus Ability to Execute und Completeness of Vision positioniert werden, wodurch sie in einen von vier Quadranten eingeordnet werden: Leaders, Challengers, Visionaries oder Niche Players.</p>
+          <p class="term-body">Eine Magic-Quadrant-Position ist eines der folgenreichsten Ergebnisse eines AR Cycle für ein Unternehmenssoftwareunternehmen. Käufer nutzen Magic-Quadrant-Berichte aktiv bei der Erstellung von Shortlists: Ein Anbieter, der nicht im relevanten Magic Quadrant erscheint, wird oft nicht in eine Unternehmensevaluierung einbezogen. Ein Anbieter, der im Leaders-Quadranten positioniert ist, trägt diese Positionierung zwölf bis achtzehn Monate lang, während der Bericht aktuell ist, in Vertriebsgespräche.</p>
+          <p class="term-body">Der Beitrag des Technischen Marketings zur Magic-Quadrant-Position ist direkt. Die Briefing-Materialien, Demo-Inhalte und technischen Proof Points, die die Funktion produziert, sind das, was Gartner-Analysten bei der Bewertung der Ability to Execute beurteilen. Die Positionsverschiebung des Analysten im nächsten AR Cycle, insbesondere die Bewegung innerhalb oder zwischen Quadranten, ist ein primäres messbares Ergebnis der Technical-Marketing-Funktion.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Magic Quadrant vs. Forrester Wave.</strong> Beide sind Analystenbewertungsrahmenwerke, die Anbieter innerhalb einer Kategorie positionieren, aber sie verwenden unterschiedliche Methodiken, unterschiedliche Bewertungskriterien und unterschiedliche visuelle Formate. Beide tragen vergleichbaren Einfluss bei Unternehmenskäufern; das Technische Marketing bereitet sich für den Bewertungsprozess jeder Firma separat vor.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#ar-cycle">AR cycle</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#analyst-briefing">Analyst briefing</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- P -->
+      <div class="letter-group" id="letter-P">
+        <h2 class="letter-anchor">P</h2>
+
+        <div class="term-entry" id="presales">
+          <div class="term-head"><span class="term-name">Presales</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die organisatorische Funktion und die Reihe von Aktivitäten, die einen komplexen Verkauf vom ersten Kontakt mit dem Interessenten bis zur Vertragsunterzeichnung unterstützen: einschließlich technischer Discovery, Lösungsdesign, Produktdemonstration, Proof-of-Concept-Koordination, RFP-Beantwortung und Sicherheitsfragebogen-Management.</p>
+          <p class="term-body">Presales ist die übergeordnete Kategorie, die die Sales-Engineering- und Solutions-Consulting-Funktionen enthält. Das Technische Marketing ist Presales benachbart, aber davon unterschieden. Presales operiert in individuellen, dealspezifischen Gesprächen. Das Technische Marketing operiert auf der Ebene der Gesamtpositionierung des Produkts und baut die Materialien, die Presales über alle Deals hinweg nutzt. Die einfachste Unterscheidung: Presales führt den Spielzug aus; das Technische Marketing schreibt das Playbook.</p>
+          <p class="term-body">Die Grenze zwischen Technical Marketing und Presales ist eine der am wenigsten standardisierten in der Unternehmenssoftware. Bei manchen Unternehmen sitzt Technical Marketing innerhalb einer Presales-Organisation und berichtet an einen VP of Presales oder Solutions Engineering. Bei anderen sitzt es innerhalb des Marketings und ist organisatorisch vollständig von Presales getrennt. Die Berichtslinie beeinflusst die Anreize und Prioritäten der Funktion, aber nicht die Natur der Arbeit: die Produktion der technischen Beweisebene, die Presales-Gespräche wiederholbar und gewinnbar macht.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Presales vs. Technical Marketing.</strong> Presales führt in einzelnen Deals aus. Technical Marketing baut die Systeme, Artefakte und Rahmenwerke, die diese Ausführungen konsistent und skalierbar machen. Ein SE, der für jeden Deal seine eigene Demo von Grund auf baut, betreibt Presales ohne Technical-Marketing-Unterstützung. Ein SE, der eine validierte Demo aus einer kanonischen Reference Environment ausführt, betreibt Presales, unterstützt durch die Infrastruktur des Technischen Marketings.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="pipeline">
+          <div class="term-head"><span class="term-name">Pipeline</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die Gesamtheit der aktiven Vertriebschancen, die ein Unternehmen in einem bestimmten Zeitraum verfolgt, typischerweise gemessen am Dollarwert in jeder Phase des Vertriebsprozesses.</p>
+          <p class="term-body">Das Technische Marketing sitzt einen Grad von der Quote entfernt. Seine Arbeit schließt Pipeline nicht direkt ab; das ist die Vertriebsfunktion, aber sie schafft die Bedingungen, unter denen Pipeline abgeschlossen werden kann. Die relevante Kennzahl ist der Pipeline-Beitrag: die Pipeline, die technischen Inhalten, Demo-Assets und Wettbewerbs-Enablement zugeschrieben wird, die die Rolle produziert. Eine Technical-Marketing-Funktion, die ihre Arbeit nicht bis zum Pipeline-Einfluss zurückverfolgen kann, operiert ohne Rechenschaftspflicht.</p>
+          <p class="term-body">Pipeline wird auch als Kurzform für den Produktionsprozess innerhalb des Technischen Marketings selbst verwendet: die Abfolge von rohem Produktwissen zu formatiertem, feldfertigem Artefakt. KI-Tools haben diese Produktionspipeline erheblich verkürzt. Eine Wettbewerbszusammenfassung, die vier Stunden erforderte, hat jetzt einen ersten Entwurf in vierzig Minuten. Die redaktionelle Pipeline, zu entscheiden, welche Aussagen vertretbar sind, welche Rahmungen dem Druck des Käufers standhalten, hat sich nicht im selben Tempo komprimiert.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="playbook">
+          <div class="term-head"><span class="term-name">Playbook</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturierter, wiederholbarer Leitfaden, der dokumentiert, wie eine bestimmte Art von Vertriebsbewegung oder Wettbewerbssituation auszuführen ist, einschließlich Discovery-Fragen, Demo-Sequenz, Einwandbehandlung und Proof Points, sodass verschiedene Mitglieder des Feldteams denselben Spielzug konsistent ausführen können.</p>
+          <p class="term-body">Ein Playbook ist der Unterschied zwischen einer Vertriebsbewegung, die von individuellem Talent abhängt, und einer, die mit dem Team skaliert. Das Technische Marketing verfasst die technische Substanz von Playbooks: welche Demo für welches Publikum durchgeführt wird, welche Wettbewerbsaussagen vorangestellt werden, welche technischen Proof Points dem Käuferdruck in jeder Phase standhalten. Die Vertriebsleitung besitzt die kommerzielle Bewegung. Das Technische Marketing besitzt die Beweisebene darunter.</p>
+          <p class="term-body">Displacement-Playbooks, strukturierte Leitfäden zum Gewinnen von Deals gegen die installierte Basis eines bestimmten namentlich genannten Wettbewerbers, gehören zu den Artefakten mit dem höchsten Hebel, die das Technische Marketing produziert. Ein gut aufgebautes Displacement-Playbook verstärkt sich mit der Zeit: Jeder gewonnene Displacement-Deal generiert eine Kundenreferenz, die den nächsten Zyklus speist.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Playbook vs. Battlecard.</strong> Eine Battlecard ist ein Referenzartefakt, das im Moment konsultiert wird. Ein Playbook ist ein Prozessartefakt, das über den Bogen eines Deals hinweg ausgeführt wird. Die Battlecard lebt in einem Tab während eines Meetings; das Playbook prägt, wie der Deal von der Discovery bis zum Abschluss geführt wird.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-point">
+          <div class="term-head"><span class="term-name">Proof point</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein spezifisches, verifizierbares Beweisstück, das eine Produktaussage auf dem Präzisionsniveau stützt, das erforderlich ist, um der Befragung durch einen technisch versierten Käufer standzuhalten: ein Benchmark-Ergebnis, ein Kundenergebnis, eine dokumentierte technische Fähigkeit oder eine Validierung durch Dritte.</p>
+          <p class="term-body">Ein Proof Point ist keine Behauptung. Die Unterscheidung ist der Unterschied zwischen „unsere Plattform ist skalierbar" und „unsere Plattform hat in einem unabhängigen Benchmark 10 Millionen Ereignisse pro Sekunde verarbeitet". Das Erste ist Positionierung. Das Zweite ist ein Proof Point. Das Technische Marketing ist dafür verantwortlich, zu identifizieren, welche Behauptungen Proof Points benötigen, welche Proof Points existieren und welche durch Benchmarks, Kundenreferenzen oder Bewertungen Dritter erzeugt werden müssen.</p>
+          <p class="term-body">Proof Points verfallen. Ein Benchmark aus zwei Produktgenerationen zuvor ist kein aktueller Proof Point. Ein Kundenzitat eines Unternehmens, das seitdem abgewandert ist, ist kein aktueller Proof Point. Die Pflege eines aktuellen, genauen Bestands an Proof Points und die Zurückziehung derer, die nicht mehr verteidigt werden können, ist eine laufende Aufgabe des Technischen Marketings.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Proof Point vs. Proof of Concept.</strong> Ein Proof Point ist ein bestehendes Beweisstück, das zur Stützung einer Behauptung verwendet wird. Ein Proof of Concept ist eine Live-Evaluierung, die durchgeführt wird, um neue Beweise in der Umgebung eines bestimmten Kunden zu erzeugen. Proof Points existieren vor dem Deal; ein POC wird während des Deals erstellt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="plg-company">
+          <div class="term-head"><span class="term-name">PLG company</span><span class="term-pos">noun · abbrev. product-led growth</span></div>
+          <p class="term-definition">Ein Unternehmenssoftwareunternehmen, dessen primäre Wachstumsbewegung durch die Endnutzer-Produktakzeptanz statt durch klassischen Top-down-Unternehmensvertrieb angetrieben wird, wobei das Produkt selbst der primäre Akquisitions-, Aktivierungs- und Expansionsmechanismus ist.</p>
+          <p class="term-body">Die Technical-Marketing-Funktion sieht bei einem PLG-Unternehmen materiell anders aus als bei einem Plattform- oder Infrastrukturunternehmen mit klassischer Unternehmensvertriebsbewegung. Bei einem PLG-Unternehmen geschieht die Kaufentscheidung oft, bevor ein Sales Engineer überhaupt beteiligt ist. Die technische Beweisebene ist daher in die Produkterfahrung, die Dokumentation und die entwicklerorientierten Inhalte eingebettet, nicht primär in eine Vertriebsdemo. Der Technical Marketer bei einem PLG-Unternehmen ist näher an Developer Relations und Dokumentation als an der Presales-Funktion.</p>
+          <p class="term-body">Die Wettbewerbspositionierungsarbeit der Rolle ist bei einer PLG-Bewegung ebenfalls anders: weniger Fokus auf namentliche Account-Displacement, mehr Fokus auf Kategorienarrativ: zu definieren, was die Produktkategorie ist, bevor ein Wettbewerber sie anders definieren kann. Field-Activation-Kennzahlen sind in einem PLG-Kontext schwächere Signale; Product-Qualified-Lead-Conversion und Expansion innerhalb bestehender Accounts sind stärkere Indikatoren für die Wirksamkeit des Technischen Marketings.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-of-concept">
+          <div class="term-head"><span class="term-name">Proof of concept</span><span class="term-pos">noun · abbrev. POC</span></div>
+          <p class="term-definition">Eine strukturierte technische Evaluierung, bei der der Anbieter sein Produkt gegen die spezifische Umgebung, Daten oder den Anwendungsfall eines Kunden konfiguriert und testet, mit dem Ziel, Beweise zu liefern, dass das Produkt wie behauptet funktioniert.</p>
+          <p class="term-body">Ein Proof of Concept ist eine Beweisproduktionsübung, keine Verkaufsübung. Ein gut durchgeführter POC, der ein ungünstiges Ergebnis liefert, ist wertvoller als ein schlecht durchgeführter POC, der einen günstigen Eindruck erzeugt, weil das ungünstige Ergebnis ehrlich ist und der günstige Eindruck den Produktionseinsatz nicht überleben wird. Ein POC, der eine echte Produktlücke aufdeckt, ist auch ein Produktsignal: Der Befund gehört in das Roadmap-Gespräch, nicht nur in die Deal-Nachbesprechung.</p>
+          <p class="term-body">Das Technische Marketing ist an der POC-Strategie beteiligt: Definition der Erfolgskriterien, des Umfangs, der Datenanforderungen und des Bewertungsrahmens, bevor der POC beginnt. Ein undefinierter POC ist kein POC. Er ist eine kostenlose Beratungsleistung.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>POC vs. Proof of Value.</strong> Ein Proof of Concept testet, ob das Produkt funktioniert. Ein Proof of Value testet, ob das Produkt das Ergebnis erzeugt, das der Käufer zu erreichen versucht. Ein Produkt kann einen POC bestehen und einen POV nicht bestehen.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-value">Proof of value</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="proof-of-value">
+          <div class="term-head"><span class="term-name">Proof of value</span><span class="term-pos">noun · abbrev. POV</span></div>
+          <p class="term-definition">Eine strukturierte Evaluierung, bei der der Käufer testet, ob ein Produkt eine messbare Verbesserung gegenüber einem Geschäftsergebnis erzielt, zu dem er sich verpflichtet hat, statt ob das Produkt technisch funktioniert.</p>
+          <p class="term-body">Ein Proof of Value formt die Evaluierungsfrage von „funktioniert es" zu „funktioniert es für uns auf die Weise, die zählt" um. Das Technische Marketing definiert die Werthypothese, bevor der POV beginnt: welches Ergebnis, wie gemessen, über welchen Zeithorizont, verglichen mit welcher Baseline. Ein POV ohne festgelegte Werthypothese ist eine verlängerte Testphase mit einem subjektiven Ausstieg.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- R -->
+      <div class="letter-group" id="letter-R">
+        <h2 class="letter-anchor">R</h2>
+
+        <div class="term-entry" id="reference-architecture">
+          <div class="term-head"><span class="term-name">Reference architecture</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes technisches Artefakt, typischerweise Code, Pipelines, Notebooks oder Integrationsmuster, das die Aussage eines Produkts auf dem Niveau beweist, das ein technisch versierter Bewerter direkt befragen kann. Der primäre Demo-Archetyp von Infrastruktur- und Datenunternehmen, bei dem die Ingenieure des Käufers das Artefakt validieren, nicht der Sales Engineer.</p>
+          <p class="term-body">Eine Reference Architecture sitzt näher an einem GitHub-Repository als an einer Foliendeck. Die Aussage ist in das Artefakt selbst eingebettet: Wenn der Code läuft, wenn die Pipeline verbindet, wenn das Notebook die angegebene Ausgabe erzeugt, ist die Aussage bewiesen, ohne dass eine Erzählung nötig wäre. Das Technische Marketing besitzt die Integrität der Architektur: welchen Anwendungsfall sie beweist, ob die Konfiguration produktionsrealistische Bedingungen widerspiegelt, und ob das angegebene Ergebnis tatsächlich aus der Arbeit resultiert, wie sie geschrieben ist.</p>
+          <p class="term-body">Infrastruktur- und Datenunternehmen, einschließlich Databricks, Elastic, HashiCorp und CrowdStrike, produzieren Reference Architectures als primäre Ergebnisse des Technischen Marketings. Das Publikum ist ein Principal Engineer oder ein Architekt, kein Business-Käufer. Die Evaluierung geschieht auf einer Tiefe technischer Prüfung, die eine Configured Environment oder eine folienbasierte Demo nicht befriedigen kann. Eine Reference Architecture, die Abkürzungen, angestrebte Konfigurationen oder unoffengelegte Abhängigkeiten enthält, wird entdeckt und schädigt die technische Glaubwürdigkeit des Anbieters auf eine Weise, die schwer wiedergutzumachen ist.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Reference Architecture vs. Architecture Overview.</strong> Ein Architecture Overview beschreibt, was das Produkt ist und wie es strukturiert ist. Eine Reference Architecture zeigt, wie es für einen bestimmten Anwendungsfall bereitgestellt und konfiguriert wird, auf einem Niveau technischer Vollständigkeit, das es einem Praktiker ermöglicht, darauf aufzubauen. Das Overview steht früher in der Käuferreise; die Reference Architecture steht in den Evaluierungs- und Implementierungsphasen.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#benchmark-artifact">Benchmark artifact</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#configured-environment">Configured environment</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="reference-environment">
+          <div class="term-head"><span class="term-name">Reference environment</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die kanonische Konfiguration eines Softwareprodukts, die als maßgebliche Quelle dient, aus der Demonstrationen, technische Inhalte und Evaluierungsmaterialien erstellt werden.</p>
+          <p class="term-body">Eine Reference Environment ist keine Demo. Sie ist die Infrastruktur, aus der Demos produziert werden. Eine Reference Environment ohne klare Eigentümerschaft ist keine Reference Environment. Sie ist eine geteilte Demo-Instanz, und geteilte Demo-Instanzen degenerieren mit einer Rate in Richtung Inkohärenz, die proportional zur Anzahl der Personen mit Commit-Zugriff ist.</p>
+          <p class="term-body">Die kanonische Reference Environment ist das primäre Artefakt des Praktikers. Jede feldorientierte Demo Environment sollte von dieser kanonischen Quelle abgeleitet sein oder mit ihr übereinstimmen. Regionale, vertikale oder personaspezifische Umgebungen, die absichtlich abweichen, benötigen dennoch eine dokumentierte Begründung für die Abweichung.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Reference Environment vs. Sandbox.</strong> Eine Sandbox ist eine entsorgbare Umgebung zum Experimentieren. Eine Reference Environment ist ein verwaltetes Artefakt für den Produktionseinsatz. Beide zu verwechseln ist die häufigste Ursache für Demo-Environment-Schulden.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#demo-environment">Demo environment</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo">Demo</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="regis-mckenna">
+          <div class="term-head"><span class="term-name">Regis McKenna</span><span class="term-pos">noun · person</span></div>
+          <p class="term-definition">Ein Marketingstratege aus dem Silicon Valley, der 1967 zu National Semiconductor stieß und später Regis McKenna Inc. gründete, wodurch er einer der frühesten Praktiker und Theoretiker des Technischen Marketings in der Halbleiter- und Computerindustrie wurde.</p>
+          <p class="term-body">McKennas Beitrag zur Disziplin war methodisch: Er entwickelte und artikulierte einen strukturierten Ansatz zur Vermarktung technischer Produkte an technisch versierte Käufer, zu einer Zeit, als die meiste Marketingpraxis um Konsumgüter herum aufgebaut war. Seine Arbeit bei National Semiconductor und seine Beraterrollen bei Intel und Apple etablierten eine Vorlage dafür, wie Technologieunternehmen über die Beziehung zwischen technischer Glaubwürdigkeit und kommerzieller Überzeugung denken sollten.</p>
+          <p class="term-body">In der Geschichte der Disziplin repräsentiert McKenna den Anker der Era I: den Punkt, an dem das Technische Marketing zu einer anerkannten internen Funktion bei Produktunternehmen wurde, statt einer ad hoc verteilten Verantwortung über Engineering und Vertrieb hinweg. Der Artikel „Before the Name" verfolgt seine Rolle in der Gründungsphase der Disziplin im Detail.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-marketer">Technical marketer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="rfp">
+          <div class="term-head"><span class="term-name">RFP</span><span class="term-pos">noun · abbrev. request for proposal</span></div>
+          <p class="term-definition">Ein formelles Beschaffungsdokument, das von einer Käuferorganisation ausgestellt wird und Anbieter dazu verpflichtet, auf einen strukturierten Satz von Fragen zu Produktfähigkeiten, technischer Architektur, Sicherheitslage, Preisgestaltung, Implementierungsansatz und Unternehmensstabilität zu antworten, verwendet, um Anbieter während eines formalen Evaluierungsprozesses systematisch zu vergleichen.</p>
+          <p class="term-body">Eine RFP-Antwort ist eines der aufwändigsten und folgenreichsten Artefakte im Portfolio des Technischen Marketings. Das Technische Marketing pflegt die RFP-Inhaltsbibliothek, die genehmigten Aussagen und den Proof-Point-Bestand, der Antworten über Deals hinweg schneller und vertretbarer macht. Ein Anbieter, der nicht Teil des Pre-RFP-Gesprächs war, befindet sich in einem strukturellen Nachteil, unabhängig davon, wie gut geschrieben die Antwort ist: Die Bewertungskriterien, die am Ende im RFP landen, spiegeln oft Gespräche wider, die das Buying Committee mit Anbietern geführt hat, denen es bereits vertraute.</p>
+          <p class="term-body">Die Arbeit des Technischen Marketings vor Ankunft des RFP prägt das RFP selbst. Analystenengagement, Referenzmaterialien und frühe technische Gespräche mit den Bewertern des Buying Committee etablieren das Vokabular und die Kriterien, die der Käufer bei der Erstellung der Bewertungsanforderungen verwendet. Eine Technical-Marketing-Funktion, die auf eingehende RFPs wartet, ist reaktiv. Eine, die die Bewertungskriterien beeinflusst, bevor das RFP geschrieben wird, hat einen strukturellen Vorteil, den keine Antwortqualität ausgleichen kann.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>RFP vs. RFI.</strong> Eine Request for Information (RFI) ist ein früheres, breiteres Dokument, das verwendet wird, um zu identifizieren, welche Anbieter es wert sind, zu einer formalen Evaluierung eingeladen zu werden. Ein RFP wird an eine Shortlist bereits qualifizierter Anbieter ausgestellt. Das Technische Marketing antwortet auf beide, aber die RFP-Antwort ist das folgenreichere Dokument und erfordert typischerweise mehr interne Koordination über Produkt-, Sicherheits-, Rechts- und Finanzteams hinweg.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#security-questionnaire">Security questionnaire</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-point">Proof point</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#buying-committee">Buying committee</a>
+          </div>
+        </div>
+
+
+        <div class="term-entry" id="rfi-response">
+          <div class="term-head"><span class="term-name">RFI response</span><span class="term-pos">noun &middot; abbrev. request for information response</span></div>
+          <p class="term-definition">Die strukturierte Antwort eines Anbieters auf die Informationsanfrage einer Käuferorganisation, eingereicht bevor eine formale Evaluierung beginnt, die vom Käufer verwendet wird, um zu beurteilen, ob ein Anbieter zu einem vollständigen RFP-Prozess eingeladen werden sollte.</p>
+          <p class="term-body">Ein RFI kommt früher im Entscheidungsprozess des Käufers an als ein RFP und ist entsprechend weniger spezifisch in seinen Anforderungen. Der Käufer führt eine Marktumfrage durch, keine formale Evaluierung. Er möchte verstehen, welche Anbieter in der Kategorie existieren, was die wichtigsten Differenzierungsaussagen sind, und ob das Profil eines Anbieters den Aufwand einer vollständigen Evaluierung wert ist. Das macht die RFI-Antwort zu einer anderen Art von Dokument als eine RFP-Antwort: Sie muss scharf genug sein, um einen Platz auf der Shortlist zu verdienen, nicht erschöpfend genug, um jede Sicherheits- und Architekturfrage zu beantworten.</p>
+          <p class="term-body">Das Technische Marketing pflegt die Inhaltsbibliothek, aus der RFI-Antworten aufgebaut werden, einschließlich genehmigter Positionierungsaussagen, repräsentativer Proof Points und Kundenreferenzzusammenfassungen, die schnell über mehrere gleichzeitige RFIs hinweg eingesetzt werden können. Das Analyst-Relations-Team von IBM dokumentierte ein Muster, bei dem KI-Entwürfe etwa 95 Prozent des RFI-Antwortinhalts vorausfüllen, mit einem menschlichen QA-Schritt vor der Einreichung. Das Muster spiegelt eine strukturelle Wahrheit wider: Die meisten RFI-Fragen wiederholen sich über Käufer und Kategorien hinweg, sodass eine gut gepflegte Inhaltsbibliothek die Antwortzeit dramatisch verkürzt, ohne die Genauigkeit zu opfern.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>RFI Response vs. RFP Response.</strong> Eine RFI-Antwort ist kürzer, früher und technisch weniger spezifisch. Ihr Ziel ist es, einen Platz auf der Shortlist zu verdienen. Eine RFP-Antwort ist länger, später und architektonisch detaillierter. Ihr Ziel ist es, die Evaluierung zu gewinnen. Beide erfordern technisch korrekte Aussagen. Die RFP-Antwort erfordert mehr interne Koordination mit Produkt-, Sicherheits- und Rechtsteams.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#rfp">RFP</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#briefing-prep">Briefing prep</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#ar-cycle">AR cycle</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- S -->
+      <div class="letter-group" id="letter-S">
+        <h2 class="letter-anchor">S</h2>
+
+        <div class="term-entry" id="security-questionnaire">
+          <div class="term-head"><span class="term-name">Security questionnaire</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein strukturiertes Dokument, das vom Sicherheits-, Rechts- oder Beschaffungsteam einer Käuferorganisation ausgestellt wird und den Anbieter verpflichtet, seine Sicherheitskontrollen, Datenverarbeitungspraktiken, Compliance-Zertifizierungen, Business-Continuity-Lage und Incident-Response-Verfahren offenzulegen und zu dokumentieren, typischerweise als Bedingung für den Kauf oder die Anbieterzulassung.</p>
+          <p class="term-body">Ein Security Questionnaire ist keine Produktevaluierung. Es ist eine Risikobewertung. Die Käuferorganisation fragt nicht, ob das Produkt gut ist. Sie fragt, ob dem Anbieter mit ihren Daten und Systemen vertraut werden kann. Ein Anbieter, der ein Security Questionnaire nicht besteht, verliert einen Deal nicht aufgrund der Produktqualität. Er verliert ihn aufgrund organisatorischer Bereitschaft. Eine Antwort auf ein Security Questionnaire, die landet, ohne zu viel zu versprechen, erfordert, in den Worten der Disziplin, dasselbe redaktionelle Urteilsvermögen wie jedes andere Technical-Marketing-Artefakt: das zu sagen, was wahr ist, auf die Weise, die die gestellte Frage anspricht, ohne Behauptungen zu schaffen, die das Produkt oder die Organisation nicht stützen können.</p>
+          <p class="term-body">Das Technische Marketing pflegt die genehmigten technischen Aussagen über die Architektur, Datenverarbeitung und Compliance-Lage des Produkts, die die Quelle der Wahrheit für die Antworten auf Security Questionnaires bilden. Der SE oder das Account-Team produziert die Antwort, aber eine unkoordinierte Antwort, die auf nicht genehmigten Behauptungen aufgebaut ist, ist eine Belastung, die im ungünstigsten Moment auftaucht: nach dem Technical Win, während der Beschaffung, wenn eine einzige Inkonsistenz die Evaluierung von vorne beginnen lassen kann.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Security Questionnaire vs. RFP.</strong> Ein RFP bewertet, ob das Produkt des Anbieters die Anforderungen des Käufers erfüllt. Ein Security Questionnaire bewertet, ob der Organisation des Anbieters als Datenverarbeiter und Dienstleister vertraut werden kann. Beide können einen Deal unabhängig voneinander blockieren. Viele Unternehmenskäufe erfordern beides, und jedes hat einen anderen Besitzer auf der Anbieterseite.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#rfp">RFP</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-point">Proof point</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="sales-engineer">
+          <div class="term-head"><span class="term-name">Sales engineer / Solutions consultant</span><span class="term-pos">noun · abbrev. SE, SC</span></div>
+          <p class="term-definition">Ein technisch geschulter Presales-Experte, der das technische Gespräch in laufenden Deals führt, Live-Demos durchführt, Produktfragen beantwortet, Proof of Concepts abgrenzt und die technische Glaubwürdigkeit liefert, die eine kommerzielle Vertriebsbewegung unterstützt.</p>
+          <p class="term-body">Der SE oder SC ist die Feldausführungsebene für die Beweise und Rahmenwerke, die das Technische Marketing baut. Der Technical Marketer architektiert die Reference Environment; der SE führt Demos aus ihr aus. Der Technical Marketer verfasst die Wettbewerbs-Battlecard; der SC nutzt sie in einem Dienstagsgespräch gegen einen namentlich genannten Wettbewerber. Die Beziehung ist strukturell: Das Technische Marketing schafft die wiederholbaren Materialien, und der SE/SC wendet sie in dealspezifischen Kontexten an, die kein wiederholbares Rahmenwerk vollständig antizipieren kann.</p>
+          <p class="term-body">Die Unterscheidung zwischen den beiden Rollen ist für den Technical Marketer wichtig, weil die Erfahrung des SE/SC im Feld das schnellste Feedback-Signal dafür ist, ob die Marketingmaterialien funktionieren. Gewinnraten, Demo-Conversion, Wettbewerbs-Displacement bei namentlichen Accounts. Diese Kennzahlen spiegeln sowohl die Qualität der SE/SC-Ausführung als auch die Qualität der technischen Inhalte wider, die ihnen übergeben wurden. Wenn beide gemessen werden, ist das Signal sauber. Wenn nur eines gemessen wird, ist die Zuschreibung falsch.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>SE vs. SC Naming.</strong> Sales Engineer (SE) ist bei Infrastruktur- und Plattformunternehmen üblicher. Solutions Consultant (SC) ist bei SaaS- und Anwendungssoftware üblicher. Der funktionale Unterschied zwischen den beiden Titeln ist in der Praxis gering; beide beziehen sich auf die technische Presales-Rolle. Solutions Architect (SA) ist bei vielen Cloud- und Infrastrukturunternehmen einschließlich AWS, GCP und Azure Presales, wo SAs das technische Gespräch durch die Evaluierungsphase besitzen. Bei SaaS-Unternehmen impliziert SA häufiger einen Post-Sale- oder Implementierungsumfang. Die Verwendung variiert erheblich je nach Unternehmen und sollte nicht allein aus dem Titel angenommen werden.</p>
+            <p><strong>SE vs. Technical Marketer.</strong> Der SE operiert in individuellen, dealspezifischen Gesprächen. Der Technical Marketer operiert auf der Ebene der Gesamtpositionierung des Produkts und baut die Materialien, die der SE über alle Deals hinweg nutzt. Das Technische Marketing ersetzt den SE nicht; es macht die Arbeit des SE skalierbar und wiederholbar.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#technical-marketer">Technical marketer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#playbook">Playbook</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- T -->
+      <div class="letter-group" id="letter-T">
+        <h2 class="letter-anchor">T</h2>
+
+        <div class="term-entry" id="teardown">
+          <div class="term-head"><span class="term-name">Teardown</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine strukturierte, dokumentierte Analyse des Produkts, der Architektur, der Preisgestaltung, der Positionierung und der öffentlich verfügbaren technischen Aussagen eines Wettbewerbers, erstellt vom Technischen Marketing, um die Wettbewerbsstrategie, Battlecards und Displacement-Playbooks zu informieren.</p>
+          <p class="term-body">Ein Teardown ist Recherche, bevor er ein Vertriebsartefakt ist. Der Praktiker bewertet das Produkt des Wettbewerbers wie ein technischer Kollege: die Demo testen, die Dokumentation lesen, die Architekturmaterialien überprüfen, die Integrationsgeschichte bewerten. Das Ziel ist eine ehrliche Einschätzung, wo der Wettbewerber stark ist, wo er schwach ist, und welche Behauptungen er aufstellt, die technischer Prüfung nicht standhalten.</p>
+          <p class="term-body">Der Competitive Teardown ist eines der Artefakte, die KI-Tools am direktesten beeinflusst haben. Erste Wettbewerbszusammenfassungen, die früher einen ganzen Nachmittag erforderten, haben jetzt einen Arbeitsentwurf in unter einer Stunde. Die Kompression ist real und netto positiv. Was KI nicht produzieren kann, ist das redaktionelle Urteilsvermögen, das entscheidet, welche architektonische Schwäche in einem bestimmten Deal, gegen einen bestimmten Wettbewerber, mit den spezifischen Bedenken eines bestimmten Käufers auf dem Tisch, vorangestellt wird. Dieses Urteilsvermögen erfordert die Kenntnis des Kontexts des Käufers, und dieser Kontext steht nicht in den Trainingsdaten.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Teardown vs. Battlecard.</strong> Ein Teardown ist die Analyse. Eine Battlecard ist das feldfertige Ergebnis, das aus dieser Analyse abgeleitet wird. Der Teardown ist intern; die Battlecard ist das Artefakt, das der SC in einem laufenden Deal nutzt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#battlecard">Battlecard</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#competitive-engagement">Competitive engagement</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-marketer">
+          <div class="term-head"><span class="term-name">Technical marketer</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Ein Praktiker, der die technische Beweis- und Narrativebene besitzt, die einen komplexen Verkauf unterstützt: die Demos, die Reference Environments, die Wettbewerbsmaterialien, die analystenorientierten Inhalte und die technischen Inhalte, die die Distanz zwischen Produktfähigkeit und Käuferüberzeugung schließen.</p>
+          <p class="term-body">Der Technical Marketer sitzt zwischen Engineering und Feld und übersetzt Produktrealität in Marktsprache und Marktrealität in Produktsignal. Seine Ergebnisse sind Umgebungen, Rahmenwerke und Materialien, die andere nutzen, um Deals zu führen, Analysten zu beeinflussen und Kategorieposition zu etablieren. Für die vollständige Definition der Rolle siehe <a href="/de/the-technical-marketer">The Technical Marketer</a>.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-champion">
+          <div class="term-head"><span class="term-name">Technical champion</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Eine technisch glaubwürdige Person innerhalb einer Käuferorganisation, die das Produkt des Anbieters evaluiert hat, zu einer Schlussfolgerung über dessen Fähigkeiten gekommen ist und bereit ist, diese Schlussfolgerung gegenüber technischen Kollegen und der Geschäftsführung zu verteidigen, während die Evaluierung auf eine Kaufentscheidung zusteuert.</p>
+          <p class="term-body">Der Technical Champion ist das Käuferseiten-Gegenstück zum Sales Engineer. Während der SE das technische Argument des Anbieters in den Deal trägt, trägt der Technical Champion es intern, in Gesprächen, an denen der Anbieter nicht teilnehmen kann. Der Principal Engineer eines Buying Committee, der die Architektur validiert hat, oder ein IT-Architekt, der den Proof of Concept durchgeführt hat, wird zum Technical Champion, wenn er von der Evaluierung zur Fürsprache übergeht.</p>
+          <p class="term-body">Das Technische Marketing baut für den Technical Champion, selbst wenn der Technical Champion nicht im Raum ist. Eine gut aufgebaute Reference Architecture, ein klares Proof-of-Concept-Rahmenwerk, ein Competitive Teardown, der den etablierten Anbieter benennt und seine Einschränkungen ehrlich erklärt: Dies sind die Artefakte, die ein Technical Champion zitiert, wenn er die Kaufempfehlung gegenüber einem skeptischen CFO oder einem vorsichtigen Sicherheitsteam verteidigt.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#champion">Champion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-narrative">
+          <div class="term-head"><span class="term-name">Technical narrative</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Der maßgebliche, intern konsistente Bericht darüber, was ein Produkt tut, wie es das tut, warum das wichtig ist und was es von Alternativen unterscheidet, gepflegt vom Technischen Marketing als die Quelle der Wahrheit, aus der alle feldorientierten technischen Inhalte abgeleitet werden.</p>
+          <p class="term-body">Ein Technical Narrative ist kein Pitch Deck. Es ist die zugrunde liegende Struktur, aus der Pitch Decks, Analystenmaterialien, Demo-Skripte, Wettbewerbs-Battlecards und Reference Architectures alle abgeleitet werden. Wenn verschiedene Mitglieder des Feldteams das Produkt unterschiedlichen Käufern gegenüber unterschiedlich beschreiben, ist das Technical Narrative fragmentiert. Es wiederherzustellen ist eine primäre Aufgabe des Technischen Marketings.</p>
+          <p class="term-body">Das Technical Narrative hat einen spezifischen Fehlermodus bei Unternehmen mit sich schnell verändernden Produkten: Es wird einmal während eines Launch-Zyklus geschrieben und nie aktualisiert, während sich das Produkt weiterentwickelt. Ein Narrativ, das vor achtzehn Monaten korrekt war und nicht gepflegt wurde, wird zu einer Belastung: Das Feld macht Behauptungen, die das aktuelle Produkt nicht stützt, und die Trust Gap öffnet sich zwischen dem, was versprochen wurde, und dem, was Käufer in der Produktion vorfinden.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Technical Narrative vs. Messaging.</strong> Messaging ist die Sprache, die das Marketingteam in kommerzieller Kommunikation verwendet: kurz, zielgruppenspezifisch, auf Resonanz ausgelegt. Das Technical Narrative ist die tiefere Struktur unter dem Messaging: genau, detailliert, unter technischer Befragung vertretbar. Messaging wird aus dem Technical Narrative abgeleitet, nicht umgekehrt.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#architecture-overview">Architecture overview</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#trust-layer">Trust layer</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="technical-win">
+          <div class="term-head"><span class="term-name">Technical win</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Der Punkt in einem Vertriebszyklus, an dem die technischen Bewerter auf Käuferseite zu dem Schluss gekommen sind, dass das Produkt in der Lage ist, das zu leisten, was der Anbieter behauptet hat, und diese Schlussfolgerung dokumentiert und dem Economic Buyer mitgeteilt wird.</p>
+          <p class="term-body">In der Praxis sind viele Technical Wins undokumentierte Handschläge. Der Standard, den die Disziplin hält, ist höher: Ein Technical Win ist ein dokumentierter Zustandswechsel, schriftlich vom technischen Bewerter bestätigt und dem Economic Buyer mitgeteilt. Ohne diese Dokumentation ist das, was sich wie ein Technical Win anfühlt, ein Gefühl, und Gefühle überleben die Beschaffung nicht. Das Technische Marketing ist dafür verantwortlich, die Bedingungen zu schaffen, die einen echten Technical Win hervorbringen, und sicherzustellen, dass das Ergebnis festgehalten wird.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Technical Win vs. Business Win.</strong> Ein Technical Win löst die Frage der Fähigkeit. Der Business Win löst die Frage von Wert, Priorität und Timing. Deals sterben zwischen dem Technical Win und dem Business Win, wenn der technische Erfolg nie in eine Geschäftssprache übersetzt wurde, nach der der Economic Buyer handeln konnte.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-value">Proof of value</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="time-to-decision">
+          <div class="term-head"><span class="term-name">Time to decision</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Die verstrichene Zeit von der ersten substanziellen technischen Evaluierungsaktivität bis zur Kaufentscheidung des Käufers, verwendet als Maß dafür, wie effizient die technischen Marketinginhalte eines Anbieters einem Käufer ermöglichen, zu einer sicheren Schlussfolgerung zu gelangen.</p>
+          <p class="term-body">Time to Decision ist ein Maß für Evaluierungsreibung. Eine lange Time to Decision ist nicht immer die Schuld des Anbieters: Komplexe Unternehmenskäufe beinhalten Beschaffungsprozesse, Rechtsprüfungen und Budgetzyklen, die das Technische Marketing nicht beschleunigen kann. Aber eine lange Time to Decision, verursacht dadurch, dass das technische Team des Käufers zusätzliche Beweise, zusätzliche Demonstrationen oder zusätzliche Proof-of-Concept-Aktivitäten benötigt, weist darauf hin, dass die bestehenden technischen Inhalte nicht das Vertrauen erzeugt haben, das für eine Entscheidung in der erwarteten Phase erforderlich ist.</p>
+          <p class="term-body">Die Verkürzung der Time to Decision ist eines der praktischen Ziele des Technischen Marketings. Ein Proof-Point-Bestand, der die Fragen des Sicherheitsteams antizipiert, verkürzt die Sicherheitsprüfung. Ein gut abgegrenztes POC-Rahmenwerk mit definierten Erfolgskriterien verkürzt die Evaluierungsphase. Eine Reference Architecture, die Integrationsfragen beantwortet, bevor sie gestellt werden, verkürzt die Architekturprüfung.</p>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#evaluation-conversion">Evaluation conversion</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-win">Technical win</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#proof-of-concept">Proof of concept</a>
+          </div>
+        </div>
+
+        <div class="term-entry" id="trust-layer">
+          <div class="term-head"><span class="term-name">Trust layer</span><span class="term-pos">noun</span></div>
+          <p class="term-definition">Das Band technischer Tiefe in einer Vertriebsinteraktion: Demos, Architekturmaterialien, Wettbewerbspositionierung, Proof Points, das einem technisch versierten Käufer genug Beweise gibt, um den Aussagen des Produkts zu vertrauen, ohne eine vollständige Evaluierung auf Ingenieursebene zu erfordern.</p>
+          <p class="term-body">Das Konzept der Trust Layer beschreibt, worauf das Technische Marketing kalibriert ist zu produzieren. Auf der einen Seite des Bandes steht reiner kommerzieller Inhalt: poliert, emotional ansprechend, aber ohne Fläche, an der ein Buying Committee eine Aussage prüfen könnte. Er fühlt etwas. Er beweist nichts. Auf der anderen Seite steht reine technische Tiefe: Architekturdiagramme, Zugriff auf den Quellcode, interne Dokumentation. Sie lehrt alles und entscheidet nichts. Sie ist eine Schulungsmaßnahme, keine Vertriebsunterstützungsfunktion.</p>
+          <p class="term-body">Das Technische Marketing besetzt das Band dazwischen bewusst. Genug Tiefe, um zu vertrauen. Nicht so viel, dass es zu einer Trainingsübung wird. Der Sales Engineer und der Solutions Consultant führen das Gespräch den Rest des Weges, ausgestattet mit den Materialien, die das Technische Marketing gebaut hat. Die Kalibrierung ist das redaktionelle Urteilsvermögen im Zentrum der Disziplin.</p>
+          <div class="term-distinctions">
+            <span class="term-distinctions-label">Distinctions</span>
+            <p><strong>Trust Layer vs. Trust Gap.</strong> Die Trust Layer sind die Beweise, die ein Anbieter produziert, um das Vertrauen des Käufers zu stützen. Die Trust Gap ist die Distanz zwischen der Akzeptanz einer Fähigkeit durch einen Käufer und seinem Vertrauen darin, am sichtbarsten bei Unternehmens-KI-Bereitstellungen, wo die Akzeptanz dem Vertrauen in die Modellzuverlässigkeit vorausgeeilt ist. Die Aufgabe des Technischen Marketings ist es, die Trust Gap zu schließen, indem es die Trust Layer baut.</p>
+          </div>
+          <div class="term-see-also">
+            <span class="term-see-also-label">See also</span>
+            <a href="#sales-engineer">Sales engineer / Solutions consultant</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#demo-coherence">Demo coherence</a>
+            <span class="term-see-also-sep">&middot;</span>
+            <a href="#technical-narrative">Technical narrative</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="cite-card" id="cite" aria-labelledby="cite-title-glossary">
+        <div class="cite-card__header">
+          <span class="cite-card__kicker">Citation</span>
+          <p class="cite-card__title" id="cite-title-glossary">So zitieren Sie dieses Glossar.</p>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">APA</span>
+          <div class="cite-text" id="cite-ref-apa">Technical Marketing. (2026). <em>Glossary of technical marketing.</em> <a href="https://technicalmarketing.org/glossary">https://technicalmarketing.org/glossary</a></div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-apa', this)" aria-label="APA-Zitat kopieren">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Kopieren</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">MLA</span>
+          <div class="cite-text" id="cite-ref-mla">"Glossary of Technical Marketing." <em>Technical Marketing</em>, vol. I, 2026, <a href="https://technicalmarketing.org/glossary">technicalmarketing.org/glossary</a>.</div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-mla', this)" aria-label="MLA-Zitat kopieren">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Kopieren</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">Chicago</span>
+          <div class="cite-text" id="cite-ref-chicago">"Glossary of Technical Marketing." <em>Technical Marketing</em> I (2026). <a href="https://technicalmarketing.org/glossary">https://technicalmarketing.org/glossary</a>.</div>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-chicago', this)" aria-label="Chicago-Zitat kopieren">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Kopieren</span>
+          </button>
+        </div>
+
+        <div class="cite-row">
+          <span class="cite-label">BibTeX</span>
+          <pre class="cite-text cite-text--code" id="cite-ref-bibtex">@misc{technicalmarketing2026glossary,
+  author    = {{Technical Marketing}},
+  title     = {Glossary of Technical Marketing},
+  year      = {2026},
+  publisher = {Technical Marketing},
+  url       = {https://technicalmarketing.org/glossary},
+  note      = {Working reference, continuously updated}
+}</pre>
+          <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-bibtex', this)" aria-label="BibTeX-Zitat kopieren">
+            <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+            <span class="cite-copy-text">Kopieren</span>
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+    <aside class="glossary-aside" aria-label="Alphabetisches Register">
+      <nav class="alpha-index" aria-label="Zum Buchstaben springen">
+        <span class="alpha-index-label">Index</span>
+        <div class="alpha-index-grid">
+          <a href="#letter-A" class="active">A</a>
+          <a href="#letter-B" class="active">B</a>
+          <a href="#letter-C" class="active">C</a>
+          <a href="#letter-D" class="active">D</a>
+          <a href="#letter-E" class="active">E</a>
+          <a href="#letter-F" class="active">F</a>
+          <a href="#letter-G" class="active">G</a>
+          <a href="#letter-H" class="empty">H</a>
+          <a href="#letter-I" class="active">I</a>
+          <a href="#letter-J" class="empty">J</a>
+          <a href="#letter-K" class="empty">K</a>
+          <a href="#letter-L" class="empty">L</a>
+          <a href="#letter-M" class="active">M</a>
+          <a href="#letter-N" class="empty">N</a>
+          <a href="#letter-O" class="empty">O</a>
+          <a href="#letter-P" class="active">P</a>
+          <a href="#letter-Q" class="empty">Q</a>
+          <a href="#letter-R" class="active">R</a>
+          <a href="#letter-S" class="active">S</a>
+          <a href="#letter-T" class="active">T</a>
+          <a href="#letter-U" class="empty">U</a>
+          <a href="#letter-V" class="empty">V</a>
+          <a href="#letter-W" class="empty">W</a>
+          <a href="#letter-X" class="empty">X</a>
+          <a href="#letter-Y" class="empty">Y</a>
+          <a href="#letter-Z" class="empty">Z</a>
+        </div>
+      </nav>
+    </aside>
+  </div>
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true"><span class="colophon__diamond"></span></div>
+    <div class="colophon__grid">
+      <span class="colophon__label">Editorial</span>
+      <span class="colophon__value">Ein Praxishandbuch für die Disziplin. Herausgegeben und kuratiert von Chad Corriveau.</span>
+      <span class="colophon__label">Type</span>
+      <span class="colophon__value">Gesetzt in Fraunces, Roboto Slab und Inter. Gestaltet in Weizen und Bibliotheksrot.</span>
+      <span class="colophon__label">Charter</span>
+      <span class="colophon__value">Indizierte Einträge werden anhand der redaktionellen Charter-Kriterien überprüft: Primärquellen, Praxisrelevanz und Abwesenheit von Anbieterwerbung. ThinkRoot LLC stellt die Publikationsinfrastruktur und administrative Unterstützung bereit.</span>
+      <span class="colophon__label">Contact</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/de/about" class="colophon__nav-link">Über uns</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/de/contributors" class="colophon__nav-link">Mitwirkende</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/de/glossary" class="colophon__nav-link" aria-current="page">Glossar</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/de/landscape" class="colophon__nav-link">Marktübersicht</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/de/suggest" class="colophon__nav-link">Vorschlagen</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+function copyCitation(targetId, btn) {
+  var el = document.getElementById(targetId);
+  if (!el || !btn) return;
+  var text = el.innerText.trim();
+  function showCopied() {
+    btn.classList.add('is-copied');
+    var txt = btn.querySelector('.cite-copy-text');
+    var icon = btn.querySelector('.cite-copy-icon');
+    if (txt) txt.textContent = 'Kopiert';
+    if (icon) icon.innerHTML = '&#10003;';
+    setTimeout(function () {
+      btn.classList.remove('is-copied');
+      if (txt) txt.textContent = 'Kopieren';
+      if (icon) icon.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(function () {
+      fallbackCopyCitation(text, showCopied);
+    });
+  } else {
+    fallbackCopyCitation(text, showCopied);
+  }
+}
+function fallbackCopyCitation(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch (e) {}
+  document.body.removeChild(ta);
+}
+</script>
+</body>
+</html>

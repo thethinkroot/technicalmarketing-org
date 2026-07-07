@@ -213,3 +213,35 @@
 @media (min-width: 769px) {
   .toc-mobile { display: none; }
 }
+
+/* =======================================================================
+   LANGUAGE SWITCHER
+   Sits directly under the masthead's primary nav on every page (all 5
+   locales). Deliberately quieter than .masthead__nav (smaller, ink-40)
+   so it reads as metadata rather than competing with primary navigation.
+   ======================================================================= */
+.masthead__langs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0 0 0.875rem;
+}
+.masthead__lang-link {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-40);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a.masthead__lang-link:hover { color: var(--ink); }
+.masthead__lang-link[aria-current="true"] { color: var(--red); font-weight: 700; }
+.masthead__lang-sep { color: var(--ink-40); font-size: 0.625rem; }
+@media (max-width: 600px) {
+  .masthead__langs { gap: 0.35rem; }
+  .masthead__lang-link, .masthead__lang-sep { font-size: 0.5625rem; letter-spacing: 0.1em; }
+}
