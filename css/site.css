@@ -217,15 +217,16 @@
 /* =======================================================================
    LANGUAGE SWITCHER
    A thin utility line at the very bottom of the masthead, right-aligned,
-   sitting just above the closing masthead rule — reads like the ANNO/ISSN
-   furniture meta text, not like a second nav row. No border of its own.
+   sitting just below the closing masthead rule, tight against it — reads
+   like the ANNO/ISSN furniture meta text, not like a second nav row.
+   No border of its own.
    ======================================================================= */
 .masthead__langs {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 14px;
+  padding-top: 6px;
 }
 .masthead__lang-link {
   font-family: var(--f-sans);
