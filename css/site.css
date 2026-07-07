@@ -216,32 +216,34 @@
 
 /* =======================================================================
    LANGUAGE SWITCHER
-   Sits directly under the masthead's primary nav on every page (all 5
-   locales). Deliberately quieter than .masthead__nav (smaller, ink-40)
-   so it reads as metadata rather than competing with primary navigation.
+   A thin utility line at the very bottom of the masthead, right-aligned,
+   sitting just above the closing masthead rule — reads like the ANNO/ISSN
+   furniture meta text, not like a second nav row. No border of its own.
    ======================================================================= */
 .masthead__langs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  padding: 0 0 0.875rem;
+  padding-top: 14px;
 }
 .masthead__lang-link {
   font-family: var(--f-sans);
-  font-size: 0.625rem;
+  font-size: 11px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink-40);
+  color: #8a8272;
   font-weight: 500;
   text-decoration: none;
   transition: color 0.15s;
 }
 a.masthead__lang-link:hover { color: var(--ink); }
-.masthead__lang-link[aria-current="true"] { color: var(--red); font-weight: 700; }
-.masthead__lang-sep { color: var(--ink-40); font-size: 0.625rem; }
+.masthead__lang-link[aria-current="true"] { color: #a33629; font-weight: 700; }
+.masthead__lang-sep {
+  color: #8a8272;
+  font-size: 11px;
+  padding: 0 0.35em;
+}
 @media (max-width: 600px) {
-  .masthead__langs { gap: 0.35rem; }
-  .masthead__lang-link, .masthead__lang-sep { font-size: 0.5625rem; letter-spacing: 0.1em; }
+  .masthead__lang-link, .masthead__lang-sep { font-size: 10px; letter-spacing: 0.1em; }
 }
