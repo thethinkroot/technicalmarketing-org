@@ -1,0 +1,1913 @@
+<!DOCTYPE html>
+<html lang="ja" data-allow-dark>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>テクニカルマーケティング vs プロダクトマーケティング：その違い &middot; Technical Marketing</title>
+<meta name="description" content="プロダクトマーケティングは会社が何を語るかを決める。テクニカルマーケティングは会社が何を証明できるかを決める。両者の境界線、それぞれの役割、そしてAI時代がなぜその線をより鮮明にしたのかを解説する実務リファレンス。">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/technical-marketing-vs-product-marketing" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/technical-marketing-vs-product-marketing" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/technical-marketing-vs-product-marketing" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/technical-marketing-vs-product-marketing" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/technical-marketing-vs-product-marketing" />
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="テクニカルマーケティング vs プロダクトマーケティング：その違い &middot; Technical Marketing">
+<meta property="og:description" content="プロダクトマーケティングは会社が何を語るかを決める。テクニカルマーケティングは会社が何を証明できるかを決める。両者の境界線、それぞれの役割、そしてAI時代がなぜその線をより鮮明にしたのかを解説する実務リファレンス。">
+<meta property="og:url" content="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing">
+<meta property="og:image" content="https://technicalmarketing.org/og-image-reference-tmm-pmm.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-06-12T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-06-12T00:00:00+00:00">
+<meta property="article:author" content="https://technicalmarketing.org/about">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="テクニカルマーケティング vs プロダクトマーケティング：その違い &middot; Technical Marketing">
+<meta name="twitter:description" content="プロダクトマーケティングは会社が何を語るかを決める。テクニカルマーケティングは会社が何を証明できるかを決める。両者の境界線、それぞれの役割、そしてAI時代がなぜその線をより鮮明にしたのかを解説する実務リファレンス。">
+<meta name="twitter:image" content="https://technicalmarketing.org/og-image-reference-tmm-pmm.png">
+<meta name="twitter:site" content="@thethinkroot">
+
+
+
+<meta name="citation_title" content="Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning">
+<meta name="citation_author" content="Corriveau, Chad">
+<meta name="citation_journal_title" content="Technical Marketing">
+<meta name="citation_publication_date" content="2026/06/12">
+<meta name="citation_public_url" content="https://technicalmarketing.org/technical-marketing-vs-product-marketing">
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"技術的に複雑な主張を、技術に精通した購買者に対して、商業的な成果を懸けて証明する実践――テクニカルマーケティングという分野のための、独立系季刊誌であり実務リファレンス。","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"knowsAbout":["Technical Marketing","Demo Strategy","Enterprise Software Marketing","Sales Engineering","Product Marketing","Technical Product Marketing","AI in Enterprise Software","Demo Coherence"],"hasOccupation":{"@type":"Occupation","name":"Technical Marketing Manager","occupationLocation":{"@type":"Country","name":"United States"}}},{"@type":"Article","@id":"https://technicalmarketing.org/technical-marketing-vs-product-marketing#article","headline":"テクニカルマーケティング vs プロダクトマーケティング：証明とポジショニングの境界線","alternativeHeadline":"テクニカルマーケティングとプロダクトマーケティングの違い","description":"プロダクトマーケティングは会社が何を語るかを担う：ポジショニング、メッセージング、セグメンテーション、ローンチ。テクニカルマーケティングは会社が何を証明できるかを担う：デモンストレーション、リファレンスアーキテクチャ、ベンチマーク、そして懐疑的な評価者の前に示す技術的証拠。両者の境界線についての実務リファレンス。","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-06-12","dateModified":"2026-06-12","url":"https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing","mainEntityOfPage":"https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing","wordCount":1150,"articleSection":"Reference","image":{"@type":"ImageObject","url":"https://technicalmarketing.org/og-image-reference-tmm-pmm.png","width":1200,"height":630},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#answer","#boundary"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"テクニカルマーケティングとプロダクトマーケティングの違いは何か？","acceptedAnswer":{"@type":"Answer","text":"その違いは、証明とポジショニングの違いである。プロダクトマーケティングは会社が製品について何を語るかを担う：ポジショニング、メッセージング、セグメンテーション、ローンチ。テクニカルマーケティングは会社が何を証明できるかを担う：デモンストレーション、リファレンスアーキテクチャ、ベンチマーク、そして購買者の最も懐疑的な評価者の前に示す技術的証拠。一方の機能はある主張をする価値があるかを決め、もう一方はそれが技術的な読者との接触に耐えられるかを決める。"}},{"@type":"Question","name":"テクニカルマーケティングはプロダクトマーケティングの一部か？","acceptedAnswer":{"@type":"Answer","text":"組織によって、テクニカルマーケティングはプロダクトマーケティングの傘下に入ることもあれば、プロダクトやエンジニアリングの傘下に入ることもあり、最大手のエンタープライズソフトウェア企業では対等な機能として運用されることもある。分類上、両者は別のものである：米国労働省はTechnical Marketing Engineerを職業分類41-9031.00のもとでSales Engineerと並んで分類しており、マーケティング職としては分類していない。報告ラインがどうであるかよりも、境界線そのものの方が重要である。証明を担う機能は、どこに報告するにせよ、ある主張が裏付けられないと言える権限を持たなければならない。"}},{"@type":"Question","name":"企業はテクニカルマーケターとプロダクトマーケターのどちらを先に採用すべきか？","acceptedAnswer":{"@type":"Answer","text":"順序は購買者に従う。購買者が購入前に実際に手を動かして評価する企業――デベロッパーツール、インフラストラクチャー、セキュリティ、エンタープライズプラットフォームなどがこれに当たる――では、ポジショニングが機能する前に証明の機能が必要になる傾向がある。アウトカムのナラティブでビジネス購買者に売る企業では、ポジショニングを先に必要とする傾向がある。小規模企業では、評価のボリュームが分割を迫るまで、一人が両方の機能を担うことが多い。"}},{"@type":"Question","name":"同じ人物がテクニカルマーケティングとプロダクトマーケティングの両方を担えるか？","acceptedAnswer":{"@type":"Answer","text":"できるし、アーリーステージの企業では通常一人がその両方を担っている。この兼務の役割のリスクは構造的なものだ：主張を生み出す当人が、その主張を拒否する権限も持ってしまい、商業的な圧力の下ではその拒否権が弱まる。製品の評価負荷が高まるにつれて、証明が独立した声を保てるよう、両機能は分離していく。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"テクニカルマーケティング vs プロダクトマーケティング","item":"https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing"}]}]}</script>
+
+<style>
+
+:root {
+  --paper: #EFE6C9;
+  --paper-shade: #E5D9B4;
+  --paper-light: #F5EED8;
+  --ink: #1C1812;
+  --ink-60: #5C4E3C;
+  --ink-40: #8B7D69;
+  --border: rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red: #A7352A;
+  --red-soft: #B85146;
+  --yellow: #EACF82;
+
+  --f-display: 'Roboto Slab', 'Georgia', serif;
+  --f-serif: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --f-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --measure: 64ch;
+  --layout-max: 1100px;
+  --reading-max: 720px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+*::selection { background: var(--yellow); color: var(--ink); }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--f-serif);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.62;
+  /* Subtle paper texture via dot grid */
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px);
+  background-size: 14px 14px;
+  background-attachment: fixed;
+}
+
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  padding: 0.5rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  z-index: 200;
+  font-family: var(--f-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.skip-link:focus { left: 1rem; top: 1rem; }
+
+.layout {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+@media (max-width: 600px) {
+  .layout { padding: 0 1.25rem; }
+  body { background-size: 12px 12px; }
+}
+
+/* ── Masthead band: top frontispiece on every page ───────────────────── */
+.masthead {
+  border-top: 2px solid var(--ink);
+  padding-top: 0.875rem;
+  margin-bottom: 0;
+  position: relative;
+}
+
+.masthead__furniture {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+
+.masthead__furniture-right {
+  text-align: right;
+  line-height: 1.5;
+}
+
+.masthead__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  margin: 0;
+}
+
+.masthead__title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  padding: 1.25rem 0 1rem;
+  position: relative;
+}
+
+.masthead__title {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.75rem, 5.5vw, 3.25rem);
+  letter-spacing: 0.04em;
+  color: var(--ink);
+  line-height: 1;
+  text-decoration: none;
+  display: inline-block;
+}
+a.masthead__title:hover { color: var(--red); }
+
+.masthead__subtitle-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0 0.875rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.masthead__subtitle {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 400;
+}
+
+.masthead__url {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+
+/* Primary navigation row sits below the subtitle, also separated by a rule */
+.masthead__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 1.875rem;
+  padding: 0.75rem 0 0.875rem;
+}
+
+.masthead__nav-link {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+
+@media (max-width: 600px) {
+  .masthead__furniture { font-size: 0.625rem; letter-spacing: 0.14em; }
+  .masthead__furniture-right { line-height: 1.4; }
+  .masthead__title-row { padding: 0.875rem 0 0.5rem; }
+  .masthead__subtitle-row { padding: 0.5rem 0 0.75rem; }
+  .masthead__subtitle { font-size: 0.9375rem; }
+  .masthead__url { font-size: 0.625rem; letter-spacing: 0.16em; }
+  .masthead__nav { gap: 0 1.25rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; }
+}
+
+/* ── Folio footer: closing furniture on every page ──────────────────── */
+.folio-band {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+
+.folio-band__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.folio-band__left {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.14em;
+  color: var(--red);
+  text-transform: uppercase;
+}
+
+.folio-band__center {
+  color: var(--ink);
+  font-size: 0.9375rem;
+  text-align: center;
+}
+
+.folio-band__right {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  text-align: right;
+}
+
+.folio-band__rule + .folio-band__rule { margin-top: 4px; }
+
+@media (max-width: 600px) {
+  .folio-band__inner {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right" "center center";
+    gap: 0.5rem 1rem;
+  }
+  .folio-band__left { grid-area: left; }
+  .folio-band__right { grid-area: right; }
+  .folio-band__center { grid-area: center; margin-top: 0.25rem; }
+  }
+
+/* ── Article cover: field-manual title page ─────────────────────────── */
+.cover {
+  padding: 3rem 0 2.75rem;
+  border-bottom: 0.5px solid var(--border);
+  text-align: left;
+  position: relative;
+}
+
+.cover__article-kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.cover__article-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3.5vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.cover__rule {
+  border: none;
+  border-top: 0.5px solid var(--border-strong);
+  width: 180px;
+  margin: 0 0 2.5rem;
+}
+
+.cover__display-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 2.5rem;
+}
+
+.cover__display {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(3.25rem, 11vw, 7rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  position: relative;
+  display: inline-block;
+  padding: 0 0.25em;
+}
+
+.cover__display::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0.08em;
+  height: 0.32em;
+  background: var(--yellow);
+  z-index: -1;
+}
+
+.cover__secondary {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+  max-width: 22ch;
+}
+
+.cover__deck {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
+  font-weight: 400;
+  color: var(--ink-60);
+  line-height: 1.5;
+  max-width: 44ch;
+  margin-bottom: 2rem;
+}
+
+.cover__byline {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.cover__byline strong { color: var(--ink); font-weight: 500; }
+.cover__byline strong a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.cover__byline strong a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.cover__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+}
+.cover__ornament-rule {
+  flex: 0 0 80px;
+  height: 0.5px;
+  background: var(--border-strong);
+}
+.cover__ornament-diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .cover { padding: 2rem 0 2rem; }
+  .cover__rule { width: 120px; margin-bottom: 1.75rem; }
+  .cover__display-wrap { margin: 1.5rem 0 2rem; justify-content: flex-start; }
+  .cover__display::before { height: 0.3em; bottom: 0.1em; }
+  .cover__secondary { font-size: 1.5rem; line-height: 1.18; }
+  .cover__deck { font-size: 1.0625rem; }
+  .cover__byline { font-size: 0.625rem; letter-spacing: 0.14em; margin-bottom: 1.75rem; }
+  .cover__ornament-rule { flex-basis: 50px; }
+}
+
+/* ── Article body in field-manual register ──────────────────────────── */
+.article-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding: 2.5rem 0 0;
+}
+@media (min-width: 960px) {
+  .article-layout {
+    grid-template-columns: 1fr 220px;
+    gap: 4rem;
+  }
+}
+
+.article-main { max-width: var(--reading-max); }
+
+.article-aside { position: relative; }
+@media (min-width: 960px) {
+  .article-aside {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    height: fit-content;
+  }
+}
+
+/* TOC */
+.toc {
+  border-top: 0.5px solid var(--border-strong);
+  padding-top: 1.125rem;
+}
+.toc-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.toc-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.toc-list a {
+  font-family: var(--f-sans);
+  font-size: 0.8125rem;
+  color: var(--ink-60);
+  font-weight: 400;
+  line-height: 1.45;
+  display: block;
+  transition: color 0.15s ease;
+}
+.toc-list a:hover { color: var(--red); }
+.toc-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-40);
+  display: inline-block;
+  width: 1.5rem;
+  font-weight: 500;
+}
+
+/* Mobile: promote TOC to top of article as compact 2-column grid */
+@media (max-width: 959px) {
+  .article-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .article-main { order: 2; }
+  .article-aside {
+    order: 1;
+    padding-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.5px solid var(--border);
+  }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1.25rem;
+  }
+  .article-aside .toc-list a { font-size: 0.8125rem; padding: 0.125rem 0; }
+  .article-aside .toc-num { width: 1.5rem; }
+}
+
+/* Sections */
+.section {
+  margin-bottom: 3.25rem;
+  scroll-margin-top: 1.5rem;
+}
+.section-num {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.section h2 {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.18;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 1.625rem;
+  max-width: 22ch;
+}
+.section h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 2rem;
+  margin-bottom: 0.875rem;
+}
+.section p {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 1.125rem;
+  max-width: var(--measure);
+}
+.section p a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.section sup {
+  font-size: 0.72em;
+  vertical-align: super;
+  color: var(--red);
+  font-weight: 500;
+  margin-left: 0.05em;
+}
+
+/* Inline italic + emphasis */
+.section em, .section i { font-style: italic; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* Pull quotes: center diamond, italic */
+.pullquote {
+  margin: 2.75rem auto;
+  padding: 1.25rem 0;
+  text-align: center;
+  position: relative;
+}
+.pullquote::before,
+.pullquote::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 0.5px;
+  background: var(--border-strong);
+  margin: 0 auto;
+}
+.pullquote::before { margin-bottom: 1.125rem; }
+.pullquote::after { margin-top: 1.125rem; }
+.pullquote p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: clamp(1.1875rem, 2vw, 1.4375rem);
+  line-height: 1.4;
+  color: var(--ink);
+  font-weight: 400;
+  max-width: 36ch;
+  margin: 0 auto !important;
+}
+.pullquote::before {
+  background: linear-gradient(to right, transparent, var(--border-strong) 30%, var(--border-strong) 70%, transparent);
+  position: relative;
+}
+/* Diamond at top of pullquote */
+.pullquote {
+  background-image:
+    radial-gradient(circle, var(--red) 3.5px, transparent 4px);
+  background-repeat: no-repeat;
+  background-position: center 19px;
+  background-size: 7px 7px;
+}
+
+/* Labeled lists (workstreams, qualifications, etc.) */
+.labeled-list { margin: 1.5rem 0 1.75rem; }
+.labeled-item {
+  margin-bottom: 1.5rem;
+  max-width: var(--measure);
+  padding-left: 0.875rem;
+  border-left: 2px solid var(--red);
+}
+.labeled-item:last-child { margin-bottom: 0; }
+.labeled-item__label {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.375rem;
+}
+.labeled-item__body {
+  font-family: var(--f-serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+
+/* Diagrams */
+.diagram {
+  margin: 2.5rem 0 2.5rem;
+  padding: 1.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border);
+}
+.diagram svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.diagram-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1.125rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 56ch;
+  line-height: 1.5;
+}
+.diagram-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Diagrams: SVG content uses ink + red on mobile-friendly scroll */
+.diagram svg rect[fill="#fafaf7"] { fill: var(--paper-light); }
+.diagram svg text[fill="#1a1a1a"] { fill: var(--ink); }
+.diagram svg text[fill="#5a5a5a"] { fill: var(--ink-60); }
+.diagram svg text[fill="#8a8a85"] { fill: var(--ink-40); }
+.diagram svg line[stroke="#1a1a1a"], .diagram svg path[stroke="#1a1a1a"] { stroke: var(--ink); }
+.diagram svg circle[fill="#1a1a1a"] { fill: var(--ink); }
+
+/* Mobile: diagrams scroll horizontally rather than shrink illegibly */
+@media (max-width: 720px) {
+  .diagram {
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem;
+    margin-left: -1.25rem;
+    margin-right: -1.25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+  .diagram > div[role="img"] { min-width: 580px; }
+  .diagram svg { min-width: 580px; max-width: none; }
+  .diagram-caption {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    font-size: 0.875rem;
+  }
+  .diagram::after {
+    content: "Swipe to view full diagram \2192";
+    display: block;
+    font-family: var(--f-sans);
+    font-size: 0.625rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-40);
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* Figures (photographic plates) */
+.figure { margin: 2.5rem 0 2.75rem; }
+.figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 0.5px solid var(--border-strong);
+  filter: sepia(0.08) saturate(0.95);
+}
+.figure-caption {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 1rem;
+  padding-top: 0.875rem;
+  border-top: 0.5px solid var(--border);
+  max-width: 60ch;
+  line-height: 1.55;
+}
+.figure-caption strong {
+  color: var(--red);
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--f-display);
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.figure-caption .source {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8125rem;
+  color: var(--ink-40);
+}
+
+/* Scope note */
+.scope-note {
+  background: var(--paper-light);
+  border-left: 2px solid var(--red);
+  padding: 1.5rem 1.5rem 1.25rem;
+  margin: 0 0 2.5rem;
+}
+.scope-note h3 {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+  margin-top: 0;
+}
+.scope-note p {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--ink-60);
+  margin-bottom: 0.75rem;
+  max-width: none;
+}
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note strong { color: var(--ink); font-weight: 600; }
+
+/* Footnotes */
+
+
+      .footnotes {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 0.5px solid var(--border-strong);
+}
+.footnotes-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.875rem;
+  display: block;
+}
+.footnotes ol { list-style: none; counter-reset: footnotes; }
+.footnotes li {
+  counter-increment: footnotes;
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-60);
+  margin-bottom: 0.625rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+.footnotes li::before {
+  content: counter(footnotes);
+  position: absolute;
+  left: 0;
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: var(--red);
+  font-style: normal;
+  top: 0.1em;
+}
+.footnotes a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.footnotes a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* Editors note */
+.editors-note {
+  margin-top: 4rem;
+  padding: 2.25rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+}
+.editors-note::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.editors-note-label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+.editors-note p {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  margin-bottom: 0.875rem;
+  max-width: 58ch;
+}
+.editors-note p:last-child { margin-bottom: 0; }
+.editors-note p a {
+  font-style: normal;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.editors-note p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.editors-sig {
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  font-style: normal !important;
+  margin-top: 1.25rem;
+}
+
+/* Next article teaser */
+.next-article {
+  margin-top: 3.5rem;
+  padding: 2rem 0;
+  border-top: 0.5px solid var(--border-strong);
+}
+.next-article__label {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 0.625rem;
+  display: block;
+}
+.next-article__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.4375rem;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+  line-height: 1.3;
+  color: var(--ink);
+}
+.next-article__title .arrow {
+  color: var(--red);
+  transition: transform 0.15s ease;
+  display: inline-block;
+}
+.next-article a:hover .next-article__title { color: var(--red); }
+.next-article a:hover .arrow { transform: translateX(4px); }
+.next-article__meta {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .section { margin-bottom: 2.5rem; }
+  .section h2 { font-size: 1.5rem; }
+  .editors-note { padding: 1.625rem 1.375rem; }
+  .scope-note { padding: 1.25rem 1.125rem 1rem; }
+  .next-article__title { font-size: 1.1875rem; }
+}
+
+
+/* ────────────────────────────────────────────────────────────────────
+   ELITE MOBILE PASS : proportional contrast, identity preservation,
+   compositional vertical rhythm
+   ──────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 600px) {
+  /* Container breathing : slightly more inset for elegance */
+  .layout { padding: 0 1.5rem; }
+
+  /* ── Masthead holds identity at narrow widths ──────────────────── */
+  .masthead__title {
+    font-size: 1.5rem;
+    letter-spacing: 0.035em;
+    white-space: nowrap;
+  }
+  .masthead__title-row { padding: 0.75rem 0 0.5rem; }
+  .masthead__furniture { font-size: 0.5625rem; letter-spacing: 0.12em; }
+  .masthead__subtitle { font-size: 0.875rem; }
+  .masthead__url { font-size: 0.5625rem; letter-spacing: 0.14em; }
+  .masthead__nav { gap: 0 1rem; padding: 0.625rem 0 0.75rem; }
+  .masthead__nav-link { font-size: 0.5625rem; letter-spacing: 0.12em; }
+
+  /* ── Display words restore mobile contrast ─────────────────────── */
+  .cover { padding: 2.25rem 0 2rem; }
+  .cover__display { font-size: 4rem; line-height: 0.95; }
+  .cover__display::before { height: 0.3em; bottom: 0.08em; }
+  .cover__display-wrap { margin: 1.75rem 0 2.25rem; justify-content: flex-start; }
+  .cover__article-kicker { font-size: 0.8125rem; letter-spacing: 0.2em; }
+  .cover__article-title { font-size: 1.4375rem; }
+  .cover__secondary { font-size: 1.625rem; line-height: 1.15; }
+  .cover__deck { font-size: 1.0625rem; line-height: 1.5; margin-bottom: 1.75rem; }
+
+  /* ── Compositional vertical rhythm ─────────────────────────────── */
+  .section { margin-bottom: 3rem; scroll-margin-top: 1.25rem; }
+  .section + .section { margin-top: 0; }
+  .section h2 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1.375rem;
+    max-width: 100%;
+  }
+  .section h3 {
+    font-size: 1.1875rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .section p {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+    margin-bottom: 1rem;
+  }
+  .section-num {
+    font-size: 0.6875rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1rem;
+  }
+
+  /* Pull quotes get proportionally more air on mobile */
+  .pullquote {
+    margin: 2.75rem -0.5rem;
+    padding: 1.5rem 0;
+    background-position: center 22px;
+  }
+  .pullquote p {
+    font-size: 1.25rem;
+    line-height: 1.35;
+    max-width: 28ch;
+  }
+  .pullquote::before,
+  .pullquote::after {
+    width: 56px;
+  }
+
+  /* Labeled lists tighter on narrow */
+  .labeled-item {
+    padding-left: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .labeled-item__label { font-size: 1.0625rem; }
+  .labeled-item__body { font-size: 1rem; line-height: 1.55; }
+
+  /* Scope notes & editors notes */
+  .scope-note { padding: 1.25rem 1.125rem 1rem; margin-bottom: 2rem; }
+  .editors-note { padding: 1.5rem 1.25rem; }
+
+  /* Footnotes */
+  .footnotes { margin-top: 2.5rem; }
+  .footnotes li { font-size: 0.875rem; }
+
+  /* Article layout breathing on mobile */
+  .article-layout { padding: 1.75rem 0 0; gap: 1.25rem; }
+}
+
+/* ── Very narrow viewports (iPhone SE, older Androids) ─────────────── */
+@media (max-width: 400px) {
+  .layout { padding: 0 1.25rem; }
+  .masthead__title { font-size: 1.25rem; letter-spacing: 0.025em; }
+  .cover__display { font-size: 3.375rem; }
+  .cover__secondary { font-size: 1.4375rem; }
+  .section h2 { font-size: 1.4375rem; }
+  .pullquote p { font-size: 1.125rem; max-width: 24ch; }
+  .pullquote { margin: 2.25rem -0.25rem; }
+}
+
+
+/* ── Colophon : replaces the generic site-footer ────────────────── */
+.colophon {
+  margin-top: 0;
+  padding: 3rem 0 1.25rem;
+  background: transparent;
+  border-top: 0.5px solid var(--border-strong);
+}
+.colophon__inner {
+  max-width: var(--layout-max);
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+.colophon__ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.25rem;
+}
+.colophon__ornament::before,
+.colophon__ornament::after {
+  content: "";
+  height: 0.5px;
+  background: var(--border-strong);
+  flex: 0 0 60px;
+}
+.colophon__diamond {
+  width: 8px;
+  height: 8px;
+  background: var(--red);
+  transform: rotate(45deg);
+  display: inline-block;
+}
+.colophon__grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem 2rem;
+  max-width: 820px;
+  margin-bottom: 2.25rem;
+}
+.colophon__label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.22rem;
+}
+.colophon__value {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.colophon__value a {
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.colophon__value a:hover {
+  color: var(--red);
+  border-bottom-color: var(--red);
+}
+.colophon__bottom {
+  border-top: 0.5px solid var(--border);
+  padding-top: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.colophon__meta {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+}
+.colophon__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.colophon__nav-link {
+  color: var(--ink-60);
+  transition: color 0.15s ease;
+}
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); }
+
+@media (max-width: 720px) {
+  .colophon { padding: 2.25rem 0 1.25rem; }
+  .colophon__inner { padding: 0 1.5rem; }
+  .colophon__ornament::before,
+  .colophon__ornament::after { flex-basis: 40px; }
+  .colophon__grid {
+    grid-template-columns: 1fr;
+    gap: 0.25rem 0;
+    margin-bottom: 1.75rem;
+  }
+  .colophon__label { padding-top: 0.25rem; }
+  .colophon__value { margin-bottom: 1.25rem; font-size: 0.9375rem; }
+  .colophon__value:last-of-type { margin-bottom: 0; }
+  .colophon__bottom {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}
+
+
+/* ── Citation card: how to cite this entry ─────────────────────────── */
+.cite-card {
+  margin: 3rem 0 1rem;
+  padding: 2.25rem 2.25rem 1.75rem;
+  background: var(--paper-light);
+  border: 0.5px solid var(--border-strong);
+  position: relative;
+  scroll-margin-top: 1.5rem;
+  max-width: var(--reading-max);
+}
+.cite-card::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  height: 3px;
+  background: var(--red);
+}
+.cite-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+.cite-card__kicker {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.cite-card__title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 1.1875rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin: 0;
+}
+
+.cite-row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem;
+  padding: 1.125rem 0;
+  border-bottom: 0.5px solid var(--border);
+  align-items: start;
+}
+.cite-row:last-of-type { border-bottom: none; padding-bottom: 0.25rem; }
+
+.cite-label {
+  font-family: var(--f-display);
+  font-weight: 700;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  padding-top: 0.3rem;
+}
+
+.cite-text {
+  font-family: var(--f-serif);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.cite-text em { font-style: italic; }
+.cite-text a {
+  color: inherit;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.cite-text a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+.cite-text--code {
+  font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--ink);
+  white-space: pre;
+  overflow-x: auto;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+  display: block;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cite-copy {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--ink);
+  background: transparent;
+  border: 0.5px solid var(--border-strong);
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  min-height: 32px;
+  white-space: nowrap;
+  align-self: start;
+}
+.cite-copy:hover {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.cite-copy:active { transform: scale(0.97); }
+.cite-copy.is-copied {
+  background: var(--red);
+  color: var(--paper);
+  border-color: var(--red);
+}
+.cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+
+@media (max-width: 720px) {
+  .cite-card {
+    padding: 1.5rem 1.25rem 1rem;
+    margin: 2.25rem -0.25rem 0.75rem;
+  }
+  .cite-card__header {
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .cite-card__title { font-size: 1.0625rem; }
+  .cite-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.125rem 0;
+  }
+  .cite-label { padding-top: 0; }
+  .cite-copy {
+    justify-content: center;
+    min-height: 40px;
+    padding: 0.625rem 1rem;
+    font-size: 0.6875rem;
+    margin-top: 0.25rem;
+  }
+  .cite-text { font-size: 0.9375rem; }
+  .cite-text--code { font-size: 0.75rem; }
+}
+
+
+/* ── Article cover plate (tipped-in plate) ─────────────────────────── */
+.article-cover-plate {
+  max-width: var(--layout-max);
+  margin: 2.5rem auto 0;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+}
+.article-cover-plate__frame {
+  position: relative;
+  display: block;
+  padding: 14px;
+  background: var(--paper-light);
+  box-shadow:
+    0 1px 3px rgba(28, 24, 18, 0.06),
+    0 18px 44px -8px rgba(28, 24, 18, 0.16),
+    0 6px 14px -4px rgba(28, 24, 18, 0.08);
+}
+.article-cover-plate__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 1px solid rgba(28, 24, 18, 0.18);
+  outline-offset: -1px;
+}
+/* Paper-grain overlay : implies print reproduction on the same stock */
+.article-cover-plate__frame::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 400'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='400' height='400' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+}
+.article-cover-plate__caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.125rem;
+}
+.article-cover-plate__caption-kicker {
+  font-family: var(--f-sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-60);
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+.article-cover-plate__caption-kicker::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 1px;
+  background: rgba(28, 24, 18, 0.32);
+}
+.article-cover-plate__caption-title {
+  font-family: var(--f-serif);
+  font-style: italic;
+  font-size: 0.9375rem;
+  color: var(--ink);
+  letter-spacing: 0.005em;
+}
+@media (max-width: 720px) {
+  .article-cover-plate {
+    max-width: 100%;
+    padding: 0 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .article-cover-plate__frame {
+    padding: 10px;
+    box-shadow:
+      0 1px 2px rgba(28, 24, 18, 0.05),
+      0 10px 24px -6px rgba(28, 24, 18, 0.14);
+  }
+  .article-cover-plate__frame::after {
+    inset: 10px;
+  }
+  .article-cover-plate__caption {
+    margin-top: 0.875rem;
+  }
+  .article-cover-plate__caption-title {
+    font-size: 0.875rem;
+  }
+}
+
+
+/* Reference ledger */
+.ledger { border-top: 2px solid var(--border-strong); border-bottom: 2px solid var(--border-strong); margin: 2rem 0 1rem; }
+.ledger__head, .ledger__row { display: grid; grid-template-columns: 150px 1fr 1fr; gap: 1.25rem; padding: 0.85rem 0; border-bottom: 1px solid var(--border); }
+.ledger__row:last-child { border-bottom: none; }
+.ledger__head { font-family: var(--f-display); font-weight: 700; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-60); }
+.ledger__label { font-family: var(--f-display); font-weight: 500; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-60); }
+.ledger__cell { font-family: var(--f-serif); font-size: 0.98rem; line-height: 1.55; color: var(--ink); }
+.ledger__note { font-family: var(--f-serif); font-style: italic; font-size: 0.9rem; color: var(--ink-60); margin-top: 0.9rem; }
+@media (max-width: 640px) { .ledger__head { display: none; } .ledger__row { grid-template-columns: 1fr; gap: 0.4rem; } .ledger__cell::before { content: attr(data-col); display: block; font-family: var(--f-display); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); margin-bottom: 0.15rem; } }
+
+/* Masthead nav: departments. Two labeled groups solve the six-link crowd. */
+.masthead__nav { row-gap: 0.4rem; }
+.masthead__nav-group { display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 0 1.375rem; }
+.masthead__nav-kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-right: 0.125rem; }
+.masthead__nav-divider { color: var(--border-strong); font-size: 0.4375rem; line-height: 1; }
+@media (max-width: 760px) {
+  .masthead__nav { gap: 0.5rem 1.25rem; }
+  .masthead__nav-divider { display: none; }
+}
+
+/* Reading progress bar */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--red);
+  z-index: 1000;
+  transition: width 0.1s linear;
+}
+
+/* TOC scroll spy active state */
+.toc-list a.is-active {
+  color: var(--red);
+  font-weight: 500;
+}
+.toc-list a.is-active .toc-num {
+  color: var(--red);
+}
+</style>
+<link rel="stylesheet" href="/css/site.css">
+<script src="/js/site.js"></script>
+</head>
+<body>
+<div class="reading-progress" id="reading-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>First Edition &middot; ISSN pending</span>
+    <span class="masthead__furniture-right">Anno MMXXVI<br>Issue I &middot; N&deg;1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/ja/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">この分野のフィールドマニュアル。</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/ja/reference" class="masthead__nav-link" aria-current="page">リファレンス</a>
+    <a href="/ja/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/ja/tools" class="masthead__nav-link">ツール</a>
+    <a href="/ja/archive" class="masthead__nav-link">アーカイブ</a>
+    <a href="/ja/about" class="masthead__nav-link">概要</a>
+  </nav>
+  <nav class="masthead__langs" aria-label="Language">
+    <a href="/ja/technical-marketing-vs-product-marketing" class="masthead__lang-link">English</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <span class="masthead__lang-link" aria-current="true">日本語</span>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/es/technical-marketing-vs-product-marketing" class="masthead__lang-link">Español</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/fr/technical-marketing-vs-product-marketing" class="masthead__lang-link">Français</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/de/technical-marketing-vs-product-marketing" class="masthead__lang-link">Deutsch</a>
+  </nav>
+  <hr class="masthead__rule">
+</header>
+
+<figure class="article-cover-plate">
+  <div class="article-cover-plate__frame">
+    <img class="article-cover-plate__image" src="/Images/cover-reference-tmm-pmm.jpg" alt="Cover illustration for Technical Marketing vs Product Marketing: two figures study one gallery board split by a single line. The left half reads Say it, with bold poster shapes labeled Product Marketing. The right half reads Prove it, with technical schematics labeled Technical Marketing." width="1100" height="480" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <figcaption class="article-cover-plate__caption">
+    <span class="article-cover-plate__caption-kicker">Plate</span>
+    <span class="article-cover-plate__caption-title">Foundational Reference</span>
+  </figcaption>
+</figure>
+
+<section class="cover layout" aria-labelledby="article-title">
+  <div class="cover__article-kicker">Reference.</div>
+  <h1 class="cover__article-title" id="article-title">Technical Marketing vs Product Marketing.</h1>
+  <hr class="cover__rule">
+
+  <div class="cover__display-wrap">
+    <span class="cover__display">The Boundary.</span>
+  </div>
+
+  <p class="cover__secondary">2つの機能。その間にある1本の線。</p>
+  <p class="cover__deck">プロダクトマーケティングは会社が何を語るかを決める。テクニカルマーケティングは会社が何を証明できるかを決める。その線がどこにあるのか、何を誰が担うのか、そしてAI時代がなぜその線をより鮮明にしたのかを解説する実務リファレンス。</p>
+
+  <div class="cover__byline">編集：<strong><a href="/ja/contributors/chad-corriveau" rel="author">Chad Corriveau</a></strong>, Founding Editor &middot; <time datetime="2026-06-12">2026年6月12日</time> &middot; 読了時間7分</div>
+
+  <div class="cover__ornament" aria-hidden="true">
+    <span class="cover__ornament-rule"></span>
+    <span class="cover__ornament-diamond"></span>
+    <span class="cover__ornament-rule"></span>
+  </div>
+</section>
+
+<div class="article-layout layout">
+  <main class="article-main" id="main">
+<section class="section" id="answer">
+        <span class="section-num">01 &middot; 端的な答え</span>
+        <h2>一段落で説明する違い</h2>
+        <p>テクニカルマーケティング（Technical Marketing）とプロダクトマーケティング（Product Marketing）の違いは、証明とポジショニングの違いである。プロダクトマーケティングは会社が製品について何を語るかを担う：ポジショニング、メッセージング、セグメンテーション、ローンチ。テクニカルマーケティングは会社が製品について何を証明できるかを担う：デモンストレーション、リファレンスアーキテクチャ、ベンチマーク、そして購買者の最も懐疑的な評価者の前に示す技術的証拠。両者の機能は、会社が行うあらゆる主張において交わる。一方はその主張をする価値があるかを決め、もう一方はそれが技術的な読者との接触に耐えられるかを決める。</p>
+        <div class="pullquote">
+          <p>一方の機能が主張を作る。もう一方がそれを生き延びさせる。</p>
+        </div>
+      </section>
+
+      <section class="section" id="tmm">
+        <span class="section-num">02 &middot; テクニカルマーケティング</span>
+        <h2>テクニカルマーケター側の役割</h2>
+        <p>テクニカルマーケティングは、懐疑的な評価者に対して責任を負う：契約締結後も製品と付き合い続けることになるアーキテクト、管理者、エンジニアである。成果物はこの責任から導かれる。デモンストレーション環境と、その中で展開されるナラティブ。リファレンスアーキテクチャ。競合の技術分析。ベンチマークの方法論。フィールドチームがプレゼンテーションの拠り所とする、正典的な環境と深掘り資料。この役割は、本誌のArticle Iである<a href="/ja/the-technical-marketer">The Technical Marketer</a>で詳しく解説されている。</p>
+        <p>成果物の根底にある判断は編集的なものだ。どの技術的証拠を、どの読者の前に、どの順序で、商業的圧力の下で提示するか。この分野がこの判断を今の呼び名に定めるまでには、60年にわたり12の異なる名称のもとでこの判断が行われてきた。その歴史は<a href="/ja/before-the-name">Before the Name</a>にたどられている。アーティファクトはその間ずっと変化してきた。懐疑的な評価者への責任は変わらなかった。</p>
+      </section>
+
+      <section class="section" id="pmm">
+        <span class="section-num">03 &middot; プロダクトマーケティング</span>
+        <h2>プロダクトマーケター側の役割</h2>
+        <p>プロダクトマーケティングは、市場に対して責任を負う：カテゴリー、購買委員会全体、そしてその両方における会社のポジションである。その成果物も同じ論理に従う。ポジショニングとメッセージングアーキテクチャ。ローンチのオーケストレーション。セグメンテーションとペルソナ策定。プライシングとパッケージングへの提言。アナリストナラティブの戦略レイヤー。メッセージレベルでのセールスイネーブルメント。</p>
+        <p>この機能はテクニカルマーケティングとは異なる問いに答える。ある主張が証明可能かどうかではなく、それが正しい主張かどうかである：差別化されているか、セグメントに関連しているか、市場のタイミングに合わせて順序づけられているか。うまく機能すれば、プロダクトマーケティングは会社がどのストーリーをいつ語るかを決める。カウンターパートを欠いたまま行われれば、そのストーリーが実証可能かどうかについて誰も権限を持たないまま、それらを決めてしまうことになる。</p>
+      </section>
+
+      <section class="section" id="ledger">
+        <span class="section-num">04 &middot; 対照表</span>
+        <h2>同じ問いへの、それぞれの答え</h2>
+        <div class="ledger" role="table" aria-label="Technical marketing and product marketing compared">
+          <div class="ledger__head" role="row"><span role="columnheader"></span><span role="columnheader">Technical Marketing</span><span role="columnheader">Product Marketing</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">責任の対象</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">懐疑的な技術評価者。</span><span class="ledger__cell" role="cell" data-col="Product Marketing">市場と購買委員会。</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">核となる問い</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">証明できるか？</span><span class="ledger__cell" role="cell" data-col="Product Marketing">言うべきか？</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">固有の成果物</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">デモンストレーション、リファレンスアーキテクチャ、ベンチマーク、技術分析。</span><span class="ledger__cell" role="cell" data-col="Product Marketing">ポジショニング、メッセージング、ローンチ、セグメンテーション。</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">失敗のパターン</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">正確だが動かない。誰も読む理由を与えられなかった真実。</span><span class="ledger__cell" role="cell" data-col="Product Marketing">魅力的だが証明不可能。評価の場で消える主張。</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">連邦政府の職業分類</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">O*NET 41-9031.00、Sales Engineerと並んで分類。<sup>1</sup></span><span class="ledger__cell" role="cell" data-col="Product Marketing">マーケティング職として分類。エンジニアリングとの対応関係なし。</span></div>
+          <div class="ledger__row" role="row"><span class="ledger__label" role="rowheader">重心（AI時代）</span><span class="ledger__cell" role="cell" data-col="Technical Marketing">技術的証拠についての編集上の判断。</span><span class="ledger__cell" role="cell" data-col="Product Marketing">市場ポジションについてのナラティブ上の判断。</span></div>
+        </div>
+        <p class="ledger__note">各行が示すのは重心であり、境界のフェンスではない。実務上、両機能はあらゆるローンチ、あらゆる主張において重なり合う。</p>
+      </section>
+
+      <section class="section" id="boundary">
+        <span class="section-num">05 &middot; 境界線</span>
+        <h2>両機能が交わる場所</h2>
+        <p>会社が技術製品について行うあらゆる重要な主張は、両方向にそれぞれ一度、この線を横切る。プロダクトマーケティングは市場ポジションからその主張を生み出す。テクニカルマーケティングは、それを製品が実証できることと照らし合わせて検証し、その主張が評価に耐えられるようにする証拠を組み立てる。主張が耐えられない場合、その情報は逆流し、ポジショニングが調整される。健全な会社は、あらゆるローンチでこのループを回している。</p>
+        <p>失敗のパターンは対称的だ。プロダクトマーケティングはあるがテクニカルマーケティングがない会社は、まさにエンタープライズ案件の可否を決める読者の前で、概念実証（PoC）の段階で崩れる主張を世に出す。テクニカルマーケティングはあるがプロダクトマーケティングがない会社は、誰も目を向ける理由を与えられなかった市場に、正確な資料を送り出す。両機能はライバルではない。それらは、ひとつの「主張の分野」を構成する2つの半身である。</p>
+        <figure class="figure">
+          <svg viewBox="0 0 800 336" role="img" aria-label="Diagram plotting common go-to-market artifacts along a spectrum from positioning to proof. Press releases, messaging architecture, and launch decks sit on the product marketing side. Demo narratives, reference architectures, and benchmark methodology sit on the technical marketing side. Solution briefs, analyst decks, and the competitive battlecard occupy a contested middle, with the battlecard directly on the line." xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;display:block;">
+            <!-- contested middle band -->
+            <rect x="320" y="88" width="160" height="208" fill="#EACF82" opacity="0.28"/>
+            <line x1="320" y1="88" x2="320" y2="296" stroke="#8B7D69" stroke-width="1" stroke-dasharray="3 4"/>
+            <line x1="480" y1="88" x2="480" y2="296" stroke="#8B7D69" stroke-width="1" stroke-dasharray="3 4"/>
+            <text x="400" y="78" text-anchor="middle" font-family="Roboto Slab, serif" font-size="12" font-weight="700" letter-spacing="2" fill="#8B7D69">THE CONTESTED MIDDLE</text>
+            <!-- the line -->
+            <line x1="400" y1="88" x2="400" y2="296" stroke="#A7352A" stroke-width="2"/>
+            <text x="400" y="314" text-anchor="middle" font-family="Roboto Slab, serif" font-size="12" font-weight="700" letter-spacing="2" fill="#A7352A">THE LINE</text>
+            <!-- axis -->
+            <line x1="42" y1="196" x2="758" y2="196" stroke="#1C1812" stroke-width="1.5"/>
+            <polygon points="36,196 50,190 50,202" fill="#1C1812"/>
+            <polygon points="764,196 750,190 750,202" fill="#1C1812"/>
+            <text x="42" y="306" font-family="Roboto Slab, serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#5C4E3C">POSITIONING</text>
+            <text x="42" y="324" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#8B7D69">Product marketing's side</text>
+            <text x="758" y="306" text-anchor="end" font-family="Roboto Slab, serif" font-size="13" font-weight="700" letter-spacing="2.5" fill="#5C4E3C">PROOF</text>
+            <text x="758" y="324" text-anchor="end" font-family="Fraunces, serif" font-style="italic" font-size="13" fill="#8B7D69">Technical marketing's side</text>
+            <!-- PMM-side artifacts (labels above, below, above) -->
+            <circle cx="84" cy="196" r="5" fill="#1C1812"/>
+            <line x1="84" y1="190" x2="84" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="84" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Press release</text>
+            <circle cx="180" cy="196" r="5" fill="#1C1812"/>
+            <line x1="180" y1="202" x2="180" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="180" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Messaging architecture</text>
+            <circle cx="272" cy="196" r="5" fill="#1C1812"/>
+            <line x1="272" y1="190" x2="272" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="272" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Launch deck</text>
+            <!-- contested artifacts -->
+            <circle cx="352" cy="196" r="5" fill="#1C1812"/>
+            <line x1="352" y1="202" x2="352" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="352" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Solution brief</text>
+            <circle cx="400" cy="196" r="6" fill="#A7352A"/>
+            <circle cx="400" cy="196" r="11" fill="none" stroke="#A7352A" stroke-width="1.5"/>
+            <text x="390" y="120" text-anchor="end" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#A7352A">Competitive</text>
+            <text x="410" y="120" text-anchor="start" font-family="Fraunces, serif" font-size="14" font-weight="600" fill="#A7352A">battlecard</text>
+            <circle cx="450" cy="196" r="5" fill="#1C1812"/>
+            <line x1="450" y1="202" x2="450" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="450" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Analyst deck</text>
+            <!-- TMM-side artifacts -->
+            <circle cx="548" cy="196" r="5" fill="#1C1812"/>
+            <line x1="548" y1="190" x2="548" y2="156" stroke="#8B7D69" stroke-width="1"/>
+            <text x="548" y="146" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Demo narrative</text>
+            <circle cx="646" cy="196" r="5" fill="#1C1812"/>
+            <line x1="646" y1="202" x2="646" y2="236" stroke="#8B7D69" stroke-width="1"/>
+            <text x="646" y="254" text-anchor="middle" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Reference architecture</text>
+            <circle cx="730" cy="196" r="5" fill="#1C1812"/>
+            <line x1="730" y1="190" x2="730" y2="130" stroke="#8B7D69" stroke-width="1"/>
+            <text x="756" y="120" text-anchor="end" font-family="Fraunces, serif" font-size="14" fill="#1C1812">Benchmark methodology</text>
+          </svg>
+          <figcaption class="figure-caption"><strong>スペクトラム。</strong> 一般的なゴーツーマーケット成果物を、どちらの判断がそれを支配するかによってプロットしたもの。上で説明した主張のループが最も熱く回るのがこの「争われる中間地帯」であり、battlecardはまさにその線の上に位置する：証明がなければ死ぬポジショニング文書である。</figcaption>
+        </figure>
+        <div class="pullquote">
+          <p>証明のないポジショニングは崩壊する。ポジショニングのない証明は読まれない。</p>
+        </div>
+      </section>
+
+      <section class="section" id="org">
+        <span class="section-num">06 &middot; 1つの役割か、2つの役割か</span>
+        <h2>組織上の配置と採用の順序</h2>
+        <p>小規模企業では、同じ人物が両方の機能を担うことが多く、連邦政府の分類体系にもその絡み合いが反映されている：Technical Marketing Engineerは、マーケティング職としてではなく、職業分類41-9031.00のSales Engineerの一variantとして分類されている。<sup>1</sup> 実務上の採用における問いは順序である。購入前に実際に手を動かして評価する購買者を持つ企業――デベロッパーツール、インフラストラクチャー、セキュリティ、エンタープライズプラットフォームなどがこれに当たる――は、ポジショニングが機能する前に証明の機能を必要とする傾向がある。アウトカムのナラティブでビジネス購買者に売る企業は、ポジショニングを先に必要とする傾向がある。</p>
+        <p>両機能が存在する場合、報告構造はさまざまである。テクニカルマーケティングは、組織によってはプロダクトマーケティングの傘下に報告し、別の組織ではプロダクトやエンジニアリングの傘下に報告し、最大手のエンタープライズソフトウェア企業では対等な機能として運用される。Red Hatが公開しているtechnical marketing managerの役割の説明は、現在の実務における対等モデルを裏づけている。<sup>2</sup> 配置そのものよりも、境界線の方が重要である。証明を担う機能は、どこに報告するにせよ、ある主張が裏付けられないと言える権限を持たなければならない。</p>
+      </section>
+
+      <section class="section" id="ai">
+        <span class="section-num">07 &middot; AI時代</span>
+        <h2>圧縮が境界線をより鮮明にした</h2>
+        <p>2020年代初頭を通じて、この2つの機能は混同されやすかった。どちらも大量の構造化されたコンテンツを生み出しており、コンテンツの量そのものが仕事に見えていたからだ。2024年に始まった構造的な圧縮が、この曖昧さを取り除いた。両機能がかつて時間を費やしていたアーティファクト生産――ドラフト作成やテンプレートに沿った組み立て――は徐々にAIに吸収されてきた。この転換は、Anthropic Economic Indexや、判断集約型の職務についてのMcKinseyの研究にも記録されている。<sup>3</sup> 各機能に残るのは、その判断力である。プロダクトマーケティングにとっては、市場ポジションについてのナラティブ上の判断。テクニカルマーケティングにとっては、技術的証拠についての編集上の判断。</p>
+        <p>この区別は、この分野の歴史上のどの時点よりも今、明確になっている。AIが何を圧縮し、何を圧縮しなかったのかについての詳しい論考は、<a href="/ja/technical-marketing-age-of-ai">Technical Marketing in the Age of AI</a>、および<a href="/ja/before-the-name">Before the Name</a>の終盤の時代区分で展開されている。</p>
+      </section>
+
+      
+      <section class="faq" id="faq">
+        <h2>よくある質問</h2>
+
+        <div class="faq-item">
+          <h3 class="faq-q">テクニカルマーケティングとプロダクトマーケティングの違いは何か？</h3>
+          <p class="faq-a">その違いは、証明とポジショニングの違いである。プロダクトマーケティングは会社が製品について何を語るかを担う：ポジショニング、メッセージング、セグメンテーション、ローンチ。テクニカルマーケティングは会社が何を証明できるかを担う：デモンストレーション、リファレンスアーキテクチャ、ベンチマーク、そして購買者の最も懐疑的な評価者の前に示す技術的証拠。一方の機能はある主張をする価値があるかを決め、もう一方はそれが技術的な読者との接触に耐えられるかを決める。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">テクニカルマーケティングはプロダクトマーケティングの一部か？</h3>
+          <p class="faq-a">組織によって、テクニカルマーケティングはプロダクトマーケティングの傘下に入ることもあれば、プロダクトやエンジニアリングの傘下に入ることもあり、最大手のエンタープライズソフトウェア企業では対等な機能として運用されることもある。分類上、両者は別のものである：米国労働省はTechnical Marketing Engineerを職業分類41-9031.00のもとでSales Engineerと並んで分類しており、マーケティング職としては分類していない。報告ラインがどうであるかよりも、境界線そのものの方が重要である。証明を担う機能は、どこに報告するにせよ、ある主張が裏付けられないと言える権限を持たなければならない。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">企業はテクニカルマーケターとプロダクトマーケターのどちらを先に採用すべきか？</h3>
+          <p class="faq-a">順序は購買者に従う。購買者が購入前に実際に手を動かして評価する企業――デベロッパーツール、インフラストラクチャー、セキュリティ、エンタープライズプラットフォームなどがこれに当たる――では、ポジショニングが機能する前に証明の機能が必要になる傾向がある。アウトカムのナラティブでビジネス購買者に売る企業では、ポジショニングを先に必要とする傾向がある。小規模企業では、評価のボリュームが分割を迫るまで、一人が両方の機能を担うことが多い。</p>
+        </div>
+
+        <div class="faq-item">
+          <h3 class="faq-q">同じ人物がテクニカルマーケティングとプロダクトマーケティングの両方を担えるか？</h3>
+          <p class="faq-a">できるし、アーリーステージの企業では通常一人がその両方を担っている。この兼務の役割のリスクは構造的なものだ：主張を生み出す当人が、その主張を拒否する権限も持ってしまい、商業的な圧力の下ではその拒否権が弱まる。製品の評価負荷が高まるにつれて、証明が独立した声を保てるよう、両機能は分離していく。</p>
+        </div>
+      </section>
+
+      <section class="footnotes" id="footnotes" aria-labelledby="footnotes-label">
+        <span class="footnotes-label" id="footnotes-label">出典</span>
+        <ol>
+          <li>U.S. Department of Labor, <em>O*NET Occupational Information Network</em>, classification 41-9031.00, Sales Engineers. Technical Marketing Engineerは、同じ分類のもとでのvariant titleとして掲載されている。参照先： <a href="https://www.onetonline.org/link/summary/41-9031.00" target="_blank" rel="noopener">onetonline.org</a>。</li>
+          <li>Hendricks, Eric, <em>What is a technical marketing manager?</em>, Red Hat Partner Connect blog, November 9, 2021. 参照先： <a href="https://connect.redhat.com" target="_blank" rel="noopener">connect.redhat.com</a>。</li>
+          <li>Anthropic, <em>Economic Index</em>, 2026年1月付レポート、AI吸収の影響を最も受ける業務活動について。McKinsey &amp; Company, <em>A New Year's Resolution for Leaders</em>, 2026年1月、判断集約型の業務について。</li>
+        </ol>
+      </section>
+
+      <aside class="editors-note" aria-labelledby="editors-note-label">
+        <span class="editors-note-label" id="editors-note-label">編集後記</span>
+        <p>これはVolume記事ではなく、リファレンスエントリーである。ここで説明した境界線は、編集者がキャリアの大半をテクニカルマーケティング側で過ごしたエンタープライズソフトウェアの実務から導き出したものだ。この線を別の引き方で捉えるプロダクトマーケターの方々には、<a href="/ja/suggest">改訂案の提案</a>を歓迎する。最も説得力のある修正案は公開する。</p>
+        <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
+      </aside>
+
+      <div class="next-article">
+        <a href="/ja/the-technical-marketer">
+          <span class="next-article__label">Read also &middot; Article I &middot; Vol. 01</span>
+          <div class="next-article__title">The Technical Marketer. 証明側の役割についての正典となる職務記述書。 <span class="arrow">&rarr;</span></div>
+        </a>
+        <p class="next-article__meta">境界線の歴史については、<a href="/ja/before-the-name">Before the Name</a>を参照。</p>
+      </div>
+  
+    <section class="cite-card" id="cite" aria-labelledby="cite-title">
+      <div class="cite-card__header">
+        <span class="cite-card__kicker">引用</span>
+        <p class="cite-card__title" id="cite-title">この記事の引用方法。</p>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">APA</span>
+        <div class="cite-text" id="cite-ref-tvp-apa">Corriveau, C. (2026). Technical marketing vs product marketing: The boundary between proof and positioning. <em>Technical Marketing</em>, <em>I</em>. <a href="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing">https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing</a></div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-apa', this)" aria-label="Copy APA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">MLA</span>
+        <div class="cite-text" id="cite-ref-tvp-mla">Corriveau, Chad. "Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning." <em>Technical Marketing</em>, vol. I, 2026, <a href="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing">technicalmarketing.org/ja/technical-marketing-vs-product-marketing</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-mla', this)" aria-label="Copy MLA citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">Chicago</span>
+        <div class="cite-text" id="cite-ref-tvp-chicago">Corriveau, Chad. "Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning." <em>Technical Marketing</em> I (2026). <a href="https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing">https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing</a>.</div>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-chicago', this)" aria-label="Copy Chicago citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+
+      <div class="cite-row">
+        <span class="cite-label">BibTeX</span>
+        <pre class="cite-text cite-text--code" id="cite-ref-tvp-bibtex">@article{corriveau2026tmmvspmm,
+  author  = {Corriveau, Chad},
+  title   = {Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning},
+  journal = {Technical Marketing},
+  volume  = {I},
+  year    = {2026},
+  url     = {https://technicalmarketing.org/ja/technical-marketing-vs-product-marketing}
+}</pre>
+        <button type="button" class="cite-copy" onclick="copyCitation('cite-ref-tvp-bibtex', this)" aria-label="Copy BibTeX citation">
+          <span class="cite-copy-icon" aria-hidden="true">&#10063;</span>
+          <span class="cite-copy-text">コピー</span>
+        </button>
+      </div>
+    </section>
+
+  </main>
+  <aside class="article-aside" aria-label="Table of contents">
+    <nav class="toc" aria-label="On this page">
+<span class="toc-label">目次</span>
+        <ul class="toc-list">
+          <li><a href="#answer"><span class="toc-num">01</span>端的な答え</a></li>
+          <li><a href="#tmm"><span class="toc-num">02</span>テクニカルマーケティング</a></li>
+          <li><a href="#pmm"><span class="toc-num">03</span>プロダクトマーケティング</a></li>
+          <li><a href="#ledger"><span class="toc-num">04</span>対照表</a></li>
+          <li><a href="#boundary"><span class="toc-num">05</span>境界線</a></li>
+          <li><a href="#org"><span class="toc-num">06</span>1つの役割か、2つの役割か</a></li>
+          <li><a href="#ai"><span class="toc-num">07</span>AI時代</a></li>
+          <li><a href="#footnotes"><span class="toc-num">&middot;</span>出典</a></li>
+          <li><a href="#cite"><span class="toc-num">&middot;</span>引用</a></li>
+        </ul>
+    </nav>
+  </aside>
+</div>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Reference &middot; The Boundary</span>
+    <span class="folio-band__center">&#9670;</span>
+    <span class="folio-band__right">First Printing &middot; MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true">
+      <span class="colophon__diamond"></span>
+    </div>
+
+    <div class="colophon__grid">
+      <span class="colophon__label">編集方針</span>
+      <span class="colophon__value">この分野のフィールドマニュアル。編集・監修：Chad Corriveau。</span>
+
+      <span class="colophon__label">書体</span>
+      <span class="colophon__value">Fraunces、Roboto Slab、Interを使用。ウィートとライブラリーレッドで構成。</span>
+
+      <span class="colophon__label">憲章</span>
+      <span class="colophon__value">掲載項目は、一次情報源であること、実務者にとっての関連性、ベンダー宣伝の不在という編集憲章の基準に照らして審査される。ThinkRoot LLCが出版インフラと事務サポートを提供する。</span>
+
+      <span class="colophon__label">発行元</span>
+      <span class="colophon__value">発行：ThinkRoot LLC &middot; Escondido, CA</span>
+
+      <span class="colophon__label">連絡先</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/ja/about" class="colophon__nav-link">概要</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/contributors" class="colophon__nav-link">コントリビューター</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/glossary" class="colophon__nav-link">用語集</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/landscape" class="colophon__nav-link">ランドスケープ</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/ja/suggest" class="colophon__nav-link">提案する</a>
+        <span class="colophon__nav-sep" aria-hidden="true">&middot;</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+function copyCitation(targetId, btn) {
+  var el = document.getElementById(targetId);
+  if (!el || !btn) return;
+  var text = el.innerText.trim();
+  
+  function showCopied() {
+    btn.classList.add('is-copied');
+    var txt = btn.querySelector('.cite-copy-text');
+    var icon = btn.querySelector('.cite-copy-icon');
+    if (txt) txt.textContent = 'Copied';
+    if (icon) icon.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (txt) txt.textContent = 'Copy';
+      if (icon) icon.innerHTML = '&#10063;';
+    }, 2400);
+  }
+  
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(showCopied).catch(function() {
+      fallbackCopyCitation(text, showCopied);
+    });
+  } else {
+    fallbackCopyCitation(text, showCopied);
+  }
+}
+
+function fallbackCopyCitation(text, callback) {
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.position = 'fixed';
+  ta.style.left = '-9999px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); callback(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── Reading progress bar ─────────────────────────────────────── */
+  var bar = document.getElementById('reading-progress');
+  if (bar) {
+    function updateBar() {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      var docH = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var pct = docH > 0 ? Math.min(100, Math.round((scrollTop / docH) * 100)) : 0;
+      bar.style.width = pct + '%';
+      bar.setAttribute('aria-valuenow', pct);
+    }
+    window.addEventListener('scroll', updateBar, { passive: true });
+    updateBar();
+  }
+
+  /* ── TOC scroll spy ───────────────────────────────────────────── */
+  var tocLinks = document.querySelectorAll('.toc-list a[href^="#"]');
+  if (tocLinks.length && 'IntersectionObserver' in window) {
+    var sectionIds = Array.prototype.map.call(tocLinks, function (a) {
+      return a.getAttribute('href').slice(1);
+    });
+    var sections = sectionIds.map(function (id) {
+      return document.getElementById(id);
+    }).filter(Boolean);
+
+    var activeId = null;
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          activeId = entry.target.id;
+        }
+      });
+      tocLinks.forEach(function (a) {
+        var isActive = a.getAttribute('href') === '#' + activeId;
+        a.classList.toggle('is-active', isActive);
+      });
+    }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
+
+    sections.forEach(function (s) { observer.observe(s); });
+  }
+}());
+</script>
+</body>
+</html>

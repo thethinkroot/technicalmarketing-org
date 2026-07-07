@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#EFE6C9">
+
+<title>テクニカルマーケター向けAI活用ガイド · 課題・方法・チェックリスト</title>
+<meta name="description" content="テクニカルマーケター向けの5つのAI活用領域。すべての主張は、実名・日付付きの一次情報源に裏付けられている。裏付けが取れなかったものは削除した。">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://technicalmarketing.org/ja/ai-for-technical-marketers">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/ai-for-technical-marketers" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/ai-for-technical-marketers" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/ai-for-technical-marketers" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/ai-for-technical-marketers" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/ai-for-technical-marketers" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers" />
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="テクニカルマーケター向けAI活用ガイド · 課題・方法・チェックリスト">
+<meta property="og:description" content="テクニカルマーケター向けの5つのAI活用領域。すべての主張は、実名・日付付きの一次情報源に裏付けられている。裏付けが取れなかったものは削除した。">
+<meta property="og:url" content="https://technicalmarketing.org/ja/ai-for-technical-marketers">
+<meta property="og:image" content="https://technicalmarketing.org/Images/og-tools.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-07-02T00:00:00+00:00">
+<meta property="article:modified_time" content="2026-07-02T00:00:00+00:00">
+<meta property="article:author" content="https://technicalmarketing.org/contributors/chad-corriveau">
+<meta property="article:publisher" content="https://technicalmarketing.org">
+<meta property="article:section" content="Tools">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="テクニカルマーケター向けAI活用ガイド · 課題・方法・チェックリスト">
+<meta name="twitter:description" content="テクニカルマーケター向けの5つのAI活用領域。すべての主張は、実名・日付付きの一次情報源に裏付けられている。裏付けが取れなかったものは削除した。">
+<meta name="twitter:image" content="https://technicalmarketing.org/Images/og-tools.png">
+<meta name="twitter:site" content="@thethinkroot">
+<meta name="keywords" content="AI for technical marketers, technical marketing AI tools, AI analyst relations, AI competitive intelligence, AI technical content, demo capture tools, AI claim verification, generative engine optimization, technical product marketing AI, AI battlecard, Copilot vs ChatGPT vs Gemini, Grok accuracy, technical marketer workflow">
+<meta property="article:tag" content="Technical Marketing">
+<meta property="article:tag" content="AI Tools">
+<meta property="article:tag" content="Analyst Relations">
+<meta property="article:tag" content="Competitive Intelligence">
+<meta property="article:tag" content="Demo Capture">
+<meta property="article:tag" content="Technical Content">
+<meta property="article:tag" content="Sales Engineering">
+<meta property="article:tag" content="Generative Engine Optimization">
+
+
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing · Quarterly Updates" href="/feed.xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<style>/* vietnamese */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("707c3d37-58a1-4dc2-8c4d-29d168fc5c05") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3541bd4f-502b-476f-904c-017c96893cfe") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("51d6ea37-537f-43f7-b0a0-98af97cccf60") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("707c3d37-58a1-4dc2-8c4d-29d168fc5c05") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3541bd4f-502b-476f-904c-017c96893cfe") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("51d6ea37-537f-43f7-b0a0-98af97cccf60") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("804a4ee8-5f11-4fe5-ac79-bbfd2d2f2902") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("aa6b3ef5-fde5-4c74-ad03-6f4671a2813b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("54939d7d-2d0d-496d-8b6e-58617004cabc") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("804a4ee8-5f11-4fe5-ac79-bbfd2d2f2902") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("aa6b3ef5-fde5-4c74-ad03-6f4671a2813b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("54939d7d-2d0d-496d-8b6e-58617004cabc") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("804a4ee8-5f11-4fe5-ac79-bbfd2d2f2902") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("aa6b3ef5-fde5-4c74-ad03-6f4671a2813b") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("54939d7d-2d0d-496d-8b6e-58617004cabc") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("6a28f381-7fcc-47ae-a1fe-e6983ae0bcaf") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e7724603-9a52-4a46-b0b4-d87e2aa1c4d3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("a4011af3-285d-4d29-9a0c-4e1996d20b78") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("8342ab93-8eef-4312-89e4-bb64772a2b63") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("2a5ad190-598f-4aab-a5e9-693352f99afd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fe928182-379b-4c47-a296-140205b51a31") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("717983e6-d968-4e3e-acdd-7c18de4e9572") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("6a28f381-7fcc-47ae-a1fe-e6983ae0bcaf") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e7724603-9a52-4a46-b0b4-d87e2aa1c4d3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("a4011af3-285d-4d29-9a0c-4e1996d20b78") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("8342ab93-8eef-4312-89e4-bb64772a2b63") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("2a5ad190-598f-4aab-a5e9-693352f99afd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("fe928182-379b-4c47-a296-140205b51a31") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("717983e6-d968-4e3e-acdd-7c18de4e9572") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("6a28f381-7fcc-47ae-a1fe-e6983ae0bcaf") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e7724603-9a52-4a46-b0b4-d87e2aa1c4d3") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("a4011af3-285d-4d29-9a0c-4e1996d20b78") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("8342ab93-8eef-4312-89e4-bb64772a2b63") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("2a5ad190-598f-4aab-a5e9-693352f99afd") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fe928182-379b-4c47-a296-140205b51a31") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("717983e6-d968-4e3e-acdd-7c18de4e9572") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e0772241-bf4b-418b-a808-e8824b2da4c3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3aacf24f-d6a0-45be-9c99-f14b0853ffa6") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("a54f76ea-fb40-4b6e-8f0d-a5c9861bd87a") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e55fd325-8556-46a8-9483-39b21ed682cb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c0a23514-b652-44c0-a8fe-5a6e732c11f3") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e6e104a0-03c5-4a46-a6fc-a34a3b7abbca") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("3fe78f8c-98df-4651-b558-8cf8361e8541") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e0772241-bf4b-418b-a808-e8824b2da4c3") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("3aacf24f-d6a0-45be-9c99-f14b0853ffa6") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("a54f76ea-fb40-4b6e-8f0d-a5c9861bd87a") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e55fd325-8556-46a8-9483-39b21ed682cb") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c0a23514-b652-44c0-a8fe-5a6e732c11f3") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e6e104a0-03c5-4a46-a6fc-a34a3b7abbca") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("3fe78f8c-98df-4651-b558-8cf8361e8541") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<style>
+:root {
+  --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: #F5EED8;
+  --ink: #1C1812; --ink-60: #5C4E3C; --ink-40: #8B7D69;
+  --border: rgba(28,24,18,0.14); --border-strong: rgba(28,24,18,0.32);
+  --red: #A7352A; --yellow: #EACF82;
+  --f-display: 'Roboto Slab','Georgia',serif; --f-serif: 'Fraunces','Georgia',serif; --f-sans: 'Inter',sans-serif;
+  --measure: 64ch; --layout-max: 1180px; --reading-max: 760px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+::selection { background: var(--yellow); color: var(--ink); }
+html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62;
+  background-image: radial-gradient(circle at 50% 50%, rgba(28,24,18,0.045) 1px, transparent 1.2px); background-size: 14px 14px; background-attachment: fixed; }
+a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+.skip-link { position: absolute; left: -9999px; top: 0; padding: 0.5rem 1rem; background: var(--ink); color: var(--paper); z-index: 200; font-family: var(--f-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.skip-link:focus { left: 1rem; top: 1rem; }
+.layout { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+@media (max-width: 600px) { .layout { padding: 0 1.25rem; } body { background-size: 12px 12px; } }
+
+/* ── Masthead ─────────────────────────────────────────────────── */
+.masthead { border-top: 2px solid var(--ink); padding-top: 0.875rem; }
+.masthead__furniture { display: flex; justify-content: space-between; align-items: flex-start; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding-bottom: 0.75rem; }
+.masthead__furniture-right { text-align: right; line-height: 1.5; }
+.masthead__rule { border: none; border-top: 0.5px solid var(--border-strong); margin: 0; }
+.masthead__title-row { display: flex; align-items: baseline; justify-content: center; padding: 1.25rem 0 1rem; }
+.masthead__title { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 5.5vw, 3.25rem); letter-spacing: 0.04em; color: var(--ink); line-height: 1; }
+a.masthead__title:hover { color: var(--red); }
+.masthead__subtitle-row { display: flex; justify-content: space-between; align-items: center; padding: 0.625rem 0 0.875rem; gap: 1rem; flex-wrap: wrap; }
+.masthead__subtitle { font-family: var(--f-serif); font-style: italic; font-size: 1rem; color: var(--ink); }
+.masthead__url { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.masthead__nav { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 0 2.25rem; padding: 0.75rem 0 0.875rem; }
+.masthead__nav-link { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding: 0.375rem 0; border-bottom: 1px solid transparent; transition: color 0.15s, border-color 0.15s; }
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 600px) { .masthead__nav { gap: 0 1.25rem; } .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; } .masthead__title { font-size: 1.5rem; white-space: nowrap; } }
+
+/* ── interior page-head ─────────────────────────────────────── */
+.page-head{ padding:3rem 0 2rem; border-bottom:0.5px solid var(--border); }
+.page-head__kicker{ font-family:var(--f-display); font-weight:700; font-size:0.8125rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--red); margin-bottom:1rem; }
+.page-head__title{ font-family:var(--f-serif); font-style:italic; font-size:clamp(2rem,4.8vw,3.25rem); font-weight:400; line-height:1.08; letter-spacing:-0.015em; color:var(--ink); max-width:22ch; margin-bottom:1.5rem; }
+.page-head__deck{ font-family:var(--f-serif); font-size:1.1875rem; line-height:1.55; color:var(--ink-60); max-width:56ch; }
+.page-head__ornament{ margin-top:1.75rem; display:flex; align-items:center; gap:1rem; }
+.page-head__ornament::before{ content:""; flex:0 0 80px; height:0.5px; background:var(--border-strong); }
+.page-head__diamond{ width:8px; height:8px; background:var(--red); transform:rotate(45deg); display:inline-block; }
+@media (max-width:600px){ .page-head{ padding:2.25rem 0 1.75rem; } .page-head__ornament::before{ flex-basis:50px; } }
+
+/* ── problem statement (numbered, large-scale) ───────────────── */
+.problem { padding: 2.75rem 0 0.5rem; max-width: var(--reading-max); }
+.problem__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; }
+.problem p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.125rem; }
+.problem p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 3.1em; float: left; line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red); }
+.problem p a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.problem p a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* ── method diagram ───────────────────────────────────────────── */
+.method { padding: 2.5rem 0 1rem; }
+.method__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.75rem; }
+.method__intro { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink-60); max-width: var(--reading-max); margin-bottom: 1.75rem; }
+.diagram { margin: 0 0 1rem; padding: 1.5rem 1.25rem; background: var(--paper-light); border: 0.5px solid var(--border); }
+.diagram svg { width: 100%; height: auto; display: block; }
+.diagram-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); max-width: 64ch; line-height: 1.5; }
+@media (max-width: 720px) {
+  .diagram { overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; padding: 1rem; margin-left: -1.25rem; margin-right: -1.25rem; }
+  .diagram > div[role="img"] { min-width: 620px; }
+  .diagram svg { min-width: 620px; max-width: none; }
+  .diagram::after { content: "Swipe to view full diagram \2192"; display: block; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.5rem; text-align: center; padding-bottom: 0.25rem; }
+}
+
+/* ── scope note ─────────────────────────────────────────────── */
+.scope-note { background: var(--paper-light); border-left: 2px solid var(--red); padding: 1.5rem 1.5rem 1.25rem; margin: 0.5rem 0 0; max-width: var(--reading-max); }
+.scope-note h3 { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; font-weight: 500; margin-bottom: 0.75rem; color: var(--ink); }
+.scope-note p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.65; color: var(--ink-60); margin-bottom: 0.75rem; max-width: none; }
+.scope-note p:last-child { margin-bottom: 0; }
+.scope-note strong { color: var(--ink); font-weight: 600; }
+
+/* ── article layout / TOC ──────────────────────────────────────── */
+.article-layout { display: grid; grid-template-columns: 1fr; gap: 2.5rem; padding: 2.75rem 0 0; }
+@media (min-width: 960px) { .article-layout { grid-template-columns: 220px 1fr; gap: 4rem; } }
+.article-main { max-width: var(--reading-max); }
+@media (min-width: 960px) { .article-main { grid-column: 2; } }
+.article-aside { position: relative; }
+@media (min-width: 960px) { .article-aside { grid-column: 1; position: sticky; top: 2rem; align-self: start; height: fit-content; } }
+.toc { border-top: 0.5px solid var(--border-strong); padding-top: 1.125rem; }
+.toc-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; margin-bottom: 0.875rem; display: block; }
+.toc-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.toc-list a { font-family: var(--f-sans); font-size: 0.8125rem; color: var(--ink-60); font-weight: 400; line-height: 1.45; display: block; transition: color 0.15s ease; }
+.toc-list a:hover { color: var(--red); }
+.toc-num { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em; color: var(--ink-40); display: inline-block; width: 2.75rem; font-weight: 500; }
+@media (max-width: 959px) {
+  .article-layout { display: flex; flex-direction: column; gap: 1.5rem; }
+  .article-main { order: 2; }
+  .article-aside { order: 1; padding-bottom: 1.25rem; margin-bottom: 0.5rem; border-bottom: 0.5px solid var(--border); }
+  .article-aside .toc { border-top: none; padding-top: 0; }
+  .article-aside .toc-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1.25rem; }
+}
+
+/* ── sections ─────────────────────────────────────────────────── */
+.section { margin-bottom: 3.5rem; scroll-margin-top: 1.5rem; }
+.section-num { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.875rem; display: block; }
+.section h2 { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.375rem, 2.6vw, 1.75rem); line-height: 1.2; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 0.875rem; max-width: 30ch; }
+.section > p.dek { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 1.5rem; max-width: var(--measure); }
+.section p a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.section p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.section sup { font-size: 0.72em; vertical-align: super; color: var(--red); font-weight: 500; margin-left: 0.05em; }
+.section strong { font-weight: 600; color: var(--ink); }
+
+/* ── compare grid: helps / fails / fix ───────────────────────── */
+.compare { display: grid; grid-template-columns: 1fr; border: 0.5px solid var(--border-strong); margin-bottom: 1.5rem; }
+@media (min-width: 720px) { .compare { grid-template-columns: repeat(3, 1fr); } }
+.compare__cell { padding: 1.375rem 1.25rem; border-bottom: 0.5px solid var(--border); }
+@media (min-width: 720px) { .compare__cell { border-bottom: none; border-right: 0.5px solid var(--border); } .compare__cell:last-child { border-right: none; } }
+.compare__cell:last-child { border-bottom: none; }
+.compare__cell--helps { background: var(--paper-light); }
+.compare__cell--fails { background: rgba(167,53,42,0.045); }
+.compare__cell--fix { background: rgba(234,207,130,0.18); }
+.compare__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.625rem; display: block; }
+.compare__cell--helps .compare__label { color: #4a6b4d; }
+.compare__cell--fails .compare__label { color: var(--red); }
+.compare__cell--fix .compare__label { color: #8a6a1a; }
+.compare__cell p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
+
+/* ── lesson callout ───────────────────────────────────────────── */
+.lesson { margin: 0 0 1.5rem; padding: 1.125rem 1.25rem; background: var(--paper-shade); border-left: 2px solid var(--ink-40); max-width: var(--measure); }
+.lesson__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-60); font-weight: 700; margin-bottom: 0.5rem; }
+.lesson p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); margin-bottom: 0; }
+.lesson strong { color: var(--ink); }
+
+/* ── insider-move callout ────────────────────────────────────── */
+.move { margin: 0 0 0.5rem; padding-left: 0.875rem; border-left: 2px solid var(--red); max-width: var(--measure); }
+.move__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.5rem; }
+.move p { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin-bottom: 0; }
+
+/* ── aside note (small print asides, e.g. category/model notes) ─ */
+.aside-note { margin: 0.5rem 0 1.5rem; max-width: var(--measure); }
+.aside-note p { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.6; color: var(--ink-60); }
+
+/* ── method step-notes ─────────────────────────────────────────── */
+.step-notes { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 0 0 1.75rem; max-width: var(--reading-max); }
+@media (min-width: 720px) { .step-notes { grid-template-columns: 1fr 1fr; } }
+.step-note { padding-left: 0.875rem; border-left: 2px solid var(--border-strong); }
+.step-note__num { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; color: var(--red); font-weight: 700; margin-bottom: 0.375rem; }
+.step-note p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); }
+
+/* ── reference rows (model / tool comparisons) ───────────────────── */
+.ref-row { padding: 1.375rem 0; border-bottom: 0.5px solid var(--border); max-width: var(--measure); }
+.ref-row:last-child { border-bottom: none; }
+.ref-row__name { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
+.ref-row__for { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); font-weight: 600; margin-right: 0.5rem; }
+.ref-row p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.62; color: var(--ink); margin-bottom: 0.5rem; }
+.ref-row p:last-child { margin-bottom: 0; }
+.caution { background: rgba(167,53,42,0.07); border-left: 2px solid var(--red); padding: 0.75rem 1rem; margin-top: 0.625rem; max-width: var(--measure); }
+.caution p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.6; color: var(--ink); }
+.caution strong { color: var(--red); }
+
+/* ── AI at-a-glance cards ─────────────────────────────────────── */
+.ai-glance { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 2rem; max-width: none; }
+@media (min-width: 560px) and (max-width: 899px) { .ai-glance { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .ai-glance { grid-template-columns: repeat(4, 1fr); } }
+.ai-glance__card { padding: 1.25rem 1.125rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-top: 3px solid var(--red); }
+.ai-glance__name { font-family: var(--f-display); font-weight: 700; font-size: 0.9375rem; color: var(--ink); margin-bottom: 0.625rem; }
+.ai-glance__for { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.5; color: var(--ink-60); margin-bottom: 0.875rem; }
+.ai-glance__tag { display: inline-block; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; padding: 0.25rem 0.5rem; }
+.ai-glance__tag--strong { background: rgba(74,107,77,0.15); color: #4a6b4d; }
+.ai-glance__tag--partial { background: rgba(138,106,26,0.15); color: #8a6a1a; }
+.ai-glance__tag--caution { background: rgba(167,53,42,0.12); color: var(--red); }
+
+/* ── demo capture spectrum diagram ───────────────────────────────── */
+.spectrum-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); max-width: 64ch; line-height: 1.5; }
+
+/* ── checklist deliverable (copy-paste specimen card) ───────────── */
+.checklist-block { margin: 1rem 0 1.5rem; padding: 2rem 2rem 1.75rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; max-width: var(--measure); }
+.checklist-block::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.checklist-block__label { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 600; padding-bottom: 1rem; margin-bottom: 1.375rem; border-bottom: 0.5px solid var(--border); flex-wrap: wrap; }
+.checklist-block__label-text { flex: 1 1 auto; min-width: 0; }
+.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 32px; white-space: nowrap; }
+.checklist-block__copy-btn:hover { background: var(--red); border-color: var(--red); }
+.checklist-block__copy-btn.is-copied { background: var(--red); border-color: var(--red); }
+.checklist-block__copy-icon { font-size: 0.875rem; line-height: 1; }
+.checklist-block h3 { font-family: var(--f-serif); font-style: italic; font-size: 1.3125rem; font-weight: 500; color: var(--ink); margin-bottom: 0.375rem; }
+.checklist-block__meta-line { font-family: var(--f-sans); font-size: 0.75rem; color: var(--ink-40); margin-bottom: 1.375rem; letter-spacing: 0.02em; }
+.checklist-block ol { list-style: none; counter-reset: cl; }
+.checklist-block li { counter-increment: cl; font-family: var(--f-serif); font-size: 1rem; line-height: 1.55; color: var(--ink); margin-bottom: 1rem; padding-left: 2rem; position: relative; }
+.checklist-block li::before { content: counter(cl); position: absolute; left: 0; top: 0.05em; font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem; color: var(--red); border: 1.5px solid var(--red); width: 1.5rem; height: 1.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.checklist-block li:last-child { margin-bottom: 0; }
+@media (max-width: 600px) { .checklist-block { padding: 1.5rem 1.375rem; } }
+
+/* ── practitioner bio card ────────────────────────────────────── */
+.bio-card { display: grid; grid-template-columns: 1fr; gap: 1.25rem; margin: 0 0 1.75rem; padding: 1.75rem; background: var(--paper-shade); border: 0.5px solid var(--border-strong); max-width: var(--measure); }
+@media (min-width: 640px) { .bio-card { grid-template-columns: auto 1fr; align-items: start; } }
+.bio-card__mark { width: 56px; height: 56px; background: var(--ink); color: var(--paper); font-family: var(--f-display); font-weight: 700; font-size: 1.375rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.bio-card__name { font-family: var(--f-serif); font-style: italic; font-size: 1.25rem; font-weight: 500; color: var(--ink); margin-bottom: 0.5rem; }
+.bio-card p { font-family: var(--f-sans); font-size: 0.875rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 0.625rem; }
+.bio-card p:last-child { margin-bottom: 0; }
+.bio-card strong { color: var(--ink); }
+
+/* ── inside track list ─────────────────────────────────────────── */
+.inside-track { list-style: none; counter-reset: it; }
+.inside-track li { counter-increment: it; padding: 1.25rem 0 1.25rem 3rem; border-bottom: 0.5px solid var(--border); position: relative; max-width: var(--measure); }
+.inside-track li:last-child { border-bottom: none; }
+.inside-track li::before { content: counter(it); position: absolute; left: 0; top: 1.25rem; font-family: var(--f-display); font-weight: 700; font-size: 1.125rem; color: var(--red); width: 2rem; height: 2rem; border: 1.5px solid var(--red); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.inside-track p { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin: 0; }
+.inside-track strong { color: var(--red); }
+
+/* ── workstream risk map ──────────────────────────────────────── */
+.risk-map { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 0 0 1rem; }
+@media (min-width: 640px) and (max-width: 899px) { .risk-map { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .risk-map { grid-template-columns: repeat(5, 1fr); } }
+.risk-map__card { padding: 1.125rem 1rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); border-left: 3px solid var(--red); }
+.risk-map__ws { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--red); font-weight: 700; margin-bottom: 0.5rem; }
+.risk-map__name { font-family: var(--f-serif); font-style: italic; font-size: 1rem; font-weight: 500; color: var(--ink); margin-bottom: 0.625rem; line-height: 1.25; }
+.risk-map__risk { font-family: var(--f-sans); font-size: 0.75rem; line-height: 1.5; color: var(--ink-60); }
+.risk-map__risk strong { color: var(--ink); }
+
+/* ── footnotes ────────────────────────────────────────────────── */
+.footnotes { margin-top: 3rem; padding-top: 1.25rem; border-top: 0.5px solid var(--border-strong); }
+.footnotes-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 0.875rem; display: block; }
+.footnotes ol { list-style: none; counter-reset: footnotes; }
+.footnotes li { counter-increment: footnotes; font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 0.625rem; padding-left: 1.5rem; position: relative; }
+.footnotes li::before { content: counter(footnotes); position: absolute; left: 0; font-family: var(--f-display); font-weight: 700; font-size: 0.75rem; color: var(--red); font-style: normal; top: 0.1em; }
+.footnotes a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s ease, border-color 0.15s ease; }
+.footnotes a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+/* ── editor's note ────────────────────────────────────────────── */
+.editors-note { margin-top: 3.5rem; padding: 2.25rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; }
+.editors-note::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.editors-note-label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; display: block; }
+.editors-note p { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; line-height: 1.65; color: var(--ink); margin-bottom: 0.875rem; max-width: 58ch; }
+.editors-note p:last-child { margin-bottom: 0; }
+.editors-note p a { font-style: normal; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.editors-note p a:hover { color: var(--red); border-bottom-color: var(--red); }
+.editors-sig { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; font-style: normal !important; margin-top: 1.25rem; }
+
+.back-link{ display:inline-block; font-family:var(--f-sans); font-size:0.6875rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--red); font-weight:600; margin-top:2.5rem; border-bottom:1px solid var(--red); padding-bottom:2px; }
+.back-link:hover{ color:var(--ink); border-bottom-color:var(--ink); }
+
+/* ── subscribe (sitewide, verbatim) ─────────────────────────────── */
+.band { padding: 3.75rem 0; }
+.band--tint { background: var(--paper-shade); border-top: 0.5px solid var(--border); border-bottom: 0.5px solid var(--border); }
+.subscribe { text-align: center; }
+.subscribe__inner { max-width: var(--reading-max); margin: 0 auto; }
+.subscribe__kicker { font-family: var(--f-display); font-weight: 700; font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+.subscribe__pitch { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 500; line-height: 1.2; color: var(--ink); margin-bottom: 1.75rem; max-width: 24ch; margin-left: auto; margin-right: auto; }
+.subscribe__form { display: flex; gap: 0.5rem; max-width: 460px; margin: 0 auto; }
+.subscribe__input { flex: 1; padding: 0.9375rem 1rem; font-family: var(--f-sans); font-size: 0.9375rem; border: 0.5px solid var(--border-strong); background: var(--paper); color: var(--ink); min-height: 48px; }
+.subscribe__input::placeholder { color: var(--ink-40); }
+.subscribe__button { padding: 0.9375rem 1.5rem; font-family: var(--f-sans); font-size: 0.8125rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; background: var(--ink); color: var(--paper); border: 0.5px solid var(--ink); cursor: pointer; transition: background 0.15s; min-height: 48px; }
+.subscribe__button:hover { background: var(--red); border-color: var(--red); }
+.subscribe__disclaimer { font-family: var(--f-serif); font-style: italic; font-size: 0.875rem; color: var(--ink-60); margin-top: 1.25rem; }
+@media (max-width: 600px) { .subscribe__form { flex-direction: column; } .band { padding: 2.75rem 0; } .subscribe__pitch { font-size: 1.5rem; } }
+
+/* ── folio band + colophon (sitewide, verbatim) ─────────────────── */
+.folio-band { margin-top: 4rem; }
+.folio-band__rule { border: none; border-top: 0.5px solid var(--border-strong); }
+.folio-band__rule + .folio-band__rule { margin-top: 4px; }
+.folio-band__inner { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; padding: 1rem 0; gap: 1rem; }
+.folio-band__left { font-family: var(--f-display); font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.14em; color: var(--red); text-transform: uppercase; }
+.folio-band__center { color: var(--ink); font-size: 0.9375rem; text-align: center; }
+.folio-band__right { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; text-align: right; }
+.colophon { padding: 3rem 0 1.5rem; border-top: 0.5px solid var(--border-strong); }
+.colophon__inner { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+.colophon__ornament { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 2.25rem; }
+.colophon__ornament::before, .colophon__ornament::after { content: ""; height: 0.5px; background: var(--border-strong); flex: 0 0 60px; }
+.colophon__diamond { width: 8px; height: 8px; background: var(--red); transform: rotate(45deg); }
+.colophon__bottom { border-top: 0.5px solid var(--border); padding-top: 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.colophon__meta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.colophon__nav { display: flex; align-items: center; gap: 0.875rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; }
+.colophon__nav-link { color: var(--ink-60); transition: color 0.15s; }
+.colophon__nav-link:hover { color: var(--red); }
+.colophon__nav-sep { color: var(--ink-40); }
+.colophon__grid { display:grid; grid-template-columns:120px 1fr; gap:1rem 2rem; max-width:820px; margin-bottom:2.25rem; }
+.colophon__label { font-family:var(--f-display); font-weight:700; font-size:0.6875rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--red); padding-top:0.22rem; }
+.colophon__value { font-family:var(--f-serif); font-size:0.9375rem; line-height:1.55; color:var(--ink); }
+.colophon__value a { border-bottom:1px solid var(--border-strong); padding-bottom:1px; }
+.colophon__value a:hover { color:var(--red); border-bottom-color:var(--red); }
+@media (max-width: 720px) { .colophon__bottom { flex-direction: column-reverse; align-items: flex-start; } .colophon__grid{ grid-template-columns:1fr; gap:0.25rem 0; margin-bottom:1.75rem; } .colophon__value{ margin-bottom:1.25rem; } }
+
+@media (max-width: 600px) {
+  .section { margin-bottom: 2.75rem; }
+  .editors-note { padding: 1.625rem 1.375rem; }
+  .scope-note { padding: 1.25rem 1.125rem 1rem; }
+}
+
+/* ── checklist surface callout ────────────────────────────────── */
+.checklist-surface {
+  display: flex; align-items: baseline; flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.875rem 1.25rem;
+  margin: 1.5rem 0 0;
+  background: rgba(167,53,42,0.05);
+  border: 0.5px solid rgba(167,53,42,0.3);
+  border-left: 3px solid var(--red);
+}
+.checklist-surface__label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em;
+  text-transform: uppercase; font-weight: 700; color: var(--red);
+  white-space: nowrap; flex-shrink: 0;
+}
+.checklist-surface__text {
+  font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55;
+  color: var(--ink-60); flex: 1 1 30ch;
+}
+.checklist-surface__link {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em;
+  text-transform: uppercase; font-weight: 600; color: var(--red);
+  border-bottom: 1px solid var(--red); padding-bottom: 1px;
+  white-space: nowrap; transition: color 0.15s, border-color 0.15s;
+  flex-shrink: 0;
+}
+.checklist-surface__link:hover { color: var(--ink); border-color: var(--ink); }
+
+/* ── reading progress bar ─────────────────────────────────────── */
+.reading-progress {
+  position: fixed; top: 0; left: 0; right: 0; height: 2px;
+  background: transparent; z-index: 100; pointer-events: none;
+}
+.reading-progress__bar {
+  height: 100%; width: 0%; background: var(--red);
+  transition: width 0.1s linear;
+}
+
+/* ── workstream nav pills (above article) ─────────────────────── */
+.ws-nav {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  padding: 1.25rem 0 0.25rem;
+  border-bottom: 0.5px solid var(--border);
+  margin-bottom: 0;
+}
+.ws-nav__pill {
+  font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.12em;
+  text-transform: uppercase; font-weight: 600;
+  padding: 0.375rem 0.75rem;
+  border: 0.5px solid var(--border-strong);
+  color: var(--ink-60);
+  background: transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+.ws-nav__pill:hover { background: var(--red); color: var(--paper); border-color: var(--red); }
+@media (max-width: 600px) { .ws-nav { gap: 0.375rem; } .ws-nav__pill { font-size: 0.625rem; padding: 0.3rem 0.625rem; } }
+
+/* ── redesigned diagrams + expand lightbox ─────────────────────── */
+.diagram-figure { margin: 0 0 1.5rem; }
+.diagram-figure .diagram { margin: 0; }
+.diagram-figure .diagram-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); max-width: 64ch; line-height: 1.5; }
+.diagram-figure .diagram-caption strong { color: var(--ink); font-style: normal; font-weight: 600; }
+.diagram-expand-btn { display: inline-flex; align-items: center; gap: 0.375rem; font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--ink-60); background: transparent; border: 0.5px solid var(--border-strong); padding: 0.375rem 0.625rem; cursor: pointer; margin-top: 0.875rem; transition: color 0.15s ease, border-color 0.15s ease; }
+.diagram-expand-btn:hover { color: var(--red); border-color: var(--red); }
+.diagram-expand-btn svg { width: 10px; height: 10px; flex-shrink: 0; }
+.signal-legend { display: grid; grid-template-columns: 1fr; gap: 1rem; margin: 1.25rem 0 0.5rem; }
+@media (min-width: 560px) and (max-width: 899px) { .signal-legend { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 900px) { .signal-legend { grid-template-columns: repeat(5, 1fr); } }
+.signal-legend__name { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; font-family: var(--f-display); font-weight: 700; font-size: 0.875rem; color: var(--ink); }
+.signal-legend__dot { width: 8px; height: 8px; flex: 0 0 auto; }
+.signal-legend__desc { font-family: var(--f-serif); font-size: 0.8375rem; line-height: 1.5; color: var(--ink); margin: 0; }
+.diagram-lightbox { position: fixed; inset: 0; z-index: 900; display: flex; align-items: center; justify-content: center; padding: 1.5rem; background: rgba(28,24,18,0.82); opacity: 0; visibility: hidden; transition: opacity 0.2s ease, visibility 0.2s ease; cursor: zoom-out; }
+.diagram-lightbox.is-open { opacity: 1; visibility: visible; }
+.diagram-lightbox__inner { position: relative; background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 2rem 2rem 1.75rem; max-width: min(1180px, calc(100vw - 3rem)); max-height: calc(100vh - 3rem); overflow: auto; cursor: default; transform: scale(0.97); transition: transform 0.2s ease; }
+.diagram-lightbox.is-open .diagram-lightbox__inner { transform: scale(1); }
+.diagram-lightbox__inner::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.diagram-lightbox__caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); margin-top: 1.25rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); line-height: 1.5; }
+.diagram-lightbox__caption strong { color: var(--red); font-weight: 600; font-style: normal; font-family: var(--f-display); font-size: 0.875rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.diagram-lightbox__dismiss { position: absolute; top: 0.875rem; right: 0.875rem; font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--ink-60); background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 0.3rem 0.5rem; cursor: pointer; z-index: 2; transition: color 0.15s ease, border-color 0.15s ease; }
+.diagram-lightbox__dismiss:hover { color: var(--red); border-color: var(--red); }
+.diagram-lightbox__hint { position: fixed; bottom: 1.25rem; left: 50%; transform: translateX(-50%); font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(242,237,227,0.55); pointer-events: none; white-space: nowrap; }
+@media print { .diagram-expand-btn { display: none; } .diagram-lightbox { display: none !important; } }
+
+
+/* ── diagram mobile reflow ─────────────────────────────────────── */
+@media (max-width: 720px) {
+  .dgrid--4 { grid-template-columns: repeat(2, 1fr) !important; gap: 28px 22px !important; }
+  .dgrid--3 { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .dgrid--3 > div { text-align: left !important; }
+  .dgrid--3 .dnode { justify-content: flex-start !important; height: auto !important; margin: 2px 0 !important; }
+  .dthread { display: none !important; }
+  .diagram--reflow::after { content: none !important; }
+  .diagram--reflow { overflow-x: visible !important; margin-left: 0 !important; margin-right: 0 !important; }
+}
+
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"]},{"@type":"Article","@id":"https://technicalmarketing.org/ai-for-technical-marketers#article","headline":"AI for Technical Marketers: The Problem, the Method, the Checklist","description":"AIが本当にテクニカルマーケターの実務を圧縮する箇所はどこか、一見完成しているように見えるだけの何かを静かに生み出す箇所はどこか、そしてその違いを捉えるためのコピー可能なチェックリスト。裏付けあり、5つのワークストリーム、1つの方法。","author":{"@id":"https://technicalmarketing.org/#organization"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-07-02","dateModified":"2026-07-02","url":"https://technicalmarketing.org/ai-for-technical-marketers","mainEntityOfPage":"https://technicalmarketing.org/ai-for-technical-marketers","about":{"@id":"https://technicalmarketing.org/the-technical-marketer#workstreams"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".problem",".checklist-block",".inside-track",".editors-note",".method__intro"]},"editor":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"isPartOf":{"@type":"Periodical","@id":"https://technicalmarketing.org/#publication","name":"Technical Marketing","issn":"pending","publisher":{"@id":"https://technicalmarketing.org/#organization"}},"teaches":{"@type":"HowTo","name":"Claim Verification Checklist for AI-Assisted Technical Marketing","description":"アナリストブリーフィング、競合バトルカード、技術コンテンツ、営業支援資料においてAI支援の主張を出荷する前に実行すべき6つの質問。","url":"https://technicalmarketing.org/ai-for-technical-marketers#checklist","step":[{"@type":"HowToStep","text":"この主張は、文字起こし、仕様書、勝敗分析のメモなど実在する情報源に遡れるか。モデルの一般知識ではないか?"},{"@type":"HowToStep","text":"出荷前に、すべての数値、名前、日付を人間が確認したか?"},{"@type":"HowToStep","text":"特定のアナリスト、競合、顧客を実名で参照している場合、実際に本人を知る誰かがそれを確認したか?"},{"@type":"HowToStep","text":"これがライセンス付きのリサーチレポート（Gartner、Forrester、IDC）から引用されたものである場合、そのライセンスは実際にその用途を許可しているか?"},{"@type":"HowToStep","text":"この主張は、懐疑的な購買者やアナリストから「なぜそれがわかるのか」と直接尋ねられても持ちこたえられるか?"},{"@type":"HowToStep","text":"5の答えが「ノー」である場合、出荷前にその主張は削除されるか、あるいはその裏付けとなる証拠は強化されるか?"}]},"citation":[{"@type":"ScholarlyArticle","name":"AI Search Has A Citation Problem","author":[{"@type":"Person","name":"Klaudia Jazwinska"},{"@type":"Person","name":"Aisvarya Chandrasekar"}],"publisher":{"@type":"Organization","name":"Columbia Journalism Review / Tow Center for Digital Journalism"},"datePublished":"2025-03","url":"https://www.cjr.org/tow_center/ai-search-citation-accuracy.php"},{"@type":"WebPage","name":"Research Documents Usage Policy","publisher":{"@type":"Organization","name":"Gartner"},"url":"https://www.gartner.com/en/about/policies/research-docs"}],"mentions":[{"@type":"Person","name":"Mike Moran","url":"https://www.mikemoran.com","jobTitle":"IBM Distinguished Engineer (ret.); author of Do It Wrong Quickly","sameAs":"https://www.linkedin.com/in/mikemoran/"},{"@type":"Person","name":"Emily Kramer","url":"https://newsletter.mkt1.co","jobTitle":"Co-founder, MKT1","sameAs":"https://www.linkedin.com/in/emilykramer/"},{"@type":"Person","name":"April Dunford","url":"https://www.aprildunford.com","jobTitle":"Positioning consultant; author of Obviously Awesome"},{"@type":"Person","name":"Andy Raskin","url":"https://andyraskin.com","jobTitle":"Strategic narrative consultant"},{"@type":"Person","name":"Christopher Lochhead","url":"https://lochhead.com","jobTitle":"Author; co-creator of Category Design"},{"@type":"Person","name":"Jerry Weltsch","jobTitle":"Analyst Relations, Asana"},{"@type":"Person","name":"Beth Bamonte","jobTitle":"Analyst Relations, IBM"},{"@type":"Person","name":"Chris Manfredi","jobTitle":"Analyst Relations, Sprout Social"},{"@type":"Organization","name":"Tow Center for Digital Journalism","url":"https://towcenter.columbia.edu","parentOrganization":{"@type":"Organization","name":"Columbia University Graduate School of Journalism"}}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the biggest AI mistake technical marketers make in analyst relations?","acceptedAnswer":{"@type":"Answer","text":"AIの下書きを最終版として扱ってしまうこと。特に特定のアナリストを実名で参照する内容ではそうだ。生成AIは捏造しやすく、Gartner自身の利用ポリシーはそのリサーチをAIモデルの学習や基盤に使うことを禁じているため、過去のアナリストレポートをブリーフィング準備用のツールに読み込ませることは、単なる精度リスクではなくライセンス違反になりうる。"}},{"@type":"Question","name":"Which AI is best for finding information already inside my company?","acceptedAnswer":{"@type":"Answer","text":"Microsoft Copilotである。Microsoft Graphに基づいており、PowerPointのデック、Word文書、Excelファイルを含む、組織自身のSharePoint、Teams、OneDriveのコンテンツを検索できる。単体のChatGPT、Claude、Geminiのアカウントには、自社のファイルへのアクセス経路が全くないためこれができない。"}},{"@type":"Question","name":"Can AI write an effective competitive battlecard on its own?","acceptedAnswer":{"@type":"Answer","text":"確実にはできない。汎用のAIモデルは学習データをほぼ均等に重み付けするため、誘導なしのバトルカードは、他のあらゆるAI製バトルカードと同じありきたりな差別化ポイントに行き着く。対処法は、すべての下書きを自社の勝敗分析の通話文字起こしやメモに基づかせ、営業担当に届く前に人間の担当者が承認することである。"}},{"@type":"Question","name":"Why does claim verification matter when using AI for technical marketing?","acceptedAnswer":{"@type":"Answer","text":"間違った主張は、それがどこに現れるかによって結果が異なるからだ。リハーサル済みのデモ台本の間違った1行はリハーサルで見つかる。アナリストブリーフィング、バトルカード、顧客リファレンスにおける間違った主張は、商談を失わせたり、アナリストとの間で何年にもわたって企業の信頼性を損なったりしうる。"}},{"@type":"Question","name":"Is Grok reliable for competitive intelligence research?","acceptedAnswer":{"@type":"Answer","text":"本物の強みがある。学習データのカットオフを持つどのモデルにも真似できない、ライブのX投稿へのネイティブなアクセスであり、何かが今日起きたことを教えてくれる。しかし独立したTow Center for Digital Journalismの調査は、その引用が約94パーセントの頻度で誤っていることを発見した。何かが起きたことを知るために使い、購買者の前に出る前に一次情報源で実際に何が起きたかを検証すること。"}},{"@type":"Question","name":"Do AI demo capture tools show a real product or a recreation of it?","acceptedAnswer":{"@type":"Answer","text":"カテゴリによる。ArcadeやTangoのような自動キャプチャー・ウォークスルーツールは、実際のクリックスルーを静的なスクリーンショットシーケンスとして記録する。StorylaneやRepriseのようなインタラクティブプラットフォームは実際の製品をDOMレベルで捕捉して編集を可能にするため、再キャプチャーしなければデモは実際に稼働中の製品の挙動からずれうる。Saleoのようなライブデータ注入ツールは、再現するのではなく実際の稼働中の機能する製品によりよいデータを注入するため、本物に最も近い状態を保つ。"}},{"@type":"Question","name":"Which AI is best for analyzing a product demo video or a competitor's video?","acceptedAnswer":{"@type":"Answer","text":"Geminiである。動画と音声を、別々の文字起こしと画像処理のパスを走らせるのではなく1つの入力として処理し、特定のタイムスタンプを直接参照できる。これは、競合のデモがある主張をした正確な瞬間を指し示したいときに本物の強みとなる。"}},{"@type":"Question","name":"Which AI should a technical marketer use to see what a buyer sees when they ask an AI about the product?","acceptedAnswer":{"@type":"Answer","text":"ChatGPTである。あらゆる主要モデルの中で依然として世界のAIチャットボットトラフィックの最大シェアを占めているため、自社の製品、カテゴリ、競合についての質問にそれがどう答えるかをテストすることで、見込み客が統計的に最初に見る可能性が最も高いものがわかる。この実践はAI-visibility monitoring、あるいはgenerative engine optimizationと呼ばれる。"}},{"@type":"Question","name":"Which AI is best for keeping one long document consistent through many rounds of edits?","acceptedAnswer":{"@type":"Answer","text":"Claudeである。ただしこの強みは本物ではあるが、独立して確認されたものではなく自己申告である。Anthropic自身の再テストは、特定のプロンプト構造化の後で長文書の検索性能が改善したことを示しており、独立した研究者たちは、勝者を決めることなく長いコンテキストの信頼性を本物の改善傾向にあるカテゴリとして追跡している。確定した事実としてではなく、自社の素材で検証する価値のある作業仮説として扱うべきである。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://technicalmarketing.org/tools"},{"@type":"ListItem","position":3,"name":"AI for Technical Marketers","item":"https://technicalmarketing.org/ai-for-technical-marketers"}]},{"@type":"HowTo","@id":"https://technicalmarketing.org/ai-for-technical-marketers#method","name":"The Four-Step AI Verification Method for Technical Marketers","description":"一見完成しているように見えるだけの何かを出荷することなく、あらゆるTechnical Marketingの成果物にAIを活用するための、繰り返し使える4ステップの枠組み。","url":"https://technicalmarketing.org/ai-for-technical-marketers","step":[{"@type":"HowToStep","position":1,"name":"Draft from your own source material","text":"何かを依頼する前に、実際の文字起こし、仕様書、通話メモをプロンプトに貼り付ける。一般知識でモデルに隙間を埋めさせることは決してない。"},{"@type":"HowToStep","position":2,"name":"Name the specific risk for this deliverable","text":"起草する前に、この成果物が失敗する具体的な様式を名指しする。捏造されたアナリストの発言、でっち上げられたAPIのシグネチャ、ありきたりなバトルカードの箇条書き。起草前に名指ししておくことが、出力を目の前にしたときにそれを探し続けるための鍵になる。"},{"@type":"HowToStep","position":3,"name":"Gate every claim through a human","text":"出力に含まれるすべての数値、名前、具体的な主張を読み、「これは当事者の前で弁護できるか」と自問する。正直な答えが「ノー」なら、まだ出荷しない。"},{"@type":"HowToStep","position":4,"name":"Apply the one verified move for this workstream","text":"その成果物のために裏付けのある長く使える戦術を、最初にではなく最後に適用する。それが機能するのは、下書きがすでに実際の情報源を反映している場合だけである。"}]},{"@type":"Person","@id":"https://technicalmarketing.org/ai-for-technical-marketers#mike-moran","name":"Mike Moran","url":"https://www.mikemoran.com","sameAs":"https://www.linkedin.com/in/mikemoran/","jobTitle":"IBM Distinguished Engineer (ret.)","description":"1989年に世界初の商用言語検索エンジンを構築。検索・情報検索分野で13件の特許を保有。IBMで30年のキャリア。Do It Wrong Quicklyの著者。Technical Marketing, Issue Iへの寄稿者。","alumniOf":{"@type":"Organization","name":"IBM"},"worksFor":{"@type":"Organization","name":"ThinkStream"}}]}</script>
+<style>/*
+  technicalmarketing.org — shared enhancements
+  =====================================================
+  This file is loaded on every page AFTER the page's own inline <style>.
+  It adds two things the site did not have before:
+    1. Dark mode (opt-in via a manual toggle only; light is the default)
+    2. Reading experience (progress bar, reading time, mobile TOC)
+
+  Light mode is ALWAYS the default, regardless of the operating system's
+  color scheme. Dark mode is opt-in only: the toggle button (added by
+  /js/site.js) sets data-theme="dark" on <html> and persists the choice to
+  localStorage. There is deliberately no prefers-color-scheme auto-switching.
+
+  IMPORTANT: the site's inline :root already defines the palette as CSS
+  variables (--paper, --ink, --red, ...). Dark mode simply re-points those
+  same variables, so every existing rule that already reads a variable
+  adapts automatically. No per-page color edits were required.
+  =====================================================
+*/
+
+/* ---- 1. Diagram color tokens ------------------------------------------- *
+   The inline SVG figures use hardcoded hex fills/strokes. Rather than edit
+   every SVG, we map each hardcoded value to a token via attribute selectors
+   (a CSS `fill`/`stroke` property overrides an SVG presentation attribute).
+   In light mode each token equals its original hex, so light rendering is
+   byte-for-byte unchanged; dark mode simply re-points the token.          */
+:root {
+  --dg-fafaf7: #fafaf7;
+  --dg-1a1a1a: #1a1a1a;
+  --dg-1C1812: #1C1812;
+  --dg-5C4E3C: #5C4E3C;
+  --dg-8a8a85: #8a8a85;
+  --dg-5a5a5a: #5a5a5a;
+  --dg-A7352A: #A7352A;
+}
+
+/* ---- 2. Dark palette (opt-in only, applied via data-theme="dark") ------ */
+[data-theme="dark"] {
+  --paper:         #1C1812;
+  --paper-shade:   #26221A;
+  --paper-light:   #2E2A20;
+  --ink:           #EFE6C9;
+  --ink-60:        #C8B98A;
+  --ink-40:        #8A7E6A;
+  --border:        rgba(239, 230, 201, 0.14);
+  --border-strong: rgba(239, 230, 201, 0.30);
+  --red:           #D0685C;
+  --red-soft:      #DE8378;
+  --yellow:        #EACF82;
+
+  --dg-fafaf7: #211d16;
+  --dg-1a1a1a: #EFE6C9;
+  --dg-1C1812: #EFE6C9;
+  --dg-5C4E3C: #C8B98A;
+  --dg-8a8a85: #9a8f7b;
+  --dg-5a5a5a: #c2b699;
+  --dg-A7352A: #D0685C;
+}
+
+/* data-theme="light" forces the light palette even on a dark system */
+[data-theme="light"] {
+  --paper:         #EFE6C9;
+  --paper-shade:   #E5D9B4;
+  --paper-light:   #F5EED8;
+  --ink:           #1C1812;
+  --ink-60:        #5C4E3C;
+  --ink-40:        #8B7D69;
+  --border:        rgba(28, 24, 18, 0.14);
+  --border-strong: rgba(28, 24, 18, 0.32);
+  --red:           #A7352A;
+  --red-soft:      #B85146;
+  --yellow:        #EACF82;
+
+  --dg-fafaf7: #fafaf7;
+  --dg-1a1a1a: #1a1a1a;
+  --dg-1C1812: #1C1812;
+  --dg-5C4E3C: #5C4E3C;
+  --dg-8a8a85: #8a8a85;
+  --dg-5a5a5a: #5a5a5a;
+  --dg-A7352A: #A7352A;
+}
+
+/* ---- 2b. Inverted "ink band" islands ---------------------------------- *
+   Some sections are dark-on-light BY DESIGN in light mode (e.g. .anchor uses
+   background: var(--ink) with light text). A plain token swap double-inverts
+   them into jarring bright bands in dark mode. Fix: re-declare the palette
+   LOCALLY on those islands so they stay a dark surface with light text in
+   both modes. The band lifts to a --paper-shade-like dark so it still reads
+   as an elevated panel against the darker page. */
+[data-theme="dark"] .anchor,
+[data-theme="dark"] .comp-plate {
+  --paper:         #EFE6C9;
+  --paper-shade:   #E5D9B4;
+  --paper-light:   #F5EED8;
+  --ink:           #26221A;
+  --ink-60:        #C8B98A;
+  --ink-40:        #A2947B;
+  --border:        rgba(239, 230, 201, 0.14);
+  --border-strong: rgba(239, 230, 201, 0.30);
+  --red:           #D0685C;
+  --red-soft:      #DE8378;
+}
+
+/* ---- 3. Diagram token application (theme-agnostic mapping) ------------- */
+.diagram [fill="#fafaf7"]  { fill: var(--dg-fafaf7); }
+.diagram [fill="#1a1a1a"]  { fill: var(--dg-1a1a1a); }
+.diagram [stroke="#1a1a1a"]{ stroke: var(--dg-1a1a1a); }
+.diagram [fill="#1C1812"]  { fill: var(--dg-1C1812); }
+.diagram [stroke="#1C1812"]{ stroke: var(--dg-1C1812); }
+.diagram [fill="#5C4E3C"]  { fill: var(--dg-5C4E3C); }
+.diagram [fill="#8a8a85"]  { fill: var(--dg-8a8a85); }
+.diagram [fill="#5a5a5a"]  { fill: var(--dg-5a5a5a); }
+.diagram [fill="#A7352A"]  { fill: var(--dg-A7352A); }
+.diagram [stroke="#A7352A"]{ stroke: var(--dg-A7352A); }
+
+/* ---- 4. Dark-mode surface tweaks -------------------------------------- */
+/* Selection: keep the yellow highlight but force dark text for contrast */
+[data-theme="dark"] *::selection { background: var(--yellow); color: #1C1812; }
+[data-theme="dark"] body {
+  background-image: radial-gradient(circle at 50% 50%, rgba(239, 230, 201, 0.04) 1px, transparent 1.2px);
+}
+
+/* ---- 5. Images in dark mode ------------------------------------------- */
+/* Dim light-background plate/cover images slightly; never invert.        */
+[data-theme="dark"] img { filter: brightness(0.88) contrast(1.05); }
+/* Logos are exempt */
+.site-logo img,
+.masthead img,
+.masthead__logo img { filter: none !important; }
+
+/* ---- 6. Theme toggle button (styling; markup injected by site.js) ----- */
+#theme-toggle { transition: color 0.15s ease; }
+#theme-toggle:hover { color: var(--red); }
+
+/* =======================================================================
+   READING EXPERIENCE
+   ======================================================================= */
+
+/* ---- 7. Sticky reading progress bar ----------------------------------- *
+   Scoped with :not(.reading-progress) so it styles ONLY the plain bar this
+   project injects (on what-is-technical-marketing). The article pages that
+   already ship their own .reading-progress bar keep their existing styles. */
+#reading-progress:not(.reading-progress) {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--red, #A7352A);
+  z-index: 9999;
+  transition: width 0.1s linear;
+  pointer-events: none;
+}
+
+/* ---- 8. Reading time (injected into byline) --------------------------- */
+.reading-time {
+  display: inline;
+  color: var(--ink-40, #8B7D69);
+  font-size: inherit;
+}
+.reading-time::before { content: " · "; }
+
+/* ---- 9. Mobile section nav ------------------------------------------- */
+@media (max-width: 768px) {
+  .toc-sidebar,
+  .on-this-page,
+  .toc { display: none; }
+
+  .toc-mobile {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 0;
+    border-top: 1px solid var(--border-strong, #C8B98A);
+    border-bottom: 1px solid var(--border-strong, #C8B98A);
+    margin: 1.5rem 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .toc-mobile::-webkit-scrollbar { display: none; }
+
+  .toc-mobile a {
+    flex-shrink: 0;
+    display: block;
+    padding: 0.6rem 1rem;
+    font-family: var(--f-sans, sans-serif);
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: var(--ink-40, #7A6E5E);
+    text-decoration: none;
+    white-space: nowrap;
+    border-right: 1px solid var(--border, rgba(28,24,18,0.14));
+  }
+  .toc-mobile a:last-child { border-right: none; }
+  .toc-mobile a:hover,
+  .toc-mobile a.active {
+    color: var(--red, #A7352A);
+    background-color: var(--paper-light, #F5EED8);
+  }
+
+  .footnote a,
+  sup a {
+    padding: 0.25rem 0.1rem;
+    display: inline-block;
+    min-width: 28px;
+    min-height: 28px;
+    text-align: center;
+  }
+}
+
+/* The mobile TOC is hidden on desktop (the sidebar TOC handles that view) */
+@media (min-width: 769px) {
+  .toc-mobile { display: none; }
+}
+</style>
+<script src="9a7bce3b-d232-4749-bc27-56a996631490"></script>
+</head>
+<body>
+
+<div class="reading-progress" aria-hidden="true"><div class="reading-progress__bar" id="progress-bar"></div></div>
+<a href="#main" class="skip-link">Skip to content</a>
+<!-- Diagram lightbox overlay -->
+<div class="diagram-lightbox" id="diagram-lightbox" role="dialog" aria-modal="true" aria-label="Diagram expanded view" aria-hidden="true">
+  <div class="diagram-lightbox__inner" id="diagram-lightbox-inner">
+    <button type="button" class="diagram-lightbox__dismiss" id="diagram-lightbox-dismiss" aria-label="Close diagram">閉じる</button>
+    <div id="diagram-lightbox-content"></div>
+  </div>
+  <p class="diagram-lightbox__hint">外側をクリックするか、Escキーで閉じる</p>
+</div>
+
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__furniture">
+    <span>初版 · ISSN取得予定</span>
+    <span class="masthead__furniture-right">紀元MMXXVI年<br>第I号 · N°1</span>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__title-row">
+    <a href="/ja/" class="masthead__title">TECHNICAL MARKETING</a>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__subtitle-row">
+    <span class="masthead__subtitle">この分野のフィールドマニュアル。</span>
+    <span class="masthead__url">technicalmarketing.org</span>
+  </div>
+  <hr class="masthead__rule">
+  <nav class="masthead__nav" aria-label="Primary">
+    <a href="/ja/reference" class="masthead__nav-link">リファレンス</a>
+    <a href="/ja/volume-01" class="masthead__nav-link">Volume 01</a>
+    <a href="/ja/tools" class="masthead__nav-link" aria-current="page">ツール</a>
+    <a href="/ja/archive" class="masthead__nav-link">アーカイブ</a>
+    <a href="/ja/about" class="masthead__nav-link">概要</a>
+  </nav>
+  <hr class="masthead__rule">
+  <nav class="masthead__langs" aria-label="Language">
+    <a href="/ai-for-technical-marketers" class="masthead__lang-link">English</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <span class="masthead__lang-link" aria-current="true">日本語</span>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/es/ai-for-technical-marketers" class="masthead__lang-link">Español</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/fr/ai-for-technical-marketers" class="masthead__lang-link">Français</a>
+    <span class="masthead__lang-sep" aria-hidden="true">&middot;</span>
+    <a href="/de/ai-for-technical-marketers" class="masthead__lang-link">Deutsch</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="page-head layout">
+  <div class="page-head__kicker">部門 · ツール · フィールドガイド</div>
+  <h1 class="page-head__title">テクニカルマーケター向けAI活用ガイド。</h1>
+  <p class="page-head__deck">1つの方法を、あなたが実際に担う5つの成果物に適用する。以下のすべての主張には、実名・日付付きの情報源が脚注として付いている。一次情報源で裏付けが取れなかったものは、曖昧な表現で残すのではなく削除した。</p>
+  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+</section>
+
+<section class="layout">
+  <div class="problem">
+    <div class="problem__label">課題</div>
+    <p>すべてのテクニカルマーケターは「AIを使え」と言われてきた。しかし、そのアドバイスのほとんどは、この役割が実際に担う業務の範囲を踏まえていない。</p>
+    <p>一般的なAIのアドバイスは、モデルが一見完成しているように見えるものを生み出しながら、懐疑的なアナリスト、懐疑的な購買者、あるいは実際のAPI仕様を知るエンジニアに反論された瞬間に破綻する箇所を教えてくれない。本ガイドは、この役割が担う成果物ごとに、同じ1つの問いに5回答える。<strong>AIが本当に実務を削減してくれるのはどこで、後悔することになる何かを静かに生み出してしまうのはどこか?</strong></p>
+    <p>本ガイドは、1989年に世界初の商用言語検索エンジンを構築し、検索・情報検索分野で13件の特許を持ち、IBMで30年を過ごし、複数のテクノロジーの波が「すべてを変える」と喧伝されるのを見てきた実務家（プラクティショナー）の言葉で締めくくられる。その波を通じて変わらなかったものについての彼の見解こそが、本ガイドがこの結末に至る理由である &mdash; その元になった<a href="/ja/nice-job-hooking-me">対話の全文</a>を読む。</p>
+  </div>
+</section>
+
+<section class="layout">
+  <div class="checklist-surface" aria-label="Quick access to the claim verification checklist">
+    <span class="checklist-surface__label">本ガイドの成果物</span>
+    <span class="checklist-surface__text">以下のすべてのワークストリームの土台となる、コピー可能な6項目の主張検証チェックリスト。このページから1つだけ使うなら、これを使ってほしい。</span>
+    <a href="#checklist" class="checklist-surface__link">チェックリストへ ↓</a>
+  </div>
+</section>
+
+<section class="layout">
+  <div class="method">
+    <div class="method__label">方法 — 以下のすべてのワークストリームの土台となる</div>
+    <p class="method__intro">以下のすべての成果物に、同じ4つのステップが当てはまる。セクションごとに変わるのはステップ2だけ、つまり各成果物が失敗する具体的な様式である。以降の各ワークストリームのセクションは、この枠組みの適用例であり、それぞれ別個の見解ではない。</p>
+    <figure class="diagram-figure">
+  <div class="diagram diagram--reflow" role="img" aria-label="The method in four steps: one, draft from your own source material such as transcripts, specs, or notes; two, name the specific risk for this deliverable; three, gate every claim through a human, the step that never changes; four, apply the one verified move.">
+    <div style="position:relative;padding:2px 0 4px;">
+      <div class="dthread" style="position:absolute;left:1%;right:23%;top:21px;height:1px;background:rgba(28,24,18,0.28);"></div>
+      <div class="dgrid dgrid--4" style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+        <div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">01</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">自分の情報源から起草する</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0;">文字起こし、仕様書、メモ。一般知識ではない。</p>
+        </div>
+        <div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">02</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">具体的なリスクを名指しする</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0;">成果物ごとに失敗の仕方は異なる。</p>
+        </div>
+        <div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">03</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">すべての主張を人間の目でゲートする</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0 0 10px;">あらゆる情報源が独立して行き着いた、唯一の実践。</p>
+          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#A7352A;">◆ 不変の要素</div>
+        </div>
+        <div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">04</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;"><span style="box-shadow:inset 0 -0.24em 0 #EACF82;">検証済みの一手を適用する</span></h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0 0 10px;">裏付けのある、長く使える戦術を1つ。</p>
+          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A1A;">◆ 一手</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <figcaption class="diagram-caption"><strong>方法。</strong> 4つのステップを、以下の成果物ごとに1回ずつ適用する。ステップ3だけは決して変わらない。</figcaption>
+  <button type="button" class="diagram-expand-btn" aria-label="Expand the method diagram to full size"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 4V1h3M6 1h3v3M9 6v3H6M4 9H1V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>拡大</button>
+</figure>
+
+    <div class="step-notes">
+      <div class="step-note">
+        <div class="step-note__num">01 · 実践では</div>
+        <p>何かを依頼する前に、実際の文字起こし、仕様書、通話メモをプロンプトに貼り付ける。手元に情報源がなければ、起草する前に取りに行く。もっともらしく聞こえる一般知識でモデルにその隙間を埋めさせてはいけない。</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">02 · 実践では</div>
+        <p>起草する前に、この成果物が失敗する具体的な様式を名指しする。捏造されたアナリストの発言、でっち上げられたAPIのシグネチャ、ありきたりなバトルカードの箇条書き。起草前に名指ししておくことが、出力を目の前にしたときにそれを探し続けるための鍵になる。</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">03 · 実践では</div>
+        <p>出力に含まれるすべての数値、名前、具体的な主張を読み、「これは当事者の前で弁護できるか」と自問する。正直な答えが「ノー」なら、まだ出荷しない。</p>
+      </div>
+      <div class="step-note">
+        <div class="step-note__num">04 · 実践では</div>
+        <p>その成果物のために裏付けのある一手を、最初にではなく最後に適用する。それが機能するのは、下書きがすでにあなたの実際の情報源を反映している場合だけである。ステップ1から3の代わりにはならない。</p>
+      </div>
+    </div>
+
+    <div class="caution">
+      <p><strong>ステップ1の前に: 自分の情報源をどこまで入力してよいかを把握しておく。</strong>「実際の情報源を貼り付ける」という前提は、会社がそのデータの取り扱いを実際に承認したツールを使うことを前提としている。個人の無料プランのAIアカウントは、エンタープライズライセンスのアカウントとは別物であり、その違いは机上の話ではない。IBMのAR（アナリストリレーションズ）チーム自身が、無料プランのツールは入力内容を学習データとして保持しうることを発見しており、未発表のロードマップの詳細、未公開の価格情報、あるいはまだ公になっていないアナリストとの会話が、自社のものではないモデルに流出しうる。<sup>1</sup> 自社がそのカテゴリの情報についてツールの使用を許可していないなら、貼り付けてはいけない。それは省略してよい生産性のヒントではなく、まず確認すべき社内ポリシーの問題である。</p>
+    </div>
+  </div>
+
+  <div class="scope-note">
+    <h3>範囲と鮮度。</h3>
+    <p>本ガイドは、Technical Marketingの6つのワークストリーム<sup>†</sup>のうち5つ、すなわちAnalyst Positioning、Narrative Architecture、Technical Content、Sales Engineering Enablement、Competitive Positioningを扱う。モデル選択のリファレンスと、デモキャプチャーツールに関する簡単な指針も含む。デモ構築プラットフォームの本格的な評価は、別途独立したガイドとして予定している。以下は、それらを評価する前に理解しておく価値のある、唯一の区別である。</p>
+    <p><strong>持続性について。</strong> 名指しされたツールや製品機能は数か月で陳腐化する。覚えておく価値があるのは構造的な知見（どのボタンが引き金かではなく、なぜその失敗様式が起こるか）である。ある知見が現行機能やベンダーが改訂しうる数値に依存している場合は、日付を明記している。日付を確認してほしい。</p>
+  </div>
+
+  <div class="risk-map" role="img" aria-label="Five workstreams and the single biggest AI risk in each. Analyst Positioning: fabricated claims about a named analyst. Narrative Architecture: letting AI originate positioning instead of pressure-testing it. Technical Content: invented API behavior that compiles but fails at runtime. Sales Engineering Enablement: AI deciding which discovery question matters instead of a human. Competitive Positioning: generic battlecard claims nobody actually won or lost a deal on.">
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-02</div>
+      <div class="risk-map__name">Analyst Positioning</div>
+      <div class="risk-map__risk"><strong>リスク:</strong> 名指しされたアナリストに関する捏造された主張。</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-03</div>
+      <div class="risk-map__name">Narrative Architecture</div>
+      <div class="risk-map__risk"><strong>リスク:</strong> AIにポジショニングを検証させるのではなく、生成させてしまうこと。</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-04</div>
+      <div class="risk-map__name">Technical Content</div>
+      <div class="risk-map__risk"><strong>リスク:</strong> コンパイルは通るが実行時に失敗する、でっち上げられたAPI動作。</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-05</div>
+      <div class="risk-map__name">SE Enablement</div>
+      <div class="risk-map__risk"><strong>リスク:</strong> どのディスカバリー質問が重要かを、人間ではなくAIが決めてしまうこと。</div>
+    </div>
+    <div class="risk-map__card">
+      <div class="risk-map__ws">WS-06</div>
+      <div class="risk-map__name">Competitive Positioning</div>
+      <div class="risk-map__risk"><strong>リスク:</strong> 実際に商談の勝敗を左右したことのない、ありきたりな主張。</div>
+    </div>
+  </div>
+</section>
+
+<section class="layout">
+<nav class="ws-nav" aria-label="Jump to workstream">
+  <a href="#ws-02" class="ws-nav__pill">WS-02 · Analyst Positioning</a>
+  <a href="#ws-03" class="ws-nav__pill">WS-03 · Narrative Architecture</a>
+  <a href="#ws-04" class="ws-nav__pill">WS-04 · Technical Content</a>
+  <a href="#ws-05" class="ws-nav__pill">WS-05 · SE Enablement</a>
+  <a href="#ws-06" class="ws-nav__pill">WS-06 · Competitive Positioning</a>
+  <a href="#which-ai" class="ws-nav__pill">どのAIを使うか</a>
+  <a href="#checklist" class="ws-nav__pill">❏ チェックリスト</a>
+</nav>
+<div class="article-layout">
+  <aside class="article-aside">
+    <nav class="toc" aria-label="Table of contents">
+      <span class="toc-label">このガイドの内容</span>
+      <ol class="toc-list">
+        <li><a href="#ws-02"><span class="toc-num">WS-02</span>Analyst Positioning</a></li>
+        <li><a href="#ws-03"><span class="toc-num">WS-03</span>Narrative Architecture</a></li>
+        <li><a href="#ws-04"><span class="toc-num">WS-04</span>Technical Content</a></li>
+        <li><a href="#ws-05"><span class="toc-num">WS-05</span>SE Enablement</a></li>
+        <li><a href="#ws-06"><span class="toc-num">WS-06</span>Competitive Positioning</a></li>
+        <li><a href="#which-ai"><span class="toc-num">✧</span>どのAIを何に使うか</a></li>
+        <li><a href="#demo-capture"><span class="toc-num">✧</span>デモキャプチャー、簡潔に</a></li>
+        <li><a href="#checklist"><span class="toc-num">❏</span>チェックリスト</a></li>
+        <li><a href="#inside-track"><span class="toc-num">◆</span>インサイドトラック</a></li>
+        <li><a href="#what-holds"><span class="toc-num">◆</span>変わらないもの</a></li>
+      </ol>
+    </nav>
+  </aside>
+
+  <div class="article-main">
+
+    <div class="section" id="ws-02">
+      <span class="section-num">WS-02 · Analyst Positioning</span>
+      <h2>ブリーフィング準備、RFI回答、そしてほとんど誰も確認しない1つの法的な壁。</h2>
+      <p class="dek">Asana、IBM、Sprout SocialのAR（アナリストリレーションズ）責任者は、実名で同じパターンを使っている。AIが起草し、アナリストの目に触れる前に人間がゲートする。<sup>1</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">役立つ場面</span>
+          <p>ブリーフィング準備資料や想定Q&amp;Aの起草。IBMはこの方法でRFI回答の約95%を事前入力し、提出前に人間がQAを行っている。<sup>1</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">失敗する場面</span>
+          <p>特定のアナリストを名指しするあらゆる内容。生成AIは「完全な捏造、真っ赤な嘘をつきやすい」ものであり、ジュニアレベルの下書き作業として扱うべきである。<sup>3</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">対処法</span>
+          <p>アナリスト固有の内容はすべて、出荷前に人間がゲートする。プロンプトを確認する前に、リサーチライセンスを確認すること。</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>IBMのARチームは、無料プランの一般消費者向けAIツールが入力内容を学習データとして保持しうることを発見した。未発表のロードマップの詳細が、自社のものではないモデルに流出しうる。<sup>1</sup> <strong>教訓:</strong> 機密性のある内容にはエンタープライズライセンスのツールを使うこと。</p>
+      </div>
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>Gartner自身のResearch Documents Usage Policyは、公表されたリサーチを「生成人工知能の学習または開発への入力として、あるいはそのために」使用することを禁じている。<sup>2</sup> <strong>教訓:</strong>「AIにアナリストの過去のレポートを読ませる」というのは、ライセンス済みリサーチにとって単なる機能面の問題ではない。ライセンス違反になりうる。</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">一手</div>
+        <p>AIで起草する。特定のアナリスト、数値、競合に関する主張を参照するものはすべて、公開前に人間がゲートする。参考までに: Forrester自身が2026年1月に5名の実名アナリストで公開した最新のブリーフィング準備ガイダンスには、AIへの言及が一切ない。<sup>4</sup> ブリーフィングを実際に運営する人々は、これを今なお人間の職人技として扱っている。</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-03">
+      <span class="section-num">WS-03 · Narrative Architecture</span>
+      <h2>まだ確立されていない技法と、今四半期のベンチマークより長持ちする3つのモデルの違い。</h2>
+      <p class="dek">Dunford、Raskin、Lochheadを含め、シニアポジショニング専門家で自身のAIワークフローを公開した者は誰もいない。これは出遅れた既解決の問題ではなく、本当に手つかずの領域である。<sup>5,6</sup> この作業で実務に耐えるAIワークフローを構築している実務家の、最も近い実名の例は、Claude Projects内で戦略文書を管理しているMKT1のEmily Kramerである。<sup>7</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">役立つ場面</span>
+          <p>すでに確信しているポジショニングの一文をストレステストする。購買者より先に弱点を見つけるため、自分の主張を意図的に攻撃する。それを入力し、モデルに穴を見つけさせ、実在する競合を3社挙げさせ、懐疑的な購買者が去る理由を論じさせる。<sup>8</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">失敗する場面</span>
+          <p>ポジショニングをゼロから生成させること。DunfordやRaskinの枠組みの上に構築されたツールは、いずれもサードパーティによる実装であり、著者自身が承認した手法ではない。<sup>5,6</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">対処法</span>
+          <p>すでに確信している下書きをAIでプレッシャーテストする。一文を生成させることは決してない。</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>ColumbiaのTow Centerが8つのツールと1,600件のクエリで実施した、AI引用精度に関する唯一の厳密な独立調査は、全体の失敗率が60%を超えることを発見した。その中でPerplexityが<em>最も低い</em>失敗率を記録したが、それでも約37%は誤っていた。<sup>9</sup> <strong>教訓:</strong> それは「悪い集団の中でましな方」であって信頼できるわけではない。どのAI検索ツールが提示する引用も、必ず検証すること。</p>
+      </div>
+
+      <div class="aside-note">
+        <p><strong>ここで使うモデルについての注記:</strong> Claude、Copilot、Gemini、Grokの詳細で裏付けのある比較は、このページの後半にあるモデル選択のリファレンスを参照のこと。ナラティブ作業に関して特に言えば、Perplexityは注意が必要な1つである。提示される引用を信頼する前に、上記の教訓を確認してほしい。</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">一手</div>
+        <p>「反論できないなら、あなたのポジショニングは鋭さが足りない。」<sup>8</sup> そのテストは、購買者があなたの代わりに実行する前に、自分で行うこと。</p>
+      </div>
+
+      <div class="scope-note" style="margin-top:1.5rem;">
+        <h3>このワークストリームが他より短い理由。</h3>
+        <p>これは見落としではない。Narrative Architectureに確立されたAIワークフローが存在しないのは、必要とされる判断、すなわち懐疑的な購買者を前にしても通用する唯一の主張を見極めることが、現行のどのツールによってもまだ圧縮できないからである。したがって本セクションのすべての推奨事項は、すでに確信している下書きをプレッシャーテストすることに限られる。AIが一文を生成することはない。それを行うのは実務家である。その境界線は本ガイドの欠落ではない。この分野の正直な現状である。</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-04">
+      <span class="section-num">WS-04 · Technical Content</span>
+      <h2>グラウンディングは、検証されるたびに一般知識に勝る。</h2>
+      <p class="dek">Twilioは2025年12月、社内ドキュメント用のプロンプトライブラリをオープンソース化した。役割ごとに分離され、実際のスタイルガイドに制約されたプロンプトであり、それでも人間によるレビューが精度を担保している。<sup>10</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">役立つ場面</span>
+          <p>固定されたスタイルガイドに沿ったドキュメントの起草と再構成。起草パスとは別に、独立したAI編集パスを設ける。<sup>10</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">失敗する場面</span>
+          <p>モデルに「この種のAPIは通常どう動くか」を思い出させること。コンパイルは通るが実行時に失敗するメソッドシグネチャを、日常的にでっち上げる。<sup>12</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">対処法</span>
+          <p>すべての生成を、実際の仕様書、SDK、製品バージョンに基づかせる。一般知識に基づかせることは決してない。そのうえで、いずれにせよ検証する。</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>ドキュメントコーパスに対する単純な検索は、「幻覚のステップ、混在した製品バージョン、存在したことのない機能説明」を生み出す。なぜなら「似ているテキストは、関連する知識と同じではない」からである。<sup>11</sup> <strong>教訓:</strong> 自動化する前に、信頼できる情報源を構造化すること。ドキュメントの平坦な山では不十分である。</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">一手</div>
+        <p>デモ、統合ガイド、リファレンスアーキテクチャがAPIの挙動について主張しているなら、その主張を実際の仕様書やSDKと照合する。それと似たAPIについてモデルが思い出す内容と照合することは決してない。</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-05">
+      <span class="section-num">WS-05 · Sales Engineering Enablement</span>
+      <h2>デモの採点とは異なる課題であることが、重なりの欠如から確認できる。</h2>
+      <p class="dek">今回の調査で見つかった限り、「デモ効果採点」を確立された用語として扱っているものはない。最も近い概念であるConsensusのデモ分析は、エンゲージメントと完了率を追跡する。<sup>13</sup> それは、完成したデモがナラティブとして一貫しているかどうかとは別の軸である。</p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">役立つ場面</span>
+          <p>ディスカバリー質問やデモレシピのバリエーションを、量を確保するために幅広く素早く一次生成すること。</p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">失敗する場面</span>
+          <p>この特定の商談でどの質問が重要かを決めること。「場合による」「わからない」といった、本当のディスカバリーシグナルが宿るヘッジ表現を追いかけない。</p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">対処法</span>
+          <p>量を確保するにはAI。ここで何が重要かの判断とヘッジの追跡には人間。</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>営業組織の55%は、すでにスクリプトや販促資料といった戦術的コンテンツに一般的なAIを使っているが、選定などの戦略的タスクでそれを信頼しているのはわずか31%である。汎用ツールにはビジネスの文脈が欠けているためだ。<sup>14</sup> <strong>教訓:</strong> 自分のタスクがその境界線のどちら側にあるかを、委任する前に把握しておくこと。</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">一手</div>
+        <p>このワークストリームはデモの材料を供給するものであり、デモを採点するものではない。AIを使って素材、質問セット、レシピのバリエーションを広げ、その後、完成したデモを別の工程として<a href="https://thinkroot.io/demo-intelligence?ref=tmorg" rel="external noopener">Demo Coherence Index</a>（ThinkRootのツール。ThinkRootは本刊行物に出版インフラを提供しており、奥付で開示している）にかけてから公開する。</p>
+      </div>
+    </div>
+
+    <div class="section" id="ws-06">
+      <span class="section-num">WS-06 · Competitive Positioning</span>
+      <h2>AIのバトルカードが、なぜ同じ3つの箇条書きに収束するのか。</h2>
+      <p class="dek">Cisco、Juniper、Polycomで20年のCI（競合インテリジェンス）経験を持つベテランは、その境界線を率直にこう表現した。「自動化は人間の知性を置き換えることではなく、それを強化することだ。」<sup>15</sup></p>
+
+      <div class="compare">
+        <div class="compare__cell compare__cell--helps">
+          <span class="compare__label">役立つ場面</span>
+          <p>デスクリサーチの統合に、実際の営業通話からのカンバセーション・インテリジェンス抽出を組み合わせ、約30分で一次バトルカードにまとめること。<sup>16</sup></p>
+        </div>
+        <div class="compare__cell compare__cell--fails">
+          <span class="compare__label">失敗する場面</span>
+          <p>汎用モデルに、自身の学習データから差別化要因を起草させること。すべてを均等に重み付けするため、他のあらゆるAI製バトルカードと同じありきたりな論点に行き着く。</p>
+        </div>
+        <div class="compare__cell compare__cell--fix">
+          <span class="compare__label">対処法</span>
+          <p>すべての下書きを、自社の勝敗分析の文字起こしや通話メモに基づかせる。最終承認は人間が担う。</p>
+        </div>
+      </div>
+
+      <div class="lesson">
+        <div class="lesson__label">学んだ教訓</div>
+        <p>「AIリサーチツールは、価格、機能に関する主張、顧客名といった具体的な情報を幻覚することがある。」<sup>16</sup> <strong>教訓:</strong> AI支援のバトルカードに含まれるすべての具体的な主張には、営業担当が購買者の前で繰り返す前に、実名で確認可能な情報源が必要である。</p>
+      </div>
+
+      <div class="aside-note">
+        <p>KlueとCrayonはいずれも、GartnerによるCompetitive and Market Intelligence Platformsの初のMagic Quadrantにおいて、複数社の中の一部として（独占的にではなく）Leaderに選出された。Klueは<em>The Forrester Wave™: Market And Competitive Intelligence Platforms, Q4 2024</em>でもStrong Performerであった。<sup>17,18</sup> アナリストによって裏付けられた、実在するカテゴリである。上記のグラウンディングという規律を大規模に運用するものであり、それに取って代わるものではない。</p>
+      </div>
+
+      <div class="move">
+        <div class="move__label">一手</div>
+        <p>AI支援のバトルカードを出荷する前に、懐疑的な営業担当が尋ねるであろう問いを、モデルにも自分自身にも投げかける。「この主張のおかげで、実際に勝ち負けが決まった具体的な商談はどれか?」正直な答えが「ない」なら、その主張はありきたりであり、競合インテリジェンスではない。</p>
+      </div>
+    </div>
+
+    <div class="section" id="which-ai">
+      <span class="section-num">Model Selection</span>
+      <h2>どのAIを、何に使うか。</h2>
+      <p class="dek">以下の各モデルには、特定の業務においてより優れたツールになりうる、構造的で本物の理由がある。曖昧な「モデルの質」という主張でも、次のリリースでリセットされるものでもなく、そのモデルが何にアクセスできるか、何をするために作られたかという、本物の違いである。証拠がベンダー発のものに限られる場合は、その旨を明記している。本物の強みに本物のリスクが伴う場合は、両方をここに記載している。</p>
+
+      <figure class="diagram-figure">
+  <div class="diagram" role="img" aria-label="Five AI models grouped by how far each claim was verified. Real and ready to use: ChatGPT and Gemini (real, confirmed), Copilot (strongest, confirmed), and Claude (real, self-reported). Use with caution: Grok." style="overflow-x:auto;">
+    <div style="position:relative;height:220px;min-width:640px;margin:0 6px;">
+      <div style="position:absolute;left:0;width:72%;top:132px;height:10px;background:rgba(28,24,18,0.05);border:0.5px solid rgba(28,24,18,0.14);"></div>
+      <div style="position:absolute;left:78%;right:0;top:132px;height:10px;background:rgba(167,53,42,0.14);border:0.5px solid rgba(167,53,42,0.3);"></div>
+      <div style="position:absolute;left:75%;top:120px;height:34px;width:1px;background:rgba(28,24,18,0.22);"></div>
+      <div style="position:absolute;left:33%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#5C4E3C;">確認済み・利用可能</div>
+      <div style="position:absolute;left:89%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#A7352A;">要注意</div>
+      <div style="position:absolute;left:9%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">ChatGPT</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">確認済み</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:81px;background:rgba(28,24,18,0.32);"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+        </div>
+      <div style="position:absolute;left:25%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
+          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Claude</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#8A6A1A;margin-top:3px;">自己申告</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:110px;width:1px;height:21px;background:rgba(28,24,18,0.32);"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#8A6A1A;"></div>
+        </div>
+      <div style="position:absolute;left:42%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Copilot</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">最も強力・確認済み</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:81px;background:rgba(28,24,18,0.32);"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+        </div>
+      <div style="position:absolute;left:58%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
+          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Gemini</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">確認済み</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:110px;width:1px;height:21px;background:rgba(28,24,18,0.32);"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+        </div>
+      <div style="position:absolute;left:90%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#A7352A;">Grok</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#A7352A;margin-top:3px;">要注意</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:80px;background:#A7352A;"></div>
+          <div style="position:absolute;left:50%;top:130px;transform:translateX(-50%);width:14px;height:14px;background:#A7352A;"></div>
+        </div>
+    </div>
+  </div>
+  <figcaption class="diagram-caption"><strong>確信度。</strong> それぞれの主張がどこまで検証されたかでグループ化 — 4つは本物で利用可能、1つは要注意。</figcaption>
+  <button type="button" class="diagram-expand-btn" aria-label="Expand the model-confidence diagram to full size"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 4V1h3M6 1h3v3M9 6v3H6M4 9H1V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>拡大</button>
+</figure>
+      <div class="signal-legend">
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>ChatGPT</div><p class="signal-legend__desc">購買者がAIにあなたについて尋ねたとき、最も見る可能性が高いものを確認できる。</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#8a6a1a;"></span>Claude</div><p class="signal-legend__desc">何度も編集を重ねる1つの長い文書を、一貫した状態に保てる。</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>Copilot</div><p class="signal-legend__desc">自社がすでに持っているPowerPoint、Word、Excelファイルの中身を見つけられる。</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>Gemini</div><p class="signal-legend__desc">動画の映像とナレーションを一体として読み取る、あるいは仕様書を素早い解説動画に変換できる。</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#a7352a;"></span><span style="color:#a7352a;">Grok</span></div><p class="signal-legend__desc">何かが今日起きたことはわかる。<strong style="color:#a7352a;font-weight:600;">実際に何が起きたかはわからない。</strong></p></div>
+      </div>
+      <div class="ref-row">
+        <div class="ref-row__name">Claude</div>
+        <p><span class="ref-row__for">最適な用途</span>何度も編集を重ねながら内部的な一貫性を保つ必要がある、1つの長い文書の起草と改訂。現場で新しい反論を聞くたびに改訂する競合ポジショニングブリーフ。同じ3つの差別化要因が、2ページ目と12ページ目で同じ言い回しで登場する必要がある、複数セクションのアナリストブリーフィング資料。</p>
+        <p><strong>なぜ重要か:</strong> 50ページの下書きを貼り付けて1セクションだけの変更を依頼したとき、途中で確立された用語を見失うモデルは、同じ機能に対して静かに別の言葉を導入してしまう。アナリストがどちらが正しいのか尋ねるまで、誰も気づかない。</p>
+        <p><strong>正直なところ:</strong> 本物だが、自己申告である。Anthropic自身の再テストでは、特定のプロンプト構造化を行った後、長文書の検索性能が大きく改善している。<sup>19</sup> 独立した研究者たちは、長いコンテキストの信頼性を、勝者を決めることなく本物の改善傾向にあるカテゴリとして追跡している。<sup>20</sup>「Claudeは長文書でより形式を保持する」というのは、自社の素材で検証する価値のある作業仮説として扱うべきであり、独立して検証済みの確定した事実ではない。</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Microsoft Copilot</div>
+        <p><span class="ref-row__for">最適な用途</span>何か新しいものを書く前に、自社がすでに知っていることを見つけること。直近5件の競合分解資料は、SharePoint中に散らばったPowerPointのデック内にある。価格の履歴は、2年前にアカウントマネージャーが作ったスプレッドシートの中にある。この全く同じアナリストの質問への直近3件の回答は、別の誰かのOneDrive内のWord文書の中にある。</p>
+        <p><strong>正直なところ:</strong> この表の中で最も確実に裏付けられた強みである。Copilotはアーキテクチャ上Microsoft Graphに基づいており、組織の権限が設定されたPowerPoint、Word、Excel、Teams、OneDriveのコンテンツを直接検索・読み取りできる。単体のChatGPT、Claude、Geminiのアカウントにはこれができない。自社のファイルへのアクセス経路が全くないためだ。<sup>21</sup> Microsoftが委託したForresterの調査は、実務における本物の投資対効果を発見している。これは独立調査ではなく委託調査として扱うべきだが、その基盤となるアーキテクチャは文書化されており、独立して検証可能である。<sup>22</sup></p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Gemini</div>
+        <p><span class="ref-row__for">最適な用途</span>本物である2つの異なる用途。第一に、他の誰かが作った動画、つまり自分たちが録画したデモや、YouTubeから取得した競合の製品動画を、映像と音声のナレーションを別々の入力として扱うのではなく一体として読み取り、分析すること。第二に、長い文章の仕様書や技術文書を、チームが読むのではなく視聴できる、ナレーション付きの簡単な解説動画に変換すること。</p>
+        <p><strong>正直なところ:</strong> 動画分析の能力は本物であり、現時点で際立っている。Geminiは動画と音声を、別々の文字起こしと画像処理のパスを走らせるのではなく1つの入力として処理し、特定のタイムスタンプを直接参照できる。これは、競合のデモがある主張をした正確な瞬間を指し示したいときに本物の強みとなる。<sup>23</sup> GoogleのNotebookLMは、複数の元文書をナレーション付きのスライドプレゼンテーションに変換でき、社内向けの手早い解説には有用だが、生成されるのはナレーション付きスライドであり実際の製品映像ではないため、本物のデモ動画の代わりにはならない。<sup>24</sup> Googleの動画生成モデルVeoは、ソーシャルや広告コンテンツ向けに実際に文書化された用途を持つ、短い8秒のクリップを作成する。<sup>25</sup> ここでは、ナレーション付きの技術的な製品ウォークスルーという具体的な用途に対しては検証していないため、購買者向けの何かに信頼して使う前に、自社の素材でセリフと正確性を検証してほしい。</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">Grok</div>
+        <p><span class="ref-row__for">最適な用途</span>何かが動いたことを最初に知らせるシグナル、たとえば競合の株価、買収の噂、経営陣の発言、製品発表など、ライブのX上の活動から、他のどこよりも先に表面化するもの。競合調査や、企業の現状に合わせてデモの範囲を定めることに本当に役立つ。買収されたばかり、経営陣が交代したばかり、決算未達だったばかりの企業向けにデモを作ろうとしているなら、その文脈によってデモが強調すべき内容は変わる。</p>
+        <p><strong>正直なところ:</strong> Grokは、学習データのカットオフ時点のスナップショットではなく、ライブのX投稿ストリームにネイティブかつファーストパーティとしてアクセスできる唯一の主要モデルである。これはこの表にある他のすべてのモデルとの本物の構造的な違いであり、何かが起きたことに気づくための適切なツールである。</p>
+        <div class="caution"><p><strong>この注意事項は、埋もれさせず前面に出す必要がある。</strong> Tow Center for Digital Journalismの調査によると、Grokの引用は約94%の頻度で誤っていた。複数のメディアが個別に具体的な捏造の事例を記録している。<sup>26</sup> Grokは、実際に何が起きたかを突き止めるためのツールではなく、何かが起きたことだけを知るためのツールである。シグナルを検知したら、企業自身のIR（投資家向け広報）ページ、実際のSEC提出書類（買収のような重要事象については10-K、10-Q、8-K）、あるいは公式プレスリリースといった、実在する情報源で必ず裏を取る。Grokで気づき、一次資料で確認するというその組み合わせこそが、購買者の前で繰り返す噂話ではなく、競合インテリジェンスとしてこれを有用にする。</p></div>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">ChatGPT</div>
+        <p><span class="ref-row__for">最適な用途</span>実際の購買者がAIチャットボットにあなたの製品、カテゴリ、競合について尋ねたとき、最も見る可能性が高いものを確認すること。</p>
+        <p><strong>なぜ重要か:</strong> AI-visibility monitoring、時にgenerative engine optimizationとも呼ばれる、広がりつつある実践は、マーケターがかつてGoogleの検索順位を確認していたのと同じように、AIチャットボットが企業についての質問にどう答えるかを今チェックしている。ChatGPTは、そのチェックにおける単独最大の対象面である。OpenAIは2026年2月時点で週間アクティブユーザー9億人を報告しており、前年から大幅に増加している。ChatGPTは依然として、この表にあるどのツールよりも世界のAIチャットボットトラフィックの最大シェアを占め、約54%でGemini、Claude、Copilotの合計を上回っているが、競合が勢いを増すにつれてそのシェアは縮小しつつある。<sup>33,34</sup> 自社のチームがたまたま好んでいるモデルだけでなく、見込み客が営業チームと話す前に何を目にするかを知りたいなら、その質問はChatGPTで具体的にテストすること。</p>
+        <p>Adobeが2025年11月に約19億ドルでSemrushを買収したのも、この種のAI可視性モニタリングを明確な理由として掲げてのことであり、それほどまでにこれは本物である。<sup>35</sup> この実践は、周辺的なアイデアから制度的に裏付けられたものへと移行した。</p>
+      </div>
+    </div>
+
+    <div class="section" id="demo-capture">
+      <span class="section-num">Demo Capture</span>
+      <h2>デモキャプチャーツール、簡潔に。</h2>
+      <p class="dek">これらを評価する前に理解しておく価値のある区別が1つある。Mike Moranがどんなデモを判断するときにも使うのと同じテストである。そのツールは実際の稼働中の製品を捉えているのか、それともその再現なのか? 実際の製品の実際の挙動を捉えるツールは、バグも含めてその挙動の真実を引き継ぐ。インターフェースを再現するツールは、作り手が再現しようと覚えていたものだけを引き継ぐ。</p>
+
+      <figure class="diagram-figure">
+  <div class="diagram diagram--reflow" role="img" aria-label="Demo-capture tools on a spectrum from recreation to the real thing. Auto-capture walkthroughs (Arcade, Tango, Scribe, Supademo): static once recorded. Interactive DOM capture (Storylane, Walnut, Navattic, Reprise): real, then edited, and able to drift. Live-data injection (Saleo, Reprise Reveal): the real product, live.">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
+      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8B7D69;">← 再現</span>
+      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#4A6B4D;">本物 →</span>
+    </div>
+    <div style="position:relative;">
+      <div class="dthread" style="position:absolute;left:5%;right:5%;top:74px;height:1px;background:rgba(28,24,18,0.28);"></div>
+      <div class="dgrid dgrid--3" style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+        <div style="text-align:center;">
+          <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">自動キャプチャー・ウォークスルー</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#8B7D69;">記録後は静的</div>
+          </div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;border:1.5px solid #8A6A1A;background:#F5EED8;transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Arcade, Tango, Scribe, Supademo</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">インタラクティブDOMキャプチャー</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#8A6A1A;">本物、その後編集 — ずれうる</div>
+          </div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;background:#8A6A1A;transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Storylane, Walnut, Navattic, Reprise</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">ライブデータ注入</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#4A6B4D;">実際の製品、ライブ</div>
+          </div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:15px;height:15px;background:#4A6B4D;transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Saleo, Reprise Reveal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <figcaption class="diagram-caption"><strong>スペクトラム。</strong> 右に行くほど、デモのバグは製品のバグでもある — それが要点である。</figcaption>
+  <button type="button" class="diagram-expand-btn" aria-label="Expand the demo-capture diagram to full size"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 4V1h3M6 1h3v3M9 6v3H6M4 9H1V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>拡大</button>
+</figure>
+
+      <div class="ref-row">
+        <div class="ref-row__name">自動キャプチャー・ウォークスルーツール</div>
+        <p><span class="ref-row__for">例</span>Arcade、Tango、Scribe、Supademo</p>
+        <p>実際の製品の本物のクリックスルーをスクリーンショットや短い動画シーケンスとして記録し、その上にナレーション、ホットスポット、AIボイスオーバーを追加する。<sup>27</sup> 記録自体は本物だが、通常は記録後は静的なままである。Tangoをテストしたある実務家は、Chromeでしか動作せず、PDFエクスポートで文字化けのバグが発生することを発見した。<sup>28</sup> ドキュメントツールを実際に試した別の比較では、Tangoの自動化は名前が示すほど深くないことが判明した。「基本的な自動化はあったが、ガイドと手順は自分で手入力する必要があった。」<sup>29</sup> このカテゴリ全体の失敗様式はどちらにせよ単純である。製品がUIの変更を出荷した瞬間にスクリーンショットは陳腐化するが、ツールの中にそれを検知してくれるものは何もない。</p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">インタラクティブ営業デモプラットフォーム</div>
+        <p><span class="ref-row__for">例</span>Storylane、Walnut、Navattic、Reprise</p>
+        <p>実際の製品をDOMレベルで捕捉し、その結果を編集・リブランドしてクリック可能なデモにすることを可能にする。純粋なモックアップよりも「本物、編集済み」に近いが、編集可能であることは諸刃の剣でもある。定期的に再キャプチャーしなければ、デモは実際に稼働中の製品の挙動から静かにずれていく可能性があり、プリセールスチームはまさにこれに実際の時間を費やしていると報告している。ある業界レポートでは、チームがサンドボックス環境の維持に年間最大21日を費やしていることが判明した。<sup>30</sup> 価格は小規模チームにとって現実の障壁である。Hacker News上のエンジニアたちは、あるプラットフォームの年間約8,400ドルというコストに反発し、あるコメント投稿者はオープンソースツールを使って約10分で同等のデモツアーを自作したと述べ、当のベンダーの共同創業者自身も、この製品はブートストラップの企業ではなく大企業向けに作られていることを認めた。<sup>31</sup></p>
+      </div>
+
+      <div class="ref-row">
+        <div class="ref-row__name">ライブデータ注入ツール</div>
+        <p><span class="ref-row__for">例</span>Saleo、Reprise Reveal</p>
+        <p>再現ではなく「そのもの」に最も近い。インターフェースを複製・再現するのではなく、編集可能でリアルな現実的なデータを、実際の稼働中の製品にライブの営業通話の最中に直接注入する。<sup>32</sup></p>
+      </div>
+
+      <div class="aside-note">
+        <p>このカテゴリの情報源のほとんどは、独立したジャーナリズムではなくベンダーが発行したもの、すなわち比較ブログ、プレスリリース、レビューである。上記の4つのツール（Navattic、Tango、Scribe、Storylane）には、直接引用された本物の独立実務家の証言がある。Walnut、Reprise、Arcade、Consensus、Saleo、Supademoについては、今回の調査ではベンダー発の情報源しか見つからなかった。このカテゴリの独立情報源に基づく本格的な評価は、別途独立したガイドとして予定している。</p>
+      </div>
+    </div>
+
+    <div class="section" id="checklist">
+      <span class="section-num">The Deliverable</span>
+      <h2>このチェックリストが基盤である理由。</h2>
+      <p class="dek">上記のすべてのワークストリームは、AIが一見完成しているが実際には検証されていない何かを生み出す、それぞれ異なる様式を描いている。リハーサル済みのデモ台本の間違った1行は、リハーサルで見つかる。アナリストブリーフィング、競合バトルカード、顧客リファレンスにおける間違った主張は、最もダメージを与えうる相手の前に出るまで見つからず、その時点では商談を失うか、アナリストとの関係を何年も損なう可能性がある。このチェックリストは、上記すべての基盤にある唯一の習慣である。どのワークストリームであれ、どのAIモデルが下書きを作ったのであれ、出荷前にその違いを捉える。</p>
+      <p class="dek">コピーしてほしい。AI支援によるあらゆる主張を、出荷前にこれにかけること。</p>
+
+      <div class="checklist-block">
+        <div class="checklist-block__label">
+          <span class="checklist-block__label-text">主張検証チェックリスト · Technical Marketing</span>
+          <button type="button" class="checklist-block__copy-btn" id="checklist-copy-btn" onclick="copyChecklist()" aria-label="Copy checklist to clipboard">
+            <span class="checklist-block__copy-icon" aria-hidden="true">❏</span>
+            <span class="checklist-block__copy-btn-text">テキストをコピー</span>
+          </button>
+        </div>
+        <div id="checklist-content">
+          <h3>主張検証チェックリスト</h3>
+          <p class="checklist-block__meta-line">AI支援によるあらゆる主張の出荷前に実行 · technicalmarketing.org</p>
+          <ol>
+            <li>この主張は、文字起こし、仕様書、勝敗分析のメモなど実在する情報源に遡れるか。モデルの一般知識ではないか?</li>
+            <li>出荷前に、すべての数値、名前、日付を人間が確認したか?</li>
+            <li>特定のアナリスト、競合、顧客を実名で参照している場合、実際に本人を知る誰かがそれを確認したか?</li>
+            <li>これがライセンス付きのリサーチレポート（Gartner、Forrester、IDC）から引用されたものである場合、そのライセンスは実際にその用途を許可しているか?</li>
+            <li>この主張は、懐疑的な購買者やアナリストから「なぜそれがわかるのか」と直接尋ねられても持ちこたえられるか?</li>
+            <li>5の答えが「ノー」である場合、出荷前にその主張は削除されるか、あるいはその裏付けとなる証拠は強化されるか?</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" id="inside-track">
+      <span class="section-num">The Inside Track</span>
+      <h2>私たちが最も驚いた6つのこと。</h2>
+      <p class="dek">上記すべてを読んだ人のために、ここにダイジェストを用意した。これらはすべて、あなたがたった今読んだセクションですでに裏付けられている。本ガイドから6つだけ覚えておくなら、これらを覚えてほしい。</p>
+      <ol class="inside-track">
+        <li><p><strong>ライセンス付きリサーチには、精度リスクだけでなく法的な壁がある。</strong> Gartnerが公表したリサーチを、その同じ企業のブリーフィングの準備のためにAIモデルに入力することは、単に誤答のリスクを負うだけでなく、Gartner自身の利用ポリシーに違反しうる。<sup>2</sup></p></li>
+        <li><p><strong>ポジショニングには、まだ公開されたAIのプレイブックがない。</strong> この分野で最もよく知られる専門家、Dunford、Raskin、Lochheadの誰一人として、自身のAIワークフローを公開していない。この技法は完全に手つかずである。<sup>5,6</sup></p></li>
+        <li><p><strong>最も派手な能力を持つツールが、ここでは最悪の精度記録を持っている。</strong> Grokは何かが今日起きたことを教えてくれる。独立した調査によると、実際に何が起きたかについては約94%の頻度で誤っている。<sup>26</sup></p></li>
+        <li><p><strong>年間8,400ドルのプラットフォームが、10分で再構築された。</strong> Hacker News上のあるチームは、あるデモプラットフォームの機能の約70%を、無料のオープンソースツールを使って自力で再構築した。ベンダー自身の共同創業者も、この製品がそのサイズのチーム向けには単純に作られていないことを認めた。<sup>31</sup></p></li>
+        <li><p><strong>最も使われているAIツールは、自分のポジショニングをテストする価値があるツールでもある。</strong> ChatGPTは、本ガイドにあるどのツールよりも依然としてAIチャットボットトラフィックの最大シェアを占めている。自社の製品についての質問にそれがどう答えるかをテストすることで、購買者が統計的に最初に目にする可能性が最も高いものがわかる。<sup>33,34</sup></p></li>
+        <li><p><strong>ツールよりも習慣の方が重要である。</strong> IBMのARチームは、RFI回答の約95%をAIで事前入力し、その後、出荷前に人間が一件一件確認する。本ガイドのすべてのワークストリームは、その同じ習慣に行き着く。ツールは変わる。習慣は変わらない。<sup>1</sup></p></li>
+      </ol>
+    </div>
+
+    <div class="bio-card">
+      <div class="bio-card__mark" aria-hidden="true">MM</div>
+      <div>
+        <div class="bio-card__name">Mike Moranとは何者で、なぜ変わらないものについての彼の助言に耳を傾けるべきか</div>
+        <p>Mike Moranは、Googleが存在するほぼ10年前の1989年に世界初の商用言語検索エンジンを構築したチームを率い、検索・情報検索技術で13件の特許を保有している。IBMで30年を過ごし、IBM Distinguished Engineerにまで昇進した。自身の会社SoloSegmentでは、彼自身の説明によれば、Googleが公にはそのような技術の存在を否定しながら、後に連邦裁判の訴訟で自社の最重要機密と呼んでいたことが明らかになった検索ランキング技術を構築した。この話は彼自身の言葉によるものであり、本ガイドのために裁判記録と照合した独立検証は行っていない。</p>
+        <p>彼は<em>Do It Wrong Quickly</em>の著者であり、<em>Search Engine Marketing Inc.</em>と<em>Outside-In Marketing</em>の共著者、Biznologyの創業者、そしてThinkStreamの共同創業者兼最高製品責任者(CPO)である。AI、プロダクトマネジメント、デジタルマーケティングについて、mikemoran.comでコンサルティングと講演を行っている。<sup>‡</sup></p>
+        <p>変わらないものについての彼の助言に耳を傾ける価値があるのは、まさに彼が複数のテクノロジーの波が「すべてを変える」と喧伝されるのを見てきており、実際には変わらなかった部分を知るための特許、裁判の経験、そして30年のキャリアを持っているからである。</p>
+        <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-top:1rem;">本ガイドは、より長い対話から素材を得ている。<a href="/ja/nice-job-hooking-me" style="color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">全編プロフィールを読む &rarr;</a></p>
+      </div>
+    </div>
+
+    <div class="editors-note" id="what-holds">
+      <span class="editors-note-label">変わらないもの</span>
+      <p>Mike Moran自身の助言は、この境界線の同じ側でほぼ50年を過ごした経験から導かれたものであり、変わるものより変わらないものに注意を払えというものである。実務家は、市場が何を必要としているか、その提供物が実際にどう差別化されているか、そしてそれをどう平易に語るかを理解することにキャリアを築くことができる。なぜなら、ツールが変わっても、その3つは変わらないからである。<sup>‡</sup></p>
+      <p>上記のすべての知見は、部分的には古くなっていく。名指しされたツールは置き換えられるだろう。具体的なパーセンテージは、次のレポートで改訂されるだろう。古くなってはならないのは、それぞれの根底にある判断の形である。AIは起草と一次統合を圧縮する。それは、懐疑的な読み手との接触に耐える主張はどれかという編集上の判断を圧縮しない。その判断を下すのは、今も、そしてこれからも常にあなた自身である。</p>
+      <p class="editors-sig">編集部</p>
+    </div>
+
+    <div class="footnotes">
+      <span class="footnotes-label">出典</span>
+      <ol>
+        <li>Jerry Weltsch (Asana), Beth Bamonte (IBM), and Chris Manfredi (Sprout Social), quoted in ARInsights, “Cracking the AI Code for AR: Takeaways from ARchitect User Forum Panelists,” arinsights.com, 2025.</li>
+        <li>Gartner, <em>Research Documents Usage Policy</em>, gartner.com/en/about/policies/research-docs.</li>
+        <li>Jason Mashak, “On Leveraging Generative AI for Analyst Relations (AR),” Medium, April 22, 2024.</li>
+        <li>Joseph Blankenship, Jess Burn, Allie Mellen, Jeff Pollard, and James Plouffe, Forrester Blogs, January 2026.</li>
+        <li>Third-party AI implementations of April Dunford’s positioning canvas (getskillsai.org, pmprompt.com), 2025. Derivative tooling, not the framework author’s own endorsement.</li>
+        <li>Third-party AI implementation of Andy Raskin’s Strategic Narrative framework (pmprompt.com), 2025. Derivative tooling, not the framework author’s own endorsement.</li>
+        <li>Emily Kramer, MKT1, newsletter.mkt1.co, 2025.</li>
+        <li>Michelle Stanaland, quoted in Diana Bocco, “How to Use AI to Stress-Test Your Startup Idea Before You Build It,” Inc.com, June 25, 2026.</li>
+        <li>Klaudia Jaźwińska and Aisvarya Chandrasekar, “AI Search Has A Citation Problem,” Columbia Journalism Review / Tow Center for Digital Journalism, March 2025.</li>
+        <li>Ana Maria Benites Rodríguez, “Docs AI Buddy,” Twilio Engineering Blog, December 17, 2025.</li>
+        <li>Scott Abel, “Ontology-Grounded RAG,” The Content Wrangler, February 5, 2026.</li>
+        <li>“On Mitigating Code LLM Hallucinations with API Documentation,” arXiv:2407.09726, 2024–2025.</li>
+        <li>Consensus, “Top AI Powered Product Demos &amp; Assistants,” goconsensus.com, 2025.</li>
+        <li>Gary Drenik, Forbes, August 14, 2025.</li>
+        <li>Edward Allison (CompeteIQ), remarks at the Competitive Intelligence Summit, reported by CompetitiveIntelligenceAlliance.io, February 20, 2025.</li>
+        <li>Thomas E. Doherty, <em>The AI-Accelerated GTM Playbook</em>, Medium, February 12, 2026.</li>
+        <li>Klue, “Klue Is a Leader in the First-Ever Gartner Magic Quadrant for Competitive and Market Intelligence Platforms,” klue.com, 2025; Crayon, “Crayon Named a Leader in the Inaugural Gartner Magic Quadrant for Competitive and Market Intelligence Platforms,” crayon.co, 2025. (Gartner, <em>Magic Quadrant for Competitive and Market Intelligence Platforms</em>, inaugural edition, 2025; report itself access-restricted, vendor citations of their own placement used as standard evidence.)</li>
+        <li>Beth Caplow et al., “<em>The Forrester Wave™: Market And Competitive Intelligence Platforms, Q4 2024</em>,” Forrester Research, December 13, 2024.</li>
+        <li>Anthropic, “Long context prompting for Claude 2.1,” anthropic.com, December 6, 2023, re-testing Greg Kamradt’s original Needle-in-a-Haystack benchmark. A vendor-published, not independently audited, result.</li>
+        <li>Simon Willison, ongoing tracking of long-context model behavior across vendors, simonwillison.net/tags/long-context/, 2024–2026.</li>
+        <li>Microsoft, “How Microsoft 365 Copilot Works,” Microsoft Learn, updated 2024–2026.</li>
+        <li>Forrester Consulting, “The Total Economic Impact™ Of Microsoft 365 Copilot,” commissioned by Microsoft, 2024.</li>
+        <li>Google, Gemini 2.5 launch documentation (Anirudh Baddepudi, Antoine Yang, and Mario Lučić, developers.googleblog.com, May 9, 2025) and Gemini API video-understanding documentation, ai.google.dev, updated through June 2026.</li>
+        <li>Shan Wang and Usama Bin Shafqat, “NotebookLM Video Overviews,” blog.google and workspaceupdates.googleblog.com, July 29, 2025.</li>
+        <li>Google DeepMind, Veo 3.1 product documentation, deepmind.google/models/veo, current; Think with Google, Wild Hare Group / No Biscuits case study, business.google.com, late 2025 or early 2026 (exact date unconfirmed).</li>
+        <li>Tow Center for Digital Journalism, findings on Grok citation accuracy, reported via eWeek, 2025; fabrication incidents separately documented by TechCrunch, March 19, 2025, and Al Jazeera, July 11, 2025.</li>
+        <li>Arcade, “AI Demo Generator” product page and 2026 Benchmarks Report, arcade.software, 2026.</li>
+        <li>“Tango: Create step-by-step documentation with screenshots,” Hacker News, January 2022 (news.ycombinator.com/item?id=30128265), comments from users nvr219 and spapas82.</li>
+        <li>Chris Mielke, “I Investigated 11 Automation &amp; Documentation Tools,” The AI Powered Project Manager (Substack), 2025.</li>
+        <li>The Reprise Presales Landscape Report, 2024 edition, cited via Storylane and Navattic industry analysis.</li>
+        <li>“Launch HN: Navattic,” Hacker News, March 2021 (news.ycombinator.com/item?id=26478189), comments from users michaelpb, ericb, and nrmclean (Navattic co-founder).</li>
+        <li>Saleo, vendor product documentation and customer case studies, 2025–2026; Reprise, product documentation for its Reveal live-data-injection product (one of three products in the Reprise suite, alongside Replay and Replicate), 2025–2026.</li>
+        <li>OpenAI, weekly active user figures reported via TechCrunch, February 27, 2026: 900 million weekly active users, a large increase over the prior year.</li>
+        <li>Similarweb, Gen AI Stats, similarweb.com, data through May 2026: ChatGPT holds roughly 53.9% of worldwide AI-chatbot web-visit share (58.3% in the United States), down from 76.5% in February 2025 as Gemini and Claude gained share.</li>
+        <li>Adobe, acquisition of Semrush announced November 19, 2025, reported at approximately 1.9 billion dollars; AI-visibility and generative-engine-optimization framing was more prominent in the deal’s 2026 close announcement than at initial announcement.</li>
+      </ol>
+      <p style="font-family:var(--f-sans); font-size:0.75rem; color:var(--ink-40); margin-top:1.25rem; max-width:var(--measure);">† 6つのワークストリームの分類については<a href="/ja/the-technical-marketer#responsibilities">The Technical Marketer, Article I</a>を参照。‡ Mike Moran、<em>Technical Marketing</em>との対話、2026年夏。</p>
+    </div>
+
+    <a href="/ja/tools" class="back-link">← ツールへ戻る</a>
+
+  </div>
+</div>
+</section>
+
+
+<section class="band band--tint subscribe" id="subscribe" aria-labelledby="subscribe-title">
+  <div class="layout subscribe__inner">
+    <div class="subscribe__kicker">Quarterly updates</div>
+    <p class="subscribe__pitch" id="subscribe-title">Get the next volume when it publishes.</p>
+    <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate="">
+      <label for="ai-email-input" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Email address</label>
+      <input id="ai-email-input" class="subscribe__input" type="email" name="email" placeholder="Your email" required="" autocomplete="email">
+      <button class="subscribe__button" type="submit">Subscribe</button>
+    </form>
+    <p class="subscribe__disclaimer">No promotion. Four emails a year.</p>
+  </div>
+</section>
+
+</main>
+
+<div class="folio-band layout" aria-hidden="true">
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+  <div class="folio-band__inner">
+    <span class="folio-band__left">Tools · 02</span>
+    <span class="folio-band__center">◆</span>
+    <span class="folio-band__right">First Printing · MMXXVI</span>
+  </div>
+  <hr class="folio-band__rule">
+  <hr class="folio-band__rule">
+</div>
+
+<footer class="colophon" role="contentinfo">
+  <div class="colophon__inner">
+    <div class="colophon__ornament" aria-hidden="true"><span class="colophon__diamond"></span></div>
+    <div class="colophon__grid">
+      <span class="colophon__label">編集</span>
+      <span class="colophon__value">この分野のフィールドマニュアル。Chad Corriveauによる編集・監修。</span>
+      <span class="colophon__label">書体</span>
+      <span class="colophon__value">Fraunces、Roboto Slab、Interを使用。小麦色とライブラリーレッドで構成。</span>
+      <span class="colophon__label">憲章</span>
+      <span class="colophon__value">掲載項目は、一次情報源、プラクティショナーとの関連性、ベンダープロモーションの不在という編集憲章の基準に照らしてレビューされる。ThinkRoot LLCが出版インフラと運営支援を提供する。</span>
+      <span class="colophon__label">発行元</span>
+      <span class="colophon__value">Published by ThinkRoot LLC &middot; Escondido, CA</span>
+      <span class="colophon__label">連絡先</span>
+      <span class="colophon__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
+    </div>
+    <div class="colophon__bottom">
+      <div class="colophon__meta">ISSN pending &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</div>
+      <nav class="colophon__nav" aria-label="Site">
+        <a href="/ja/about" class="colophon__nav-link">概要</a>
+        <span class="colophon__nav-sep" aria-hidden="true">·</span>
+        <a href="/ja/contributors" class="colophon__nav-link">コントリビューター</a>
+        <span class="colophon__nav-sep" aria-hidden="true">·</span>
+        <a href="/ja/glossary" class="colophon__nav-link">用語集</a>
+        <span class="colophon__nav-sep" aria-hidden="true">·</span>
+        <a href="/ja/landscape" class="colophon__nav-link">ランドスケープ</a>
+        <span class="colophon__nav-sep" aria-hidden="true">·</span>
+        <a href="/ja/suggest" class="colophon__nav-link">提案する</a>
+        <span class="colophon__nav-sep" aria-hidden="true">·</span>
+        <a href="/feed.xml" class="colophon__nav-link">RSS</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var bar = document.getElementById('progress-bar');
+  if (!bar) return;
+  function update() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docH = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var pct = docH > 0 ? Math.min(100, (scrollTop / docH) * 100) : 0;
+    bar.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
+
+function copyChecklist() {
+  var contentEl = document.getElementById('checklist-content');
+  var btn = document.getElementById('checklist-copy-btn');
+  if (!contentEl || !btn) return;
+
+  var clone = contentEl.cloneNode(true);
+  var n = 0;
+  clone.querySelectorAll('li').forEach(function(li) {
+    n += 1;
+    li.textContent = n + '. ' + li.textContent.trim();
+  });
+  var plainText = clone.innerText;
+
+  var btnTextEl = btn.querySelector('.checklist-block__copy-btn-text');
+  var iconEl = btn.querySelector('.checklist-block__copy-icon');
+
+  function showCopied() {
+    btn.classList.add('is-copied');
+    if (btnTextEl) btnTextEl.textContent = 'コピー済み';
+    if (iconEl) iconEl.innerHTML = '&#10003;';
+    setTimeout(function() {
+      btn.classList.remove('is-copied');
+      if (btnTextEl) btnTextEl.textContent = 'テキストをコピー';
+      if (iconEl) iconEl.innerHTML = '&#10063;';
+    }, 2400);
+  }
+
+  function fallbackCopy(text, callback) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); callback(); } catch (e) {}
+    document.body.removeChild(ta);
+  }
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(plainText).then(showCopied).catch(function() {
+      fallbackCopy(plainText, showCopied);
+    });
+  } else {
+    fallbackCopy(plainText, showCopied);
+  }
+}
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var overlay = document.getElementById('diagram-lightbox');
+  var inner = document.getElementById('diagram-lightbox-inner');
+  var content = document.getElementById('diagram-lightbox-content');
+  var dismissBtn = document.getElementById('diagram-lightbox-dismiss');
+  if (!overlay || !inner || !content || !dismissBtn) return;
+  var lastTrigger = null;
+  function openLightbox(diagramEl, caption) {
+    content.innerHTML = '';
+    var clone = diagramEl.cloneNode(true);
+    clone.querySelectorAll('.diagram-expand-btn').forEach(function (e) { e.remove(); });
+    clone.style.background = 'transparent';
+    clone.style.border = 'none';
+    clone.style.padding = '0';
+    clone.style.margin = '0';
+    clone.style.maxWidth = 'none';
+    clone.style.overflow = 'visible';
+    clone.removeAttribute('role');
+    content.appendChild(clone);
+    if (caption) {
+      var c = caption.cloneNode(true);
+      c.className = 'diagram-lightbox__caption';
+      content.appendChild(c);
+    }
+    overlay.classList.add('is-open');
+    overlay.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    dismissBtn.focus();
+  }
+  function closeLightbox() {
+    overlay.classList.remove('is-open');
+    overlay.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    content.innerHTML = '';
+    if (lastTrigger) lastTrigger.focus();
+    lastTrigger = null;
+  }
+  document.querySelectorAll('.diagram-expand-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      lastTrigger = btn;
+      var fig = btn.closest('.diagram-figure');
+      if (!fig) return;
+      var d = fig.querySelector('.diagram');
+      var cap = fig.querySelector('.diagram-caption');
+      if (d) openLightbox(d, cap);
+    });
+  });
+  dismissBtn.addEventListener('click', closeLightbox);
+  overlay.addEventListener('click', function (e) { if (e.target === overlay) closeLightbox(); });
+  document.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && overlay.classList.contains('is-open')) closeLightbox();
+  });
+  inner.addEventListener('click', function (e) { e.stopPropagation(); });
+}());
+</script>
+
+
+</body></html>
