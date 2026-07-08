@@ -261,8 +261,8 @@ a.masthead__lang-link:hover { color: var(--ink); }
      hit area, the matching negative margin cancels its visual footprint. */
   .masthead__lang-link {
     display: inline-block;
-    padding: 0.6rem 0.2rem;
-    margin: -0.6rem -0.2rem;
+    padding: 0.6rem 0.45rem;
+    margin: -0.6rem -0.45rem;
   }
 }
 
