@@ -19,7 +19,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-07-07. Version 1.7.
+Last updated: 2026-07-08. Version 1.8.
 
 ---
 
@@ -1096,7 +1096,7 @@ This glossary covers the operational vocabulary of technical marketing as practi
 
 # Technical Marketing Landscape · The Discipline in Practice
 
-> How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function. Verified from public job postings and named-practitioner accounts. Updated each volume.
+> How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function, including a dedicated tracked section on agentic AI-facing coverage. Verified from public job postings and named-practitioner accounts. Updated each volume.
 
 The technical marketing function appears in job postings at companies across every category of enterprise software, AI, infrastructure, and hardware. The titles are inconsistent. The org placement varies. The work is recognizably similar.
 
@@ -1136,6 +1136,43 @@ Three org placement archetypes appear consistently. The majority sit inside Mark
 The title is not standardized. "Technical Marketing Manager," "Technical Product Marketing Manager," and "Technical Marketing Engineer" all appear across companies doing recognizably similar work. Companies with engineering-first cultures use "engineer." Companies with strong marketing org traditions use "manager." The work is the same.
 
 Hardware and semiconductor companies (Intel, NVIDIA) have used these titles formally since the 1960s. The enterprise software version came decades later. AI companies (Anthropic, OpenAI, Cohere) are now building the same function for a new product category. The function's roots in hardware are not incidental. They are the origin point. The history is documented in Before the Name.
+
+## Agentic-facing coverage (added July 2026)
+
+A separate question from staffing overall: has the technical marketing function itself been re-scoped for the agentic AI shift, as distinct from the company shipping agentic AI products? A company can run a large agentic AI engineering effort while its technical marketing function has not yet been re-scoped to match. This section tracks the second claim specifically, sourced independently per entry, and is kept separate from the main table above both to avoid overstating a still-emerging pattern as settled and to preserve a historical record of when and how the function began to shift. See Technical Marketing in the Age of AI (/technical-marketing-age-of-ai) for the broader argument this section tracks evidence for.
+
+**Methodology:** Confirmed requires a sourced job posting, named-practitioner account, or on-record interview that explicitly ties a technical marketing or product marketing title to agentic AI scope. Emerging means an AI-scoped technical marketing title is verified but available source text does not confirm agentic-specific scope. None found means no sourced technical marketing role with agentic scope was located, regardless of the company's broader agentic AI product activity. No data means the search returned no relevant result. No entry is inferred from a company's product announcements alone.
+
+**As of July 2026: 9 of 24 tracked entries confirmed, 2 emerging, 12 none found, 1 no data.**
+
+| Company | Status | Evidence |
+|---|---|---|
+| Anthropic | Confirmed | Title is literally "Product Marketing Lead, Agents." Owns go-to-market for the first-party agent product portfolio: Claude.ai, Cowork, Claude Code, and Claude Enterprise. |
+| Neo4j | Confirmed | "Product Marketing Manager, AI Capabilities & Developer Enablement." Owns messaging for agents and agent memory, and positioning for agent frameworks including LangChain, LlamaIndex, and MCP servers. |
+| NVIDIA | Confirmed | Two named practitioners on record: Nicola Sessions, Director of Product Marketing for NVIDIA agentic AI software, and Rebecca Kao, Product Marketing Director focused on bringing agentic AI products to market. |
+| Red Hat | Confirmed | Named practitioner James Harmison, Senior Principal Technical Marketing Manager, on record at KubeCon discussing Red Hat's agentic AI strategy for enterprise Kubernetes environments. |
+| AWS | Confirmed | "Sr. Product Marketing Manager - Tech, AWS Marketing" owns positioning and launches for the Bedrock/AgentCore portfolio. Requires familiarity with "the AI agent/agentic AI landscape (frameworks, orchestration patterns, tool use)." |
+| Databricks | Confirmed | "Product Marketing Director, AI" leads marketing strategy across Agent Bricks, Databricks' enterprise agent platform, and is required to build and share agentic AI customer stories. |
+| Datadog | Confirmed | Senior and Principal Product Marketing Manager (AI) roles build a unified messaging framework explicitly "spanning generative, agentic, and correlative AI," including Datadog's Autonomous Agents. |
+| Salesforce (MuleSoft) | Confirmed | "Sr. Technical Product Marketing Manager (MuleSoft)" lists required AI skills explicitly: prompt engineering, agent governance, agent orchestration, and AI Gateway. |
+| OpenAI | Confirmed | "Sr. Product Marketing Manager, Platform" explicitly covers "helping AI agents connect to enterprise systems and data" as part of the API platform strategy. Requires 12+ years of technical product marketing, product management, or sales engineering experience. |
+| Pure Storage | Emerging | A "Senior Technical Marketing Engineer, AI" title is active, but available source text does not confirm agentic-specific scope for the role. |
+| JFrog | Emerging | "Technical Product Marketing Manager – AI & Security" title is active, covering AI broadly. Available source text does not confirm agentic-specific scope. |
+| CrowdStrike | None found | Active "NGSIEM Agentic AI" engineering hiring confirmed. No technical marketing posting located with agentic scope in the title or description. |
+| Palo Alto Networks | None found | "Agentic browser" language appears in a separate engineering posting. Existing Technical Product Marketing Manager postings (Cortex Cloud, Cloud Security) do not mention agentic scope in available text. |
+| ServiceNow (incl. Moveworks) | None found | Moveworks is explicitly marketed as an "Agentic AI Assistant platform" with heavy agentic engineering hiring. No technical marketing posting located scoped to it. |
+| Salesforce (Slack) | None found | A Solutions Engineer role was found "positioning Slack as the Agentic OS," but this is a presales function, not a marketing one. |
+| Elastic | None found | A Product Manager role exists for "AI Agents, Search." Technical Product Marketing roles located (Serverless, Jina AI) do not specify agentic scope in available text. |
+| Oracle | None found | Technical Product Marketing Manager for Autonomous AI Lakehouse covers vector search and AI pipelines but is not explicitly scoped to agentic AI. |
+| Workday | None found | Heavy company-wide "Illuminate" agentic product push. A Product Manager role exists for "Agentic AI Activation & Deployment," but this is a presales function, not a marketing one. |
+| Cisco | None found | Company-wide "AgenticOps" push confirmed. A "Leader, Technical Marketing – Network Experiences & AI" title exists; agentic scope not confirmed in available text. |
+| Intel | None found | No sourced technical marketing posting located with agentic scope. |
+| IBM (incl. HashiCorp) | None found | Project Infragraph is explicitly built for agentic infrastructure. The HashiCorp marketing careers page showed no open technical marketing role matching this scope at time of search. |
+| Autodesk | None found | No sourced technical marketing posting located with agentic scope. |
+| Cohere | None found | General product marketing postings located. No sourced agentic-specific scope in available text. |
+| LucidLink | No data | Search returned no relevant result for this company. |
+
+**What this shows:** The technical marketing function and a company's agentic AI product investment are separate claims. Several companies with the loudest agentic AI product pushes on this table, including CrowdStrike, ServiceNow with Moveworks, Cisco's AgenticOps, IBM's Project Infragraph, and Workday's Illuminate, show no sourced technical marketing role re-scoped to match. Technical marketing appears to be lagging product at exactly the companies making the largest agentic bets. This section is re-verified and expanded each volume.
 
 ---
 
