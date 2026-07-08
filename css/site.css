@@ -131,6 +131,16 @@
 /* ---- 6. Theme toggle button (styling; markup injected by site.js) ----- */
 #theme-toggle { transition: color 0.15s ease; }
 #theme-toggle:hover { color: var(--red); }
+/* Enlarge the tap target on mobile without shifting its visual position.
+   site.js sets inline padding (0 0 0 1rem) on the button, so this needs
+   !important to win; the padding-left/negative-margin-left pair nets back
+   out to the original 1rem gap from the preceding nav item. */
+@media (max-width: 600px) {
+  #theme-toggle {
+    padding: 0.6rem 0.6rem 0.6rem 1.6rem !important;
+    margin: -0.6rem -0.6rem -0.6rem -0.6rem;
+  }
+}
 
 /* =======================================================================
    READING EXPERIENCE
