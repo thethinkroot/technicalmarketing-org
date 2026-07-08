@@ -247,4 +247,27 @@ a.masthead__lang-link:hover { color: var(--ink); }
 }
 @media (max-width: 600px) {
   .masthead__lang-link, .masthead__lang-sep { font-size: 10px; letter-spacing: 0.1em; }
+  /* Enlarge the tap target without shifting layout: padding expands the
+     hit area, the matching negative margin cancels its visual footprint. */
+  .masthead__lang-link {
+    display: inline-block;
+    padding: 0.6rem 0.2rem;
+    margin: -0.6rem -0.2rem;
+  }
+}
+
+/* =======================================================================
+   MOBILE OVERFLOW FIX — footer colophon nav
+   Most pages define .colophon__nav as a single-row flex with no wrap,
+   which forces the row (About · Contributors · Glossary · Landscape ·
+   Suggest · RSS, etc.) to overflow past the viewport on narrow screens —
+   this drags the ENTIRE page into horizontal scroll on mobile, since the
+   colophon sits in normal flow. flex-wrap is a no-op on desktop widths
+   (the row already fits on one line there), so this is mobile-only in
+   practice; scoped to max-width to guarantee it. */
+@media (max-width: 720px) {
+  .colophon__nav {
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+  }
 }

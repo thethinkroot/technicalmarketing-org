@@ -264,6 +264,7 @@ a.masthead__title:hover { color: var(--red); }
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
+.landscape-scroll-hint { display: none; }
 
 .landscape {
   width: 100%;
@@ -469,6 +470,16 @@ a.masthead__title:hover { color: var(--red); }
   .colophon__label { display: none; }
   .landscape { font-size: 0.8125rem; }
   .col-note { min-width: 160px; max-width: 200px; }
+  .landscape-scroll-hint {
+    display: block;
+    font-family: var(--f-sans);
+    font-size: 0.625rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-40);
+    margin: 0 0 0.75rem;
+    text-align: center;
+  }
 }
 
 /* ── Citation card ────────────────────────────────────────────────────── */
@@ -706,6 +717,7 @@ a.masthead__title:hover { color: var(--red); }
 
   </div>
 
+  <p class="landscape-scroll-hint">Swipe to view full table &rarr;</p>
   <div class="landscape-wrap">
     <table class="landscape" aria-label="Technical marketing landscape by company">
       <thead>

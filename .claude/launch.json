@@ -4,7 +4,7 @@
     {
       "name": "static",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-I", "-c", "import http.server,socketserver,functools; H=functools.partial(http.server.SimpleHTTPRequestHandler, directory='/Users/chadcorriveau/Documents/GitHub/technicalmarketing-org'); socketserver.TCPServer(('0.0.0.0',8099),H).serve_forever()"],
+      "runtimeArgs": ["-I", "/private/tmp/claude-501/-Users-chadcorriveau-Documents-GitHub-technicalmarketing-org/ceb80d04-ac19-40e5-b96d-f848ac3daacd/scratchpad/serve.py"],
       "port": 8099
     }
   ]
