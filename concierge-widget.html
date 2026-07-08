@@ -1,0 +1,315 @@
+<!--
+  Ask the Field Manual, concierge widget, v2
+  Drop this entire block into any Reference or Tools page, wherever the
+  inline concierge should appear. One inline instance per page.
+
+  Behavior:
+  - Inline concierge: search box, staggered suggestions, card reveal with
+    fade/lift, diamond-ornament pulse as a "consulting the index" beat.
+  - Library tab: a slim vertical tab fixed to the right edge, styled like
+    a card-catalog drawer tab. Appears only once the inline instance has
+    scrolled out of view above the viewport. Clicking it never opens a
+    popup, it smooth-scrolls back to the real inline instance and
+    focuses the input. One surface, always. No floating chat window ever.
+
+  Requires: /concierge-corpus.json served from the site root.
+  No API calls. No token spend.
+-->
+<section class="fmc" id="fmc-inline" aria-labelledby="fmc-heading">
+  <div class="fmc__head">
+    <span class="fmc__mark" aria-hidden="true"></span>
+    <span class="fmc__kicker" id="fmc-heading">Ask the field manual</span>
+  </div>
+  <p class="fmc__deck">Search the corpus. Get a straight answer and a pointer to the source.</p>
+
+  <div class="fmc__search">
+    <label for="fmc-input" class="fmc__label">Your question</label>
+    <input type="text" id="fmc-input" class="fmc__input" autocomplete="off"
+      placeholder="Try: how is technical marketing different from product marketing?">
+  </div>
+
+  <div class="fmc__suggestions" id="fmc-suggestions" role="listbox" aria-label="Matching questions"></div>
+
+  <div class="fmc__card" id="fmc-card" hidden aria-live="polite">
+    <span class="fmc__card-num" id="fmc-card-num"></span>
+    <p class="fmc__card-q" id="fmc-card-q"></p>
+    <p class="fmc__card-a" id="fmc-card-a"></p>
+    <div class="fmc__card-foot">
+      <a class="fmc__card-link" id="fmc-card-link" href="#">Continue reading &rarr;</a>
+    </div>
+    <div class="fmc__related" id="fmc-related"></div>
+  </div>
+
+  <div class="fmc__empty" id="fmc-empty" hidden>
+    No card for that yet. <a href="/suggest">Suggest one for the next volume &rarr;</a>
+  </div>
+</section>
+
+<button type="button" class="fmc-tab" id="fmc-tab" aria-label="Jump to Ask the Field Manual" hidden>
+  <span class="fmc-tab__mark" aria-hidden="true"></span>
+  <span class="fmc-tab__text">Ask the field manual</span>
+</button>
+
+<style>
+.fmc {
+  font-family: var(--f-serif, 'Fraunces', 'Georgia', serif);
+  background: var(--paper, #EFE6C9);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 1.75rem 1.75rem 2rem;
+  max-width: var(--reading-max, 720px);
+  margin: 2.5rem 0;
+}
+.fmc__head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.35rem; }
+.fmc__mark {
+  display: inline-block; width: 7px; height: 7px;
+  background: var(--red, #A7352A); transform: rotate(45deg);
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
+  flex-shrink: 0;
+}
+.fmc__kicker {
+  font-family: var(--f-sans, 'Inter', sans-serif);
+  font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--red, #A7352A); font-weight: 600;
+}
+.fmc__deck {
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic;
+  font-size: 0.9375rem; color: var(--ink-60, #5C4E3C); margin: 0 0 1.1rem 1.05rem;
+}
+.fmc__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.fmc__input {
+  width: 100%; box-sizing: border-box;
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.9375rem;
+  background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 0.75rem 0.9rem; color: var(--ink, #1C1812);
+  transition: border-color 0.2s ease;
+}
+.fmc__input:focus-visible { outline: 2px solid var(--red, #A7352A); outline-offset: 2px; }
+.fmc__input.fmc__input--focused { border-color: var(--red, #A7352A); }
+.fmc__suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.85rem; }
+.fmc__suggestion {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.75rem;
+  background: transparent; border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  color: var(--ink-60, #5C4E3C); padding: 0.4rem 0.75rem; cursor: pointer;
+  opacity: 0; transform: translateY(4px);
+  transition: opacity 0.28s ease, transform 0.28s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.fmc__suggestion.fmc__suggestion--in { opacity: 1; transform: translateY(0); }
+.fmc__suggestion:hover, .fmc__suggestion:focus-visible { color: var(--ink, #1C1812); border-color: var(--ink, #1C1812); }
+.fmc__card {
+  margin-top: 1.4rem; background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 1.25rem 1.4rem 1.4rem; position: relative;
+  opacity: 0; transform: translateY(6px);
+  transition: opacity 0.32s ease, transform 0.32s ease;
+}
+.fmc__card.fmc__card--in { opacity: 1; transform: translateY(0); }
+.fmc__card-num {
+  position: absolute; top: 0.85rem; right: 1rem;
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.625rem; letter-spacing: 0.14em;
+  color: var(--ink-40, #8B7D69);
+}
+.fmc__card-q {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.625rem; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--red, #A7352A); font-weight: 600;
+  margin: 0 2.75rem 0.65rem 0;
+}
+.fmc__card-a { font-size: 0.9375rem; line-height: 1.62; color: var(--ink, #1C1812); margin-bottom: 1rem; }
+.fmc__card-foot { border-top: 0.5px solid var(--border-strong, rgba(28,24,18,0.32)); padding-top: 0.75rem; }
+.fmc__card-link {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.6875rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--red, #A7352A); font-weight: 600;
+  border-bottom: 1px solid transparent; transition: border-color 0.15s ease;
+}
+.fmc__card-link:hover { border-bottom-color: var(--red, #A7352A); }
+.fmc__related { margin-top: 1rem; font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.75rem; color: var(--ink-60, #5C4E3C); line-height: 1.7; }
+.fmc__related a { color: var(--red, #A7352A); border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+.fmc__related a:hover { border-bottom-color: var(--red, #A7352A); }
+.fmc__empty { margin-top: 1.4rem; font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.875rem; color: var(--ink-60, #5C4E3C); }
+.fmc__empty a { color: var(--red, #A7352A); }
+
+.fmc-tab {
+  position: fixed; right: 0; top: 46%; z-index: 40;
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  border-right: none;
+  padding: 0.85rem 0.5rem;
+  cursor: pointer;
+  opacity: 0; transform: translateX(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.15s ease;
+}
+.fmc-tab.fmc-tab--visible { opacity: 1; transform: translateX(0); }
+.fmc-tab:hover, .fmc-tab:focus-visible { background: var(--paper, #EFE6C9); }
+.fmc-tab:focus-visible { outline: 2px solid var(--red, #A7352A); outline-offset: -2px; }
+.fmc-tab__mark {
+  display: inline-block; width: 6px; height: 6px;
+  background: var(--red, #A7352A); transform: rotate(45deg); flex-shrink: 0;
+}
+.fmc-tab__text {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.6875rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-60, #5C4E3C);
+  writing-mode: vertical-rl; transform: rotate(180deg);
+}
+@media (max-width: 600px) {
+  .fmc { padding: 1.25rem 1.25rem 1.5rem; }
+  .fmc-tab { display: none; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+  var CORPUS_URL = '/concierge-corpus.json';
+  var corpus = [];
+  var section = document.getElementById('fmc-inline');
+  var input = document.getElementById('fmc-input');
+  var sugg = document.getElementById('fmc-suggestions');
+  var card = document.getElementById('fmc-card');
+  var empty = document.getElementById('fmc-empty');
+  var tab = document.getElementById('fmc-tab');
+  var debounceTimer = null;
+
+  fetch(CORPUS_URL).then(function (r) { return r.json(); }).then(function (data) {
+    corpus = data;
+  }).catch(function () { corpus = []; });
+
+  function pulseMark() {
+    var mark = document.querySelector('.fmc__mark');
+    mark.style.transform = 'rotate(45deg) scale(1.6)';
+    mark.style.opacity = '0.55';
+    setTimeout(function () { mark.style.transform = 'rotate(45deg) scale(1)'; mark.style.opacity = '1'; }, 260);
+  }
+
+  function score(entry, query) {
+    var s = 0;
+    var words = query.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 2; });
+    var qLower = entry.q.toLowerCase();
+    words.forEach(function (w) {
+      if (qLower.indexOf(w) !== -1) s += 2;
+      entry.keys.forEach(function (k) { if (k.indexOf(w) !== -1 || w.indexOf(k) !== -1) s += 3; });
+    });
+    return s;
+  }
+
+  function relatedFor(entry) {
+    return corpus
+      .filter(function (c) { return c.id !== entry.id; })
+      .map(function (c) {
+        var shared = c.keys.filter(function (k) { return entry.keys.indexOf(k) !== -1; }).length;
+        var sameSrc = c.src === entry.src ? 1 : 0;
+        return { c: c, s: shared * 2 + sameSrc };
+      })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 2)
+      .map(function (x) { return x.c; });
+  }
+
+  function renderCard(entry) {
+    card.classList.remove('fmc__card--in');
+    document.getElementById('fmc-card-num').textContent = 'Card ' + entry.id;
+    document.getElementById('fmc-card-q').textContent = entry.q;
+    document.getElementById('fmc-card-a').textContent = entry.a;
+    var link = document.getElementById('fmc-card-link');
+    link.href = entry.url;
+    link.textContent = 'Continue reading \u2192 ' + entry.src;
+
+    var rel = relatedFor(entry);
+    var relatedEl = document.getElementById('fmc-related');
+    if (rel.length) {
+      relatedEl.innerHTML = 'You might also ask: ' + rel.map(function (r) {
+        return '<a href="#" data-id="' + r.id + '">' + r.q + '</a>';
+      }).join(' &middot; ');
+      Array.prototype.forEach.call(relatedEl.querySelectorAll('a'), function (a) {
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var rc = corpus.filter(function (c) { return c.id === a.getAttribute('data-id'); })[0];
+          if (rc) { input.value = rc.q; renderCard(rc); }
+        });
+      });
+    } else {
+      relatedEl.innerHTML = '';
+    }
+
+    card.hidden = false;
+    empty.hidden = true;
+    sugg.innerHTML = '';
+    requestAnimationFrame(function () { requestAnimationFrame(function () { card.classList.add('fmc__card--in'); }); });
+  }
+
+  function renderSuggestions(query) {
+    card.classList.remove('fmc__card--in');
+    setTimeout(function () { card.hidden = true; }, 180);
+    empty.hidden = true;
+    if (query.length < 3 || !corpus.length) { sugg.innerHTML = ''; return; }
+    pulseMark();
+
+    var ranked = corpus
+      .map(function (c) { return { c: c, s: score(c, query) }; })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 4);
+
+    if (!ranked.length) { sugg.innerHTML = ''; empty.hidden = false; return; }
+
+    sugg.innerHTML = ranked.map(function (r, i) {
+      return '<button type="button" class="fmc__suggestion" data-id="' + r.c.id + '" style="transition-delay:' + (i * 0.06) + 's">' + r.c.q + '</button>';
+    }).join('');
+
+    var buttons = sugg.querySelectorAll('.fmc__suggestion');
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener('click', function () {
+        var c = corpus.filter(function (x) { return x.id === btn.getAttribute('data-id'); })[0];
+        if (c) { input.value = c.q; renderCard(c); }
+      });
+    });
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      Array.prototype.forEach.call(buttons, function (b) { b.classList.add('fmc__suggestion--in'); });
+    }); });
+  }
+
+  input.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    var q = input.value.trim();
+    debounceTimer = setTimeout(function () { renderSuggestions(q); }, 140);
+  });
+  input.addEventListener('focus', function () { input.classList.add('fmc__input--focused'); });
+  input.addEventListener('blur', function () { input.classList.remove('fmc__input--focused'); });
+
+  // Keyboard navigation across suggestion buttons
+  input.addEventListener('keydown', function (e) {
+    var buttons = sugg.querySelectorAll('.fmc__suggestion');
+    if (!buttons.length) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); buttons[0].focus(); }
+  });
+  sugg.addEventListener('keydown', function (e) {
+    var buttons = Array.prototype.slice.call(sugg.querySelectorAll('.fmc__suggestion'));
+    var idx = buttons.indexOf(document.activeElement);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); buttons[(idx + 1) % buttons.length].focus(); }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); buttons[(idx - 1 + buttons.length) % buttons.length].focus(); }
+  });
+
+  // Library tab: appears only once the inline concierge has scrolled above the viewport.
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        if (scrolledPast) {
+          tab.hidden = false;
+          requestAnimationFrame(function () { tab.classList.add('fmc-tab--visible'); });
+        } else {
+          tab.classList.remove('fmc-tab--visible');
+          setTimeout(function () { if (!tab.classList.contains('fmc-tab--visible')) tab.hidden = true; }, 300);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(section);
+  }
+
+  tab.addEventListener('click', function () {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { input.focus(); }, 400);
+  });
+})();
+</script>
