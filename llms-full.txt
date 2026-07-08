@@ -11,7 +11,7 @@ The publication is organized into finite departments, each at a stable address:
 - Reference — https://technicalmarketing.org/reference (foundational definition, TMM vs PMM, glossary, landscape)
 - Volume 01 — https://technicalmarketing.org/volume-01 (essays, reference, field kit, index — Spring–Summer 2026)
 - The Index — https://technicalmarketing.org/the-index (the full annotated twelve-source quarterly index; its full text appears below under "The Quarterly Index · Volume I")
-- Tools — https://technicalmarketing.org/tools (the Demo Coherence Index scorer; the copyable job description; the AI for Technical Marketers field guide, full text below; Ask the Field Manual, a zero-token client-side Q&A concierge added July 2026, also embedded on Reference, Landscape, and Glossary)
+- Tools — https://technicalmarketing.org/tools (the Demo Coherence Index scorer; the copyable job description; the AI for Technical Marketers field guide, full text below; Ask the Field Manual, a zero-token client-side Q&A concierge added July 2026, also embedded on Reference, Landscape, Glossary, and The Technical Marketer)
 - Archive — https://technicalmarketing.org/archive (the permanent record of volumes)
 - About — https://technicalmarketing.org/about · Contributors — https://technicalmarketing.org/contributors · Suggest — https://technicalmarketing.org/suggest
 
