@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es"><head>
+<html lang="es" data-allow-dark><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#EFE6C9">
@@ -509,14 +509,24 @@
 
 <style>
 :root {
-  --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: #F5EED8;
-  --ink: #1C1812; --ink-60: #5C4E3C; --ink-40: #8B7D69;
+  --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: var(--paper-light);
+  --ink: var(--ink); --ink-60: var(--ink-60); --ink-40: var(--ink-40);
   --border: rgba(28,24,18,0.14); --border-strong: rgba(28,24,18,0.32);
-  --red: #A7352A; --yellow: #EACF82;
+  --red: var(--red); --yellow: var(--yellow);
+  --green: var(--green); --gold: var(--gold);
   --f-display: 'Roboto Slab','Georgia',serif; --f-serif: 'Fraunces','Georgia',serif; --f-sans: 'Inter',sans-serif;
   --measure: 64ch; --layout-max: 1180px; --reading-max: 760px;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
+[data-theme="dark"] {
+  --green: #8FBF93;
+  --gold: #D9B054;
+}
+[data-theme="dark"] .compare__cell--fails { background: rgba(208,104,92,0.08); }
+[data-theme="dark"] .compare__cell--fix { background: rgba(217,176,84,0.14); }
+[data-theme="dark"] .ai-glance__tag--strong { background: rgba(143,191,147,0.16); }
+[data-theme="dark"] .ai-glance__tag--partial { background: rgba(217,176,84,0.16); }
+[data-theme="dark"] .ai-glance__tag--caution { background: rgba(208,104,92,0.16); }
 ::selection { background: var(--yellow); color: var(--ink); }
 html { font-size: 16px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
 body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62;
@@ -626,9 +636,9 @@ a.masthead__title:hover { color: var(--red); }
 .compare__cell--fails { background: rgba(167,53,42,0.045); }
 .compare__cell--fix { background: rgba(234,207,130,0.18); }
 .compare__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.625rem; display: block; }
-.compare__cell--helps .compare__label { color: #4a6b4d; }
+.compare__cell--helps .compare__label { color: var(--green); }
 .compare__cell--fails .compare__label { color: var(--red); }
-.compare__cell--fix .compare__label { color: #8a6a1a; }
+.compare__cell--fix .compare__label { color: var(--gold); }
 .compare__cell p { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink); }
 
 /* ── lesson callout ───────────────────────────────────────────── */
@@ -672,8 +682,8 @@ a.masthead__title:hover { color: var(--red); }
 .ai-glance__name { font-family: var(--f-display); font-weight: 700; font-size: 0.9375rem; color: var(--ink); margin-bottom: 0.625rem; }
 .ai-glance__for { font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.5; color: var(--ink-60); margin-bottom: 0.875rem; }
 .ai-glance__tag { display: inline-block; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; padding: 0.25rem 0.5rem; }
-.ai-glance__tag--strong { background: rgba(74,107,77,0.15); color: #4a6b4d; }
-.ai-glance__tag--partial { background: rgba(138,106,26,0.15); color: #8a6a1a; }
+.ai-glance__tag--strong { background: rgba(74,107,77,0.15); color: var(--green); }
+.ai-glance__tag--partial { background: rgba(138,106,26,0.15); color: var(--gold); }
 .ai-glance__tag--caution { background: rgba(167,53,42,0.12); color: var(--red); }
 
 /* ── demo capture spectrum diagram ───────────────────────────────── */
@@ -980,26 +990,26 @@ a.masthead__title:hover { color: var(--red); }
       <div class="dthread" style="position:absolute;left:1%;right:23%;top:21px;height:1px;background:rgba(28,24,18,0.28);"></div>
       <div class="dgrid dgrid--4" style="position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
         <div>
-          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">01</span></div>
-          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">Redacta a partir de tu propia fuente</h4>
-          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0;">Transcripciones, especificaciones, notas. No conocimiento general.</p>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:var(--paper-light);padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:var(--red);">01</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:var(--ink);margin:0 0 7px;">Redacta a partir de tu propia fuente</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:var(--ink-60);margin:0;">Transcripciones, especificaciones, notas. No conocimiento general.</p>
         </div>
         <div>
-          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">02</span></div>
-          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">Nombra el riesgo específico</h4>
-          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0;">Cada entregable falla de una forma distinta.</p>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:var(--paper-light);padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:var(--red);">02</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:var(--ink);margin:0 0 7px;">Nombra el riesgo específico</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:var(--ink-60);margin:0;">Cada entregable falla de una forma distinta.</p>
         </div>
         <div>
-          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">03</span></div>
-          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;">Filtra cada afirmación a través de una persona</h4>
-          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0 0 10px;">La única práctica en la que todas las fuentes convergieron de forma independiente.</p>
-          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#A7352A;">◆ La constante</div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:var(--paper-light);padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:var(--red);">03</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:var(--ink);margin:0 0 7px;">Filtra cada afirmación a través de una persona</h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:var(--ink-60);margin:0 0 10px;">La única práctica en la que todas las fuentes convergieron de forma independiente.</p>
+          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);">◆ La constante</div>
         </div>
         <div>
-          <div style="margin-bottom:16px;"><span style="display:inline-block;background:#F5EED8;padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:#A7352A;">04</span></div>
-          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:#1C1812;margin:0 0 7px;"><span style="box-shadow:inset 0 -0.24em 0 #EACF82;">Aplica el movimiento verificado</span></h4>
-          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:#5C4E3C;margin:0 0 10px;">Una táctica duradera y con fuentes.</p>
-          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:#8A6A1A;">◆ El movimiento</div>
+          <div style="margin-bottom:16px;"><span style="display:inline-block;background:var(--paper-light);padding-right:14px;font-family:'Roboto Slab',serif;font-weight:700;font-size:34px;line-height:0.9;color:var(--red);">04</span></div>
+          <h4 style="font-family:'Inter',sans-serif;font-weight:600;font-size:14px;line-height:1.28;color:var(--ink);margin:0 0 7px;"><span style="box-shadow:inset 0 -0.24em 0 var(--yellow);">Aplica el movimiento verificado</span></h4>
+          <p style="font-family:'Fraunces',serif;font-size:13.5px;line-height:1.5;color:var(--ink-60);margin:0 0 10px;">Una táctica duradera y con fuentes.</p>
+          <div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);">◆ El movimiento</div>
         </div>
       </div>
     </div>
@@ -1281,32 +1291,32 @@ a.masthead__title:hover { color: var(--red); }
       <div style="position:absolute;left:0;width:72%;top:132px;height:10px;background:rgba(28,24,18,0.05);border:0.5px solid rgba(28,24,18,0.14);"></div>
       <div style="position:absolute;left:78%;right:0;top:132px;height:10px;background:rgba(167,53,42,0.14);border:0.5px solid rgba(167,53,42,0.3);"></div>
       <div style="position:absolute;left:75%;top:120px;height:34px;width:1px;background:rgba(28,24,18,0.22);"></div>
-      <div style="position:absolute;left:33%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#5C4E3C;">Real — verificado y listo</div>
-      <div style="position:absolute;left:89%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:#A7352A;">Usar con precaución</div>
+      <div style="position:absolute;left:33%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:600;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--ink-60);">Real — verificado y listo</div>
+      <div style="position:absolute;left:89%;top:160px;transform:translateX(-50%);white-space:nowrap;font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--red);">Usar con precaución</div>
       <div style="position:absolute;left:9%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
-          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">ChatGPT</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">Real, confirmado</div></div>
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:var(--ink);">ChatGPT</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:var(--green);margin-top:3px;">Real, confirmado</div></div>
           <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:81px;background:rgba(28,24,18,0.32);"></div>
-          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:var(--green);"></div>
         </div>
       <div style="position:absolute;left:25%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
-          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Claude</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#8A6A1A;margin-top:3px;">Real, autoinformado</div></div>
+          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:var(--ink);">Claude</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:var(--gold);margin-top:3px;">Real, autoinformado</div></div>
           <div style="position:absolute;left:calc(50% - 0.5px);top:110px;width:1px;height:21px;background:rgba(28,24,18,0.32);"></div>
-          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#8A6A1A;"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:var(--gold);"></div>
         </div>
       <div style="position:absolute;left:42%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
-          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Copilot</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">El más sólido, confirmado</div></div>
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:var(--ink);">Copilot</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:var(--green);margin-top:3px;">El más sólido, confirmado</div></div>
           <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:81px;background:rgba(28,24,18,0.32);"></div>
-          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:var(--green);"></div>
         </div>
       <div style="position:absolute;left:58%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
-          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#1C1812;">Gemini</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#4A6B4D;margin-top:3px;">Real, confirmado</div></div>
+          <div style="position:absolute;left:0;right:0;top:66px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:var(--ink);">Gemini</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:var(--green);margin-top:3px;">Real, confirmado</div></div>
           <div style="position:absolute;left:calc(50% - 0.5px);top:110px;width:1px;height:21px;background:rgba(28,24,18,0.32);"></div>
-          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:#4A6B4D;"></div>
+          <div style="position:absolute;left:50%;top:131px;transform:translateX(-50%);width:12px;height:12px;background:var(--green);"></div>
         </div>
       <div style="position:absolute;left:90%;top:0;bottom:0;width:150px;transform:translateX(-50%);">
-          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:#A7352A;">Grok</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:#A7352A;margin-top:3px;">Usar con precaución</div></div>
-          <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:80px;background:#A7352A;"></div>
-          <div style="position:absolute;left:50%;top:130px;transform:translateX(-50%);width:14px;height:14px;background:#A7352A;"></div>
+          <div style="position:absolute;left:0;right:0;top:6px;text-align:center;"><div style="font-family:'Roboto Slab',serif;font-weight:700;font-size:15px;color:var(--red);">Grok</div><div style="font-family:'Inter',sans-serif;font-weight:700;font-size:9px;letter-spacing:0.11em;text-transform:uppercase;color:var(--red);margin-top:3px;">Usar con precaución</div></div>
+          <div style="position:absolute;left:calc(50% - 0.5px);top:50px;width:1px;height:80px;background:var(--red);"></div>
+          <div style="position:absolute;left:50%;top:130px;transform:translateX(-50%);width:14px;height:14px;background:var(--red);"></div>
         </div>
     </div>
   </div>
@@ -1314,11 +1324,11 @@ a.masthead__title:hover { color: var(--red); }
   <button type="button" class="diagram-expand-btn" aria-label="Expandir el diagrama de confianza de modelos a tamaño completo"><svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 4V1h3M6 1h3v3M9 6v3H6M4 9H1V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>Expandir</button>
 </figure>
       <div class="signal-legend">
-        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>ChatGPT</div><p class="signal-legend__desc">Ver lo que un comprador probablemente ve cuando le pregunta a la IA sobre ti.</p></div>
-        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#8a6a1a;"></span>Claude</div><p class="signal-legend__desc">Mantener un documento largo consistente a través de muchas rondas de ediciones.</p></div>
-        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>Copilot</div><p class="signal-legend__desc">Encontrar lo que tu empresa ya tiene en sus propios archivos de PowerPoint, Word y Excel.</p></div>
-        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#4a6b4d;"></span>Gemini</div><p class="signal-legend__desc">Leer las imágenes y la narración de un video juntas, o convertir una especificación en un explicador rápido.</p></div>
-        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:#a7352a;"></span><span style="color:#a7352a;">Grok</span></div><p class="signal-legend__desc">Saber que algo ocurrió hoy. <strong style="color:#a7352a;font-weight:600;">No saber qué ocurrió realmente.</strong></p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:var(--green);"></span>ChatGPT</div><p class="signal-legend__desc">Ver lo que un comprador probablemente ve cuando le pregunta a la IA sobre ti.</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:var(--gold);"></span>Claude</div><p class="signal-legend__desc">Mantener un documento largo consistente a través de muchas rondas de ediciones.</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:var(--green);"></span>Copilot</div><p class="signal-legend__desc">Encontrar lo que tu empresa ya tiene en sus propios archivos de PowerPoint, Word y Excel.</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:var(--green);"></span>Gemini</div><p class="signal-legend__desc">Leer las imágenes y la narración de un video juntas, o convertir una especificación en un explicador rápido.</p></div>
+        <div><div class="signal-legend__name"><span class="signal-legend__dot" style="background:var(--red);"></span><span style="color:var(--red);">Grok</span></div><p class="signal-legend__desc">Saber que algo ocurrió hoy. <strong style="color:var(--red);font-weight:600;">No saber qué ocurrió realmente.</strong></p></div>
       </div>
       <div class="ref-row">
         <div class="ref-row__name">Claude</div>
@@ -1362,35 +1372,35 @@ a.masthead__title:hover { color: var(--red); }
       <figure class="diagram-figure">
   <div class="diagram diagram--reflow" role="img" aria-label="Herramientas de captura de demos en un espectro que va de la recreación a lo real. Recorridos de captura automática (Arcade, Tango, Scribe, Supademo): estáticos una vez grabados. Captura interactiva del DOM (Storylane, Walnut, Navattic, Reprise): real, luego editado, y puede desviarse. Inyección de datos en vivo (Saleo, Reprise Reveal): el producto real, en vivo.">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:22px;">
-      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#8B7D69;">← Recreación</span>
-      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:#4A6B4D;">Lo real  →</span>
+      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-40);">← Recreación</span>
+      <span style="font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green);">Lo real  →</span>
     </div>
     <div style="position:relative;">
       <div class="dthread" style="position:absolute;left:5%;right:5%;top:74px;height:1px;background:rgba(28,24,18,0.28);"></div>
       <div class="dgrid dgrid--3" style="position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
         <div style="text-align:center;">
           <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
-            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">Recorridos de captura automática</div>
-            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#8B7D69;">Estáticos una vez grabados</div>
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:var(--ink);">Recorridos de captura automática</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:var(--ink-40);">Estáticos una vez grabados</div>
           </div>
-          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;border:1.5px solid #8A6A1A;background:#F5EED8;transform:rotate(45deg);"></span></div>
-          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Arcade, Tango, Scribe, Supademo</div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;border:1.5px solid var(--gold);background:var(--paper-light);transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:var(--ink-60);">Arcade, Tango, Scribe, Supademo</div>
         </div>
         <div style="text-align:center;">
           <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
-            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">Captura interactiva del DOM</div>
-            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#8A6A1A;">Real, luego editado — puede desviarse</div>
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:var(--ink);">Captura interactiva del DOM</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:var(--gold);">Real, luego editado — puede desviarse</div>
           </div>
-          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;background:#8A6A1A;transform:rotate(45deg);"></span></div>
-          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Storylane, Walnut, Navattic, Reprise</div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:12px;height:12px;background:var(--gold);transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:var(--ink-60);">Storylane, Walnut, Navattic, Reprise</div>
         </div>
         <div style="text-align:center;">
           <div style="height:62px;display:flex;flex-direction:column;justify-content:flex-end;gap:5px;">
-            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:#1C1812;">Inyección de datos en vivo</div>
-            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:#4A6B4D;">El producto real, en vivo</div>
+            <div style="font-family:'Fraunces',serif;font-weight:600;font-size:15px;line-height:1.2;color:var(--ink);">Inyección de datos en vivo</div>
+            <div style="font-family:'Fraunces',serif;font-style:italic;font-size:12px;color:var(--green);">El producto real, en vivo</div>
           </div>
-          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:15px;height:15px;background:#4A6B4D;transform:rotate(45deg);"></span></div>
-          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:#5C4E3C;">Saleo, Reprise Reveal</div>
+          <div class="dnode" style="height:24px;display:flex;align-items:center;justify-content:center;"><span style="width:15px;height:15px;background:var(--green);transform:rotate(45deg);"></span></div>
+          <div style="margin-top:13px;font-family:'Inter',sans-serif;font-size:12px;line-height:1.5;color:var(--ink-60);">Saleo, Reprise Reveal</div>
         </div>
       </div>
     </div>
