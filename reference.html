@@ -77,6 +77,19 @@ a.masthead__title:hover { color: var(--red); }
 .masthead__nav-link { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; padding: 0.375rem 0; border-bottom: 1px solid transparent; transition: color 0.15s, border-color 0.15s; }
 .masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
 .masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+
+.masthead__langs {
+  display: flex; justify-content: flex-end; align-items: center;
+  flex-wrap: wrap; gap: 0 0.875rem; padding: 0.5rem 0 0.75rem;
+}
+.masthead__lang-link {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-40); font-weight: 500;
+  border-bottom: 1px solid transparent; transition: color 0.15s, border-color 0.15s;
+}
+a.masthead__lang-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__lang-link[aria-current="true"] { color: var(--red); font-weight: 600; }
+.masthead__lang-sep { color: var(--border-strong); font-size: 0.625rem; }
 @media (max-width: 600px) { .masthead__nav { gap: 0 1.25rem; } .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; } .masthead__title { font-size: 1.5rem; white-space: nowrap; } }
 
 /* ── Hero : the opening spread ─────────────────────────────────── */
@@ -394,7 +407,7 @@ a.entry__title:hover{ color:var(--red); border-bottom-color:var(--red); }
   <article class="entry">
     <div class="entry__meta">Reference &middot; Twenty-three companies</div>
     <a href="/landscape" class="entry__title">Technical Marketing Landscape</a>
-    <p class="entry__note">How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function. Verified from public job postings and named-practitioner accounts. Updated each volume.</p>
+    <p class="entry__note">How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function, including a dedicated tracked section on agentic AI-facing coverage. Verified from public job postings and named-practitioner accounts. Updated each volume.</p>
   </article>
 </section>
   <a href="/" class="back-link">&#8592; Return to the index</a>

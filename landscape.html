@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#EFE6C9">
 
 <title>Technical Marketing Landscape &middot; The discipline in practice &middot; Technical Marketing</title>
-<meta name="description" content="A sourced reference showing how enterprise software and AI companies staff, title, and place the technical marketing function. 23 companies. Verified from public job postings and practitioner accounts.">
+<meta name="description" content="A sourced reference showing how enterprise software and AI companies staff, title, and place the technical marketing function, including a tracked table of agentic AI-facing coverage. 23 companies. Verified from public job postings and practitioner accounts.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://technicalmarketing.org/landscape">
@@ -40,7 +40,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
 
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers, with a commercial outcome at stake.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Article","@id":"https://technicalmarketing.org/landscape#article","headline":"Technical Marketing Landscape: The Discipline in Practice","description":"A sourced reference showing how enterprise software companies staff, title, and place the technical marketing function. Verified from public job postings and practitioner accounts.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org"},"datePublished":"2026-06-12","dateModified":"2026-06-12","url":"https://technicalmarketing.org/landscape","mainEntityOfPage":"https://technicalmarketing.org/landscape","articleSection":"Reference","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technical Marketing Landscape","item":"https://technicalmarketing.org/landscape"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers, with a commercial outcome at stake.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Article","@id":"https://technicalmarketing.org/landscape#article","headline":"Technical Marketing Landscape: The Discipline in Practice","description":"A sourced reference showing how enterprise software companies staff, title, and place the technical marketing function. Verified from public job postings and practitioner accounts.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org"},"datePublished":"2026-06-12","dateModified":"2026-07-08","url":"https://technicalmarketing.org/landscape","mainEntityOfPage":"https://technicalmarketing.org/landscape","articleSection":"Reference","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technical Marketing Landscape","item":"https://technicalmarketing.org/landscape"}]}]}</script>
 
 <style>
 
@@ -349,6 +349,53 @@ a.masthead__title:hover { color: var(--red); }
 .org-tag--marketing { border-color: var(--red); color: var(--red); }
 .org-tag--product { border-color: var(--ink-60); color: var(--ink-60); }
 .org-tag--presales { border-color: var(--ink-40); color: var(--ink-40); }
+.org-tag--confirmed { border-color: var(--red); color: var(--red); }
+.org-tag--emerging { border-color: var(--ink-60); color: var(--ink-60); }
+.org-tag--none { border-color: var(--ink-40); color: var(--ink-40); }
+.org-tag--nodata { border-color: var(--border); color: var(--ink-40); font-style: italic; }
+
+.stat-line {
+  font-family: var(--f-sans);
+  font-size: 0.9375rem;
+  color: var(--ink-60);
+  border-left: 2px solid var(--red);
+  padding: 0.25rem 0 0.25rem 1rem;
+  margin: 1.5rem 0;
+}
+.stat-line strong { color: var(--ink); font-weight: 600; }
+
+.masthead__langs {
+  display: flex; justify-content: flex-end; align-items: center;
+  flex-wrap: wrap; gap: 0 0.875rem; padding: 0.5rem 0 0.75rem;
+}
+.masthead__lang-link {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: var(--ink-40); font-weight: 500;
+  border-bottom: 1px solid transparent; transition: color 0.15s, border-color 0.15s;
+}
+a.masthead__lang-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__lang-link[aria-current="true"] { color: var(--red); font-weight: 600; }
+.masthead__lang-sep { color: var(--border-strong); font-size: 0.625rem; }
+
+.callout {
+  margin: 2rem 0;
+  padding: 1.25rem 1.5rem;
+  border: 0.5px solid var(--border-strong);
+  border-left: 2px solid var(--red);
+  background: var(--paper-light);
+  max-width: var(--measure);
+}
+.callout__label {
+  font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--red); font-weight: 600;
+  display: block; margin-bottom: 0.75rem;
+}
+.callout p {
+  font-family: var(--f-serif); font-size: 0.9375rem;
+  line-height: 1.6; color: var(--ink-60);
+  margin-bottom: 0.5rem; max-width: var(--measure);
+}
+.callout p:last-child { margin-bottom: 0; }
 
 /* Column: Note */
 .col-note {
@@ -643,6 +690,14 @@ a.masthead__title:hover { color: var(--red); }
         "@type": "Answer",
         "text": "The majority of verified technical marketing roles sit inside the marketing organization, reporting through a CMO structure. A second group sits at the explicit intersection of product and marketing, especially at infrastructure and data companies. A smaller number sit closer to presales and field engineering, most commonly at networking and hardware companies. The placement affects priorities but not the core work."
       }
+    },
+    {
+      "@type": "Question",
+      "name": "Has technical marketing been re-scoped for agentic AI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As of July 2026, 9 of 24 tracked technical or product marketing entries show sourced, explicit agentic AI scope, including confirmed roles at Anthropic, AWS, Databricks, Datadog, Neo4j, NVIDIA, OpenAI, Red Hat, and Salesforce (MuleSoft). Several companies with the largest agentic AI product investments, including CrowdStrike, ServiceNow, Cisco, IBM, and Workday, show no sourced technical marketing role re-scoped to match, despite heavy agentic engineering hiring. Marketing appears to be lagging product at exactly the companies making the largest agentic bets."
+      }
     }
   ]
 }
@@ -697,10 +752,15 @@ a.masthead__title:hover { color: var(--red); }
     <span class="page-head__kicker">Reference &middot; The Discipline in Practice</span>
     <h1 class="page-head__title">Technical Marketing Landscape.</h1>
     <p class="page-head__deck">How enterprise software, AI, and technology companies staff, title, and place the technical marketing function. Twenty-three companies, verified from public sources. The discipline exists. This is what it looks like.</p>
-    <div class="page-head__byline">First compiled June 2026 &middot; Updated each volume</div>
+    <div class="page-head__byline">First compiled June 2026 &middot; Updated July 2026 &mdash; added agentic-facing coverage tracking</div>
   </header>
 
   <div class="content">
+
+    <div class="callout">
+      <span class="callout__label">A note on this update</span>
+      <p>Agentic AI is beginning to reshape parts of this table, and it will likely become the norm rather than a separate category over time. For now, agentic-facing coverage is tracked in its own dedicated section below rather than folded into the main table, for two reasons: it keeps a still-emerging pattern from being overstated as settled fact, and it preserves a historical record of exactly when and how the function began to shift. See <a href="/technical-marketing-age-of-ai">In the Age of AI</a> for the broader argument this table's Agentic-facing section is tracking evidence for. Jump to <a href="#agentic-coverage">Agentic-facing coverage &darr;</a>.</p>
+    </div>
 
     <p>The technical marketing function has existed under a dozen different titles for <a href="/before-the-name">six decades</a>. Today it appears in job postings at companies across every category of enterprise software and AI, from cloud infrastructure to developer tooling to security to platform to foundational model companies. The titles are inconsistent. The org placement varies. The work is recognizably similar.</p>
 
@@ -942,6 +1002,210 @@ a.masthead__title:hover { color: var(--red); }
     <p>Hardware and semiconductor companies (Intel, NVIDIA) have used these titles formally since the 1960s. The enterprise software version of the role came decades later. The function's roots in hardware are not incidental. They are the origin point. The history is documented in <a href="/before-the-name">Before the Name</a>.</p>
 
     <p>Practitioners who want to submit a verified entry for inclusion should review the <a href="/suggest">submissions page</a>. The sourcing standard is a public job posting URL, a company careers page link, or named-practitioner attribution on the record. The table updates each volume.</p>
+
+    <h2 id="agentic-coverage">Agentic-facing coverage</h2>
+
+    <p>A separate question from staffing overall: has the technical marketing function itself been re-scoped for the agentic AI shift, as distinct from the company shipping agentic AI products? The two are not the same claim. A company can run a large agentic AI engineering effort while its technical marketing function has not yet been re-scoped to match. This table tracks the second claim specifically, sourced independently per entry.</p>
+
+    <div class="methodology">
+      <span class="methodology__label">Methodology</span>
+      <p><strong>Confirmed</strong> requires a sourced job posting, named-practitioner account, or on-record interview that explicitly ties a technical marketing or product marketing title to agentic AI scope (agent orchestration, agent frameworks, agentic products by name, or equivalent). <strong>Emerging</strong> means an AI-scoped technical marketing title is verified but the available source text does not confirm agentic-specific scope. <strong>None found</strong> means no sourced technical marketing role with agentic scope was located, regardless of the company's broader agentic AI product activity. <strong>No data</strong> means the search returned no relevant result for this company. No entry in this section is inferred from a company's product announcements alone.</p>
+    </div>
+
+    <p class="stat-line">As of July 2026: <strong>9 of 24</strong> tracked entries show sourced, explicit agentic scope in a technical or product marketing role. <strong>2</strong> show an AI-scoped title without confirmed agentic specificity. <strong>12</strong> show no sourced agentic-scoped role despite significant company-wide agentic product investment. <strong>1</strong> returned no data.</p>
+
+  </div>
+
+  <p class="landscape-scroll-hint">Swipe to view full table &rarr;</p>
+  <div class="landscape-wrap">
+    <table class="landscape" aria-label="Agentic-facing technical marketing coverage by company">
+      <thead>
+        <tr>
+          <th scope="col">Company</th>
+          <th scope="col">Status</th>
+          <th scope="col">Evidence</th>
+          <th scope="col">Source</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr>
+          <td class="col-company">Anthropic</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">Title is literally &ldquo;Product Marketing Lead, Agents.&rdquo; Owns go-to-market for the first-party agent product portfolio: Claude.ai, Cowork, Claude Code, and Claude Enterprise.</td>
+          <td class="col-source"><a href="https://job-boards.greenhouse.io/anthropic/jobs/5055669008" rel="external noopener">Greenhouse<br>Dec 2025</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Neo4j</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">&ldquo;Product Marketing Manager, AI Capabilities &amp; Developer Enablement.&rdquo; Owns messaging for agents and agent memory, and positioning for agent frameworks including LangChain, LlamaIndex, and MCP servers.</td>
+          <td class="col-source"><a href="https://job-boards.greenhouse.io/neo4j/jobs/4690258006" rel="external noopener">Greenhouse<br>2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">NVIDIA</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">Two named practitioners on record: Nicola Sessions, Director of Product Marketing for NVIDIA agentic AI software, and Rebecca Kao, Product Marketing Director focused on bringing agentic AI products to market.</td>
+          <td class="col-source"><a href="https://developer.nvidia.com/blog/mastering-agentic-techniques-ai-agent-evaluation/" rel="external noopener">NVIDIA Technical Blog<br>2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Red Hat</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">Named practitioner James Harmison, Senior Principal Technical Marketing Manager, on record at KubeCon discussing Red Hat's agentic AI strategy for enterprise Kubernetes environments.</td>
+          <td class="col-source"><a href="https://siliconangle.com/2025/11/12/agentic-ai-strategy-tackles-enterprise-ai-roi-challenges-kubeconna/" rel="external noopener">SiliconANGLE / theCUBE<br>Nov 2025</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">AWS</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">&ldquo;Sr. Product Marketing Manager - Tech, AWS Marketing&rdquo; owns positioning and launches for the Bedrock/AgentCore portfolio. Requires familiarity with &ldquo;the AI agent/agentic AI landscape (frameworks, orchestration patterns, tool use).&rdquo;</td>
+          <td class="col-source"><a href="https://amazon.jobs/en/jobs/10454215/senior-product-marketing-manager-tech-aws-marketing" rel="external noopener">amazon.jobs<br>Job ID 10454215</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Databricks</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">&ldquo;Product Marketing Director, AI&rdquo; leads marketing strategy across Agent Bricks, Databricks' enterprise agent platform, and is required to build and share agentic AI customer stories.</td>
+          <td class="col-source"><a href="https://www.databricks.com/company/careers/marketing/product-marketing-director-ai-8487145002" rel="external noopener">databricks.com<br>2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Datadog</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">Senior and Principal Product Marketing Manager (AI) roles build a unified messaging framework explicitly &ldquo;spanning generative, agentic, and correlative AI,&rdquo; including Datadog's Autonomous Agents.</td>
+          <td class="col-source"><a href="https://careers.datadoghq.com/detail/7182750/" rel="external noopener">careers.datadoghq.com<br>2025&ndash;2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Salesforce<br><span style="font-family:var(--f-sans);font-size:0.625rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--ink-40);">MuleSoft</span></td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">&ldquo;Sr. Technical Product Marketing Manager (MuleSoft)&rdquo; lists required AI skills explicitly: prompt engineering, agent governance, agent orchestration, and AI Gateway.</td>
+          <td class="col-source"><a href="https://careers.salesforce.com/en/jobs/jr332759/sr-technical-product-marketing-manager-mulesoft/" rel="external noopener">careers.salesforce.com<br>Mar 2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">OpenAI</td>
+          <td class="col-org"><span class="org-tag org-tag--confirmed">Confirmed</span></td>
+          <td class="col-note">&ldquo;Sr. Product Marketing Manager, Platform&rdquo; explicitly covers &ldquo;helping AI agents connect to enterprise systems and data&rdquo; as part of the API platform strategy. Requires 12+ years of technical product marketing, product management, or sales engineering experience.</td>
+          <td class="col-source"><a href="https://openai.com/careers/product-marketing-manager-platform-remote-us/" rel="external noopener">openai.com<br>2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Pure Storage</td>
+          <td class="col-org"><span class="org-tag org-tag--emerging">Emerging</span></td>
+          <td class="col-note">A &ldquo;Senior Technical Marketing Engineer, AI&rdquo; title is active, but available source text does not confirm agentic-specific scope for the role.</td>
+          <td class="col-source"><a href="https://www.glassdoor.com/Jobs/Pure-Storage-marketing-Jobs-EI_IE364364.0,12_KO13,22.htm" rel="external noopener">Glassdoor<br>Jun 2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">JFrog</td>
+          <td class="col-org"><span class="org-tag org-tag--emerging">Emerging</span></td>
+          <td class="col-note">&ldquo;Technical Product Marketing Manager &ndash; AI &amp; Security&rdquo; title is active, covering AI broadly. Available source text does not confirm agentic-specific scope.</td>
+          <td class="col-source"><a href="https://www.glassdoor.com/Jobs/JFrog-Jobs-E553835.htm" rel="external noopener">Glassdoor<br>2026</a></td>
+        </tr>
+
+        <tr>
+          <td class="col-company">CrowdStrike</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Active &ldquo;NGSIEM Agentic AI&rdquo; engineering hiring confirmed. No technical marketing posting located with agentic scope in the title or description.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Palo Alto Networks</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">&ldquo;Agentic browser&rdquo; language appears in a separate engineering posting. Existing Technical Product Marketing Manager postings (Cortex Cloud, Cloud Security) do not mention agentic scope in available text.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">ServiceNow<br><span style="font-family:var(--f-sans);font-size:0.625rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--ink-40);">incl. Moveworks</span></td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Moveworks is explicitly marketed as an &ldquo;Agentic AI Assistant platform&rdquo; with heavy agentic engineering hiring. No technical marketing posting located scoped to it.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Salesforce<br><span style="font-family:var(--f-sans);font-size:0.625rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--ink-40);">Slack</span></td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">A Solutions Engineer role was found &ldquo;positioning Slack as the Agentic OS,&rdquo; but this is a presales function, not a marketing one.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Elastic</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">A Product Manager role exists for &ldquo;AI Agents, Search.&rdquo; Technical Product Marketing roles located (Serverless, Jina AI) do not specify agentic scope in available text.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Oracle</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Technical Product Marketing Manager for Autonomous AI Lakehouse covers vector search and AI pipelines but is not explicitly scoped to agentic AI.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Workday</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Heavy company-wide &ldquo;Illuminate&rdquo; agentic product push. A Product Manager role exists for &ldquo;Agentic AI Activation &amp; Deployment,&rdquo; but this is a presales function, not a marketing one.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Cisco</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Company-wide &ldquo;AgenticOps&rdquo; push confirmed. A &ldquo;Leader, Technical Marketing &ndash; Network Experiences &amp; AI&rdquo; title exists; agentic scope not confirmed in available text.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Intel</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">No sourced technical marketing posting located with agentic scope.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">IBM<br><span style="font-family:var(--f-sans);font-size:0.625rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;color:var(--ink-40);">incl. HashiCorp</span></td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">Project Infragraph is explicitly built for agentic infrastructure. The HashiCorp marketing careers page showed no open technical marketing role matching this scope at time of search.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Autodesk</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">No sourced technical marketing posting located with agentic scope.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">Cohere</td>
+          <td class="col-org"><span class="org-tag org-tag--none">None found</span></td>
+          <td class="col-note">General product marketing postings located. No sourced agentic-specific scope in available text.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+        <tr>
+          <td class="col-company">LucidLink</td>
+          <td class="col-org"><span class="org-tag org-tag--nodata">No data</span></td>
+          <td class="col-note">Search returned no relevant result for this company.</td>
+          <td class="col-source">&mdash;</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="content">
+
+    <h2>What this shows</h2>
+
+    <p>The technical marketing function and the company's agentic AI product investment are separate claims, and this table keeps them separate on purpose. Several of the companies with the loudest agentic AI product pushes on this table, including CrowdStrike, ServiceNow with Moveworks, Cisco's AgenticOps, IBM's Project Infragraph, and Workday's Illuminate, show no sourced technical marketing role re-scoped to match. Marketing appears to be lagging product at exactly the companies making the largest agentic bets. This entry will be re-verified and expanded each volume as new postings and practitioner accounts are confirmed. <a href="/suggest">Suggest a verified entry</a> if you have direct knowledge of a company's agentic-facing technical marketing coverage.</p>
 
     <section class="cite-card" id="cite" aria-labelledby="cite-title-landscape">
       <div class="cite-card__header">
