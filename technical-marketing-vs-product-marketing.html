@@ -1049,6 +1049,22 @@ a.masthead__title:hover { color: var(--red); }
 }
 
 
+/* Back link */
+.back-link {
+  display: inline-block;
+  font-family: var(--f-sans);
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--ink-60);
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--border-strong);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+.back-link:hover { color: var(--red); border-bottom-color: var(--red); }
+
 /* ── Colophon : replaces the generic site-footer ────────────────── */
 .colophon {
   margin-top: 0;
@@ -1744,6 +1760,8 @@ a.masthead__title:hover { color: var(--red); }
         </button>
       </div>
     </section>
+
+    <a href="/reference" class="back-link">&#8592; Return to Reference</a>
 
   </main>
   <aside class="article-aside" aria-label="Table of contents">

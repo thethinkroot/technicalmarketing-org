@@ -4,7 +4,7 @@
     {
       "name": "static",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-I", "/private/tmp/claude-501/-Users-chadcorriveau-Documents-GitHub-technicalmarketing-org/bd63df3b-24b1-4ece-aa73-89a7073c5337/scratchpad/serve.py"],
+      "runtimeArgs": ["-I", "/private/tmp/claude-501/-Users-chadcorriveau-Documents-GitHub-technicalmarketing-org/2a912973-bdfc-4005-a36a-287f5660c629/scratchpad/serve.py"],
       "port": 8100
     }
   ]
