@@ -271,6 +271,7 @@ a.masthead__title:hover { color: var(--red); }
   </a>
   <p class="video-feature__caption">A 101-second introduction to the conversation below.</p>
 </div>
+<div id="video-lang-debug" style="display:none"></div>
 
 <div class="intro">
   <p>There is a line in technical marketing between what can be shown and what has been built. Between the demo and the picture of the demo. Between the patent and the press release about the patent. Between the technique that holds up in a federal court and the industry that never hears it happened.</p>
@@ -577,12 +578,21 @@ a.masthead__title:hover { color: var(--red); }
 
 (function() {
   'use strict';
+  // Language-aware video src: same short for en/fr/es/ja (audio track via ?hl=),
+  // a separate German video since that one isn't a dubbed audio track of the short.
+  var langCode = ((navigator.language || navigator.userLanguage || 'en') + '').slice(0, 2).toLowerCase();
+  var debugEl = document.getElementById('video-lang-debug');
+  if (debugEl) debugEl.textContent = langCode;
+
   var frame = document.getElementById('video-feature-frame');
   if (!frame) return;
   frame.addEventListener('click', function(e) {
     e.preventDefault();
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.id = 'yt-embed';
+    iframe.src = langCode === 'de'
+      ? 'https://www.youtube.com/embed/OEFboh0n5xA?autoplay=1'
+      : 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=' + langCode;
     iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
