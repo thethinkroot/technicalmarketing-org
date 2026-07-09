@@ -276,6 +276,7 @@ a.masthead__title:hover { color: var(--red); }
   </a>
   <p class="video-feature__caption">Eine 101-sekündige Einführung in das Gespräch unten.</p>
 </div>
+<div id="video-lang-debug" style="display:none">de</div>
 
 <div class="intro">
   <p>Es gibt eine Grenze im Technisches Marketing zwischen dem, was gezeigt werden kann, und dem, was tatsächlich gebaut wurde. Zwischen dem Demo und dem Bild des Demos. Zwischen dem Patent und der Pressemitteilung über das Patent. Zwischen der Technik, die vor einem Bundesgericht Bestand hat, und der Branche, die nie erfährt, dass es passiert ist.</p>
@@ -588,7 +589,8 @@ a.masthead__title:hover { color: var(--red); }
   frame.addEventListener('click', function(e) {
     e.preventDefault();
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.id = 'yt-embed';
+    iframe.src = 'https://www.youtube.com/embed/OEFboh0n5xA?autoplay=1';
     iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');

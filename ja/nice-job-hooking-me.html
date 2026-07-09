@@ -274,6 +274,7 @@ a.masthead__title:hover { color: var(--red); }
   </a>
   <p class="video-feature__caption">以下の対話への101秒の導入。</p>
 </div>
+<div id="video-lang-debug" style="display:none">ja</div>
 
 <div class="intro">
   <p>テクニカルマーケティングには、示せるものと実際に構築されたものとの間に一本の線がある。デモと、そのデモの写真との間。特許と、その特許についてのプレスリリースとの間。連邦裁判所で通用する技術と、それが起きたことを一度も耳にしない業界との間。</p>
@@ -586,7 +587,8 @@ a.masthead__title:hover { color: var(--red); }
   frame.addEventListener('click', function(e) {
     e.preventDefault();
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.id = 'yt-embed';
+    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=ja';
     iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');

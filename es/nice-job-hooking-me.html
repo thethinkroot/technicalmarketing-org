@@ -275,6 +275,7 @@ a.masthead__title:hover { color: var(--red); }
   </a>
   <p class="video-feature__caption">Una introducci&oacute;n de 101 segundos a la conversaci&oacute;n que sigue.</p>
 </div>
+<div id="video-lang-debug" style="display:none">es</div>
 
 <div class="intro">
   <p>Hay una l&iacute;nea en el marketing t&eacute;cnico entre lo que se puede mostrar y lo que realmente se ha construido. Entre el demo y la foto del demo. Entre la patente y el comunicado de prensa sobre la patente. Entre la t&eacute;cnica que se sostiene ante un tribunal federal y la industria que nunca se entera de que ocurri&oacute;.</p>
@@ -586,7 +587,8 @@ a.masthead__title:hover { color: var(--red); }
   frame.addEventListener('click', function(e) {
     e.preventDefault();
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.id = 'yt-embed';
+    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=es';
     iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');

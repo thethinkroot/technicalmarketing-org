@@ -275,6 +275,7 @@ a.masthead__title:hover { color: var(--red); }
   </a>
   <p class="video-feature__caption">Une introduction de 101 secondes à la conversation ci-dessous.</p>
 </div>
+<div id="video-lang-debug" style="display:none">fr</div>
 
 <div class="intro">
   <p>Il existe, en marketing technique, une frontière entre ce qui peut être montré et ce qui a été construit. Entre la démo et l'image de la démo. Entre le brevet et le communiqué de presse sur le brevet. Entre la technique qui tient devant un tribunal fédéral et le secteur qui n'en entend jamais parler.</p>
@@ -586,7 +587,8 @@ a.masthead__title:hover { color: var(--red); }
   frame.addEventListener('click', function(e) {
     e.preventDefault();
     var iframe = document.createElement('iframe');
-    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1';
+    iframe.id = 'yt-embed';
+    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=fr';
     iframe.title = 'Nice Job Hooking Me — une introduction de 101 secondes avec Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
