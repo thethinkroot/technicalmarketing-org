@@ -100,6 +100,7 @@ a.masthead__title:hover { color: var(--red); }
 .video-feature__frame:hover .video-feature__play::before { background: var(--red); transform: scale(1.06); }
 .video-feature__play::after { content: ""; position: absolute; width: 0; height: 0; border-top: 0.625rem solid transparent; border-bottom: 0.625rem solid transparent; border-left: 1rem solid var(--paper); margin-left: 0.3rem; }
 .video-feature__caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); }
+.video-feature__lang-note { font-family: var(--f-sans); font-size: 0.6875rem; line-height: 1.5; color: var(--ink-40); margin-top: 0.6rem; }
 @media (max-width: 480px) {
   .video-feature { max-width: 280px; }
 }
@@ -270,6 +271,7 @@ a.masthead__title:hover { color: var(--red); }
     <span class="video-feature__play" aria-hidden="true"></span>
   </a>
   <p class="video-feature__caption">A 101-second introduction to the conversation below.</p>
+  <p class="video-feature__lang-note">Recorded in English — Spanish, French, Japanese, and German audio available from the player itself.</p>
 </div>
 <div id="video-lang-debug" style="display:none"></div>
 
@@ -578,8 +580,9 @@ a.masthead__title:hover { color: var(--red); }
 
 (function() {
   'use strict';
-  // Language-aware video src: same short for en/fr/es/ja (audio track via ?hl=),
-  // a separate German video since that one isn't a dubbed audio track of the short.
+  // hl= sets the embedded player's own interface language (menus, captions
+  // button); actual audio-track selection stays with the viewer, via the
+  // player's own settings — YouTube doesn't expose that as a URL param.
   var langCode = ((navigator.language || navigator.userLanguage || 'en') + '').slice(0, 2).toLowerCase();
   var debugEl = document.getElementById('video-lang-debug');
   if (debugEl) debugEl.textContent = langCode;
@@ -590,9 +593,7 @@ a.masthead__title:hover { color: var(--red); }
     e.preventDefault();
     var iframe = document.createElement('iframe');
     iframe.id = 'yt-embed';
-    iframe.src = langCode === 'de'
-      ? 'https://www.youtube.com/embed/OEFboh0n5xA?autoplay=1'
-      : 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=' + langCode;
+    iframe.src = 'https://www.youtube.com/embed/scd2WfCnZq4?autoplay=1&hl=' + langCode;
     iframe.title = 'Nice Job Hooking Me — a 101-second introduction with Mike Moran';
     iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
     iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
