@@ -1,0 +1,418 @@
+<!--
+  Interroger le guide pratique, concierge widget, v3 (FR)
+  Drop this entire block into any Reference or Tools page, wherever the
+  inline concierge should appear. One inline instance per page.
+
+  Object identity: styled as a card-catalog entry, not a chat widget.
+  The answer state renders as a die-cut index card (dog-eared corner,
+  ruled Q/A rows) filed under "Entrée n° NNN" and its source article,
+  in the same citation register as this site's plate captions and
+  footnote numerals. No API calls, no token spend, matched client-side
+  against a fixed corpus — the widget says so, once, near the input.
+
+  Behavior:
+  - Inline concierge: search box, staggered suggestions, card reveal with
+    fade/lift, glyph pulse as a "consulting the index" beat.
+  - Library tab: a slim vertical tab fixed to the right edge, styled like
+    a card-catalog drawer tab. Appears only once the inline instance has
+    scrolled out of view above the viewport. Clicking it never opens a
+    popup, it smooth-scrolls back to the real inline instance and
+    focuses the input. One surface, always. No floating chat window ever.
+
+  Requires: /fr/concierge-corpus.json served from the site root.
+  No API calls. No token spend.
+-->
+<section class="fmc" id="fmc-inline" aria-labelledby="fmc-heading">
+  <div class="fmc__head">
+    <span class="fmc__glyph" aria-hidden="true">
+      <svg viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <path d="M9 5H18L21 8V18H9V5Z" stroke="var(--ink-40, #8B7D69)" stroke-width="1" fill="var(--paper, #EFE6C9)" opacity="0.85"/>
+        <path d="M5 8H14L17 11V21H5V8Z" stroke="currentColor" stroke-width="1.15" fill="var(--paper-light, #F5EED8)"/>
+        <line x1="7.5" y1="15" x2="14.5" y2="15" stroke="currentColor" stroke-width="0.9" opacity="0.55"/>
+        <line x1="7.5" y1="17.5" x2="12.5" y2="17.5" stroke="currentColor" stroke-width="0.9" opacity="0.55"/>
+      </svg>
+    </span>
+    <span class="fmc__kicker" id="fmc-heading">Interroger le guide pratique</span>
+  </div>
+  <p class="fmc__deck">Recherchez dans le corpus. Obtenez une réponse directe et une référence vers la source.</p>
+
+  <div class="fmc__search">
+    <label for="fmc-input" class="fmc__label">Votre question</label>
+    <input type="text" id="fmc-input" class="fmc__input" autocomplete="off"
+      placeholder="Essayez : en quoi le marketing technique diffère-t-il du marketing produit ?">
+  </div>
+  <p class="fmc__hint">Comparé à un index fixe d'entrées du guide pratique, et non à une conversation en direct.</p>
+
+  <div class="fmc__suggestions" id="fmc-suggestions" role="listbox" aria-label="Questions correspondantes"></div>
+
+  <div class="fmc__card" id="fmc-card" hidden aria-live="polite">
+    <div class="fmc__card-head">
+      <span class="fmc__card-num" id="fmc-card-num">Entrée n° 000</span>
+      <span class="fmc__card-src" id="fmc-card-src"></span>
+    </div>
+    <div class="fmc__card-row fmc__card-row--q">
+      <span class="fmc__card-glyph" aria-hidden="true">Q</span>
+      <p class="fmc__card-q" id="fmc-card-q"></p>
+    </div>
+    <div class="fmc__card-row fmc__card-row--a">
+      <span class="fmc__card-glyph fmc__card-glyph--a" aria-hidden="true">A</span>
+      <p class="fmc__card-a" id="fmc-card-a"></p>
+    </div>
+    <div class="fmc__card-foot">
+      <a class="fmc__card-link" id="fmc-card-link" href="#">
+        <span>Poursuivre la lecture</span>
+        <svg viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <path d="M1 5H9M9 5L5.5 1.5M9 5L5.5 8.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="fmc__related" id="fmc-related" hidden>
+      <span class="fmc__related-label">Vous pourriez aussi demander</span>
+      <div class="fmc__related-list" id="fmc-related-list"></div>
+    </div>
+  </div>
+
+  <div class="fmc__empty" id="fmc-empty" hidden>
+    Aucune entrée n'est encore classée pour cela. <a href="/fr/suggest">Proposez-en une pour le prochain volume &rarr;</a>
+  </div>
+</section>
+
+<button type="button" class="fmc-tab" id="fmc-tab" aria-label="Aller à Interroger le guide pratique" hidden>
+  <span class="fmc-tab__mark" aria-hidden="true"></span>
+  <span class="fmc-tab__text">Interroger le guide pratique</span>
+</button>
+
+<style>
+.fmc {
+  font-family: var(--f-serif, 'Fraunces', 'Georgia', serif);
+  background: var(--paper, #EFE6C9);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 1.75rem 1.75rem 2rem;
+  max-width: var(--reading-max, 720px);
+  margin: 2.5rem 0;
+}
+.fmc__head { display: flex; align-items: center; gap: 0.65rem; margin-bottom: 0.35rem; }
+.fmc__glyph {
+  flex: 0 0 auto; width: 22px; height: 22px; color: var(--red, #A7352A);
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), opacity 0.3s ease;
+}
+.fmc__glyph svg { display: block; width: 100%; height: 100%; }
+.fmc__kicker {
+  font-family: var(--f-sans, 'Inter', sans-serif);
+  font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase;
+  color: var(--red, #A7352A); font-weight: 600;
+}
+.fmc__deck {
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic;
+  font-size: 0.9375rem; color: var(--ink-60, #5C4E3C); margin: 0 0 1.1rem 1.75rem;
+}
+.fmc__label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.fmc__input {
+  width: 100%; box-sizing: border-box;
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.9375rem;
+  background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 0.75rem 0.9rem; color: var(--ink, #1C1812);
+  transition: border-color 0.2s ease;
+}
+.fmc__input:focus-visible { outline: 2px solid var(--red, #A7352A); outline-offset: 2px; }
+.fmc__input.fmc__input--focused { border-color: var(--red, #A7352A); }
+.fmc__hint {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.6875rem;
+  color: var(--ink-40, #8B7D69); margin: 0.5rem 0 0;
+}
+.fmc__suggestions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.85rem; }
+.fmc__suggestion {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.75rem;
+  background: transparent; border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  color: var(--ink-60, #5C4E3C); padding: 0.4rem 0.75rem; cursor: pointer;
+  opacity: 0; transform: translateY(4px);
+  transition: opacity 0.28s ease, transform 0.28s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.fmc__suggestion.fmc__suggestion--in { opacity: 1; transform: translateY(0); }
+.fmc__suggestion:hover, .fmc__suggestion:focus-visible { color: var(--ink, #1C1812); border-color: var(--ink, #1C1812); }
+
+.fmc__card {
+  margin-top: 1.4rem; background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  padding: 1.1rem 1.4rem 1.4rem; position: relative;
+  opacity: 0; transform: translateY(6px);
+  transition: opacity 0.32s ease, transform 0.32s ease;
+}
+.fmc__card.fmc__card--in { opacity: 1; transform: translateY(0); }
+.fmc__card::before {
+  /* die-cut corner: the widget's "index card" object identity */
+  content: ""; position: absolute; top: 0; right: 0; width: 0; height: 0;
+  border-style: solid; border-width: 0 14px 14px 0;
+  border-color: transparent var(--paper, #EFE6C9) transparent transparent;
+}
+.fmc__card-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.35rem 1rem;
+  margin: 0 1.1rem 0.95rem 0; padding-bottom: 0.65rem;
+  border-bottom: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+}
+.fmc__card-num {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.625rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-40, #8B7D69); font-weight: 600;
+}
+.fmc__card-src {
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.75rem;
+  color: var(--ink-40, #8B7D69);
+}
+.fmc__card-row { display: flex; gap: 0.7rem; align-items: flex-start; }
+.fmc__card-row + .fmc__card-row { margin-top: 0.9rem; }
+.fmc__card-glyph {
+  flex: 0 0 auto; width: 1rem; text-align: center;
+  font-family: var(--f-display, 'Roboto Slab', serif); font-weight: 700; font-style: normal;
+  font-size: 0.75rem; line-height: 1.7; color: var(--red, #A7352A);
+}
+.fmc__card-glyph--a { color: var(--ink-40, #8B7D69); }
+.fmc__card-q {
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.875rem;
+  color: var(--ink-60, #5C4E3C); line-height: 1.55; margin: 0;
+}
+.fmc__card-a {
+  font-family: var(--f-serif, 'Fraunces', serif); font-style: normal; font-size: 1rem;
+  color: var(--ink, #1C1812); line-height: 1.68; margin: 0;
+}
+.fmc__card-foot { margin-top: 1.15rem; padding-top: 0.85rem; border-top: 0.5px solid var(--border-strong, rgba(28,24,18,0.32)); }
+.fmc__card-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.6875rem; letter-spacing: 0.1em;
+  text-transform: uppercase; font-weight: 600; color: var(--red, #A7352A);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32)); padding: 0.5rem 0.85rem;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.fmc__card-link svg { width: 9px; height: 9px; flex-shrink: 0; transition: transform 0.15s ease; }
+.fmc__card-link:hover, .fmc__card-link:focus-visible {
+  background: var(--red, #A7352A); color: var(--paper-light, #F5EED8); border-color: var(--red, #A7352A);
+}
+.fmc__card-link:hover svg, .fmc__card-link:focus-visible svg { transform: translateX(2px); }
+.fmc__related { margin-top: 1.1rem; }
+.fmc__related-label {
+  display: block; font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.8125rem;
+  color: var(--ink-40, #8B7D69); margin-bottom: 0.55rem;
+}
+.fmc__related-list { display: flex; flex-direction: column; gap: 0.4rem; }
+.fmc__related-item { display: flex; align-items: baseline; gap: 0.55rem; }
+.fmc__related-item::before {
+  content: ""; flex: 0 0 auto; width: 5px; height: 5px; margin-top: 0.4em;
+  background: var(--red, #A7352A); transform: rotate(45deg);
+}
+.fmc__related-link {
+  font: inherit; font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.8125rem;
+  color: var(--ink-60, #5C4E3C); background: none; border: none; padding: 0; margin: 0;
+  text-align: left; cursor: pointer; line-height: 1.5;
+  border-bottom: 1px solid transparent; transition: border-color 0.15s ease, color 0.15s ease;
+}
+.fmc__related-link:hover, .fmc__related-link:focus-visible { color: var(--ink, #1C1812); border-bottom-color: var(--ink, #1C1812); }
+
+.fmc__empty {
+  margin-top: 1.4rem; font-family: var(--f-serif, 'Fraunces', serif); font-style: italic; font-size: 0.875rem;
+  color: var(--ink-60, #5C4E3C);
+  opacity: 0; transform: translateY(4px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+.fmc__empty.fmc__empty--in { opacity: 1; transform: translateY(0); }
+.fmc__empty a { color: var(--red, #A7352A); }
+
+.fmc-tab {
+  position: fixed; right: 0; top: 46%; z-index: 40;
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+  background: var(--paper-light, #F5EED8);
+  border: 0.5px solid var(--border-strong, rgba(28,24,18,0.32));
+  border-right: none;
+  padding: 0.85rem 0.5rem;
+  cursor: pointer;
+  opacity: 0; transform: translateX(12px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.15s ease;
+}
+.fmc-tab.fmc-tab--visible { opacity: 1; transform: translateX(0); }
+.fmc-tab:hover, .fmc-tab:focus-visible { background: var(--paper, #EFE6C9); }
+.fmc-tab:focus-visible { outline: 2px solid var(--red, #A7352A); outline-offset: -2px; }
+.fmc-tab__mark {
+  display: inline-block; width: 6px; height: 6px;
+  background: var(--red, #A7352A); transform: rotate(45deg); flex-shrink: 0;
+}
+.fmc-tab__text {
+  font-family: var(--f-sans, 'Inter', sans-serif); font-size: 0.6875rem;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-60, #5C4E3C);
+  writing-mode: vertical-rl; transform: rotate(180deg);
+}
+@media (max-width: 600px) {
+  .fmc { padding: 1.25rem 1.25rem 1.5rem; }
+  .fmc-tab { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fmc__card, .fmc__suggestion, .fmc__empty, .fmc__glyph, .fmc__card-link, .fmc__card-link svg { transition: none !important; }
+}
+</style>
+
+<script>
+(function () {
+  'use strict';
+  var CORPUS_URL = '/fr/concierge-corpus.json';
+  var corpus = [];
+  var section = document.getElementById('fmc-inline');
+  var input = document.getElementById('fmc-input');
+  var sugg = document.getElementById('fmc-suggestions');
+  var card = document.getElementById('fmc-card');
+  var empty = document.getElementById('fmc-empty');
+  var tab = document.getElementById('fmc-tab');
+  var debounceTimer = null;
+
+  fetch(CORPUS_URL).then(function (r) { return r.json(); }).then(function (data) {
+    corpus = data;
+  }).catch(function () { corpus = []; });
+
+  function pulseGlyph() {
+    var glyph = document.querySelector('.fmc__glyph');
+    glyph.style.transform = 'scale(1.14)';
+    glyph.style.opacity = '0.7';
+    setTimeout(function () { glyph.style.transform = 'scale(1)'; glyph.style.opacity = '1'; }, 260);
+  }
+
+  function score(entry, query) {
+    var s = 0;
+    var words = query.toLowerCase().split(/\s+/).filter(function (w) { return w.length > 2; });
+    var qLower = entry.q.toLowerCase();
+    words.forEach(function (w) {
+      if (qLower.indexOf(w) !== -1) s += 2;
+      entry.keys.forEach(function (k) { if (k.indexOf(w) !== -1 || w.indexOf(k) !== -1) s += 3; });
+    });
+    return s;
+  }
+
+  function relatedFor(entry) {
+    return corpus
+      .filter(function (c) { return c.id !== entry.id; })
+      .map(function (c) {
+        var shared = c.keys.filter(function (k) { return entry.keys.indexOf(k) !== -1; }).length;
+        var sameSrc = c.src === entry.src ? 1 : 0;
+        return { c: c, s: shared * 2 + sameSrc };
+      })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 2)
+      .map(function (x) { return x.c; });
+  }
+
+  function showEmpty() {
+    empty.hidden = false;
+    requestAnimationFrame(function () { requestAnimationFrame(function () { empty.classList.add('fmc__empty--in'); }); });
+  }
+
+  function hideEmpty() {
+    empty.classList.remove('fmc__empty--in');
+    setTimeout(function () { if (!empty.classList.contains('fmc__empty--in')) empty.hidden = true; }, 220);
+  }
+
+  function renderCard(entry) {
+    card.classList.remove('fmc__card--in');
+    document.getElementById('fmc-card-num').textContent = 'Entrée n° ' + entry.id;
+    document.getElementById('fmc-card-src').textContent = entry.src;
+    document.getElementById('fmc-card-q').textContent = entry.q;
+    document.getElementById('fmc-card-a').textContent = entry.a;
+    var link = document.getElementById('fmc-card-link');
+    link.href = entry.url;
+
+    var rel = relatedFor(entry);
+    var relatedEl = document.getElementById('fmc-related');
+    var listEl = document.getElementById('fmc-related-list');
+    if (rel.length) {
+      listEl.innerHTML = rel.map(function (r) {
+        return '<div class="fmc__related-item"><button type="button" class="fmc__related-link" data-id="' + r.id + '">' + r.q + '</button></div>';
+      }).join('');
+      Array.prototype.forEach.call(listEl.querySelectorAll('.fmc__related-link'), function (btn) {
+        btn.addEventListener('click', function () {
+          var rc = corpus.filter(function (c) { return c.id === btn.getAttribute('data-id'); })[0];
+          if (rc) { input.value = rc.q; renderCard(rc); }
+        });
+      });
+      relatedEl.hidden = false;
+    } else {
+      listEl.innerHTML = '';
+      relatedEl.hidden = true;
+    }
+
+    card.hidden = false;
+    hideEmpty();
+    sugg.innerHTML = '';
+    requestAnimationFrame(function () { requestAnimationFrame(function () { card.classList.add('fmc__card--in'); }); });
+  }
+
+  function renderSuggestions(query) {
+    card.classList.remove('fmc__card--in');
+    setTimeout(function () { card.hidden = true; }, 180);
+    hideEmpty();
+    if (query.length < 3 || !corpus.length) { sugg.innerHTML = ''; return; }
+    pulseGlyph();
+
+    var ranked = corpus
+      .map(function (c) { return { c: c, s: score(c, query) }; })
+      .filter(function (x) { return x.s > 0; })
+      .sort(function (a, b) { return b.s - a.s; })
+      .slice(0, 4);
+
+    if (!ranked.length) { sugg.innerHTML = ''; showEmpty(); return; }
+
+    sugg.innerHTML = ranked.map(function (r, i) {
+      return '<button type="button" class="fmc__suggestion" data-id="' + r.c.id + '" style="transition-delay:' + (i * 0.06) + 's">' + r.c.q + '</button>';
+    }).join('');
+
+    var buttons = sugg.querySelectorAll('.fmc__suggestion');
+    Array.prototype.forEach.call(buttons, function (btn) {
+      btn.addEventListener('click', function () {
+        var c = corpus.filter(function (x) { return x.id === btn.getAttribute('data-id'); })[0];
+        if (c) { input.value = c.q; renderCard(c); }
+      });
+    });
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      Array.prototype.forEach.call(buttons, function (b) { b.classList.add('fmc__suggestion--in'); });
+    }); });
+  }
+
+  input.addEventListener('input', function () {
+    clearTimeout(debounceTimer);
+    var q = input.value.trim();
+    debounceTimer = setTimeout(function () { renderSuggestions(q); }, 140);
+  });
+  input.addEventListener('focus', function () { input.classList.add('fmc__input--focused'); });
+  input.addEventListener('blur', function () { input.classList.remove('fmc__input--focused'); });
+
+  // Keyboard navigation across suggestion buttons
+  input.addEventListener('keydown', function (e) {
+    var buttons = sugg.querySelectorAll('.fmc__suggestion');
+    if (!buttons.length) return;
+    if (e.key === 'ArrowDown') { e.preventDefault(); buttons[0].focus(); }
+  });
+  sugg.addEventListener('keydown', function (e) {
+    var buttons = Array.prototype.slice.call(sugg.querySelectorAll('.fmc__suggestion'));
+    var idx = buttons.indexOf(document.activeElement);
+    if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); buttons[(idx + 1) % buttons.length].focus(); }
+    if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); buttons[(idx - 1 + buttons.length) % buttons.length].focus(); }
+  });
+
+  // Library tab: appears only once the inline concierge has scrolled above the viewport.
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        var scrolledPast = !entry.isIntersecting && entry.boundingClientRect.top < 0;
+        if (scrolledPast) {
+          tab.hidden = false;
+          requestAnimationFrame(function () { tab.classList.add('fmc-tab--visible'); });
+        } else {
+          tab.classList.remove('fmc-tab--visible');
+          setTimeout(function () { if (!tab.classList.contains('fmc-tab--visible')) tab.hidden = true; }, 300);
+        }
+      });
+    }, { threshold: 0 });
+    observer.observe(section);
+  }
+
+  tab.addEventListener('click', function () {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    setTimeout(function () { input.focus(); }, 400);
+  });
+})();
+</script>
