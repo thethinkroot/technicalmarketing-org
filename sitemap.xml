@@ -584,7 +584,7 @@
   <url>
     <loc>https://technicalmarketing.org/landscape</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/landscape"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/landscape"/>
@@ -596,7 +596,7 @@
   <url>
     <loc>https://technicalmarketing.org/ja/landscape</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/landscape"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/landscape"/>
@@ -608,7 +608,7 @@
   <url>
     <loc>https://technicalmarketing.org/es/landscape</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/landscape"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/landscape"/>
@@ -620,7 +620,7 @@
   <url>
     <loc>https://technicalmarketing.org/fr/landscape</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/landscape"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/landscape"/>
@@ -632,7 +632,7 @@
   <url>
     <loc>https://technicalmarketing.org/de/landscape</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/landscape"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/landscape"/>
@@ -648,7 +648,7 @@
   <url>
     <loc>https://technicalmarketing.org/contributors</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors"/>
@@ -660,7 +660,7 @@
   <url>
     <loc>https://technicalmarketing.org/ja/contributors</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors"/>
@@ -672,7 +672,7 @@
   <url>
     <loc>https://technicalmarketing.org/es/contributors</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors"/>
@@ -684,7 +684,7 @@
   <url>
     <loc>https://technicalmarketing.org/fr/contributors</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors"/>
@@ -696,7 +696,7 @@
   <url>
     <loc>https://technicalmarketing.org/de/contributors</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors"/>
     <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors"/>
@@ -843,31 +843,31 @@
   <url>
     <loc>https://technicalmarketing.org/tools</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://technicalmarketing.org/ai-for-technical-marketers</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://technicalmarketing.org/volume-01</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://technicalmarketing.org/the-index</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://technicalmarketing.org/archive</loc>
     <lastmod>2026-07-08</lastmod>
-    <changefreq>quarterly</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
