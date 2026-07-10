@@ -6,6 +6,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-I", "/private/tmp/claude-501/-Users-chadcorriveau-Documents-GitHub-technicalmarketing-org/2a912973-bdfc-4005-a36a-287f5660c629/scratchpad/serve.py"],
       "port": 8100
+    },
+    {
+      "name": "repo",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-I", "/private/tmp/claude-501/-Users-chadcorriveau-Documents-GitHub-technicalmarketing-org/7519e9b6-1b0d-4d64-9f18-8fc381f60a3a/scratchpad/serve.py"],
+      "port": 8101
     }
   ]
 }
