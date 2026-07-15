@@ -1,6 +1,6 @@
 # Technical Marketing · Full Content
 
-> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. First Edition, Anno MMXXVI. ISSN pending (Library of Congress application in process). Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
+> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. First Edition, Anno MMXXVI. ISSN 3143-6412 (Online). Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
 
 This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
 
@@ -1346,7 +1346,7 @@ AI compresses drafting and first-pass synthesis. It does not compress the editor
 - **Publication:** Technical Marketing
 - **URL:** https://technicalmarketing.org
 - **Edition:** First Edition, Volume I, Anno MMXXVI
-- **ISSN:** Pending (Library of Congress application APPL0006905 in process)
+- **ISSN:** 3143-6412 (Online)
 - **Editor:** Chad Corriveau, founding editor
 - **Publisher:** Published independently by The ThinkRoot LLC under separate editorial governance
 - **Contact:** editor@technicalmarketing.org
