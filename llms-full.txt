@@ -19,7 +19,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-07-08. Version 1.9.
+Last updated: 2026-07-15. Version 1.10.
 
 ---
 
@@ -1190,7 +1190,7 @@ Twelve years building technical marketing at scale inside ServiceNow across ITSM
 
 ## Volume II · Q3 2026
 
-Volume II opens the contributor pipeline to senior practitioners across the field. Submissions reviewed on editorial merit. See /suggest for current editorial priorities.
+Issue 06 features a conversation with Peter Cohan, author of *Great Demo!*, on demo methodology — the second entry in the practitioner profile series. Volume II opens the contributor pipeline to senior practitioners across the field. Submissions reviewed on editorial merit. See /suggest for current editorial priorities.
 
 ---
 
