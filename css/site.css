@@ -88,7 +88,8 @@
    both modes. The band lifts to a --paper-shade-like dark so it still reads
    as an elevated panel against the darker page. */
 [data-theme="dark"] .anchor,
-[data-theme="dark"] .comp-plate {
+[data-theme="dark"] .comp-plate,
+[data-theme="dark"] .site-footer {
   --paper:         #EFE6C9;
   --paper-shade:   #E5D9B4;
   --paper-light:   #F5EED8;
@@ -137,8 +138,8 @@
    out to the original 1rem gap from the preceding nav item. */
 @media (max-width: 600px) {
   #theme-toggle {
-    padding: 0.6rem 0.6rem 0.6rem 1.6rem !important;
-    margin: -0.6rem -0.6rem -0.6rem -0.6rem;
+    padding: 0.875rem 0.6rem 0.875rem 1.6rem !important;
+    margin: -0.875rem -0.6rem -0.875rem -0.6rem;
   }
 }
 
