@@ -132,6 +132,36 @@ img { max-width: 100%; height: auto; display: block; }
 .band__meta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; white-space: nowrap; }
 @media (max-width: 680px) { .band__head { grid-template-columns: 1fr; gap: 0.375rem; } .band__desc { order: 3; } .band__meta { order: 2; } }
 
+/* ── Essays · The canon ────────────────────────────────────────
+   NOTE — deliberate divergence from the v7 export: v7's reference design
+   dims earlier numerals and highlights only the newest essay in red. Per
+   explicit instruction, this is overridden: every numeral (I, II, III,
+   future IV) stays permanent library red, marking the canon sequence
+   uniformly, not just the most recent entry. */
+#essays { background: var(--ink); color: var(--paper); position: relative; overflow: hidden; }
+#essays::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle at 50% 50%, rgba(239,230,201,0.05) 1px, transparent 1.2px); background-size: 14px 14px; pointer-events: none; }
+#essays .layout { position: relative; }
+.canon__head { display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: end; margin-bottom: 2.5rem; }
+@media (min-width: 700px) { .canon__head { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; } }
+.canon__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.875rem; }
+.canon__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
+.canon__kicker-label { font-family: var(--f-sans); font-weight: 600; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+.canon__title { font-family: var(--f-serif); font-weight: 500; font-size: clamp(1.875rem, 4.5vw, 2.75rem); line-height: 1.05; letter-spacing: -0.02em; color: var(--paper); }
+.canon__title em { font-style: italic; color: var(--red); }
+.canon__intro { font-family: var(--f-serif); font-size: 1rem; line-height: 1.6; color: rgba(239,230,201,0.6); max-width: 40ch; }
+.canon__rows { display: grid; gap: 1px; background: rgba(239,230,201,0.18); border-top: 0.5px solid rgba(239,230,201,0.18); border-bottom: 0.5px solid rgba(239,230,201,0.18); }
+.canon__row { display: grid; grid-template-columns: 1fr; gap: 1rem; background: var(--ink); padding: 1.75rem 1.25rem; color: inherit; transition: background 0.2s; }
+@media (min-width: 760px) { .canon__row { grid-template-columns: 1.4fr 1fr auto; gap: 2rem; align-items: center; } }
+.canon__row:hover { background: #251F17; }
+.canon__row-head { display: flex; gap: 1.25rem; align-items: baseline; }
+.canon__num { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.75rem, 3vw, 2.25rem); color: var(--red); flex: none; line-height: 1; }
+.canon__row-kicker { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(239,230,201,0.55); margin-bottom: 0.5rem; }
+.canon__row-title { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.375rem, 2.4vw, 1.625rem); letter-spacing: -0.01em; color: var(--paper); display: block; }
+.canon__row-deck { font-family: var(--f-sans); font-size: 0.9375rem; line-height: 1.55; color: rgba(239,230,201,0.62); margin: 0; }
+.canon__row-cta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; white-space: nowrap; }
+.canon__footline { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(239,230,201,0.42); margin-top: 1.25rem; }
+
+
 /* ── Conversations : standing department ──────────────────────── */
 .conversations__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
 .conversations__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
@@ -168,19 +198,6 @@ img { max-width: 100%; height: auto; display: block; }
 .feature__pull-attr { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1rem; }
 
 /* ── Essays grid ───────────────────────────────────────────────── */
-.essays-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
-@media (min-width: 760px) { .essays-grid { grid-template-columns: repeat(3, 1fr); gap: 1.75rem; } }
-.essay-card { display: flex; flex-direction: column; background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 2rem 1.75rem 1.75rem; position: relative; transition: transform 0.15s, border-color 0.15s; }
-.essay-card::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); transition: height 0.15s; }
-.essay-card:hover { transform: translateY(-3px); border-color: var(--ink); }
-.essay-card:hover::before { height: 5px; }
-.essay-card__folio { font-family: var(--f-display); font-weight: 700; font-size: 1.75rem; color: var(--red); line-height: 1; letter-spacing: -0.02em; margin-bottom: 1rem; }
-.essay-card__kicker { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-bottom: 0.625rem; }
-.essay-card__title { font-family: var(--f-serif); font-style: italic; font-size: 1.4375rem; font-weight: 500; line-height: 1.12; color: var(--ink); margin-bottom: 0.75rem; }
-.essay-card__deck { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55; color: var(--ink-60); margin-bottom: 1.5rem; flex: 1; }
-.essay-card__cta { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 600; }
-.essay-card__cta-arrow { display: inline-block; margin-left: 0.25rem; transition: transform 0.15s; }
-.essay-card:hover .essay-card__cta-arrow { transform: translateX(3px); }
 
 /* ── Tools strip ───────────────────────────────────────────────── */
 .tools-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
@@ -468,37 +485,56 @@ a.masthead__title:hover { color: var(--red); }
     </div>
   </section>
 
+  
   <!-- ESSAYS -->
-  <section class="band" id="essays" aria-labelledby="essays-title">
+  <section id="essays" aria-labelledby="essays-title">
     <div class="layout">
-      <div class="band__head">
-        <h2 class="band__name" id="essays-title">Essais</h2>
-        <span class="band__desc">L'argument, mis par écrit.</span>
-        <span class="band__meta">Quatre · Vol. 01</span>
+      <div class="canon__head">
+        <div>
+          <div class="canon__kicker">
+            <span class="canon__kicker-rule" aria-hidden="true"></span>
+            <span class="canon__kicker-label">Essais &middot; Le canon</span>
+          </div>
+          <h2 class="canon__title" id="essays-title">Num&eacute;rot&eacute;s une fois, conserv&eacute;s <em>en permanence</em></h2>
+        </div>
+        <p class="canon__intro">Les chiffres romains parcourent chaque volume et ne sont jamais r&eacute;initialis&eacute;s. Trois articles composent le Volume 01. La s&eacute;quence se poursuit &agrave; partir du III lors de la prochaine publication.</p>
       </div>
-      <div class="essays-grid">
-        <a href="/fr/the-technical-marketer" class="essay-card">
-          <div class="essay-card__folio">I</div>
-          <div class="essay-card__kicker">Essai de référence</div>
-          <h3 class="essay-card__title">The Technical Marketer.</h3>
-          <p class="essay-card__deck">Une description de poste canonique. Six flux de travail, six résultats mesurables, trois échelles de rémunération, et quatre archétypes de démo par type d'entreprise.</p>
-          <span class="essay-card__cta">Lire l'article I <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+      <div class="canon__rows">
+        <a href="/fr/the-technical-marketer" class="canon__row">
+          <div class="canon__row-head">
+            <span class="canon__num">I</span>
+            <div>
+              <div class="canon__row-kicker">Essai de référence</div>
+              <h3 class="canon__row-title">The Technical Marketer.</h3>
+            </div>
+          </div>
+          <p class="canon__row-deck">Une description de poste canonique. Six flux de travail, six résultats mesurables, trois échelles de rémunération, et quatre archétypes de démo par type d'entreprise.</p>
+          <span class="canon__row-cta">Lire l'article I <span aria-hidden="true">&rarr;</span></span>
         </a>
-        <a href="/fr/before-the-name" class="essay-card">
-          <div class="essay-card__folio">II</div>
-          <div class="essay-card__kicker">Histoire</div>
-          <h3 class="essay-card__title">Before the Name.</h3>
-          <p class="essay-card__deck">Six décennies de ce travail exercé sous douze titres différents, retracées à partir de sources primaires de 1934 à 2024.</p>
-          <span class="essay-card__cta">Lire l'article II <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+        <a href="/fr/before-the-name" class="canon__row">
+          <div class="canon__row-head">
+            <span class="canon__num">II</span>
+            <div>
+              <div class="canon__row-kicker">Histoire</div>
+              <h3 class="canon__row-title">Before the Name.</h3>
+            </div>
+          </div>
+          <p class="canon__row-deck">Six décennies de ce travail exercé sous douze titres différents, retracées à partir de sources primaires de 1934 à 2024.</p>
+          <span class="canon__row-cta">Lire l'article II <span aria-hidden="true">&rarr;</span></span>
         </a>
-        <a href="/fr/technical-marketing-age-of-ai" class="essay-card">
-          <div class="essay-card__folio">III</div>
-          <div class="essay-card__kicker">Argument structurel · Nouveau</div>
-          <h3 class="essay-card__title">In the Age of AI.</h3>
-          <p class="essay-card__deck">L'IA comprime la production d'artefacts dans toutes les disciplines du GTM. Le marketing technique ne se contracte pas sous cette pression. Il se clarifie.</p>
-          <span class="essay-card__cta">Lire l'article III <span class="essay-card__cta-arrow" aria-hidden="true">→</span></span>
+        <a href="/fr/technical-marketing-age-of-ai" class="canon__row">
+          <div class="canon__row-head">
+            <span class="canon__num">III</span>
+            <div>
+              <div class="canon__row-kicker">Argument structurel · Nouveau</div>
+              <h3 class="canon__row-title">In the Age of AI.</h3>
+            </div>
+          </div>
+          <p class="canon__row-deck">L'IA comprime la production d'artefacts dans toutes les disciplines du GTM. Le marketing technique ne se contracte pas sous cette pression. Il se clarifie.</p>
+          <span class="canon__row-cta">Lire l'article III <span aria-hidden="true">&rarr;</span></span>
         </a>
       </div>
+      <p class="canon__footline">La s&eacute;quence se poursuit. Rien de d&eacute;j&agrave; num&eacute;rot&eacute; n'est renum&eacute;rot&eacute;.</p>
     </div>
   </section>
 
