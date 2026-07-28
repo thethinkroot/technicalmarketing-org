@@ -680,7 +680,7 @@ img { max-width: 100%; height: auto; display: block; }
 .checklist-block::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
 .checklist-block__label { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 600; padding-bottom: 1rem; margin-bottom: 1.375rem; border-bottom: 0.5px solid var(--border); flex-wrap: wrap; }
 .checklist-block__label-text { flex: 1 1 auto; min-width: 0; }
-.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 32px; white-space: nowrap; }
+.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 44px; white-space: nowrap; }
 .checklist-block__copy-btn:hover { background: var(--red); border-color: var(--red); }
 .checklist-block__copy-btn.is-copied { background: var(--red); border-color: var(--red); }
 .checklist-block__copy-icon { font-size: 0.875rem; line-height: 1; }
@@ -1009,12 +1009,12 @@ a.masthead__title:hover { color: var(--red); }
   <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
 </section>
 
-<section class="layout">
+<section class="layout ink-band">
   <div class="problem">
     <div class="problem__label">課題</div>
     <p>すべてのテクニカルマーケターは「AIを使え」と言われてきた。しかし、そのアドバイスのほとんどは、この役割が実際に担う業務の範囲を踏まえていない。</p>
     <p>一般的なAIのアドバイスは、モデルが一見完成しているように見えるものを生み出しながら、懐疑的なアナリスト、懐疑的な購買者、あるいは実際のAPI仕様を知るエンジニアに反論された瞬間に破綻する箇所を教えてくれない。本ガイドは、この役割が担う成果物ごとに、同じ1つの問いに5回答える。<strong>AIが本当に実務を削減してくれるのはどこで、後悔することになる何かを静かに生み出してしまうのはどこか?</strong></p>
-    <p>本ガイドは、1989年に世界初の商用言語検索エンジンを構築し、検索・情報検索分野で13件の特許を持ち、IBMで30年を過ごし、複数のテクノロジーの波が「すべてを変える」と喧伝されるのを見てきた実務家（プラクティショナー）の言葉で締めくくられる。その波を通じて変わらなかったものについての彼の見解こそが、本ガイドがこの結末に至る理由である &mdash; その元になった<a href="/ja/nice-job-hooking-me">対話の全文</a>を読む。</p>
+    <p>本ガイドは、1989年に世界初の商用言語検索エンジンを構築し、検索・情報検索分野で13件の特許を持ち、IBMで30年を過ごし、複数のテクノロジーの波が「すべてを変える」と喧伝されるのを見てきた実務者の言葉で締めくくられる。その波を通じて変わらなかったものについての彼の見解こそが、本ガイドがこの結末に至る理由である &mdash; その元になった<a href="/ja/nice-job-hooking-me">対話の全文</a>を読む。</p>
   </div>
 </section>
 
@@ -1026,7 +1026,7 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </section>
 
-<section class="layout">
+<section class="layout tint-band">
   <div class="method">
     <div class="method__label">方法 — 以下のすべてのワークストリームの土台となる</div>
     <p class="method__intro">以下のすべての成果物に、同じ4つのステップが当てはまる。セクションごとに変わるのはステップ2だけ、つまり各成果物が失敗する具体的な様式である。以降の各ワークストリームのセクションは、この枠組みの適用例であり、それぞれ別個の見解ではない。</p>
@@ -1192,7 +1192,7 @@ a.masthead__title:hover { color: var(--red); }
     <div class="section" id="ws-03">
       <span class="section-num">WS-03 · Narrative Architecture</span>
       <h2>まだ確立されていない技法と、今四半期のベンチマークより長持ちする3つのモデルの違い。</h2>
-      <p class="dek">Dunford、Raskin、Lochheadを含め、シニアポジショニング専門家で自身のAIワークフローを公開した者は誰もいない。これは出遅れた既解決の問題ではなく、本当に手つかずの領域である。<sup>5,6</sup> この作業で実務に耐えるAIワークフローを構築している実務家の、最も近い実名の例は、Claude Projects内で戦略文書を管理しているMKT1のEmily Kramerである。<sup>7</sup></p>
+      <p class="dek">Dunford、Raskin、Lochheadを含め、シニアポジショニング専門家で自身のAIワークフローを公開した者は誰もいない。これは出遅れた既解決の問題ではなく、本当に手つかずの領域である。<sup>5,6</sup> この作業で実務に耐えるAIワークフローを構築している実務者の、最も近い実名の例は、Claude Projects内で戦略文書を管理しているMKT1のEmily Kramerである。<sup>7</sup></p>
 
       <div class="compare">
         <div class="compare__cell compare__cell--helps">
@@ -1225,7 +1225,7 @@ a.masthead__title:hover { color: var(--red); }
 
       <div class="scope-note" style="margin-top:1.5rem;">
         <h3>このワークストリームが他より短い理由。</h3>
-        <p>これは見落としではない。Narrative Architectureに確立されたAIワークフローが存在しないのは、必要とされる判断、すなわち懐疑的な購買者を前にしても通用する唯一の主張を見極めることが、現行のどのツールによってもまだ圧縮できないからである。したがって本セクションのすべての推奨事項は、すでに確信している下書きをプレッシャーテストすることに限られる。AIが一文を生成することはない。それを行うのは実務家である。その境界線は本ガイドの欠落ではない。この分野の正直な現状である。</p>
+        <p>これは見落としではない。Narrative Architectureに確立されたAIワークフローが存在しないのは、必要とされる判断、すなわち懐疑的な購買者を前にしても通用する唯一の主張を見極めることが、現行のどのツールによってもまだ圧縮できないからである。したがって本セクションのすべての推奨事項は、すでに確信している下書きをプレッシャーテストすることに限られる。AIが一文を生成することはない。それを行うのは実務者である。その境界線は本ガイドの欠落ではない。この分野の正直な現状である。</p>
       </div>
     </div>
 
@@ -1458,7 +1458,7 @@ a.masthead__title:hover { color: var(--red); }
       <div class="ref-row">
         <div class="ref-row__name">自動キャプチャー・ウォークスルーツール</div>
         <p><span class="ref-row__for">例</span>Arcade、Tango、Scribe、Supademo</p>
-        <p>実際の製品の本物のクリックスルーをスクリーンショットや短い動画シーケンスとして記録し、その上にナレーション、ホットスポット、AIボイスオーバーを追加する。<sup>27</sup> 記録自体は本物だが、通常は記録後は静的なままである。Tangoをテストしたある実務家は、Chromeでしか動作せず、PDFエクスポートで文字化けのバグが発生することを発見した。<sup>28</sup> ドキュメントツールを実際に試した別の比較では、Tangoの自動化は名前が示すほど深くないことが判明した。「基本的な自動化はあったが、ガイドと手順は自分で手入力する必要があった。」<sup>29</sup> このカテゴリ全体の失敗様式はどちらにせよ単純である。製品がUIの変更を出荷した瞬間にスクリーンショットは陳腐化するが、ツールの中にそれを検知してくれるものは何もない。</p>
+        <p>実際の製品の本物のクリックスルーをスクリーンショットや短い動画シーケンスとして記録し、その上にナレーション、ホットスポット、AIボイスオーバーを追加する。<sup>27</sup> 記録自体は本物だが、通常は記録後は静的なままである。Tangoをテストしたある実務者は、Chromeでしか動作せず、PDFエクスポートで文字化けのバグが発生することを発見した。<sup>28</sup> ドキュメントツールを実際に試した別の比較では、Tangoの自動化は名前が示すほど深くないことが判明した。「基本的な自動化はあったが、ガイドと手順は自分で手入力する必要があった。」<sup>29</sup> このカテゴリ全体の失敗様式はどちらにせよ単純である。製品がUIの変更を出荷した瞬間にスクリーンショットは陳腐化するが、ツールの中にそれを検知してくれるものは何もない。</p>
       </div>
 
       <div class="ref-row">
@@ -1474,7 +1474,7 @@ a.masthead__title:hover { color: var(--red); }
       </div>
 
       <div class="aside-note">
-        <p>このカテゴリの情報源のほとんどは、独立したジャーナリズムではなくベンダーが発行したもの、すなわち比較ブログ、プレスリリース、レビューである。上記の4つのツール（Navattic、Tango、Scribe、Storylane）には、直接引用された本物の独立実務家の証言がある。Walnut、Reprise、Arcade、Consensus、Saleo、Supademoについては、今回の調査ではベンダー発の情報源しか見つからなかった。このカテゴリの独立情報源に基づく本格的な評価は、別途独立したガイドとして予定している。</p>
+        <p>このカテゴリの情報源のほとんどは、独立したジャーナリズムではなくベンダーが発行したもの、すなわち比較ブログ、プレスリリース、レビューである。上記の4つのツール（Navattic、Tango、Scribe、Storylane）には、直接引用された本物の独立実務者の証言がある。Walnut、Reprise、Arcade、Consensus、Saleo、Supademoについては、今回の調査ではベンダー発の情報源しか見つからなかった。このカテゴリの独立情報源に基づく本格的な評価は、別途独立したガイドとして予定している。</p>
       </div>
     </div>
 
@@ -1526,7 +1526,7 @@ a.masthead__title:hover { color: var(--red); }
       <div>
         <div class="bio-card__name">Mike Moranとは何者で、なぜ変わらないものについての彼の助言に耳を傾けるべきか</div>
         <p>Mike Moranは、Googleが存在するほぼ10年前の1989年に世界初の商用言語検索エンジンを構築したチームを率い、検索・情報検索技術で13件の特許を保有している。IBMで30年を過ごし、IBM Distinguished Engineerにまで昇進した。自身の会社SoloSegmentでは、彼自身の説明によれば、Googleが公にはそのような技術の存在を否定しながら、後に連邦裁判の訴訟で自社の最重要機密と呼んでいたことが明らかになった検索ランキング技術を構築した。この話は彼自身の言葉によるものであり、本ガイドのために裁判記録と照合した独立検証は行っていない。</p>
-        <p>彼は<em>Do It Wrong Quickly</em>の著者であり、<em>Search Engine Marketing Inc.</em>と<em>Outside-In Marketing</em>の共著者、Biznologyの創業者、そしてThinkStreamの共同創業者兼最高製品責任者(CPO)である。AI、プロダクトマネジメント、デジタルマーケティングについて、mikemoran.comでコンサルティングと講演を行っている。<sup>‡</sup></p>
+        <p>彼は『<em>Do It Wrong Quickly</em>』の著者であり、『<em>Search Engine Marketing Inc.</em>』と『<em>Outside-In Marketing</em>』の共著者、Biznologyの創業者、そしてThinkStreamの共同創業者兼最高製品責任者(CPO)である。AI、プロダクトマネジメント、デジタルマーケティングについて、mikemoran.comでコンサルティングと講演を行っている。<sup>‡</sup></p>
         <p>変わらないものについての彼の助言に耳を傾ける価値があるのは、まさに彼が複数のテクノロジーの波が「すべてを変える」と喧伝されるのを見てきており、実際には変わらなかった部分を知るための特許、裁判の経験、そして30年のキャリアを持っているからである。</p>
         <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-top:1rem;">本ガイドは、より長い対話から素材を得ている。<a href="/ja/nice-job-hooking-me" style="color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">全編プロフィールを読む &rarr;</a></p>
       </div>
@@ -1534,7 +1534,7 @@ a.masthead__title:hover { color: var(--red); }
 
     <div class="editors-note" id="what-holds">
       <span class="editors-note-label">変わらないもの</span>
-      <p>Mike Moran自身の助言は、この境界線の同じ側でほぼ50年を過ごした経験から導かれたものであり、変わるものより変わらないものに注意を払えというものである。実務家は、市場が何を必要としているか、その提供物が実際にどう差別化されているか、そしてそれをどう平易に語るかを理解することにキャリアを築くことができる。なぜなら、ツールが変わっても、その3つは変わらないからである。<sup>‡</sup></p>
+      <p>Mike Moran自身の助言は、この境界線の同じ側でほぼ50年を過ごした経験から導かれたものであり、変わるものより変わらないものに注意を払えというものである。実務者は、市場が何を必要としているか、その提供物が実際にどう差別化されているか、そしてそれをどう平易に語るかを理解することにキャリアを築くことができる。なぜなら、ツールが変わっても、その3つは変わらないからである。<sup>‡</sup></p>
       <p>上記のすべての知見は、部分的には古くなっていく。名指しされたツールは置き換えられるだろう。具体的なパーセンテージは、次のレポートで改訂されるだろう。古くなってはならないのは、それぞれの根底にある判断の形である。AIは起草と一次統合を圧縮する。それは、懐疑的な読み手との接触に耐える主張はどれかという編集上の判断を圧縮しない。その判断を下すのは、今も、そしてこれからも常にあなた自身である。</p>
       <p class="editors-sig">編集部</p>
     </div>
@@ -1578,7 +1578,7 @@ a.masthead__title:hover { color: var(--red); }
         <li>Similarweb, Gen AI Stats, similarweb.com, data through May 2026: ChatGPT holds roughly 53.9% of worldwide AI-chatbot web-visit share (58.3% in the United States), down from 76.5% in February 2025 as Gemini and Claude gained share.</li>
         <li>Adobe, acquisition of Semrush announced November 19, 2025, reported at approximately 1.9 billion dollars; AI-visibility and generative-engine-optimization framing was more prominent in the deal’s 2026 close announcement than at initial announcement.</li>
       </ol>
-      <p style="font-family:var(--f-sans); font-size:0.75rem; color:var(--ink-40); margin-top:1.25rem; max-width:var(--measure);">† 6つのワークストリームの分類については<a href="/ja/the-technical-marketer#responsibilities">The Technical Marketer, Article I</a>を参照。‡ Mike Moran、<em>Technical Marketing</em>との対話、2026年夏。</p>
+      <p style="font-family:var(--f-sans); font-size:0.75rem; color:var(--ink-40); margin-top:1.25rem; max-width:var(--measure);">† 6つのワークストリームの分類については<a href="/ja/the-technical-marketer#responsibilities">The Technical Marketer、第I論考</a>を参照。‡ Mike Moran、<em>Technical Marketing</em>との対話、2026年夏。</p>
     </div>
 
     <a href="/ja/tools" class="back-link">← ツールへ戻る</a>

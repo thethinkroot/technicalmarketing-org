@@ -90,7 +90,8 @@
 [data-theme="dark"] .anchor,
 [data-theme="dark"] .comp-plate,
 [data-theme="dark"] .site-footer,
-[data-theme="dark"] #essays {
+[data-theme="dark"] #essays,
+[data-theme="dark"] .ink-band {
   --paper:         #EFE6C9;
   --paper-shade:   #E5D9B4;
   --paper-light:   #F5EED8;
@@ -101,6 +102,58 @@
   --border-strong: rgba(239, 230, 201, 0.30);
   --red:           #D0685C;
   --red-soft:      #DE8378;
+}
+
+/* ---- 2c. Reusable section-rhythm primitives --------------------------- *
+   Shared building blocks so every page type (not just the homepage) can
+   alternate section backgrounds. `.ink-band` reuses the exact `.anchor`/
+   `#essays` dark-band shape (see 2b above for its dark-mode handling) and
+   is applied directly in markup, page by page, to whichever existing
+   section is the right dark beat for that page's rhythm.
+   `.ink-band` also normalizes child text/link color, since sections that
+   opt into it were themselves authored assuming a light background. */
+.ink-band {
+  background: var(--ink); color: var(--paper); position: relative; overflow: hidden;
+}
+.ink-band::before {
+  content: ""; position: absolute; inset: 0;
+  background-image: radial-gradient(circle at 50% 50%, rgba(239,230,201,0.05) 1px, transparent 1.2px);
+  background-size: 14px 14px; pointer-events: none;
+}
+.ink-band li, .ink-band p, .ink-band dd, .ink-band dt { color: rgba(239,230,201,0.72); }
+.ink-band a { color: var(--paper); }
+.ink-band a:hover { color: var(--yellow); }
+.tint-band { background: var(--paper-shade); }
+
+/* .page-head is the first section on every contributor/profile/directory page
+   (contributors/, the-index, archive, volume-01, about, reference, tools,
+   ai-for-technical-marketers, nice-job-hooking-me) and never had a background
+   of its own, so it silently matched the plain --paper body underneath it.
+   One shared rule gives all of those page types their first alternation
+   beat for free. */
+.page-head { background: var(--paper-shade); }
+
+/* ---- 2d. Essay drop caps ------------------------------------------------ *
+   Extends the homepage Editor's Note drop cap (see each page's own .ednote
+   rule) to every essay's opening paragraph — the elite-magazine convention
+   this design language is built on. `.section:not(.section ~ .section)`
+   selects the first .section sibling even when a differently-classed
+   sibling (e.g. .fmc) precedes it — :first-of-type alone won't, since it
+   counts position by tag name, not by class. .section only exists on the
+   five essay templates, so this only ever touches an essay's own lede
+   paragraph. Japanese is excluded by design: the script has no uppercase/
+   lowercase distinction for a drop cap to dramatize. Two essays
+   (before-the-name.html, technical-marketing-age-of-ai.html) open with an
+   extra callout wrapper (.scope-note / .definition-block) around the lede
+   paragraph instead of a bare <p>, so those wrappers are named explicitly
+   rather than matched with a generic descendant selector — a wildcard
+   `div > p:first-of-type` would also catch the unrelated .pullquote <p>
+   that shows up later in some of these same sections. */
+html:not([lang="ja"]) .section:not(.section ~ .section) > p:first-of-type::first-letter,
+html:not([lang="ja"]) .section:not(.section ~ .section) > .scope-note > p:first-of-type::first-letter,
+html:not([lang="ja"]) .section:not(.section ~ .section) > .definition-block > p:first-of-type::first-letter {
+  font-family: var(--f-display); font-weight: 700; font-size: 3.4em; float: left;
+  line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red);
 }
 
 /* ---- 3. Diagram token application (theme-agnostic mapping) ------------- */
@@ -133,15 +186,15 @@
 /* ---- 6. Theme toggle button (styling; markup injected by site.js) ----- */
 #theme-toggle { transition: color 0.15s ease; }
 #theme-toggle:hover { color: var(--red); }
-/* Enlarge the tap target on mobile without shifting its visual position.
-   site.js sets inline padding (0 0 0 1rem) on the button, so this needs
-   !important to win; the padding-left/negative-margin-left pair nets back
-   out to the original 1rem gap from the preceding nav item. */
-@media (max-width: 600px) {
-  #theme-toggle {
-    padding: 0.875rem 0.6rem 0.875rem 1.6rem !important;
-    margin: -0.875rem -0.6rem -0.875rem -0.6rem;
-  }
+/* Enlarge the tap target to a real 44px hit area at every viewport width
+   (previously scoped to mobile only, which left it at 26x16px on tablet/
+   desktop) without shifting its visual position. site.js sets inline
+   padding (0 0 0 1rem) on the button, so this needs !important to win;
+   the padding-left/negative-margin-left pair nets back out to the
+   original 1rem gap from the preceding nav item. */
+#theme-toggle {
+  padding: 0.875rem 0.6rem 0.875rem 1.6rem !important;
+  margin: -0.875rem -0.6rem -0.875rem -0.6rem;
 }
 
 /* =======================================================================

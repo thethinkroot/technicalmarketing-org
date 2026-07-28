@@ -58,6 +58,9 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"Eine unabhängige Quartalspublikation und Arbeitsreferenz für die Disziplin des technischen Marketings: die Praxis, technisch komplexe Behauptungen gegenüber technisch versierten Käufern zu beweisen, mit einem kommerziellen Ergebnis auf dem Spiel.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"knowsAbout":["Technical Marketing","Demo Strategy","Enterprise Software Marketing","Sales Engineering","Product Marketing","Technical Product Marketing","AI in Enterprise Software","Demo Coherence"],"hasOccupation":{"@type":"Occupation","name":"Technical Marketing Manager","occupationLocation":{"@type":"Country","name":"United States"}}},{"@type":"Article","@id":"https://technicalmarketing.org/technical-marketing-vs-product-marketing#article","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"headline":"Technisches Marketing vs Produktmarketing: Die Grenze zwischen Beweis und Positionierung","alternativeHeadline":"Der Unterschied zwischen Technischem Marketing und Produktmarketing","description":"Produktmarketing verantwortet, was das Unternehmen sagt: Positionierung, Messaging, Segmentierung, Launch. Technisches Marketing verantwortet, was das Unternehmen beweisen kann: Demonstrationen, Referenzarchitekturen, Benchmarks und die technischen Nachweise, die skeptischen Prüfern vorgelegt werden. Eine Arbeitsreferenz zur Grenze.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-06-12","dateModified":"2026-06-12","url":"https://technicalmarketing.org/de/technical-marketing-vs-product-marketing","mainEntityOfPage":"https://technicalmarketing.org/de/technical-marketing-vs-product-marketing","wordCount":1150,"articleSection":"Reference","image":{"@type":"ImageObject","url":"https://technicalmarketing.org/og-image-reference-tmm-pmm.png","width":1200,"height":630},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#answer","#boundary"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist der Unterschied zwischen Technical Marketing und Product Marketing?","acceptedAnswer":{"@type":"Answer","text":"Der Unterschied ist der Unterschied zwischen Beweis und Positionierung. Produktmarketing verantwortet, was das Unternehmen über das Produkt sagt: die Positionierung, das Messaging, die Segmentierung, den Launch. Technisches Marketing verantwortet, was das Unternehmen beweisen kann: die Demonstrationen, Referenzarchitekturen, Benchmarks und technischen Nachweise, die den skeptischsten Prüfern des Käufers vorgelegt werden. Eine Funktion entscheidet, ob eine Behauptung es wert ist, gemacht zu werden. Die andere entscheidet, ob sie den Kontakt mit einem technischen Publikum übersteht."}},{"@type":"Question","name":"Ist Technical Marketing Teil von Product Marketing?","acceptedAnswer":{"@type":"Answer","text":"In manchen Organisationen berichtet Technisches Marketing an Produktmarketing, in anderen an Produkt oder Engineering, und in den größten Unternehmenssoftware-Firmen agiert es als gleichrangige Funktion. Taxonomisch sind die beiden Bereiche getrennt: Das US-Arbeitsministerium klassifiziert Technical Marketing Engineer unter der Berufsgruppe 41-9031.00 gemeinsam mit Sales Engineer, nicht als Marketingberuf. Die Berichtslinie ist weniger wichtig als die Grenze. Die Funktion, die den Beweis verantwortet, muss die Befugnis behalten zu sagen, dass eine Behauptung nicht belegt werden kann, unabhängig davon, wohin sie berichtet."}},{"@type":"Question","name":"Sollte ein Unternehmen zuerst einen Technical Marketer oder einen Product Marketer einstellen?","acceptedAnswer":{"@type":"Answer","text":"Die Reihenfolge folgt dem Käufer. Ein Unternehmen, dessen Käufer vor dem Kauf praktisch evaluieren, was auf Entwicklertools, Infrastruktur, Sicherheit und Unternehmensplattformen zutrifft, braucht tendenziell die Beweisfunktion, bevor Positionierung konvertieren kann. Ein Unternehmen, das an Geschäftskäufer mit Ergebnisnarrativen verkauft, braucht tendenziell zuerst die Positionierung. In kleinen Unternehmen übernimmt häufig eine Person beide Funktionen, bis das Prüfvolumen die Trennung erzwingt."}},{"@type":"Question","name":"Kann dieselbe Person Technical Marketing und Product Marketing übernehmen?","acceptedAnswer":{"@type":"Answer","text":"Ja, und in Unternehmen in der Frühphase tut das meist eine Person. Das Risiko der kombinierten Rolle ist struktureller Natur: Die Person, die Behauptungen aufstellt, hält auch die Befugnis, sie zu verwerfen, und unter kommerziellem Druck schwächt sich dieses Vetorecht ab. Wenn Produkte zunehmend prüfungsintensiv werden, trennen sich die Funktionen, damit der Beweis eine unabhängige Stimme behält."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technisches Marketing vs Produktmarketing","item":"https://technicalmarketing.org/de/technical-marketing-vs-product-marketing"}]}]}</script>
 
 <style>
+#tmm, #ledger, #org { background: var(--paper-shade); }
+#faq { background: var(--paper-shade); }
+
 
 :root {
   --paper: #EFE6C9;
@@ -990,7 +993,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-  min-height: 32px;
+  min-height: 44px;
   white-space: nowrap;
   align-self: start;
 }
@@ -1026,7 +1029,7 @@ img { max-width: 100%; height: auto; display: block; }
   .cite-label { padding-top: 0; }
   .cite-copy {
     justify-content: center;
-    min-height: 40px;
+    min-height: 44px;
     padding: 0.625rem 1rem;
     font-size: 0.6875rem;
     margin-top: 0.25rem;
@@ -1249,7 +1252,7 @@ a.masthead__title:hover { color: var(--red); }
 
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
-    <span class="masthead__util-edition">Erste Ausgabe &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Ausgabe I &middot; N&deg;1</span>
+    <span class="masthead__util-edition">Erste Auflage &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Ausgabe I &middot; N&deg;1</span>
     <details class="masthead__langpicker">
       <summary class="masthead__langpicker-btn" aria-label="Sprache wählen">DE <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
       <nav class="masthead__langpicker-menu" aria-label="Sprache">
@@ -1290,7 +1293,7 @@ a.masthead__title:hover { color: var(--red); }
   </figcaption>
 </figure>
 
-<section class="cover layout" aria-labelledby="article-title">
+<section class="cover layout tint-band" aria-labelledby="article-title">
   <div class="cover__article-kicker">Referenz.</div>
   <h1 class="cover__article-title" id="article-title">Technisches Marketing vs Produktmarketing.</h1>
   <hr class="cover__rule">
@@ -1302,7 +1305,7 @@ a.masthead__title:hover { color: var(--red); }
   <p class="cover__secondary">Zwei Funktionen. Eine Linie Dazwischen.</p>
   <p class="cover__deck">Produktmarketing entscheidet, was das Unternehmen sagt. Technisches Marketing entscheidet, was das Unternehmen beweisen kann. Eine Arbeitsreferenz dazu, wo die Grenze verläuft, wer wofür verantwortlich ist und warum die KI-Ära sie schärfer gezogen hat.</p>
 
-  <div class="cover__byline">Herausgegeben von <strong><a href="/de/contributors/chad-corriveau" rel="author">Chad Corriveau</a></strong>, Founding Editor &middot; <time datetime="2026-06-12">12. Juni 2026</time> &middot; 7 Min. Lesezeit</div>
+  <div class="cover__byline">Herausgegeben von <strong><a href="/de/contributors/chad-corriveau" rel="author">Chad Corriveau</a></strong>, Gründungsredakteur &middot; <time datetime="2026-06-12">12. Juni 2026</time> &middot; 7 Min. Lesezeit</div>
 
   <div class="cover__ornament" aria-hidden="true">
     <span class="cover__ornament-rule"></span>
@@ -1452,7 +1455,7 @@ a.masthead__title:hover { color: var(--red); }
         </div>
       </section>
 
-      <section class="footnotes" id="footnotes" aria-labelledby="footnotes-label">
+      <section class="footnotes ink-band" id="footnotes" aria-labelledby="footnotes-label">
         <span class="footnotes-label" id="footnotes-label">Quellen</span>
         <ol>
           <li>U.S. Department of Labor, <em>O*NET Occupational Information Network</em>, Klassifikation 41-9031.00, Sales Engineers. Technical Marketing Engineer wird als Variantenbezeichnung unter derselben Klassifikation geführt. Verfügbar unter <a href="https://www.onetonline.org/link/summary/41-9031.00" target="_blank" rel="noopener">onetonline.org</a>.</li>
@@ -1464,7 +1467,7 @@ a.masthead__title:hover { color: var(--red); }
       <aside class="editors-note" aria-labelledby="editors-note-label">
         <span class="editors-note-label" id="editors-note-label">Anmerkung des Herausgebers</span>
         <p>Dies ist ein Referenzeintrag, kein Volume-Artikel. Die hier beschriebene Grenze ist der Praxis in der Unternehmenssoftware entnommen, wo der Herausgeber seine Karriere auf der Technical-Marketing-Seite der Linie verbracht hat. Product Marketer, die die Grenze anders ziehen würden, sind eingeladen, <a href="/de/suggest">Änderungsvorschläge einzureichen</a>. Die stärksten Korrekturen werden veröffentlicht.</p>
-        <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
+        <p class="editors-sig">Chad Corriveau &middot; Gründungsredakteur</p>
       </aside>
 
       <div class="next-article">
@@ -1586,7 +1589,7 @@ a.masthead__title:hover { color: var(--red); }
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
-      <span class="site-footer__issn">ISSN 3143-6412 &middot; Erste Ausgabe &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Erste Auflage &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
       <nav class="site-footer__langs" aria-label="Sprache">
         <a href="/de/technical-marketing-vs-product-marketing" class="site-footer__lang-link" aria-current="true">Deutsch</a>
         <a href="/technical-marketing-vs-product-marketing" class="site-footer__lang-link">English</a>

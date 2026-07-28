@@ -680,7 +680,7 @@ img { max-width: 100%; height: auto; display: block; }
 .checklist-block::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
 .checklist-block__label { display: flex; justify-content: space-between; align-items: center; gap: 1rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 600; padding-bottom: 1rem; margin-bottom: 1.375rem; border-bottom: 0.5px solid var(--border); flex-wrap: wrap; }
 .checklist-block__label-text { flex: 1 1 auto; min-width: 0; }
-.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 32px; white-space: nowrap; }
+.checklist-block__copy-btn { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); border: 0.5px solid var(--ink); padding: 0.5rem 0.875rem; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease; min-height: 44px; white-space: nowrap; }
 .checklist-block__copy-btn:hover { background: var(--red); border-color: var(--red); }
 .checklist-block__copy-btn.is-copied { background: var(--red); border-color: var(--red); }
 .checklist-block__copy-icon { font-size: 0.875rem; line-height: 1; }
@@ -1000,7 +1000,7 @@ a.masthead__title:hover { color: var(--red); }
   <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
 </section>
 
-<section class="layout">
+<section class="layout ink-band">
   <div class="problem">
     <div class="problem__label">Le problème</div>
     <p>On a dit à chaque responsable du marketing technique d'« utiliser l'IA ». Presque aucun de ces conseils n'est calibré sur ce que ce rôle possède réellement.</p>
@@ -1017,7 +1017,7 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </section>
 
-<section class="layout">
+<section class="layout tint-band">
   <div class="method">
     <div class="method__label">La méthode — s'applique sous chaque chantier ci-dessous</div>
     <p class="method__intro">Les quatre mêmes étapes s'appliquent à chaque livrable ci-dessous. Seule l'étape deux change de section en section : la façon spécifique dont chacun échoue. Chaque section de chantier qui suit est une application de ce cadre, pas un avis distinct.</p>
@@ -1516,7 +1516,7 @@ a.masthead__title:hover { color: var(--red); }
       <div class="bio-card__mark" aria-hidden="true">MM</div>
       <div>
         <div class="bio-card__name">Qui est Mike Moran, et pourquoi suivre ses conseils sur ce qui reste identique</div>
-        <p>Mike Moran a dirigé l’équipe qui a construit le premier moteur de recherche linguistique commercial en 1989, presque une décennie avant l’existence de Google, et détient treize brevets en technologie de recherche et de récupération d’information. Il est devenu IBM Distinguished Engineer au cours de ses trente ans chez IBM. Dans son entreprise SoloSegment, il a construit une technique de classement de recherche que, selon son propre récit, une affaire judiciaire fédérale a plus tard révélé être appelée par Google son secret le plus important, tout en niant publiquement l’existence d’une telle technique. Ce récit est le sien, raconté dans ses propres mots, et n’a pas été vérifié indépendamment face aux dossiers judiciaires pour ce guide.</p>
+        <p>Mike Moran a dirigé l’équipe qui a construit le premier moteur de recherche linguistique commercial en 1989, presque une décennie avant l’existence de Google, et détient treize brevets en technologie de recherche et de récupération d’information. Il est devenu ingénieur distingué chez IBM au cours de ses trente ans dans l'entreprise. Dans son entreprise SoloSegment, il a construit une technique de classement de recherche que, selon son propre récit, une affaire judiciaire fédérale a plus tard révélé être appelée par Google son secret le plus important, tout en niant publiquement l’existence d’une telle technique. Ce récit est le sien, raconté dans ses propres mots, et n’a pas été vérifié indépendamment face aux dossiers judiciaires pour ce guide.</p>
         <p>Il est l’auteur de <em>Do It Wrong Quickly</em>, coauteur de <em>Search Engine Marketing Inc.</em> et <em>Outside-In Marketing</em>, fondateur de Biznology, et cofondateur et Chief Product Officer de ThinkStream. Il conseille et intervient sur l’IA, la gestion de produit et le marketing digital sur mikemoran.com.<sup>‡</sup></p>
         <p>Ses conseils sur ce qui reste identique valent la peine d’être suivis précisément parce qu’il a observé plusieurs vagues technologiques promettre de tout changer, et possède les brevets, l’affaire judiciaire et la carrière de trente ans pour savoir quelles parties du travail n’ont réellement pas changé.</p>
         <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-top:1rem;">Ce guide s’est appuyé sur une conversation plus longue. <a href="/fr/nice-job-hooking-me" style="color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">Lire le profil complet &rarr;</a></p>
@@ -1606,7 +1606,7 @@ a.masthead__title:hover { color: var(--red); }
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
           <dt class="folio__label">Éditorial</dt>
-          <dd class="folio__value">Un guide pratique pour la discipline. Édité et sélectionné par Chad Corriveau.</dd>
+          <dd class="folio__value">Un guide pratique pour la discipline. Conçu et dirigé par Chad Corriveau.</dd>
         </div>
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
@@ -1616,7 +1616,7 @@ a.masthead__title:hover { color: var(--red); }
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
           <dt class="folio__label">Charte</dt>
-          <dd class="folio__value">Les entrées indexées sont examinées selon les critères de la charte éditoriale : sourçage primaire, pertinence pour les praticiens, et absence de promotion de fournisseur. ThinkRoot LLC fournit l'infrastructure de publication et le soutien administratif.</dd>
+          <dd class="folio__value">Les entrées indexées sont examinées selon les critères de la charte éditoriale : sources primaires, pertinence pour les praticiens, et absence de promotion de fournisseur. ThinkRoot LLC fournit l'infrastructure de publication et le soutien administratif.</dd>
         </div>
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">

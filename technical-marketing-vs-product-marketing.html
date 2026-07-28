@@ -54,6 +54,9 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers, with a commercial outcome at stake.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-chad-corriveau","name":"Chad Corriveau","jobTitle":"Founding Editor","url":"https://technicalmarketing.org/contributors/chad-corriveau","worksFor":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"sameAs":["https://www.linkedin.com/in/chad-t-corriveau/","https://thinkroot.io"],"knowsAbout":["Technical Marketing","Demo Strategy","Enterprise Software Marketing","Sales Engineering","Product Marketing","Technical Product Marketing","AI in Enterprise Software","Demo Coherence"],"hasOccupation":{"@type":"Occupation","name":"Technical Marketing Manager","occupationLocation":{"@type":"Country","name":"United States"}}},{"@type":"Article","@id":"https://technicalmarketing.org/technical-marketing-vs-product-marketing#article","isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"headline":"Technical Marketing vs Product Marketing: The Boundary Between Proof and Positioning","alternativeHeadline":"The Difference Between Technical Marketing and Product Marketing","description":"Product marketing owns what the company says: positioning, messaging, segmentation, launch. Technical marketing owns what the company can prove: demonstrations, reference architectures, benchmarks, and the technical evidence placed in front of skeptical evaluators. A working reference on the boundary.","author":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau","jobTitle":"Founding Editor, technicalmarketing.org"},"publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},"datePublished":"2026-06-12","dateModified":"2026-06-12","url":"https://technicalmarketing.org/technical-marketing-vs-product-marketing","mainEntityOfPage":"https://technicalmarketing.org/technical-marketing-vs-product-marketing","wordCount":1150,"articleSection":"Reference","image":{"@type":"ImageObject","url":"https://technicalmarketing.org/og-image-reference-tmm-pmm.png","width":1200,"height":630},"speakable":{"@type":"SpeakableSpecification","cssSelector":["#answer","#boundary"]}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between technical marketing and product marketing?","acceptedAnswer":{"@type":"Answer","text":"The difference is the difference between proof and positioning. Product marketing owns what the company says about the product: the positioning, the messaging, the segmentation, the launch. Technical marketing owns what the company can prove: the demonstrations, reference architectures, benchmarks, and technical evidence placed in front of the buyer's most skeptical evaluators. One function decides a claim is worth making. The other decides whether it will survive contact with a technical audience."}},{"@type":"Question","name":"Is technical marketing part of product marketing?","acceptedAnswer":{"@type":"Answer","text":"In some organizations technical marketing reports into product marketing, in others into product or engineering, and in the largest enterprise software companies it operates as a peer function. Taxonomically the two are distinct: the U.S. Department of Labor classifies Technical Marketing Engineer under occupation 41-9031.00 with Sales Engineer, not as a marketing occupation. The reporting line matters less than the boundary. The function that owns proof must hold the authority to say a claim cannot be supported, wherever it reports."}},{"@type":"Question","name":"Should a company hire a technical marketer or a product marketer first?","acceptedAnswer":{"@type":"Answer","text":"The sequence follows the buyer. A company whose buyers evaluate hands-on before purchasing, which describes developer tools, infrastructure, security, and enterprise platforms, tends to need the proof function before positioning can convert. A company selling to business buyers on outcome narratives tends to need positioning first. In small companies one person frequently performs both functions until evaluation volume forces the split."}},{"@type":"Question","name":"Can the same person do technical marketing and product marketing?","acceptedAnswer":{"@type":"Answer","text":"Yes, and in early-stage companies one person usually does. The risk of the combined role is structural: the person originating claims also holds the authority to veto them, and under commercial pressure that veto weakens. As products grow evaluation-heavy, the functions separate so that proof retains an independent voice."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Technical Marketing vs Product Marketing","item":"https://technicalmarketing.org/technical-marketing-vs-product-marketing"}]}]}</script>
 
 <style>
+#tmm, #ledger, #org { background: var(--paper-shade); }
+#faq { background: var(--paper-shade); }
+
 
 :root {
   --paper: #EFE6C9;
@@ -1003,7 +1006,7 @@ img { max-width: 100%; height: auto; display: block; }
   padding: 0.5rem 0.75rem;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
-  min-height: 32px;
+  min-height: 44px;
   white-space: nowrap;
   align-self: start;
 }
@@ -1039,7 +1042,7 @@ img { max-width: 100%; height: auto; display: block; }
   .cite-label { padding-top: 0; }
   .cite-copy {
     justify-content: center;
-    min-height: 40px;
+    min-height: 44px;
     padding: 0.625rem 1rem;
     font-size: 0.6875rem;
     margin-top: 0.25rem;
@@ -1303,7 +1306,7 @@ a.masthead__title:hover { color: var(--red); }
   </figcaption>
 </figure>
 
-<section class="cover layout" aria-labelledby="article-title">
+<section class="cover layout tint-band" aria-labelledby="article-title">
   <div class="cover__article-kicker">Reference.</div>
   <h1 class="cover__article-title" id="article-title">Technical Marketing vs Product Marketing.</h1>
   <hr class="cover__rule">
@@ -1465,7 +1468,7 @@ a.masthead__title:hover { color: var(--red); }
         </div>
       </section>
 
-      <section class="footnotes" id="footnotes" aria-labelledby="footnotes-label">
+      <section class="footnotes ink-band" id="footnotes" aria-labelledby="footnotes-label">
         <span class="footnotes-label" id="footnotes-label">Sources</span>
         <ol>
           <li>U.S. Department of Labor, <em>O*NET Occupational Information Network</em>, classification 41-9031.00, Sales Engineers. Technical Marketing Engineer is listed as a variant title under the same classification. Available at <a href="https://www.onetonline.org/link/summary/41-9031.00" target="_blank" rel="noopener">onetonline.org</a>.</li>
