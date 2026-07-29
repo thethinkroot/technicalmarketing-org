@@ -1642,7 +1642,23 @@ function copyArticleLink(btn) {
     }
   }, { passive: true });
 
-  function init() { calcReadingTime(); initScrollSpy(); updateProgress(); updateScrollSpy(); }
+  /* Runs fn after the browser's native #hash anchor-jump has settled (a
+     double rAF gives the jump time to complete), and again on 'load' and
+     'hashchange', so hash-linked scroll UI doesn't wait for the user to
+     scroll manually first. */
+  function afterAnchorSettle(fn) {
+    function settle() {
+      requestAnimationFrame(function () { requestAnimationFrame(fn); });
+    }
+    settle();
+    window.addEventListener('load', settle);
+    window.addEventListener('hashchange', settle);
+  }
+
+  function init() {
+    calcReadingTime(); initScrollSpy(); updateProgress(); updateScrollSpy();
+    afterAnchorSettle(function () { updateProgress(); updateScrollSpy(); });
+  }
   if (document.readyState !== 'loading') { init(); }
   else { document.addEventListener('DOMContentLoaded', init); }
 })();

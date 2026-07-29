@@ -2159,6 +2159,19 @@ function fallbackCopyCitation(text, callback) {
 (function () {
   'use strict';
 
+  /* Runs fn after the browser's native #hash anchor-jump has settled (a
+     double rAF gives the jump time to complete), and again on 'load' and
+     'hashchange', so hash-linked scroll UI doesn't wait for the user to
+     scroll manually first. */
+  function afterAnchorSettle(fn) {
+    function settle() {
+      requestAnimationFrame(function () { requestAnimationFrame(fn); });
+    }
+    settle();
+    window.addEventListener('load', settle);
+    window.addEventListener('hashchange', settle);
+  }
+
   /* ── Reading progress bar ─────────────────────────────────────── */
   var bar = document.getElementById('reading-progress');
   if (bar) {
@@ -2171,6 +2184,7 @@ function fallbackCopyCitation(text, callback) {
     }
     window.addEventListener('scroll', updateBar, { passive: true });
     updateBar();
+    afterAnchorSettle(updateBar);
   }
 
   /* ── TOC scroll spy ───────────────────────────────────────────── */
@@ -2198,6 +2212,13 @@ function fallbackCopyCitation(text, callback) {
     }, { rootMargin: '0px 0px -60% 0px', threshold: 0 });
 
     sections.forEach(function (s) { observer.observe(s); });
+
+    /* Re-subscribing forces IntersectionObserver to re-evaluate each
+       target against the current (post-jump) scroll position. */
+    afterAnchorSettle(function () {
+      sections.forEach(function (s) { observer.unobserve(s); });
+      sections.forEach(function (s) { observer.observe(s); });
+    });
   }
 }());
 </script>

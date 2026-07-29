@@ -3288,11 +3288,25 @@ function copyArticleUrl() {
     }
   }, { passive: true });
 
+  /* Runs fn after the browser's native #hash anchor-jump has settled (a
+     double rAF gives the jump time to complete), and again on 'load' and
+     'hashchange', so hash-linked scroll UI doesn't wait for the user to
+     scroll manually first. */
+  function afterAnchorSettle(fn) {
+    function settle() {
+      requestAnimationFrame(function () { requestAnimationFrame(fn); });
+    }
+    settle();
+    window.addEventListener('load', settle);
+    window.addEventListener('hashchange', settle);
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     calcReadingTime();
     initScrollSpy();
     updateProgress();
     updateScrollSpy();
+    afterAnchorSettle(onScroll);
   });
 
   // Fire immediately if DOM already ready
@@ -3301,6 +3315,7 @@ function copyArticleUrl() {
     initScrollSpy();
     updateProgress();
     updateScrollSpy();
+    afterAnchorSettle(onScroll);
   }
 })();
 </script>

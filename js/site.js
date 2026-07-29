@@ -35,6 +35,20 @@
     else { document.addEventListener('DOMContentLoaded', fn); }
   }
 
+  /* Runs fn after the browser's native #hash anchor-jump has settled (a
+     double rAF gives the jump time to complete), and again on 'load' and
+     'hashchange' — so hash-linked scroll UI (progress bar, TOC highlight)
+     reflects the jumped-to position instead of waiting for the user to
+     scroll manually first. */
+  function afterAnchorSettle(fn) {
+    function settle() {
+      requestAnimationFrame(function () { requestAnimationFrame(fn); });
+    }
+    settle();
+    window.addEventListener('load', settle);
+    window.addEventListener('hashchange', settle);
+  }
+
   /* Light is always the default. Only an explicit data-theme (set by a prior
      toggle, restored from localStorage above) makes a page dark. The OS
      color scheme is intentionally ignored. */
@@ -84,6 +98,7 @@
       window.addEventListener('scroll', update, { passive: true });
       window.addEventListener('resize', update, { passive: true });
       update();
+      afterAnchorSettle(update);
 
       /* 4. Reading time — inject into the byline if it lacks "min read". */
       var byline = document.querySelector('.cover__byline, .byline, .article-meta');
@@ -119,7 +134,17 @@
           }
         });
       }, { rootMargin: '-40% 0px -55% 0px' });
-      Object.keys(byId).forEach(function (id) { obs.observe(byId[id].el); });
+      var tocTargets = Object.keys(byId).map(function (id) { return byId[id].el; });
+      tocTargets.forEach(function (el) { obs.observe(el); });
+
+      /* Re-subscribing forces IntersectionObserver to re-evaluate each
+         target against the current (post-jump) scroll position — a plain
+         re-check isn't exposed by the API, so unobserve+observe stands in
+         for one. */
+      afterAnchorSettle(function () {
+        tocTargets.forEach(function (el) { obs.unobserve(el); });
+        tocTargets.forEach(function (el) { obs.observe(el); });
+      });
     }
   });
 })();
