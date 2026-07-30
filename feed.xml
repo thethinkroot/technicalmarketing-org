@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
   xmlns:atom="http://www.w3.org/2005/Atom"
-  xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-  xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
 
 <channel>
   <title>Technical Marketing</title>
@@ -12,8 +10,9 @@
   <description>A quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers, with a commercial outcome at stake. Each volume indexes current practitioner thinking on definition, craft, career, and method.</description>
   <language>en-us</language>
   <copyright>Copyright 2026 ThinkRoot LLC</copyright>
-  <pubDate>Sat, 13 Jun 2026 00:00:00 GMT</pubDate>
-  <lastBuildDate>Sat, 13 Jun 2026 00:00:00 GMT</lastBuildDate>
+  <managingEditor>chad@thinkroot.io (Chad Corriveau)</managingEditor>
+  <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+  <lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
   <generator>technicalmarketing.org</generator>
   <image>
     <url>https://technicalmarketing.org/publisher-logo.png</url>
@@ -21,54 +20,54 @@
     <link>https://technicalmarketing.org/</link>
   </image>
 
-  <!-- Podcast namespace -->
-  <itunes:author>Chad Corriveau</itunes:author>
-  <itunes:owner>
-    <itunes:name>Chad Corriveau</itunes:name>
-    <itunes:email>chad@thinkroot.io</itunes:email>
-  </itunes:owner>
-  <itunes:image href="https://technicalmarketing.org/og-image.png"/>
-  <itunes:category text="Business">
-    <itunes:category text="Marketing"/>
-  </itunes:category>
-  <itunes:category text="Technology"/>
-  <itunes:explicit>false</itunes:explicit>
-  <itunes:type>episodic</itunes:type>
-
-  <!-- Episode 2: Technical Marketing in the Age of AI -->
+  <!-- Technical Marketing in the Age of AI · Article III -- published 2026-06-05, last modified 2026-07-28 (verified live on-page meta tags, not cached HTTP response) -->
   <item>
     <title>Technical Marketing in the Age of AI</title>
     <link>https://technicalmarketing.org/technical-marketing-age-of-ai</link>
     <guid isPermaLink="true">https://technicalmarketing.org/technical-marketing-age-of-ai</guid>
-    <pubDate>Thu, 05 Jun 2026 00:00:00 GMT</pubDate>
-    <description>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why the discipline expands when everything around it shrinks.</description>
-    <content:encoded><![CDATA[<p>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why the discipline expands when everything around it shrinks.</p><p><a href="https://technicalmarketing.org/technical-marketing-age-of-ai">Read the full article</a></p>]]></content:encoded>
-    <enclosure url="https://technicalmarketing.org/audio/tm-org-article-ii-ai-narrated.mp3" length="REPLACE_WITH_ACTUAL_BYTES" type="audio/mpeg"/>
-    <itunes:duration>12:50</itunes:duration>
-    <itunes:explicit>false</itunes:explicit>
-    <itunes:episode>2</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <itunes:episodeType>full</itunes:episodeType>
-    <itunes:author>Chad Corriveau</itunes:author>
-    <itunes:image href="https://technicalmarketing.org/og-image-article-ii-ai.jpg"/>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    <description>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why it expands, and why AI companies are building this function from scratch right now.</description>
+    <content:encoded><![CDATA[<p>AI is compressing artifact production across every GTM discipline. Technical marketing does not contract under that pressure. The argument for why it expands, and why AI companies are building this function from scratch right now.</p><p><a href="https://technicalmarketing.org/technical-marketing-age-of-ai">Read the full article</a></p>]]></content:encoded>
   </item>
 
-  <!-- Episode 1: What Is Technical Marketing? -->
+  <!-- What Is Technical Marketing? A Reference for the Discipline -- published 2026-05-20, last modified 2026-07-10 (verified live on-page meta tags) -->
   <item>
-    <title>What Is Technical Marketing? A Reference for the Discipline</title>
+    <title>What Is Technical Marketing? A Foundational Reference</title>
     <link>https://technicalmarketing.org/what-is-technical-marketing</link>
     <guid isPermaLink="true">https://technicalmarketing.org/what-is-technical-marketing</guid>
-    <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
-    <description>The foundational reference for technical marketing: what the discipline is, what it produces, how it is measured, and why it expands in the AI transition.</description>
-    <content:encoded><![CDATA[<p>The foundational reference for technical marketing: what the discipline is, what it produces, how it is measured, and why it expands in the AI transition.</p><p><a href="https://technicalmarketing.org/what-is-technical-marketing">Read the full article</a></p>]]></content:encoded>
-    <enclosure url="https://technicalmarketing.org/audio/tm-org-what-is-technical-marketing-narrated.mp3" length="REPLACE_WITH_ACTUAL_BYTES" type="audio/mpeg"/>
-    <itunes:duration>10:51</itunes:duration>
-    <itunes:explicit>false</itunes:explicit>
-    <itunes:episode>1</itunes:episode>
-    <itunes:season>1</itunes:season>
-    <itunes:episodeType>full</itunes:episodeType>
-    <itunes:author>Chad Corriveau</itunes:author>
-    <itunes:image href="https://technicalmarketing.org/og-image.png"/>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+    <description>A complete guide to what technical marketing is: the function matrix, the calibration band, the evaluation lifecycle, and where the discipline sits relative to product marketing, updated for the agentic era.</description>
+    <content:encoded><![CDATA[<p>A complete guide to what technical marketing is: the function matrix, the calibration band, the evaluation lifecycle, and where the discipline sits relative to product marketing, updated for the agentic era.</p><p><a href="https://technicalmarketing.org/what-is-technical-marketing">Read the full article</a></p>]]></content:encoded>
+  </item>
+
+  <!-- Nice Job Hooking Me · A Conversation with Mike Moran -- published 2026-07-04, no update since (verified live on-page meta tags) -->
+  <item>
+    <title>Nice Job Hooking Me · A Conversation with Mike Moran</title>
+    <link>https://technicalmarketing.org/nice-job-hooking-me</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/nice-job-hooking-me</guid>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Mike Moran built the first commercial linguistic search engine in 1989. Thirteen patents. A technique Google called their secret sauce. A conversation about what does not change.</description>
+    <content:encoded><![CDATA[<p>Mike Moran built the first commercial linguistic search engine in 1989. Thirteen patents. A technique Google called their secret sauce. A conversation about what does not change.</p><p><a href="https://technicalmarketing.org/nice-job-hooking-me">Read the profile</a></p>]]></content:encoded>
+  </item>
+
+  <!-- Before the Name · Article II -- published 2026-05-25, last modified 2026-07-04 (verified live on-page meta tags -- this page returns bot-detection to plain HTTP fetches, confirmed reachable and current via real browser session) -->
+  <item>
+    <title>Before the Name: A History of Technical Marketing</title>
+    <link>https://technicalmarketing.org/before-the-name</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/before-the-name</guid>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Six decades of the work performed under twelve different titles, traced through primary sources from 1934 through 2024. The work was always older than the name.</description>
+    <content:encoded><![CDATA[<p>Six decades of the work performed under twelve different titles, traced through primary sources from 1934 through 2024. The work was always older than the name.</p><p><a href="https://technicalmarketing.org/before-the-name">Read Article II</a></p>]]></content:encoded>
+  </item>
+
+  <!-- The Technical Marketer · Article I -- published 2026-05-24, last modified 2026-06-12 (verified live on-page meta tags; this is the OLDEST last-modified date of the five, worth a look once the CF cache issue is sorted) -->
+  <item>
+    <title>The Technical Marketer · Article I of Volume 01</title>
+    <link>https://technicalmarketing.org/the-technical-marketer</link>
+    <guid isPermaLink="true">https://technicalmarketing.org/the-technical-marketer</guid>
+    <pubDate>Fri, 12 Jun 2026 00:00:00 GMT</pubDate>
+    <description>The canonical job description for senior Technical Marketing roles. Six workstreams, six measurable outcomes, three compensation bands, and four demo archetypes by company type.</description>
+    <content:encoded><![CDATA[<p>The canonical job description for senior Technical Marketing roles. Six workstreams, six measurable outcomes, three compensation bands, and four demo archetypes by company type.</p><p><a href="https://technicalmarketing.org/the-technical-marketer">Read Article I</a></p>]]></content:encoded>
   </item>
 
 </channel>
