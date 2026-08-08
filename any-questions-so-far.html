@@ -54,6 +54,7 @@ html[data-theme="dark"] .section-video__poster,
 html[data-theme="dark"] .inset-photo img,
 html[data-theme="dark"] .bio__photo { filter: brightness(0.88) contrast(1.04); }
 html[data-theme="dark"] .cover { background: #0F0D09; }
+html[data-theme="dark"] .ep-rail__dot { background: var(--paper-light); border-color: rgba(237,228,210,0.45); }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 ::selection { background: var(--yellow); color: var(--ink); }
 body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62; }
@@ -239,7 +240,7 @@ a.masthead__title:hover { color: var(--red); }
 .ep-rail__dot:hover { transform: scale(1.12); border-color: var(--red); }
 .ep-rail__dot span { font-family: var(--f-sans); font-size: 0.5625rem; font-weight: 700; color: var(--ink-40); transition: color 0.25s ease; }
 .ep-rail__dot.is-active { background: var(--red); border-color: var(--red); }
-.ep-rail__dot.is-active span { color: var(--paper); }
+.ep-rail__dot.is-active span { color: #EFE6C9; }
 .ep-rail__label { position: absolute; left: 38px; white-space: nowrap; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 0.375rem 0.625rem; opacity: 0; transform: translateX(-4px); pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
 .ep-rail__dot:hover .ep-rail__label { opacity: 1; transform: translateX(0); }
 @media (max-width: 1200px) { .ep-rail { display: none; } }
@@ -1064,7 +1065,7 @@ a.masthead__title:hover { color: var(--red); }
       if (!id || id.indexOf('YOUTUBE_ID') === 0) return; // placeholder not yet filled in — fall through to normal link
       e.preventDefault();
       var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id;
       iframe.title = link.getAttribute('aria-label') || 'Video';
       iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
       iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
