@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en" data-allow-dark>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1C1812">
+<title>Any Questions So Far? &middot; The TM.org Interview: Peter Cohan &middot; technicalmarketing.org</title>
+<meta name="description" content="Peter Cohan wrote Great Demo!, now in its third edition — the closest thing the demo discipline has to scripture. A candid, two-hour conversation on the Copley Plan, the reverse demo, the pitching-to-questioning ratio, and what AI cannot do that a good discovery call still can.">
+<meta name="author" content="technicalmarketing.org">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="canonical" href="https://technicalmarketing.org/any-questions-so-far">
+<link rel="alternate" hreflang="en" href="https://technicalmarketing.org/any-questions-so-far" />
+<link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/any-questions-so-far" />
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Technical Marketing">
+<meta property="og:title" content="Any Questions So Far? &middot; A Candid Conversation with Peter Cohan">
+<meta property="og:description" content="The man who wrote the book on demos, on the Copley Plan, the reverse demo, and why AI will never tell you to take the risk that made the room lean forward.">
+<meta property="og:url" content="https://technicalmarketing.org/any-questions-so-far">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://technicalmarketing.org/og-image-any-questions-so-far.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="article:published_time" content="2026-09-01T00:00:00+00:00">
+<meta property="article:section" content="Volume 02">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Any Questions So Far? &middot; A Candid Conversation with Peter Cohan">
+<meta name="twitter:description" content="The Copley Plan. The reverse demo. The pitching-to-questioning ratio. Sixty German chemists and an overhead projector. What does not change.">
+<meta name="twitter:site" content="@thethinkroot">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600;700&family=Roboto+Slab:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: #F5EED8;
+  --ink: #1C1812; --ink-60: #5C4E3C; --ink-40: #8B7D69;
+  --border: rgba(28,24,18,0.14); --border-strong: rgba(28,24,18,0.32);
+  --red: #A7352A; --yellow: #EACF82;
+  --f-display: 'Roboto Slab','Georgia',serif;
+  --f-serif: 'Fraunces','Georgia',serif;
+  --f-sans: 'Inter',sans-serif;
+  --measure: 64ch; --layout-max: 1180px; --reading-max: 760px;
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  --paper: #211D17; --paper-shade: #17140F; --paper-light: #29241C;
+  --ink: #EDE4D2; --ink-60: #B7AB92; --ink-40: #8B8067;
+  --border: rgba(237,228,210,0.14); --border-strong: rgba(237,228,210,0.28);
+  --red: #C4604F; --yellow: #EACF82;
+  color-scheme: dark;
+}
+html[data-theme="dark"] .video-feature__poster,
+html[data-theme="dark"] .section-video__poster,
+html[data-theme="dark"] .inset-photo img,
+html[data-theme="dark"] .bio__photo { filter: brightness(0.88) contrast(1.04); }
+html[data-theme="dark"] .cover { background: #0F0D09; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+::selection { background: var(--yellow); color: var(--ink); }
+body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+
+#progress-bar { position: fixed; top: 0; left: 0; height: 2px; background: var(--red); width: 0%; z-index: 200; transition: width 0.1s linear; }
+
+.layout { max-width: var(--layout-max); margin: 0 auto; padding: 0 1.75rem; }
+.skip-link { position: absolute; left: -9999px; top: 0; padding: 0.5rem 1rem; background: var(--ink); color: var(--paper); z-index: 200; font-family: var(--f-sans); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; }
+.skip-link:focus { left: 0; }
+
+/* Masthead */
+.masthead { border-top: 2px solid var(--ink); padding-top: 0.875rem; }
+.masthead__rule { border: none; border-top: 0.5px solid var(--border-strong); margin: 0; }
+.masthead__util { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding-bottom: 0.75rem; }
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border-strong); background: transparent; color: var(--ink-60); cursor: pointer; padding: 0; transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+.theme-toggle:hover { border-color: var(--red); color: var(--red); transform: scale(1.06); }
+.theme-toggle svg { width: 15px; height: 15px; display: block; }
+.theme-toggle .icon-sun { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+html[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+.masthead__util-edition { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.masthead__row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem 1.5rem; padding: 0.875rem 0; }
+.masthead__brand { display: flex; flex-direction: column; gap: 0.3rem; }
+.masthead__title { font-family: var(--f-display); font-weight: 700; font-size: clamp(1.375rem, 3.6vw, 2rem); letter-spacing: 0.03em; color: var(--ink); line-height: 1; }
+a.masthead__title:hover { color: var(--red); }
+.masthead__brand-meta { display: flex; align-items: baseline; gap: 0.875rem; flex-wrap: wrap; }
+.masthead__subtitle { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); }
+.masthead__url { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
+.masthead__nav { display: flex; justify-content: flex-end; align-items: center; flex-wrap: wrap; gap: 0.5rem 1.75rem; }
+.masthead__nav-link { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; min-height: 44px; padding: 0 0.375rem; display: inline-flex; align-items: center; border-bottom: 1px solid transparent; }
+.masthead__nav-link:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.masthead__nav-link[aria-current="page"] { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 720px) { .masthead__row { justify-content: flex-start; } .masthead__nav { justify-content: flex-start; width: 100%; gap: 0.375rem 1.25rem; } }
+@media (max-width: 600px) { .masthead__title { font-size: 1.375rem; } .masthead__nav-link { font-size: 0.625rem; letter-spacing: 0.14em; } }
+
+/* Noir cover — the "Playboy" title panel, in place of a photograph we don't have yet */
+.cover { background: #1C1812; color: #EFE6C9; padding: 4.5rem 0 4rem; position: relative; overflow: hidden; }
+.cover::before { content: ""; position: absolute; inset: 0; background-image: radial-gradient(circle at 1px 1px, rgba(239,230,201,0.055) 1px, transparent 1.2px); background-size: 15px 15px; pointer-events: none; }
+.cover__inner { position: relative; text-align: center; }
+.cover__kicker { font-family: var(--f-sans); font-weight: 700; font-size: 0.8125rem; letter-spacing: 0.34em; text-transform: uppercase; color: var(--yellow); margin-bottom: 1.5rem; }
+.cover__title { font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(2.75rem, 8vw, 5.75rem); line-height: 0.98; letter-spacing: -0.01em; color: #EFE6C9; margin: 0 auto 1.5rem; max-width: 16ch; }
+.cover__rule { width: 64px; height: 2px; background: var(--red); margin: 0 auto 1.5rem; }
+.cover__subtitle { font-family: var(--f-sans); font-size: 0.9375rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(239,230,201,0.72); font-weight: 500; margin-bottom: 0.375rem; }
+.cover__byline { font-family: var(--f-serif); font-size: 1.0625rem; color: rgba(239,230,201,0.58); font-style: italic; }
+@media (max-width: 600px) { .cover { padding: 3.25rem 0 2.75rem; } }
+
+/* Page head */
+.page-head { padding: 2.5rem 0 2rem; border-bottom: 0.5px solid var(--border); }
+.page-head__deck { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.55; color: var(--ink-60); max-width: 60ch; margin: 0 auto 1.5rem; text-align: center; }
+.page-head__meta { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; text-align: center; }
+.page-head__ornament { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+.page-head__diamond { width: 8px; height: 8px; background: var(--red); transform: rotate(45deg); display: inline-block; }
+
+/* Article body */
+.article-body { padding: 3rem 0 4rem; }
+
+/* Production note strip — stands in for the video feature until segments are cut */
+.prod-note { max-width: var(--reading-max); margin: 0 auto 3rem; padding: 1rem 1.25rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); font-family: var(--f-sans); font-size: 0.8125rem; line-height: 1.6; color: var(--ink-60); }
+.prod-note strong { color: var(--ink); font-weight: 600; }
+
+/* Intro with drop cap */
+.intro { max-width: var(--reading-max); margin: 0 auto 3rem; }
+.intro p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.25rem; }
+.intro p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 4.2em; float: left; line-height: 0.78; margin: 0.06em 0.45rem 0 0; color: var(--red); }
+.intro__pullquote { font-family: var(--f-serif); font-style: italic; font-size: clamp(1.375rem, 2.5vw, 1.75rem); line-height: 1.35; color: var(--ink); border-left: 3px solid var(--red); padding: 0.5rem 0 0.5rem 1.5rem; margin: 2rem 0; max-width: 44ch; }
+
+/* Section eyebrow */
+.section-eyebrow { max-width: var(--reading-max); margin: 0 auto 0.5rem; padding-top: 2.5rem; }
+.section-eyebrow__num { font-family: var(--f-display); font-weight: 900; font-size: 0.75rem; letter-spacing: 0.1em; color: var(--red); margin-right: 0.5rem; }
+.section-eyebrow__text { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; font-style: italic; }
+.section-rule { max-width: var(--reading-max); margin: 0 auto; border: none; border-top: 0.5px solid var(--border); }
+
+/* Q&A, Playboy-cadence: bold tracked speaker caps run into the line */
+.qa-block { max-width: calc(var(--reading-max) + 180px); margin: 0 auto; padding: 1.5rem 0; border-bottom: 0.5px solid var(--border); }
+.qa-exchange { display: grid; grid-template-columns: 160px 1fr; gap: 0 2.5rem; margin-bottom: 1.5rem; align-items: start; }
+.qa-label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); font-weight: 700; padding-top: 0.2rem; line-height: 1.4; }
+.qa-label--tm { color: var(--ink-60); font-weight: 600; }
+.qa-question { font-family: var(--f-sans); font-weight: 600; font-size: 0.9375rem; line-height: 1.5; color: var(--ink); letter-spacing: -0.01em; }
+.qa-answer p { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.7; color: var(--ink); margin-bottom: 1rem; }
+.qa-answer p:last-child { margin-bottom: 0; }
+.qa-answer em.line { font-style: italic; color: var(--ink-60); }
+
+/* Aside */
+.qa-aside { max-width: calc(var(--reading-max) + 180px); margin: 0 auto; padding: 1rem 0 1rem 160px; }
+.qa-aside__text { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.6; color: var(--red); padding: 0.75rem 1rem; border-left: 2px solid var(--red); background: rgba(167,53,42,0.04); }
+
+/* Pull-stat card — the ratios get their own visual weight */
+.stat-row { max-width: calc(var(--reading-max) + 180px); margin: 1.5rem auto 2rem; padding-left: 160px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.stat-card { background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 1.25rem 1.5rem; }
+.stat-card__num { font-family: var(--f-display); font-weight: 900; font-size: 2rem; color: var(--red); line-height: 1; margin-bottom: 0.375rem; }
+.stat-card__label { font-family: var(--f-sans); font-size: 0.75rem; color: var(--ink-60); line-height: 1.4; }
+@media (max-width: 700px) { .stat-row { padding-left: 0; grid-template-columns: 1fr; } }
+
+/* Afterword */
+.afterword { max-width: var(--reading-max); margin: 3rem auto 0; padding-top: 2.5rem; border-top: 0.5px solid var(--border-strong); }
+.afterword p { font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.125rem; }
+.afterword p strong { font-style: normal; font-weight: 700; font-family: var(--f-display); letter-spacing: 0.02em; }
+.afterword p a { color: var(--red); border-bottom: 1px solid transparent; }
+.afterword p a:hover { border-bottom-color: var(--red); }
+.afterword__rule { border: none; border-top: 2px solid var(--ink); margin: 2.5rem 0 2rem; }
+
+/* Bio */
+.bio { max-width: var(--reading-max); margin: 0 auto 3rem; display: grid; grid-template-columns: 72px 1fr; gap: 0 1.5rem; align-items: start; }
+.bio__avatar { width: 72px; height: 72px; border-radius: 50%; background: var(--ink); color: var(--paper); display: flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 700; font-size: 1.375rem; letter-spacing: 0.02em; border: 1px solid var(--border-strong); margin-top: 0.2rem; }
+.bio__photo { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; object-position: center top; border: 1px solid var(--border-strong); margin-top: 0.2rem; }
+
+/* Inset editorial photo, sized honestly to a lower-resolution source rather than stretched */
+.inset-photo { max-width: 420px; margin: 0 auto 2rem; }
+.inset-photo img { width: 100%; height: auto; display: block; filter: grayscale(100%) contrast(1.05); border: 1px solid var(--border-strong); }
+.inset-photo__caption { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.08em; color: var(--ink-40); text-align: center; margin-top: 0.5rem; }
+
+/* Video feature — single featured episode, Moran-page pattern, landscape aspect for these episodes */
+.video-feature { max-width: 640px; margin: 0 auto 3rem; text-align: center; }
+.video-feature__label { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1rem; }
+.video-feature__frame { position: relative; display: block; width: 100%; height: 0; padding-bottom: 56.25%; background: var(--ink); overflow: hidden; border: 0.5px solid var(--border-strong); }
+.video-feature__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.video-feature__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.video-feature__frame:hover .video-feature__poster { transform: scale(1.015); }
+.video-feature__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,24,18,0) 55%, rgba(28,24,18,0.5) 100%); pointer-events: none; }
+.video-feature__corner { position: absolute; width: 22px; height: 22px; border-color: rgba(239,230,201,0.75); pointer-events: none; }
+.video-feature__corner--tl { top: 14px; left: 14px; border-top: 1.5px solid; border-left: 1.5px solid; }
+.video-feature__corner--tr { top: 14px; right: 14px; border-top: 1.5px solid; border-right: 1.5px solid; }
+.video-feature__corner--bl { bottom: 14px; left: 14px; border-bottom: 1.5px solid; border-left: 1.5px solid; }
+.video-feature__corner--br { bottom: 14px; right: 14px; border-bottom: 1.5px solid; border-right: 1.5px solid; }
+.video-feature__play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.video-feature__dial { width: 5.5rem; height: 5.5rem; transition: transform 0.4s cubic-bezier(0.16,1,0.3,1); }
+.video-feature__frame:hover .video-feature__dial { transform: rotate(24deg); }
+.video-feature__dial circle.ring { fill: none; stroke: rgba(239,230,201,0.85); stroke-width: 0.75; }
+.video-feature__dial line.tick { stroke: rgba(239,230,201,0.6); stroke-width: 0.75; }
+.video-feature__dial line.tick--major { stroke: rgba(239,230,201,0.9); stroke-width: 1; }
+.video-feature__dial circle.hub { fill: rgba(28,24,18,0.32); stroke: rgba(239,230,201,0.85); stroke-width: 0.75; transition: fill 0.25s ease, stroke 0.25s ease; }
+.video-feature__frame:hover .video-feature__dial circle.hub { fill: var(--red); stroke: var(--red); }
+.video-feature__dial path.tri { fill: var(--paper); }
+.video-feature__watch { position: absolute; left: 1.25rem; bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; font-family: var(--f-sans); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--paper); opacity: 0; transform: translateY(4px); transition: opacity 0.25s ease, transform 0.25s ease; }
+.video-feature__frame:hover .video-feature__watch { opacity: 0.92; transform: translateY(0); }
+.video-feature__watch-diamond { width: 5px; height: 5px; background: var(--red); transform: rotate(45deg); display: inline-block; }
+.video-feature__plate { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-top: 0.875rem; padding-top: 0.75rem; border-top: 0.5px solid var(--border); }
+.video-feature__plate-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-60); }
+.video-feature__plate-tag { flex-shrink: 0; display: flex; align-items: center; gap: 0.5rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-40); white-space: nowrap; }
+.video-feature__plate-diamond { color: var(--red); font-size: 0.625rem; }
+
+.section-video { max-width: calc(var(--reading-max) + 180px); margin: 0 auto 1.5rem; }
+.section-video__frame { position: relative; display: block; width: 100%; max-width: 640px; height: 0; padding-bottom: 36%; background: var(--ink); overflow: hidden; border: 0.5px solid var(--border-strong); }
+.section-video__frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
+.section-video__poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s cubic-bezier(0.16,1,0.3,1); }
+.section-video__frame:hover .section-video__poster { transform: scale(1.02); }
+.section-video__scrim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(28,24,18,0) 58%, rgba(28,24,18,0.48) 100%); pointer-events: none; }
+.section-video__corner { position: absolute; width: 16px; height: 16px; border-color: rgba(239,230,201,0.7); pointer-events: none; }
+.section-video__corner--tl { top: 10px; left: 10px; border-top: 1.25px solid; border-left: 1.25px solid; }
+.section-video__corner--tr { top: 10px; right: 10px; border-top: 1.25px solid; border-right: 1.25px solid; }
+.section-video__corner--bl { bottom: 10px; left: 10px; border-bottom: 1.25px solid; border-left: 1.25px solid; }
+.section-video__corner--br { bottom: 10px; right: 10px; border-bottom: 1.25px solid; border-right: 1.25px solid; }
+.section-video__play { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.section-video__dial { width: 4rem; height: 4rem; transition: transform 0.4s cubic-bezier(0.16,1,0.3,1); }
+.section-video__frame:hover .section-video__dial { transform: rotate(24deg); }
+.section-video__dial circle.ring { fill: none; stroke: rgba(239,230,201,0.85); stroke-width: 0.75; }
+.section-video__dial line.tick { stroke: rgba(239,230,201,0.6); stroke-width: 0.75; }
+.section-video__dial line.tick--major { stroke: rgba(239,230,201,0.9); stroke-width: 1; }
+.section-video__dial circle.hub { fill: rgba(28,24,18,0.32); stroke: rgba(239,230,201,0.85); stroke-width: 0.75; transition: fill 0.25s ease, stroke 0.25s ease; }
+.section-video__frame:hover .section-video__dial circle.hub { fill: var(--red); stroke: var(--red); }
+.section-video__dial path.tri { fill: var(--paper); }
+.section-video__watch { position: absolute; left: 1rem; bottom: 0.75rem; display: flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.625rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--paper); opacity: 0; transform: translateY(4px); transition: opacity 0.25s ease, transform 0.25s ease; }
+.section-video__frame:hover .section-video__watch { opacity: 0.92; transform: translateY(0); }
+.section-video__watch-diamond { width: 4px; height: 4px; background: var(--red); transform: rotate(45deg); display: inline-block; }
+.section-video__plate { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; max-width: 640px; margin-top: 0.625rem; padding-top: 0.5rem; border-top: 0.5px solid var(--border); }
+.section-video__plate-caption { font-family: var(--f-serif); font-style: italic; font-size: 0.8125rem; line-height: 1.4; color: var(--ink-60); }
+.section-video__plate-tag { flex-shrink: 0; display: flex; align-items: center; gap: 0.4rem; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-40); white-space: nowrap; }
+.section-video__callouts { margin: 0.5rem 0 0; padding: 0; font-family: var(--f-serif); font-style: italic; font-size: 0.8125rem; line-height: 1.6; color: var(--ink-40); max-width: 640px; list-style: none; }
+.section-video__callouts li { display: inline; }
+.section-video__callouts li:not(:last-child)::after { content: "\00a0\00b7\00a0"; color: var(--red); font-style: normal; }
+.video-feature__callouts { margin: 0.5rem auto 0; padding: 0; font-family: var(--f-serif); font-style: italic; font-size: 0.8125rem; line-height: 1.6; color: var(--ink-40); max-width: 480px; text-align: center; list-style: none; }
+.video-feature__callouts li { display: inline; }
+.video-feature__callouts li:not(:last-child)::after { content: "\00a0\00b7\00a0"; color: var(--red); font-style: normal; }
+.section-video__plate-diamond { color: var(--red); font-size: 0.5625rem; }
+
+/* Episode progress rail — desktop only, tracks scroll position against the 7 sections */
+.ep-rail { position: fixed; left: 28px; top: 50%; transform: translateY(-50%); z-index: 150; display: flex; flex-direction: column; align-items: center; gap: 14px; opacity: 0; pointer-events: none; transition: opacity 0.4s ease; }
+.ep-rail.is-visible { opacity: 1; pointer-events: auto; }
+.ep-rail__line { position: absolute; top: 6px; bottom: 6px; width: 1px; background: var(--border-strong); z-index: -1; }
+.ep-rail__dot { width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--paper); border: 1px solid var(--border-strong); cursor: pointer; text-decoration: none; transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease; }
+.ep-rail__dot:hover { transform: scale(1.12); border-color: var(--red); }
+.ep-rail__dot span { font-family: var(--f-sans); font-size: 0.5625rem; font-weight: 700; color: var(--ink-40); transition: color 0.25s ease; }
+.ep-rail__dot.is-active { background: var(--red); border-color: var(--red); }
+.ep-rail__dot.is-active span { color: var(--paper); }
+.ep-rail__label { position: absolute; left: 38px; white-space: nowrap; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); background: var(--paper-light); border: 0.5px solid var(--border-strong); padding: 0.375rem 0.625rem; opacity: 0; transform: translateX(-4px); pointer-events: none; transition: opacity 0.2s ease, transform 0.2s ease; }
+.ep-rail__dot:hover .ep-rail__label { opacity: 1; transform: translateX(0); }
+@media (max-width: 1200px) { .ep-rail { display: none; } }
+
+/* Scroll-reveal for section entrances and asides */
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+.reveal.is-shown { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+.video-feature__caption { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; line-height: 1.5; color: var(--ink-60); margin-top: 1.125rem; padding-top: 0.875rem; border-top: 0.5px solid var(--border); }
+.section-video { max-width: calc(var(--reading-max) + 180px); margin: 0 auto 1.5rem; }
+.section-video__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.5rem; }
+.bio__name { font-family: var(--f-display); font-weight: 700; font-size: 0.875rem; letter-spacing: 0.06em; color: var(--ink); margin-bottom: 0.375rem; }
+.bio__text { font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.58; color: var(--ink-60); margin-bottom: 0.5rem; }
+.bio__links { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
+.bio__links a { color: var(--red); border-bottom: 1px solid transparent; }
+.bio__links a:hover { border-bottom-color: var(--red); }
+
+/* Notes */
+.notes { max-width: var(--reading-max); margin: 0 auto 3rem; border-top: 0.5px solid var(--border); padding-top: 1.75rem; }
+.notes__label { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 1rem; }
+.notes ol { list-style: none; counter-reset: notes; }
+.notes ol li { counter-increment: notes; font-family: var(--f-serif); font-size: 0.875rem; line-height: 1.6; color: var(--ink-60); margin-bottom: 0.875rem; padding-left: 1.75rem; position: relative; }
+.notes ol li::before { content: counter(notes) "."; position: absolute; left: 0; font-family: var(--f-sans); font-weight: 600; font-size: 0.75rem; color: var(--red); top: 0.1rem; }
+.notes ol li.flag { color: var(--red); font-style: italic; }
+.notes ol li.flag::before { content: "\26A0"; font-size: 0.8rem; }
+.editorial-flag { color: var(--red); font-style: italic; font-family: var(--f-sans); font-size: 0.85em; }
+
+@media (max-width: 700px) {
+  .qa-exchange { grid-template-columns: 1fr; gap: 0.375rem 0; }
+  .qa-label { padding-top: 0; margin-bottom: 0.25rem; }
+  .qa-aside { padding-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) { #progress-bar { transition: none; } }
+
+/* Footer */
+.site-footer { background: #1C1812; padding: 2.5rem 0 2rem; margin-top: 3rem; }
+.site-footer__row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.75rem 1.5rem; padding-bottom: 1.125rem; border-bottom: 0.5px solid rgba(239,230,201,0.16); }
+.site-footer__issn { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(239,230,201,0.62); }
+.site-footer__nav { display: flex; flex-wrap: wrap; gap: 0 0.25rem; padding-top: 1.125rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
+.site-footer__nav-link { color: rgba(239,230,201,0.72); min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 0 0.75rem; }
+.site-footer__nav-link:hover { color: var(--yellow); }
+
+/* Folio */
+.folio { padding: 4rem 0 0; }
+.folio__outer { border: 1.5px solid var(--border-strong); padding: 0.75rem; background: var(--paper-shade); background-image: radial-gradient(circle at 50% 50%, rgba(28,24,18,0.07) 1px, transparent 1.2px); background-size: 13px 13px; }
+.folio__inner { border: 0.5px solid var(--border); padding: 2.25rem 2.5rem 1.75rem; }
+.folio__head { display: flex; align-items: baseline; gap: 0.875rem; flex-wrap: wrap; padding-bottom: 1.5rem; }
+.folio__title { font-family: var(--f-serif); font-style: italic; font-weight: 600; font-size: clamp(1.5rem, 3.2vw, 2rem); color: var(--ink); }
+.folio__dot { color: var(--red); font-size: 0.8rem; }
+.folio__printing { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-60); font-weight: 500; }
+.folio__divider { display: flex; align-items: center; gap: 0.875rem; }
+.folio__divider span:not(.folio__diamond) { flex: 1; height: 0.5px; background: var(--border); display: block; }
+.folio__diamond { color: var(--red); font-size: 0.6875rem; }
+.folio__row { display: grid; grid-template-columns: 120px 1fr; gap: 0.5rem 2rem; padding: 1.25rem 0; }
+.folio__label { font-family: var(--f-sans); font-weight: 600; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); padding-top: 0.2rem; }
+.folio__value { margin: 0; font-family: var(--f-serif); font-size: 1rem; line-height: 1.65; color: var(--ink); max-width: 68ch; }
+.folio__value a { border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; }
+.folio__value a:hover { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 640px) { .folio__inner { padding: 1.5rem 1.25rem 1.25rem; } .folio__row { grid-template-columns: 1fr; gap: 0.35rem; padding: 1rem 0; } .folio__label { padding-top: 0; } }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},{"@type":"Article","@id":"https://technicalmarketing.org/any-questions-so-far#article","headline":"Any Questions So Far?: A Candid Conversation with Peter Cohan","description":"Peter Cohan, author of Great Demo! and Doing Discovery, on the Copley Plan, the reverse demo, the pitching-to-questioning ratio, and what AI still cannot do that a good discovery call can.","author":{"@type":"Person","name":"Peter Cohan","sameAs":"https://greatdemo.com"},"editor":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau"},"publisher":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"datePublished":"2026-09-01","dateModified":"2026-09-01","url":"https://technicalmarketing.org/any-questions-so-far","mainEntityOfPage":"https://technicalmarketing.org/any-questions-so-far","about":[{"@type":"Person","name":"Peter Cohan","jobTitle":"Author, Great Demo! and Doing Discovery"},{"@type":"Concept","name":"The Copley Plan","description":"A field-driven skunkworks method for building the product the customer already needed, using pre-sales and customer success staff embedded directly on the build team."},{"@type":"Concept","name":"Pitching-to-questioning ratio","description":"A metric derived from AI call summaries that scores discovery calls by the ratio of question-oriented to pitch-oriented conversational elements."}],"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Volume 02","item":"https://technicalmarketing.org/volume-02"},{"@type":"ListItem","position":3,"name":"Any Questions So Far?","item":"https://technicalmarketing.org/any-questions-so-far"}]}]}</script>
+<script>
+(function() {
+  'use strict';
+  try {
+    var saved = localStorage.getItem('tm-theme');
+    var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  } catch (e) {}
+}());
+</script>
+</head>
+
+<body>
+<div id="progress-bar" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<nav class="ep-rail" id="ep-rail" aria-label="Jump to episode">
+  <span class="ep-rail__line" aria-hidden="true"></span>
+  <a class="ep-rail__dot" href="#ep-1" data-ep="1"><span>I</span><span class="ep-rail__label">1. The Warm Open</span></a>
+  <a class="ep-rail__dot" href="#ep-2" data-ep="2"><span>II</span><span class="ep-rail__label">2. The Copley Plan</span></a>
+  <a class="ep-rail__dot" href="#ep-3" data-ep="3"><span>III</span><span class="ep-rail__label">3. The Ratio</span></a>
+  <a class="ep-rail__dot" href="#ep-4" data-ep="4"><span>IV</span><span class="ep-rail__label">4. Research vs. Discovery</span></a>
+  <a class="ep-rail__dot" href="#ep-5" data-ep="5"><span>V</span><span class="ep-rail__label">5. Cultural Context</span></a>
+  <a class="ep-rail__dot" href="#ep-6" data-ep="6"><span>VI</span><span class="ep-rail__label">6. Where It Lives</span></a>
+  <a class="ep-rail__dot" href="#ep-7" data-ep="7"><span>VII</span><span class="ep-rail__label">7. To Close</span></a>
+</nav>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead layout" role="banner">
+  <div class="masthead__util">
+    <span class="masthead__util-edition">Volume 02 &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Fall Issue</span>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.4A9 9 0 1 1 11.6 3a7 7 0 0 0 9.4 9.4Z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
+    </button>
+  </div>
+  <hr class="masthead__rule">
+  <div class="masthead__row">
+    <div class="masthead__brand">
+      <a href="/" class="masthead__title">TECHNICAL MARKETING</a>
+      <div class="masthead__brand-meta">
+        <span class="masthead__subtitle">A field manual for the discipline.</span>
+        <span class="masthead__url">technicalmarketing.org</span>
+      </div>
+    </div>
+    <nav class="masthead__nav" aria-label="Primary">
+      <a href="/reference" class="masthead__nav-link">Reference</a>
+      <a href="/volume-02" class="masthead__nav-link" aria-current="page">Volume 02</a>
+      <a href="/tools" class="masthead__nav-link">Tools</a>
+      <a href="/archive" class="masthead__nav-link">Archive</a>
+      <a href="/about" class="masthead__nav-link">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="cover">
+  <div class="layout cover__inner">
+    <p class="cover__kicker">The TM.org Interview</p>
+    <h1 class="cover__title">Any Questions So Far?</h1>
+    <div class="cover__rule"></div>
+    <p class="cover__subtitle">A Candid Conversation With Peter Cohan</p>
+    <p class="cover__byline">On demos, discovery, and the discipline AI still hasn&rsquo;t learned to fake. Conducted by Chad Corriveau.</p>
+  </div>
+</div>
+
+<section class="page-head layout">
+  <p class="page-head__deck">Peter Cohan wrote <em>Great Demo!</em>, now in its third edition. It is the closest thing this discipline has had to scripture in over twenty years. He started as a bench chemist, not a marketer, and it still shows in how he thinks. Two hours, seven movements, one throughline: the technology keeps changing what&rsquo;s possible. It has never once changed what works.</p>
+  <p class="page-head__meta">Conducted and edited by Chad Corriveau</p>
+  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+</section>
+
+<div class="article-body">
+<div class="layout">
+
+<div class="video-feature">
+  <p class="video-feature__label">Video &middot; Episode 1 of 7 &middot; Any Questions So Far?</p>
+  <a class="video-feature__frame" id="video-feature-frame" href="https://youtube.com/watch?v=4-f5vHcaKoA" target="_blank" rel="external noopener" aria-label="Play: Episode 1, The Warm Open, with Peter Cohan">
+    <img class="video-feature__poster" src="Images/plate-ep1-warm-open.jpg" alt="" loading="eager" width="1280" height="720">
+    <span class="video-feature__scrim" aria-hidden="true"></span>
+    <span class="video-feature__corner video-feature__corner--tl" aria-hidden="true"></span>
+    <span class="video-feature__corner video-feature__corner--tr" aria-hidden="true"></span>
+    <span class="video-feature__corner video-feature__corner--bl" aria-hidden="true"></span>
+    <span class="video-feature__corner video-feature__corner--br" aria-hidden="true"></span>
+    <span class="video-feature__play" aria-hidden="true"><svg class="video-feature__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="video-feature__watch" aria-hidden="true"><span class="video-feature__watch-diamond"></span>Watch episode 1</span>
+  </a>
+  <div class="video-feature__plate">
+  <p class="video-feature__plate-caption">Episode 1: The Warm Open. Six more follow, one per section below.</p>
+  <span class="video-feature__plate-tag"><span class="video-feature__plate-diamond">&#9670;</span>Plate I &middot; Film</span>
+</div>
+<ul class="video-feature__callouts"><li>Outcomes over features is not new</li><li>The gap between current and best practices</li><li>AI amplifies the need for better human skills</li></ul>
+</div>
+<div id="video-lang-debug" style="display:none"></div>
+
+<div class="prod-note"><strong>Production note:</strong> This conversation ran just under two hours and was cut into a seven-part companion video series, one episode per question below.</div>
+
+<div class="inset-photo">
+  <img src="Images/inset-peter-cohan-presenting.png" alt="Peter Cohan presenting to an audience" loading="lazy">
+  <p class="inset-photo__caption">Peter Cohan presenting Great Demo! &middot; courtesy greatdemo.com</p>
+</div>
+
+<div class="intro">
+<p>Peter Cohan has been amused, amazed, and saddened by the same LinkedIn post for years. It says, in one costume or another, that selling is about outcomes, not features. Someone posts it as though they&rsquo;ve split the atom. Cohan has been watching people rediscover it since before LinkedIn existed. By his own reckoning, Archimedes was fielding the same objection about his screw pump. <em>What&rsquo;s the difference between this and a bunch of buckets?</em> The outcome. That&rsquo;s always been the outcome.</p>
+<p>He is not being cute about this. Cohan is a former bench chemist who backed into technical sales, and it shows in how he still processes a room: as data, as pattern, as the outlier that doesn&rsquo;t fit the curve and therefore deserves more attention, not less. He wrote <em>Great Demo!</em>, now in its third edition, which is as close as this discipline has come to a settled text. He followed it with <em>Doing Discovery</em> and a book of field stories called <em>Suspending Disbelief</em> &mdash; nearly all of them true, he&rsquo;ll tell you, save one.</p>
+<p>What follows is not really a conversation about how to run a better demo. Cohan answered that question decades ago, and his answer hasn&rsquo;t changed nearly as much as the tools around it have. This is three conversations wearing one coat. The first is about how a discipline gets built inside a company before anyone gives it a name: the Copley Plan, hatched over gin and tonics at the Marriott Copley in Boston, a story that ends with sixty German chemists, an overhead projector, and one man saying, in accented English, <em>you must now stop and show us how you did this</em>. The second is a metric being invented, on the record, in something close to real time &mdash; a way of scoring a discovery call in about ninety seconds using nothing but the noun-verb pattern in an AI-generated summary. The third is about what research can never do, no matter how good the machine gets, and why that gap finally has a name.</p>
+<p>Somewhere in the middle there&rsquo;s a story about a good morning that cost more than it should have.</p>
+<div class="intro__pullquote">&ldquo;Never stop learning.&rdquo;</div>
+<p>That&rsquo;s Cohan&rsquo;s own line, and his stated personal tagline. It closes the conversation below; it opens this one on purpose. What follows is edited for length and sequence from a recorded conversation that ran nearly two hours. The stories are his. So is the pizza analogy.</p>
+</div>
+
+<!-- Section 1 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-1"><span class="section-eyebrow__num">I.</span><span class="section-eyebrow__text">The warm open: on where his attention actually is, and why the gap keeps getting wider even as the information gets easier to find.</span></div>
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Where is your attention right now, and how did you get here?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>How I got here this morning was easy. Downstairs, left turn into the office. Where my attention actually is: I&rsquo;m continually concerned about the ongoing gaps in the knowledge and practice of customer-facing skills. Marketing people who touch customers, sales, pre-sales, customer success, implementation: the whole sales-engine side of the house. By gap, I mean the distance between the level of skill that&rsquo;s actually in place and what we know is possible.</p>
+      <p>I am constantly amused, amazed, and saddened by people who rediscover simple truths and post them on LinkedIn like it&rsquo;s an incredible new thing. &ldquo;It&rsquo;s all about outcomes, not features.&rdquo; Oh my god, my head just exploded. People are still discovering that. I believe that&rsquo;s been true since Archimedes first built his screw pump and set up a business selling it, and someone asked him what the difference was between his invention and a bunch of buckets. The difference is the outcome. A constant stream of water to your fields, instead of the old serial process of hauling leather buckets up a hill like Sisyphus.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Does AI widen that gap or shrink it?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>It widens it, because there&rsquo;s so much more information so much more easily available. AI can reduce days of research into seconds. Genuinely fabulous. But that means the skills built on top of the technology need to stay aligned with it, and on top of it. Ten years ago you needed to be conversant enough with the internet to draft a good query. That skill hasn&rsquo;t gone away. It&rsquo;s been amplified. Drafting the prompt is the new drafting the query. The gap has always been growing. It&rsquo;s just growing faster now.</p>
+      <p>I get a handful of LinkedIn messages every day from people who&rsquo;ve obviously used AI to scan my site, my background, my posts, and then draft an SDR-style message: &ldquo;Given your experience with blah, are you finding that blah is changing? Open to a fifteen-minute call?&rdquo; Delete. The research got faster. It didn&rsquo;t get better.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">Faster research and better discovery are not the same investment, and Cohan has spent thirty years watching people fund the first while assuming they&rsquo;ve bought the second.</p></div>
+<div class="qa-block" style="border-top:none;padding-top:0;">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">So what does &ldquo;expanding the envelope&rdquo; actually mean to you, if it&rsquo;s not another rediscovery post?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>I&rsquo;d frame it as exploring both existing and new dimensions, rather than expanding an envelope. I wrote a series of posts mapping discovery and demos across the technology adoption curve, and the short version is: innovators don&rsquo;t need discovery. What they want is the tech version of an enema, show me everything. Early adopters want to know what advantage they get from being first, so discovery for them is really about that. And the majority, the biggest swath of any market &mdash; that&rsquo;s where books like <em>Doing Discovery</em> earn their keep, because those buyers actually want to be discovered.</p>
+      <p>Once an earnest buyer clears the activation-energy barrier (that&rsquo;s a chemistry term) of not wanting to talk to a sales human, they want to be diagnosed properly. Think of someone who&rsquo;s been sick a while and finally goes to the doctor. Once they&rsquo;re in the chair, they want every test run. They want to be asked things that might not even be relevant, because that&rsquo;s what makes the diagnosis accurate. That&rsquo;s what&rsquo;s got my attention. Not another &ldquo;it&rsquo;s about outcomes&rdquo; post. Calm down and go explore a new dimension.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 2 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-2"><span class="section-eyebrow__num">II.</span><span class="section-eyebrow__text">The Copley Plan: gin and tonics at the Marriott, a skunkworks nobody was told about, and sixty German chemists in a room with an overhead projector.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep2" href="https://youtube.com/watch?v=OqPxmwjWNJs" target="_blank" rel="external noopener" aria-label="Play: Episode 2, The Copley Plan, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep2-copley-plan.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 2</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 2 of 7 &middot; The Copley Plan</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate II &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>A skunkworks nobody was told about</li><li>Sixty German chemists, one overhead projector</li><li>Get the people who already have the knowledge to drive the process</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Tell it fresh. Start to finish.</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>This happened last century. I was based in Basel, Switzerland, with a job title of senior corporate consultant that actually meant I was running sales for Roche after we&rsquo;d let the previous salesperson go. A wonderfully hybrid role. Dave Dorset ran technical marketing for our flagship product, and the two of us had been talking for a while about how slow it was to get anything implemented, and how hard it was to move features up the priority list. We were at an American Chemical Society meeting in Boston, wicked town, two days on the booth, exhausted, and we went over to the Marriott Copley for gin and tonics and started working the problem.</p>
+      <p>What came out of that became the Copley Plan. Rule one: subvert the process. Dave quietly built a skunkworks, a couple of people at a time, cycled in from the field so nobody noticed too much, and had them join a mini product team under his management. The insight underneath it is simple: there are two groups of people who truly know how customers use your software: pre-sales and customer success. So we pulled those people onto the team. Key people from each major region, working tightly with developers, ideating prototypes and rolling them out. That became ISIS for Excel, built at MDL Information Systems, which let customers pull chemical structures and data out of corporate databases straight into Excel &mdash; exactly the workflow customers and prospects were already asking for, except it was sitting two years out on the roadmap.</p>
+      <p>The feedback loop was days, not months. The same pre-sales and customer-success people who built it took the beta out to customers, got real reactions, tuned it, finalized the release, and then went back into the field and taught the rest of the team how to demo it. The whole thing took months instead of years, and it became the single most successful application ever built on top of our flagship product. The essence is one sentence: get the people who already have the knowledge to help drive the process.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">Strip the chemistry and the decade, and the Copley Plan is a description of what happens whenever pre-sales gets pulled inside the build instead of handed the output. Cohan has spent the rest of his career watching companies rediscover this the hard way, one roadmap slip at a time.</p></div>
+<div class="qa-block" style="border-top:none;padding-top:0;">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">You mentioned a story about sixty German chemists that you say is where the Great Demo methodology was actually born. What happened?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>We&rsquo;d released the Excel capability and I was one of the people rolling it out, still living in Basel. We ran these sessions called <em lang="de">Sprechstunde</em>, literally &ldquo;doctor&rsquo;s hours,&rdquo; where one of us would go down to Frankfurt and meet with a room of chemists to show what was new. The traditional approach, here&rsquo;s how you set this up, here&rsquo;s how you do that, was getting yawns. On the train down, I put together three example outputs of increasing complexity. We were still using overhead projectors then. I walked into a room of sixty German medicinal chemists, said good morning, and put the first transparency down: a simple spreadsheet with structures and test results. I asked, &ldquo;How many of you are looking to produce something like this?&rdquo; You could hear people lean forward in their chairs.</p>
+      <p>A guy near the front started to raise his hand. I said, essentially, hang on, and pulled the sheet, put up the second one, a level up in complexity. People started saying, &ldquo;Whoa, wait a moment.&rdquo; His hand went up higher. I pulled that one too and put up the third, exactly the polished, presentation-ready output they&rsquo;d actually want to put in front of their own management. That&rsquo;s when he said it: &ldquo;You must now stop and show us how you did this.&rdquo;</p>
+      <p>By the end of that one-hour meeting, with time to spare, we had fifty-eight of sixty German chemists actively using an application that had been shelfware. Two laggards held out. <em lang="de">Nicht gut.</em> The moral has two parts. The Copley Plan produced the product they actually wanted. The Great Demo approach is what got them to use it.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">Cohan&rsquo;s footnote on his own bravery: &ldquo;Don&rsquo;t forget fear and terror. I was trying something very new in front of a group that&rsquo;s traditionally fairly conservative.&rdquo; He&rsquo;ll return to that line later, about what AI still can&rsquo;t tell you to do.</p></div>
+
+<!-- Section 3 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-3"><span class="section-eyebrow__num">III.</span><span class="section-eyebrow__text">The ratio: how a noun-verb pattern in a Gong summary turned into a way to score a discovery call in ninety seconds.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep3" href="https://youtube.com/watch?v=qeZIFX1sLqo" target="_blank" rel="external noopener" aria-label="Play: Episode 3, The Ratio, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep3-ratio.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 3</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 3 of 7 &middot; The Ratio</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate III &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>Vendor asked vs. vendor described</li><li>Talk-to-listen: 50% or less</li><li>Visionary engineering: the biframulator</li><li>The reverse demo</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">How did the ratio travel from a live room to a published number?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>I was reviewing a series of discovery calls for a customer, reading through Gong&rsquo;s AI-generated summaries. I noticed something simple: the noun-verb combination at the start of each summary paragraph told me instantly whether I was looking at discovery or pitching. &ldquo;Vendor asked&rdquo; or &ldquo;vendor inquired&rdquo;: that&rsquo;s discovery happening. Far too often, though, it was &ldquo;vendor described,&rdquo; &ldquo;vendor presented,&rdquo; &ldquo;vendor told,&rdquo; &ldquo;vendor said.&rdquo; When I dug into those calls more deeply, the pattern held. Just scanning the summaries gave me a fast, reliable read on whether a call was actually discovery or dressed-up pitching.</p>
+      <p>Too many so-called discovery calls break down into a few minutes of relationship-building (someone comments on a photo, they chat for three minutes) followed by maybe eight minutes of real discovery focused on confirming the prospect&rsquo;s pain and checking the tech stack, and then fifteen minutes of straight pitch. That&rsquo;s discovery level one out of seven. Wholly insufficient. If you were a patient and your doctor did that, you&rsquo;d call it malpractice.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">What ratios should someone actually be looking at, at a glance?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Two. First, talk-to-listen. Most tools report it now. For discovery, the vendor should be at or below fifty percent. Get to forty or lower and you&rsquo;re doing terrific. Sadly, vendor talk-to-listen is rarely under fifty percent on discovery calls, and it&rsquo;s worse on demos. If the vendor is talking for more than three or four minutes at a stretch, it&rsquo;s probably not a good discovery call. If the prospect is talking for six, seven, eight minutes, it probably is.</p>
+      <p>Second is pitching-to-questioning, which you can pull straight out of the noun-verb pattern in the summaries. In a good discovery call, you want pitching down around twenty to thirty percent. And there are ways to pitch without pitching. That&rsquo;s where visionary engineering comes in.</p>
+    </div>
+  </div>
+</div>
+<div class="stat-row">
+  <div class="stat-card"><div class="stat-card__num">&le;50%</div><div class="stat-card__label">Vendor talk-to-listen ratio on a healthy discovery call. Below 40% is &ldquo;terrific,&rdquo; in Cohan&rsquo;s words.</div></div>
+  <div class="stat-card"><div class="stat-card__num">20&ndash;30%</div><div class="stat-card__label">Target share of pitch-oriented content versus question-oriented content, scored from AI call summaries.</div></div>
+</div>
+<div class="qa-block" style="border-top:none;padding-top:0;">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Explain visionary engineering.</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Prospects don&rsquo;t know what they don&rsquo;t know, because no vendor publishes everything. Is there a SaaS company anywhere that doesn&rsquo;t use the phrase &ldquo;secret sauce&rdquo;? When you realize the prospect has no idea about a capability that matters to them, your job is to introduce it as a biased question instead of a pitch. Not &ldquo;our software has the biframulator and it&rsquo;s awesome&rdquo; &mdash; which is what ninety-nine percent of reps would say. Instead: &ldquo;Many of our existing customers in situations very similar to yours have found that a capability we call the biframulator accelerated their process by about fifty percent and cut downtime by a quarter. Is that something that might be of interest?&rdquo; There&rsquo;s no such capability, by the way &mdash; I made it up for the example. But you&rsquo;ve now taken a feature and turned it into something the prospect asked to see in their own demo.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">This piece borrows its title from something you say in this exact conversation &mdash; and it&rsquo;s not a compliment to the phrase. Explain.</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Right, &ldquo;any questions so far&rdquo; is the perfect example of what not to do. It&rsquo;s another one of those things people rediscover every few days on LinkedIn: &ldquo;Did you know there&rsquo;s something better than asking any questions so far?&rdquo; Yes. There have been thousands of posts on exactly this topic, twenty or twenty-five better alternatives, easily. You present a capability, you do a summary, and instead of &ldquo;any questions,&rdquo; you segue with something like &ldquo;comments, feedback, observations?&rdquo; Then you pause and actually let them say something. What you want to hear is &ldquo;oh wow, this is a lot better than what we&rsquo;re doing today,&rdquo; not silence answered by silence.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">So: the title of this piece is Cohan&rsquo;s own textbook example of the question not to ask. Sitting with that on purpose felt more honest than pretending otherwise.</p></div>
+<div class="qa-block" style="border-top:none;padding-top:0;">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">And the reverse demo?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Anytime there&rsquo;s an incumbent system, built in-house or a competitor&rsquo;s product, ask before you demo: &ldquo;Can you show me how you&rsquo;re using your current system?&rdquo; It&rsquo;s one of the best discovery methods there is. I watched it happen unprompted on one of the calls I was reviewing. The prospect just said, &ldquo;let me show you,&rdquo; and shared their screen. You learn three things from a reverse demo. What they like: don&rsquo;t trash that in your pitch. What they hate: the pain points, which is the obvious payoff. And a third thing people miss: what they&rsquo;re unaware of in your competitor&rsquo;s offering. Frequently the vendor knows the competing software better than the prospect does, because the prospect just executes their workflow every Monday morning. They don&rsquo;t go exploring the menus.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 4 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-4"><span class="section-eyebrow__num">IV.</span><span class="section-eyebrow__text">Research versus discovery: the curse of knowledge, the FAA&rsquo;s weather briefing, and why uniqueness is the question that opens people up.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep4" href="https://youtube.com/watch?v=0rSd3Uhr9u8" target="_blank" rel="external noopener" aria-label="Play: Episode 4, Research vs. Discovery, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep4-research-discovery.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 4</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 4 of 7 &middot; Research vs. Discovery</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate IV &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>Research is before. Discovery is the conversation.</li><li>The curse of knowledge</li><li>Curiosity means chasing the outlier</li><li>What makes you unique?</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">If the machine does the research, what is discovery for?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>I keep it simple. Research is everything done before, and sometimes after, a face-to-face or voice-to-voice conversation: gathering publicly available information. That part hasn&rsquo;t changed in terms of what needs to be done, only in how fast you can do it. I&rsquo;m a private pilot, and the FAA requirement before a flight is to review &ldquo;all available information&rdquo; about weather &mdash; which is fundamentally impossible, because it never ends and it&rsquo;s multi-layered. What they really mean is: do your due diligence, go as far as the tools allow, until you have a rich understanding before you start the engine. Same principle in sales. AI lets you do that scan in a fraction of the time. But you still have to read it, decide what&rsquo;s important, and decide what&rsquo;s actually true. That&rsquo;s the first major difference: research is what happens before the conversation. Discovery is the conversation.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">You add two more elements to discovery beyond that: curiosity and uniqueness. Start with curiosity.</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Think about plotting data points on a graph. You get a third point that looks linear, and then a fourth one way off the curve. Most AI tools will throw that outlier out because it doesn&rsquo;t fit the pattern. I want to know what caused it, because outliers often represent the most interesting performance in the room. In chemistry, an outlier means something changed: a catalyst, a solvent system. In discovery, it&rsquo;s the same instinct: anytime you hear something different from what you expected, explore it and emote genuinely. If someone tells me their sales-to-presales ratio is one-to-one, that&rsquo;s unusual &mdash; most shops run closer to one presales person supporting three, four, ten reps. &ldquo;Tell me more&rdquo; is the whole move.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">And uniqueness?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Every person and every organization believes they&rsquo;re unique. And most, honestly, aren&rsquo;t. That&rsquo;s the definition of a market. If everyone were truly different, there&rsquo;d be no such thing as a market, and you&rsquo;d have a different kind of job. But the <em>perceived</em> uniqueness is the useful part. It tells you how someone sees themselves, which tells you how they&rsquo;ll buy, how they&rsquo;ll implement, whether they&rsquo;ll succeed with what they buy.</p>
+      <p>Let me actually do this to you instead of just describing it. What prompted you to pursue this pathway? What makes technicalmarketing.org unique?</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <div class="qa-answer">
+      <p>My &ldquo;aha&rdquo; moment came out of the same instinct as the Copley Plan, honestly. I had a mentor, George, who came over from Cisco. A true technical marketer. The company I was at, ServiceNow, didn&rsquo;t have a definition for the role this early on. I was reading your book back in 2015, 2016, and they were still trying to define what technical marketing even was. It wasn&rsquo;t until around 2018, three years later, that the company formalized it.</p>
+      <p>What I thought was strong was the history with Cisco. They created the technical marketer. They put the T in technical, and grounded the truth around it. That&rsquo;s what drove me: truth with a capital T. What makes a good demo, what makes a good technical marketer, and how that kept shifting even before AI accelerated it. That&rsquo;s what brought me to actually registering technicalmarketing.org. I built something like a coherence score for demos, but pivoted past just the sales motion, into keynotes, analyst briefings, anywhere a technical claim has to hold up in front of an audience. George coming over from Cisco is what grounded it for me, the same way you&rsquo;re asking me to ground it right now.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Now freeze here, and rewind back to where you started answering my question about uniqueness. Because you just shared a ton, and that&rsquo;s one of the important essences of doing discovery effectively: when you uncover something that&rsquo;s a true uniqueness, or even a perceived one, you explore it, because it tells you about the personality of the individual or the organization. How did it feel to give me that answer?</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <div class="qa-answer">
+      <p>It was the truth, so it felt good to explain it: where it came from, and hopefully where it can still go.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer"><p>I&rsquo;ll give you a story that makes the same point from the other direction. Years ago, in Research Triangle Park with a rep named Carol, we were meeting with medicinal chemists. Carol asked them to go to the whiteboard and map their own workflow, something we already knew cold. I looked at her sharply. Afterward I asked why she&rsquo;d done it. She said, &ldquo;Because they don&rsquo;t know that I know. I need them to believe they&rsquo;ve explained their own uniqueness to me.&rdquo; That&rsquo;s the curse of knowledge. Once you know something, you still have to ask it &mdash; because the asking does work the knowing can&rsquo;t.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">This is, not incidentally, the same move Cohan used on the interviewer mid-conversation: ask about uniqueness, then freeze the tape and point out what just got revealed. It works on tech marketers too.</p></div>
+
+<!-- Section 5 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-5"><span class="section-eyebrow__num">V.</span><span class="section-eyebrow__text">Cultural context: a Denny&rsquo;s in Japan, the <em>ringi</em> process, and what a good meeting means depending on which country you&rsquo;re sitting in.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep5" href="https://youtube.com/watch?v=BAtqiw6biPA" target="_blank" rel="external noopener" aria-label="Play: Episode 5, Cultural Context, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep5-cultural-context.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 5</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 5 of 7 &middot; Cultural Context</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate V &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>Ringi: the decision was already made</li><li>The Culture Map</li><li>The pizza analogy for analysts</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">&ldquo;The presentation was fine until you said good morning.&rdquo; What did that actually cost you?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Nothing, in the end. It&rsquo;s a funny story, not an expensive one. We had a distributor in Japan, a terrific partner I&rsquo;m still in touch with today. After a full day presenting our new flagship product, we ended up at a Denny&rsquo;s, not a bad thing, by the way, shoes off in the little cubby, and I asked him how I&rsquo;d done. He said, more or less, everything was fine until after you said good morning.</p>
+      <p>Two things stood out to me about that room. First, questions get held until the very end, which is disarming if you&rsquo;re used to interactive give-and-take. Second, there are two kinds of end-of-presentation questions: the earnest kind, and the kind that&rsquo;s asked sideways five different times until you finally understand what they&rsquo;re really asking.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">What does a &ldquo;successful meeting&rdquo; even mean in a context like that?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>There&rsquo;s a book, <em>The Culture Map</em>, that I recommend to anyone dealing with international teams. In the US, a good meeting produces a decision and a follow-up. It doesn&rsquo;t go dead. In Germany, France, Belgium, a good meeting is one where you carefully examined every possible outcome, decision or not. The Dutch do both. But in Japan, a successful meeting simply acknowledges decisions that were already made in smaller pre-meetings &mdash; the <em lang="ja">ringi</em> process. By the time you&rsquo;re at the table, the outcome may already be stamped, the <em lang="ja">hanko</em>, and nothing that happens in the room changes it. If it goes well, you go out for drinks afterward and that&rsquo;s where the real follow-up happens.</p>
+      <p>I loved working in Europe for the same reason: two-hour lunches in France, wine with the meal, back into the lab afterward. Unfathomable in the US.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">You mentioned analysts are their own culture entirely.</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>One of the hardest things I ever learned was how to demo for an analyst who has zero context in your vertical. They don&rsquo;t care, and they already have a template they&rsquo;re going to force your category into. What worked was evocative analogy. I was explaining combinatorial chemistry and high-throughput screening, new technology at the time, to an analyst who&rsquo;d never think about chemistry otherwise. I told them to imagine a pizza restaurant that makes its name by inventing a new signature pizza every month. Normally the chef tries one new pizza a day, twenty a month, and most get thrown out. Now imagine using automation to make a hundred variations a day instead of one, different crusts, sauces, toppings, and screening them fast: does it look right, does it smell right, does it taste right. What would&rsquo;ve taken five months of research happens in a single day. They wrote the article using that exact analogy. Analogies work on analysts because you&rsquo;re explaining something new using a context they already own.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 6 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-6"><span class="section-eyebrow__num">VI.</span><span class="section-eyebrow__text">Where it lives: three kinds of demos, a board member who got BANT&rsquo;d out of a funnel, and why activity is a trap.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep6" href="https://youtube.com/watch?v=VPuXttqVvyI" target="_blank" rel="external noopener" aria-label="Play: Episode 6, Where It Lives, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep6-where-it-lives.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 6</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 6 of 7 &middot; Where It Lives</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate VI &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>The gold demo is done for the vendor, and no one else</li><li>Lead churn: disqualified before the funnel</li><li>Revenue per demo, not demos per week</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Whose job is demo strategy, and who does it report to?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>Honestly, I don&rsquo;t have a clean answer. The smaller the company, the easier the question. It&rsquo;s whoever has the most intimate knowledge of how customers actually consume the product. The larger the company, the more that knowledge diffuses. My standard advice to anyone new to pre-sales is: go sit with a handful of happy existing customers, in person if you can, over the web if you can&rsquo;t, and ask them to show you how they use what they&rsquo;ve already licensed. What you&rsquo;ll learn are the highest-probability workflows and deliverables by job title &mdash; both the day-to-day execution work, and the &ldquo;Monday morning&rdquo; work of figuring out what&rsquo;s on the plate for the week. Learn those two buckets, job title by job title, and you&rsquo;ll be up to speed faster than any other method. That guidance holds for sales, pre-sales, customer success, marketing &mdash; any customer-facing role.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">You&rsquo;ve got three named demo types. Which one is the bad one?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>The gold demo, and I&rsquo;ll qualify that: it&rsquo;s not a bad idea, it&rsquo;s just built for the wrong audience. A gold demo is typically assembled by the people with the least apparent understanding of how customers actually use the product. It exists to validate that a new hire can present the software, and it tends to cover every capability and differentiator the vendor is proud of. Show that to a prospect and you&rsquo;ve given them a stunningly awful harbor tour. It&rsquo;s done for the vendor, and no one else.</p>
+      <p>The technical proof demo is the opposite: crisply defined, built from real discovery, starting with the deliverables the prospect actually wants and peeling back only as much depth as they&rsquo;re asking for. The prerequisite is adequate discovery, measurable, in the Great Demo methodology, by how complete your situation slide is.</p>
+      <p>The vision generation demo solves a different standoff: the vendor who says &ldquo;no discovery, no demo,&rdquo; against the prospect who says &ldquo;I just want a sense of the art of the possible.&rdquo; It&rsquo;s three, maybe six minutes: here are one to three deliverables based on what we&rsquo;ve seen work for others in similar situations, and if that&rsquo;s interesting, let&rsquo;s talk. Cohan&rsquo;s recollection is that Gartner puts the number at roughly half of inbound leads not being in an active buying process yet &mdash; they&rsquo;re &ldquo;just browsing,&rdquo; not &ldquo;active buying.&rdquo; They want to be embraced, not sold to.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">Cohan&rsquo;s caveat on vision demos, delivered without being asked twice: most companies&rsquo; version of a vision demo is just a harbor tour with better lighting. The format isn&rsquo;t the safeguard. The discipline behind it is.</p></div>
+<div class="qa-block" style="border-top:none;padding-top:0;">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">You told a story about getting disqualified out of a demo entirely. What happened?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>I&rsquo;m on the board of a small, profitable software company in the chemistry space, and I clicked &ldquo;book a demo&rdquo; on a vendor&rsquo;s site out of genuine curiosity about their technology. An SDR called within ten or fifteen minutes and walked straight into BANT. Budgeted? No, early stages. In charge? On the board, not driving it. Defined needs? Still assembling them. Timeline? Not yet. And that was it &mdash; I never saw a demo. He wouldn&rsquo;t book the meeting until the checklist cleared.</p>
+      <p>I coined a term for what happened to me: lead churn. He turned me into a lead that churned before I ever entered the funnel. What I actually wanted was someone knowledgeable enough to show me one or two relevant examples, let me react, and offer to add me to a nurture list until the timing was right. Instead I got disqualified by a script. When that company&rsquo;s technology was finally relevant to us, on the strength of what little I&rsquo;d seen and passed along, my organization went straight into a productive discovery conversation with them &mdash; but only because someone else inside got past that same SDR.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Last thought on this one: activity versus ratios?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>One of my favorite pre-sales measurements is revenue dollars per demo, because it asks how effective the demos actually are. Most organizations instead ask how many demos got done this week, a horrible metric to optimize for its own sake, because it only ever pushes you toward more. A hundred sales calls that progress zero deals is activity. One good call that moves the buyer forward is a ratio worth bragging about. AI has supercharged the activity trap &mdash; you can now generate a thousand personalized-looking LinkedIn messages in an afternoon, and all thousand get deleted, because the recipients can already tell the difference, and soon AI will be deleting them before a human even sees them.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 7 -->
+<hr class="section-rule">
+<div class="section-eyebrow reveal" id="ep-7"><span class="section-eyebrow__num">VII.</span><span class="section-eyebrow__text">To close: fifty years out, Mount Stupid, and the squishiness that AI hasn&rsquo;t figured out how to fake yet.</span></div>
+
+<div class="section-video">
+  <a class="section-video__frame" id="video-feature-frame-ep7" href="https://youtube.com/watch?v=PnJjU2hVMsg" target="_blank" rel="external noopener" aria-label="Play: Episode 7, To Close, with Peter Cohan">
+    <img class="section-video__poster" src="Images/plate-ep7-to-close.jpg" alt="" loading="lazy" width="1280" height="720">
+    <span class="section-video__scrim" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--tr" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--bl" aria-hidden="true"></span>
+    <span class="section-video__corner section-video__corner--br" aria-hidden="true"></span>
+    <span class="section-video__play" aria-hidden="true"><svg class="section-video__dial" viewBox="0 0 100 100" aria-hidden="true">
+    <circle class="ring" cx="50" cy="50" r="44"/>
+    <line class="tick tick--major" x1="50.0" y1="6.0" x2="50.0" y2="16.0"/>
+    <line class="tick" x1="72.0" y1="11.9" x2="69.5" y2="16.2"/>
+    <line class="tick" x1="88.1" y1="28.0" x2="83.8" y2="30.5"/>
+    <line class="tick tick--major" x1="94.0" y1="50.0" x2="84.0" y2="50.0"/>
+    <line class="tick" x1="88.1" y1="72.0" x2="83.8" y2="69.5"/>
+    <line class="tick" x1="72.0" y1="88.1" x2="69.5" y2="83.8"/>
+    <line class="tick tick--major" x1="50.0" y1="94.0" x2="50.0" y2="84.0"/>
+    <line class="tick" x1="28.0" y1="88.1" x2="30.5" y2="83.8"/>
+    <line class="tick" x1="11.9" y1="72.0" x2="16.2" y2="69.5"/>
+    <line class="tick tick--major" x1="6.0" y1="50.0" x2="16.0" y2="50.0"/>
+    <line class="tick" x1="11.9" y1="28.0" x2="16.2" y2="30.5"/>
+    <line class="tick" x1="28.0" y1="11.9" x2="30.5" y2="16.2"/>
+    <circle class="hub" cx="50" cy="50" r="20"/>
+    <path class="tri" d="M44,38 L44,62 L61,50 Z"/>
+  </svg></span>
+    <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Watch episode 7</span>
+  </a>
+  <div class="section-video__plate">
+    <p class="section-video__plate-caption">Watch episode 7 of 7 &middot; To Close</p>
+    <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Plate VII &middot; Film</span>
+  </div>
+  <ul class="section-video__callouts"><li>Mount Stupid and Dunning-Kruger</li><li>The squishiness of humans</li><li>Never stop learning</li></ul>
+</div>
+
+<div class="qa-block">
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Fifty years from now, what will this discipline be understood to have gotten right?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>I think fifty years from now we&rsquo;ll look back at our current assumptions and say, boy, were we idiots. That part is nearly guaranteed. What stays the same is that humans are biological entities. We&rsquo;re squishy, ill-defined, driven by passions and desires we can&rsquo;t always name. Organizations behave the same way. They can be understood as biological entities too: they grow, they want to expand. That squishiness is the thing discovery is actually built to uncover, and I expect it&rsquo;ll still matter in fifty years, assuming people understand it now.</p>
+      <p>What I&rsquo;d want people to take from this conversation is simple: explore the outliers, be curious, never stop learning. Are you familiar with Dunning-Kruger? Most of us, myself included, hit a point in our learning where we believe we basically know it all. They call the peak of that curve Mount Stupid. I hear it constantly: &ldquo;I&rsquo;ve been in pre-sales eight years, I know this.&rdquo; My answer is always the same &mdash; you may be at risk of Dunning-Kruger. Is there anything you don&rsquo;t know that you could learn? Everyone says of course, but what they mean is <em class="line">nah</em>. The recognition that there&rsquo;s always something to learn is the mindset that carries you into next year, and the year after that. Don&rsquo;t be complacent. Ask what you&rsquo;re missing. Never stop learning &mdash; that&rsquo;s my tagline, and I mean it literally.</p>
+    </div>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label qa-label--tm">TM.org</div>
+    <p class="qa-question">Will AI ever get squishy?</p>
+  </div>
+  <div class="qa-exchange">
+    <div class="qa-label">Cohan</div>
+    <div class="qa-answer">
+      <p>It hallucinates today, so maybe there&rsquo;s some squishiness in there already. But AI would never tell you to go out on a limb and try something outside the sweet spot of tried-and-true. It would never have told me to walk into a room of sixty conservative German chemists and try something brand new with an overhead projector. That kind of curiosity, and the willingness to risk looking foolish in service of it &mdash; I think that&rsquo;s still important in fifty years.</p>
+    </div>
+  </div>
+</div>
+<div class="qa-aside reveal"><p class="qa-aside__text">He said this without knowing where the conversation would land twenty minutes later, on trust, on the truth layer, on what technical marketing is actually for. It landed there anyway. That&rsquo;s the outlier worth sitting with.</p></div>
+
+<!-- Afterword -->
+<div class="afterword">
+<p>Two hours in, Cohan asked the question back: where does technical marketing go in the next five years? The honest answer, given in the room, was that the marketing arm, messaging, decks, brochures, websites, keeps getting condensed by the same technology this whole conversation is about. But the pre-sales side, the side that sits with customers and reverse-demos their pain and reads a room full of held questions, doesn&rsquo;t compress the same way. It just gets more efficient with its slides.</p>
+<p>Cohan didn&rsquo;t design his career around a discipline called technical marketing. He designed it around a chemist&rsquo;s instinct for the outlier and a field-tested belief that the people closest to the customer should be the ones building the thing the customer eventually buys. The Copley Plan proved that in months, once, in Basel, over gin and tonics that shouldn&rsquo;t have produced a methodology and somehow did. Everything since, the ratios, the reverse demo, the visionary question, the refusal to let a rediscovered LinkedIn post pass for insight, is the same instinct, running on better tools.</p>
+<p>The technology will keep changing what&rsquo;s possible to show. It has not yet changed what makes a room lean forward.</p>
+<p><strong>Never stop learning.</strong></p>
+<hr class="afterword__rule">
+</div>
+
+<div class="bio">
+  <img class="bio__photo" src="Images/bio-peter-cohan.png" alt="Peter Cohan" loading="lazy" decoding="async">
+  <div>
+    <p class="bio__name">Peter Cohan</p>
+    <p class="bio__text">Author of <em>Great Demo!</em> (now in its third edition), <em>Doing Discovery</em>, and <em>Suspending Disbelief</em>. Founder of The Second Derivative, a consultancy focused on discovery, demonstration, and technical-proof strategy for B2B software organizations. Before founding it, he built the Discovery Tools&reg; business at Symyx Technologies from an empty spreadsheet into a $30 million per year operation, following years in sales and marketing at MDL Information Systems, the company behind ISIS for Excel, the product at the center of the Copley Plan.</p>
+    <p class="bio__links"><a href="https://greatdemo.com" target="_blank" rel="external noopener">greatdemo.com</a> &middot; <a href="/contributors/peter-cohan">Full contributor page</a></p>
+  </div>
+</div>
+
+<div class="notes">
+  <div class="notes__label">Notes</div>
+  <ol>
+    <li>This transcript is drawn from a recorded Zoom conversation, cross-referenced against a Plaud recording and both platforms&rsquo; AI-generated summaries, to ensure names, figures, and sequence hold up before publication.</li>
+    <li>Cohan&rsquo;s employer during the Copley Plan years (MDL Information Systems) and the product name (ISIS for Excel) are confirmed against his public author bio and greatdemo.com. His current consultancy, The Second Derivative, is likewise confirmed. Both replace earlier placeholders in this piece.</li>
+    <li class="flag">Peter&rsquo;s LinkedIn URL is not yet confirmed and is omitted from the bio links above pending that.</li>
+    <li>The companion seven-episode video series is embedded above and throughout this piece, live and linked. Episode posters for II&ndash;V use final Claude Design plate art; posters for VI (Where It Lives) and VII (To Close) are still placeholders pending that art.</li>
+  </ol>
+</div>
+
+</div>
+</div>
+
+</main>
+
+<section class="folio layout" aria-label="Folio II — colophon">
+  <div class="folio__outer">
+    <div class="folio__inner">
+      <div class="folio__head">
+        <span class="folio__title">Folio II</span>
+        <span class="folio__dot" aria-hidden="true">&#9670;</span>
+        <span class="folio__printing">Fall Printing &middot; MMXXVI</span>
+      </div>
+      <dl class="folio__grid">
+        <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
+        <div class="folio__row"><dt class="folio__label">Editorial</dt><dd class="folio__value">A field manual for the discipline. Edited and curated by Chad Corriveau.</dd></div>
+        <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
+        <div class="folio__row"><dt class="folio__label">Type</dt><dd class="folio__value">Set in Fraunces, Roboto Slab, and Inter. Composed in wheat, ink black, and library red.</dd></div>
+        <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
+        <div class="folio__row"><dt class="folio__label">Charter</dt><dd class="folio__value">Indexed entries are reviewed against the editorial charter criteria: primary sourcing, practitioner relevance, and absence of vendor promotion. ThinkRoot LLC provides publishing infrastructure and administrative support.</dd></div>
+        <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
+        <div class="folio__row"><dt class="folio__label">Publisher</dt><dd class="folio__value">Published by ThinkRoot LLC &middot; Escondido, CA</dd></div>
+        <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
+        <div class="folio__row"><dt class="folio__label">Contact</dt><dd class="folio__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner layout">
+    <div class="site-footer__row">
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Volume 02 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+    </div>
+    <nav class="site-footer__nav" aria-label="Site">
+      <a href="/about" class="site-footer__nav-link">About</a>
+      <a href="/contributors/" class="site-footer__nav-link">Contributors</a>
+      <a href="/glossary" class="site-footer__nav-link">Glossary</a>
+      <a href="/landscape" class="site-footer__nav-link">Landscape</a>
+      <a href="/suggest" class="site-footer__nav-link">Suggest</a>
+      <a href="/feed.xml" class="site-footer__nav-link">RSS</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+  var bar = document.getElementById('progress-bar');
+  if (!bar) return;
+  function update() {
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    var docH = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var pct = docH > 0 ? Math.min(100, (scrollTop / docH) * 100) : 0;
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', Math.round(pct));
+  }
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+}());
+
+/* Click-to-embed for the featured video and all per-section videos.
+   Extracts the YouTube ID from the link href (?v= or /watch?v=) and swaps
+   the poster image for a live iframe on click, rather than loading all
+   seven embeds up front. */
+(function() {
+  'use strict';
+  function toEmbed(link) {
+    link.addEventListener('click', function(e) {
+      var href = link.getAttribute('href') || '';
+      var match = href.match(/[?&]v=([^&]+)/);
+      var id = match ? match[1] : null;
+      if (!id || id.indexOf('YOUTUBE_ID') === 0) return; // placeholder not yet filled in — fall through to normal link
+      e.preventDefault();
+      var iframe = document.createElement('iframe');
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1';
+      iframe.title = link.getAttribute('aria-label') || 'Video';
+      iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+      iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+      iframe.allowFullscreen = true;
+      link.innerHTML = '';
+      link.appendChild(iframe);
+    });
+  }
+  document.querySelectorAll('.video-feature__frame, .section-video__frame').forEach(toEmbed);
+}());
+
+/* Episode rail — shows once the reader passes the intro, tracks active section */
+(function() {
+  'use strict';
+  var rail = document.getElementById('ep-rail');
+  if (!rail) return;
+  var dots = Array.prototype.slice.call(rail.querySelectorAll('.ep-rail__dot'));
+  var sections = ['ep-1','ep-2','ep-3','ep-4','ep-5','ep-6','ep-7']
+    .map(function(id) { return document.getElementById(id); })
+    .filter(Boolean);
+
+  var revealStart = sections[0];
+  function toggleRailVisibility() {
+    if (!revealStart) return;
+    var top = revealStart.getBoundingClientRect().top;
+    rail.classList.toggle('is-visible', top < window.innerHeight * 0.6);
+  }
+  window.addEventListener('scroll', toggleRailVisibility, { passive: true });
+  toggleRailVisibility();
+
+  if ('IntersectionObserver' in window) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.id;
+        dots.forEach(function(dot) {
+          dot.classList.toggle('is-active', dot.getAttribute('href') === '#' + id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+    sections.forEach(function(s) { observer.observe(s); });
+  }
+}());
+
+/* Scroll-reveal for section openers and editorial asides */
+(function() {
+  'use strict';
+  var targets = document.querySelectorAll('.reveal');
+  if (!targets.length) return;
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    targets.forEach(function(t) { t.classList.add('is-shown'); });
+    return;
+  }
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-shown');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+  targets.forEach(function(t) { observer.observe(t); });
+}());
+/* Theme toggle — persists choice, defaults to system preference */
+(function() {
+  'use strict';
+  var btn = document.getElementById('theme-toggle');
+  if (!btn) return;
+  function isDark() { return document.documentElement.getAttribute('data-theme') === 'dark'; }
+  function sync() {
+    var dark = isDark();
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+  sync();
+  btn.addEventListener('click', function() {
+    var next = isDark() ? 'light' : 'dark';
+    if (next === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+    }
+    try { localStorage.setItem('tm-theme', next); } catch (e) {}
+    sync();
+  });
+}());
+</script>
+
+</body>
+</html>
