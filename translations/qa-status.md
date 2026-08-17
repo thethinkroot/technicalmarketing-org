@@ -102,13 +102,24 @@ conventions, not reviewed.
 | Locale | Structural | Claude-reviewed | Native-verified |
 |---|---|---|---|
 | EN | ✅ | ◐ | n/a — source, copy locked |
-| ES | — | — | — |
+| ES | ◐ | ◐ | — |
 | JA | — | — | — |
 | FR | — | — | — |
 | DE | — | — | — |
 
 Tier 2 scope on EN: term map only (`any-questions-term-map.md`) — the terminology surface
-was inventoried, the prose was not reviewed. Translations not started.
+was inventoried, the prose was not reviewed.
+
+**ES is mid-translation, pass 1 of 3 complete.** Front matter and §I–III are translated;
+§IV–VII are still English in the file. Do not publish.
+
+- Structural ◐ — `term-check` passes, CSS byte-identical, hreflang `en es x-default`. Not
+  in `sitemap.xml`, deliberately, until the page is finished; `seo-check` reports that as
+  its one violation.
+- Claude-reviewed ◐ — full audit of the translated portion: the eight-position
+  talk-to-listen chain, the 11/3 Copley plan-versus-hotel split, the three distinct
+  ratios kept separate, rendered output read in-browser. **The untranslated §IV–VII has
+  had no review of any kind.**
 
 ### All other pages
 
