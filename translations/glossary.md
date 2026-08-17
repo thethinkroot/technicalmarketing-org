@@ -135,13 +135,8 @@ English in all four locales. The same must hold for Peter Cohan's *Great Demo!*,
 ## 5. Gaps in the existing translations
 
 **The four locale glossaries are stale.** Each has 47 entries; the EN glossary has 63.
-These 16 EN terms have **no counterpart in any locale**, so no precedent exists:
-
-`Copley Plan` · `Curse of knowledge` · `Gold demo` · `Industrial engineering
-communication` · `Lead churn` · `Mount Stupid` · `Prospect:Vendor Statement Ratio` ·
-`Reverse demo` · `Ringi (稟議)` · `Scaling the expert` · `Tacit knowledge transfer` ·
-`Talk-to-listen ratio` · `Technical proof demo` · `Virtual twin` · `Visionary
-engineering` · `Vision generation demo`
+Sixteen EN terms had no counterpart in any locale. **Fifteen are now settled** in
+§ 5.1–5.3; one (`Ringi (稟議)`) remains open, see § 5.4.
 
 ### 5.1 Settled treatments — all four locales
 
@@ -197,6 +192,130 @@ Two of these matter for the pieces now being translated:
 These need decisions from you or a native reviewer. **I have not invented renderings
 for them** — inventing terminology and presenting it as house style is precisely the
 failure mode this glossary exists to prevent.
+
+---
+
+---
+
+### 5.2 Settled — named things stay English
+
+Decided 2026-08-17. Artifacts, metrics, methods, demo compounds and product categories
+follow the English-first convention. Each has a live precedent in all four locale
+glossaries.
+
+| Term | JA | ES | FR | DE | Precedent followed |
+|---|---|---|---|---|---|
+| Gold demo | English | English | English | English | Demo, Demo environment, Reverse demo |
+| Vision generation demo | English | English | English | English | same demo-compound family |
+| Prospect:Vendor Statement Ratio | English | English | English | English | Talk-to-listen ratio |
+| Lead churn | **リードチャーン** | English | English | English | Pipeline / パイプライン |
+| Virtual twin | English | English | English | English | Agentic AI, Generative AI |
+| Mount Stupid | English | English | English | English | Magic Quadrant |
+| Industrial engineering communication | English | English | English | English | Technical narrative |
+
+`Lead churn` is the one split: ordinary GTM vocabulary, so JA takes katakana as it does
+for `Pipeline` and `Playbook`, rather than the English kept for named artifacts.
+
+`Virtual twin` is deliberately **not** "digital twin", the industry-standard term.
+Translating it would collapse a distinction the article depends on.
+
+`Industrial engineering communication` was flagged at decision time as the weakest fit
+here — it reads as a descriptive phrase rather than a name. Kept in this group by
+explicit decision, not by default.
+
+---
+
+### 5.3 Settled — borrowed concepts are translated
+
+Decided 2026-08-17. Neither term originates in go-to-market practice. Both are
+established in cognitive science and knowledge management, with standard equivalents
+already in the literature of all four languages, so English would read as *more* foreign,
+not less. Precedent: `Editorial judgment`, the one general concept the glossary already
+translates everywhere.
+
+| Term | JA | ES | FR | DE |
+|---|---|---|---|---|
+| Curse of knowledge | 知識の呪い | la maldición del conocimiento | la malédiction de la connaissance | der Fluch des Wissens |
+| Tacit knowledge transfer | 暗黙知の移転 | transferencia de conocimiento tácito | transfert de connaissances tacites | Transfer impliziten Wissens |
+
+暗黙知 is the settled Japanese rendering of Polanyi's *tacit knowledge* and predates this
+publication; it is adopted, not coined.
+
+---
+
+### 5.4 `Scaling the expert` — settled English, with a documented split
+
+Decided 2026-08-17. **The glossary term is English in all four locales**, matching the
+citation convention and the canonical work.
+
+This term is also the title of **Article IV of Volume 02**, published 2026-08-17. Article
+IV's copy is locked: the glossary follows the article, never the reverse.
+
+**The split that must not drift.** The phrase appears 17 times in
+`scaling-the-expert.html`, and the two kinds of use are treated differently when that
+article is translated:
+
+| Use | Treatment when translated | Instances |
+|---|---|---|
+| Cover title, `og:title`, `twitter:title`, `<h2>` section heading, FAQ question, body prose | **Translate**, as with every article title on this site | 13 |
+| APA, MLA, Chicago and BibTeX citation blocks | **Never translate** — a citation names an English-language work and keeps its printed title in every language | 4 |
+
+So a translated Article IV will legitimately carry a translated heading and an English
+citation of the same work on one page. That is correct scholarly practice. It is recorded
+here because, undocumented, it looks like exactly the inconsistency the term-consistency
+rule exists to catch.
+
+Article-title translation is confirmed convention: `technical-marketing-age-of-ai` renders
+its cover headline as 構造的な論拠。/ Un argumento estructural. / Un argument structurel. /
+Ein strukturelles Argument.
+
+**Outstanding, unrelated to this decision:** the English entry still carries
+`<!-- NEW: added from Article IV, "Scaling the Expert" (Matt Trubow), pending Chad's
+review before publish. -->`, shared by four Article IV terms. The English wording may yet
+change even though the translation treatment is settled.
+
+---
+
+### 5.5 `Ringi (稟議)` — OPEN, two separate questions
+
+The only one of the sixteen unprecedented terms not settled. It carries two distinct
+problems that must not be conflated.
+
+**(a) Factual content — BLOCKED, awaiting source text.** A more precise definition was
+commissioned covering the ringisho process, hanko circulation, and group-harmony framing,
+to replace the current entry's factual content in all locales. **The replacement text was
+never received.** Nothing has been changed. This is deliberately not written from
+inference: fabricating a definition of a Japanese business process and presenting it as
+the commissioned correction would be worse than the imprecision it replaces.
+
+**(b) JA rhetorical stance — DEFERRED, not settled.** Distinct from (a) and not fixed by
+it.
+
+This is the inverse of every other entry here: an *English* entry that borrowed a Japanese
+word, tagged `noun · Japanese business term` with 稟議 inline. So "render 稟議 in JA" is a
+circular non-answer — it restates characters already present without addressing whether
+the entry belongs in the Japanese glossary in this form.
+
+The entry's body is written for a reader outside the culture it describes:
+
+> "For a vendor unfamiliar with the process, a ringi-governed meeting can read as strange
+> or even discouraging…"
+>
+> "The practical implication for **cross-cultural sales** is that the meeting a **Western
+> seller** is optimizing for may already have happened…"
+
+It explains Japan to non-Japanese sellers. Rendered into Japanese the stance inverts: it
+would explain 稟議 to readers who conduct 稟議, framing their own norm as the strange thing
+a foreign vendor must decode. The characters would be right and the entry still wrong.
+
+| Locale | Treatment |
+|---|---|
+| ES, FR, DE | Keep `Ringi (稟議)` exactly as in English — those readers are also outside the practice, so the audience relationship is unchanged |
+| JA | 稟議 as the term, but the entry **body must be rewritten, not translated** — the useful content is the mirror image: how foreign vendors misread the process and what that means when selling to them |
+
+The JA body is **new editorial writing, not a translation task**, and must not be produced
+as part of a terminology pass. **Explicitly deferred.** Marking it "settled: 稟議" would
+close the terminology question while leaving a mis-framed entry to be found later.
 
 ---
 
