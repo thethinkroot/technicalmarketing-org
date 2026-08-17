@@ -20,6 +20,7 @@ fi
 
 ROOT=$(git rev-parse --show-toplevel)
 CHECK="$ROOT/tools/seo-check.mjs"
+TERMS="$ROOT/tools/term-check.mjs"
 
 echo "pre-push: running seo-check on the working tree…"
 
@@ -28,6 +29,20 @@ if ! node "$CHECK"; then
   echo "pre-push: BLOCKED. Fix the violations above, or push with --no-verify if you"
   echo "          have accepted them deliberately." >&2
   exit 1
+fi
+
+# Settled glossary terms must render consistently inside each translated page.
+# Catches regressions of defects already recorded in translations/glossary.md; it
+# cannot recognise a paraphrase nobody has seen before, so it supplements reading
+# the pages rather than replacing it.
+if [ -f "$TERMS" ]; then
+  echo "pre-push: running term-check…"
+  if ! node "$TERMS"; then
+    echo ""
+    echo "pre-push: BLOCKED. A settled glossary term renders inconsistently." >&2
+    echo "          Fix the page, or update translations/glossary.md if the decision changed." >&2
+    exit 1
+  fi
 fi
 
 # Each outgoing commit must also be internally consistent: a commit whose

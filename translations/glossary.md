@@ -169,10 +169,19 @@ severing the link back to the glossary entry:
 | ES | talk-to-listen ratio | la proporción entre exponer y preguntar |
 | FR | talk-to-listen ratio | le rapport entre exposer et questionner |
 | DE | talk-to-listen ratio | das Verhältnis von Vortragen zu Fragen |
+| JA | talk-to-listen ratio | 話す・聞くの比率 |
+| ES | talk-to-listen ratio | la proporción ideal entre hablar y escuchar |
+| FR | talk-to-listen ratio | le ratio idéal de parole entre vendeur et acheteur |
+| DE | talk-to-listen ratio | das ideale Verhältnis von Sprechen zu Zuhören |
 
 This table is read by `tools/term-check.mjs`. Every row is a rendering that must never
 reappear. Add a row whenever a term-consistency defect is fixed, so the fix is enforced
 rather than remembered.
+
+The first four rows are from `contributors/peter-cohan.html`, found by hand. The last
+four are from `what-is-technical-marketing.html`, **found by the checker on its first
+run** — the same defect on a different article, in all four locales, which four rounds of
+manual review had not looked for.
 
 So the English term is repeated where the English original varied.
 
