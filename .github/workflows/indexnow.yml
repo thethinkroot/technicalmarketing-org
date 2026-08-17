@@ -24,8 +24,10 @@ jobs:
             "https://$HOST/glossary"
             "https://$HOST/landscape"
             "https://$HOST/about"
-            "https://$HOST/contributors"
+            "https://$HOST/contributors/"
             "https://$HOST/contributors/chad-corriveau"
+            "https://$HOST/contributors/mike-moran"
+            "https://$HOST/contributors/peter-cohan"
             "https://$HOST/suggest"
           )
 

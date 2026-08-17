@@ -710,6 +710,14 @@
   <!-- CONTRIBUTOR PROFILES -->
   <!-- ============================================================ -->
   <url>
+    <loc>https://technicalmarketing.org/contributors/peter-cohan</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/peter-cohan"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/peter-cohan"/>
+  </url>
+  <url>
     <loc>https://technicalmarketing.org/contributors/mike-moran</loc>
     <lastmod>2026-07-08</lastmod>
     <changefreq>yearly</changefreq>
