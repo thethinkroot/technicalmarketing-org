@@ -143,6 +143,37 @@ communication` · `Lead churn` · `Mount Stupid` · `Prospect:Vendor Statement R
 `Talk-to-listen ratio` · `Technical proof demo` · `Virtual twin` · `Visionary
 engineering` · `Vision generation demo`
 
+### 5.1 Settled treatments — JA (from `ja/contributors/peter-cohan.html`)
+
+Established by live QA of the first Japanese page to use these terms. **JA only.**
+ES, FR and DE are unreviewed and remain deferred.
+
+| Term | JA treatment | Instances on that page |
+|---|---|---|
+| Copley Plan | **English** | 4 — all consistent |
+| reverse demo | **English** | 2 — all consistent |
+| talk-to-listen ratio | **English** | 2 — corrected, see below |
+| visionary engineering | **English** | 1 |
+| technical-proof demo | **English** | 1 |
+
+**The governing rule this settles:** a deferred term stays in English at *every* mention
+of the concept in Japanese, including where the English original paraphrases rather than
+uses the term.
+
+English can paraphrase a term and stay transparent — a reader meets *"the talk-to-listen
+ratio"* and then *"the pitching-to-questioning ratio"* and connects them without effort.
+Japanese cannot: `talk-to-listen ratio` followed by 提示と質問の比率 reads as two
+unrelated ideas, and the link back to the glossary entry is lost. So the English term is
+repeated where English would have varied.
+
+Note the one place this rule does **not** reach: `技術的証明の戦略` (technical-proof
+strategy) in the opening paragraph. That renders *"technical-proof strategy"*, an
+adjectival phrase, not the glossary term `technical-proof demo`, and it stays translated.
+The adjacency of 技術的証明 and `technical-proof demo` on one page is deliberate, not an
+oversight.
+
+---
+
 Two of these matter for the pieces now being translated:
 
 - **`Scaling the expert`** is both a glossary term and the title of the article
