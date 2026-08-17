@@ -18,10 +18,74 @@
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { execFileSync } from 'node:child_process';
 
 const ROOT = join(fileURLToPath(new URL('.', import.meta.url)), '..');
 const ORIGIN = 'https://technicalmarketing.org';
 const LIVE = process.argv.includes('--live');
+
+// ---------------------------------------------------------------------------
+// --commit <ref> — validate a single commit in isolation
+//
+// The filesystem checks below run against the working tree, so they cannot see
+// a defect that exists only inside a commit: a sitemap entry for a page whose
+// file is not in that same commit. That happens when sitemap.xml is staged
+// wholesale while the pages it describes are still being staged separately, and
+// it produces history where a commit advertises URLs that 404 if deployed.
+//
+// This mode resolves every <loc> and hreflang alternate in that commit's
+// sitemap.xml through Cloudflare Pages routing and confirms the target file
+// exists in the same tree.
+// ---------------------------------------------------------------------------
+
+const commitIdx = process.argv.indexOf('--commit');
+if (commitIdx !== -1) {
+  const ref = process.argv[commitIdx + 1];
+  if (!ref) {
+    console.error('--commit requires a git ref');
+    process.exit(2);
+  }
+
+  const git = (args) => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  const inTree = (path) => {
+    try { git(['cat-file', '-e', `${ref}:${path}`]); return true; } catch { return false; }
+  };
+
+  let sitemap;
+  try {
+    sitemap = git(['show', `${ref}:sitemap.xml`]);
+  } catch {
+    console.log(`✓ ${ref}: no sitemap.xml in this commit — nothing to validate.`);
+    process.exit(0);
+  }
+
+  // Every URL the sitemap asserts: <loc> plus each hreflang alternate.
+  const urls = new Set();
+  for (const m of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) urls.add(m[1].trim());
+  for (const m of sitemap.matchAll(/<xhtml:link[^>]*href=["']([^"']+)["']/g)) urls.add(m[1].trim());
+
+  const broken = [];
+  for (const url of urls) {
+    if (!url.startsWith(ORIGIN)) { broken.push([url, 'not on the canonical origin']); continue; }
+    const path = url.slice(ORIGIN.length).replace(/^\//, '');
+    const candidates = path === ''
+      ? ['index.html']
+      : path.endsWith('/')
+        ? [`${path}index.html`, `${path.replace(/\/$/, '')}.html`]
+        : [`${path}.html`, `${path}/index.html`];
+    if (!candidates.some(inTree)) broken.push([url, `no file in this commit (tried ${candidates.join(', ')})`]);
+  }
+
+  const subject = git(['log', '-1', '--format=%h %s', ref]).trim();
+  if (broken.length === 0) {
+    console.log(`✓ ${subject} — ${urls.size} sitemap URLs, all resolve within the commit.`);
+    process.exit(0);
+  }
+  console.error(`\n✗ ${subject} — ${broken.length} sitemap URL(s) reference files absent from this commit:\n`);
+  for (const [url, why] of broken) console.error(`  ${url}\n      ${why}`);
+  console.error('\nA commit must contain every page its sitemap advertises, or deploying it serves 404s.\n');
+  process.exit(1);
+}
 
 // Directories never served as pages.
 const SKIP_DIRS = new Set(['.git', 'node_modules', 'Images', 'audio', 'css', 'js', 'functions', 'tools', '.githooks']);

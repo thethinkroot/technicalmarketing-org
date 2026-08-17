@@ -18,13 +18,39 @@ if ! command -v node >/dev/null 2>&1; then
   exit 0
 fi
 
-echo "pre-push: running seo-check…"
+ROOT=$(git rev-parse --show-toplevel)
+CHECK="$ROOT/tools/seo-check.mjs"
 
-if ! node "$(git rev-parse --show-toplevel)/tools/seo-check.mjs"; then
+echo "pre-push: running seo-check on the working tree…"
+
+if ! node "$CHECK"; then
   echo ""
   echo "pre-push: BLOCKED. Fix the violations above, or push with --no-verify if you"
   echo "          have accepted them deliberately." >&2
   exit 1
+fi
+
+# Each outgoing commit must also be internally consistent: a commit whose
+# sitemap advertises a page it does not contain would serve 404s if deployed,
+# and the working-tree check above cannot see that.
+if UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null); then
+  COMMITS=$(git rev-list "$UPSTREAM"..HEAD --reverse)
+  if [ -n "$COMMITS" ]; then
+    COUNT=$(printf '%s\n' "$COMMITS" | wc -l | tr -d ' ')
+    echo "pre-push: validating $COUNT outgoing commit(s) against $UPSTREAM…"
+    for c in $COMMITS; do
+      if ! node "$CHECK" --commit "$c"; then
+        echo ""
+        echo "pre-push: BLOCKED. The commit above is not internally consistent." >&2
+        echo "          Restage so each commit contains the pages its sitemap lists." >&2
+        exit 1
+      fi
+    done
+  else
+    echo "pre-push: no outgoing commits."
+  fi
+else
+  echo "pre-push: no upstream configured — skipping per-commit validation."
 fi
 
 exit 0
