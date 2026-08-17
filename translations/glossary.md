@@ -245,8 +245,13 @@ for `contributors/peter-cohan.html` and are unconfirmed by any native speaker.**
 
 | EN | ES | JA | FR | DE |
 |---|---|---|---|---|
-| Fall Issue | Número de otoño | 秋号 | *(pending)* | *(pending)* |
-| Fall Printing · MMXXVI | Impresión de otoño · MMXXVI | 秋刷 · MMXXVI | *(pending)* | *(pending)* |
+| Fall Issue | Número de otoño | 秋号 | Numéro d'automne | Herbstausgabe |
+| Fall Printing · MMXXVI | Impresión de otoño · MMXXVI | 秋刷 · MMXXVI | Tirage d'automne · MMXXVI | Herbstdruck · MMXXVI |
+
+All ten cells above are coinages. **None has native confirmation.** The FR and DE
+values were added with the FR/DE profiles and carry exactly the same provisional
+status as the ES and JA values — the work becoming mechanical does not make a
+genuinely new string reviewed.
 
 **Status: first use, needs native confirmation.** The agreed convention is that each
 language renders the same seasonal concept rather than inventing a different scheme —
@@ -261,6 +266,11 @@ without review. Remove this notice only once a native speaker has signed off.
 |---|---|---|---|---|
 | Practitioner *(role label)* | 実務者 | Profesional | Praticien | Praktiker |
 | Founding Editor | — | Editor Fundador | — | — |
+| Credential *(connect label)* | 肩書 | Credencial | Fonction | Funktion |
+
+**`Credential` has no precedent in any locale** — `contributors/mike-moran.html`
+carries no such row in any language. All four renderings were coined for
+`peter-cohan.html` and need native confirmation, on the same footing as § 6.6.
 
 `Practitioner` is the role label in the `<title>` and `og:title` of contributor
 profiles (`Name · Practitioner · Technical Marketing`). It appears 13 times in
