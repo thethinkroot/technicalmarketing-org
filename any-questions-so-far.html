@@ -73,6 +73,25 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-o
 .masthead { border-top: 2px solid var(--ink); padding-top: 0.875rem; }
 .masthead__rule { border: none; border-top: 0.5px solid var(--border-strong); margin: 0; }
 .masthead__util { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem 1.25rem; padding-bottom: 0.75rem; }
+/* Language picker (masthead) and footer language nav */
+.masthead__langpicker { position: relative; }
+.masthead__langpicker summary { list-style: none; cursor: pointer; }
+.masthead__langpicker summary::-webkit-details-marker, .masthead__langpicker summary::marker { display: none; content: ""; }
+.masthead__langpicker-btn { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; padding: 0 0.25rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 600; color: var(--ink); }
+.masthead__langpicker-btn:hover { color: var(--red); }
+.masthead__langpicker-arrow { font-size: 0.5625rem; color: var(--red); display: inline-block; transition: transform 0.15s; }
+.masthead__langpicker[open] .masthead__langpicker-arrow { transform: rotate(180deg); }
+.masthead__langpicker-btn:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.masthead__langpicker-menu { position: absolute; top: 100%; right: 0; margin-top: 0.375rem; display: flex; flex-direction: column; min-width: 172px; background: var(--paper-light); border: 0.5px solid var(--border-strong); box-shadow: 0 12px 28px -10px rgba(28,24,18,0.28); z-index: 60; }
+.masthead__langpicker-link { display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 44px; padding: 0 1rem; font-family: var(--f-serif); font-size: 0.9375rem; color: var(--ink); border-bottom: 0.5px solid var(--border); transition: color 0.15s, background 0.15s; }
+.masthead__langpicker-link:last-child { border-bottom: none; }
+.masthead__langpicker-link:hover { color: var(--red); background: var(--paper); }
+.masthead__langpicker-link[aria-current="true"] { color: var(--red); }
+.masthead__langpicker-code { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; color: var(--ink-40); font-weight: 500; }
+.site-footer__langs { display: flex; flex-wrap: wrap; gap: 0.125rem 0.375rem; }
+.site-footer__lang-link { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(239,230,201,0.62); min-height: 44px; display: inline-flex; align-items: center; padding: 0 0.5rem; transition: color 0.15s; }
+.site-footer__lang-link:hover, .site-footer__lang-link[aria-current="true"] { color: var(--yellow); }
+
 .theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; border: 1px solid var(--border-strong); background: transparent; color: var(--ink-60); cursor: pointer; padding: 0; transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease; }
 .theme-toggle:hover { border-color: var(--red); color: var(--red); transform: scale(1.06); }
 .theme-toggle svg { width: 15px; height: 15px; display: block; }
@@ -335,6 +354,12 @@ a.masthead__title:hover { color: var(--red); }
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
     <span class="masthead__util-edition">Volume 02 &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Fall Issue</span>
+    <details class="masthead__langpicker">
+      <summary class="masthead__langpicker-btn" aria-label="Choose language">EN <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
+      <nav class="masthead__langpicker-menu" aria-label="Language">
+        <a href="/any-questions-so-far" class="masthead__langpicker-link" aria-current="true">English <span class="masthead__langpicker-code">EN</span></a>
+      </nav>
+    </details>
     <button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false" aria-label="Switch to dark mode">
       <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.4A9 9 0 1 1 11.6 3a7 7 0 0 0 9.4 9.4Z"/></svg>
       <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7"/></svg>
@@ -1024,6 +1049,9 @@ a.masthead__title:hover { color: var(--red); }
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
       <span class="site-footer__issn">ISSN 3143-6412 &middot; Volume 02 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <nav class="site-footer__langs" aria-label="Language">
+        <a href="/any-questions-so-far" class="site-footer__lang-link" aria-current="true">English</a>
+      </nav>
     </div>
     <nav class="site-footer__nav" aria-label="Site">
       <a href="/about" class="site-footer__nav-link">About</a>

@@ -35,26 +35,14 @@
 internal-link  /volume-02
 
 # ---------------------------------------------------------------------------
-# 2. [CLASS 2] "Scaling the Expert" (published 2026-08-17) declares hreflang alternates and
-#    langpicker/footer links for JA/ES/FR/DE, but no translations exist. All four
-#    are 404 live. This is the same defect class that was just fixed on
-#    contributors/peter-cohan.html.
-#    Fix: produce the translations, or strip the four alternates and nav links.
-# ---------------------------------------------------------------------------
-internal-link  /ja/scaling-the-expert
-internal-link  /es/scaling-the-expert
-internal-link  /fr/scaling-the-expert
-internal-link  /de/scaling-the-expert
-
-# ---------------------------------------------------------------------------
-# 3. [CLASS 2] Contributor profile for Matthew Trubow is linked from scaling-the-expert.html
+# 2. [CLASS 2] Contributor profile for Matthew Trubow is linked from scaling-the-expert.html
 #    but the page does not exist (404 live).
 #    Fix: create contributors/matthew-trubow.html, or unlink the byline.
 # ---------------------------------------------------------------------------
 internal-link  /contributors/matthew-trubow
 
 # ---------------------------------------------------------------------------
-# 4. [CLASS 1] Sitemap coverage gap — 30 live, indexable pages are absent from sitemap.xml.
+# 3. [CLASS 1] Sitemap coverage gap — 30 live, indexable pages are absent from sitemap.xml.
 #    Two clusters:
 #      a) scaling-the-expert, never added after publication.
 #         (any-questions-so-far was added to the sitemap 2026-08-17.)
@@ -74,7 +62,7 @@ sitemap-coverage  /tools
 sitemap-coverage  /volume-01
 
 # ---------------------------------------------------------------------------
-# 5. [CLASS 1] Missing favicon / RSS <head> declarations — LOCALE COUNTERPARTS ONLY.
+# 4. [CLASS 1] Missing favicon / RSS <head> declarations — LOCALE COUNTERPARTS ONLY.
 #    The four EN pages (any-questions-so-far, glossary, nice-job-hooking-me,
 #    ai-for-technical-marketers) were fixed 2026-08-17. Their ja/es/fr/de
 #    counterparts have the identical omission and were left out of that change
@@ -102,7 +90,7 @@ head-tags  ja/glossary.html
 head-tags  ja/nice-job-hooking-me.html
 
 # ---------------------------------------------------------------------------
-# 6. [CLASS 1] RSS <link> title attribute is inconsistent across the site.
+# 5. [CLASS 1] RSS <link> title attribute is inconsistent across the site.
 #
 #    Three forms are in use for the same feed:
 #      87 x  title="Technical Marketing &middot; Quarterly Updates"   <- canonical

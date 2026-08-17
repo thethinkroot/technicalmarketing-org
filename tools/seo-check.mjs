@@ -404,7 +404,34 @@ for (const file of htmlFiles) {
 }
 
 // ---------------------------------------------------------------------------
-// CHECK 7 (--live only) — every sitemap URL returns 200, no redirect hop
+// CHECK 7 — every standalone content page carries the language-switching
+//           components, even when only one language exists
+//
+// Presence only. Whether the links inside them resolve is already covered by the
+// internal-link check, and duplicating it here would report the same defect twice.
+//
+// The convention is that an untranslated page still renders a single-entry
+// English-only picker rather than omitting the component. That keeps the
+// masthead structurally identical across every page, which is what makes this
+// rule enforceable at all — "present on every page" is checkable, "present only
+// when translations exist" is a judgment call that drifts.
+// ---------------------------------------------------------------------------
+
+const PAGE_COMPONENTS = [
+  [/<details class="masthead__langpicker">/, 'masthead language picker (<details class="masthead__langpicker">)'],
+  [/class="site-footer__langs"/, 'footer language nav (class="site-footer__langs")'],
+];
+
+for (const file of htmlFiles) {
+  if (!canonicalOf(file)) continue; // not a standalone page
+  const html = read(file);
+  for (const [re, label] of PAGE_COMPONENTS) {
+    if (!re.test(html)) fail('page-components', file, 0, `missing ${label}`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CHECK 8 (--live only) — every sitemap URL returns 200, no redirect hop
 // ---------------------------------------------------------------------------
 
 if (LIVE) {
@@ -441,6 +468,7 @@ const LABELS = {
   'internal-link': 'Internal links / hreflang targets that redirect or 404',
   'sitemap-coverage': 'Live pages missing from the sitemap',
   'head-tags': 'Pages missing required <head> declarations (favicon / RSS)',
+  'page-components': 'Pages missing required masthead/footer components',
   indexnow: 'IndexNow workflow URLs',
   live: 'Live HTTP responses',
 };
