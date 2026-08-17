@@ -163,10 +163,39 @@ for (const loc of LOCALES) {
   }
 }
 
+// The body, plus the head text that readers actually see: <title> and the
+// description/og/twitter meta values, which surface in search results and link
+// previews. Terminology drifts there as easily as in prose, and scanning only
+// <body> missed a rejected rendering sitting in a meta description.
+// This site writes accented characters as HTML entities in some places and as
+// literal UTF-8 in others — often in the same file. Without decoding,
+// "proporci&oacute;n" and "proporción" are different strings, and a rejected
+// rendering hides behind whichever form the checker was not looking for.
+const ENTITIES = {
+  aacute: 'á', eacute: 'é', iacute: 'í', oacute: 'ó', uacute: 'ú',
+  ntilde: 'ñ', uuml: 'ü', ccedil: 'ç', agrave: 'à', egrave: 'è',
+  ecirc: 'ê', ocirc: 'ô', acirc: 'â', iuml: 'ï', euml: 'ë',
+  Aacute: 'Á', Eacute: 'É', Iacute: 'Í', Oacute: 'Ó', Uacute: 'Ú', Ntilde: 'Ñ',
+  szlig: 'ß', Uuml: 'Ü', Ouml: 'Ö', Auml: 'Ä', ouml: 'ö', auml: 'ä',
+  amp: '&', quot: '"', apos: "'", nbsp: ' ', middot: '·', mdash: '—', ndash: '–',
+  lsquo: '‘', rsquo: '’', ldquo: '“', rdquo: '”',
+  laquo: '«', raquo: '»', iquest: '¿', iexcl: '¡', le: '≤', ge: '≥',
+};
+const decode = (s) => s
+  .replace(/&([a-zA-Z]+);/g, (m, name) => ENTITIES[name] ?? m)
+  .replace(/&#(\d+);/g, (m, n) => String.fromCodePoint(Number(n)))
+  .replace(/&#x([0-9a-fA-F]+);/g, (m, n) => String.fromCodePoint(parseInt(n, 16)));
+
 const bodyOf = (relPath) => {
-  const html = readFileSync(join(ROOT, relPath), 'utf8');
+  const html = decode(readFileSync(join(ROOT, relPath), 'utf8'));
   const i = html.indexOf('<body');
-  return i === -1 ? html : html.slice(i);
+  const body = i === -1 ? html : html.slice(i);
+  const head = i === -1 ? '' : html.slice(0, i);
+  const visibleHead = [
+    ...[...head.matchAll(/<title>([\s\S]*?)<\/title>/gi)].map((m) => m[1]),
+    ...[...head.matchAll(/<meta[^>]+(?:name|property)=["'](?:description|og:title|og:description|twitter:title|twitter:description)["'][^>]*content=["']([^"']*)["']/gi)].map((m) => m[1]),
+  ].join('\n');
+  return `${visibleHead}\n${body}`;
 };
 
 const countOf = (hay, needle) => needle ? hay.split(needle).length - 1 : 0;

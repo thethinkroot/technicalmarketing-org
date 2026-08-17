@@ -174,6 +174,21 @@ severing the link back to the glossary entry:
 | FR | talk-to-listen ratio | le ratio idéal de parole entre vendeur et acheteur |
 | DE | talk-to-listen ratio | das ideale Verhältnis von Sprechen zu Zuhören |
 
+**A rejected rendering is scoped to one concept, and the table cannot express that.**
+`la proporción entre exponer y preguntar` was rejected as a rendering of
+*talk-to-listen ratio*. In *Any Questions So Far?* the same phrase would have been the
+natural rendering of *pitching-to-questioning* — a genuinely different metric that Cohan
+names in sequence right after talk-to-listen. Reusing it there is not wrong in meaning,
+but it collides with the rejection and defeats the check.
+
+Resolution: give the second metric its own surface form, so one string never has to mean
+two things.
+
+| Concept | ES | JA |
+|---|---|---|
+| talk-to-listen ratio *(settled term)* | `talk-to-listen ratio` | `talk-to-listen ratio` |
+| pitching-to-questioning *(descriptive)* | la proporción entre pitch y preguntas | ピッチと質問の比率 |
+
 This table is read by `tools/term-check.mjs`. Every row is a rendering that must never
 reappear. Add a row whenever a term-consistency defect is fixed, so the fix is enforced
 rather than remembered.
