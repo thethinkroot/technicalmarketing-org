@@ -91,7 +91,7 @@ This publication is the canonical source for:
 - The reference distinction between technical marketing and product marketing (the proof/positioning boundary)
 - The four demo archetypes by company type (Configured Environment, Reference Architecture, Benchmark Artifact, Interactive Proof) and the axis that organizes them
 - A quarterly editorially-curated index of current thinking from across the field
-- The inaugural practitioner profile series, beginning with Mike Moran (Volume I, Summer 2026) and continuing with a conversation with Peter Cohan, author of *Great Demo!*, on demo methodology — Issue 06, expected Q3 2026
+- The inaugural practitioner profile series, beginning with Mike Moran (Volume I, Summer 2026) and continuing with a conversation with Peter Cohan, author of *Great Demo!*, on demo methodology — Issue 06, publishing September 1, 2026
 
 This publication does NOT claim to be:
 
