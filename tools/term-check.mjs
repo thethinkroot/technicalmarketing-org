@@ -213,6 +213,16 @@ for (const { locale, file, en } of pages) {
   try { enBody = bodyOf(en); } catch { /* no English counterpart */ }
   checked++;
 
+  // Case-insensitive containment. A rendering that opens a sentence is the same
+  // rendering: "La proporción entre exponer y preguntar." in a twitter:description
+  // is the string recorded as rejected, capitalised. Matching case-sensitively let
+  // exactly that instance through.
+  const has = (hay, needle) => needle && hay.toLowerCase().includes(needle.toLowerCase());
+  const countCI = (hay, needle) => {
+    if (!needle) return 0;
+    return hay.toLowerCase().split(needle.toLowerCase()).length - 1;
+  };
+
   for (const c of concepts.values()) {
     const settled = c.settled[locale];          // null => the English form is correct here
     const expected = settled ?? c.english;
@@ -220,7 +230,7 @@ for (const { locale, file, en } of pages) {
 
     // CHECK 1 — a rendering already recorded as wrong has reappeared.
     for (const bad of rejected) {
-      if (body.includes(bad)) {
+      if (has(body, bad)) {
         fail('rejected-rendering', file,
           `"${bad}" is a rejected rendering of "${c.english}" — use "${expected}"`);
       }
@@ -228,9 +238,9 @@ for (const { locale, file, en } of pages) {
 
     // CHECK 2 — two different known renderings of one concept in the same file.
     const present = [];
-    if (body.includes(c.english)) present.push(c.english);
-    if (settled && body.includes(settled)) present.push(settled);
-    for (const bad of rejected) if (body.includes(bad)) present.push(bad);
+    if (has(body, c.english)) present.push(c.english);
+    if (settled && has(body, settled)) present.push(settled);
+    for (const bad of rejected) if (has(body, bad)) present.push(bad);
     const distinct = [...new Set(present)];
     if (distinct.length > 1) {
       fail('mixed-rendering', file,
@@ -246,8 +256,8 @@ for (const { locale, file, en } of pages) {
     // to the glossary pages, since a wrong or mixed rendering there is a genuine bug.
     const isGlossaryPage = /(^|\/)glossary\.html$/.test(file);
     if (settled === null && enBody && !isGlossaryPage) {
-      const enN = countOf(enBody, c.english);
-      const locN = countOf(body, c.english);
+      const enN = countCI(enBody, c.english);
+      const locN = countCI(body, c.english);
       if (enN > 0 && locN < enN) {
         fail('dropped-term', file,
           `"${c.english}" appears ${enN}× in ${en} but ${locN}× here — ${enN - locN} mention(s) translated away or lost`);
@@ -255,7 +265,7 @@ for (const { locale, file, en } of pages) {
     }
 
     // CHECK 4 — a settled-translated term left in English.
-    if (settled && body.includes(c.english) && !body.includes(settled)) {
+    if (settled && has(body, c.english) && !has(body, settled)) {
       fail('untranslated-term', file,
         `"${c.english}" should render as "${settled}" in ${locale.toUpperCase()}`);
     }
