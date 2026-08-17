@@ -460,7 +460,47 @@ for (const file of htmlFiles) {
 }
 
 // ---------------------------------------------------------------------------
-// CHECK 9 (--live only) — every sitemap URL returns 200, no redirect hop
+// CHECK 9 — no characters from scripts this site never uses
+//
+// Catches generation-level corruption rather than a translation judgment: a word
+// silently assembled from two alphabets, e.g. Cyrillic "мед" fused onto Latin
+// "icinal" inside a Japanese sentence, or "процес" where プロセス belongs. Two
+// such defects were produced while drafting the Japanese page. Both rendered as
+// visible garbage and both passed every other check, because terminology and
+// structure were untouched.
+//
+// A survey found Cyrillic, Greek, Hangul, Arabic, Hebrew, Devanagari and Thai
+// absent from every page, so any occurrence is corruption, not content. CJK is
+// deliberately not listed: it appears on all 108 pages as the 日本語 label in the
+// language picker, and is legitimate in every locale.
+// ---------------------------------------------------------------------------
+
+const FOREIGN_SCRIPTS = [
+  ['Cyrillic', /[Ѐ-ԯ]/g],
+  ['Greek', /[Ͱ-Ͽ]/g],
+  ['Hangul', /[가-힯ᄀ-ᇿ]/g],
+  ['Arabic', /[؀-ۿ]/g],
+  ['Hebrew', /[֐-׿]/g],
+  ['Devanagari', /[ऀ-ॿ]/g],
+  ['Thai', /[฀-๿]/g],
+];
+
+for (const file of htmlFiles) {
+  // Strip script and style blocks: base64 and CSS are not prose and cannot carry this defect.
+  const text = read(file).replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ');
+  for (const [script, re] of FOREIGN_SCRIPTS) {
+    const matches = [...text.matchAll(re)];
+    if (!matches.length) continue;
+    // Show the corrupted word in context so the fix is obvious.
+    const at = matches[0].index;
+    const word = text.slice(Math.max(0, at - 24), at + 24).replace(/\s+/g, ' ').trim();
+    fail('foreign-script', file, 0,
+      `${matches.length} ${script} character(s) — this site uses none, so it is corruption, not content. Near: "…${word}…"`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CHECK 10 (--live only) — every sitemap URL returns 200, no redirect hop
 // ---------------------------------------------------------------------------
 
 if (LIVE) {
@@ -499,6 +539,7 @@ const LABELS = {
   'head-tags': 'Pages missing required <head> declarations (favicon / RSS)',
   'page-components': 'Pages missing required masthead/footer components',
   'relative-asset': 'Document-relative asset paths (break when copied to a locale)',
+  'foreign-script': 'Characters from scripts this site never uses (generation corruption)',
   indexnow: 'IndexNow workflow URLs',
   live: 'Live HTTP responses',
 };
