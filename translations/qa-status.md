@@ -103,7 +103,7 @@ conventions, not reviewed.
 |---|---|---|---|
 | EN | ✅ | ◐ | n/a — source, copy locked |
 | ES | ✅ | ✅ | — |
-| JA | — | — | — |
+| JA | ✅ | ✅ | — |
 | FR | — | — | — |
 | DE | — | — | — |
 
@@ -121,6 +121,20 @@ footer. Zero English prose remains in the body.
   distinct ratios kept separate; `curse of knowledge` correctly rendered
   `la maldición del conocimiento` per § 5.3 with zero English instances; rendered output
   read in-browser with the network log checked for broken assets.
+
+**JA is complete** — all seven sections plus front matter, afterword, bio, notes, folio
+and footer. Zero English prose in the body.
+
+- Structural ✅ — both checkers pass, CSS byte-identical, hreflang `en ja es x-default`
+  reciprocal across all three pages, sitemap entry added.
+- Claude-reviewed ✅ — full page. Copley 13 tokens matching the English split; the
+  talk-to-listen chain carried through every structural position; `curse of knowledge`
+  rendered 知識の呪い and `Lead churn` リードチャーン per § 5.2–5.3; the rejected
+  提示と質問の比率 kept at zero with pitching-to-questioning distinguished as
+  ピッチと質問の比率; rendered output read in-browser.
+- **Two character-corruption defects were produced during drafting** (Cyrillic fused into
+  Japanese words) and fixed. `seo-check` CHECK 9 now catches this class mechanically; it
+  was verified against both instances retroactively.
 
 ### All other pages
 
