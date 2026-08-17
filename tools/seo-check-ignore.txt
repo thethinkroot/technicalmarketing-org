@@ -1,0 +1,86 @@
+# seo-check baseline — known, pre-existing violations
+#
+# Format:  <check-type><whitespace><substring to match in the violation message>
+# Lines starting with # are comments.
+#
+# Everything listed here is a REAL defect. It is recorded rather than fixed so that
+# adopting the gate does not require clearing the whole backlog first. New violations
+# outside this list always fail the build.
+#
+# Run `node tools/seo-check.mjs --show-known` to print these in full.
+# Delete a line as soon as the underlying issue is fixed — a stale entry silently
+# hides a regression.
+
+# ---------------------------------------------------------------------------
+# 1. Volume 02 index page has not been built yet.
+#    Three pages link to /volume-02, which is 404 live.
+#    Fix: ship volume-02.html, or remove the links.
+# ---------------------------------------------------------------------------
+internal-link  /volume-02
+
+# ---------------------------------------------------------------------------
+# 2. "Scaling the Expert" (published 2026-08-17) declares hreflang alternates and
+#    langpicker/footer links for JA/ES/FR/DE, but no translations exist. All four
+#    are 404 live. This is the same defect class that was just fixed on
+#    contributors/peter-cohan.html.
+#    Fix: produce the translations, or strip the four alternates and nav links.
+# ---------------------------------------------------------------------------
+internal-link  /ja/scaling-the-expert
+internal-link  /es/scaling-the-expert
+internal-link  /fr/scaling-the-expert
+internal-link  /de/scaling-the-expert
+
+# ---------------------------------------------------------------------------
+# 3. Contributor profile for Matthew Trubow is linked from scaling-the-expert.html
+#    but the page does not exist (404 live).
+#    Fix: create contributors/matthew-trubow.html, or unlink the byline.
+# ---------------------------------------------------------------------------
+internal-link  /contributors/matthew-trubow
+
+# ---------------------------------------------------------------------------
+# 4. Sitemap coverage gap — 30 live, indexable pages are absent from sitemap.xml.
+#    Two clusters:
+#      a) The two newest EN articles, never added after publication.
+#      b) Seven page types across all four locales (ai-for-technical-marketers,
+#         archive, reference, suggest, the-index, tools, volume-01) — the locale
+#         sitemap pass covered only a subset of pages.
+#    Fix: add the missing <url> blocks. Until then Google will not discover these
+#    from the sitemap, only by crawling internal links.
+# ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# 5. Missing favicon / RSS <head> declarations — LOCALE COUNTERPARTS ONLY.
+#    The four EN pages (any-questions-so-far, glossary, nice-job-hooking-me,
+#    ai-for-technical-marketers) were fixed 2026-08-17. Their ja/es/fr/de
+#    counterparts have the identical omission and were left out of that change
+#    only because the scope was explicitly the four EN pages.
+#
+#    This is a mechanical one-line insertion per file against a verified-good
+#    path (/favicon.svg returns 200) — no judgment required. It should be swept
+#    in a single follow-up, not carried indefinitely.
+#
+#    16 violations across 12 files: all four locales × {ai-for-technical-marketers,
+#    glossary, nice-job-hooking-me}, plus the RSS declaration on nice-job-hooking-me
+#    in all four locales.
+# ---------------------------------------------------------------------------
+head-tags  de/ai-for-technical-marketers.html
+head-tags  de/glossary.html
+head-tags  de/nice-job-hooking-me.html
+head-tags  es/ai-for-technical-marketers.html
+head-tags  es/glossary.html
+head-tags  es/nice-job-hooking-me.html
+head-tags  fr/ai-for-technical-marketers.html
+head-tags  fr/glossary.html
+head-tags  fr/nice-job-hooking-me.html
+head-tags  ja/ai-for-technical-marketers.html
+head-tags  ja/glossary.html
+head-tags  ja/nice-job-hooking-me.html
+
+sitemap-coverage  /any-questions-so-far
+sitemap-coverage  /scaling-the-expert
+sitemap-coverage  /ai-for-technical-marketers
+sitemap-coverage  /archive
+sitemap-coverage  /reference
+sitemap-coverage  /suggest
+sitemap-coverage  /the-index
+sitemap-coverage  /tools
+sitemap-coverage  /volume-01
