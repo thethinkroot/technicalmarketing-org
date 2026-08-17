@@ -281,12 +281,15 @@ change even though the translation treatment is settled.
 The only one of the sixteen unprecedented terms not settled. It carries two distinct
 problems that must not be conflated.
 
-**(a) Factual content — BLOCKED, awaiting source text.** A more precise definition was
-commissioned covering the ringisho process, hanko circulation, and group-harmony framing,
-to replace the current entry's factual content in all locales. **The replacement text was
-never received.** Nothing has been changed. This is deliberately not written from
-inference: fabricating a definition of a Japanese business process and presenting it as
-the commissioned correction would be worse than the imprecision it replaces.
+**(a) Factual content — RESOLVED 2026-08-17.** The entry's definition now names the
+mechanism rather than only its effect: the *ringisho* (稟議書) as the circulating
+instrument, the *hanko* seal as the unit of approval, the bottom-up origin of proposals,
+and total agreement rather than majority as the goal. Applied to `glossary.html`.
+
+**Scope note:** "all locales" resolved to one file. `ringi` is one of the sixteen
+unprecedented terms, so **no `ringi` entry exists in `ja|es|fr|de/glossary.html`** —
+verified, zero matches in all four. There was nothing else to update. Creating those
+entries is part of the locale-glossary backfill (§ 5.6), not this change.
 
 **(b) JA rhetorical stance — DEFERRED, not settled.** Distinct from (a) and not fixed by
 it.
@@ -316,6 +319,32 @@ a foreign vendor must decode. The characters would be right and the entry still 
 The JA body is **new editorial writing, not a translation task**, and must not be produced
 as part of a terminology pass. **Explicitly deferred.** Marking it "settled: 稟議" would
 close the terminology question while leaving a mis-framed entry to be found later.
+
+---
+
+### 5.6 Locale-glossary backfill — QUEUED, prerequisite for auto-linking
+
+Each locale glossary has 47 entries; the English has 63. **The sixteen unprecedented
+terms exist in no locale glossary at all**, including the fifteen now settled in
+§ 5.1–5.4.
+
+This is its own task, not part of any other work:
+
+- It blocks **auto-linking**. That script links a term's first mention to its locale
+  glossary anchor. For these terms the anchor does not exist, so linking 暗黙知の移転 to
+  `/ja/glossary#tacit-knowledge-transfer` would point at nothing. The backfill must land
+  first, or auto-linking simply cannot cover the newly-settled terms.
+- The renderings are already decided, so this is transcription plus translated
+  definitions, not terminology work.
+- Entry `id` anchors must match the English exactly — that is what makes cross-locale
+  alignment checkable at all.
+
+**Class 1** in the seo-check baseline sense — mechanical, no native review needed for the
+terminology itself, though the definition bodies are translation work.
+
+One exception: `ringi` should **not** be backfilled into `ja/glossary.html` on the same
+pass. Its Japanese entry needs the rewrite described in § 5.5(b), not a translation of the
+English body.
 
 ---
 
