@@ -431,7 +431,36 @@ for (const file of htmlFiles) {
 }
 
 // ---------------------------------------------------------------------------
-// CHECK 8 (--live only) — every sitemap URL returns 200, no redirect hop
+// CHECK 8 — asset references must be root-relative, never document-relative
+//
+// A path like src="Images/plate.jpg" resolves against the page's own URL. On a
+// root page that happens to be correct; copy the same file to /es/ and every
+// reference silently resolves to /es/Images/ and 404s. That is exactly what
+// happened when any-questions-so-far.html was translated: nine images broke,
+// and no existing check noticed, because the sitemap, canonicals and terminology
+// were all still valid.
+//
+// Absolute paths are already the site-wide convention — this page was the only
+// file using relative ones — so the rule is a straight assertion of it.
+// ---------------------------------------------------------------------------
+
+for (const file of htmlFiles) {
+  const html = read(file);
+  const body = html.slice(Math.max(0, html.indexOf('<body')));
+  const seen = new Set();
+  for (const m of body.matchAll(/(?:src|href)=["']([^"']+)["']/g)) {
+    const ref = m[1];
+    // Absolute, external, inline, in-page or protocol links are all fine.
+    if (/^(\/|https?:|data:|#|mailto:|tel:|javascript:)/i.test(ref)) continue;
+    if (seen.has(ref)) continue;
+    seen.add(ref);
+    fail('relative-asset', file, 0,
+      `document-relative reference "${ref}" — resolves against the page URL, so it breaks when this file is copied to a locale directory. Use a root-relative path ("/${ref.replace(/^\.\//, '')}").`);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// CHECK 9 (--live only) — every sitemap URL returns 200, no redirect hop
 // ---------------------------------------------------------------------------
 
 if (LIVE) {
@@ -469,6 +498,7 @@ const LABELS = {
   'sitemap-coverage': 'Live pages missing from the sitemap',
   'head-tags': 'Pages missing required <head> declarations (favicon / RSS)',
   'page-components': 'Pages missing required masthead/footer components',
+  'relative-asset': 'Document-relative asset paths (break when copied to a locale)',
   indexnow: 'IndexNow workflow URLs',
   live: 'Live HTTP responses',
 };
