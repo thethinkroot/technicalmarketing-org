@@ -706,6 +706,15 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/"/>
   </url>
 
+  <url>
+    <loc>https://technicalmarketing.org/any-questions-so-far</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/any-questions-so-far"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/any-questions-so-far"/>
+  </url>
+
   <!-- ============================================================ -->
   <!-- CONTRIBUTOR PROFILES -->
   <!-- ============================================================ -->
