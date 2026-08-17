@@ -1,0 +1,30 @@
+#!/bin/sh
+#
+# Pre-push gate for technicalmarketing.org.
+#
+# Blocks a push when any sitemap entry, internal link, hreflang tag or IndexNow URL
+# points at a redirecting or non-existent URL. This is the check that would have
+# caught the July 2026 "Page with redirect" failures in Google Search Console
+# before they shipped.
+#
+# Enable once per clone:
+#     git config core.hooksPath .githooks
+#
+# Bypass in an emergency (and fix immediately after):
+#     git push --no-verify
+
+if ! command -v node >/dev/null 2>&1; then
+  echo "pre-push: node not found — skipping seo-check." >&2
+  exit 0
+fi
+
+echo "pre-push: running seo-check…"
+
+if ! node "$(git rev-parse --show-toplevel)/tools/seo-check.mjs"; then
+  echo ""
+  echo "pre-push: BLOCKED. Fix the violations above, or push with --no-verify if you"
+  echo "          have accepted them deliberately." >&2
+  exit 1
+fi
+
+exit 0

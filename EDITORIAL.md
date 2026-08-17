@@ -376,8 +376,17 @@ Every published asset — folio, cover, OG image, LinkedIn post, web page — mu
 8. **Type check.** Only the three locked faces, in the assigned roles.
 9. **Mobile check** (web only). Diagrams legible at 375px viewport. Touch targets at 44px or larger.
 10. **Date check.** The publication date is correct. The folio reference is correct.
+11. **URL and canonical check** (web only). Run `node tools/seo-check.mjs` from the repository root. Every sitemap entry, internal link, language-picker link, footer link and hreflang tag must point at the canonical URL — the exact scheme and trailing-slash form declared in that page's `<link rel="canonical">`. A link that redirects is a failure, not a convenience: Google Search Console reports it as *Page with redirect* and fails sitemap validation.
 
 If any check fails, the asset does not ship.
+
+The URL and canonical check also runs automatically as a `pre-push` git hook. Enable it once per clone:
+
+```
+git config core.hooksPath .githooks
+```
+
+Add `--live` to verify against the deployed site over the network, and `--show-known` to list the pre-existing issues recorded in `tools/seo-check-ignore.txt`. Entries in that file are real defects that are not yet fixed; delete a line the moment its issue is resolved, because a stale entry silently hides a regression.
 
 ### AI-Assisted Writing Protocol
 
