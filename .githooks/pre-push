@@ -33,24 +33,38 @@ fi
 # Each outgoing commit must also be internally consistent: a commit whose
 # sitemap advertises a page it does not contain would serve 404s if deployed,
 # and the working-tree check above cannot see that.
-if UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null); then
-  COMMITS=$(git rev-list "$UPSTREAM"..HEAD --reverse)
-  if [ -n "$COMMITS" ]; then
-    COUNT=$(printf '%s\n' "$COMMITS" | wc -l | tr -d ' ')
-    echo "pre-push: validating $COUNT outgoing commit(s) against $UPSTREAM…"
-    for c in $COMMITS; do
-      if ! node "$CHECK" --commit "$c"; then
-        echo ""
-        echo "pre-push: BLOCKED. The commit above is not internally consistent." >&2
-        echo "          Restage so each commit contains the pages its sitemap lists." >&2
-        exit 1
-      fi
-    done
-  else
-    echo "pre-push: no outgoing commits."
-  fi
+# Determine what to compare against. A branch with no upstream is the normal
+# case for new work, so falling back matters: skipping validation there would
+# disable the guard exactly where unreviewed commits are created.
+BASE=$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null)
+if [ -z "$BASE" ]; then
+  for candidate in origin/main origin/master; do
+    if git rev-parse --verify --quiet "$candidate" >/dev/null; then BASE="$candidate"; break; fi
+  done
+fi
+
+if [ -n "$BASE" ]; then
+  COMMITS=$(git rev-list "$BASE"..HEAD --reverse)
+  LABEL="against $BASE"
 else
-  echo "pre-push: no upstream configured — skipping per-commit validation."
+  # No remote to compare with at all — validate the tip rather than nothing.
+  COMMITS=$(git rev-parse HEAD)
+  LABEL="(no remote found — validating HEAD only)"
+fi
+
+if [ -n "$COMMITS" ]; then
+  COUNT=$(printf '%s\n' "$COMMITS" | wc -l | tr -d ' ')
+  echo "pre-push: validating $COUNT commit(s) $LABEL…"
+  for c in $COMMITS; do
+    if ! node "$CHECK" --commit "$c"; then
+      echo ""
+      echo "pre-push: BLOCKED. The commit above is not internally consistent." >&2
+      echo "          Restage so each commit contains the pages its sitemap lists." >&2
+      exit 1
+    fi
+  done
+else
+  echo "pre-push: no outgoing commits $LABEL."
 fi
 
 exit 0

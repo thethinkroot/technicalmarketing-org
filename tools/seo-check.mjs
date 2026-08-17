@@ -47,8 +47,13 @@ if (commitIdx !== -1) {
   }
 
   const git = (args) => execFileSync('git', args, { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 * 1024 * 1024 });
+  // stdio 'pipe' on stderr so git's "fatal: path ... does not exist" chatter,
+  // which is the expected result of a miss, does not leak into the report.
   const inTree = (path) => {
-    try { git(['cat-file', '-e', `${ref}:${path}`]); return true; } catch { return false; }
+    try {
+      execFileSync('git', ['cat-file', '-e', `${ref}:${path}`], { cwd: ROOT, stdio: ['ignore', 'ignore', 'ignore'] });
+      return true;
+    } catch { return false; }
   };
 
   let sitemap;
