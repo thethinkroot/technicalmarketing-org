@@ -163,12 +163,16 @@ ratio"* and then *"the pitching-to-questioning ratio"* and connects them without
 A translated paraphrase cannot do that. Each of these read as an unrelated second idea,
 severing the link back to the glossary entry:
 
-| Locale | Paraphrase that was removed |
-|---|---|
-| JA | 提示と質問の比率 |
-| ES | la proporción entre exponer y preguntar |
-| FR | le rapport entre exposer et questionner |
-| DE | das Verhältnis von Vortragen zu Fragen |
+| Locale | Term | Rejected rendering |
+|---|---|---|
+| JA | talk-to-listen ratio | 提示と質問の比率 |
+| ES | talk-to-listen ratio | la proporción entre exponer y preguntar |
+| FR | talk-to-listen ratio | le rapport entre exposer et questionner |
+| DE | talk-to-listen ratio | das Verhältnis von Vortragen zu Fragen |
+
+This table is read by `tools/term-check.mjs`. Every row is a rendering that must never
+reappear. Add a row whenever a term-consistency defect is fixed, so the fix is enforced
+rather than remembered.
 
 So the English term is repeated where the English original varied.
 
