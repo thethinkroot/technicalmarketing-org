@@ -200,6 +200,18 @@ const bodyOf = (relPath) => {
 
 const countOf = (hay, needle) => needle ? hay.split(needle).length - 1 : 0;
 
+// A multi-word term counted with a plain space also has to count as present when a
+// locale compounds it with hyphens instead — "Copley Plan" rendered "Copley-Plan-Jahre"
+// in German, attributive-compound hyphenation the same as this site's existing
+// Great-Demo-Ansatz / Long-Context-Modell. That is the same term, not a different one;
+// only the counting method needs to know both spellings are the same string.
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const termCountRe = (needle) => {
+  const words = needle.trim().split(/\s+/).map(escapeRe);
+  const sep = words.length > 1 ? '[ -]' : '';
+  return new RegExp(`\\b${words.join(sep)}\\b`, 'gi');
+};
+
 // ---------------------------------------------------------------------------
 // Checks
 // ---------------------------------------------------------------------------
@@ -220,7 +232,8 @@ for (const { locale, file, en } of pages) {
   const has = (hay, needle) => needle && hay.toLowerCase().includes(needle.toLowerCase());
   const countCI = (hay, needle) => {
     if (!needle) return 0;
-    return hay.toLowerCase().split(needle.toLowerCase()).length - 1;
+    const m = hay.match(termCountRe(needle));
+    return m ? m.length : 0;
   };
 
   for (const c of concepts.values()) {
