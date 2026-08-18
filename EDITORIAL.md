@@ -377,16 +377,21 @@ Every published asset — folio, cover, OG image, LinkedIn post, web page — mu
 9. **Mobile check** (web only). Diagrams legible at 375px viewport. Touch targets at 44px or larger.
 10. **Date check.** The publication date is correct. The folio reference is correct.
 11. **URL and canonical check** (web only). Run `node tools/seo-check.mjs` from the repository root. Every sitemap entry, internal link, language-picker link, footer link and hreflang tag must point at the canonical URL — the exact scheme and trailing-slash form declared in that page's `<link rel="canonical">`. A link that redirects is a failure, not a convenience: Google Search Console reports it as *Page with redirect* and fails sitemap validation.
+12. **Term-consistency check** (web only). Run `node tools/term-check.mjs` from the repository root. Every settled glossary term (`translations/glossary.md` § 5) must render the same way at every mention within a locale page, a rejected rendering must never reappear, and a settled-translated term must never be left in English.
 
 If any check fails, the asset does not ship.
 
-The URL and canonical check also runs automatically as a `pre-push` git hook. Enable it once per clone:
+The URL and canonical check and the term-consistency check both also run automatically as a `pre-push` git hook. Enable it once per clone:
 
 ```
 git config core.hooksPath .githooks
 ```
 
-Add `--live` to verify against the deployed site over the network, and `--show-known` to list the pre-existing issues recorded in `tools/seo-check-ignore.txt`. Entries in that file are real defects that are not yet fixed; delete a line the moment its issue is resolved, because a stale entry silently hides a regression.
+Add `--live` to `seo-check.mjs` to verify against the deployed site over the network, and `--show-known` to list the pre-existing issues recorded in `tools/seo-check-ignore.txt`. Entries in that file are real defects that are not yet fixed; delete a line the moment its issue is resolved, because a stale entry silently hides a regression.
+
+### Glossary auto-linking
+
+Once seo-check and term-check both pass for a page — never before, since linking bakes in whatever rendering happened to be current — run `node tools/glossary-link.mjs` from the repository root to wire the first plain-text mention of every settled glossary term, per article, per locale, into a link to that locale's own glossary anchor. It is an editorial tool, not a gate: unlike the two checks above, it writes to the working tree, so it is run deliberately and is not part of the pre-push hook. Use `--check` for a dry run that reports what would change without writing, and `--verbose` to also see every term the tool considered and skipped. Re-running is a no-op once every article is wired — a term already linked anywhere in a file is left alone.
 
 ### AI-Assisted Writing Protocol
 
