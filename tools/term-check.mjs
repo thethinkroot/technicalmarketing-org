@@ -250,10 +250,21 @@ for (const { locale, file, en } of pages) {
     }
 
     // CHECK 2 — two different known renderings of one concept in the same file.
+    //
+    // Same-page glossary cross-reference link text ("See also", inline mentions)
+    // renders the TARGET entry's own href-anchor convention, which is not
+    // necessarily how the CURRENT entry renders that concept elsewhere. JA in
+    // particular always keeps such link text in English regardless of the
+    // target's own settled translation — see editorial-judgment, shipped before
+    // this check existed: every JA "See also" link reads "Editorial judgment",
+    // never 編集判断, even though the entry's own heading is 編集判断. That is a
+    // deliberate, already-shipped furniture convention, not drift, so it must
+    // not count as a second rendering of the concept here.
+    const bodyForMixedCheck = body.replace(/<a href="#[a-z0-9-]+">[^<]*<\/a>/gi, '');
     const present = [];
-    if (has(body, c.english)) present.push(c.english);
-    if (settled && has(body, settled)) present.push(settled);
-    for (const bad of rejected) if (has(body, bad)) present.push(bad);
+    if (has(bodyForMixedCheck, c.english)) present.push(c.english);
+    if (settled && has(bodyForMixedCheck, settled)) present.push(settled);
+    for (const bad of rejected) if (has(bodyForMixedCheck, bad)) present.push(bad);
     const distinct = [...new Set(present)];
     if (distinct.length > 1) {
       fail('mixed-rendering', file,
