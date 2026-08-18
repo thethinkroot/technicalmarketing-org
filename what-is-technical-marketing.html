@@ -109,6 +109,12 @@ textarea:focus-visible {
   outline-offset: 3px;
   border-radius: 1px;
 }
+/* Auto-linked glossary terms — deliberately distinct from primary nav and
+   citation links, so 50+ inline references don't compete visually with
+   either. border-bottom (not text-decoration) for finer color/style control. */
+.glossary-auto-link { border-bottom: 1px dotted var(--ink-40); }
+.glossary-auto-link:hover,
+.glossary-auto-link:focus-visible { border-bottom: 1px solid var(--red); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -2026,7 +2032,7 @@ a.masthead__title:hover { color: var(--red); }
         <p>There is a reason the technical marketing manager role is one of the most inconsistently defined in enterprise software. Every company interprets it differently because no canonical definition exists for what the discipline covers or what good looks like.</p>
         <p>At some companies the role means a former sales engineer who learned to write. At others it means a former product marketer who learned to read API documentation. At a handful of companies, usually the ones that win the most technical evaluations, it means a specialist who holds both the technical depth and the commercial frame simultaneously and can move between them without losing either.</p>
         <p>The practitioners who do this work well almost always developed the skill through exposure rather than formal training. There is no technical marketing curriculum. No widely recognized certification. No community that has codified what good looks like the way <a href="https://www.presalescollective.com" target="_blank" rel="noopener">PreSales Collective</a> has done for sales engineers or <a href="https://www.pragmaticinstitute.com" target="_blank" rel="noopener">Pragmatic Institute</a> has done for product managers. <a href="https://www.trewmarketing.com" target="_blank" rel="noopener">Wendy Covey at TREW Marketing</a> has done substantial work on the adjacent question of marketing to engineers, which captures some of the same territory. But a coherent body of practice around technical marketing itself does not yet exist in a publicly available form.</p>
-        <p>Quantitative grounding for the discipline does exist, scattered across vendor research and academic studies. <a href="https://www.gong.io/blog/" target="_blank" rel="noopener">Gong's analysis of millions of B2B sales conversations</a> has produced specific findings that shape what good technical marketing content should look like. Discovery is the single highest predictor of deal outcomes. The optimal pitch length is under seventy-six seconds. The ideal <a href="/glossary#talk-to-listen-ratio">talk-to-listen ratio</a> in technical conversations is roughly sixty-five to thirty-five. Demos that demonstrate fewer features tend to win more often than those that demonstrate many. Those findings have not yet been translated into a shared body of practice for the discipline as a whole.</p>
+        <p>Quantitative grounding for the discipline does exist, scattered across vendor research and academic studies. <a href="https://www.gong.io/blog/" target="_blank" rel="noopener">Gong's analysis of millions of B2B sales conversations</a> has produced specific findings that shape what good technical marketing content should look like. Discovery is the single highest predictor of deal outcomes. The optimal pitch length is under seventy-six seconds. The ideal <a href="/glossary#talk-to-listen-ratio" class="glossary-auto-link">talk-to-listen ratio</a> in technical conversations is roughly sixty-five to thirty-five. Demos that demonstrate fewer features tend to win more often than those that demonstrate many. Those findings have not yet been translated into a shared body of practice for the discipline as a whole.</p>
         <p>The field is mature in the sense that the role exists everywhere. It is immature in the sense that practitioners have no shared language for describing what they do, no agreed-upon standards for what good looks like, and no recognized place to develop publicly as members of a discipline. The work happens. The discipline has never been codified.</p>
       </section>
 

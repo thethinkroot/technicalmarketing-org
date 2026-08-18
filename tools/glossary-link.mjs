@@ -320,7 +320,7 @@ for (const file of targets) {
   // Apply from the end backward so earlier offsets stay valid.
   let newBody = body;
   for (const ins of [...insertions].sort((a, b) => b.start - a.start)) {
-    newBody = newBody.slice(0, ins.start) + `<a href="${ins.href}">${ins.text}</a>` + newBody.slice(ins.end);
+    newBody = newBody.slice(0, ins.start) + `<a href="${ins.href}" class="glossary-auto-link">${ins.text}</a>` + newBody.slice(ins.end);
   }
 
   filesChanged++;

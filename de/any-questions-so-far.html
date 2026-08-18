@@ -66,6 +66,12 @@ html[data-theme="dark"] .ep-rail__dot { background: var(--paper-light); border-c
 body { font-family: var(--f-serif); background: var(--paper); color: var(--ink); line-height: 1.62; }
 a { color: inherit; text-decoration: none; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+/* Auto-linked glossary terms — deliberately distinct from primary nav and
+   citation links, so 50+ inline references don't compete visually with
+   either. border-bottom (not text-decoration) for finer color/style control. */
+.glossary-auto-link { border-bottom: 1px dotted var(--ink-40); }
+.glossary-auto-link:hover,
+.glossary-auto-link:focus-visible { border-bottom: 1px solid var(--red); }
 
 #progress-bar { position: fixed; top: 0; left: 0; height: 2px; background: var(--red); width: 0%; z-index: 200; transition: width 0.1s linear; }
 
@@ -608,7 +614,7 @@ a.masthead__title:hover { color: var(--red); }
     <span class="section-video__watch" aria-hidden="true"><span class="section-video__watch-diamond"></span>Episode 3 ansehen</span>
   </a>
   <div class="section-video__plate">
-    <p class="section-video__plate-caption">Episode 3 von 7 ansehen &middot; Die <a href="/de/glossary#talk-to-listen-ratio">talk-to-listen ratio</a></p>
+    <p class="section-video__plate-caption">Episode 3 von 7 ansehen &middot; Die <a href="/de/glossary#talk-to-listen-ratio" class="glossary-auto-link">talk-to-listen ratio</a></p>
     <span class="section-video__plate-tag"><span class="section-video__plate-diamond">&#9670;</span>Tafel III &middot; Film</span>
   </div>
   <ul class="section-video__callouts"><li>&laquo;&nbsp;Vendor asked&nbsp;&raquo; gegen &laquo;&nbsp;vendor described&nbsp;&raquo;</li><li>Talk-to-listen&nbsp;: 50&nbsp;% oder weniger</li><li>Visionary engineering&nbsp;: der Biframulator</li><li>Der reverse demo</li></ul>
@@ -634,7 +640,7 @@ a.masthead__title:hover { color: var(--red); }
     <div class="qa-label">Cohan</div>
     <div class="qa-answer">
       <p>Zwei. Erstens, talk-to-listen. Die meisten Tools zeigen das inzwischen an. F&uuml;r Discovery sollte der Anbieter bei f&uuml;nfzig Prozent oder darunter liegen. Kommen Sie auf vierzig oder weniger, machen Sie das gro&szlig;artig. Leider liegt talk-to-listen beim Anbieter bei Discovery Calls selten unter f&uuml;nfzig Prozent, und bei Demos ist es schlimmer. Redet der Anbieter mehr als drei oder vier Minuten am St&uuml;ck, ist es wahrscheinlich kein guter Discovery Call. Redet der Interessent sechs, sieben, acht Minuten, dann wahrscheinlich schon.</p>
-      <p>Zweitens das Verh&auml;ltnis von Pitch zu Fragen, das Sie direkt aus dem Nomen-Verb-Muster in den Zusammenfassungen ziehen k&ouml;nnen. In einem guten Discovery Call wollen Sie den Pitch bei etwa zwanzig bis drei&szlig;ig Prozent halten. Und es gibt Wege, zu pitchen, ohne zu pitchen. Da kommt <a href="/de/glossary#visionary-engineering">visionary engineering</a> ins Spiel.</p>
+      <p>Zweitens das Verh&auml;ltnis von Pitch zu Fragen, das Sie direkt aus dem Nomen-Verb-Muster in den Zusammenfassungen ziehen k&ouml;nnen. In einem guten Discovery Call wollen Sie den Pitch bei etwa zwanzig bis drei&szlig;ig Prozent halten. Und es gibt Wege, zu pitchen, ohne zu pitchen. Da kommt <a href="/de/glossary#visionary-engineering" class="glossary-auto-link">visionary engineering</a> ins Spiel.</p>
     </div>
   </div>
 </div>
@@ -668,7 +674,7 @@ a.masthead__title:hover { color: var(--red); }
 <div class="qa-block" style="border-top:none;padding-top:0;">
   <div class="qa-exchange">
     <div class="qa-label qa-label--tm">TM.org</div>
-    <p class="qa-question">Und der <a href="/de/glossary#reverse-demo">reverse demo</a>?</p>
+    <p class="qa-question">Und der <a href="/de/glossary#reverse-demo" class="glossary-auto-link">reverse demo</a>?</p>
   </div>
   <div class="qa-exchange">
     <div class="qa-label">Cohan</div>
@@ -769,7 +775,7 @@ a.masthead__title:hover { color: var(--red); }
   </div>
   <div class="qa-exchange">
     <div class="qa-label">Cohan</div>
-    <div class="qa-answer"><p>Ich erz&auml;hle Ihnen eine Geschichte, die denselben Punkt aus der anderen Richtung zeigt. Vor Jahren, im Research Triangle Park, mit einer Vertrieblerin namens Carol, trafen wir uns mit medizinischen Chemikern. Carol bat sie, ans Whiteboard zu gehen und ihren eigenen Workflow abzubilden, etwas, das wir schon in- und auswendig kannten. Ich sah sie scharf an. Danach fragte ich sie, warum sie das getan hatte. Sie sagte: &laquo;&nbsp;Weil sie nicht wissen, dass ich es wei&szlig;. Ich brauche, dass sie glauben, sie h&auml;tten mir ihre eigene Einzigartigkeit erkl&auml;rt.&nbsp;&raquo; Das ist <a href="/de/glossary#curse-of-knowledge">der Fluch des Wissens</a>. Wei&szlig; man etwas, muss man es trotzdem fragen &mdash; weil das Fragen eine Arbeit leistet, die das Wissen nicht leisten kann.</p>
+    <div class="qa-answer"><p>Ich erz&auml;hle Ihnen eine Geschichte, die denselben Punkt aus der anderen Richtung zeigt. Vor Jahren, im Research Triangle Park, mit einer Vertrieblerin namens Carol, trafen wir uns mit medizinischen Chemikern. Carol bat sie, ans Whiteboard zu gehen und ihren eigenen Workflow abzubilden, etwas, das wir schon in- und auswendig kannten. Ich sah sie scharf an. Danach fragte ich sie, warum sie das getan hatte. Sie sagte: &laquo;&nbsp;Weil sie nicht wissen, dass ich es wei&szlig;. Ich brauche, dass sie glauben, sie h&auml;tten mir ihre eigene Einzigartigkeit erkl&auml;rt.&nbsp;&raquo; Das ist <a href="/de/glossary#curse-of-knowledge" class="glossary-auto-link">der Fluch des Wissens</a>. Wei&szlig; man etwas, muss man es trotzdem fragen &mdash; weil das Fragen eine Arbeit leistet, die das Wissen nicht leisten kann.</p>
     </div>
   </div>
 </div>
@@ -904,9 +910,9 @@ a.masthead__title:hover { color: var(--red); }
   <div class="qa-exchange">
     <div class="qa-label">Cohan</div>
     <div class="qa-answer">
-      <p>Der <a href="/de/glossary#gold-demo">gold demo</a>, und ich pr&auml;zisiere: keine schlechte Idee, nur f&uuml;r das falsche Publikum gebaut. Ein gold demo wird typischerweise von den Leuten zusammengestellt, die am wenigsten offensichtlich verstehen, wie Kunden das Produkt tats&auml;chlich nutzen. Er existiert, um zu belegen, dass eine neue Mitarbeiterin die Software pr&auml;sentieren kann, und deckt meist jede F&auml;higkeit und jedes Alleinstellungsmerkmal ab, auf das der Anbieter stolz ist. Zeigen Sie das einem Interessenten, und Sie haben ihm eine erstaunlich schreckliche Hafenrundfahrt gegeben. Er ist f&uuml;r den Anbieter gemacht, und f&uuml;r niemand sonst.</p>
+      <p>Der <a href="/de/glossary#gold-demo" class="glossary-auto-link">gold demo</a>, und ich pr&auml;zisiere: keine schlechte Idee, nur f&uuml;r das falsche Publikum gebaut. Ein gold demo wird typischerweise von den Leuten zusammengestellt, die am wenigsten offensichtlich verstehen, wie Kunden das Produkt tats&auml;chlich nutzen. Er existiert, um zu belegen, dass eine neue Mitarbeiterin die Software pr&auml;sentieren kann, und deckt meist jede F&auml;higkeit und jedes Alleinstellungsmerkmal ab, auf das der Anbieter stolz ist. Zeigen Sie das einem Interessenten, und Sie haben ihm eine erstaunlich schreckliche Hafenrundfahrt gegeben. Er ist f&uuml;r den Anbieter gemacht, und f&uuml;r niemand sonst.</p>
       <p>Der technical proof demo ist das Gegenteil: klar definiert, aus echtem Discovery aufgebaut, beginnend mit den Deliverables, die der Interessent tats&auml;chlich will, und nur so viel Tiefe freilegend, wie er fordert. Die Voraussetzung ist ausreichendes Discovery, messbar, in der Great-Demo-Methodik, an der Vollst&auml;ndigkeit Ihrer Situation-Folie.</p>
-      <p>Der <a href="/de/glossary#vision-generation-demo">vision generation demo</a> l&ouml;st eine andere Pattsituation: der Anbieter, der sagt &laquo;&nbsp;kein Discovery, keine Demo&nbsp;&raquo;, gegen den Interessenten, der sagt &laquo;&nbsp;ich will nur ein Gef&uuml;hl f&uuml;r das M&ouml;gliche&nbsp;&raquo;. Es sind drei, vielleicht sechs Minuten: hier ein bis drei Deliverables, basierend darauf, was bei &auml;hnlichen Situationen f&uuml;r andere funktioniert hat, und wenn das interessant ist, lassen Sie uns reden. Cohan erinnert sich, dass Gartner die Zahl bei etwa der H&auml;lfte der Inbound Leads ansetzt, die noch nicht in einem aktiven Kaufprozess sind &mdash; sie &laquo;&nbsp;schauen nur&nbsp;&raquo;, kaufen nicht &laquo;&nbsp;aktiv&nbsp;&raquo;. Sie wollen aufgenommen werden, nicht verkauft bekommen.</p>
+      <p>Der <a href="/de/glossary#vision-generation-demo" class="glossary-auto-link">vision generation demo</a> l&ouml;st eine andere Pattsituation: der Anbieter, der sagt &laquo;&nbsp;kein Discovery, keine Demo&nbsp;&raquo;, gegen den Interessenten, der sagt &laquo;&nbsp;ich will nur ein Gef&uuml;hl f&uuml;r das M&ouml;gliche&nbsp;&raquo;. Es sind drei, vielleicht sechs Minuten: hier ein bis drei Deliverables, basierend darauf, was bei &auml;hnlichen Situationen f&uuml;r andere funktioniert hat, und wenn das interessant ist, lassen Sie uns reden. Cohan erinnert sich, dass Gartner die Zahl bei etwa der H&auml;lfte der Inbound Leads ansetzt, die noch nicht in einem aktiven Kaufprozess sind &mdash; sie &laquo;&nbsp;schauen nur&nbsp;&raquo;, kaufen nicht &laquo;&nbsp;aktiv&nbsp;&raquo;. Sie wollen aufgenommen werden, nicht verkauft bekommen.</p>
     </div>
   </div>
 </div>
@@ -920,7 +926,7 @@ a.masthead__title:hover { color: var(--red); }
     <div class="qa-label">Cohan</div>
     <div class="qa-answer">
       <p>Ich sitze im Aufsichtsrat eines kleinen, profitablen Softwareunternehmens im Chemiebereich, und ich klickte auf &laquo;&nbsp;Demo buchen&nbsp;&raquo; auf der Website eines Anbieters, aus echter Neugier auf deren Technologie. Ein SDR rief innerhalb von zehn oder f&uuml;nfzehn Minuten an und ging direkt zu BANT &uuml;ber. Budget vorhanden? Nein, fr&uuml;he Phase. Entscheidungsbefugnis? Im Aufsichtsrat, aber nicht federf&uuml;hrend. Bedarf definiert? Noch in Arbeit. Zeitplan? Noch nicht. Und das war&rsquo;s &mdash; ich habe nie eine Demo gesehen. Er wollte das Meeting erst buchen, wenn die Checkliste abgehakt war.</p>
-      <p>Ich habe daf&uuml;r, was mir passiert ist, einen Begriff gepr&auml;gt: <a href="/de/glossary#lead-churn">lead churn</a>. Er hat mich zu einem Lead gemacht, der abgesprungen ist, bevor ich je in den Funnel eingetreten bin. Was ich eigentlich wollte, war jemand kompetent genug, um mir ein oder zwei relevante Beispiele zu zeigen, mich reagieren zu lassen und mir anzubieten, mich auf eine Nurture-Liste zu setzen, bis der Zeitpunkt richtig war. Stattdessen wurde ich von einem Skript disqualifiziert. Als die Technologie dieses Unternehmens f&uuml;r uns endlich relevant wurde, aufgrund dessen, was ich wenig gesehen und weitergegeben hatte, ging meine Organisation direkt in ein produktives Discovery-Gespr&auml;ch mit ihnen &mdash; aber nur, weil jemand anderes intern an demselben SDR vorbeikam.</p>
+      <p>Ich habe daf&uuml;r, was mir passiert ist, einen Begriff gepr&auml;gt: <a href="/de/glossary#lead-churn" class="glossary-auto-link">lead churn</a>. Er hat mich zu einem Lead gemacht, der abgesprungen ist, bevor ich je in den Funnel eingetreten bin. Was ich eigentlich wollte, war jemand kompetent genug, um mir ein oder zwei relevante Beispiele zu zeigen, mich reagieren zu lassen und mir anzubieten, mich auf eine Nurture-Liste zu setzen, bis der Zeitpunkt richtig war. Stattdessen wurde ich von einem Skript disqualifiziert. Als die Technologie dieses Unternehmens f&uuml;r uns endlich relevant wurde, aufgrund dessen, was ich wenig gesehen und weitergegeben hatte, ging meine Organisation direkt in ein produktives Discovery-Gespr&auml;ch mit ihnen &mdash; aber nur, weil jemand anderes intern an demselben SDR vorbeikam.</p>
     </div>
   </div>
   <div class="qa-exchange">
@@ -982,7 +988,7 @@ a.masthead__title:hover { color: var(--red); }
     <div class="qa-label">Cohan</div>
     <div class="qa-answer">
       <p>Ich glaube, in f&uuml;nfzig Jahren blicken wir auf unsere heutigen Annahmen zur&uuml;ck und sagen, Mann, waren wir Idioten. Das ist fast garantiert. Was gleich bleibt, ist, dass Menschen biologische Wesen sind. Wir sind weich, unscharf definiert, getrieben von Leidenschaften und W&uuml;nschen, die wir nicht immer benennen k&ouml;nnen. Organisationen verhalten sich genauso. Man kann sie auch als biologische Wesen verstehen: Sie wachsen, sie wollen expandieren. Diese Weichheit ist genau das, was Discovery eigentlich aufdecken soll, und ich erwarte, dass sie in f&uuml;nfzig Jahren noch wichtig sein wird, vorausgesetzt, man versteht sie schon jetzt.</p>
-      <p>Was ich mir w&uuml;nsche, dass Menschen aus diesem Gespr&auml;ch mitnehmen, ist einfach: Erkunden Sie die Ausrei&szlig;er, seien Sie neugierig, h&ouml;ren Sie nie auf zu lernen. Kennen Sie Dunning-Kruger? Die meisten von uns, mich eingeschlossen, erreichen irgendwann in ihrem Lernen einen Punkt, an dem sie glauben, im Grunde schon alles zu wissen. Man nennt den Gipfel dieser Kurve <a href="/de/glossary#mount-stupid">Mount Stupid</a>. Ich h&ouml;re es st&auml;ndig: &laquo;&nbsp;Ich bin seit acht Jahren in Presales, das kenne ich.&nbsp;&raquo; Meine Antwort ist immer dieselbe &mdash; Sie k&ouml;nnten im Dunning-Kruger-Risiko stecken. Gibt es etwas, das Sie nicht wissen, das Sie lernen k&ouml;nnten? Alle sagen nat&uuml;rlich, aber gemeint ist <em class="line">na ja</em>. Die Erkenntnis, dass es immer etwas zu lernen gibt, ist die Haltung, die einen ins n&auml;chste Jahr tr&auml;gt, und ins Jahr danach. Werden Sie nicht selbstgef&auml;llig. Fragen Sie, was Ihnen fehlt. Never stop learning &mdash; das ist mein Wahlspruch, und ich meine ihn w&ouml;rtlich.</p>
+      <p>Was ich mir w&uuml;nsche, dass Menschen aus diesem Gespr&auml;ch mitnehmen, ist einfach: Erkunden Sie die Ausrei&szlig;er, seien Sie neugierig, h&ouml;ren Sie nie auf zu lernen. Kennen Sie Dunning-Kruger? Die meisten von uns, mich eingeschlossen, erreichen irgendwann in ihrem Lernen einen Punkt, an dem sie glauben, im Grunde schon alles zu wissen. Man nennt den Gipfel dieser Kurve <a href="/de/glossary#mount-stupid" class="glossary-auto-link">Mount Stupid</a>. Ich h&ouml;re es st&auml;ndig: &laquo;&nbsp;Ich bin seit acht Jahren in Presales, das kenne ich.&nbsp;&raquo; Meine Antwort ist immer dieselbe &mdash; Sie k&ouml;nnten im Dunning-Kruger-Risiko stecken. Gibt es etwas, das Sie nicht wissen, das Sie lernen k&ouml;nnten? Alle sagen nat&uuml;rlich, aber gemeint ist <em class="line">na ja</em>. Die Erkenntnis, dass es immer etwas zu lernen gibt, ist die Haltung, die einen ins n&auml;chste Jahr tr&auml;gt, und ins Jahr danach. Werden Sie nicht selbstgef&auml;llig. Fragen Sie, was Ihnen fehlt. Never stop learning &mdash; das ist mein Wahlspruch, und ich meine ihn w&ouml;rtlich.</p>
     </div>
   </div>
   <div class="qa-exchange">

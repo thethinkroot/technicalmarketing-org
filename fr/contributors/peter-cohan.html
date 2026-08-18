@@ -98,6 +98,12 @@ textarea:focus-visible {
   outline-offset: 3px;
   border-radius: 1px;
 }
+/* Auto-linked glossary terms — deliberately distinct from primary nav and
+   citation links, so 50+ inline references don't compete visually with
+   either. border-bottom (not text-decoration) for finer color/style control. */
+.glossary-auto-link { border-bottom: 1px dotted var(--ink-40); }
+.glossary-auto-link:hover,
+.glossary-auto-link:focus-visible { border-bottom: 1px solid var(--red); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -1398,7 +1404,7 @@ a.masthead__title:hover { color: var(--red); }
   <div class="contrib-biblio__item">
     <span class="contrib-biblio__kicker">Auteur &middot; 3<sup>e</sup> édition</span>
     <h3 class="contrib-biblio__title"><a href="https://www.amazon.com/dp/B0C9SNKC2Y/" target="_blank" rel="external noopener">Great Demo!: How to Create and Execute Stunning Software Demonstrations</a></h3>
-    <p class="contrib-biblio__note">Présente la méthode &laquo;&nbsp;Do the Last Thing First&nbsp;&raquo; et l&rsquo;approche du <a href="/fr/glossary#technical-proof-demo">technical-proof demo</a> abordée tout au long de l&rsquo;entretien du Volume II. Première publication en 2003.</p>
+    <p class="contrib-biblio__note">Présente la méthode &laquo;&nbsp;Do the Last Thing First&nbsp;&raquo; et l&rsquo;approche du <a href="/fr/glossary#technical-proof-demo" class="glossary-auto-link">technical-proof demo</a> abordée tout au long de l&rsquo;entretien du Volume II. Première publication en 2003.</p>
   </div>
 
   <div class="contrib-biblio__item">

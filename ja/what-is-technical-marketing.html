@@ -113,6 +113,12 @@ textarea:focus-visible {
   outline-offset: 3px;
   border-radius: 1px;
 }
+/* Auto-linked glossary terms — deliberately distinct from primary nav and
+   citation links, so 50+ inline references don't compete visually with
+   either. border-bottom (not text-decoration) for finer color/style control. */
+.glossary-auto-link { border-bottom: 1px dotted var(--ink-40); }
+.glossary-auto-link:hover,
+.glossary-auto-link:focus-visible { border-bottom: 1px solid var(--red); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -1962,7 +1968,7 @@ a.masthead__title:hover { color: var(--red); }
         <p>テクニカルマーケティングマネージャーという役割が、エンタープライズソフトウェアの中で最も一貫性なく定義されている役割の一つであるのには理由がある。この分野が何をカバーするのか、何が良いとされるのかについて、標準となる定義が存在しないため、企業ごとに解釈が異なる。</p>
         <p>ある企業では、この役割は文章を書けるようになった元セールスエンジニアを意味する。別の企業では、API文書を読めるようになった元プロダクトマーケターを意味する。一握りの企業――通常は最も多くの技術的評価で勝っている企業――では、技術的深度と商業的フレームの両方を同時に保持し、どちらも失うことなくその間を行き来できるスペシャリストを意味する。</p>
         <p>この仕事をうまくこなす実務者は、ほぼ例外なく、正式なトレーニングではなく経験を通じてそのスキルを培ってきた。テクニカルマーケティングのカリキュラムは存在しない。広く認知された資格もない。<a href="https://www.presalescollective.com" target="_blank" rel="noopener">PreSales Collective</a>がセールスエンジニアのために行ったこと、あるいは<a href="https://www.pragmaticinstitute.com" target="_blank" rel="noopener">Pragmatic Institute</a>がプロダクトマネージャーのために行ったことのように、何が良いとされるかを体系化したコミュニティもない。<a href="https://www.trewmarketing.com" target="_blank" rel="noopener">TREW MarketingのWendy Covey</a>は、エンジニアへのマーケティングという隣接する問いについて相当な仕事をしており、それは同じ領域の一部を捉えている。しかし、テクニカルマーケティングそのものをめぐる首尾一貫した実践の体系は、公に入手可能な形ではまだ存在しない。</p>
-        <p>この分野の定量的な裏付けは、ベンダーのリサーチや学術研究に散らばる形で確かに存在する。<a href="https://www.gong.io/blog/" target="_blank" rel="noopener">Gongによる数百万件のB2Bセールス会話の分析</a>は、優れたテクニカルマーケティングコンテンツがどうあるべきかを形作る具体的な知見を生み出している。ディスカバリーは案件の結果を予測する単独最大の要因である。最適なピッチの長さは76秒未満である。技術的な会話における理想的な<a href="/ja/glossary#talk-to-listen-ratio">talk-to-listen ratio</a>はおよそ65対35である。より少ない機能を示すデモは、多くを示すデモよりも勝つ傾向にある。それらの知見は、この分野全体としての共有された実践の体系にはまだ翻訳されていない。</p>
+        <p>この分野の定量的な裏付けは、ベンダーのリサーチや学術研究に散らばる形で確かに存在する。<a href="https://www.gong.io/blog/" target="_blank" rel="noopener">Gongによる数百万件のB2Bセールス会話の分析</a>は、優れたテクニカルマーケティングコンテンツがどうあるべきかを形作る具体的な知見を生み出している。ディスカバリーは案件の結果を予測する単独最大の要因である。最適なピッチの長さは76秒未満である。技術的な会話における理想的な<a href="/ja/glossary#talk-to-listen-ratio" class="glossary-auto-link">talk-to-listen ratio</a>はおよそ65対35である。より少ない機能を示すデモは、多くを示すデモよりも勝つ傾向にある。それらの知見は、この分野全体としての共有された実践の体系にはまだ翻訳されていない。</p>
         <p>この分野は、役割がどこにでも存在するという意味では成熟している。実務者が自分たちの仕事を説明する共有言語を持たず、何が良いとされるかについての合意された基準を持たず、分野の一員として公に成長していく認知された場所を持たないという意味では未成熟である。仕事は行われている。だが、この分野が体系化されたことは一度もない。</p>
       </section>
 
