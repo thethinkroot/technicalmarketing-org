@@ -104,8 +104,8 @@ conventions, not reviewed.
 | EN | ✅ | ◐ | n/a — source, copy locked |
 | ES | ✅ | ✅ | — |
 | JA | ✅ | ✅ | — |
-| FR | — | — | — |
-| DE | — | — | — |
+| FR | ✅ | ✅ | — |
+| DE | ✅ | ✅ | — |
 
 Tier 2 scope on EN: term map only (`any-questions-term-map.md`) — the terminology surface
 was inventoried, the prose was not reviewed.
@@ -135,6 +135,82 @@ and footer. Zero English prose in the body.
 - **Two character-corruption defects were produced during drafting** (Cyrillic fused into
   Japanese words) and fixed. `seo-check` CHECK 9 now catches this class mechanically; it
   was verified against both instances retroactively.
+
+**FR is complete** — all seven sections plus front matter, afterword, bio, notes, folio
+and footer. Zero English prose in the body.
+
+- Structural ✅ — both checkers pass, CSS byte-identical to source, hreflang
+  `en ja es fr x-default` reciprocal across all four locale pages, sitemap entry added.
+  Rendered output loaded in-browser with the network log checked — all nine images
+  resolve via root-relative paths, no repeat of the ES `/es/Images/` defect. Langpicker
+  dropdown confirmed showing all four locales with the active one highlighted.
+- Claude-reviewed ✅ — full page, verified with bounded manual listings (not aggregate
+  counts, after an earlier unbounded-slice miscount was caught before being reported).
+  Copley matches the English exactly at 11 plan / 2 hotel across the whole page. The
+  talk-to-listen chain is named explicitly in the rail and §III eyebrow
+  (`Le talk-to-listen ratio`) rather than the generic `Le Ratio` the English literally
+  uses there — the deliberate fix the term map exists to enforce — carried through the
+  plate caption, callout, both bare forms in Cohan's answer, and the stat card.
+  `pitching-to-questioning` renders as `le rapport entre pitch et questions`, confirmed
+  distinct from both FR rejected-rendering rows. `curse of knowledge` renders
+  `la malédiction de la connaissance` per § 5.3.
+- The FR/DE columns of the pitch/questions collision table (glossary § 6.1) were coined
+  and recorded before this page's prose began, so the decision was never only implicit.
+- Two register calls flagged and approved before finishing: "truth with a capital T" →
+  "la vérité avec un grand V" (letter swapped to preserve the wordplay, since French
+  needs vérité's V rather than English's T), and "the whole move" → "toute la manœuvre"
+  (colloquial register match).
+
+**DE is complete** — all seven sections plus front matter, afterword, bio, notes, folio
+and footer. Zero English prose in the body.
+
+- Structural ✅ — both checkers pass, CSS byte-identical to source, hreflang
+  `en ja es fr de x-default` reciprocal across all five locale pages, sitemap entry
+  added last, after full verification. Rendered output loaded in-browser: masthead,
+  langpicker dropdown confirmed showing all five locales (both from the DE page and
+  reciprocally from EN) with the active one highlighted, and all nine image paths
+  confirmed root-relative (`/Images/...`) by source grep — no repeat of the ES
+  `/es/Images/` defect. `read_network_requests` itself returns nothing for local
+  `file://` previews in this environment, so image resolution was confirmed by path
+  grep plus visual inspection rather than a network log, unlike the FR check.
+- Claude-reviewed ✅ — full page, bounded manual listings. Copley matches the English
+  exactly: 11 unhyphenated `Copley Plan` + 1 attributive compound
+  (`der Copley-Plan-Jahre`, standard German hyphenation for a multi-word phrase used as
+  a noun modifier — the same pattern already on the site in `Great-Demo-Ansatz` and
+  `Long-Context-Modell`) + 2 `Marriott Copley`, split identically to the English body.
+  The talk-to-listen chain is named explicitly in the rail, §III eyebrow, video
+  aria-label, plate caption and stat card (5 positions) — matching the English's own
+  5 generic-"The Ratio" positions exactly, expanded to the explicit settled term per
+  the deliberate term-map fix, not copied as-is. The distinct
+  Prospect:Vendor Statement Ratio reference in the §III question (linked to
+  `#prospect-vendor-statement-ratio`) correctly stays a separate, undecorated
+  `dieses Verhältnis` rather than being folded into talk-to-listen ratio.
+  `pitching-to-questioning` renders `das Verhältnis von Pitch zu Fragen`, confirmed
+  distinct from both DE rejected-rendering rows. `curse of knowledge` renders
+  `der Fluch des Wissens` (3×, zero English instances). `Great Demo!` is used
+  consistently as the book title throughout; no methodology-only usage appears in this
+  article, so the book/methodology homograph never becomes a live risk here.
+- **One term-check.mjs gap found and fixed, not a translation defect.** The checker's
+  literal-substring count flagged DE at 14 "Copley Plan" instances against the
+  English's 15, because German attributive-compound hyphenation
+  (`Copley-Plan-Jahre`) is orthographically correct and required — writing it
+  unhyphenated would have been the actual grammar error. `tools/term-check.mjs`'s
+  counting was hardened to accept a settled multi-word term written with hyphens in
+  place of spaces (`termCountRe`), rather than changing correct German prose to
+  satisfy a literal string match. This is a general fix, not DE-specific, and applies
+  to every locale and every settled multi-word term going forward.
+- Raw-umlaut/eszett scan: 0 matches full-page, confirmed after fixing `amüsant`,
+  `amüsiert`, `Marktübersicht` (pass 1) and `Broschüren` (pass 3) — all four were typed
+  as literal UTF-8 instead of the site's `&uuml;` entity convention and caught by the
+  per-batch scan this session added specifically for DE.
+- Two character-corruption defects from earlier locales (Cyrillic-Latin fusion in JA)
+  did not recur in DE; CHECK 9 ran clean at every pass boundary and on the full page.
+- The ringi/hanko passage (§V) was translated as first-person comparative testimony —
+  Cohan describing US, German/French/Belgian, Dutch and Japanese meeting norms
+  side by side with symmetric treatment — mirroring the already-approved JA and FR
+  renderings of the same passage exactly. Nothing in it edges further toward the
+  deferred §5.5(b) institutional-framing question than what JA/FR already carry; it is
+  noted here per standing instruction, not newly resolved.
 
 ### All other pages
 

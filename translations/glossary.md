@@ -184,10 +184,18 @@ but it collides with the rejection and defeats the check.
 Resolution: give the second metric its own surface form, so one string never has to mean
 two things.
 
-| Concept | ES | JA |
-|---|---|---|
-| talk-to-listen ratio *(settled term)* | `talk-to-listen ratio` | `talk-to-listen ratio` |
-| pitching-to-questioning *(descriptive)* | la proporción entre pitch y preguntas | ピッチと質問の比率 |
+| Concept | ES | JA | FR | DE |
+|---|---|---|---|---|
+| talk-to-listen ratio *(settled term)* | `talk-to-listen ratio` | `talk-to-listen ratio` | `talk-to-listen ratio` | `talk-to-listen ratio` |
+| pitching-to-questioning *(descriptive)* | la proporción entre pitch y preguntas | ピッチと質問の比率 | le rapport entre pitch et questions | das Verhältnis von Pitch zu Fragen |
+
+FR and DE renderings coined ahead of any FR/DE prose existing, so the decision is never
+only implicit for a locale not yet drafted. Each keeps clear of that locale's own
+rejected-rendering rows below: FR avoids both `le rapport entre exposer et questionner`
+and `le ratio idéal de parole entre vendeur et acheteur`; DE avoids both
+`das Verhältnis von Vortragen zu Fragen` and `das ideale Verhältnis von Sprechen zu
+Zuhören`. DE borrows `Pitch` as a loanword, consistent with existing use elsewhere on the
+German site (`de/technical-marketing-vs-product-marketing.html` and others).
 
 This table is read by `tools/term-check.mjs`. Every row is a rendering that must never
 reappear. Add a row whenever a term-consistency defect is fixed, so the fix is enforced
