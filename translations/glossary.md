@@ -136,7 +136,7 @@ English in all four locales. The same must hold for Peter Cohan's *Great Demo!*,
 
 **The four locale glossaries are stale.** Each has 47 entries; the EN glossary has 63.
 Sixteen EN terms had no counterpart in any locale. **Fifteen are now settled** in
-§ 5.1–5.3; one (`Ringi (稟議)`) remains open, see § 5.4.
+§ 5.1–5.3; one (`Ringi (稟議)`) remains open, see § 5.5.
 
 ### 5.1 Settled treatments — all four locales
 
