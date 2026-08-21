@@ -11,6 +11,10 @@
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://technicalmarketing.org/scaling-the-expert">
 <link rel="alternate" hreflang="en" href="https://technicalmarketing.org/scaling-the-expert" />
+<link rel="alternate" hreflang="ja" href="https://technicalmarketing.org/ja/scaling-the-expert" />
+<link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/scaling-the-expert" />
+<link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/scaling-the-expert" />
+<link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/scaling-the-expert" />
 <link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert" />
 
 <meta property="og:type" content="article">
@@ -126,12 +130,6 @@ body {
 a { color: inherit; text-decoration: none; transition: color 0.15s ease; }
 a:focus-visible,
 button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 1px; }
-/* Auto-linked glossary terms — deliberately distinct from primary nav and
-   citation links, so 50+ inline references don't compete visually with
-   either. border-bottom (not text-decoration) for finer color/style control. */
-.glossary-auto-link { border-bottom: 2px dotted var(--ink-60); }
-.glossary-auto-link:hover,
-.glossary-auto-link:focus-visible { border-bottom: 2px solid var(--red); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -226,6 +224,12 @@ img { max-width: 100%; height: auto; display: block; }
 .cover__byline strong a:hover { color: var(--red); border-bottom-color: var(--red); }
 .cover__ornament { display: flex; align-items: center; justify-content: center; gap: 1rem; margin: 1.5rem 0 0; }
 .cover__ornament-rule { flex: 0 0 80px; height: 0.5px; background: var(--border-strong); }
+.cover__disclosure {
+  font-family: var(--f-sans); font-size: 0.75rem; line-height: 1.55; color: var(--ink-40);
+  margin: -1.75rem 0 2.5rem; max-width: var(--measure);
+}
+.cover__disclosure a { color: var(--ink-40); border-bottom: 1px solid var(--border); text-decoration: none; }
+.cover__disclosure a:hover { color: var(--red); border-bottom-color: var(--red); }
 .cover__ornament-diamond { width: 8px; height: 8px; background: var(--red); transform: rotate(45deg); flex-shrink: 0; }
 
 @media (max-width: 600px) {
@@ -882,6 +886,10 @@ a.masthead__title:hover { color: var(--red); }
       <summary class="masthead__langpicker-btn" aria-label="Choose language">EN <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
       <nav class="masthead__langpicker-menu" aria-label="Language">
         <a href="/scaling-the-expert" class="masthead__langpicker-link" aria-current="true">English <span class="masthead__langpicker-code">EN</span></a>
+        <a href="/ja/scaling-the-expert" class="masthead__langpicker-link">日本語 <span class="masthead__langpicker-code">JA</span></a>
+        <a href="/es/scaling-the-expert" class="masthead__langpicker-link">Español <span class="masthead__langpicker-code">ES</span></a>
+        <a href="/fr/scaling-the-expert" class="masthead__langpicker-link">Français <span class="masthead__langpicker-code">FR</span></a>
+        <a href="/de/scaling-the-expert" class="masthead__langpicker-link">Deutsch <span class="masthead__langpicker-code">DE</span></a>
       </nav>
     </details>
   </div>
@@ -935,6 +943,8 @@ a.masthead__title:hover { color: var(--red); }
 
   <!-- TODO: byline links to /contributors/matthew-trubow, which needs to be built before this goes live. Date/read-time are placeholders pending final draft. -->
   <div class="cover__byline">By <strong><a href="/contributors/matthew-trubow" rel="author">Matthew Trubow</a></strong>, Contributor &middot; <time datetime="2026-09-01">September 1, 2026</time> &middot; <span id="reading-time">14 min read</span></div>
+
+  <p class="cover__disclosure">Disclosure: the author co-owns Hidden Creative, the agency behind ABB Water World, the platform this piece draws on. ABB is a client. <a href="/contributors/matthew-trubow">Full disclosure &rarr;</a></p>
 
   <div class="cover__ornament" aria-hidden="true">
     <span class="cover__ornament-rule"></span>
@@ -1119,15 +1129,16 @@ a.masthead__title:hover { color: var(--red); }
      sections merged, ARC "why now" point added, ABB quotes approved by
      James Chalmers and Bob Small, three-level test cleanly separated.
 
-     STILL OPEN:
-     - Two "it's not X, it's Y" instances remain (flagged inline below).
-       Minor, worth one more light note to Matt, not a blocker.
-     - ABB approval is per Matt's word; get it in writing before this
-       runs with ABB named. See editor's note below.
+     STILL OPEN (as of v3, 8/21):
+     - Both "it's not X, it's Y" instances RESOLVED, Matt fixed both
+       in this draft.
+     - ABB written clearance RESOLVED 8/21 (James Chalmers, Bob Small).
      - Water World visual assets (screenshots/footage) still pending.
      - Section <h2> headers below are still Claude's paraphrase, not
        Matt's original headers. See note in prior version for his
        original section titles if you want to revert.
+     - FAQ block still flagged as editorial, not Matt's writing, needs
+       your decision (send to Matt, rewrite in-house, or cut).
      ================================================================ -->
 
     <section class="section" id="the-problem">
@@ -1176,12 +1187,9 @@ a.masthead__title:hover { color: var(--red); }
       <p>A virtual environment built only from CAD data may be visually accurate, but accuracy alone doesn't make expertise repeatable. The model represents the equipment; the experience is built around how the expert explains it.</p>
       <p>That means a less experienced salesperson or colleague can deliver a credible foundational explanation without pretending to have the expert's level of knowledge. They can establish the context, show how the product fits into the wider process and make the central relationships visible before deeper technical questions begin.</p>
 
-      <!-- NOTE(editorial, not for Matt's action necessarily): this next line is one of
-           the two remaining "it's not X, it's Y" instances from the original feedback.
-           Worth a light one-line note if you want a fully clean final pass, not a
-           blocker. -->
+      <!-- Repetition fix applied by Matt in v3 (8/21), per feedback. -->
       <div class="pullquote">
-        <p>Water World didn't turn a product sheet into a three-dimensional product sheet. It turned part of the expert's explanation into an environment that others could navigate and repeat.</p>
+        <p>Water World turned part of the expert's explanation into an environment others could navigate and repeat.</p>
       </div>
     </section>
 
@@ -1189,9 +1197,11 @@ a.masthead__title:hover { color: var(--red); }
       <span class="section-num">04 &middot; The Proof Point</span>
       <h2>ABB Water World</h2>
 
-      <!-- Quotes approved by James Chalmers and Bob Small per Matt's 8/12 note.
-           TODO: get written confirmation (email/Slack) on file before this runs
-           with ABB named, not just Matt's word that approval happened. -->
+      <!-- Quotes approved by James Chalmers and Bob Small. Written confirmation
+           received 8/21 via forwarded email thread (James Chalmers, VP Water and
+           Wastewater; Bob J. Small, Global Marketing and Communications Manager
+           W&WW), both replying directly to Matt's formal-approval request.
+           RESOLVED — no longer blocking. -->
 
       <p>ABB Water World shows what scaling the expert looks like when the idea is applied to a real industrial sales environment. ABB already had accurate product information; much of its meaning still depended on an experienced person being present to interpret it.</p>
       <p>Water World gives a mixed audience a shared operational context. Rather than presenting ABB's products as isolated components, it places them inside a complete water treatment facility. The audience can move through the process, see where a solution sits, understand what surrounds it and follow what happens as a result of its operation.</p>
@@ -1217,7 +1227,7 @@ a.masthead__title:hover { color: var(--red); }
       <span class="section-num">05 &middot; What This Changes</span>
       <h2>Industrial engineering communication</h2>
 
-      <p>The wider implication is that industrial technical marketing is becoming as much a problem of <a href="/glossary#industrial-engineering-communication" class="glossary-auto-link">industrial engineering communication</a> as it is one of marketing. Accurate materials for technically-informed audiences only go so far when different stakeholders need to understand the same complex system well enough to make a decision.</p>
+      <p>The wider implication is that industrial technical marketing is becoming as much a problem of industrial engineering communication as it is one of marketing. Accurate materials for technically-informed audiences only go so far when different stakeholders need to understand the same complex system well enough to make a decision.</p>
       <p>Industrial buying decisions are made by mixed groups: engineers concerned with function and compatibility, operations leaders focused on reliability and maintenance, health and safety teams weighing risk, commercial and financial stakeholders needing to understand cost and return.</p>
       <p>A shared operational environment gives the buying group a common frame of reference. They don't need identical explanations, but they do need to be looking at the same operational reality.</p>
 
@@ -1231,8 +1241,8 @@ a.masthead__title:hover { color: var(--red); }
       <h2>The limits of repeatability</h2>
 
       <p>Immersion on its own is no guarantee that expertise will scale. If the experience is built around visual impact rather than explanation, it can fail the same way an overloaded presentation does. It can also create a false sense of completeness, if a standard scenario is clear and consistent without being right for every site or application.</p>
-      <!-- NOTE(editorial): second remaining "it's not X, it's Y" instance. -->
-      <p>The technology can preserve the route through the explanation. It can't take responsibility for where that route should lead in every situation.</p>
+      <!-- Repetition fix applied by Matt in v3 (8/21), per feedback. -->
+      <p>The technology preserves the route through the explanation. Where that route should lead in every situation is still a judgement call.</p>
     </section>
 
     <section class="section" id="design-backwards">
@@ -1276,7 +1286,7 @@ a.masthead__title:hover { color: var(--red); }
 
     <section class="footnotes ink-band" id="footnotes" aria-labelledby="footnotes-label">
       <span class="footnotes-label" id="footnotes-label">Sources</span>
-      <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-bottom:1rem;max-width:var(--measure);">Quotes from James Chalmers and Bob Small are approved by both, per correspondence with the author, ABB, 2026. TODO: get written confirmation on file before publishing with ABB named.</p>
+      <p style="font-family:var(--f-sans);font-size:0.6875rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-40);font-weight:500;margin-bottom:1rem;max-width:var(--measure);">Quotes from James Chalmers and Bob Small are used with their written approval, ABB, August 2026.</p>
       <ol>
         <li>ARC Advisory Group, research on industrial knowledge transfer: retirement and workforce churn are increasing the urgency of capturing critical operational knowledge before it leaves the organisation. TODO: Matt to send the exact URL for this specific piece so it can be linked directly, currently citing ARC's general research focus. <a href="https://www.arcweb.com/arc-industrial-pacesetters">arcweb.com/arc-industrial-pacesetters</a></li>
         <li>Chalmers, James. Vice President, ABB Water. Direct correspondence with the author, 2026.</li>
@@ -1288,7 +1298,7 @@ a.masthead__title:hover { color: var(--red); }
     <aside class="editors-note" aria-labelledby="editors-note-label">
       <span class="editors-note-label" id="editors-note-label">Editor's Note</span>
       <p>This piece opens Volume 02. Matt Trubow's argument sits close to the discipline's core claim: accurate materials are not the same as shared understanding, and the buying group evaluating an industrial solution rarely shares one frame of reference.</p>
-      <p>James Chalmers and Bob Small have both approved their quotes. Written confirmation from ABB is still needed on file before this runs with the company named.</p>
+      <p>James Chalmers and Bob Small have both confirmed their quotes and ABB's name in writing, a level of on-record specificity you don't often get in a piece like this.</p>
       <p class="editors-sig">Chad Corriveau &middot; Founding Editor</p>
     </aside>
 
@@ -1353,7 +1363,7 @@ a.masthead__title:hover { color: var(--red); }
       <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
         <h3 class="faq-q" itemprop="name">Does a virtual twin replace the subject matter expert?</h3>
         <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
-          <p class="faq-a" itemprop="text">No. A <a href="/glossary#virtual-twin" class="glossary-auto-link">virtual twin</a> carries the foundational, repeatable explanation, the context a less experienced colleague needs to establish before deeper questions begin. The expert is still required for site-specific advice, unusual applications, and judgement calls under uncertainty.</p>
+          <p class="faq-a" itemprop="text">No. A virtual twin carries the foundational, repeatable explanation, the context a less experienced colleague needs to establish before deeper questions begin. The expert is still required for site-specific advice, unusual applications, and judgement calls under uncertainty.</p>
         </div>
       </div>
     </section>
@@ -1476,6 +1486,10 @@ a.masthead__title:hover { color: var(--red); }
       <span class="site-footer__issn">ISSN 3143-6412 &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
       <nav class="site-footer__langs" aria-label="Language">
         <a href="/scaling-the-expert" class="site-footer__lang-link" aria-current="true">English</a>
+        <a href="/ja/scaling-the-expert" class="site-footer__lang-link">日本語</a>
+        <a href="/es/scaling-the-expert" class="site-footer__lang-link">Español</a>
+        <a href="/fr/scaling-the-expert" class="site-footer__lang-link">Français</a>
+        <a href="/de/scaling-the-expert" class="site-footer__lang-link">Deutsch</a>
       </nav>
     </div>
     <nav class="site-footer__nav" aria-label="Site">
