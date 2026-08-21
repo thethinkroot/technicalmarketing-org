@@ -998,4 +998,32 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- ============================================================ -->
+  <!-- ARTICLE IV · VOLUME 02 -->
+  <!-- English only for now; ja/es/fr/de hreflang alternates and their
+       url entries to be added once translated, matching the pattern
+       used elsewhere in this file. -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://technicalmarketing.org/scaling-the-expert</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
+  </url>
+
+  <!-- ============================================================ -->
+  <!-- CONTRIBUTOR: MATTHEW TRUBOW -->
+  <!-- English only for now, same translation note as above. -->
+  <!-- ============================================================ -->
+  <url>
+    <loc>https://technicalmarketing.org/contributors/matthew-trubow</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+  </url>
+
 </urlset>
