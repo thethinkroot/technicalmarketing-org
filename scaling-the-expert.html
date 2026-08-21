@@ -949,9 +949,10 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </section>
 
-<!-- TODO: Narrated Edition disabled until ElevenLabs audio is recorded for this piece.
-     Markup and player JS preserved below, uncomment and point src= at the real mp3 when ready.
-
+<!-- Narrated Edition, ElevenLabs Charlotte, matches tm.org player convention.
+     Script: tm-org-scaling-the-expert-narration-script.md. Awaiting real duration
+     once the mp3 is generated, update the two "13:00" placeholders above to the
+     exact runtime the file reports. -->
 <div class="narrated-edition layout" role="region" aria-label="Narrated edition">
   <div class="narrated-edition__inner" id="narrated-player">
 
@@ -959,7 +960,7 @@ a.masthead__title:hover { color: var(--red); }
 
     <div class="narrated-edition__head">
       <span class="narrated-edition__title">Listen to this article</span>
-      <span class="narrated-edition__meta">12 min &middot; Full text</span>
+      <span class="narrated-edition__meta">13 min &middot; Narrated overview</span>
     </div>
 
     <div
@@ -993,7 +994,7 @@ a.masthead__title:hover { color: var(--red); }
         </svg>
       </button>
 
-      <span class="narrated-edition__time" id="player-time" aria-live="off">0:00 / 12:50</span>
+      <span class="narrated-edition__time" id="player-time" aria-live="off">0:00 / 13:00</span>
 
       <div class="narrated-edition__waveform" aria-hidden="true">
         <span></span><span></span><span></span><span></span>
@@ -1008,7 +1009,7 @@ a.masthead__title:hover { color: var(--red); }
     <audio
       id="player-audio"
       preload="auto"
-      src="/audio/tm-org-article-ii-ai-narrated.mp3"
+      src="/audio/tm-org-scaling-the-expert-narrated.mp3"
     ></audio>
 
   </div>
@@ -1095,7 +1096,6 @@ a.masthead__title:hover { color: var(--red); }
   }
 }());
 </script>
--->
 
 <div class="article-layout layout">
   <main class="article-main" id="main">
