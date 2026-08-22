@@ -19,7 +19,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-07-15. Version 1.10.
+Last updated: 2026-08-22. Version 1.11.
 
 ---
 
@@ -1059,7 +1059,7 @@ The compression removes the surrounding work. What remains is the discipline's c
 
 # Scaling the Expert: What Virtual Twins Change About Industrial Technical Marketing · Article IV of Volume II
 
-## 01 · The Problem · Why tacit knowledge doesn't scale
+## 01 · The Problem · The knowledge that doesn't scale
 
 The most valuable knowledge in an industrial company is often held by the people least able to repeat it at scale.
 
@@ -1071,9 +1071,9 @@ Yet it still travels largely through face-to-face conversations, supported by sl
 
 A demo can make a system visible and understandable, but that doesn't make it evidence on its own. Evidence enters when the buyer can use what they're seeing to test the central claim against their own situation: what changes, under what conditions, and whether that change is credible.
 
-> *A demo can make a system visible and understandable, but that doesn't make it evidence on its own.*
+**Accuracy without a mental model.** Industrial companies rarely suffer from a shortage of technical information. The problem is that technical materials often assume the audience already has a mental model of the wider system. A diagram can represent a product accurately while leaving its operational and commercial meaning entirely unclear.
 
-Industrial companies rarely suffer from a shortage of technical information. They have specifications, diagrams, product sheets and presentations in abundance. In most cases, the material is entirely accurate. The problem is that technical materials often assume the audience already has a mental model of the wider system. An experienced engineer can look at a drawing and infer where the solution sits, what it interacts with, what happens before and after it, and why it all matters. Someone without that experience can't make the same connections automatically. A diagram can represent a product accurately while leaving its operational and commercial meaning entirely unclear.
+An experienced engineer can look at a drawing and infer where the solution sits, what it interacts with, what happens before and after it, and why it all matters. Someone without that experience can't make the same connections automatically.
 
 ## 02 · What the Expert Adds · Knowing what the other person must understand
 
@@ -1081,71 +1081,71 @@ The expert's real value is in making what they know useful to someone else.
 
 They know where to begin, which details matter, what can wait, and where the audience is likely to get lost. They understand how one component affects the wider process, and they can change the explanation depending on whether they are speaking to an engineer, an operations director, a commercial lead or a CFO.
 
-They also recognise patterns that are rarely written down. They know which questions usually expose a misunderstanding, which operating conditions alter the answer, and which apparently minor detail may become important later. Much of this is tacit knowledge: practical understanding built through repeated exposure to different industrial solutions, sites, customers and failure points rather than captured formally in a specification or manual.
+They also recognise patterns that are rarely written down: which questions usually expose a misunderstanding, which operating conditions alter the answer, which apparently minor detail may become important later. Much of this is tacit knowledge, built through repeated exposure to different sites, customers and failure points rather than captured formally in a specification.
 
 This is why two people can present the same technically accurate material and produce very different levels of understanding. One may describe the solution correctly. The other knows how to connect it to the audience's situation, concerns and decision.
 
 > *Expertise isn't only knowing the answer. It's knowing what the other person must understand before the answer becomes useful.*
 
-## 03 · The Mechanism · Scaling the expert, not reproducing them
+## 03 · The Mechanism · Scaling the expert
 
-Scaling the expert doesn't mean trying to reproduce the expert. It means making the repeatable parts of their explanation available without requiring them to deliver it every time.
+**Making the repeatable parts of an explanation available without requiring the expert to deliver it every time.** Not reproducing the expert. A well-designed virtual environment carries the repeatable foundational explanation, built with the subject matter expert's input on what to show, in what order, and which connections matter. The expert is still needed for site-specific judgement; their time is better spent there than repeating explanations that can be made consistent and accessible.
 
 For this article, virtual twin means an interactive 3D representation built to let people explore and understand a system. Digital twin means the more operational form: a digital representation kept connected to the physical asset or process through live or regularly synchronised data. Industry terminology isn't completely consistent, but Water World sits in the first category: its purpose is communication rather than live operational monitoring.
 
 In many industrial organisations, the same experienced people are repeatedly asked to explain the same systems, establish the same context and correct the same misunderstandings. Their time becomes a bottleneck because the explanation still depends on their presence.
 
-A well-designed virtual environment can carry part of that burden, but only if the subject matter expert helps create it. They decide what the audience should see, the order in which they should see it, which connections need to become clear and which scenarios will make cause and effect understandable. A virtual environment built only from CAD data may be visually accurate, but accuracy alone doesn't make expertise repeatable. The model represents the equipment, but the experience is built around how the expert explains it.
+A virtual environment built only from CAD data may be visually accurate, but accuracy alone doesn't make expertise repeatable. The model represents the equipment; the experience is built around how the expert explains it.
 
-That means a less experienced salesperson or colleague can deliver a credible foundational explanation without pretending to have the expert's level of knowledge. They can establish the context, show how the product fits into the wider process and make the central relationships visible before deeper technical questions begin. The expert is still needed. Site-specific advice, unusual applications, objections and decisions made under uncertainty still depend on experience and judgement. Their time is better spent there than repeating explanations that can be made consistent and accessible.
+That means a less experienced salesperson or colleague can deliver a credible foundational explanation without pretending to have the expert's level of knowledge. They can establish the context, show how the product fits into the wider process and make the central relationships visible before deeper technical questions begin.
 
-> *The virtual twin scales the explanation. The expert retains the judgement.*
+> *Water World turned part of the expert's explanation into an environment others could navigate and repeat.*
 
 ## 04 · The Proof Point · ABB Water World
 
-**Disclosure.** The author, Matt Trubow, co-owns Hidden Creative, the agency that built ABB Water World, the platform discussed in this section. ABB is a Hidden Creative client. Both named ABB sources below confirmed their quotes and the use of ABB's name in writing.
+**Disclosure.** The author, Matt Trubow, co-owns Hidden Creative, the agency behind ABB Water World, the virtual environment discussed in this piece. ABB is a client. Both named ABB sources approved their quotes and the use of ABB's name in writing. No payment was made to Technical Marketing for this piece's inclusion.
 
-ABB Water World shows what scaling the expert looks like when the idea is applied to a real industrial sales environment.
+ABB Water World shows what scaling the expert looks like when the idea is applied to a real industrial sales environment. ABB already had accurate product information; much of its meaning still depended on an experienced person being present to interpret it.
 
-ABB already had accurate product information. Specifications, diagrams and presentation material were available, but much of their meaning still depended on an experienced person being present to interpret them. The audience might include an engineer, an operations manager responsible for the equipment, a director looking after several sites, and a financial decision-maker considering the investment. Each needed to understand the same system, but not from the same starting point or for the same reason.
+Water World gives a mixed audience a shared operational context. Rather than presenting ABB's products as isolated components, it places them inside a complete water treatment facility. The audience can move through the process, see where a solution sits, understand what surrounds it and follow what happens as a result of its operation.
 
-Water World gives that mixed audience a shared operational context. Rather than presenting ABB's products as isolated components, it places them inside a complete water treatment facility. The audience can move through the process, see where a solution sits, understand what surrounds it and follow what happens as a result of its operation.
+The wet well scenario is a useful example. Wastewater enters the facility and must be moved onwards by pumps; ABB's variable speed drive units control how those pumps are brought online and operated. In Water World, the audience can stand inside the wet well, see the pumps in position and follow an operating scenario. When debris affects one pump, the second takes over while the first enters a cleaning sequence.
 
-The wet well scenario is a useful example. Wastewater enters the facility and must be moved onwards by pumps. ABB's variable speed drive units control how those pumps are brought online and operated. In a conventional presentation, the audience might see the drive, its specifications and a list of benefits. In Water World, that explanation becomes visible: the audience can stand inside the wet well, see the pumps in position and follow an operating scenario. When debris affects one pump, the second takes over while the first enters a cleaning sequence.
+![A duotone still from ABB Water World showing the wet well: submerged pumps, a service ladder, and overhead piping, viewed from the access stairwell.](https://technicalmarketing.org/Images/figure-wetwell-scenario.png)
 
-As James Chalmers, Vice President, ABB Water, explains: "The challenge was never simply explaining what the drive does. It was helping people understand where it sits in the wider process, what changes when it operates and why that matters. Water World allows the sales team to establish that context clearly and consistently. It means specialists like me can spend less time rebuilding the basic explanation and more time on the site-specific questions and technical decisions that genuinely require experience."
+**Figure 01.** The wet well in ABB Water World, viewed from the access stairwell. The scenario James Chalmers describes below plays out here: pumps brought online in sequence, one entering a cleaning cycle while the other continues operating. Source: Hidden Creative, ABB Water World.
 
-Bob Small, Global Marketing and Communications Manager, Water and Wastewater, ABB, sees the value from a marketing perspective: "Water World gives us a way to show the same solution in a context that makes sense to different stakeholders. Rather than asking people to piece together the meaning from product information alone, we can show where the solution fits, what it changes and why that matters to them. That helps us get to a useful conversation more quickly, whether we're speaking to an engineer, an operations team or someone focused on the commercial case."
+As James Chalmers, Vice President, ABB Water, explains: "The challenge was never simply explaining what the drive does. It was helping people understand where it sits in the wider process, what changes when it operates and why that matters."
 
-Water World turned part of the expert's explanation into an environment others could navigate and repeat.
+The drive units themselves are shown in Figure 02, the equipment James is describing when he talks about spending less time rebuilding the basic explanation.
+
+![A duotone still from ABB Water World showing a row of ABB variable speed drive cabinets in a control room, with additional drive units and instrumentation visible on the far wall.](https://technicalmarketing.org/Images/figure-abb-drive-units.png)
+
+**Figure 02.** ABB variable speed drive units as rendered in Water World, the same cabinets and instrumentation a specialist like James would otherwise have to describe from a spec sheet. Source: Hidden Creative, ABB Water World.
+
+James's expertise shaped what needed to be shown, which connections mattered and how the scenario should unfold. Water World doesn't contain everything he knows about water treatment. It carries the foundational explanation, allowing a salesperson to establish the process and the role of the product before James, or another specialist, steps in for the site-specific questions.
+
+Bob Small, Global Marketing and Communications Manager, Water and Wastewater, ABB, sees the value from a marketing perspective: "Water World gives us a way to show the same solution in a context that makes sense to different stakeholders… that helps us get to a useful conversation more quickly."
 
 ## 05 · What This Changes · Industrial engineering communication
 
-The wider implication is that industrial technical marketing is becoming as much a problem of industrial engineering communication as it is one of marketing. Accurate materials for technically informed audiences only go so far when different stakeholders need to understand the same complex system well enough to make a decision.
+The wider implication is that industrial technical marketing is becoming as much a problem of industrial engineering communication as it is one of marketing. Accurate materials for technically-informed audiences only go so far when different stakeholders need to understand the same complex system well enough to make a decision.
 
-Industrial buying decisions are made by mixed groups. Engineers may be concerned with function, compatibility and performance. Operations leaders may focus on scalability, reliability, access and maintenance. Health and safety teams will consider risk, while commercial and financial stakeholders need to understand cost, impact and return. They may all be looking at the same solution, but they aren't asking the same questions.
+Industrial buying decisions are made by mixed groups: engineers concerned with function and compatibility, operations leaders focused on reliability and maintenance, health and safety teams weighing risk, commercial and financial stakeholders needing to understand cost and return.
 
-This creates a difficult standard for technical marketing. The engineering can't be simplified until it loses credibility, but neither can the organisation assume that every stakeholder will infer the wider meaning from a technical drawing or specification. The task is to preserve the truth of the system while making its relevance visible to people with different responsibilities and levels of knowledge.
-
-This is what Trubow means by industrial engineering communication: taking complex engineering knowledge and making it understandable across the different stakeholders involved in a decision, without losing the technical truth along the way.
+A shared operational environment gives the buying group a common frame of reference. They don't need identical explanations, but they do need to be looking at the same operational reality.
 
 > *Technical marketing shouldn't remove complexity. It should help the people responsible for acting on it understand the complexity that matters.*
 
-## 06 · The Limits · What immersion doesn't guarantee
+## 06 · The Limits · The limits of repeatability
 
-Immersion on its own is no guarantee that expertise will scale.
-
-If the experience is built around visual impact rather than explanation, it can fail in much the same way as an overloaded presentation. A realistic environment may still leave the audience unsure what matters, what they are meant to notice or how the solution relates to the decision in front of them. It can also create a false sense of completeness. A standard scenario may be clear and consistent without being right for every site or application. The experience must therefore make its own limits clear and show where expert judgement is required.
+Immersion on its own is no guarantee that expertise will scale. If the experience is built around visual impact rather than explanation, it can fail the same way an overloaded presentation does. It can also create a false sense of completeness, if a standard scenario is clear and consistent without being right for every site or application.
 
 > *The technology preserves the route through the explanation. Where that route should lead in every situation is still a judgement call.*
 
 ## 07 · The Method · Design backwards from the decision
 
-The most useful place to start is with the decision the buyer is being asked to make.
-
-Industrial demonstrations often begin with the available assets: the CAD data, the product list, the existing presentation or the features the team wants to showcase. That approach can produce an accurate representation while still leaving the central buying question unanswered.
-
-A better starting point is to identify who's making or influencing the decision, what each person needs to understand, and what claim the organisation is asking them to believe. From there, the team can examine what the expert currently explains that the existing materials don't, which parts of that explanation recur, and which parts depend on site-specific judgement. Only then should the team decide what needs to be modelled, which scenarios need to be shown, and what sequence will make it clear how everything connects.
+The most useful place to start is with the decision the buyer is being asked to make: who's influencing it, what each person needs to understand, and what claim the organisation is asking them to believe.
 
 One useful way to test the design is to separate three levels:
 
@@ -1155,11 +1155,9 @@ One useful way to test the design is to separate three levels:
 
 Begin with the decision. A successful virtual environment is the representation that best helps the audience understand and evaluate it.
 
-## 08 · The Test · What remains once the expert stops speaking
+## 08 · The Test · End with the test
 
-The quality of an industrial demonstration shouldn't be judged by how much it shows, how realistic it looks or how impressed the audience appears while using it.
-
-Those things may matter, but they aren't the final measure. The better test is what remains once the expert has stopped speaking. Can the audience describe where the solution sits, what it changes and why that change matters? Can people with different responsibilities connect the same solution to the decision they are being asked to make?
+The quality of an industrial demonstration shouldn't be judged by how much it shows, how realistic it looks or how impressed the audience appears while using it. The better test is what remains once the expert has stopped speaking.
 
 A successful demonstration doesn't require every stakeholder to leave with the same level of technical knowledge. It should leave them with enough shared understanding to evaluate the central claim from their own perspective.
 
@@ -1179,7 +1177,7 @@ A successful demonstration doesn't require every stakeholder to leave with the s
 
 ## Footnotes
 
-[^1]: ARC Advisory Group, research on industrial knowledge transfer: retirement and workforce churn are increasing the urgency of capturing critical operational knowledge before it leaves the organisation. Sourced by the author directly. [arcweb.com/press/knowledge-transfer-key-people-process-platform-best-practices](https://www.arcweb.com/press/knowledge-transfer-key-people-process-platform-best-practices), plus [arcweb.com/events/52024-dtc-global-countering-workforce-dynamics-knowledge-capture](https://www.arcweb.com/events/52024-dtc-global-countering-workforce-dynamics-knowledge-capture), which speaks specifically to increasing retirements and workforce churn.
+[^1]: ARC Advisory Group, research on industrial knowledge transfer: retirement and workforce churn are increasing the urgency of capturing critical operational knowledge before it leaves the organisation. Sourced by Matt directly; not independently re-verified by the editor beyond confirming ARC publishes this category of research. [arcweb.com/press/knowledge-transfer-key-people-process-platform-best-practices](https://www.arcweb.com/press/knowledge-transfer-key-people-process-platform-best-practices), plus [arcweb.com/events/52024-dtc-global-countering-workforce-dynamics-knowledge-capture](https://www.arcweb.com/events/52024-dtc-global-countering-workforce-dynamics-knowledge-capture), which speaks specifically to increasing retirements and workforce churn.
 [^2]: American Council of Engineering Companies (ACEC), *Firm of the Future: The Workforce of the Future* (2025): approximately 184,000 engineers exited the workforce through retirement and separation in 2022, creating an annual gap of roughly 18,000 engineers overall, with a national survey of 2,097 respondents and 38 in-depth interviews underlining the importance of structured knowledge transfer and succession planning. Independent second source alongside ARC. [acec.org/resource/firm-of-the-future-the-workforce-of-the-future](https://www.acec.org/resource/firm-of-the-future-the-workforce-of-the-future/)
 [^3]: APQC, *The Great Retirement: Knowledge Loss, AI and the Workforce Shift* (2025): benchmarking research on capturing critical institutional knowledge before it leaves as senior staff retire. Independent third source. [apqc.org/resource-library/great-retirement-knowledge-loss-ai-and-workforce-shift](https://www.apqc.org/resource-library/resource-listing/great-retirement-knowledge-loss-ai-and-workforce-shift)
 [^4]: Chalmers, James. Vice President, ABB Water. Direct correspondence with the author, 2026.
@@ -1371,6 +1369,10 @@ The practitioners and editors who have contributed original work to Technical Ma
 Twelve years building technical marketing at scale inside ServiceNow across ITSM, ITOM, security, DevOps, and AI products. Three Knowledge conference mainstage keynotes. Founder of ThinkRoot LLC. U.S. Navy veteran. Contributor to: The Technical Marketer (Article I), Before the Name (Article II), Technical Marketing in the Age of AI (Article III). Full profile: technicalmarketing.org/contributors/chad-corriveau
 
 ## Volume II · Q3 2026
+
+**Matthew Trubow** · Practitioner · Volume II, 2026
+
+Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Mechanical engineer by background, helps global engineering companies including ABB, GE and Johnson Controls make complex products and systems easier to understand through interactive 3D environments. Contributor to: Scaling the Expert (Article IV). A commercial relationship (Hidden Creative built ABB Water World, the virtual environment discussed in his piece; ABB is a Hidden Creative client) is disclosed on his profile and on the article itself. Full profile: technicalmarketing.org/contributors/matthew-trubow
 
 Issue 06 features a conversation with Peter Cohan, author of *Great Demo!*, on demo methodology — the second entry in the practitioner profile series, publishing September 1, 2026. Volume II opens the contributor pipeline to senior practitioners across the field. Submissions reviewed on editorial merit. See /suggest for current editorial priorities.
 

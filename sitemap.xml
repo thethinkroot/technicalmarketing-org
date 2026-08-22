@@ -1000,29 +1000,133 @@
 
   <!-- ============================================================ -->
   <!-- ARTICLE IV · VOLUME 02 -->
-  <!-- English only for now; ja/es/fr/de hreflang alternates and their
-       url entries to be added once translated, matching the pattern
-       used elsewhere in this file. -->
+  <!-- es/de/fr live; ja hreflang alternate and its url entry to be
+       added once translated, matching the pattern used elsewhere in
+       this file. -->
   <!-- ============================================================ -->
   <url>
     <loc>https://technicalmarketing.org/scaling-the-expert</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/scaling-the-expert</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/scaling-the-expert</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/scaling-the-expert</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/scaling-the-expert</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/scaling-the-expert"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/scaling-the-expert"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/scaling-the-expert"/>
   </url>
 
   <!-- ============================================================ -->
   <!-- CONTRIBUTOR: MATTHEW TRUBOW -->
-  <!-- English only for now, same translation note as above. -->
+  <!-- All five locales live. -->
   <!-- ============================================================ -->
   <url>
     <loc>https://technicalmarketing.org/contributors/matthew-trubow</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/contributors/matthew-trubow</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/contributors/matthew-trubow</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/contributors/matthew-trubow</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/contributors/matthew-trubow</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/contributors/matthew-trubow"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/contributors/matthew-trubow"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/contributors/matthew-trubow"/>
   </url>
 

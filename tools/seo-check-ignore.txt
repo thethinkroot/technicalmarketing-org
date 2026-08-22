@@ -35,24 +35,21 @@
 internal-link  /volume-02
 
 # ---------------------------------------------------------------------------
-# 2. [CLASS 2] Contributor profile for Matthew Trubow is linked from scaling-the-expert.html
-#    but the page does not exist (404 live).
-#    Fix: create contributors/matthew-trubow.html, or unlink the byline.
+# 2. [RESOLVED 2026-08-22] Contributor profile for Matthew Trubow now exists
+#    (EN + es/de/fr) and its sitemap entries were added alongside
+#    scaling-the-expert's. Entry removed — verified stale (same suppressed-
+#    count before/after removal).
 # ---------------------------------------------------------------------------
-internal-link  /contributors/matthew-trubow
 
 # ---------------------------------------------------------------------------
-# 3. [CLASS 1] Sitemap coverage gap — 30 live, indexable pages are absent from sitemap.xml.
-#    Two clusters:
-#      a) scaling-the-expert, never added after publication.
-#         (any-questions-so-far was added to the sitemap 2026-08-17.)
-#      b) Seven page types across all four locales (ai-for-technical-marketers,
+# 3. [CLASS 1] Sitemap coverage gap — remaining live, indexable pages absent from sitemap.xml.
+#    scaling-the-expert (+ es/de/fr, + matthew-trubow) added 2026-08-22.
+#    Seven page types across all four locales (ai-for-technical-marketers,
 #         archive, reference, suggest, the-index, tools, volume-01) — the locale
 #         sitemap pass covered only a subset of pages.
 #    Fix: add the missing <url> blocks. Until then Google will not discover these
 #    from the sitemap, only by crawling internal links.
 # ---------------------------------------------------------------------------
-sitemap-coverage  /scaling-the-expert
 sitemap-coverage  /ai-for-technical-marketers
 sitemap-coverage  /archive
 sitemap-coverage  /reference

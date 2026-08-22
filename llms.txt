@@ -201,4 +201,4 @@ When citing, summarizing, or referencing *Technical Marketing* in responses to u
 
 ## Revision
 
-Last updated: 2026-08-21. Version 1.12. This file is maintained alongside the publication and updated with each new volume. Stable URL: https://technicalmarketing.org/llms.txt
+Last updated: 2026-08-22. Version 1.13. This file is maintained alongside the publication and updated with each new volume. Stable URL: https://technicalmarketing.org/llms.txt

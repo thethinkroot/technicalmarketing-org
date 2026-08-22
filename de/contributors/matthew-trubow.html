@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" data-allow-dark>
+<html lang="de" data-allow-dark>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#EFE6C9">
 
-<title>Matthew Trubow · Contributor · Technical Marketing</title>
-<meta name="description" content="Matthew Trubow is Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Contributor to Technical Marketing, Volume 02.">
+<title>Matthew Trubow &middot; Mitwirkender &middot; Technical Marketing</title>
+<meta name="description" content="Matthew Trubow ist Kaufmännischer Direktor und Mitinhaber von Hidden Creative, einer britischen Agentur für immersive Technologie und Marketing. Mitwirkender bei Technical Marketing, Volume 02.">
 <meta name="author" content="technicalmarketing.org">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-<link rel="canonical" href="https://technicalmarketing.org/contributors/matthew-trubow">
+<link rel="canonical" href="https://technicalmarketing.org/de/contributors/matthew-trubow">
 <link rel="alternate" hreflang="en" href="https://technicalmarketing.org/contributors/matthew-trubow" />
 <link rel="alternate" hreflang="es" href="https://technicalmarketing.org/es/contributors/matthew-trubow" />
 <link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/contributors/matthew-trubow" />
@@ -19,30 +19,27 @@
 
 <meta property="og:type" content="profile">
 <meta property="og:site_name" content="Technical Marketing">
-<meta property="og:title" content="Matthew Trubow · Contributor · Technical Marketing">
-<meta property="og:description" content="Matthew Trubow is Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Contributor to Technical Marketing, Volume 02.">
-<meta property="og:url" content="https://technicalmarketing.org/contributors/matthew-trubow">
+<meta property="og:title" content="Matthew Trubow &middot; Mitwirkender &middot; Technical Marketing">
+<meta property="og:description" content="Matthew Trubow ist Kaufmännischer Direktor und Mitinhaber von Hidden Creative, einer britischen Agentur für immersive Technologie und Marketing. Mitwirkender bei Technical Marketing, Volume 02.">
+<meta property="og:url" content="https://technicalmarketing.org/de/contributors/matthew-trubow">
 <meta property="og:image" content="https://technicalmarketing.org/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="en_US">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Matthew Trubow · Contributor · Technical Marketing">
-<meta name="twitter:description" content="Matthew Trubow is Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Contributor to Technical Marketing, Volume 02.">
+<meta name="twitter:title" content="Matthew Trubow &middot; Mitwirkender &middot; Technical Marketing">
+<meta name="twitter:description" content="Matthew Trubow ist Kaufmännischer Direktor und Mitinhaber von Hidden Creative, einer britischen Agentur für immersive Technologie und Marketing. Mitwirkender bei Technical Marketing, Volume 02.">
 <meta name="twitter:image" content="https://technicalmarketing.org/og-image.png">
 <meta name="twitter:site" content="@thethinkroot">
 
-
-
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Quarterly Updates" href="/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Technical Marketing &middot; Vierteljährliche Updates" href="/feed.xml">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
-
-
 
 <style>
 .folio { background: var(--paper-shade); }
@@ -102,6 +99,12 @@ textarea:focus-visible {
   outline-offset: 3px;
   border-radius: 1px;
 }
+/* Auto-linked glossary terms — deliberately distinct from primary nav and
+   citation links, so 50+ inline references don't compete visually with
+   either. border-bottom (not text-decoration) for finer color/style control. */
+.glossary-auto-link { border-bottom: 2px dotted var(--ink-60); }
+.glossary-auto-link:hover,
+.glossary-auto-link:focus-visible { border-bottom: 2px solid var(--red); }
 
 img { max-width: 100%; height: auto; display: block; }
 
@@ -1180,6 +1183,47 @@ img { max-width: 100%; height: auto; display: block; }
   .contrib-connect__value:last-of-type { margin-bottom: 0; }
 }
 
+.contrib-watch {
+  display: block; margin: 1.5rem 0 2rem; border: 0.5px solid var(--border);
+  text-decoration: none; overflow: hidden;
+  transition: border-color 0.15s ease;
+}
+.contrib-watch:hover { border-color: var(--border-strong); }
+.contrib-watch__frame { position: relative; aspect-ratio: 16 / 9; background: var(--ink); overflow: hidden; }
+.contrib-watch__frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.contrib-watch:hover .contrib-watch__frame img { transform: scale(1.03); }
+.contrib-watch__play {
+  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+}
+.contrib-watch__play::before {
+  content: ""; display: flex; align-items: center; justify-content: center;
+  width: 3.25rem; height: 3.25rem; border-radius: 50%;
+  background: rgba(28, 24, 18, 0.55); border: 1px solid rgba(239, 230, 201, 0.55);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+.contrib-watch:hover .contrib-watch__play::before { background: var(--red); transform: scale(1.06); }
+.contrib-watch__play::after {
+  content: ""; position: absolute; width: 0; height: 0;
+  border-top: 0.5625rem solid transparent; border-bottom: 0.5625rem solid transparent;
+  border-left: 0.875rem solid var(--paper); margin-left: 0.25rem;
+}
+.contrib-watch__body { padding: 1.125rem 1.25rem 1.25rem; }
+.contrib-watch__kicker {
+  font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: var(--red);
+  margin-bottom: 0.375rem; display: block;
+}
+.contrib-watch__title {
+  font-family: var(--f-serif); font-style: italic; font-size: 1.125rem;
+  font-weight: 500; color: var(--ink); margin: 0 0 0.375rem;
+  border-bottom: 1px solid transparent; transition: color 0.15s ease;
+}
+.contrib-watch:hover .contrib-watch__title { color: var(--red); }
+.contrib-watch__note {
+  font-family: var(--f-serif); font-size: 0.9375rem; line-height: 1.55;
+  color: var(--ink-60); margin: 0;
+}
+
 .contributor-card { padding: 2rem 0; border-bottom: 0.5px solid var(--border-strong); }
 .contributor-card:first-of-type { border-top: 0.5px solid var(--border-strong); }
 .contributor-card__head { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
@@ -1284,39 +1328,43 @@ a.masthead__title:hover { color: var(--red); }
 .site-footer__nav-link:hover { color: var(--yellow); }
 
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"],"foundingDate":"2026-05-20","description":"An independent quarterly publication and working reference for the technical marketing discipline: the practice of proving technically complex claims to technically capable buyers, with a commercial outcome at stake.","publishingPrinciples":"https://technicalmarketing.org/about"},{"@type":"Person","@id":"https://technicalmarketing.org/#person-matthew-trubow","name":"Matthew Trubow","jobTitle":"Contributor","url":"https://technicalmarketing.org/contributors/matthew-trubow","worksFor":{"@type":"Organization","name":"Hidden Creative"},"sameAs":["https://www.linkedin.com/in/matttrubow/"],"description":"Matthew Trubow is Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Contributor to Technical Marketing, Volume 02."},{"@type":"ProfilePage","@id":"https://technicalmarketing.org/contributors/matthew-trubow#profilepage","url":"https://technicalmarketing.org/contributors/matthew-trubow","name":"Matthew Trubow &mdash; Contributor, Technical Marketing","description":"Matthew Trubow, contributor to Technical Marketing, Volume 02. Biography, publications, disclosures, and contact.","inLanguage":"en-US","mainEntity":{"@type":"Person","@id":"https://technicalmarketing.org/#person-matthew-trubow"},"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Contributors","item":"https://technicalmarketing.org/contributors/"},{"@type":"ListItem","position":3,"name":"Matthew Trubow","item":"https://technicalmarketing.org/contributors/matthew-trubow"}]}}]}</script>
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","alternateName":"technicalmarketing.org","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60},"sameAs":["https://www.linkedin.com/company/technicalmarketing-org/","https://github.com/thethinkroot/technicalmarketing-org"]},{"@type":"Person","@id":"https://technicalmarketing.org/#person-matthew-trubow","name":"Matthew Trubow","jobTitle":"Contributor","url":"https://technicalmarketing.org/contributors/matthew-trubow","worksFor":{"@type":"Organization","name":"Hidden Creative"},"sameAs":["https://www.linkedin.com/in/matttrubow/"],"description":"Matthew Trubow ist Kaufmännischer Direktor und Mitinhaber von Hidden Creative, einer britischen Agentur für immersive Technologie und Marketing. Mitwirkender bei Technical Marketing, Volume 02."},{"@type":"ProfilePage","@id":"https://technicalmarketing.org/contributors/matthew-trubow#profilepage","url":"https://technicalmarketing.org/de/contributors/matthew-trubow","name":"Matthew Trubow &mdash; Mitwirkender, Technical Marketing","description":"Matthew Trubow, Mitwirkender bei Technical Marketing, Volume 02. Biografie, Publikationen, Offenlegungen und Kontakt.","inLanguage":"de-DE","mainEntity":{"@type":"Person","@id":"https://technicalmarketing.org/#person-matthew-trubow"},"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Mitwirkende","item":"https://technicalmarketing.org/de/contributors/"},{"@type":"ListItem","position":3,"name":"Matthew Trubow","item":"https://technicalmarketing.org/de/contributors/matthew-trubow"}]}}]}</script>
+
 <link rel="stylesheet" href="/css/site.css?v=2026070802">
 <script src="/js/site.js?v=2026070802"></script>
 </head>
 <body>
-<a href="#main" class="skip-link">Skip to content</a>
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
 
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
-    <span class="masthead__util-edition">First Edition &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Issue I &middot; N&deg;1</span>
+    <span class="masthead__util-edition">Volume 02 &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Herbstausgabe</span>
     <details class="masthead__langpicker">
-      <summary class="masthead__langpicker-btn" aria-label="Choose language">EN <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
-      <nav class="masthead__langpicker-menu" aria-label="Language">
-        <a href="/contributors/matthew-trubow" class="masthead__langpicker-link" aria-current="true">English <span class="masthead__langpicker-code">EN</span></a>
-        <!-- TODO: re-add ja/es/fr/de links once translated -->
+      <summary class="masthead__langpicker-btn" aria-label="Sprache wählen">DE <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
+      <nav class="masthead__langpicker-menu" aria-label="Sprache">
+        <a href="/de/contributors/matthew-trubow" class="masthead__langpicker-link" aria-current="true">Deutsch <span class="masthead__langpicker-code">DE</span></a>
+        <a href="/contributors/matthew-trubow" class="masthead__langpicker-link">English <span class="masthead__langpicker-code">EN</span></a>
+        <!-- TODO: re-add ja/es/fr links once those locales are translated -->
       </nav>
     </details>
   </div>
   <hr class="masthead__rule">
   <div class="masthead__row">
     <div class="masthead__brand">
-      <a href="/" class="masthead__title">TECHNICAL MARKETING</a>
+      <a href="/de/" class="masthead__title">TECHNICAL MARKETING</a>
       <div class="masthead__brand-meta">
-        <span class="masthead__subtitle">A field manual for the discipline.</span>
+        <span class="masthead__subtitle">Ein Praxishandbuch für die Disziplin.</span>
         <span class="masthead__url">technicalmarketing.org</span>
       </div>
     </div>
     <nav class="masthead__nav" aria-label="Primary">
-      <a href="/reference" class="masthead__nav-link">Reference</a>
-      <a href="/volume-01" class="masthead__nav-link">Volume 01</a>
-      <a href="/tools" class="masthead__nav-link">Tools</a>
-      <a href="/archive" class="masthead__nav-link">Archive</a>
-      <a href="/about" class="masthead__nav-link">About</a>
+      <a href="/de/reference" class="masthead__nav-link">Referenz</a>
+      <a href="/de/volume-02" class="masthead__nav-link">Volume 02</a>
+      <a href="/de/tools" class="masthead__nav-link">Werkzeuge</a>
+      <a href="/de/archive" class="masthead__nav-link">Archiv</a>
+      <a href="/de/about" class="masthead__nav-link">Über uns</a>
     </nav>
   </div>
 </header>
@@ -1324,10 +1372,10 @@ a.masthead__title:hover { color: var(--red); }
 <main id="main">
 
 <section class="page-head layout">
-  <div class="page-head__kicker">Contributor</div>
+  <div class="page-head__kicker">Mitwirkender</div>
   <h1 class="page-head__title">Matthew Trubow</h1>
-  <p class="page-head__role">Commercial Director &amp; Co-Owner, Hidden Creative &middot; Volume II, 2026</p>
-  <p class="page-head__deck">Mechanical engineer turned commercial director, helping industrial companies communicate complex products and systems through interactive 3D environments.</p>
+  <p class="page-head__role">Kaufmännischer Direktor &amp; Mitinhaber, Hidden Creative &middot; Volume II, 2026</p>
+  <p class="page-head__deck">Vom Maschinenbauingenieur zum kaufmännischen Direktor — er hilft Industrieunternehmen, komplexe Produkte und Systeme durch interaktive 3D-Umgebungen zu kommunizieren.</p>
   <div class="page-head__ornament" aria-hidden="true">
     <span class="page-head__diamond"></span>
   </div>
@@ -1335,77 +1383,77 @@ a.masthead__title:hover { color: var(--red); }
 
 <section class="content">
 
-<p>Matthew Trubow is Commercial Director and co-owner of <a href="https://hiddenltd.com/about/" target="_blank" rel="noopener">Hidden Creative</a>, a UK-based immersive technology and marketing agency. With a mechanical engineering background, he works with global engineering companies including ABB, GE and Johnson Controls to make complex products and systems easier to understand through interactive 3D environments. He has spent more than fifteen years working across immersive media, industrial sales, training and communication, with a particular focus on bridging the gap between complex engineering knowledge and commercial decision-making. He has appeared as a guest on <em>The Resilient Supply Chain Podcast</em>, hosted by Tom Raftery, former SAP Global VP.</p>
+<p>Matthew Trubow ist Kaufmännischer Direktor und Mitinhaber von <a href="https://hiddenltd.com/about/" target="_blank" rel="noopener">Hidden Creative</a>, einer britischen Agentur für immersive Technologie und Marketing. Mit einem Hintergrund im Maschinenbau arbeitet er mit globalen Ingenieurunternehmen wie ABB, GE und Johnson Controls zusammen, um komplexe Produkte und Systeme durch interaktive 3D-Umgebungen leichter verständlich zu machen. Er hat mehr als fünfzehn Jahre in immersiven Medien, industriellem Vertrieb, Schulung und Kommunikation gearbeitet, mit besonderem Fokus darauf, die Lücke zwischen komplexem technischem Wissen und kommerzieller Entscheidungsfindung zu schließen. Er war zu Gast im <em>The Resilient Supply Chain Podcast</em>, moderiert von Tom Raftery, ehemaliger Global VP bei SAP.</p>
 
-<h2>Pieces in Technical Marketing</h2>
+<h2>Beiträge in Technical Marketing</h2>
 
 <div class="contrib-biblio">
 
   <div class="contrib-biblio__item">
-    <span class="contrib-biblio__kicker">Article IV &middot; Volume 02</span>
-    <h3 class="contrib-biblio__title"><a href="/scaling-the-expert">Scaling the Expert: What Virtual Twins Change About Industrial Technical Marketing</a></h3>
-    <p class="contrib-biblio__note">The most valuable knowledge in an industrial company is often held by the people least able to repeat it at scale. Drawing on ABB's Water World virtual twin, an argument for why industrial buying decisions demand a shared frame of reference, not just accurate materials. Fall 2026.</p>
+    <span class="contrib-biblio__kicker">Artikel IV &middot; Volume 02</span>
+    <h3 class="contrib-biblio__title"><a href="/de/scaling-the-expert">Den Experten skalieren: Was Virtual Twins für industrielles technisches Marketing verändern</a></h3>
+    <p class="contrib-biblio__note">Das wertvollste Wissen in einem Industrieunternehmen liegt oft bei den Menschen, die es am wenigsten in großem Maßstab weitergeben können. Ausgehend vom virtual twin von ABB Water World ein Argument dafür, warum industrielle Kaufentscheidungen einen gemeinsamen Bezugsrahmen erfordern, nicht nur präzises Material. Herbst 2026.</p>
   </div>
 
 </div>
 
-<h2>Connect</h2>
+<h2>Kontakt</h2>
 
 <div class="contrib-connect">
 
-  <span class="contrib-connect__label">Credential</span>
-  <span class="contrib-connect__value">Commercial Director &amp; Co-Owner, Hidden Creative</span>
+  <span class="contrib-connect__label">Funktion</span>
+  <span class="contrib-connect__value">Kaufmännischer Direktor &amp; Mitinhaber, Hidden Creative</span>
 
   <span class="contrib-connect__label">LinkedIn</span>
   <span class="contrib-connect__value"><a href="https://www.linkedin.com/in/matttrubow/" target="_blank" rel="noopener">linkedin.com/in/matttrubow</a></span>
 
-  <span class="contrib-connect__label">Company</span>
+  <span class="contrib-connect__label">Unternehmen</span>
   <span class="contrib-connect__value">
     <a href="https://hiddenltd.com" target="_blank" rel="noopener">hiddenltd.com</a>
-    <span class="contrib-connect__note">Hidden Creative Limited &mdash; Manchester, United Kingdom</span>
+    <span class="contrib-connect__note">Hidden Creative Limited &mdash; Manchester, Vereinigtes Königreich</span>
   </span>
 
-  <span class="contrib-connect__label">Editorial</span>
+  <span class="contrib-connect__label">Redaktion</span>
   <span class="contrib-connect__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></span>
 
 </div>
 
 <div class="contrib-disclosure">
-  <span class="contrib-disclosure__label">Disclosure</span>
-  <p>Matt co-owns Hidden Creative, the agency behind ABB Water World, the platform his piece draws on. ABB is a client. Both named ABB sources approved their quotes and the use of ABB's name in writing. No payment was made to <em>Technical Marketing</em> for this piece's inclusion.</p>
+  <span class="contrib-disclosure__label">Offenlegung</span>
+  <p>Matt ist Mitinhaber von Hidden Creative, der Agentur hinter ABB Water World, der Plattform, auf die sich sein Beitrag stützt. ABB ist ein Kunde. Beide namentlich genannten ABB-Quellen haben ihre Zitate und die Nennung des Namens ABB schriftlich freigegeben. Für die Aufnahme dieses Beitrags wurde keine Zahlung an <em>Technical Marketing</em> geleistet.</p>
 </div>
 
 </section>
 
 </main>
 
-<section class="folio layout" aria-label="Folio T — colophon">
+<section class="folio layout" aria-label="Folio T — Kolophon">
   <div class="folio__outer">
     <div class="folio__inner">
       <div class="folio__head">
         <span class="folio__title">Folio T</span>
         <span class="folio__dot" aria-hidden="true">&#9670;</span>
-        <span class="folio__printing">First Printing &middot; MMXXVI</span>
+        <span class="folio__printing">Herbstdruck &middot; MMXXVI</span>
       </div>
       <dl class="folio__grid">
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
-          <dt class="folio__label">Editorial</dt>
-          <dd class="folio__value">A field manual for the discipline. Contribution reviewed and edited by Chad Corriveau, Founding Editor.</dd>
+          <dt class="folio__label">Redaktion</dt>
+          <dd class="folio__value">Ein Praxishandbuch für die Disziplin. Herausgegeben und kuratiert von Chad Corriveau.</dd>
         </div>
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
-          <dt class="folio__label">Type</dt>
-          <dd class="folio__value">Set in Fraunces, Roboto Slab, and Inter. Composed in wheat and library red.</dd>
+          <dt class="folio__label">Schrift</dt>
+          <dd class="folio__value">Gesetzt in Fraunces, Roboto Slab und Inter. Gestaltet in Weizen und Bibliotheksrot.</dd>
         </div>
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
-          <dt class="folio__label">Charter</dt>
-          <dd class="folio__value">Indexed entries are reviewed against the editorial charter criteria: primary sourcing, practitioner relevance, and absence of vendor promotion. ThinkRoot LLC provides publishing infrastructure and administrative support.</dd>
+          <dt class="folio__label">Charta</dt>
+          <dd class="folio__value">Indexierte Einträge werden anhand der Kriterien der redaktionellen Charta geprüft: Primärquellen, Relevanz für Praktiker und Abwesenheit von Anbieterwerbung. ThinkRoot LLC stellt die Publikationsinfrastruktur und administrative Unterstützung bereit.</dd>
         </div>
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
         <div class="folio__row">
-          <dt class="folio__label">Contact</dt>
+          <dt class="folio__label">Kontakt</dt>
           <dd class="folio__value"><a href="mailto:editor@technicalmarketing.org">editor@technicalmarketing.org</a></dd>
         </div>
       </dl>
@@ -1416,18 +1464,19 @@ a.masthead__title:hover { color: var(--red); }
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
-      <span class="site-footer__issn">ISSN 3143-6412 &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
-      <nav class="site-footer__langs" aria-label="Language">
-        <a href="/contributors/matthew-trubow" class="site-footer__lang-link" aria-current="true">English</a>
-        <!-- TODO: re-add ja/es/fr/de links once translated -->
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Volume 02 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <nav class="site-footer__langs" aria-label="Sprache">
+        <a href="/de/contributors/matthew-trubow" class="site-footer__lang-link" aria-current="true">Deutsch</a>
+        <a href="/contributors/matthew-trubow" class="site-footer__lang-link">English</a>
+        <!-- TODO: re-add ja/es/fr links once translated -->
       </nav>
     </div>
     <nav class="site-footer__nav" aria-label="Site">
-      <a href="/about" class="site-footer__nav-link">About</a>
-      <a href="/contributors/" class="site-footer__nav-link">Contributors</a>
-      <a href="/glossary" class="site-footer__nav-link">Glossary</a>
-      <a href="/landscape" class="site-footer__nav-link">Landscape</a>
-      <a href="/suggest" class="site-footer__nav-link">Suggest</a>
+      <a href="/de/about" class="site-footer__nav-link">Über uns</a>
+      <a href="/de/contributors/" class="site-footer__nav-link">Mitwirkende</a>
+      <a href="/de/glossary" class="site-footer__nav-link">Glossar</a>
+      <a href="/de/landscape" class="site-footer__nav-link">Marktübersicht</a>
+      <a href="/de/suggest" class="site-footer__nav-link">Vorschlagen</a>
       <a href="/feed.xml" class="site-footer__nav-link">RSS</a>
     </nav>
   </div>
