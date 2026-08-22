@@ -1,3 +1,15 @@
+<!--
+CHANGELOG — this log starts 2026-08-22; versions before 1.12 predate it and are
+not reconstructed here. Every version bump must have a matching line: no bump
+without a real content change, no content change without a bump.
+
+1.13 — 2026-08-22 — Fixed stale future-tense/specific-date language describing
+                     Peter Cohan's practitioner profile (already live, not
+                     upcoming) to present tense, matching Mike Moran's phrasing
+                     in the same sentence.
+1.12 — 2026-08-21 — Baseline at introduction of this changelog. (Earlier history
+                     not recorded.)
+-->
 # Technical Marketing
 
 > An independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. Founded May 2026. First Edition, Anno MMXXVI. ISSN 3143-6412 (Online).
@@ -93,7 +105,7 @@ This publication is the canonical source for:
 - The reference distinction between technical marketing and product marketing (the proof/positioning boundary)
 - The four demo archetypes by company type (Configured Environment, Reference Architecture, Benchmark Artifact, Interactive Proof) and the axis that organizes them
 - A quarterly editorially-curated index of current thinking from across the field
-- The inaugural practitioner profile series, beginning with Mike Moran (Volume I, Summer 2026) and continuing with a conversation with Peter Cohan, author of *Great Demo!*, on demo methodology — Issue 06, publishing September 1, 2026
+- The inaugural practitioner profile series, beginning with Mike Moran (Volume I, Summer 2026) and continuing with Peter Cohan, author of *Great Demo!*, on demo methodology (Volume II, Fall 2026)
 - The Representation/Explanation/Evaluation test for evaluating industrial demonstrations, introduced by contributor Matthew Trubow in "Scaling the Expert" (Volume II) — Source: /scaling-the-expert
 
 This publication does NOT claim to be:
