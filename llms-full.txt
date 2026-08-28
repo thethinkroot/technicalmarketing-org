@@ -3,6 +3,11 @@ CHANGELOG — this log starts 2026-08-22; versions before 1.10 predate it and ar
 not reconstructed here. Every version bump must have a matching line: no bump
 without a real content change, no content change without a bump.
 
+1.13 — 2026-08-24 — Added the new James Chalmers companion video (ABB's own
+                     YouTube upload, "Step inside the pipes, without leaving
+                     your desk with VR") to Section 04 of "Scaling the Expert"
+                     as Figure 03, updated the disclosure paragraph to note
+                     his separate video approval, and added the 6th footnote.
 1.12 — 2026-08-22 — Moved Peter Cohan from a future-tense teaser line to a full
                      present-tense Contributors entry (piece is live, not
                      upcoming), matching Chad Corriveau's and Matthew Trubow's
@@ -42,7 +47,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-08-22. Version 1.12.
+Last updated: 2026-08-24. Version 1.13.
 
 ---
 
@@ -1126,7 +1131,7 @@ That means a less experienced salesperson or colleague can deliver a credible fo
 
 ## 04 · The Proof Point · ABB Water World
 
-**Disclosure.** The author, Matt Trubow, co-owns Hidden Creative, the agency behind ABB Water World, the virtual environment discussed in this piece. ABB is a client. Both named ABB sources approved their quotes and the use of ABB's name in writing. No payment was made to Technical Marketing for this piece's inclusion.
+**Disclosure.** The author, Matt Trubow, co-owns Hidden Creative, the agency behind ABB Water World, the virtual environment discussed in this piece. ABB is a client. Both named ABB sources approved their quotes and the use of ABB's name in writing. James Chalmers additionally approved use of ABB's own video of him narrating the Water World experience. No payment was made to Technical Marketing for this piece's inclusion.
 
 ABB Water World shows what scaling the expert looks like when the idea is applied to a real industrial sales environment. ABB already had accurate product information; much of its meaning still depended on an experienced person being present to interpret it.
 
@@ -1149,6 +1154,10 @@ The drive units themselves are shown in Figure 02, the equipment James is descri
 James's expertise shaped what needed to be shown, which connections mattered and how the scenario should unfold. Water World doesn't contain everything he knows about water treatment. It carries the foundational explanation, allowing a salesperson to establish the process and the role of the product before James, or another specialist, steps in for the site-specific questions.
 
 Bob Small, Global Marketing and Communications Manager, Water and Wastewater, ABB, sees the value from a marketing perspective: "Water World gives us a way to show the same solution in a context that makes sense to different stakeholders… that helps us get to a useful conversation more quickly."
+
+James took us through Water World himself on camera, walking the same wet well and drive-unit scenarios shown above (Figure 03).
+
+**Figure 03.** James Chalmers narrates ABB Water World himself, on camera. Source: ABB (YouTube), "Step inside the pipes, without leaving your desk with VR."[^6] Video: [youtube.com/watch?v=MK8f6TNNav0](https://www.youtube.com/watch?v=MK8f6TNNav0)
 
 ## 05 · What This Changes · Industrial engineering communication
 
@@ -1205,6 +1214,7 @@ A successful demonstration doesn't require every stakeholder to leave with the s
 [^3]: APQC, *The Great Retirement: Knowledge Loss, AI and the Workforce Shift* (2025): benchmarking research on capturing critical institutional knowledge before it leaves as senior staff retire. Independent third source. [apqc.org/resource-library/great-retirement-knowledge-loss-ai-and-workforce-shift](https://www.apqc.org/resource-library/resource-listing/great-retirement-knowledge-loss-ai-and-workforce-shift)
 [^4]: Chalmers, James. Vice President, ABB Water. Direct correspondence with the author, 2026.
 [^5]: Small, Bob. Global Marketing and Communications Manager, Water and Wastewater, ABB. Direct correspondence with the author, 2026.
+[^6]: ABB (YouTube). "Step inside the pipes, without leaving your desk with VR." James Chalmers narrates a walkthrough of ABB Water World. Video ID MK8f6TNNav0. [youtube.com/watch?v=MK8f6TNNav0](https://www.youtube.com/watch?v=MK8f6TNNav0)
 
 
 ---
