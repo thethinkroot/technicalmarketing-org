@@ -181,6 +181,8 @@ img { max-width: 100%; height: auto; display: block; }
 .dept-band__deck em { font-style: italic; color: var(--ink); }
 .dept-band__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; line-height: 1.4; color: var(--ink); border-left: 2px solid var(--red); padding-left: 1.25rem; margin: 1.5rem 0; }
 .dept-band__pull cite { display: block; font-style: normal; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.75rem; }
+.dept-band__pull cite a { color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
+.dept-band__pull cite a:hover { color: var(--red); border-bottom-color: var(--red); }
 .dept-band__cta { display: inline-block; margin-top: 1.5rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--red); border-bottom: 1px solid var(--red); padding-bottom: 1px; }
 .dept-band__cta:hover { color: var(--ink); border-color: var(--ink); }
 
@@ -202,6 +204,8 @@ img { max-width: 100%; height: auto; display: block; }
 .feature__pullbox { border-left: 2px solid var(--red); padding-left: 1.5rem; }
 .feature__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.375rem; line-height: 1.35; color: var(--ink); }
 .feature__pull-attr { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1rem; }
+.feature__pull-attr a { color: inherit; border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; transition: color 0.15s, border-color 0.15s; }
+.feature__pull-attr a:hover { color: var(--red); border-bottom-color: var(--red); }
 /* When the Feature well's secondary column is a video-plate instead of a
    pullbox (a video-native lead entry), the pull-quote drops to a full-width
    row below both columns rather than trying to share space with the plate. */
@@ -465,7 +469,7 @@ a.masthead__title:hover { color: var(--red); }
         </figure>
         <div class="feature__pull--full">
           <p class="feature__pull">&bdquo;Recherche ist das, was vor dem Gespr&auml;ch passiert. Discovery ist das Gespr&auml;ch selbst.&ldquo;</p>
-          <div class="feature__pull-attr">Peter Cohan &middot; Autor, <em>Great Demo!</em></div>
+          <div class="feature__pull-attr"><a href="/de/contributors/peter-cohan" rel="author">Peter Cohan</a> &middot; Autor, <em>Great Demo!</em></div>
         </div>
       </div>
     </div>
@@ -580,7 +584,7 @@ a.masthead__title:hover { color: var(--red); }
           <p class="dept-band__deck">Das wertvollste Wissen in einem Industrieunternehmen liegt oft bei den Menschen, die es am wenigsten in gro&szlig;em Ma&szlig;stab weitergeben k&ouml;nnen. Was ABB Water World dar&uuml;ber zeigt, Expertenwissen zu skalieren, statt nur das Produkt zu zeigen.</p>
           <blockquote class="dept-band__pull">
             <p>&bdquo;Der Virtual Twin ersetzt nicht den Experten. Er macht dessen Erkl&auml;rung wiederholbar, auch ohne dass er im Raum ist.&ldquo;</p>
-            <cite>Matthew Trubow</cite>
+            <cite><a href="/de/contributors/matthew-trubow" rel="author">Matthew Trubow</a></cite>
           </blockquote>
           <a href="/de/scaling-the-expert" class="dept-band__cta">Den Beitrag lesen <span aria-hidden="true">→</span></a>
         </div>
