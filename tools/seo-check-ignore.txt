@@ -28,11 +28,13 @@
 # ===========================================================================
 
 # ---------------------------------------------------------------------------
-# 1. [CLASS 2] Volume 02 index page has not been built yet.
-#    Three pages link to /volume-02, which is 404 live.
-#    Fix: ship volume-02.html, or remove the links.
+# 1. [RESOLVED 2026-08-31] Volume 02 never got a dedicated URL — the current
+#    volume lives at the homepage root by design (confirmed by the Volume II
+#    launch). All fourteen stray /volume-02 nav links and five breadcrumb
+#    JSON-LD references (scaling-the-expert, any-questions-so-far + es/de/fr/ja,
+#    contributors/index, contributors/matthew-trubow, contributors/peter-cohan)
+#    were repointed to "/". Entry removed — verified stale.
 # ---------------------------------------------------------------------------
-internal-link  /volume-02
 
 # ---------------------------------------------------------------------------
 # 2. [RESOLVED 2026-08-22] Contributor profile for Matthew Trubow now exists

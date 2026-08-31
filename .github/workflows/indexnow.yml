@@ -27,8 +27,17 @@ jobs:
             "https://$HOST/contributors/"
             "https://$HOST/contributors/chad-corriveau"
             "https://$HOST/contributors/mike-moran"
+            "https://$HOST/contributors/matthew-trubow"
             "https://$HOST/contributors/peter-cohan"
             "https://$HOST/suggest"
+            "https://$HOST/scaling-the-expert"
+            "https://$HOST/any-questions-so-far"
+            "https://$HOST/volume-01"
+            "https://$HOST/archive"
+            "https://$HOST/reference"
+            "https://$HOST/tools"
+            "https://$HOST/the-index"
+            "https://$HOST/nice-job-hooking-me"
           )
 
           # Build JSON payload for batch ping

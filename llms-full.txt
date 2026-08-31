@@ -3,6 +3,16 @@ CHANGELOG — this log starts 2026-08-22; versions before 1.10 predate it and ar
 not reconstructed here. Every version bump must have a matching line: no bump
 without a real content change, no content change without a bump.
 
+1.15 — 2026-08-31 — Corrected department framing: "Any Questions So Far?" is
+                     the Feature of Volume II (not a Conversations entry);
+                     "Scaling the Expert" opens Proof, a new standing
+                     department (not "Article IV" of the essay canon);
+                     Conversations is reserved pending Volume III.
+1.14 — 2026-08-31 — Volume II launch: added the full-text section for "Any
+                     Questions So Far?" (previously only a one-line
+                     contributor-bio mention), updated the About/Submissions
+                     publication-schedule lines now that Volume 02 is
+                     published rather than forthcoming.
 1.13 — 2026-08-24 — Added the new James Chalmers companion video (ABB's own
                      YouTube upload, "Step inside the pipes, without leaving
                      your desk with VR") to Section 04 of "Scaling the Expert"
@@ -47,7 +57,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-08-24. Version 1.13.
+Last updated: 2026-08-31. Version 1.15.
 
 ---
 
@@ -1085,7 +1095,9 @@ The compression removes the surrounding work. What remains is the discipline's c
 
 ---
 
-# Scaling the Expert: What Virtual Twins Change About Industrial Technical Marketing · Article IV of Volume II
+# Scaling the Expert: What Virtual Twins Change About Industrial Technical Marketing · Proof, Volume II
+
+Not one of the numbered Essays I–III — this is the opening entry of Proof, a new standing department launched in Volume II. It is a practitioner profile, not an authored reference essay.
 
 ## 01 · The Problem · The knowledge that doesn't scale
 
@@ -1216,6 +1228,35 @@ A successful demonstration doesn't require every stakeholder to leave with the s
 [^5]: Small, Bob. Global Marketing and Communications Manager, Water and Wastewater, ABB. Direct correspondence with the author, 2026.
 [^6]: ABB (YouTube). "Step inside the pipes, without leaving your desk with VR." James Chalmers narrates a walkthrough of ABB Water World. Video ID MK8f6TNNav0. [youtube.com/watch?v=MK8f6TNNav0](https://www.youtube.com/watch?v=MK8f6TNNav0)
 
+
+---
+
+# Any Questions So Far?: A Candid Conversation with Peter Cohan · The TM.org Interview · Folio II · Fall Printing
+
+Conducted and edited by Chad Corriveau. The Feature of Volume II, Fall 2026 — the publication's first video-native entry. Not a Conversations department entry; Conversations is reserved for Volume III with no guest confirmed yet.
+
+Peter Cohan wrote *Great Demo!*, now in its third edition — the closest thing the demo discipline has to scripture. He also wrote *Doing Discovery* and *Suspending Disbelief*, founded The Second Derivative, and built the Discovery Tools® business at Symyx Technologies from an empty spreadsheet into a $30 million per year operation. He started as a bench chemist, not a marketer, and it still shows in how he thinks.
+
+Two hours, seven movements, one throughline: the technology keeps changing what's possible. It has never once changed what works.
+
+## Format
+
+A recorded video conversation, cut into a seven-part companion series and paired with a full written transcript. The transcript is drawn from a recorded Zoom conversation, cross-referenced against a Plaud recording and both platforms' AI-generated summaries, to ensure names, figures, and sequence hold up before publication.
+
+The seven parts: [4-f5vHcaKoA](https://www.youtube.com/watch?v=4-f5vHcaKoA), [OqPxmwjWNJs](https://www.youtube.com/watch?v=OqPxmwjWNJs), [qeZIFX1sLqo](https://www.youtube.com/watch?v=qeZIFX1sLqo), [0rSd3Uhr9u8](https://www.youtube.com/watch?v=0rSd3Uhr9u8), [BAtqiw6biPA](https://www.youtube.com/watch?v=BAtqiw6biPA), [VPuXttqVvyI](https://www.youtube.com/watch?v=VPuXttqVvyI), [PnJjU2hVMsg](https://www.youtube.com/watch?v=PnJjU2hVMsg).
+
+## What the conversation covers
+
+- **The Copley Plan** — a field-driven skunkworks method for building the product the customer already needed, using pre-sales and customer success staff embedded directly on the build team.
+- **The reverse demo** — Cohan's approach to opening a demonstration with the buyer's own stated problem rather than the seller's feature list.
+- **The pitching-to-questioning ratio** — a metric derived from AI call summaries that scores discovery calls by the ratio of question-oriented to pitch-oriented conversational elements.
+- **What AI still cannot do that a good discovery call can** — the throughline of the piece: better tooling has repeatedly changed what a demo can show, but has not changed what makes a demo actually work, which is a genuine, question-driven understanding of what the buyer needs.
+
+Cohan's own stated personal tagline, quoted at the top of the piece: *"Never stop learning."*
+
+## Department status
+
+This is the Feature, not a Conversations department entry. Conversations itself remains reserved as of Volume II — no guest is confirmed yet.
 
 ---
 
@@ -1409,7 +1450,7 @@ Author of *Great Demo!*, now in its third edition, *Doing Discovery*, and *Suspe
 
 **Matthew Trubow** · Practitioner · Volume II, 2026
 
-Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Mechanical engineer by background, helps global engineering companies including ABB, GE and Johnson Controls make complex products and systems easier to understand through interactive 3D environments. Contributor to: Scaling the Expert (Article IV). A commercial relationship (Hidden Creative built ABB Water World, the virtual environment discussed in his piece; ABB is a Hidden Creative client) is disclosed on his profile and on the article itself. Full profile: technicalmarketing.org/contributors/matthew-trubow
+Commercial Director and co-owner of Hidden Creative, a UK-based immersive technology and marketing agency. Mechanical engineer by background, helps global engineering companies including ABB, GE and Johnson Controls make complex products and systems easier to understand through interactive 3D environments. Contributor to: Scaling the Expert (Proof, Volume II). A commercial relationship (Hidden Creative built ABB Water World, the virtual environment discussed in his piece; ABB is a Hidden Creative client) is disclosed on his profile and on the article itself. Full profile: technicalmarketing.org/contributors/matthew-trubow
 
 Volume II opens the contributor pipeline to senior practitioners across the field. Submissions reviewed on editorial merit. See /suggest for current editorial priorities.
 
@@ -1454,7 +1495,7 @@ The publication is actively building its contributor pipeline. Senior practition
 ## Publication schedule
 
 
-New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 publishes in Q3 2026. The foundational reference page is updated continuously as the discipline's working definition sharpens.
+New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02 was published in Fall 2026 and is the current issue. The foundational reference page is updated continuously as the discipline's working definition sharpens.
 
 
 ---
@@ -1462,7 +1503,7 @@ New volumes publish quarterly. Volume 01 was published in Spring 2026. Volume 02
 # Submissions · Suggest a Piece for the Next Volume
 
 
-Volume 02 publishes in Q3 2026. Submissions, recommendations, and respectful disagreement are welcome from practitioners, editors, and readers who have found something worth including in the next index.
+Volume III is targeting Winter 2026. Submissions, recommendations, and respectful disagreement are welcome from practitioners, editors, and readers who have found something worth including in the next index.
 
 
 Pieces are evaluated on the strength of the argument and the specificity of the perspective, not the size of the brand or the popularity of the author. Editorial notes accompany every entry, including notes that disagree with what the piece argues.

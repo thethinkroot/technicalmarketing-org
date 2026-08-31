@@ -42,7 +42,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/avif" href="/Images/hero-truth-layer.avif" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="/Images/hero-plate-ii.avif" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -162,21 +162,22 @@ img { max-width: 100%; height: auto; display: block; }
 .canon__footline { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(239,230,201,0.42); margin-top: 1.25rem; }
 
 
-/* ── Conversations : standing department ──────────────────────── */
-.conversations__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
-.conversations__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
-.conversations__kicker-label { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
-.conversations__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
-@media (min-width: 760px) { .conversations__grid { grid-template-columns: 1.3fr 1fr; gap: 3rem; } }
-.conversations__title { font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); max-width: 20ch; margin-bottom: 1.125rem; }
-.conversations__deck { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.62; color: var(--ink-60); max-width: 56ch; }
-.conversations__deck em { font-style: italic; color: var(--ink); }
-.conversations__panel { border: 0.5px solid var(--border-strong); background: var(--paper-light); padding: 1.75rem; }
-.conversations__panel-label { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1.125rem; }
-.conversations__stat { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.875rem; margin-bottom: 0.875rem; border-bottom: 0.5px solid var(--border); font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); }
-.conversations__stat:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.conversations__stat-value { color: var(--ink-40); }
-.conversations__stat-value--confirmed { color: var(--red); }
+/* ── Department band : shared pattern for standing departments ───
+   Generic so any standing department (Conversations, Proof, and
+   whatever comes after) reads as the same kind of thing — deliberate
+   structural symmetry, not a one-off. */
+.dept-band__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+.dept-band__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
+.dept-band__kicker-label { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+.dept-band__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
+@media (min-width: 760px) { .dept-band__grid { grid-template-columns: 1.3fr 1fr; gap: 3rem; } }
+.dept-band__title { font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); max-width: 20ch; margin-bottom: 1.125rem; }
+.dept-band__deck { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.62; color: var(--ink-60); max-width: 56ch; }
+.dept-band__deck em { font-style: italic; color: var(--ink); }
+.dept-band__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; line-height: 1.4; color: var(--ink); border-left: 2px solid var(--red); padding-left: 1.25rem; margin: 1.5rem 0; }
+.dept-band__pull cite { display: block; font-style: normal; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.75rem; }
+.dept-band__cta { display: inline-block; margin-top: 1.5rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--red); border-bottom: 1px solid var(--red); padding-bottom: 1px; }
+.dept-band__cta:hover { color: var(--ink); border-color: var(--ink); }
 
 
 /* ── Feature well ──────────────────────────────────────────────── */
@@ -196,6 +197,12 @@ img { max-width: 100%; height: auto; display: block; }
 .feature__pullbox { border-left: 2px solid var(--red); padding-left: 1.5rem; }
 .feature__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.375rem; line-height: 1.35; color: var(--ink); }
 .feature__pull-attr { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1rem; }
+/* When the Feature well's secondary column is a video-plate instead of a
+   pullbox (a video-native lead entry), the pull-quote drops to a full-width
+   row below both columns rather than trying to share space with the plate. */
+.feature__pull--full { grid-column: 1 / -1; border-left: 2px solid var(--red); padding-left: 1.5rem; margin-top: -0.5rem; }
+.feature__pull--full .feature__pull { font-size: 1.1875rem; }
+.feature__pull--full .feature__pull-attr { margin-top: 0.75rem; }
 
 /* ── Essays grid ───────────────────────────────────────────────── */
 
@@ -210,17 +217,6 @@ img { max-width: 100%; height: auto; display: block; }
 .tool__title { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); line-height: 1.2; }
 .tool__note { font-family: var(--f-serif); font-size: 0.9375rem; color: var(--ink-60); margin-top: 0.35rem; line-height: 1.45; }
 .tool__go { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; white-space: nowrap; }
-
-/* ── Editor's note ─────────────────────────────────────────────── */
-.ednote { max-width: var(--reading-max); margin: 0 auto; }
-.ednote__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1.5rem; }
-.ednote p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.25rem; }
-.ednote p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 3.4em; float: left; line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red); }
-.ednote__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.5rem; line-height: 1.35; color: var(--ink); text-align: center; margin: 2.25rem auto; max-width: 34ch; position: relative; padding: 1.25rem 0; }
-.ednote__pull::before, .ednote__pull::after { content: ""; display: block; width: 60px; height: 0.5px; background: var(--border-strong); margin: 0 auto; }
-.ednote__pull::before { margin-bottom: 1.25rem; }
-.ednote__pull::after { margin-top: 1.25rem; }
-.ednote__sig { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1.5rem; }
 
 /* ── Index pointer ─────────────────────────────────────────────── */
 .index-pointer { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0 2rem; }
@@ -262,7 +258,6 @@ img { max-width: 100%; height: auto; display: block; }
   .feature__pullbox { padding-left: 1.125rem; }
   .feature__pull { font-size: 1.25rem; }
   .feature__cta { width: 100%; justify-content: center; }
-  #forthcoming .layout { grid-template-columns: 1fr !important; gap: 0.5rem !important; padding: 1.25rem 0 !important; }
   .anchor { padding: 2.75rem 0; }
   .anchor__title { font-size: 1.75rem; max-width: 100%; }
   .anchor__deck { font-size: 1rem; }
@@ -363,7 +358,7 @@ a.masthead__title:hover { color: var(--red); }
 
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
-    <span class="masthead__util-edition">Première édition &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Numéro I &middot; N&deg;1</span>
+    <span class="masthead__util-edition">ISSN 3143-6412 &middot; Anno MMXXVI &middot; Vol. II</span>
     <details class="masthead__langpicker">
       <summary class="masthead__langpicker-btn" aria-label="Choisir la langue">FR <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
       <nav class="masthead__langpicker-menu" aria-label="Langue">
@@ -400,29 +395,27 @@ a.masthead__title:hover { color: var(--red); }
   <section class="hero layout" aria-labelledby="hero-title">
     <div class="hero__grid">
       <div class="hero__text">
-        <div class="hero__kicker">Volume 01 · Été 2026</div>
+        <div class="hero__kicker">Volume II · Automne 2026</div>
         <h1 class="hero__title" id="hero-title">L'état d'une discipline encore <span class="hl">à nommer</span>.</h1>
         <p class="hero__lede">Une référence de travail pour la pratique qui consiste à démontrer des affirmations techniquement complexes à des acheteurs techniquement compétents, sous pression commerciale — et un index trimestriel de la <em>réflexion actuelle</em> sur le terrain.</p>
         <div class="hero__meta">
-          <span><strong>5</strong> Articles</span>
-          <span><strong>3</strong> Outils</span>
-          <span><strong>12</strong> Sources</span>
+          <span><strong>III</strong> Essais</span>
+          <span><strong>II</strong> Rubriques</span>
           <span class="hero__meta-next">
-            <span>Prochain — <strong>Numéro 06</strong></span>
-            <span class="hero__meta-next-secondary">Prévu pour T3 2026</span>
+            <span>Prochain — <strong>Vol. III</strong></span>
+            <span class="hero__meta-next-secondary">Prévu pour l'hiver 2026</span>
           </span>
         </div>
         <a href="#feature" class="hero__cta">Commencer par le dossier <span class="hero__cta-arrow" aria-hidden="true">→</span></a>
       </div>
       <figure class="hero__plate">
         <picture>
-          <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
-          <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
-          <img src="/Images/hero-truth-layer.png" width="1200" height="1396" fetchpriority="high" decoding="async" alt="Une illustration gravée : une main tient une planche imprimée sur laquelle un schéma technique de machine est en partie rendu et en partie dissous dans le papier blanc — la limite entre ce qui est montré et ce qui a été construit.">
+          <source type="image/avif" srcset="/Images/hero-plate-ii.avif">
+          <img src="/Images/hero-plate-ii.png" width="1456" height="816" fetchpriority="high" decoding="async" alt="Une illustration en gravure au trait : deux mains ajustent un mécanisme de lentille ancienne monté au-dessus d'une plaque photographique, sur un fond rouge intense avec des marges couleur blé.">
         </picture>
         <figcaption class="hero__plate-caption">
           <span class="t">La couche de vérité — entre la chose et l'image de la chose.</span>
-          <span class="n">Planche I · Gravure</span>
+          <span class="n">Planche II · Gravure</span>
         </figcaption>
       </figure>
     </div>
@@ -433,10 +426,8 @@ a.masthead__title:hover { color: var(--red); }
     <div class="issue-strip__inner layout">
       <span class="issue-strip__label">Dans ce numéro</span>
       <div class="issue-strip__links">
-        <a href="#feature" class="issue-strip__link"><span>Le dossier</span>Nice Job Hooking Me</a>
-        <a href="/fr/nice-job-hooking-me" class="issue-strip__link"><span>Profil</span>Mike Moran</a>
-        <a href="#tools" class="issue-strip__link"><span>Outils</span>Kit de terrain · Trois instruments</a>
-        <a href="#index" class="issue-strip__link"><span>Index</span>Le terrain, sélectionné</a>
+        <a href="#feature" class="issue-strip__link"><span>Le dossier</span>Des questions jusqu'ici&nbsp;?</a>
+        <a href="#proof" class="issue-strip__link"><span>Preuve</span>Faire passer l'expert à l'échelle</a>
       </div>
     </div>
   </section>
@@ -450,42 +441,31 @@ a.masthead__title:hover { color: var(--red); }
             <span class="feature__banner-label">Le dossier</span>
             <span class="feature__banner-rule" aria-hidden="true"></span>
           </div>
-          <div class="feature__kicker">Portrait de praticien · Volume 01</div>
-          <h2 class="feature__title" id="feature-title">Nice Job Hooking&nbsp;Me.</h2>
-          <p class="feature__deck">L'histoire d'un praticien que Google n'a jamais appelé. Mike Moran a construit le premier moteur de recherche linguistique commercial en 1989. Treize brevets. Un tribunal fédéral a révélé que Google appelait sa technique sa sauce secrète. La majeure partie du secteur n'en a jamais entendu parler. <em>Une conversation sur ce qui ne change pas.</em></p>
-          <div class="feature__byline">Mike Moran en conversation avec technicalmarketing.org · Été 2026</div>
-          <a href="/fr/nice-job-hooking-me" class="feature__cta">Lire le profil <span aria-hidden="true">→</span></a>
+          <div class="feature__kicker">L'entretien TM.org &middot; Volume 02</div>
+          <h2 class="feature__title" id="feature-title">Des questions jusqu'ici&nbsp;?</h2>
+          <p class="feature__deck">Peter Cohan a écrit <em>Great Demo!</em>, aujourd'hui dans sa troisième édition — ce que cette discipline a de plus proche d'un texte sacré. Deux heures, sept mouvements, enregistrés en vidéo avec une transcription complète. <em>La technologie ne cesse de changer ce qui est possible. Elle n'a pas changé une seule fois ce qui fonctionne.</em></p>
+          <div class="feature__byline">Entretien mené et édité par Chad Corriveau · Automne 2026</div>
+          <a href="/fr/any-questions-so-far" class="feature__cta">Regarder et lire <span aria-hidden="true">→</span></a>
         </div>
-        <div class="feature__pullbox">
-          <p class="feature__pull">&laquo;&nbsp;Nice job hooking me, even if it was AI.&nbsp;&raquo;</p>
-          <div class="feature__pull-attr">Mike Moran &middot; Première réponse</div>
+        <figure class="video-plate">
+          <a href="/fr/any-questions-so-far" class="video-plate__frame" aria-label="Regarder et lire&nbsp;: Des questions jusqu'ici&nbsp;? Un entretien franc avec Peter Cohan">
+            <span class="video-plate__duration">Épisode 1 sur 7</span>
+            <img src="https://img.youtube.com/vi/4-f5vHcaKoA/maxresdefault.jpg" alt="Peter Cohan en conversation, tiré de la série vidéo enregistrée." loading="lazy">
+            <span class="video-plate__play"><span class="video-plate__play-icon" aria-hidden="true"></span>Regarder et lire</span>
+          </a>
+          <figcaption class="video-plate__caption">
+            <span class="t">Conversation enregistrée avec Peter Cohan, auteur de Great&nbsp;Demo!</span>
+            <span class="n">Le dossier &middot; Vidéo compagnon</span>
+          </figcaption>
+        </figure>
+        <div class="feature__pull--full">
+          <p class="feature__pull">&laquo;&nbsp;La recherche, c'est ce qui se passe avant la conversation. Le discovery, c'est la conversation.&nbsp;&raquo;</p>
+          <div class="feature__pull-attr">Peter Cohan &middot; Auteur, <em>Great Demo!</em></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NOW PUBLISHED TEASER -->
-  <section id="forthcoming" aria-label="Vient de paraître" style="border-top:0.5px solid var(--border-strong);border-bottom:0.5px solid var(--border-strong);">
-    <div class="layout" style="display:grid;grid-template-columns:auto 1fr;gap:0.75rem 2.25rem;align-items:center;padding:1.5rem 0;">
-      <span style="font-family:var(--f-display);font-weight:700;font-size:0.6875rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--red);white-space:nowrap;">Nouveau</span>
-      <p style="font-family:var(--f-serif);font-style:italic;font-size:1.0625rem;line-height:1.55;color:var(--ink-60);margin:0;max-width:78ch;"><strong style="font-style:normal;font-weight:600;color:var(--ink);">Portraits de praticien</strong> s'ouvre avec Mike Moran &mdash; ingénieur distingué chez IBM, détenteur de treize brevets, et le praticien derrière une technique qu'un tribunal fédéral a révélé être appelée « sauce secrète » par Google. <a href="/fr/nice-job-hooking-me" style="font-style:normal;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">Lire le profil &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- EDITOR'S NOTE -->
-  <section class="band band--tint" aria-labelledby="ednote-title">
-    <div class="layout">
-      <div class="ednote">
-        <div class="ednote__label" id="ednote-title">Note de la rédaction</div>
-        <p>Cet index s'adresse aux personnes qui font ce travail. Les responsables du marketing technique qui opèrent sans référence commune. Les praticiens qui arrivent sur ce terrain et méritent mieux que des descriptions de poste éparses. Les personnes expérimentées dont le jugement durement acquis n'a jamais été rassemblé nulle part de manière visible.</p>
-        <p class="ednote__pull">Le travail existe manifestement. Le secteur manque encore d'un langage commun pour le définir.</p>
-        <p>Le Volume 01 est un point de départ sélectionné — le dossier, les essais, l'ossature de référence, le kit de terrain, et la réflexion actuelle. Les nouveaux volumes paraissent chaque trimestre. Les espaces vides de l'index sont intentionnels : ils marquent les conversations que le terrain doit encore avoir.</p>
-        <div class="ednote__sig">Chad Corriveau · Rédacteur en chef fondateur</div>
-      </div>
-    </div>
-  </section>
-
-  
   <!-- ESSAYS -->
   <section id="essays" aria-labelledby="essays-title">
     <div class="layout">
@@ -538,23 +518,80 @@ a.masthead__title:hover { color: var(--red); }
     </div>
   </section>
 
-  <!-- CONVERSATIONS -->
+  <!-- CONVERSATIONS — reserved for Volume III; no guest confirmed yet -->
   <section class="band band--tint" id="conversations" aria-labelledby="conversations-title">
     <div class="layout">
-      <div class="conversations__kicker">
-        <span class="conversations__kicker-rule" aria-hidden="true"></span>
-        <span class="conversations__kicker-label">Conversations &middot; Rubrique permanente</span>
+      <div class="dept-band__kicker">
+        <span class="dept-band__kicker-rule" aria-hidden="true"></span>
+        <span class="dept-band__kicker-label">Conversations &middot; Rubrique permanente</span>
       </div>
-      <div class="conversations__grid">
-        <div class="conversations__text">
-          <h2 class="conversations__title" id="conversations-title">Dialogues enregistr&eacute;s avec des praticiens nomm&eacute;s</h2>
-          <p class="conversations__deck">Entretiens enregistr&eacute;s avec des praticiens nomm&eacute;s du secteur, tenus au m&ecirc;me niveau d'exigence &eacute;ditoriale qu'un essai publi&eacute;. Peter Cohan, auteur de <em>Great Demo!</em>, est confirm&eacute; pour la rubrique Conversations. Chaque entretien b&eacute;n&eacute;ficie de sa propre planche command&eacute;e, poursuivant la s&eacute;quence. D'autres voix rejoindront le terrain dans les volumes &agrave; venir.</p>
+      <div class="dept-band__grid">
+        <div>
+          <h2 class="dept-band__title" id="conversations-title">Un dialogue enregistré avec des praticiens nommés</h2>
+          <p class="dept-band__deck">Des entretiens enregistrés avec des praticiens nommés du terrain, tenus au même niveau d'exigence éditoriale qu'un essai publié. Réservé pour le Volume III — de nouvelles voix rejoignent le terrain dans les volumes à venir.</p>
         </div>
-        <div class="conversations__panel">
-          <div class="conversations__panel-label">La rubrique, en un coup d'&oelig;il</div>
-          <div class="conversations__stat"><span>Statut</span><span class="conversations__stat-value conversations__stat-value--confirmed">Confirm&eacute;</span></div>
-          <div class="conversations__stat"><span>Format</span><span class="conversations__stat-value">Entretien</span></div>
-          <div class="conversations__stat"><span>Planche</span><span class="conversations__stat-value">R&eacute;serv&eacute;e, prochaine de la s&eacute;quence</span></div>
+        <div class="dept-glance dept-glance--reserved">
+          <div class="dept-glance__grid">
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">Statut</div>
+              <div class="dept-glance__value">Réservé</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">Format</div>
+              <div class="dept-glance__value">Entretien</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">Planche</div>
+              <div class="dept-glance__value">Réservée, prochaine dans la séquence</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF — new standing department, opens with Matthew Trubow -->
+  <section class="band band--tint" id="proof" aria-labelledby="proof-title">
+    <div class="layout">
+      <div class="dept-band__kicker">
+        <span class="dept-band__kicker-rule" aria-hidden="true"></span>
+        <span class="dept-band__kicker-label">Preuve &middot; Rubrique permanente</span>
+      </div>
+      <figure class="hero__plate" style="margin-bottom:2.5rem;">
+        <picture>
+          <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
+          <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="Une gravure &eacute;ditoriale&nbsp;: deux paires de personnages &mdash; un ing&eacute;nieur, une responsable des op&eacute;rations, un cadre commercial &mdash; se tiennent aux extr&eacute;mit&eacute;s oppos&eacute;es d'un m&ecirc;me arbre en coupe, partageant un axe et une ligne de mire commune vers le m&eacute;canisme, avec un accent rouge sur le moyeu du rotor central.">
+        </picture>
+        <figcaption class="hero__plate-caption">
+          <span class="t">L'axe partag&eacute; &mdash; un virtual twin place le regard de chaque partie prenante sur le m&ecirc;me m&eacute;canisme.</span>
+          <span class="n">Preuve &middot; Planche</span>
+        </figcaption>
+      </figure>
+      <div class="dept-band__grid">
+        <div>
+          <h2 class="dept-band__title" id="proof-title">Faire passer l'expert à l'échelle.</h2>
+          <p class="dept-band__deck">Dans une entreprise industrielle, le savoir le plus précieux est souvent détenu par les personnes les moins en mesure de le répéter à grande échelle. Ce qu'ABB Water World montre sur le fait de faire passer à l'échelle le savoir d'expert plutôt que de simplement montrer le produit.</p>
+          <blockquote class="dept-band__pull">
+            <p>&laquo;&nbsp;Le virtual twin ne remplace pas le spécialiste. Il rend son explication reproductible sans qu'il ait besoin d'être présent.&nbsp;&raquo;</p>
+            <cite>Matthew Trubow</cite>
+          </blockquote>
+          <a href="/fr/scaling-the-expert" class="dept-band__cta">Lire le profil <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="dept-glance">
+          <div class="dept-glance__grid">
+            <div class="dept-glance__field">
+              <div class="dept-glance__label"><span class="dept-glance__dot" aria-hidden="true"></span>Statut</div>
+              <div class="dept-glance__value">Publié</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">Format</div>
+              <div class="dept-glance__value">Profil de praticien</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">Contributeur</div>
+              <div class="dept-glance__value">Matthew Trubow, Hidden Creative</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -653,8 +690,8 @@ a.masthead__title:hover { color: var(--red); }
     <div class="layout subscribe__inner">
       <div class="subscribe__kicker">Mises à jour trimestrielles</div>
       <p class="subscribe__pitch" id="subscribe-title">Recevez le prochain volume dès sa parution.</p>
-      <!-- FALLBACK: "À venir. La seule méthodologie de démonstration validée, examinée sur ses propres bases." -->
-      <p class="subscribe__teaser"><strong>À venir.</strong> Un entretien avec <a href="https://www.greatdemo.com/" rel="external noopener">Peter Cohan</a>, auteur de <em>Great Demo!</em> La seule méthodologie de démonstration validée, examinée sur ses propres bases.</p>
+      <!-- FALLBACK: "Prochain. Volume III, prévu pour l'hiver 2026." -->
+      <p class="subscribe__teaser"><strong>Prochain.</strong> Volume III, prévu pour l'hiver 2026.</p>
       <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate="">
         <label for="email-input" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Adresse e-mail</label>
         <input id="email-input" class="subscribe__input" type="email" name="email" placeholder="Votre e-mail" required="" autocomplete="email">
@@ -666,13 +703,13 @@ a.masthead__title:hover { color: var(--red); }
 
 </main>
 
-<section class="folio layout" aria-label="Folio I — Colophon">
+<section class="folio layout" aria-label="Folio II — Colophon">
   <div class="folio__outer">
     <div class="folio__inner">
       <div class="folio__head">
-        <span class="folio__title">Folio I</span>
+        <span class="folio__title">Folio II</span>
         <span class="folio__dot" aria-hidden="true">&#9670;</span>
-        <span class="folio__printing">Premier tirage &middot; MMXXVI</span>
+        <span class="folio__printing">Second tirage &middot; MMXXVI</span>
       </div>
       <dl class="folio__grid">
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
@@ -708,7 +745,7 @@ a.masthead__title:hover { color: var(--red); }
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
-      <span class="site-footer__issn">ISSN 3143-6412 &middot; Première édition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
       <nav class="site-footer__langs" aria-label="Langue">
         <a href="/fr/" class="site-footer__lang-link" aria-current="true">Français</a>
         <a href="/" class="site-footer__lang-link">English</a>

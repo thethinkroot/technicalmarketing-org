@@ -16,6 +16,7 @@
 <link rel="alternate" hreflang="fr" href="https://technicalmarketing.org/fr/volume-01" />
 <link rel="alternate" hreflang="de" href="https://technicalmarketing.org/de/volume-01" />
 <link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/volume-01" />
+<link rel="next" href="https://technicalmarketing.org/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Technical Marketing">
@@ -43,6 +44,10 @@
 <style>
 .dir-section:nth-of-type(odd) { background: var(--paper-shade); }
 .folio { background: var(--paper-shade); }
+.archive-banner { background: var(--paper-shade); border-bottom: 0.5px solid var(--border-strong); font-family: var(--f-sans); font-size: 0.8125rem; color: var(--ink-60); padding: 0.75rem 1.75rem; display: flex; justify-content: center; align-items: center; gap: 0.6rem; flex-wrap: wrap; text-align: center; }
+.archive-banner a { color: var(--red); font-weight: 600; border-bottom: 1px solid var(--red); }
+.archive-banner a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+.geo-note { font-family: var(--f-sans); font-size: 0.8125rem; font-style: italic; color: var(--ink-40); margin: -0.5rem 0 1.75rem; }
 
 :root {
   --paper: #EFE6C9; --paper-shade: #E5D9B4; --paper-light: #F5EED8;
@@ -361,7 +366,7 @@ a.masthead__title:hover { color: var(--red); }
 
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
-    <span class="masthead__util-edition">First Edition &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; Issue I &middot; N&deg;1</span>
+    <span class="masthead__util-edition">ISSN 3143-6412 &middot; Anno MMXXVI &middot; Vol. II</span>
     <details class="masthead__langpicker">
       <summary class="masthead__langpicker-btn" aria-label="Choose language">EN <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
       <nav class="masthead__langpicker-menu" aria-label="Language">
@@ -392,6 +397,12 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </header>
 
+<div class="archive-banner">
+  <span>Archive &middot; Volume I &middot; Summer 2026</span>
+  <span aria-hidden="true">&mdash;</span>
+  <span>The current issue is <a href="/">Volume II &rarr;</a></span>
+</div>
+
 <main id="main">
 
 <section class="page-head layout">
@@ -402,6 +413,24 @@ a.masthead__title:hover { color: var(--red); }
 </section>
 <section class="content layout">
   <div class="content__lead"><p>The first printing of the field manual. Volume 01 collects three essays, the foundational reference, the field kit, and the quarterly index &mdash; a curated starting point for a discipline practiced for decades before it had a name. New volumes publish quarterly.</p></div>
+  <p class="geo-note">This volume is complete and unaltered as originally published, May 20, 2026.</p>
+  <div class="feature" style="margin:0 0 3rem;">
+    <div class="feature__text">
+      <div class="feature__banner">
+        <span class="feature__banner-label">The Feature</span>
+        <span class="feature__banner-rule" aria-hidden="true"></span>
+      </div>
+      <div class="feature__kicker">Practitioner Profile &middot; Volume 01</div>
+      <h2 class="feature__title">Nice Job Hooking&nbsp;Me.</h2>
+      <p class="feature__deck">A story about a practitioner Google never called. Mike Moran built the first commercial linguistic search engine in 1989. Thirteen patents. A federal court revealed Google called his technique their secret sauce. Most of the industry never heard it happened. <em>A conversation about what does not change.</em></p>
+      <div class="feature__byline">Mike Moran in conversation with technicalmarketing.org &middot; Summer 2026</div>
+      <a href="/nice-job-hooking-me" class="feature__cta">Read the profile <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="feature__pullbox">
+      <p class="feature__pull">&ldquo;Nice job hooking me, even if it was AI.&rdquo;</p>
+      <div class="feature__pull-attr">Mike Moran &middot; First message back</div>
+    </div>
+  </div>
 <section class="dir-section">
   <div class="dir-section__head">
     <span class="dir-section__num" aria-hidden="true">I</span>
@@ -425,7 +454,29 @@ a.masthead__title:hover { color: var(--red); }
     <a href="/technical-marketing-age-of-ai" class="entry__title">In the Age of AI.</a>
     <p class="entry__note">AI compresses artifact production across every go-to-market discipline. Technical marketing does not contract under that pressure. It clarifies.</p>
   </article>
-</section><section class="dir-section">
+</section>
+<div style="margin:2.5rem 0 3rem; max-width:var(--reading-max);">
+  <h2 class="dir-section__title" style="margin-bottom:0.5rem;">Conversations</h2>
+  <p class="dir-section__desc" style="margin-bottom:1rem;">Recorded dialogue with named practitioners.</p>
+  <p style="font-family:var(--f-serif); font-size:1rem; line-height:1.6; color:var(--ink); margin-bottom:1rem;">Recorded interviews with named practitioners in the field, held to the same editorial standard as a published essay. Peter Cohan, author of <em>Great Demo!</em>, is confirmed for the Conversations department. Each entry carries its own commissioned plate, continuing the sequence.</p>
+  <div class="dept-glance">
+    <div class="dept-glance__grid">
+      <div class="dept-glance__field">
+        <div class="dept-glance__label"><span class="dept-glance__dot" aria-hidden="true"></span>Status</div>
+        <div class="dept-glance__value">Confirmed</div>
+      </div>
+      <div class="dept-glance__field">
+        <div class="dept-glance__label">Format</div>
+        <div class="dept-glance__value">Interview</div>
+      </div>
+      <div class="dept-glance__field">
+        <div class="dept-glance__label">Plate</div>
+        <div class="dept-glance__value">Reserved, next in sequence</div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="dir-section">
   <div class="dir-section__head">
     <span class="dir-section__num" aria-hidden="true">II</span>
     <div>
@@ -516,7 +567,7 @@ a.masthead__title:hover { color: var(--red); }
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
-      <span class="site-footer__issn">ISSN 3143-6412 &middot; First Edition &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
       <nav class="site-footer__langs" aria-label="Language">
         <a href="/volume-01" class="site-footer__lang-link" aria-current="true">English</a>
         <a href="/ja/volume-01" class="site-footer__lang-link">日本語</a>

@@ -7,7 +7,7 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://technicalmarketing.org/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/"/>
@@ -19,7 +19,7 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/ja/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/"/>
@@ -31,7 +31,7 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/es/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/"/>
@@ -43,7 +43,7 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/fr/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/"/>
@@ -55,7 +55,7 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/de/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/"/>
@@ -975,7 +975,31 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/volume-01</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/volume-01</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/volume-01</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/volume-01</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/volume-01</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -987,7 +1011,31 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/archive</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/archive</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/archive</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/archive</loc>
+    <lastmod>2026-08-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/archive</loc>
+    <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>

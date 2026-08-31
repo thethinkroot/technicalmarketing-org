@@ -42,7 +42,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" type="image/avif" href="/Images/hero-truth-layer.avif" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="/Images/hero-plate-ii.avif" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=Roboto+Slab:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
@@ -162,21 +162,19 @@ img { max-width: 100%; height: auto; display: block; }
 .canon__footline { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(239,230,201,0.42); margin-top: 1.25rem; }
 
 
-/* ── Conversations : standing department ──────────────────────── */
-.conversations__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
-.conversations__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
-.conversations__kicker-label { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
-.conversations__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
-@media (min-width: 760px) { .conversations__grid { grid-template-columns: 1.3fr 1fr; gap: 3rem; } }
-.conversations__title { font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); max-width: 20ch; margin-bottom: 1.125rem; }
-.conversations__deck { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.62; color: var(--ink-60); max-width: 56ch; }
-.conversations__deck em { font-style: italic; color: var(--ink); }
-.conversations__panel { border: 0.5px solid var(--border-strong); background: var(--paper-light); padding: 1.75rem; }
-.conversations__panel-label { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1.125rem; }
-.conversations__stat { display: flex; justify-content: space-between; gap: 1rem; padding-bottom: 0.875rem; margin-bottom: 0.875rem; border-bottom: 0.5px solid var(--border); font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-40); }
-.conversations__stat:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-.conversations__stat-value { color: var(--ink-40); }
-.conversations__stat-value--confirmed { color: var(--red); }
+/* ── Department band : shared pattern for standing departments ─── */
+.dept-band__kicker { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1.25rem; }
+.dept-band__kicker-rule { width: 26px; height: 1px; background: var(--red); display: block; flex: none; }
+.dept-band__kicker-label { font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+.dept-band__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; }
+@media (min-width: 760px) { .dept-band__grid { grid-template-columns: 1.3fr 1fr; gap: 3rem; } }
+.dept-band__title { font-family: var(--f-serif); font-style: italic; font-weight: 500; font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.06; letter-spacing: -0.02em; color: var(--ink); max-width: 20ch; margin-bottom: 1.125rem; }
+.dept-band__deck { font-family: var(--f-serif); font-size: 1.0625rem; line-height: 1.62; color: var(--ink-60); max-width: 56ch; }
+.dept-band__deck em { font-style: italic; color: var(--ink); }
+.dept-band__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; line-height: 1.4; color: var(--ink); border-left: 2px solid var(--red); padding-left: 1.25rem; margin: 1.5rem 0; }
+.dept-band__pull cite { display: block; font-style: normal; font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-40); margin-top: 0.75rem; }
+.dept-band__cta { display: inline-block; margin-top: 1.5rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--red); border-bottom: 1px solid var(--red); padding-bottom: 1px; }
+.dept-band__cta:hover { color: var(--ink); border-color: var(--ink); }
 
 
 /* ── Feature well ──────────────────────────────────────────────── */
@@ -196,6 +194,12 @@ img { max-width: 100%; height: auto; display: block; }
 .feature__pullbox { border-left: 2px solid var(--red); padding-left: 1.5rem; }
 .feature__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.375rem; line-height: 1.35; color: var(--ink); }
 .feature__pull-attr { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1rem; }
+/* When the Feature well's secondary column is a video-plate instead of a
+   pullbox (a video-native lead entry), the pull-quote drops to a full-width
+   row below both columns rather than trying to share space with the plate. */
+.feature__pull--full { grid-column: 1 / -1; border-left: 2px solid var(--red); padding-left: 1.5rem; margin-top: -0.5rem; }
+.feature__pull--full .feature__pull { font-size: 1.1875rem; }
+.feature__pull--full .feature__pull-attr { margin-top: 0.75rem; }
 
 /* ── Essays grid ───────────────────────────────────────────────── */
 
@@ -210,17 +214,6 @@ img { max-width: 100%; height: auto; display: block; }
 .tool__title { font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; font-weight: 500; color: var(--ink); line-height: 1.2; }
 .tool__note { font-family: var(--f-serif); font-size: 0.9375rem; color: var(--ink-60); margin-top: 0.35rem; line-height: 1.45; }
 .tool__go { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--red); font-weight: 600; white-space: nowrap; }
-
-/* ── Editor's note ─────────────────────────────────────────────── */
-.ednote { max-width: var(--reading-max); margin: 0 auto; }
-.ednote__label { font-family: var(--f-sans); font-size: 0.625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); font-weight: 600; margin-bottom: 1.5rem; }
-.ednote p { font-family: var(--f-serif); font-size: 1.1875rem; line-height: 1.68; color: var(--ink); margin-bottom: 1.25rem; }
-.ednote p:first-of-type::first-letter { font-family: var(--f-display); font-weight: 700; font-size: 3.4em; float: left; line-height: 0.82; margin: 0.06em 0.5rem 0 0; color: var(--red); }
-.ednote__pull { font-family: var(--f-serif); font-style: italic; font-size: 1.5rem; line-height: 1.35; color: var(--ink); text-align: center; margin: 2.25rem auto; max-width: 34ch; position: relative; padding: 1.25rem 0; }
-.ednote__pull::before, .ednote__pull::after { content: ""; display: block; width: 60px; height: 0.5px; background: var(--border-strong); margin: 0 auto; }
-.ednote__pull::before { margin-bottom: 1.25rem; }
-.ednote__pull::after { margin-top: 1.25rem; }
-.ednote__sig { font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; margin-top: 1.5rem; }
 
 /* ── Index pointer ─────────────────────────────────────────────── */
 .index-pointer { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0 2rem; }
@@ -262,7 +255,6 @@ img { max-width: 100%; height: auto; display: block; }
   .feature__pullbox { padding-left: 1.125rem; }
   .feature__pull { font-size: 1.25rem; }
   .feature__cta { width: 100%; justify-content: center; }
-  #forthcoming .layout { grid-template-columns: 1fr !important; gap: 0.5rem !important; padding: 1.25rem 0 !important; }
   .anchor { padding: 2.75rem 0; }
   .anchor__title { font-size: 1.75rem; max-width: 100%; }
   .anchor__deck { font-size: 1rem; }
@@ -372,7 +364,7 @@ a.masthead__title:hover { color: var(--red); }
 
 <header class="masthead layout" role="banner">
   <div class="masthead__util">
-    <span class="masthead__util-edition">初版 &middot; ISSN 3143-6412 &middot; Anno MMXXVI &middot; 第I号 &middot; N&deg;1</span>
+    <span class="masthead__util-edition">ISSN 3143-6412 &middot; Anno MMXXVI &middot; Vol. II</span>
     <details class="masthead__langpicker">
       <summary class="masthead__langpicker-btn" aria-label="言語を選択">JA <span class="masthead__langpicker-arrow" aria-hidden="true">&#9662;</span></summary>
       <nav class="masthead__langpicker-menu" aria-label="言語">
@@ -409,29 +401,27 @@ a.masthead__title:hover { color: var(--red); }
   <section class="hero layout" aria-labelledby="hero-title">
     <div class="hero__grid">
       <div class="hero__text">
-        <div class="hero__kicker">Volume 01・2026年夏</div>
+        <div class="hero__kicker">Volume II &middot; 2026年秋</div>
         <h1 class="hero__title" id="hero-title">まだ名前が<span class="hl">定まっていない</span>分野の現在地。</h1>
         <p class="hero__lede">技術的に複雑な主張を、技術に精通した購買者に対し、商業的なプレッシャーの中で証明する実践のための実務リファレンス。そして、現場の<em>最新の知見</em>をまとめた季刊インデックス。</p>
         <div class="hero__meta">
-          <span><strong>5</strong> 本の記事</span>
-          <span><strong>3</strong> 個のツール</span>
-          <span><strong>12</strong> 件の情報源</span>
+          <span><strong>III</strong> エッセイ</span>
+          <span><strong>II</strong> セクション</span>
           <span class="hero__meta-next">
-            <span>次号 — <strong>第06号</strong></span>
-            <span class="hero__meta-next-secondary">Q3 2026予定</span>
+            <span>次号 — <strong>Vol. III</strong></span>
+            <span class="hero__meta-next-secondary">2026年冬発行予定</span>
           </span>
         </div>
         <a href="#feature" class="hero__cta">特集記事から読む <span class="hero__cta-arrow" aria-hidden="true">→</span></a>
       </div>
       <figure class="hero__plate">
         <picture>
-          <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
-          <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
-          <img src="/Images/hero-truth-layer.png" width="1200" height="1396" fetchpriority="high" decoding="async" alt="An engraved illustration: a hand holds a printed plate on which a technical machine diagram is partly rendered and partly dissolving into blank paper — the line between what is shown and what has been built.">
+          <source type="image/avif" srcset="/Images/hero-plate-ii.avif">
+          <img src="/Images/hero-plate-ii.png" width="1456" height="816" fetchpriority="high" decoding="async" alt="平面的な線画銅版画のイラスト：古いレンズ機構を調整する二つの手が、写真乾板の上に取り付けられ、麦色の余白を持つ深紅の背景全体に描かれている。">
         </picture>
         <figcaption class="hero__plate-caption">
           <span class="t">真実の層 — ものと、その像の間にあるもの。</span>
-          <span class="n">図版I・銅版画</span>
+          <span class="n">図版II・銅版画</span>
         </figcaption>
       </figure>
     </div>
@@ -442,10 +432,8 @@ a.masthead__title:hover { color: var(--red); }
     <div class="issue-strip__inner layout">
       <span class="issue-strip__label">今号の内容</span>
       <div class="issue-strip__links">
-        <a href="#feature" class="issue-strip__link"><span>特集</span>Nice Job Hooking Me</a>
-        <a href="/ja/nice-job-hooking-me" class="issue-strip__link"><span>プロフィール</span>Mike Moran</a>
-        <a href="#tools" class="issue-strip__link"><span>ツール</span>フィールドキット・3つの道具</a>
-        <a href="#index" class="issue-strip__link"><span>インデックス</span>この分野を、厳選して</a>
+        <a href="#feature" class="issue-strip__link"><span>特集</span>何かご質問は？</a>
+        <a href="#proof" class="issue-strip__link"><span>実証</span>専門家をスケールする</a>
       </div>
     </div>
   </section>
@@ -459,42 +447,31 @@ a.masthead__title:hover { color: var(--red); }
             <span class="feature__banner-label">特集</span>
             <span class="feature__banner-rule" aria-hidden="true"></span>
           </div>
-          <div class="feature__kicker">実務者・プロフィール · Volume 01</div>
-          <h2 class="feature__title" id="feature-title">Nice Job Hooking&nbsp;Me.</h2>
-          <p class="feature__deck">Googleが一度も連絡を取らなかった、ある実務者の物語。Mike Moranは1989年、世界初の商用言語検索エンジンを開発した。特許13件。連邦裁判所により、Googleが彼の技術を自社の「秘伝のタレ」と呼んでいたことが明らかになった。業界のほとんどはこの出来事を知らない。<em>変わらないものについての対話。</em></p>
-          <div class="feature__byline">Mike Moran、technicalmarketing.orgとの対話・2026年夏</div>
-          <a href="/ja/nice-job-hooking-me" class="feature__cta">プロフィールを読む <span aria-hidden="true">→</span></a>
+          <div class="feature__kicker">TM.orgインタビュー &middot; Volume 02</div>
+          <h2 class="feature__title" id="feature-title">何かご質問は？</h2>
+          <p class="feature__deck">Peter Cohanは<em>Great Demo!</em>を執筆した。現在第3版を数える。この分野にとって聖典に最も近い一冊である。2時間、7つの楽章、収録動画に完全なトランスクリプトを添えて。<em>技術は何が可能かを変え続ける。だが何が効くかを変えたことは、ただの一度もない。</em></p>
+          <div class="feature__byline">取材・編集：Chad Corriveau &middot; 2026年秋</div>
+          <a href="/ja/any-questions-so-far" class="feature__cta">視聴して読む <span aria-hidden="true">→</span></a>
         </div>
-        <div class="feature__pullbox">
-          <p class="feature__pull">&ldquo;Nice job hooking me, even if it was AI.&rdquo;</p>
-          <div class="feature__pull-attr">Mike Moran &middot; 最初の返信メッセージ</div>
+        <figure class="video-plate">
+          <a href="/ja/any-questions-so-far" class="video-plate__frame" aria-label="視聴して読む：何かご質問は？ Peter Cohanとの率直な対話">
+            <span class="video-plate__duration">全7回の第1回</span>
+            <img src="https://img.youtube.com/vi/4-f5vHcaKoA/maxresdefault.jpg" alt="Peter Cohanとの対話、収録された動画シリーズより。" loading="lazy">
+            <span class="video-plate__play"><span class="video-plate__play-icon" aria-hidden="true"></span>視聴して読む</span>
+          </a>
+          <figcaption class="video-plate__caption">
+            <span class="t">『Great&nbsp;Demo!』の著者、Peter Cohanとの収録対話。</span>
+            <span class="n">特集 &middot; 付随動画</span>
+          </figcaption>
+        </figure>
+        <div class="feature__pull--full">
+          <p class="feature__pull">「リサーチとは、対話が始まる前に起きていることだ。ディスカバリーとは、対話そのものである。」</p>
+          <div class="feature__pull-attr">Peter Cohan &middot; 『Great Demo!』著者</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- NOW PUBLISHED TEASER -->
-  <section id="forthcoming" aria-label="Now published" style="border-top:0.5px solid var(--border-strong);border-bottom:0.5px solid var(--border-strong);">
-    <div class="layout" style="display:grid;grid-template-columns:auto 1fr;gap:0.75rem 2.25rem;align-items:center;padding:1.5rem 0;">
-      <span style="font-family:var(--f-display);font-weight:700;font-size:0.6875rem;letter-spacing:0.24em;text-transform:uppercase;color:var(--red);white-space:nowrap;">New</span>
-      <p style="font-family:var(--f-serif);font-style:italic;font-size:1.0625rem;line-height:1.55;color:var(--ink-60);margin:0;max-width:78ch;"><strong style="font-style:normal;font-weight:600;color:var(--ink);">実務者・プロフィール</strong>シリーズはMike Moran &mdash; IBMディスティングイッシュト・エンジニアであり、特許13件の保有者であり、連邦裁判所によりGoogleがその「秘伝のタレ」と呼んでいたことが明らかになった技術の開発者 &mdash; から始まる。<a href="/ja/nice-job-hooking-me" style="font-style:normal;color:var(--red);border-bottom:1px solid var(--red);padding-bottom:1px;">プロフィールを読む &rarr;</a></p>
-    </div>
-  </section>
-
-  <!-- EDITOR'S NOTE -->
-  <section class="band band--tint" aria-labelledby="ednote-title">
-    <div class="layout">
-      <div class="ednote">
-        <div class="ednote__label" id="ednote-title">編集後記</div>
-        <p>このインデックスは、この仕事に携わる人々のためのものだ。共有のリファレンスを持たずに活動しているテクニカルマーケターたち。バラバラな職務記述書よりも良いものを受け取るに値する、この分野に入ってくる実務者たち。苦労して培った判断力が、目に見える形でどこにもまとめられてこなかったベテランたち。</p>
-        <p class="ednote__pull">この仕事は明らかに存在している。それでもこの業界には、それを定義するための共有言語がまだない。</p>
-        <p>Volume 01は、その出発点となるよう厳選した内容だ — 特集記事、エッセイ、リファレンスの背骨、フィールドキット、そして現在の知見。新しい号は季刊で発行される。インデックスに残された空白は意図的なものだ。それらは、この分野がまだ交わす必要のある対話を示している。</p>
-        <div class="ednote__sig">Chad Corriveau · 創刊編集者</div>
-      </div>
-    </div>
-  </section>
-
-  
   <!-- ESSAYS -->
   <section id="essays" aria-labelledby="essays-title">
     <div class="layout">
@@ -547,23 +524,80 @@ a.masthead__title:hover { color: var(--red); }
     </div>
   </section>
 
-  <!-- CONVERSATIONS -->
+  <!-- CONVERSATIONS — Volume IIIのために予約。ゲストは未確定 -->
   <section class="band band--tint" id="conversations" aria-labelledby="conversations-title">
     <div class="layout">
-      <div class="conversations__kicker">
-        <span class="conversations__kicker-rule" aria-hidden="true"></span>
-        <span class="conversations__kicker-label">対話 ・ 常設部門</span>
+      <div class="dept-band__kicker">
+        <span class="dept-band__kicker-rule" aria-hidden="true"></span>
+        <span class="dept-band__kicker-label">対話 &middot; 常設部門</span>
       </div>
-      <div class="conversations__grid">
-        <div class="conversations__text">
-          <h2 class="conversations__title" id="conversations-title">実名の実務者による、記録された対話</h2>
-          <p class="conversations__deck">この分野で実名を明かした実務者へのインタビューを記録し、掲載済みのエッセイと同じ編集水準を満たす。『<em>Great Demo!</em>』の著者であるPeter Cohanが、対話部門への参加を確定している。各回には専用の図版が委嘱され、シリーズが続く。今後の号では、さらに多くの声がこの分野に加わる。</p>
+      <div class="dept-band__grid">
+        <div>
+          <h2 class="dept-band__title" id="conversations-title">実名の実務者による、記録された対話。</h2>
+          <p class="dept-band__deck">この分野で実名を明かした実務者へのインタビューを記録し、掲載済みのエッセイと同じ編集水準を満たす部門。Volume IIIのために予約されている — 今後の号で、さらに多くの声がこの分野に加わっていく。</p>
         </div>
-        <div class="conversations__panel">
-          <div class="conversations__panel-label">この部門の概要</div>
-          <div class="conversations__stat"><span>ステータス</span><span class="conversations__stat-value conversations__stat-value--confirmed">確定済み</span></div>
-          <div class="conversations__stat"><span>形式</span><span class="conversations__stat-value">インタビュー</span></div>
-          <div class="conversations__stat"><span>図版</span><span class="conversations__stat-value">予約済み、次の順番</span></div>
+        <div class="dept-glance dept-glance--reserved">
+          <div class="dept-glance__grid">
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">ステータス</div>
+              <div class="dept-glance__value">予約済み</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">形式</div>
+              <div class="dept-glance__value">インタビュー</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">図版</div>
+              <div class="dept-glance__value">次回予約済み、シーケンス次第</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF — 新設の常設部門。Matthew Trubowから始まる -->
+  <section class="band band--tint" id="proof" aria-labelledby="proof-title">
+    <div class="layout">
+      <div class="dept-band__kicker">
+        <span class="dept-band__kicker-rule" aria-hidden="true"></span>
+        <span class="dept-band__kicker-label">実証 &middot; 常設部門</span>
+      </div>
+      <figure class="hero__plate" style="margin-bottom:2.5rem;">
+        <picture>
+          <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
+          <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="編集用の銅版画：技師、運用管理者、営業責任者の二組の人物が、一本の連続した断面シャフトの両端に立ち、同じ軸と視線を機構に向けている。中央のローターハブには赤いアクセントが施されている。">
+        </picture>
+        <figcaption class="hero__plate-caption">
+          <span class="t">共有される軸 — virtual twinは、すべての関係者の視線を同じ機構に向ける。</span>
+          <span class="n">実証・図版</span>
+        </figcaption>
+      </figure>
+      <div class="dept-band__grid">
+        <div>
+          <h2 class="dept-band__title" id="proof-title">専門家をスケールする。</h2>
+          <p class="dept-band__deck">産業企業において最も価値のある知識は、しばしばそれを大規模に繰り返す力が最も乏しい人々が握っている。製品を見せるだけでなく専門知識をスケールさせることについて、ABBのWater Worldが示すもの。</p>
+          <blockquote class="dept-band__pull">
+            <p>「virtual twinは専門家に取って代わるものではない。専門家がその場にいなくても、彼らの説明を再現可能にするものだ。」</p>
+            <cite>Matthew Trubow</cite>
+          </blockquote>
+          <a href="/ja/scaling-the-expert" class="dept-band__cta">プロフィールを読む <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="dept-glance">
+          <div class="dept-glance__grid">
+            <div class="dept-glance__field">
+              <div class="dept-glance__label"><span class="dept-glance__dot" aria-hidden="true"></span>ステータス</div>
+              <div class="dept-glance__value">公開済み</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">形式</div>
+              <div class="dept-glance__value">実務者プロフィール</div>
+            </div>
+            <div class="dept-glance__field">
+              <div class="dept-glance__label">寄稿者</div>
+              <div class="dept-glance__value">Matthew Trubow, Hidden Creative</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -662,8 +696,8 @@ a.masthead__title:hover { color: var(--red); }
     <div class="layout subscribe__inner">
       <div class="subscribe__kicker">季刊アップデート</div>
       <p class="subscribe__pitch" id="subscribe-title">次号が発行されたら通知を受け取る。</p>
-      <!-- FALLBACK: "次号。唯一検証されたデモ手法を、その論理に沿って検証する。" -->
-      <p class="subscribe__teaser"><strong>次号。</strong>『<em>Great Demo!</em>』の著者、<a href="https://www.greatdemo.com/" rel="external noopener">Peter Cohan</a>との対話。唯一検証されたデモ手法を、その論理に沿って検証する。</p>
+      <!-- FALLBACK: "次号。Volume III、2026年冬を予定。" -->
+      <p class="subscribe__teaser"><strong>次号。</strong>Volume III、2026年冬を予定。</p>
       <form class="subscribe__form" action="https://formspree.io/f/xojbenbq" method="POST" novalidate="">
         <label for="email-input" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">メールアドレス</label>
         <input id="email-input" class="subscribe__input" type="email" name="email" placeholder="メールアドレス" required="" autocomplete="email">
@@ -675,13 +709,13 @@ a.masthead__title:hover { color: var(--red); }
 
 </main>
 
-<section class="folio layout" aria-label="Folio I — 奥付">
+<section class="folio layout" aria-label="Folio II — 奥付">
   <div class="folio__outer">
     <div class="folio__inner">
       <div class="folio__head">
-        <span class="folio__title">Folio I</span>
+        <span class="folio__title">Folio II</span>
         <span class="folio__dot" aria-hidden="true">&#9670;</span>
-        <span class="folio__printing">初刷 &middot; MMXXVI</span>
+        <span class="folio__printing">第二刷 &middot; MMXXVI</span>
       </div>
       <dl class="folio__grid">
         <div class="folio__divider" aria-hidden="true"><span></span><span class="folio__diamond">&#9670;</span><span></span></div>
@@ -717,7 +751,7 @@ a.masthead__title:hover { color: var(--red); }
 <footer class="site-footer" role="contentinfo">
   <div class="site-footer__inner layout">
     <div class="site-footer__row">
-      <span class="site-footer__issn">ISSN 3143-6412 &middot; 初版 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
+      <span class="site-footer__issn">ISSN 3143-6412 &middot; Anno MMXXVI &middot; &copy; 2026 Technical Marketing</span>
       <nav class="site-footer__langs" aria-label="言語">
         <a href="/ja/" class="site-footer__lang-link" aria-current="true">日本語</a>
         <a href="/" class="site-footer__lang-link">English</a>
