@@ -95,6 +95,11 @@ img { max-width: 100%; height: auto; display: block; }
 .hero__plate-caption .t { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); }
 .hero__plate-caption .n { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
 @media (max-width: 899px) { .hero__plate { max-width: 560px; margin: 0 auto; } }
+.hero__plate--linked { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.hero__plate--linked:hover { transform: translateY(-3px);
+  box-shadow: 0 1px 3px rgba(28,24,18,0.08), 0 36px 72px -18px rgba(28,24,18,0.4), 0 12px 26px -10px rgba(28,24,18,0.18); }
+.hero__plate-anchor { display: block; color: inherit; text-decoration: none; }
+.hero__plate--linked:hover .hero__plate-caption .t { color: var(--red); }
 
 /* ── In this issue strip ───────────────────────────────────────── */
 .issue-strip { border-top: 0.5px solid var(--border-strong); border-bottom: 0.5px solid var(--border-strong); }
@@ -563,15 +568,17 @@ a.masthead__title:hover { color: var(--red); }
         <span class="dept-band__kicker-rule" aria-hidden="true"></span>
         <span class="dept-band__kicker-label">実証 &middot; 常設部門</span>
       </div>
-      <figure class="hero__plate" style="margin-bottom:2.5rem;">
-        <picture>
-          <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
-          <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="編集用の銅版画：技師、運用管理者、営業責任者の二組の人物が、一本の連続した断面シャフトの両端に立ち、同じ軸と視線を機構に向けている。中央のローターハブには赤いアクセントが施されている。">
-        </picture>
-        <figcaption class="hero__plate-caption">
-          <span class="t">共有される軸 — virtual twinは、すべての関係者の視線を同じ機構に向ける。</span>
-          <span class="n">実証・図版</span>
-        </figcaption>
+      <figure class="hero__plate hero__plate--linked" style="margin-bottom:2.5rem;">
+        <a href="/ja/scaling-the-expert" class="hero__plate-anchor" aria-label="プロフィールを読む：専門家をスケールする">
+          <picture>
+            <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
+            <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="編集用の銅版画：技師、運用管理者、営業責任者の二組の人物が、一本の連続した断面シャフトの両端に立ち、同じ軸と視線を機構に向けている。中央のローターハブには赤いアクセントが施されている。">
+          </picture>
+          <figcaption class="hero__plate-caption">
+            <span class="t">共有される軸 — virtual twinは、すべての関係者の視線を同じ機構に向ける。</span>
+            <span class="n">実証・図版</span>
+          </figcaption>
+        </a>
       </figure>
       <div class="dept-band__grid">
         <div>

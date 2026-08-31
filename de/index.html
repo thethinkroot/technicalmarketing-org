@@ -95,6 +95,11 @@ img { max-width: 100%; height: auto; display: block; }
 .hero__plate-caption .t { font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); }
 .hero__plate-caption .n { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
 @media (max-width: 899px) { .hero__plate { max-width: 560px; margin: 0 auto; } }
+.hero__plate--linked { transition: transform 0.15s ease, box-shadow 0.15s ease; }
+.hero__plate--linked:hover { transform: translateY(-3px);
+  box-shadow: 0 1px 3px rgba(28,24,18,0.08), 0 36px 72px -18px rgba(28,24,18,0.4), 0 12px 26px -10px rgba(28,24,18,0.18); }
+.hero__plate-anchor { display: block; color: inherit; text-decoration: none; }
+.hero__plate--linked:hover .hero__plate-caption .t { color: var(--red); }
 
 /* ── In this issue strip ───────────────────────────────────────── */
 .issue-strip { border-top: 0.5px solid var(--border-strong); border-bottom: 0.5px solid var(--border-strong); }
@@ -557,15 +562,17 @@ a.masthead__title:hover { color: var(--red); }
         <span class="dept-band__kicker-rule" aria-hidden="true"></span>
         <span class="dept-band__kicker-label">Beweis &middot; Feste Rubrik</span>
       </div>
-      <figure class="hero__plate" style="margin-bottom:2.5rem;">
-        <picture>
-          <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
-          <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="Eine redaktionelle Gravur: zwei Figurenpaare &mdash; ein Ingenieur, eine Betriebsleiterin, ein kaufm&auml;nnischer Leiter &mdash; stehen an gegen&uuml;berliegenden Enden einer durchgehenden Schnittwelle, teilen sich eine Achse und den Blick auf den Mechanismus, mit einem roten Akzent auf der zentralen Rotornabe.">
-        </picture>
-        <figcaption class="hero__plate-caption">
-          <span class="t">Die gemeinsame Achse &mdash; ein virtual twin richtet den Blick jedes Beteiligten auf denselben Mechanismus.</span>
-          <span class="n">Beweis &middot; Tafel</span>
-        </figcaption>
+      <figure class="hero__plate hero__plate--linked" style="margin-bottom:2.5rem;">
+        <a href="/de/scaling-the-expert" class="hero__plate-anchor" aria-label="Den Beitrag lesen: Den Experten skalieren">
+          <picture>
+            <source type="image/avif" srcset="/Images/plate-proof-scaling-the-expert.avif">
+            <img src="/Images/plate-proof-scaling-the-expert.png" width="1648" height="720" loading="lazy" decoding="async" alt="Eine redaktionelle Gravur: zwei Figurenpaare &mdash; ein Ingenieur, eine Betriebsleiterin, ein kaufm&auml;nnischer Leiter &mdash; stehen an gegen&uuml;berliegenden Enden einer durchgehenden Schnittwelle, teilen sich eine Achse und den Blick auf den Mechanismus, mit einem roten Akzent auf der zentralen Rotornabe.">
+          </picture>
+          <figcaption class="hero__plate-caption">
+            <span class="t">Die gemeinsame Achse &mdash; ein virtual twin richtet den Blick jedes Beteiligten auf denselben Mechanismus.</span>
+            <span class="n">Beweis &middot; Tafel</span>
+          </figcaption>
+        </a>
       </figure>
       <div class="dept-band__grid">
         <div>
