@@ -10,9 +10,25 @@
     4. Reading time in byline  — only on those pages, and only if the
        byline does not already contain "min read".
     5. Mobile TOC active-section highlight — only if .toc-mobile is present.
+    6. "Previous volume" masthead nav item — see PREV_VOLUME below.
 */
 (function () {
   'use strict';
+
+  /* ── PREV_VOLUME : the one line to edit at the next launch ─────────────
+     The masthead nav always carries a link to the most recently ARCHIVED
+     volume (one behind whichever volume is current) — never the current
+     volume itself, on every page site-wide, including the current volume's
+     own homepage. Every page ships this link with today's correct static
+     values already in the HTML (data-nav="prev-volume", correct label and
+     href) so it's right even with JS disabled; this script just keeps it
+     correct going forward from a single source of truth instead of
+     requiring another site-wide find/replace sweep like the one that built
+     it. When Volume III ships, change ONLY the two values below — every
+     page's nav updates itself on next load, and the page whose slug
+     matches (the new archive's own page) automatically switches from a
+     link into a "you are here" marker. */
+  var PREV_VOLUME = { num: '01', slug: 'volume-01' };
 
   /* Dark mode is offered ONLY on reading pages, which opt in with a
      data-allow-dark attribute on <html>. The art-directed home + hub pages
@@ -145,6 +161,28 @@
         tocTargets.forEach(function (el) { obs.unobserve(el); });
         tocTargets.forEach(function (el) { obs.observe(el); });
       });
+    }
+
+    /* 6. "Previous volume" nav item — reconcile against PREV_VOLUME.
+          Locale is read from <html lang="…">; the site's five language
+          editions live at /, /es/, /de/, /fr/, /ja/. On the page that IS
+          the archived volume's own page, this is a "you are here" marker
+          (self-link + aria-current="page", matching how every other
+          masthead nav item marks its own page) rather than a link away. */
+    var prevLink = document.querySelector('[data-nav="prev-volume"]');
+    if (prevLink) {
+      var lang = document.documentElement.getAttribute('lang') || 'en';
+      var localePrefix = (lang === 'en') ? '' : '/' + lang;
+      var href = localePrefix + '/' + PREV_VOLUME.slug;
+      prevLink.textContent = 'Volume ' + PREV_VOLUME.num;
+      prevLink.setAttribute('href', href);
+
+      var here = window.location.pathname.replace(/\/$/, '');
+      if (here === href) {
+        prevLink.setAttribute('aria-current', 'page');
+      } else {
+        prevLink.removeAttribute('aria-current');
+      }
     }
   });
 })();
