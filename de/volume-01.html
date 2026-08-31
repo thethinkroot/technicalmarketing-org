@@ -409,27 +409,36 @@ a.masthead__title:hover { color: var(--red); }
 
 <main id="main">
 
-<section class="page-head layout">
-  <div class="page-head__kicker">Der Band &middot; Frühjahr&ndash;Sommer 2026</div>
-  <h1 class="page-head__title">Volume 01.</h1>
-  <p class="page-head__deck">Drei Essays, die grundlegende Referenz, das Praxis-Kit und der vierteljährliche Index &mdash; die erste Auflage des Praxishandbuchs.</p>
-  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+<section class="hero layout" aria-labelledby="volume-title">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <div class="hero__kicker">Der Band &middot; Frühjahr&ndash;Sommer 2026</div>
+      <h1 class="hero__title" id="volume-title">Volume 01.</h1>
+      <p class="hero__lede">Drei Essays, die grundlegende Referenz, das Praxis-Kit und der vierteljährliche Index &mdash; die erste Auflage des Praxishandbuchs.</p>
+      <div class="hero__meta">
+        <span><strong>III</strong> Essays</span>
+        <span><strong>II</strong> Werkzeuge</span>
+        <span><strong>XII</strong> Quellen</span>
+      </div>
+      <a href="#feature" class="hero__cta">Mit dem Feature beginnen <span class="hero__cta-arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    <figure class="hero__plate">
+      <picture>
+        <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
+        <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
+        <img src="/Images/hero-truth-layer.png" width="1200" height="1396" fetchpriority="high" decoding="async" alt="Eine gravierte Illustration: Eine Hand h&auml;lt eine gedruckte Platte, auf der ein technisches Maschinendiagramm teils gezeichnet ist und teils in leerem Papier verschwindet &mdash; die Grenze zwischen dem, was gezeigt wird, und dem, was gebaut wurde.">
+      </picture>
+      <figcaption class="hero__plate-caption">
+        <span class="t">Die Wahrheitsebene &mdash; zwischen der Sache und dem Bild der Sache.</span>
+        <span class="n">Tafel I &middot; Gravur</span>
+      </figcaption>
+    </figure>
+  </div>
 </section>
 <section class="content layout">
   <div class="content__lead"><p>Die erste Auflage des Praxishandbuchs. Volume 01 versammelt drei Essays, die grundlegende Referenz, das Praxis-Kit und den vierteljährlichen Index &mdash; einen kuratierten Ausgangspunkt für eine Disziplin, die jahrzehntelang praktiziert wurde, bevor sie einen Namen hatte. Neue Ausgaben erscheinen vierteljährlich.</p></div>
   <p class="geo-note">Dieser Band ist vollständig und unverändert, so wie er ursprünglich am 20. Mai 2026 veröffentlicht wurde.</p>
-  <figure class="hero__plate" style="margin:0 0 2.5rem;">
-    <picture>
-      <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
-      <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
-      <img src="/Images/hero-truth-layer.png" width="1200" height="1396" decoding="async" alt="Eine gravierte Illustration: Eine Hand h&auml;lt eine gedruckte Platte, auf der ein technisches Maschinendiagramm teils gezeichnet ist und teils in leerem Papier verschwindet &mdash; die Grenze zwischen dem, was gezeigt wird, und dem, was gebaut wurde.">
-    </picture>
-    <figcaption class="hero__plate-caption">
-      <span class="t">Die Wahrheitsebene &mdash; zwischen der Sache und dem Bild der Sache.</span>
-      <span class="n">Tafel I &middot; Gravur</span>
-    </figcaption>
-  </figure>
-  <div class="feature" style="margin:0 0 3rem;">
+  <div class="feature" style="margin:0 0 3rem;" id="feature">
     <div class="feature__text">
       <div class="feature__banner">
         <span class="feature__banner-label">Das Feature</span>

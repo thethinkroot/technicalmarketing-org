@@ -405,27 +405,36 @@ a.masthead__title:hover { color: var(--red); }
 
 <main id="main">
 
-<section class="page-head layout">
-  <div class="page-head__kicker">The Volume &middot; Spring&ndash;Summer 2026</div>
-  <h1 class="page-head__title">Volume 01.</h1>
-  <p class="page-head__deck">Three essays, the foundational reference, the field kit, and the quarterly index &mdash; the first printing of the field manual.</p>
-  <div class="page-head__ornament" aria-hidden="true"><span class="page-head__diamond"></span></div>
+<section class="hero layout" aria-labelledby="volume-title">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <div class="hero__kicker">The Volume &middot; Spring&ndash;Summer 2026</div>
+      <h1 class="hero__title" id="volume-title">Volume 01.</h1>
+      <p class="hero__lede">Three essays, the foundational reference, the field kit, and the quarterly index &mdash; the first printing of the field manual.</p>
+      <div class="hero__meta">
+        <span><strong>III</strong> Essays</span>
+        <span><strong>II</strong> Tools</span>
+        <span><strong>XII</strong> Sources</span>
+      </div>
+      <a href="#feature" class="hero__cta">Begin with the feature <span class="hero__cta-arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+    <figure class="hero__plate">
+      <picture>
+        <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
+        <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
+        <img src="/Images/hero-truth-layer.png" width="1200" height="1396" fetchpriority="high" decoding="async" alt="An engraved illustration: a hand holds a printed plate on which a technical machine diagram is partly rendered and partly dissolving into blank paper — the line between what is shown and what has been built.">
+      </picture>
+      <figcaption class="hero__plate-caption">
+        <span class="t">The truth layer — between the thing and the picture of the thing.</span>
+        <span class="n">Plate I &middot; Engraving</span>
+      </figcaption>
+    </figure>
+  </div>
 </section>
 <section class="content layout">
   <div class="content__lead"><p>The first printing of the field manual. Volume 01 collects three essays, the foundational reference, the field kit, and the quarterly index &mdash; a curated starting point for a discipline practiced for decades before it had a name. New volumes publish quarterly.</p></div>
   <p class="geo-note">This volume is complete and unaltered as originally published, May 20, 2026.</p>
-  <figure class="hero__plate" style="margin:0 0 2.5rem;">
-    <picture>
-      <source type="image/avif" srcset="/Images/hero-truth-layer.avif">
-      <source type="image/webp" srcset="/Images/hero-truth-layer.webp">
-      <img src="/Images/hero-truth-layer.png" width="1200" height="1396" decoding="async" alt="An engraved illustration: a hand holds a printed plate on which a technical machine diagram is partly rendered and partly dissolving into blank paper — the line between what is shown and what has been built.">
-    </picture>
-    <figcaption class="hero__plate-caption">
-      <span class="t">The truth layer — between the thing and the picture of the thing.</span>
-      <span class="n">Plate I &middot; Engraving</span>
-    </figcaption>
-  </figure>
-  <div class="feature" style="margin:0 0 3rem;">
+  <div class="feature" style="margin:0 0 3rem;" id="feature">
     <div class="feature__text">
       <div class="feature__banner">
         <span class="feature__banner-label">The Feature</span>
