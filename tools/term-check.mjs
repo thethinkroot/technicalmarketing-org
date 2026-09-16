@@ -294,6 +294,29 @@ for (const { locale, file, en } of pages) {
         `"${c.english}" should render as "${settled}" in ${locale.toUpperCase()}`);
     }
   }
+
+  // CHECK 5 — "Volume NN" translated into a locale word, in either numeral style.
+  //
+  // glossary.md §3 settles this generically ("`Volume NN` is never translated") but the
+  // per-concept checks above only catch a rendering already enumerated as a literal
+  // string (one row per "Volume 01", "Volume 02", ...). That missed the roman-numeral
+  // form entirely — "Band I" slipped through everywhere "Band 02" had been caught,
+  // because nobody had entered "Volume I" as its own row. A pattern check on the
+  // rejected locale word itself, independent of which numeral follows, closes that gap
+  // for every past and future volume without enumerating each one by hand.
+  const VOLUME_MARKER_RE = {
+    de: /\bBand\s+(?:[IVXLC]+|\d{1,2})\b/g,
+    es: /\b(?:Volumen|Tomo)\s+(?:[IVXLC]+|\d{1,2})\b/g,
+    fr: /\bTome\s+(?:[IVXLC]+|\d{1,2})\b/g,
+  };
+  const volumeRe = VOLUME_MARKER_RE[locale];
+  if (volumeRe) {
+    const hits = [...new Set((body.match(volumeRe) ?? []))];
+    for (const bad of hits) {
+      fail('volume-marker-translated', file,
+        `"${bad}" translates the never-translated "Volume" marker — use "Volume ${bad.split(/\s+/)[1]}"`);
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -305,6 +328,7 @@ const LABELS = {
   'mixed-rendering': 'One concept rendered inconsistently within a single file',
   'dropped-term': 'Settled English terms missing from a locale page',
   'untranslated-term': 'Settled translated terms left in English',
+  'volume-marker-translated': '"Volume NN" translated into a locale word (any numeral)',
 };
 
 if (violations.length === 0) {

@@ -111,8 +111,16 @@ From the masthead and footer of `index.html`. These are fixed; reuse verbatim.
 | Suggest | 提案する | Sugerir | Suggérer | Vorschlagen |
 | RSS | RSS | RSS | RSS | RSS |
 
-`Volume NN` is never translated. Nor is `ISSN`, `Anno MMXXVI`, or the language-picker
-codes (`EN` / `JA` / `ES` / `FR` / `DE`).
+`Volume NN` is never translated, in either numeral style: the two-digit form (`Volume
+01`, `Volume 02`, ...) and the roman-numeral form used in bylines and kickers (`Volume
+I`, `Volume II`, `Volume III`, ...) are the same rule. The roman-numeral form shipped
+with drift that the two-digit form's fix missed — `Band I/II/III` in DE and `Volumen
+I/II/III` in ES — found and corrected 2026-09-16. `tools/term-check.mjs` enforces this
+with a standalone pattern check (`VOLUME_MARKER_RE`, Check 5) rather than a per-numeral
+glossary row, because the failure mode is the locale word itself (`Band`, `Volumen`,
+`Tomo`, `Tome`) appearing before *any* numeral — including one that has not shipped
+yet. Nor is `ISSN`, `Anno MMXXVI`, or the language-picker codes (`EN` / `JA` / `ES` /
+`FR` / `DE`).
 
 ---
 
@@ -173,6 +181,7 @@ severing the link back to the glossary entry:
 | ES | talk-to-listen ratio | la proporción ideal entre hablar y escuchar |
 | FR | talk-to-listen ratio | le ratio idéal de parole entre vendeur et acheteur |
 | DE | talk-to-listen ratio | das ideale Verhältnis von Sprechen zu Zuhören |
+| JA | Founding Editor | 創刊編集長 |
 
 **A rejected rendering is scoped to one concept, and the table cannot express that.**
 `la proporción entre exponer y preguntar` was rejected as a rendering of
@@ -492,8 +501,17 @@ without review. Remove this notice only once a native speaker has signed off.
 | EN | JA | ES | FR | DE |
 |---|---|---|---|---|
 | Practitioner *(role label)* | 実務者 | Profesional | Praticien | Praktiker |
-| Founding Editor | — | Editor Fundador | — | — |
+| Founding Editor | 創刊編集者 | Editor Fundador | Rédacteur en chef fondateur | Gründungsredakteur |
 | Credential *(connect label)* | 肩書 | Credencial | Fonction | Funktion |
+
+**`Founding Editor` → JA settled as `創刊編集者`, confirmed 2026-09-16.** 26 pre-existing
+occurrences across the byline, masthead, contributors index, and other contributors'
+folios, against 8 occurrences of `創刊編集長` ("editor-in-chief") that entered only in
+the 2026-09-16 MongoDB-disclosure pass on `about.html` and `contributors/chad-corriveau.html`
+— the newer term is the one that diverged, not the reverse. `創刊編集長` reads more
+naturally as the top-editor title in isolation, but that reasoning does not outrank 26
+live instances of the settled term; conformed to `創刊編集者` sitewide and recorded
+`創刊編集長` as a rejected rendering below so this cannot re-diverge.
 
 **`Credential` has no precedent in any locale** — `contributors/mike-moran.html`
 carries no such row in any language. All four renderings were coined for

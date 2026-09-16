@@ -349,9 +349,27 @@ Sections may be added, retitled, or retired between volumes. Section names must 
 
 ### Numbering Conventions
 
-- Volumes: Roman numerals (I, II, III, IV…)
+- Volumes: Roman numerals (I, II, III, IV…) in editorial furniture — mastheads, hero
+  kickers, datelines paired with a season (*"Volume I · Spring MMXXVI"*), and any
+  reference to a volume that has not yet published and so has no numbered URL of its
+  own (*"Volume III is targeting Winter 2026"*).
+- Volumes, two-digit numeric form (`Volume 01`, `Volume 02`, …): the volume's proper
+  name once it has published and has a real URL (`/volume-01`, `/volume-02`) — the
+  bibliography kicker, the volume's own title/link text, and body prose naming a
+  specific published volume as a thing that already exists (*"Volume 01 was published
+  in Spring 2026"*). This form is never translated in any locale (see
+  `translations/glossary.md` §3): confirmed 2026-09-16 after live drift shipped in DE
+  and ES (`Band II`, `Volumen III`) went undetected because this split was practiced
+  sitewide but not written down anywhere. `tools/term-check.mjs` now enforces it.
 - Articles within a volume: Roman numerals (I, II, III…)
 - Folios within an article: Roman numerals (I, II, III…)
+
+The two volume conventions above are not interchangeable and the choice is not
+stylistic: it tracks whether the volume in question has been assigned a permanent URL
+yet. A page that mixes them for the *same* volume in the *same* role (e.g. two
+bibliography kickers, one roman and one numeric, for a volume that has published) is a
+defect; a page that uses roman for a masthead dateline and numeric for that same
+volume's own title elsewhere is the convention working as intended.
 - Sections within the index: Roman numerals
 - Footnotes: Arabic numerals, superscript, restarting per folio
 - Index entries: Arabic numerals if numbered at all (typically unnumbered, organized by section)
