@@ -3,6 +3,16 @@ CHANGELOG — this log starts 2026-08-22; versions before 1.10 predate it and ar
 not reconstructed here. Every version bump must have a matching line: no bump
 without a real content change, no content change without a bump.
 
+1.16 — 2026-09-16 — Founding editor disclosure update: Chad Corriveau joined
+                     MongoDB, Inc. as a senior technical product marketing
+                     manager (2026-09-08). Updated the Contributors entry and
+                     the About/Editorial connection section accordingly;
+                     ThinkRoot LLC is now described as the publication's
+                     publisher (publishing infrastructure and administrative
+                     support only) rather than as a commercial advisory
+                     practice, reflecting that ThinkRoot suspended commercial
+                     advisory work in September 2026 and does not accept
+                     client engagements.
 1.15 — 2026-08-31 — Corrected department framing: "Any Questions So Far?" is
                      the Feature of Volume II (not a Conversations entry);
                      "Scaling the Expert" opens Proof, a new standing
@@ -57,7 +67,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-08-31. Version 1.15.
+Last updated: 2026-09-16. Version 1.16.
 
 ---
 
@@ -1440,7 +1450,7 @@ The practitioners and editors who have contributed original work to Technical Ma
 
 **Chad Corriveau** · Founding Editor · Volume I, 2026–
 
-Twelve years building technical marketing at scale inside ServiceNow across ITSM, ITOM, security, DevOps, and AI products. Three Knowledge conference mainstage keynotes. Founder of ThinkRoot LLC. U.S. Navy veteran. Contributor to: The Technical Marketer (Article I), Before the Name (Article II), Technical Marketing in the Age of AI (Article III). Full profile: technicalmarketing.org/contributors/chad-corriveau
+Senior technical product marketing manager at MongoDB. Before that, twelve years building technical marketing at scale inside ServiceNow across ITSM, ITOM, security, DevOps, and AI products. Three Knowledge conference mainstage keynotes. Founder of ThinkRoot LLC, publisher of this journal. U.S. Navy veteran. Contributor to: The Technical Marketer (Article I), Before the Name (Article II), Technical Marketing in the Age of AI (Article III). Full profile: technicalmarketing.org/contributors/chad-corriveau
 
 ## Volume II · Fall 2026
 
@@ -1477,7 +1487,9 @@ Five audiences, named directly. Working practitioners who have done this job at 
 ## Editorial connection
 
 
-The publication is edited by Chad Corriveau, founder of [ThinkRoot](https://thinkroot.io), an independent technical marketing advisory practice. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration. This connection is disclosed deliberately so the editorial decisions can speak for themselves.
+The publication is edited by Chad Corriveau, sole owner of [ThinkRoot LLC](https://thinkroot.io), which publishes this journal and provides its publishing infrastructure and administrative support. ThinkRoot suspended commercial advisory work in September 2026 and does not accept client engagements. The Demo Coherence Index, the Root Cause Field Notes, and other ThinkRoot work appear in the index alongside curated pieces from other practitioners. Every entry is held to the same editorial standard: the strength of the argument and the specificity of the perspective. Inclusion reflects editorial judgment, not commercial consideration. This connection is disclosed deliberately so the editorial decisions can speak for themselves.
+
+The founding editor works in product marketing at MongoDB. Every editor of a practitioner publication has an employer, and most do not say so. This one does, because the charter asks that entries be judged on primary sourcing and the absence of vendor promotion, and an editor who will not apply that standard to himself has no business applying it to anyone else. He writes here on the practice of technical marketing, not on the products in the categories his employer competes in, and not on MongoDB. His editorial role is unpaid, and this publication takes nothing of value from his employer. Full disclosure on his contributor page.
 
 
 ## Editorial principles
