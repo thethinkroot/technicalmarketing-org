@@ -333,18 +333,24 @@ a.masthead__title:hover { color: var(--red); }
 .folio__value a:hover { color: var(--red); border-bottom-color: var(--red); }
 @media (max-width: 640px) { .folio__inner { padding: 1.5rem 1.25rem 1.25rem; } .folio__row { grid-template-columns: 1fr; gap: 0.35rem; padding: 1rem 0; } .folio__label { padding-top: 0; } }
 
-/* Google Preferred Sources link (plain deeplink, no third-party script). Sits at the end of each piece. */
-.pref-source { margin: 3rem 0 2.5rem; padding-top: 1.5rem; border-top: 0.5px solid var(--border-strong); max-width: var(--reading-max, 42rem); line-height: 1.45; text-align: left; }
-.pref-source a { display: inline-block; padding-left: 1.25rem; position: relative; font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; color: var(--ink-60); text-decoration: none; border: 0; transition: color 0.15s; }
-.pref-source a em { font-style: normal; color: var(--ink); }
-.pref-source a::before { content: ""; position: absolute; left: 1px; top: 0.62em; width: 6px; height: 6px; background: var(--red); transform: rotate(45deg); }
-:lang(ja) .pref-source a { font-style: normal; }
-.pref-source a > span[aria-hidden] { font-size: 0; }
-.pref-source a > span[aria-hidden]::after { content: "\2192\FE0E"; font-family: var(--f-display); font-style: normal; font-weight: 700; font-size: 1.0625rem; color: var(--red); margin-left: 0.4rem; display: inline-block; white-space: nowrap; transition: transform 0.15s; }
-.pref-source a:hover, .pref-source a:focus-visible { color: var(--ink); }
-.pref-source a:hover > span[aria-hidden]::after { transform: translateX(3px); }
-.pref-source__nt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
-@media (max-width: 768px) { .pref-source { margin-top: 2.25rem; padding-top: 1.25rem; } .pref-source a { font-size: 1rem; } }
+/* Stay-with-the-publication card: Google preferred source (plain deeplink, no third-party script), RSS, LinkedIn. Mirrors .cite-card. */
+.pref-card { margin: 3rem 0 0; padding: 1.875rem 2.25rem 1.75rem; background: var(--paper-light); border: 0.5px solid var(--border-strong); position: relative; max-width: var(--reading-max, 42rem); box-sizing: border-box; text-align: left; }
+.pref-card::before { content: ""; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--red); }
+.pref-card--center { margin: 3rem auto 3rem; }
+.pref-card__kicker { margin: 0 0 0.875rem; font-family: var(--f-display); font-weight: 700; font-size: 0.6875rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); }
+.pref-card__lede { margin: 0 0 1.5rem; font-family: var(--f-serif); font-style: italic; font-size: 1.1875rem; line-height: 1.45; color: var(--ink); max-width: 34em; }
+.pref-card__lede em { font-style: normal; }
+:lang(ja) .pref-card__lede { font-style: normal; font-size: 1.0625rem; line-height: 1.7; }
+.pref-card__actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.75rem; padding-top: 1.25rem; border-top: 0.5px solid var(--border); }
+.pref-card__primary { display: inline-flex; align-items: center; gap: 0.6rem; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; color: var(--paper); background: var(--ink); padding: 0.85rem 1.35rem; text-decoration: none; border: 0; transition: background 0.15s; }
+.pref-card__primary:hover, .pref-card__primary:focus-visible { background: var(--red); color: var(--paper); }
+.pref-card__arrow { font-family: var(--f-display); font-weight: 700; transition: transform 0.15s; }
+.pref-card__primary:hover .pref-card__arrow { transform: translateX(3px); }
+.pref-card__nt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
+.pref-card__alt { margin: 0; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
+.pref-card__alt a { color: var(--ink-60); border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; text-decoration: none; background: none; }
+.pref-card__alt a:hover { color: var(--red); border-bottom-color: var(--red); }
+@media (max-width: 768px) { .pref-card { padding: 1.5rem 1.25rem 1.375rem; margin-top: 2.25rem; } .pref-card--center { margin: 2.25rem auto 2.5rem; } .pref-card__lede { font-size: 1.0625rem; } .pref-card__primary { width: 100%; justify-content: center; } }
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://technicalmarketing.org/#organization","name":"Technical Marketing","url":"https://technicalmarketing.org","logo":{"@type":"ImageObject","url":"https://technicalmarketing.org/publisher-logo.png","width":600,"height":60}},{"@type":"Article","@id":"https://technicalmarketing.org/any-questions-so-far#article","headline":"Any Questions So Far?: A Candid Conversation with Peter Cohan","description":"Peter Cohan, author of Great Demo! and Doing Discovery, on the Copley Plan, the reverse demo, the pitching-to-questioning ratio, and what AI still cannot do that a good discovery call can.","author":{"@type":"Person","name":"Peter Cohan","sameAs":["https://greatdemo.com","https://www.linkedin.com/in/petercohan/"]},"editor":{"@type":"Person","name":"Chad Corriveau","url":"https://technicalmarketing.org/contributors/chad-corriveau"},"publisher":{"@type":"Organization","@id":"https://technicalmarketing.org/#organization"},"datePublished":"2026-09-01","dateModified":"2026-09-01","url":"https://technicalmarketing.org/de/any-questions-so-far","mainEntityOfPage":"https://technicalmarketing.org/de/any-questions-so-far","inLanguage":"de-DE","about":[{"@type":"Person","name":"Peter Cohan","jobTitle":"Author, Great Demo! and Doing Discovery"},{"@type":"Concept","name":"The Copley Plan","description":"A field-driven skunkworks method for building the product the customer already needed, using pre-sales and customer success staff embedded directly on the build team."},{"@type":"Concept","name":"Pitching-to-questioning ratio","description":"A metric derived from AI call summaries that scores discovery calls by the ratio of question-oriented to pitch-oriented conversational elements."}],"isPartOf":{"@type":"WebSite","@id":"https://technicalmarketing.org/#website"},"video":{"@id":"https://technicalmarketing.org/de/any-questions-so-far#video"}},{"@type":"VideoObject","@id":"https://technicalmarketing.org/de/any-questions-so-far#video","name":"Any Questions So Far? — A Candid Conversation With Peter Cohan","description":"A recorded video conversation with Peter Cohan, author of Great Demo!, cut into a seven-part companion series running just under two hours in total, with a full transcript accompanying the article.","thumbnailUrl":["https://img.youtube.com/vi/4-f5vHcaKoA/maxresdefault.jpg"],"uploadDate":"2026-09-01","contentUrl":"https://www.youtube.com/watch?v=4-f5vHcaKoA","embedUrl":"https://www.youtube-nocookie.com/embed/4-f5vHcaKoA","publisher":{"@type":"Organization","name":"Technical Marketing","url":"https://technicalmarketing.org"},"isFamilyFriendly":true,"transcript":"A full transcript of the seven-part conversation accompanies the article at the page above.","hasPart":[{"@type":"Clip","position":1,"contentUrl":"https://www.youtube.com/watch?v=4-f5vHcaKoA","embedUrl":"https://www.youtube-nocookie.com/embed/4-f5vHcaKoA"},{"@type":"Clip","position":2,"contentUrl":"https://www.youtube.com/watch?v=OqPxmwjWNJs","embedUrl":"https://www.youtube-nocookie.com/embed/OqPxmwjWNJs"},{"@type":"Clip","position":3,"contentUrl":"https://www.youtube.com/watch?v=qeZIFX1sLqo","embedUrl":"https://www.youtube-nocookie.com/embed/qeZIFX1sLqo"},{"@type":"Clip","position":4,"contentUrl":"https://www.youtube.com/watch?v=0rSd3Uhr9u8","embedUrl":"https://www.youtube-nocookie.com/embed/0rSd3Uhr9u8"},{"@type":"Clip","position":5,"contentUrl":"https://www.youtube.com/watch?v=BAtqiw6biPA","embedUrl":"https://www.youtube-nocookie.com/embed/BAtqiw6biPA"},{"@type":"Clip","position":6,"contentUrl":"https://www.youtube.com/watch?v=VPuXttqVvyI","embedUrl":"https://www.youtube-nocookie.com/embed/VPuXttqVvyI"},{"@type":"Clip","position":7,"contentUrl":"https://www.youtube.com/watch?v=PnJjU2hVMsg","embedUrl":"https://www.youtube-nocookie.com/embed/PnJjU2hVMsg"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Technical Marketing","item":"https://technicalmarketing.org"},{"@type":"ListItem","position":2,"name":"Noch Fragen bis hierher?","item":"https://technicalmarketing.org/de/any-questions-so-far"}]}]}</script>
 <script>
@@ -1035,7 +1041,14 @@ a.masthead__title:hover { color: var(--red); }
   </div>
 </div>
 
-<aside class="pref-source" aria-label="Bevorzugte Quelle bei Google"><a href="https://www.google.com/preferences/source?q=technicalmarketing.org&amp;hl=de" target="_blank" rel="noopener">Mehr von <em>Technical Marketing</em> in den Google-Ergebnissen <span aria-hidden="true">&#8599;</span><span class="pref-source__nt"> (öffnet in neuem Tab)</span></a></aside>
+<aside class="pref-card pref-card--center" aria-labelledby="pref-card-kicker">
+  <p class="pref-card__kicker" id="pref-card-kicker">Der Publikation folgen</p>
+  <p class="pref-card__lede"><em>Technical Marketing</em> einmal bei Google auswählen: Neue Beiträge erscheinen dann eher in den Top-Meldungen und sind dort sowie in KI-Antworten als &bdquo;Bevorzugt&ldquo; gekennzeichnet.</p>
+  <div class="pref-card__actions">
+    <a class="pref-card__primary" href="https://www.google.com/preferences/source?q=technicalmarketing.org&amp;hl=de" target="_blank" rel="noopener">Als bevorzugte Quelle festlegen <span class="pref-card__arrow" aria-hidden="true">&rarr;</span><span class="pref-card__nt"> (öffnet Google in neuem Tab)</span></a>
+    <p class="pref-card__alt">Auch über <a href="/feed.xml">RSS</a> <span aria-hidden="true">&middot;</span> <a href="https://www.linkedin.com/company/technicalmarketing-org/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</aside>
 
 <div class="notes">
   <div class="notes__label">Anmerkungen</div>
