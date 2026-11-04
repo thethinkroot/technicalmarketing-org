@@ -453,3 +453,10 @@ a.masthead__lang-link:hover { color: var(--ink); }
 .pref-card__alt a { color: var(--ink-60); border-bottom: 1px solid var(--border-strong); padding-bottom: 1px; text-decoration: none; background: none; }
 .pref-card__alt a:hover { color: var(--red); border-bottom-color: var(--red); }
 @media (max-width: 768px) { .pref-card { padding: 1.5rem 1.25rem 1.375rem; margin-top: 2.25rem; } .pref-card--center { margin: 2.25rem auto 2.5rem; } .pref-card__lede { font-size: 1.0625rem; } .pref-card__primary { width: 100%; justify-content: center; } }
+/* Google preferred source line inside the subscribe band */
+.subscribe__pref { margin: 1.5rem auto 0; padding-top: 1.25rem; border-top: 0.5px solid var(--border); max-width: 460px; font-family: var(--f-sans); font-size: 0.6875rem; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; line-height: 1.7; }
+.subscribe__pref a { color: var(--ink-60); text-decoration: none; border: 0; background: none; }
+.subscribe__pref a em { font-style: normal; color: var(--ink); }
+.subscribe__pref a:hover { color: var(--red); }
+.subscribe__pref .pref-card__arrow { color: var(--red); margin-left: 0.25rem; display: inline-block; transition: transform 0.15s; }
+.subscribe__pref a:hover .pref-card__arrow { transform: translateX(3px); }
