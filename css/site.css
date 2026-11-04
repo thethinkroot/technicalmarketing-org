@@ -435,17 +435,15 @@ a.masthead__lang-link:hover { color: var(--ink); }
 .video-plate__caption .t { font-family: var(--f-serif); font-style: italic; font-size: 0.875rem; color: var(--ink-60); }
 .video-plate__caption .n { font-family: var(--f-sans); font-size: 0.5625rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-40); font-weight: 500; }
 
-/* Google Preferred Sources link (plain deeplink, no third-party script) */
-.pref-source { margin: 0 0 2.5rem; line-height: 1.45; }
-.cover__byline + .pref-source { margin-top: -1.5rem; }
-.pref-source a { display: inline-block; padding-left: 1.25rem; position: relative; font-family: var(--f-serif); font-style: italic; font-size: 0.9375rem; color: var(--ink-60); text-decoration: none; border: 0; transition: color 0.15s; }
-.pref-source a::before { content: ""; position: absolute; left: 1px; top: 0.6em; width: 6px; height: 6px; background: var(--red); transform: rotate(45deg); }
+/* Google Preferred Sources link (plain deeplink, no third-party script). Sits at the end of each piece. */
+.pref-source { margin: 3rem 0 2.5rem; padding-top: 1.5rem; border-top: 0.5px solid var(--border-strong); max-width: var(--reading-max, 42rem); line-height: 1.45; text-align: left; }
+.pref-source a { display: inline-block; padding-left: 1.25rem; position: relative; font-family: var(--f-serif); font-style: italic; font-size: 1.0625rem; color: var(--ink-60); text-decoration: none; border: 0; transition: color 0.15s; }
+.pref-source a em { font-style: normal; color: var(--ink); }
+.pref-source a::before { content: ""; position: absolute; left: 1px; top: 0.62em; width: 6px; height: 6px; background: var(--red); transform: rotate(45deg); }
 :lang(ja) .pref-source a { font-style: normal; }
 .pref-source a > span[aria-hidden] { font-size: 0; }
-.pref-source a > span[aria-hidden]::after { content: "\2192\FE0E"; font-family: var(--f-display); font-style: normal; font-weight: 700; font-size: 0.9375rem; color: var(--red); margin-left: 0.35rem; display: inline-block; white-space: nowrap; transition: transform 0.15s; }
+.pref-source a > span[aria-hidden]::after { content: "\2192\FE0E"; font-family: var(--f-display); font-style: normal; font-weight: 700; font-size: 1.0625rem; color: var(--red); margin-left: 0.4rem; display: inline-block; white-space: nowrap; transition: transform 0.15s; }
 .pref-source a:hover, .pref-source a:focus-visible { color: var(--ink); }
 .pref-source a:hover > span[aria-hidden]::after { transform: translateX(3px); }
 .pref-source__nt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; }
-.pref-source--hero { margin: 1.5rem 0 0; }
-.pref-source--head { margin: 1rem 0 0; }
-@media (max-width: 768px) { .cover__byline + .pref-source { margin-top: -0.75rem; } .pref-source { margin-bottom: 1.75rem; } .pref-source--hero, .pref-source--head { margin-bottom: 0; } .pref-source a { font-size: 0.875rem; } }
+@media (max-width: 768px) { .pref-source { margin-top: 2.25rem; padding-top: 1.25rem; } .pref-source a { font-size: 1rem; } }
