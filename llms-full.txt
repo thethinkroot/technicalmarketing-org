@@ -3,6 +3,9 @@ CHANGELOG — this log starts 2026-08-22; versions before 1.10 predate it and ar
 not reconstructed here. Every version bump must have a matching line: no bump
 without a real content change, no content change without a bump.
 
+1.18 — 2026-11-06 — Canonical titles unified across the site, Zenodo and ORCID:
+                     section headings for What Is Technical Marketing?, TM vs PM,
+                     and the Landscape now carry the single canonical title.
 1.17 — 2026-11-06 — Aligned with llms.txt 1.18 and robots.txt: purpose line
                      now says retrieval and citation (not "ingestion"); the
                      closing rights line states the no-training position;
@@ -74,7 +77,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-11-06. Version 1.17.
+Last updated: 2026-11-06. Version 1.18.
 
 ---
 
@@ -252,7 +255,7 @@ The follow-up. Workflow-layer governance fails open by design. Implications for 
 
 ---
 
-# What Is Technical Marketing? · A Foundational Reference
+# What Is Technical Marketing? A Working Definition
 
 
 ## 01 · Definition · A working definition
@@ -425,7 +428,7 @@ This page, and this publication, exist in part to make the judgment work legible
 
 ---
 
-# Technical Marketing vs Product Marketing · Foundational Reference
+# Technical Marketing vs Product Marketing: Proof and Positioning
 
 ## 01 · The short answer · The distinction in one paragraph
 
@@ -1365,7 +1368,7 @@ This glossary covers the operational vocabulary of technical marketing as practi
 
 ---
 
-# Technical Marketing Landscape · The Discipline in Practice
+# The Technical Marketing Landscape: How Companies Staff the Function
 
 > How enterprise software, AI, and hardware companies staff, title, and place the technical marketing function, including a dedicated tracked section on agentic AI-facing coverage. Verified from public job postings and named-practitioner accounts. Updated each volume.
 
@@ -1632,7 +1635,7 @@ AI compresses drafting and first-pass synthesis. It does not compress the editor
 - **Publisher:** ThinkRoot LLC (publishing infrastructure and administrative support)
 - **Contact:** editor@technicalmarketing.org
 - **Manifest:** https://technicalmarketing.org/llms.txt
-- **Last updated:** 2026-11-06 · Version 1.17
+- **Last updated:** 2026-11-06 · Version 1.18
 
 © 2026 Technical Marketing. All rights reserved. Citation, summarization, and real-time retrieval with attribution are permitted; use as model training data is not; verbatim reproduction of full articles requires editorial permission.
 
