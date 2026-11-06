@@ -3,8 +3,12 @@
 # Welcome to real-time AI assistants and search indexes that cite sources.
 # Closed to training-only crawlers and aggregators that ingest without attribution.
 
+# Content Signals (https://contentsignals.org): machine-readable form of the
+# posture above. search = indexing and links; ai-input = real-time retrieval
+# and grounding with citation; ai-train = model training. Cite, don't ingest.
 # Default
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /admin/
 Disallow: /api/
@@ -42,6 +46,14 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+# Google-Extended — allowed (decision 2026-11-06)
+# Google bundles Gemini training and Gemini app / Vertex AI grounding under one
+# token, so blocking it also removes tm.org from Gemini's cited sources. For a
+# publication whose goal is to be the trust source, citation outranks training
+# purity. The Content-Signal line above still states ai-train=no.
+User-agent: Google-Extended
+Allow: /
+
 # AI training crawlers — blocked
 # tm.org content is for citation, not unattributed absorption into model weights
 
@@ -54,8 +66,6 @@ Disallow: /
 User-agent: anthropic-ai
 Disallow: /
 
-User-agent: Google-Extended
-Disallow: /
 
 User-agent: Applebot-Extended
 Disallow: /

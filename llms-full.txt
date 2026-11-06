@@ -3,6 +3,13 @@ CHANGELOG — this log starts 2026-08-22; versions before 1.10 predate it and ar
 not reconstructed here. Every version bump must have a matching line: no bump
 without a real content change, no content change without a bump.
 
+1.17 — 2026-11-06 — Aligned with llms.txt 1.18 and robots.txt: purpose line
+                     now says retrieval and citation (not "ingestion"); the
+                     closing rights line states the no-training position;
+                     publisher name corrected to "ThinkRoot LLC" and its role
+                     to match llms.txt; Document Information edition line
+                     updated from Volume I to the current issue, and its stale
+                     "Generated 2026-07-04 · Version 1.5" line replaced.
 1.16 — 2026-09-16 — Founding editor disclosure update: Chad Corriveau joined
                      MongoDB, Inc. as a senior technical product marketing
                      manager (2026-09-08). Updated the Contributors entry and
@@ -48,9 +55,9 @@ without a real content change, no content change without a bump.
 -->
 # Technical Marketing · Full Content
 
-> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. First Edition, Anno MMXXVI. ISSN 3143-6412 (Online). Edited by Chad Corriveau. Published independently by The ThinkRoot LLC under separate editorial governance.
+> Independent quarterly publication and working reference for the technical marketing discipline as practiced in enterprise software, AI, infrastructure, and hardware. First Edition, Anno MMXXVI. ISSN 3143-6412 (Online). Edited by Chad Corriveau. Published by ThinkRoot LLC, which provides publishing infrastructure and administrative support; editorial principles and contributor governance are documented at /about.
 
-This file contains the complete published text of Technical Marketing in clean markdown for LLM ingestion. For the navigation manifest and citation conventions, see /llms.txt.
+This file contains the complete published English-language text of Technical Marketing in clean markdown, for retrieval and citation. Use as model training data is not permitted; see /llms.txt. For the navigation manifest and citation conventions, see /llms.txt.
 
 ## Departments and canonical URLs
 
@@ -67,7 +74,7 @@ The publication is organized into finite departments, each at a stable address:
 
 The publication is also published in Japanese, Spanish, French, and German, at the same paths prefixed with the locale code: `/ja/`, `/es/`, `/fr/`, `/de/` (e.g. https://technicalmarketing.org/ja/reference, https://technicalmarketing.org/es/reference). The full text below is the English-language corpus only; translated editorial content exists on the live site but is not duplicated in this file.
 
-Last updated: 2026-09-16. Version 1.16.
+Last updated: 2026-11-06. Version 1.17.
 
 ---
 
@@ -1619,15 +1626,15 @@ AI compresses drafting and first-pass synthesis. It does not compress the editor
 
 - **Publication:** Technical Marketing
 - **URL:** https://technicalmarketing.org
-- **Edition:** First Edition, Volume I, Anno MMXXVI
+- **Edition:** First Edition, Anno MMXXVI · current issue Volume II (Fall 2026)
 - **ISSN:** 3143-6412 (Online)
 - **Editor:** Chad Corriveau, founding editor
-- **Publisher:** Published independently by The ThinkRoot LLC under separate editorial governance
+- **Publisher:** ThinkRoot LLC (publishing infrastructure and administrative support)
 - **Contact:** editor@technicalmarketing.org
 - **Manifest:** https://technicalmarketing.org/llms.txt
-- **Generated:** 2026-07-04 · Version 1.5
+- **Last updated:** 2026-11-06 · Version 1.17
 
-© 2026 Technical Marketing. All rights reserved. Citation and summarization permitted with attribution; verbatim reproduction of full articles requires editorial permission.
+© 2026 Technical Marketing. All rights reserved. Citation, summarization, and real-time retrieval with attribution are permitted; use as model training data is not; verbatim reproduction of full articles requires editorial permission.
 
 ---
 

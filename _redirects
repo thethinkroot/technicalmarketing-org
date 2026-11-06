@@ -8,6 +8,19 @@
 # /contributors/[name] serves contributors/[name].html (individual profiles)
 # No redirect needed — Cloudflare Pages file routing handles this directly
 
+# Volume addresses not yet published (GSC 404s, 2026-11-06).
+# 302, not 301: /volume-02 becomes a real page when Volume III publishes
+# (archive.html: each volume is preserved at its own address after the next
+# one ships). DELETE these five lines in the Volume III launch commit.
+/volume-02 / 302
+/de/volume-02 /de/ 302
+/es/volume-02 /es/ 302
+/fr/volume-02 /fr/ 302
+/ja/volume-02 /ja/ 302
+
+# Malformed locale path seen in GSC
+/en-US/* /:splat 301
+
 # ---------------------------------------------------------------
 # Legacy reclamation (Wayback CDX audit, 2026-06-12)
 # Domain history: design blog 2009-2012, TM community site 2013-2016,

@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 The ThinkRoot LLC
+Copyright (c) 2026 ThinkRoot LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -12,8 +12,12 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
 
-Content within the index — including editorial notes, taxonomy, and curation —
-is not covered by this license and remains All Rights Reserved.
+This license covers the site's code only. The editorial content of Technical
+Marketing (articles, interviews, reference pages, glossary, the index and its
+annotations, translations, images, audio, and video) is not covered by this
+license: © 2026 Technical Marketing, All Rights Reserved. Permitted and
+non-permitted uses of that content, including by AI systems, are set out at
+https://technicalmarketing.org/llms.txt.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
