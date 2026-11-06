@@ -399,6 +399,18 @@ Every published asset — folio, cover, OG image, LinkedIn post, web page — mu
 
 If any check fails, the asset does not ship.
 
+### Archival and Identifiers
+
+Every work published under the editor's or a contributor's byline is archived and registered within one week of going live. The web page is always the canonical version; the archive record points to it, never the reverse. (Set November 2026.)
+
+1. **One canonical title.** Settle the title before archiving. The same string appears in the page's structured data, the citation block (APA, MLA, Chicago, BibTeX), the `citation_*` meta tags, the RSS feed, llms.txt, llms-full.txt, Zenodo and ORCID. The browser-tab title is that string plus " · Technical Marketing". Search term first, claim after the colon; aim for about 60 characters.
+2. **Archival PDF.** Print the English page to PDF with the citation header (title, author, date, ISSN, canonical URL, the no-training line) and the ISSN footer. Store it in the TM.org Zenodo archive folder.
+3. **Zenodo record.** Resource type Journal article. Files restricted, record public. No open license; copyright "© [year] Technical Marketing. All rights reserved." Publisher: Technical Marketing. Journal: Technical Marketing, ISSN 3143-6412, volume in Roman numerals (I, II, III), article label as printed ("Article IV", "Proof, Entry II", "Reference"). Alternate identifier: the canonical URL. Author with ORCID iD and affiliation. Add to the community `zenodo.org/communities/technicalmarketing`.
+4. **Contributor consent.** A contributor's work is registered only with their written OK. Ask for their ORCID iD; register without one if they have none.
+5. **Site update.** Add the DOI to the citation block (after the canonical URL), to the BibTeX entry, to the article's structured data as an `identifier`, and to the `citation_doi` meta tag. Add it to the DOI list in llms.txt and bump the version.
+6. **ORCID.** DataCite auto-update adds the editor's works automatically. Confirm the entry appears, and that Zenodo's "all versions" DOI did not create a duplicate.
+7. **Sitemap and search.** Set `<lastmod>` on every changed URL, run both QA checks, push, then send an IndexNow ping and request indexing in Search Console for the new page.
+
 The URL and canonical check and the term-consistency check both also run automatically as a `pre-push` git hook. Enable it once per clone:
 
 ```
