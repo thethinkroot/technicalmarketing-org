@@ -157,7 +157,34 @@ async function toMarkdown(response, url) {
   return { markdown: header + '\n\n' + body + '\n', canonical };
 }
 
-export const onRequest = async ({ request, next }) => {
+// Repository files that are not part of the published site. Cloudflare Pages
+// serves the whole repo root, so these would otherwise be downloadable from
+// the domain. Answer them with the site's 404 page instead.
+const PRIVATE = [
+  /^\/(EDITORIAL|KNOWN-FUTURE-WORK)\.md$/i,
+  /^\/\.(claude|github|githooks|gitignore|DS_Store)(\/|$)/i,
+  /^\/(tools|translations|github|Claude outputs|functions)\/./i,
+  /\.(zip|mjs|py)$/i,
+  /\/\.DS_Store$/i,
+];
+
+async function notFound(request, env) {
+  try {
+    const page = await env.ASSETS.fetch(new URL('/404.html', request.url));
+    return new Response(page.body, {
+      status: 404,
+      headers: { 'Content-Type': 'text/html; charset=utf-8', 'X-Robots-Tag': 'noindex' },
+    });
+  } catch (_) {
+    return new Response('Not found', { status: 404, headers: { 'X-Robots-Tag': 'noindex' } });
+  }
+}
+
+export const onRequest = async ({ request, next, env }) => {
+  let path = new URL(request.url).pathname;
+  try { path = decodeURIComponent(path); } catch (_) { /* keep raw */ }
+  if (PRIVATE.some((re) => re.test(path))) return notFound(request, env);
+
   if (!wantsMarkdown(request)) return next();
 
   const url = new URL(request.url);

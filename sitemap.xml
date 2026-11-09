@@ -957,21 +957,183 @@
   <!-- ============================================================ -->
   <url>
     <loc>https://technicalmarketing.org/reference</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/reference"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/reference"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/reference"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/reference"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/reference"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/reference"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/reference</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/reference"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/reference"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/reference"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/reference"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/reference"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/reference"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/reference</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/reference"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/reference"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/reference"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/reference"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/reference"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/reference"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/reference</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/reference"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/reference"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/reference"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/reference"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/reference"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/reference"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/reference</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/reference"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/reference"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/reference"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/reference"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/reference"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/reference"/>
   </url>
   <url>
     <loc>https://technicalmarketing.org/tools</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/tools"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/tools"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/tools"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/tools"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/tools"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/tools</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/tools"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/tools"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/tools"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/tools"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/tools"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/tools</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/tools"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/tools"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/tools"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/tools"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/tools"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/tools</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/tools"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/tools"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/tools"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/tools"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/tools"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/tools</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/tools"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/tools"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/tools"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/tools"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/tools"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/tools"/>
   </url>
   <url>
     <loc>https://technicalmarketing.org/ai-for-technical-marketers</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/ai-for-technical-marketers</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/ai-for-technical-marketers</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/ai-for-technical-marketers</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/ai-for-technical-marketers</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/ai-for-technical-marketers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/ai-for-technical-marketers"/>
   </url>
   <url>
     <loc>https://technicalmarketing.org/volume-01</loc>
@@ -1005,9 +1167,63 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/the-index</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/the-index"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/the-index"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/the-index"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/the-index"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/the-index"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/the-index"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/the-index</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/the-index"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/the-index"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/the-index"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/the-index"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/the-index"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/the-index"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/the-index</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/the-index"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/the-index"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/the-index"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/the-index"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/the-index"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/the-index"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/the-index</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/the-index"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/the-index"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/the-index"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/the-index"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/the-index"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/the-index"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/the-index</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/the-index"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/the-index"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/the-index"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/the-index"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/the-index"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/the-index"/>
   </url>
   <url>
     <loc>https://technicalmarketing.org/archive</loc>
@@ -1041,9 +1257,63 @@
   </url>
   <url>
     <loc>https://technicalmarketing.org/suggest</loc>
-    <lastmod>2026-07-08</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/suggest"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/suggest"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/suggest"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/suggest"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/suggest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/suggest"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/es/suggest</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/suggest"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/suggest"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/suggest"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/suggest"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/suggest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/suggest"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/de/suggest</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/suggest"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/suggest"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/suggest"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/suggest"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/suggest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/suggest"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/fr/suggest</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/suggest"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/suggest"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/suggest"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/suggest"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/suggest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/suggest"/>
+  </url>
+  <url>
+    <loc>https://technicalmarketing.org/ja/suggest</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en"       href="https://technicalmarketing.org/suggest"/>
+    <xhtml:link rel="alternate" hreflang="es"       href="https://technicalmarketing.org/es/suggest"/>
+    <xhtml:link rel="alternate" hreflang="de"       href="https://technicalmarketing.org/de/suggest"/>
+    <xhtml:link rel="alternate" hreflang="fr"       href="https://technicalmarketing.org/fr/suggest"/>
+    <xhtml:link rel="alternate" hreflang="ja"       href="https://technicalmarketing.org/ja/suggest"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://technicalmarketing.org/suggest"/>
   </url>
 
   <!-- ============================================================ -->

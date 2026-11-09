@@ -44,7 +44,10 @@
 # ---------------------------------------------------------------------------
 
 # ---------------------------------------------------------------------------
-# 3. [CLASS 1] Sitemap coverage gap — remaining live, indexable pages absent from sitemap.xml.
+# 3. [RESOLVED 2026-11-09] Sitemap coverage gap. The 20 missing locale pages
+#    (reference, the-index, tools, ai-for-technical-marketers, suggest x es/de/fr/ja)
+#    were added with hreflang alternates. Matchers removed.
+#    Original note: — remaining live, indexable pages absent from sitemap.xml.
 #    scaling-the-expert (+ es/de/fr, + matthew-trubow) added 2026-08-22.
 #    Seven page types across all four locales (ai-for-technical-marketers,
 #         archive, reference, suggest, the-index, tools, volume-01) — the locale
@@ -52,16 +55,9 @@
 #    Fix: add the missing <url> blocks. Until then Google will not discover these
 #    from the sitemap, only by crawling internal links.
 # ---------------------------------------------------------------------------
-sitemap-coverage  /ai-for-technical-marketers
-sitemap-coverage  /archive
-sitemap-coverage  /reference
-sitemap-coverage  /suggest
-sitemap-coverage  /the-index
-sitemap-coverage  /tools
-sitemap-coverage  /volume-01
 
 # ---------------------------------------------------------------------------
-# 4. [CLASS 1] Missing favicon / RSS <head> declarations — LOCALE COUNTERPARTS ONLY.
+# 4. [RESOLVED 2026-11-09] Missing favicon / RSS <head> declarations — LOCALE COUNTERPARTS ONLY. Inserted in all 12 files; matchers removed.
 #    The four EN pages (any-questions-so-far, glossary, nice-job-hooking-me,
 #    ai-for-technical-marketers) were fixed 2026-08-17. Their ja/es/fr/de
 #    counterparts have the identical omission and were left out of that change
@@ -75,21 +71,9 @@ sitemap-coverage  /volume-01
 #    glossary, nice-job-hooking-me}, plus the RSS declaration on nice-job-hooking-me
 #    in all four locales.
 # ---------------------------------------------------------------------------
-head-tags  de/ai-for-technical-marketers.html
-head-tags  de/glossary.html
-head-tags  de/nice-job-hooking-me.html
-head-tags  es/ai-for-technical-marketers.html
-head-tags  es/glossary.html
-head-tags  es/nice-job-hooking-me.html
-head-tags  fr/ai-for-technical-marketers.html
-head-tags  fr/glossary.html
-head-tags  fr/nice-job-hooking-me.html
-head-tags  ja/ai-for-technical-marketers.html
-head-tags  ja/glossary.html
-head-tags  ja/nice-job-hooking-me.html
 
 # ---------------------------------------------------------------------------
-# 5. [CLASS 1] RSS <link> title attribute is inconsistent across the site.
+# 5. [RESOLVED 2026-11-09] RSS <link> title attribute is inconsistent across the site. Outliers normalised.
 #
 #    Three forms are in use for the same feed:
 #      87 x  title="Technical Marketing &middot; Quarterly Updates"   <- canonical
