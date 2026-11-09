@@ -461,6 +461,8 @@ img { max-width: 100%; height: auto; display: block; }
 .cite-copy:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 .cite-copy.is-copied { background: var(--red); color: var(--paper); border-color: var(--red); }
 .cite-copy-icon { font-size: 0.8125rem; line-height: 1; }
+.cite-row > * { min-width: 0; }
+@media (max-width: 640px) { .cite-card { padding: 1.75rem 1.25rem 1.25rem; } .cite-row { grid-template-columns: 1fr; gap: 0.5rem; } .cite-copy { justify-self: start; } }
 
 
 /* ── Narrated Edition Player ─────────────────────────────────────────────── */
